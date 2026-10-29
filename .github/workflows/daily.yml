@@ -1,0 +1,45 @@
+name: Daily job sweep
+
+on:
+  schedule:
+    # 13:00 UTC = 6:00 AM Pacific (PDT) / 5:00 AM Pacific (PST)
+    - cron: "0 13 * * *"
+  workflow_dispatch:
+    inputs:
+      company:
+        description: "Only fetch this company (leave blank for all)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: job-sweep
+  cancel-in-progress: false
+
+jobs:
+  sweep:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch job boards
+        run: python3 scripts/fetch_jobs.py ${{ inputs.company }}
+
+      - name: Commit updated data
+        run: |
+          git config user.name "job-watch bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/
+          if git diff --cached --quiet; then
+            echo "No changes."
+          else
+            NEW=$(grep -c " NEW " <(git diff --cached data/changes.log | grep '^+' || true) || true)
+            git commit -m "Daily sweep: $(date -u +%Y-%m-%d) (${NEW:-0} new)"
+            git push
+          fi

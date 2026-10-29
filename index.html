@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Job Watch</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%232563eb'/%3E%3Ccircle cx='16' cy='16' r='5' fill='white'/%3E%3C/svg%3E">
+<style>
+  :root {
+    --bg: #f6f7f9; --surface: #ffffff; --surface-2: #f0f2f5; --border: #e3e6ea;
+    --text: #15181d; --muted: #5f6b7a; --faint: #8a94a3;
+    --accent: #2563eb; --accent-soft: #e8efff;
+    --new: #15803d; --new-soft: #e6f6ec;
+    --warn: #b45309; --warn-soft: #fff3df;
+    --closed: #9aa3ae; --err: #b91c1c; --err-soft: #fdecec;
+    --radius: 10px; --shadow: 0 1px 2px rgba(0,0,0,.05);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0f1216; --surface: #171b21; --surface-2: #1f242c; --border: #2a3039;
+      --text: #e8ebef; --muted: #a2abb7; --faint: #6f7987;
+      --accent: #60a5fa; --accent-soft: #1b2a45;
+      --new: #4ade80; --new-soft: #14301f;
+      --warn: #fbbf24; --warn-soft: #3a2a0d;
+      --closed: #5b6470; --err: #f87171; --err-soft: #3a1818;
+      --shadow: none;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: var(--bg); color: var(--text);
+    font: 15px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, sans-serif; }
+  a { color: inherit; }
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 24px 16px 64px; }
+
+  header { display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px 18px; margin-bottom: 18px; }
+  header h1 { font-size: 22px; margin: 0; letter-spacing: -.01em; }
+  header .sub { color: var(--muted); font-size: 14px; }
+  header .spacer { flex: 1; }
+  button { font: inherit; cursor: pointer; border: 1px solid var(--border); background: var(--surface);
+    color: var(--text); border-radius: 8px; padding: 6px 12px; }
+  button:hover { border-color: var(--accent); }
+  button.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+  button:disabled { opacity: .55; cursor: default; }
+
+  .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin-bottom: 18px; }
+  .tile { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 12px 14px; box-shadow: var(--shadow); }
+  .tile .n { font-size: 26px; font-weight: 650; letter-spacing: -.02em; line-height: 1.1; }
+  .tile .l { color: var(--muted); font-size: 13px; margin-top: 2px; }
+  .tile.new .n { color: var(--new); }
+  .tile.err .n { color: var(--err); }
+
+  .controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 14px; }
+  .controls input[type=search] { font: inherit; padding: 7px 10px; border: 1px solid var(--border); border-radius: 8px;
+    background: var(--surface); color: var(--text); min-width: 220px; }
+  .chip { border-radius: 999px; padding: 5px 11px; font-size: 13px; }
+  .chip.on { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); }
+  .controls label { font-size: 13px; color: var(--muted); display: inline-flex; align-items: center; gap: 5px; }
+
+  .company { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); margin-bottom: 14px; box-shadow: var(--shadow); overflow: hidden; }
+  .company .head { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; padding: 12px 16px; border-bottom: 1px solid var(--border); background: var(--surface-2); }
+  .company .head h2 { font-size: 16px; margin: 0; }
+  .company .head .meta { color: var(--muted); font-size: 13px; }
+  .company .head .meta.err { color: var(--err); }
+  .company .head .spacer { flex: 1; }
+  .company .head a { color: var(--muted); font-size: 13px; text-decoration: none; }
+  .company .head a:hover { color: var(--accent); }
+
+  table { width: 100%; border-collapse: collapse; }
+  th, td { text-align: left; padding: 10px 12px; vertical-align: top; border-top: 1px solid var(--border); }
+  thead th { border-top: 0; font-size: 12px; text-transform: uppercase; letter-spacing: .04em; color: var(--faint); font-weight: 600; padding-top: 8px; padding-bottom: 6px; }
+  tbody tr:first-child td { border-top: 0; }
+  tr.closed td { color: var(--closed); }
+  tr.closed .title a { text-decoration: line-through; }
+  td.title a { font-weight: 600; text-decoration: none; }
+  td.title a:hover { text-decoration: underline; color: var(--accent); }
+  td.title .dept { display: block; font-size: 12px; color: var(--faint); font-weight: 400; margin-top: 1px; }
+  td.nowrap { white-space: nowrap; }
+  .mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12.5px; color: var(--muted); }
+  .sub { color: var(--muted); font-size: 12.5px; display: block; }
+  .empty { padding: 18px 16px; color: var(--muted); font-size: 14px; }
+
+  .badge { display: inline-block; font-size: 11.5px; font-weight: 600; padding: 2px 7px; border-radius: 999px; border: 1px solid transparent; white-space: nowrap; vertical-align: middle; }
+  .b-new { background: var(--new-soft); color: var(--new); }
+  .b-live { background: var(--accent-soft); color: var(--accent); }
+  .b-remote { background: var(--accent-soft); color: var(--accent); }
+  .b-hybrid { background: var(--surface-2); color: var(--text); border-color: var(--border); }
+  .b-onsite { background: var(--surface-2); color: var(--muted); border-color: var(--border); }
+  .b-unknown, .b-verify { background: var(--warn-soft); color: var(--warn); }
+  .b-closed { background: var(--surface-2); color: var(--closed); border-color: var(--border); }
+  .b-reopened { background: var(--new-soft); color: var(--new); }
+  .b-src { font-weight: 500; color: var(--faint); background: transparent; border-color: var(--border); }
+
+  .note { font-size: 13px; color: var(--muted); margin-top: 20px; }
+  .toast { position: fixed; bottom: 18px; left: 50%; transform: translateX(-50%); background: var(--text); color: var(--bg);
+    padding: 9px 14px; border-radius: 8px; font-size: 13.5px; opacity: 0; transition: opacity .2s; pointer-events: none; }
+  .toast.show { opacity: 1; }
+
+  @media (max-width: 760px) {
+    table, thead, tbody, tr, td { display: block; }
+    thead { display: none; }
+    tr { padding: 10px 12px; border-top: 1px solid var(--border); }
+    td { border: 0; padding: 2px 0; }
+    td.nowrap { white-space: normal; }
+    tbody tr:first-child { border-top: 0; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Job Watch</h1>
+    <span class="sub" id="generated">Loading…</span>
+    <span class="spacer"></span>
+    <button id="pullAll">Pull all now</button>
+  </header>
+
+  <div class="tiles">
+    <div class="tile new"><div class="n" id="tNew">–</div><div class="l">New since your last visit</div></div>
+    <div class="tile"><div class="n" id="tWeek">–</div><div class="l">Posted in last 7 days</div></div>
+    <div class="tile"><div class="n" id="tOpen">–</div><div class="l">Open matching roles</div></div>
+    <div class="tile"><div class="n" id="tCompanies">–</div><div class="l">Companies watched</div></div>
+    <div class="tile err" id="tErrWrap" hidden><div class="n" id="tErr">–</div><div class="l">Boards failing to fetch</div></div>
+  </div>
+
+  <div class="controls">
+    <input type="search" id="q" placeholder="Search titles, locations, req IDs…">
+    <button class="chip on" data-f="all">All</button>
+    <button class="chip" data-f="new">New</button>
+    <button class="chip" data-f="remote">Remote</button>
+    <button class="chip" data-f="hybrid">Hybrid</button>
+    <button class="chip" data-f="verify">Needs verifying</button>
+    <label><input type="checkbox" id="showClosed"> show recently closed</label>
+  </div>
+
+  <div id="companies"></div>
+
+  <p class="note">
+    Matching rule: title contains “product”, location in the United States (or not stated — flagged <span class="badge b-verify">verify US</span>).
+    Remote status comes from the posting's location, then its metadata, then its description; anything inferred from the description or not found at all is flagged.
+    The daily sweep runs at 6 AM Pacific via GitHub Actions. <strong>Pull now</strong> reads the company's live job board straight from your browser and shows anything the sweep hasn't recorded yet as <span class="badge b-live">live</span>.
+    Edit <code>companies.yml</code> in the repo to add companies.
+  </p>
+</div>
+<div class="toast" id="toast"></div>
+
+<script>
+(() => {
+  // ------------------------------------------------------------ state ----
+  const DATA_URL = 'data/jobs.json';
+  const LS_KEY = 'jobwatch.lastVisit';
+  let data = { generated_at: null, companies: [], jobs: [] };
+  let liveExtra = {};           // company -> array of live-only jobs
+  let liveAt = {};              // company -> ISO time of last live pull
+  let filter = 'all';
+  let query = '';
+  let lastVisit = null;         // ISO of the previous visit (comparison point)
+
+  try {
+    lastVisit = localStorage.getItem(LS_KEY);
+    localStorage.setItem(LS_KEY, new Date().toISOString());
+  } catch (e) { /* storage unavailable: fine */ }
+  // First visit ever: treat "new" as the last 24 hours.
+  const newSince = lastVisit ? new Date(lastVisit) : new Date(Date.now() - 24 * 3600 * 1000);
+
+  // ------------------------------------------------------ classification --
+  // Mirrors scripts/fetch_jobs.py so "Pull now" applies the same rules.
+  const TITLE_KEYWORDS = ['product'];
+  const US_STATES = new Set(['alabama','alaska','arizona','arkansas','california','colorado','connecticut','delaware','florida','georgia','hawaii','idaho','illinois','indiana','iowa','kansas','kentucky','louisiana','maine','maryland','massachusetts','michigan','minnesota','mississippi','missouri','montana','nebraska','nevada','new hampshire','new jersey','new mexico','new york','north carolina','north dakota','ohio','oklahoma','oregon','pennsylvania','rhode island','south carolina','south dakota','tennessee','texas','utah','vermont','virginia','washington','west virginia','wisconsin','wyoming','district of columbia']);
+  const US_ABBR = new Set('AL AK AZ AR CA CO CT DE FL GA HI ID IL IN IA KS KY LA ME MD MA MI MN MS MO MT NE NV NH NJ NM NY NC ND OH OK OR PA RI SC SD TN TX UT VT VA WA WV WI WY DC'.split(' '));
+  const US_CITIES = new Set(['san francisco','new york','nyc','los angeles','san diego','seattle','austin','denver','chicago','boston','atlanta','phoenix','dallas','houston','miami','portland','nashville','charlotte','washington, d.c.','washington dc','salt lake city','minneapolis','detroit','philadelphia','raleigh','durham','pittsburgh','las vegas','san jose','palo alto','mountain view','menlo park','sunnyvale','santa clara','oakland','irvine','orange county','sacramento','boulder','kansas city','st. louis','columbus','indianapolis','tampa','orlando','baltimore','richmond','buffalo','rochester','madison','milwaukee','omaha','tempe','scottsdale','bay area','silicon valley']);
+  const NON_US = ['canada','toronto','vancouver','montreal','calgary','ottawa','mexico','mexico city','guadalajara','monterrey','united kingdom','uk','england','london','ireland','dublin','germany','berlin','munich','france','paris','netherlands','amsterdam','spain','madrid','barcelona','italy','milan','poland','warsaw','krakow','portugal','lisbon','sweden','stockholm','denmark','copenhagen','norway','finland','switzerland','zurich','austria','belgium','brussels','czech','prague','romania','bucharest','hungary','budapest','israel','tel aviv','uae','dubai','abu dhabi','saudi','riyadh','qatar','egypt','cairo','india','bangalore','bengaluru','hyderabad','pune','mumbai','delhi','gurgaon','chennai','pakistan','islamabad','lahore','karachi','singapore','japan','tokyo','china','shanghai','beijing','hong kong','taiwan','taipei','korea','seoul','australia','sydney','melbourne','new zealand','brazil','sao paulo','são paulo','argentina','buenos aires','colombia','bogota','chile','santiago','peru','lima','south africa','nigeria','kenya','philippines','manila','vietnam','indonesia','malaysia','thailand','bangkok','emea','apac','latam','dach','benelux','nordics','europe'];
+  const esc = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const tokens = s => s.split(/[,\-\/|()]+|\s{2,}/).map(t => t.trim()).filter(Boolean);
+
+  function classifyUS(loc) {
+    const low = loc.toLowerCase();
+    if (/\b(united states|usa|u\.s\.a?\.?|us only|us-based)\b/.test(low)) return true;
+    if (/(^|[\s\-,(])us([\s\-,)]|$)/.test(low)) return true;
+    const toks = tokens(loc);
+    if (toks.some(t => US_STATES.has(t.toLowerCase()) || US_CITIES.has(t.toLowerCase()))) return true;
+    if (toks.some(t => t.length === 2 && US_ABBR.has(t.toUpperCase()))) return true;
+    if (NON_US.some(m => new RegExp('\\b' + esc(m) + '\\b').test(low))) return false;
+    return null;
+  }
+  function classifyRemote(loc, title, meta = '', body = '') {
+    const l = (loc + ' ' + title).toLowerCase();
+    if (l.includes('hybrid')) return ['hybrid', 'high'];
+    if (/\bremote\b/.test(l)) return ['remote', 'high'];
+    if (/\b(on-?site|in[- ]office)\b/.test(l)) return ['onsite', 'high'];
+    const m = meta.toLowerCase();
+    if (m.includes('hybrid')) return ['hybrid', 'medium'];
+    if (/\bremote\b/.test(m)) return ['remote', 'medium'];
+    if (/\b(on-?site|in[- ]office)\b/.test(m)) return ['onsite', 'medium'];
+    const b = body.toLowerCase();
+    if (/\b(fully remote|remote-first|remote first|this (role|position) is remote|work remotely|remote (role|position|opportunity))\b/.test(b)) return ['remote', 'low'];
+    if (/\bhybrid\b/.test(b)) return ['hybrid', 'low'];
+    if (/\b(on-?site|in[- ]office|in the office)\b/.test(b) && /\b(days? (a|per) week|5 days)\b/.test(b)) return ['onsite', 'low'];
+    return ['unknown', 'none'];
+  }
+  const SAL_RE = /\$\s?(\d{2,3}(?:,\d{3})+|\d{2,3}(?:\.\d)?\s?[kK])\s*(?:-|–|—|to)\s*\$?\s?(\d{2,3}(?:,\d{3})+|\d{2,3}(?:\.\d)?\s?[kK])/g;
+  const money = s => { s = s.replace(/[,\s]/g, ''); return /[kK]$/.test(s) ? Math.round(parseFloat(s) * 1000) : parseInt(s, 10); };
+  function salaryFromText(t) {
+    for (const m of t.matchAll(SAL_RE)) {
+      const lo = money(m[1]), hi = money(m[2]);
+      if (lo >= 40000 && lo <= hi && hi <= 2000000) return { min: lo, max: hi, currency: 'USD', source: 'description' };
+    }
+    return null;
+  }
+  function stripHtml(h) {
+    const d = document.createElement('div'); d.innerHTML = (h || '').replace(/<br\s*\/?>|<\/p>|<\/li>|<\/div>|<\/h\d>/gi, '\n');
+    return d.textContent || '';
+  }
+
+  // ------------------------------------------------------- live adapters --
+  async function liveGreenhouse(c) {
+    const r = await fetch(`https://boards-api.greenhouse.io/v1/boards/${c.board}/jobs?content=true`);
+    if (!r.ok) throw new Error(`HTTP ${r.status}`);
+    const js = (await r.json()).jobs || [];
+    return js.map(j => {
+      const content = stripHtml(j.content);
+      const ranges = j.pay_input_ranges || [];
+      let salary = null;
+      if (ranges[0] && ranges[0].min_cents != null) salary = { min: ranges[0].min_cents / 100, max: ranges[0].max_cents / 100, currency: ranges[0].currency_type || 'USD', source: 'posting' };
+      if (!salary) salary = salaryFromText(content);
+      return {
+        job_id: String(j.id), req_id: j.requisition_id || null, title: j.title || '',
+        location: (j.location && j.location.name) || '',
+        location_detail: (j.offices || []).map(o => o.location || o.name).filter(Boolean).join(' | '),
+        department: (j.departments || []).map(d => d.name).filter(Boolean).join(', '),
+        published_at: j.first_published, updated_at: j.updated_at, url: j.absolute_url, salary,
+        _meta: (j.metadata || []).filter(m => m.value).map(m => `${m.name}: ${m.value}`).join(' '), _content: content,
+      };
+    });
+  }
+  async function liveLever(c) {
+    const r = await fetch(`https://api.lever.co/v0/postings/${c.board}?mode=json`);
+    if (!r.ok) throw new Error(`HTTP ${r.status}`);
+    return (await r.json()).map(j => {
+      const content = j.descriptionPlain || stripHtml(j.description);
+      const sr = j.salaryRange || {};
+      return {
+        job_id: j.id, req_id: null, title: j.text || '', location: (j.categories || {}).location || '',
+        location_detail: (j.allLocations || []).join(' | '), department: [(j.categories || {}).team, (j.categories || {}).department].filter(Boolean).join(' / '),
+        published_at: j.createdAt ? new Date(j.createdAt).toISOString() : null, updated_at: null, url: j.hostedUrl,
+        salary: (sr.min && sr.max) ? { min: sr.min, max: sr.max, currency: sr.currency || 'USD', source: 'posting' } : salaryFromText(content),
+        _meta: `workplaceType: ${j.workplaceType || ''}`, _content: content,
+      };
+    });
+  }
+  async function liveAshby(c) {
+    const r = await fetch(`https://api.ashbyhq.com/posting-api/job-board/${c.board}?includeCompensation=true`);
+    if (!r.ok) throw new Error(`HTTP ${r.status}`);
+    return ((await r.json()).jobs || []).filter(j => j.isListed !== false).map(j => {
+      const content = stripHtml(j.descriptionHtml || j.descriptionPlain);
+      let salary = null;
+      for (const t of ((j.compensation || {}).compensationTiers || [])) {
+        const comp = (t.components || []).find(x => x.compensationType === 'Salary' && x.minValue && x.maxValue);
+        if (comp) { salary = { min: comp.minValue, max: comp.maxValue, currency: comp.currencyCode || 'USD', source: 'posting' }; break; }
+      }
+      if (!salary && (j.compensation || {}).compensationTierSummary) salary = salaryFromText(j.compensation.compensationTierSummary);
+      if (!salary) salary = salaryFromText(content);
+      return {
+        job_id: j.id, req_id: null, title: j.title || '', location: j.location || '',
+        location_detail: (j.secondaryLocations || []).map(s => s.location).filter(Boolean).join(' | '),
+        department: [j.department, j.team].filter(Boolean).join(' / '),
+        published_at: j.publishedAt, updated_at: null, url: j.jobUrl || j.applyUrl, salary,
+        _meta: `workplaceType: ${j.workplaceType || ''}` + (j.isRemote ? ' remote' : ''), _content: content,
+      };
+    });
+  }
+  const LIVE = { greenhouse: liveGreenhouse, lever: liveLever, ashby: liveAshby };
+
+  function applyCriteria(raw, c) {
+    const out = [];
+    for (const j of raw) {
+      const t = j.title.toLowerCase();
+      if (!TITLE_KEYWORDS.some(k => t.includes(k))) continue;
+      const locText = [j.location, j.location_detail].filter(Boolean).join(' ');
+      let us = classifyUS(locText);
+      if (us === false) {
+        if (!/\b(united states|us[- ]based|us remote|remote[- ]us)\b/.test(j._content.toLowerCase())) continue;
+        us = null;
+      }
+      const [remote, conf] = classifyRemote(locText, j.title, j._meta, j._content);
+      const { _meta, _content, ...clean } = j;
+      out.push({ ...clean, us, remote, remote_confidence: conf, company: c.name, key: `${c.ats}:${c.board}:${j.job_id}`, status: 'open' });
+    }
+    return out;
+  }
+
+  async function pullNow(c, btn) {
+    const fn = LIVE[c.ats];
+    if (!fn) { toast(`Live pull isn't supported for ${c.ats} boards yet.`); return; }
+    btn.disabled = true; btn.textContent = 'Pulling…';
+    try {
+      const matched = applyCriteria(await fn(c), c);
+      const known = new Set(data.jobs.filter(j => j.company === c.name).map(j => j.key));
+      const nowOpen = new Set(matched.map(j => j.key));
+      liveExtra[c.name] = matched.filter(j => !known.has(j.key)).map(j => ({ ...j, live: true, first_seen: new Date().toISOString() }));
+      // Live-confirm snapshot rows: anything missing from the live board gets marked closed (live).
+      for (const j of data.jobs) if (j.company === c.name) {
+        if (nowOpen.has(j.key)) { if (j.status === 'closed') { j.status = 'open'; j.live_reopened = true; } }
+        else if (j.status === 'open') { j.status = 'closed'; j.closed_at = new Date().toISOString(); j.live_closed = true; }
+      }
+      liveAt[c.name] = new Date().toISOString();
+      const n = liveExtra[c.name].length;
+      toast(n ? `${c.name}: ${n} new role${n > 1 ? 's' : ''} not in this morning's sweep` : `${c.name}: nothing new since the sweep`);
+    } catch (e) {
+      toast(`${c.name}: live pull failed (${e.message}). The board may block browser access; the daily sweep still works.`);
+    } finally {
+      render();
+    }
+  }
+
+  // ---------------------------------------------------------- rendering --
+  const $ = s => document.querySelector(s);
+  const fmtMoney = n => '$' + Math.round(n).toLocaleString('en-US');
+  const fmtDate = iso => {
+    if (!iso) return '';
+    const d = new Date(iso);
+    if (isNaN(d)) return iso;
+    return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: d.getFullYear() === new Date().getFullYear() ? undefined : 'numeric' });
+  };
+  const fmtTime = iso => { const d = new Date(iso); return isNaN(d) ? '' : d.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' }); };
+  const ago = iso => {
+    const ms = Date.now() - new Date(iso).getTime(); if (isNaN(ms)) return '';
+    const h = Math.floor(ms / 3600000); if (h < 1) return 'just now'; if (h < 24) return `${h}h ago`;
+    const d = Math.floor(h / 24); if (d < 30) return `${d}d ago`; return `${Math.floor(d / 30)}mo ago`;
+  };
+  const hasTime = iso => iso && /T\d\d:\d\d/.test(iso) && !/T00:00:00/.test(iso);
+  const escapeHtml = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+
+  const isNew = j => j.live || new Date(j.first_seen) > newSince;
+  const isWeek = j => (Date.now() - new Date(j.published_at || j.first_seen)) < 7 * 86400000;
+  const needsVerify = j => j.us !== true || j.remote === 'unknown' || j.remote_confidence === 'low';
+
+  function visible(j) {
+    if (j.status === 'closed' && !$('#showClosed').checked) return false;
+    if (filter === 'new' && !isNew(j)) return false;
+    if (filter === 'remote' && j.remote !== 'remote') return false;
+    if (filter === 'hybrid' && j.remote !== 'hybrid') return false;
+    if (filter === 'verify' && !needsVerify(j)) return false;
+    if (query) {
+      const hay = [j.title, j.location, j.location_detail, j.department, j.req_id, j.job_id, j.company].join(' ').toLowerCase();
+      if (!hay.includes(query)) return false;
+    }
+    return true;
+  }
+
+  function remoteBadge(j) {
+    const label = { remote: 'Remote', hybrid: 'Hybrid', onsite: 'On-site', unknown: 'Remote?' }[j.remote] || j.remote;
+    const low = j.remote_confidence === 'low' || j.remote_confidence === 'medium';
+    let html = `<span class="badge b-${j.remote}" title="${j.remote === 'unknown' ? 'Posting does not state remote/hybrid/on-site' : 'Source: ' + (j.remote_confidence === 'high' ? 'location/title' : j.remote_confidence === 'medium' ? 'posting metadata' : 'job description text')}">${label}</span>`;
+    if (j.remote !== 'unknown' && low) html += ` <span class="badge b-verify" title="Inferred from the description, not the location field">verify</span>`;
+    return html;
+  }
+
+  function row(j) {
+    const pub = j.published_at;
+    const badges = [];
+    if (j.live) badges.push('<span class="badge b-live" title="Found by a live pull; not yet in the daily snapshot">live</span>');
+    if (isNew(j) && j.status === 'open') badges.push('<span class="badge b-new">new</span>');
+    if (j.live_reopened) badges.push('<span class="badge b-reopened">reopened</span>');
+    if (j.status === 'closed') badges.push(`<span class="badge b-closed" title="No longer on the board${j.closed_at ? ' as of ' + fmtDate(j.closed_at) : ''}">closed</span>`);
+    const sal = j.salary
+      ? `${fmtMoney(j.salary.min)}–${fmtMoney(j.salary.max)}${j.salary.currency && j.salary.currency !== 'USD' ? ' ' + j.salary.currency : ''}<span class="sub">${j.salary.source === 'posting' ? 'from posting' : 'from description'}</span>`
+      : '<span class="sub">not listed</span>';
+    const ids = [j.req_id ? `Req ${escapeHtml(j.req_id)}` : null, `#${escapeHtml(j.job_id)}`].filter(Boolean).join('<br>');
+    return `<tr class="${j.status}">
+      <td class="title"><a href="${escapeHtml(j.url)}" target="_blank" rel="noopener">${escapeHtml(j.title)}</a>${j.department ? `<span class="dept">${escapeHtml(j.department)}</span>` : ''} ${badges.join(' ')}</td>
+      <td>${escapeHtml(j.location || '—')}${j.location_detail && j.location_detail !== j.location ? `<span class="sub">${escapeHtml(j.location_detail)}</span>` : ''}${j.us !== true ? ' <span class="badge b-verify" title="Location does not clearly state a US location">verify US</span>' : ''}</td>
+      <td class="nowrap">${remoteBadge(j)}</td>
+      <td class="nowrap">${pub ? `${fmtDate(pub)}${hasTime(pub) ? ` <span class="sub">${fmtTime(pub)} · ${ago(pub)}</span>` : `<span class="sub">${ago(pub)}</span>`}` : `<span class="sub">first seen ${fmtDate(j.first_seen)}</span>`}</td>
+      <td class="nowrap">${sal}</td>
+      <td class="mono">${ids}</td>
+    </tr>`;
+  }
+
+  function render() {
+    const jobs = data.jobs.concat(...Object.values(liveExtra));
+    const open = jobs.filter(j => j.status === 'open');
+    $('#tNew').textContent = open.filter(isNew).length;
+    $('#tWeek').textContent = open.filter(isWeek).length;
+    $('#tOpen').textContent = open.length;
+    $('#tCompanies').textContent = data.companies.length;
+    const errs = data.companies.filter(c => c.status === 'error');
+    $('#tErrWrap').hidden = !errs.length; $('#tErr').textContent = errs.length;
+    $('#generated').textContent = data.generated_at
+      ? `Last sweep ${fmtDate(data.generated_at)} at ${fmtTime(data.generated_at)} (${ago(data.generated_at)})${lastVisit ? ` · showing new since your last visit ${ago(lastVisit)}` : ''}`
+      : 'No sweep data yet — run the GitHub Action or scripts/fetch_jobs.py';
+
+    const container = $('#companies');
+    container.innerHTML = '';
+    for (const c of data.companies) {
+      const rows = jobs.filter(j => j.company === c.name).filter(visible);
+      const openCount = jobs.filter(j => j.company === c.name && j.status === 'open').length;
+      const el = document.createElement('section');
+      el.className = 'company';
+      const meta = c.status === 'error'
+        ? `<span class="meta err" title="${escapeHtml(c.error || '')}">⚠ fetch failed in last sweep</span>`
+        : c.status === 'ok' ? `<span class="meta">${openCount} matching of ${c.total_jobs} open roles</span>` : `<span class="meta">${escapeHtml(c.status || '')}</span>`;
+      el.innerHTML = `<div class="head">
+          <h2>${escapeHtml(c.name)}</h2>${meta}
+          ${liveAt[c.name] ? `<span class="meta">· live-checked ${ago(liveAt[c.name])}</span>` : ''}
+          <span class="spacer"></span>
+          ${c.url ? `<a href="${escapeHtml(c.url)}" target="_blank" rel="noopener">careers page ↗</a>` : ''}
+          <button class="pull">Pull now</button>
+        </div>
+        ${rows.length ? `<table><thead><tr><th>Role</th><th>Location</th><th>Work</th><th>Posted</th><th>Salary</th><th>IDs</th></tr></thead><tbody>${rows.map(row).join('')}</tbody></table>`
+                      : `<div class="empty">${openCount ? 'Nothing matches the current filter.' : 'No open roles with “product” in the title in the US right now.'}</div>`}`;
+      el.querySelector('.pull').addEventListener('click', e => pullNow(c, e.currentTarget));
+      container.appendChild(el);
+    }
+  }
+
+  let toastTimer;
+  function toast(msg) { const t = $('#toast'); t.textContent = msg; t.classList.add('show'); clearTimeout(toastTimer); toastTimer = setTimeout(() => t.classList.remove('show'), 4500); }
+
+  // --------------------------------------------------------------- wiring --
+  document.querySelectorAll('.chip').forEach(b => b.addEventListener('click', () => {
+    document.querySelectorAll('.chip').forEach(x => x.classList.remove('on')); b.classList.add('on'); filter = b.dataset.f; render();
+  }));
+  $('#q').addEventListener('input', e => { query = e.target.value.trim().toLowerCase(); render(); });
+  $('#showClosed').addEventListener('change', render);
+  $('#pullAll').addEventListener('click', async e => {
+    e.currentTarget.disabled = true;
+    for (const c of data.companies) { const b = [...document.querySelectorAll('.company')].find(s => s.querySelector('h2').textContent === c.name)?.querySelector('.pull'); await pullNow(c, b || e.currentTarget); }
+    e.currentTarget.disabled = false;
+  });
+
+  fetch(DATA_URL + '?t=' + Date.now()).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(d => { data = d; render(); })
+    .catch(() => { $('#generated').textContent = 'No sweep data yet — run the GitHub Action (or scripts/fetch_jobs.py) to create data/jobs.json.'; render(); });
+})();
+</script>
+</body>
+</html>
