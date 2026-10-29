@@ -1,8 +1,11 @@
 {
-  "generated_at": "2026-10-29T23:17:57+00:00",
+  "generated_at": "2026-10-29T23:40:13+00:00",
   "criteria": {
     "title_keywords": [
       "product"
+    ],
+    "title_exclude_words": [
+      "design"
     ],
     "country": "United States"
   },
@@ -12,22 +15,33 @@
       "ats": "greenhouse",
       "board": "samsara",
       "url": "https://www.samsara.com/company/careers/roles",
-      "fetched_at": "2026-10-29T23:17:57+00:00",
+      "fetched_at": "2026-10-29T23:40:13+00:00",
       "status": "ok",
       "error": null,
       "total_jobs": 319,
-      "matched": 23
+      "matched": 21
     },
     {
       "name": "Motive",
       "ats": "greenhouse",
       "board": "gomotive",
       "url": "https://gomotive.com/company/careers/jobs/",
-      "fetched_at": "2026-10-29T23:17:57+00:00",
+      "fetched_at": "2026-10-29T23:40:13+00:00",
       "status": "ok",
       "error": null,
       "total_jobs": 167,
-      "matched": 5
+      "matched": 4
+    },
+    {
+      "name": "Toast",
+      "ats": "greenhouse",
+      "board": "toast",
+      "url": "https://careers.toasttab.com/jobs/search",
+      "fetched_at": "2026-10-29T23:40:13+00:00",
+      "status": "ok",
+      "error": null,
+      "total_jobs": 337,
+      "matched": 6
     }
   ],
   "jobs": [
@@ -53,7 +67,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:8325411",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-29T23:17:57+00:00",
+      "last_seen": "2026-10-29T23:40:13+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -79,7 +93,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:8325410",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-29T23:17:57+00:00",
+      "last_seen": "2026-10-29T23:40:13+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -105,7 +119,33 @@
       "company": "Motive",
       "key": "greenhouse:gomotive:8913113002",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-29T23:17:57+00:00",
+      "last_seen": "2026-10-29T23:40:13+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "8305972",
+      "req_id": "R15425",
+      "title": "Associate Product Manager, Data Governance",
+      "location": "Remote, US",
+      "location_detail": "Remote - USA",
+      "department": "R & D : BTT : Enterprise Data",
+      "published_at": "2026-10-23T15:40:25-04:00",
+      "updated_at": "2026-10-23T15:51:36-04:00",
+      "url": "https://careers.toasttab.com/jobs?gh_jid=8305972",
+      "salary": {
+        "min": 105000,
+        "max": 168000,
+        "currency": "USD",
+        "source": "posting"
+      },
+      "us": true,
+      "remote": "remote",
+      "remote_confidence": "high",
+      "company": "Toast",
+      "key": "greenhouse:toast:8305972",
+      "first_seen": "2026-10-29T23:40:13+00:00",
+      "last_seen": "2026-10-29T23:40:13+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -131,7 +171,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:8315136",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-29T23:17:57+00:00",
+      "last_seen": "2026-10-29T23:40:13+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -157,7 +197,33 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:8315122",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-29T23:17:57+00:00",
+      "last_seen": "2026-10-29T23:40:13+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "8245664",
+      "req_id": "R15263",
+      "title": "Senior Product Manager, Lending",
+      "location": "Remote, US",
+      "location_detail": "Remote - USA",
+      "department": "R & D : Product : Embedded Finance",
+      "published_at": "2026-10-21T09:52:05-04:00",
+      "updated_at": "2026-10-21T09:52:05-04:00",
+      "url": "https://careers.toasttab.com/jobs?gh_jid=8245664",
+      "salary": {
+        "min": 159000,
+        "max": 254000,
+        "currency": "USD",
+        "source": "posting"
+      },
+      "us": true,
+      "remote": "remote",
+      "remote_confidence": "high",
+      "company": "Toast",
+      "key": "greenhouse:toast:8245664",
+      "first_seen": "2026-10-29T23:40:13+00:00",
+      "last_seen": "2026-10-29T23:40:13+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -183,7 +249,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:8300580",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-29T23:17:57+00:00",
+      "last_seen": "2026-10-29T23:40:13+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -209,7 +275,7 @@
       "company": "Motive",
       "key": "greenhouse:gomotive:8797393002",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-29T23:17:57+00:00",
+      "last_seen": "2026-10-29T23:40:13+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -235,7 +301,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:8233947",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-29T23:17:57+00:00",
+      "last_seen": "2026-10-29T23:40:13+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -261,7 +327,7 @@
       "company": "Motive",
       "key": "greenhouse:gomotive:8880889002",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-29T23:17:57+00:00",
+      "last_seen": "2026-10-29T23:40:13+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -287,7 +353,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:8275248",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-29T23:17:57+00:00",
+      "last_seen": "2026-10-29T23:40:13+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -313,7 +379,111 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:8256425",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-29T23:17:57+00:00",
+      "last_seen": "2026-10-29T23:40:13+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "8259263",
+      "req_id": "R15312",
+      "title": "Principal Product Manager,  Kitchen Commercial Lead",
+      "location": "Remote, US",
+      "location_detail": "Remote - USA",
+      "department": "R & D : Product : Commerce",
+      "published_at": "2026-10-09T15:13:56-04:00",
+      "updated_at": "2026-10-28T14:51:32-04:00",
+      "url": "https://careers.toasttab.com/jobs?gh_jid=8259263",
+      "salary": {
+        "min": 105000,
+        "max": 168000,
+        "currency": "USD",
+        "source": "posting"
+      },
+      "us": true,
+      "remote": "remote",
+      "remote_confidence": "high",
+      "company": "Toast",
+      "key": "greenhouse:toast:8259263",
+      "first_seen": "2026-10-29T23:40:13+00:00",
+      "last_seen": "2026-10-29T23:40:13+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "8249029",
+      "req_id": "R15283",
+      "title": "Associate Counsel, Product and Marketing",
+      "location": "Remote - US",
+      "location_detail": "Remote - USA",
+      "department": "G & A : Legal",
+      "published_at": "2026-10-05T15:21:47-04:00",
+      "updated_at": "2026-10-07T10:48:12-04:00",
+      "url": "https://careers.toasttab.com/jobs?gh_jid=8249029",
+      "salary": {
+        "min": 152000,
+        "max": 243000,
+        "currency": "USD",
+        "source": "posting"
+      },
+      "us": true,
+      "remote": "remote",
+      "remote_confidence": "high",
+      "company": "Toast",
+      "key": "greenhouse:toast:8249029",
+      "first_seen": "2026-10-29T23:40:13+00:00",
+      "last_seen": "2026-10-29T23:40:13+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "8226770",
+      "req_id": "R15207",
+      "title": "Product Lead, New Ventures",
+      "location": "Remote, USA",
+      "location_detail": "Remote - USA",
+      "department": "R & D : Product : Retail",
+      "published_at": "2026-09-29T15:20:47-04:00",
+      "updated_at": "2026-10-28T14:13:23-04:00",
+      "url": "https://careers.toasttab.com/jobs?gh_jid=8226770",
+      "salary": {
+        "min": 190000,
+        "max": 304000,
+        "currency": "USD",
+        "source": "posting"
+      },
+      "us": true,
+      "remote": "remote",
+      "remote_confidence": "high",
+      "company": "Toast",
+      "key": "greenhouse:toast:8226770",
+      "first_seen": "2026-10-29T23:40:13+00:00",
+      "last_seen": "2026-10-29T23:40:13+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "8180264",
+      "req_id": "R14992",
+      "title": "Product Counsel",
+      "location": "Remote - USA",
+      "location_detail": "Boston, MA, United States",
+      "department": "G & A : Legal",
+      "published_at": "2026-09-14T11:06:46-04:00",
+      "updated_at": "2026-10-05T12:40:42-04:00",
+      "url": "https://careers.toasttab.com/jobs?gh_jid=8180264",
+      "salary": {
+        "min": 205000,
+        "max": 328000,
+        "currency": "USD",
+        "source": "posting"
+      },
+      "us": true,
+      "remote": "remote",
+      "remote_confidence": "high",
+      "company": "Toast",
+      "key": "greenhouse:toast:8180264",
+      "first_seen": "2026-10-29T23:40:13+00:00",
+      "last_seen": "2026-10-29T23:40:13+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -339,7 +509,7 @@
       "company": "Motive",
       "key": "greenhouse:gomotive:8782064002",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-29T23:17:57+00:00",
+      "last_seen": "2026-10-29T23:40:13+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -365,33 +535,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:8179538",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-29T23:17:57+00:00",
-      "status": "open",
-      "closed_at": null
-    },
-    {
-      "job_id": "8770221002",
-      "req_id": "P-502156",
-      "title": "Director, Product Design",
-      "location": "Hybrid - San Francisco, California",
-      "location_detail": "United States",
-      "department": "Financial Products Product",
-      "published_at": "2026-09-08T23:31:55-04:00",
-      "updated_at": "2026-10-28T19:34:35-04:00",
-      "url": "https://job-boards.greenhouse.io/gomotive/jobs/8770221002",
-      "salary": {
-        "min": 225000,
-        "max": 295000,
-        "currency": "USD",
-        "source": "posting"
-      },
-      "us": true,
-      "remote": "hybrid",
-      "remote_confidence": "high",
-      "company": "Motive",
-      "key": "greenhouse:gomotive:8770221002",
-      "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-29T23:17:57+00:00",
+      "last_seen": "2026-10-29T23:40:13+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -417,7 +561,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:8177633",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-29T23:17:57+00:00",
+      "last_seen": "2026-10-29T23:40:13+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -443,7 +587,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:8148044",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-29T23:17:57+00:00",
+      "last_seen": "2026-10-29T23:40:13+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -469,7 +613,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:8112836",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-29T23:17:57+00:00",
+      "last_seen": "2026-10-29T23:40:13+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -495,7 +639,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:8007939",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-29T23:17:57+00:00",
+      "last_seen": "2026-10-29T23:40:13+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -521,7 +665,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:7982346",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-29T23:17:57+00:00",
+      "last_seen": "2026-10-29T23:40:13+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -547,7 +691,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:7982336",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-29T23:17:57+00:00",
+      "last_seen": "2026-10-29T23:40:13+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -573,7 +717,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:7982331",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-29T23:17:57+00:00",
+      "last_seen": "2026-10-29T23:40:13+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -599,7 +743,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:7982328",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-29T23:17:57+00:00",
+      "last_seen": "2026-10-29T23:40:13+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -625,7 +769,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:7982323",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-29T23:17:57+00:00",
+      "last_seen": "2026-10-29T23:40:13+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -651,7 +795,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:7982326",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-29T23:17:57+00:00",
+      "last_seen": "2026-10-29T23:40:13+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -677,59 +821,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:7960413",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-29T23:17:57+00:00",
-      "status": "open",
-      "closed_at": null
-    },
-    {
-      "job_id": "7839138",
-      "req_id": "JR11536",
-      "title": "Director, Product Design",
-      "location": "Remote - US",
-      "location_detail": "San Francisco - SF9",
-      "department": "Product Design",
-      "published_at": "2026-04-28T15:37:31-04:00",
-      "updated_at": "2026-10-28T13:22:35-04:00",
-      "url": "https://www.samsara.com/company/careers/roles/7839138?gh_jid=7839138",
-      "salary": {
-        "min": 235600,
-        "max": 294500,
-        "currency": "USD",
-        "source": "posting"
-      },
-      "us": true,
-      "remote": "remote",
-      "remote_confidence": "high",
-      "company": "Samsara",
-      "key": "greenhouse:samsara:7839138",
-      "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-29T23:17:57+00:00",
-      "status": "open",
-      "closed_at": null
-    },
-    {
-      "job_id": "7525300",
-      "req_id": "JR10825",
-      "title": "Staff Product Design Engineer",
-      "location": "San Francisco - SF9",
-      "location_detail": "San Francisco - SF9",
-      "department": "Hardware Engineering",
-      "published_at": "2026-01-27T08:46:30-05:00",
-      "updated_at": "2026-10-28T13:21:50-04:00",
-      "url": "https://www.samsara.com/company/careers/roles/7525300?gh_jid=7525300",
-      "salary": {
-        "min": 220000,
-        "max": 275000,
-        "currency": "USD",
-        "source": "posting"
-      },
-      "us": true,
-      "remote": "hybrid",
-      "remote_confidence": "low",
-      "company": "Samsara",
-      "key": "greenhouse:samsara:7525300",
-      "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-29T23:17:57+00:00",
+      "last_seen": "2026-10-29T23:40:13+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -755,7 +847,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:7292081",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-29T23:17:57+00:00",
+      "last_seen": "2026-10-29T23:40:13+00:00",
       "status": "open",
       "closed_at": null
     }
