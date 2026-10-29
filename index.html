@@ -167,10 +167,10 @@
   const TITLE_KEYWORDS = ['product'];
   const US_STATES = new Set(['alabama','alaska','arizona','arkansas','california','colorado','connecticut','delaware','florida','georgia','hawaii','idaho','illinois','indiana','iowa','kansas','kentucky','louisiana','maine','maryland','massachusetts','michigan','minnesota','mississippi','missouri','montana','nebraska','nevada','new hampshire','new jersey','new mexico','new york','north carolina','north dakota','ohio','oklahoma','oregon','pennsylvania','rhode island','south carolina','south dakota','tennessee','texas','utah','vermont','virginia','washington','west virginia','wisconsin','wyoming','district of columbia']);
   const US_ABBR = new Set('AL AK AZ AR CA CO CT DE FL GA HI ID IL IN IA KS KY LA ME MD MA MI MN MS MO MT NE NV NH NJ NM NY NC ND OH OK OR PA RI SC SD TN TX UT VT VA WA WV WI WY DC'.split(' '));
-  const US_CITIES = new Set(['san francisco','new york','nyc','los angeles','san diego','seattle','austin','denver','chicago','boston','atlanta','phoenix','dallas','houston','miami','portland','nashville','charlotte','washington, d.c.','washington dc','salt lake city','minneapolis','detroit','philadelphia','raleigh','durham','pittsburgh','las vegas','san jose','palo alto','mountain view','menlo park','sunnyvale','santa clara','oakland','irvine','orange county','sacramento','boulder','kansas city','st. louis','columbus','indianapolis','tampa','orlando','baltimore','richmond','buffalo','rochester','madison','milwaukee','omaha','tempe','scottsdale','bay area','silicon valley']);
+  const US_CITIES = new Set(['san francisco','new york','nyc','los angeles','san diego','seattle','austin','denver','chicago','boston','atlanta','phoenix','dallas','houston','miami','portland','nashville','charlotte','washington, d.c.','washington dc','salt lake city','minneapolis','detroit','philadelphia','raleigh','durham','pittsburgh','las vegas','san jose','palo alto','mountain view','menlo park','sunnyvale','santa clara','oakland','irvine','orange county','sacramento','boulder','kansas city','st. louis','columbus','indianapolis','tampa','orlando','baltimore','richmond','buffalo','rochester','madison','milwaukee','omaha','tempe','scottsdale','bay area','sf bay area','sf','silicon valley']);
   const NON_US = ['canada','toronto','vancouver','montreal','calgary','ottawa','mexico','mexico city','guadalajara','monterrey','united kingdom','uk','england','london','ireland','dublin','germany','berlin','munich','france','paris','netherlands','amsterdam','spain','madrid','barcelona','italy','milan','poland','warsaw','krakow','portugal','lisbon','sweden','stockholm','denmark','copenhagen','norway','finland','switzerland','zurich','austria','belgium','brussels','czech','prague','romania','bucharest','hungary','budapest','israel','tel aviv','uae','dubai','abu dhabi','saudi','riyadh','qatar','egypt','cairo','india','bangalore','bengaluru','hyderabad','pune','mumbai','delhi','gurgaon','chennai','pakistan','islamabad','lahore','karachi','singapore','japan','tokyo','china','shanghai','beijing','hong kong','taiwan','taipei','korea','seoul','australia','sydney','melbourne','new zealand','brazil','sao paulo','são paulo','argentina','buenos aires','colombia','bogota','chile','santiago','peru','lima','south africa','nigeria','kenya','philippines','manila','vietnam','indonesia','malaysia','thailand','bangkok','emea','apac','latam','dach','benelux','nordics','europe'];
   const esc = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-  const tokens = s => s.split(/[,\-\/|()]+|\s{2,}/).map(t => t.trim()).filter(Boolean);
+  const tokens = s => s.split(/[,;\-\/|()]+|\s{2,}/).map(t => t.trim()).filter(Boolean);
 
   function classifyUS(loc) {
     const low = loc.toLowerCase();
@@ -215,7 +215,14 @@
   async function liveGreenhouse(c) {
     const r = await fetch(`https://boards-api.greenhouse.io/v1/boards/${c.board}/jobs?content=true`);
     if (!r.ok) throw new Error(`HTTP ${r.status}`);
-    const js = (await r.json()).jobs || [];
+    const js = ((await r.json()).jobs || []).filter(j => TITLE_KEYWORDS.some(k => (j.title || '').toLowerCase().includes(k)));
+    // The list endpoint omits pay ranges; fetch each matching job's detail (a few dozen small requests).
+    await Promise.all(js.map(async j => {
+      try {
+        const d = await (await fetch(`https://boards-api.greenhouse.io/v1/boards/${c.board}/jobs/${j.id}?pay_transparency=true`)).json();
+        for (const k of ['content', 'pay_input_ranges', 'metadata', 'offices', 'location']) if (d[k] != null) j[k] = d[k];
+      } catch (e) { /* best effort */ }
+    }));
     return js.map(j => {
       const content = stripHtml(j.content);
       const ranges = j.pay_input_ranges || [];
@@ -275,13 +282,10 @@
     for (const j of raw) {
       const t = j.title.toLowerCase();
       if (!TITLE_KEYWORDS.some(k => t.includes(k))) continue;
-      const locText = [j.location, j.location_detail].filter(Boolean).join(' ');
-      let us = classifyUS(locText);
-      if (us === false) {
-        if (!/\b(united states|us[- ]based|us remote|remote[- ]us)\b/.test(j._content.toLowerCase())) continue;
-        us = null;
-      }
-      const [remote, conf] = classifyRemote(locText, j.title, j._meta, j._content);
+      let us = classifyUS(j.location);
+      if (us === null && j.location_detail) us = classifyUS(j.location_detail);
+      if (us === false) continue;
+      const [remote, conf] = classifyRemote(j.location, j.title, [j._meta, j.location_detail].filter(Boolean).join(' '), j._content);
       const { _meta, _content, ...clean } = j;
       out.push({ ...clean, us, remote, remote_confidence: conf, company: c.name, key: `${c.ats}:${c.board}:${j.job_id}`, status: 'open' });
     }

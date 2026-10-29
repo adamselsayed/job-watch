@@ -106,7 +106,7 @@ US_CITIES = {
     "mountain view","menlo park","sunnyvale","santa clara","oakland","irvine","orange county",
     "sacramento","boulder","kansas city","st. louis","columbus","indianapolis","tampa",
     "orlando","baltimore","richmond","buffalo","rochester","madison","milwaukee","omaha",
-    "tempe","scottsdale","bay area","silicon valley",
+    "tempe","scottsdale","bay area","sf bay area","sf","silicon valley",
 }
 NON_US_MARKERS = {
     "canada","toronto","vancouver","montreal","calgary","ottawa","mexico","mexico city",
@@ -127,7 +127,7 @@ NON_US_MARKERS = {
 
 
 def _tokens(s):
-    return [t.strip() for t in re.split(r"[,\-/|()]+|\s{2,}", s) if t.strip()]
+    return [t.strip() for t in re.split(r"[,;\-/|()]+|\s{2,}", s) if t.strip()]
 
 
 def classify_us(location_text):
@@ -204,6 +204,15 @@ def fetch_greenhouse(company):
     out = []
     for j in data.get("jobs", []):
         title = j.get("title", "") or ""
+        if title_matches(title):
+            # The list endpoint omits pay ranges; the per-job endpoint has them.
+            try:
+                detail = fetch_json(f"https://boards-api.greenhouse.io/v1/boards/{board}/jobs/{j['id']}?pay_transparency=true")
+                for k in ("content", "pay_input_ranges", "metadata", "offices", "location"):
+                    if detail.get(k) is not None:
+                        j[k] = detail[k]
+            except Exception as e:          # noqa: BLE001 - enrichment is best-effort
+                log(f"[{company['name']}] detail fetch failed for {j.get('id')}: {e}")
         loc = (j.get("location") or {}).get("name", "") or ""
         offices = [o.get("name", "") for o in (j.get("offices") or []) if o.get("name")]
         office_locs = [o.get("location", "") for o in (j.get("offices") or []) if o.get("location")]
@@ -319,19 +328,25 @@ ADAPTERS = {"greenhouse": fetch_greenhouse, "lever": fetch_lever, "ashby": fetch
 
 # --------------------------------------------------------------- filtering --
 
+def title_matches(title):
+    t = title.lower()
+    return any(k in t for k in TITLE_KEYWORDS)
+
+
 def matches(job):
     """Apply the watch criteria. Returns (keep, annotated_job)."""
-    title_low = job["title"].lower()
-    if not any(k in title_low for k in TITLE_KEYWORDS):
+    if not title_matches(job["title"]):
         return False, None
-    loc_text = " ".join(x for x in (job["location"], job["location_detail"]) if x)
-    us = classify_us(loc_text)
+    # The posting's own location field is authoritative. Office metadata is only a
+    # fallback: boards often attach a generic "United States" office to every role.
+    us = classify_us(job["location"])
+    if us is None and job["location_detail"]:
+        us = classify_us(job["location_detail"])
     if us is False:
-        # location names a non-US place, but the description may still say "US remote"
-        if not re.search(r"\b(united states|us[- ]based|us remote|remote[- ]us)\b", job["_content"].lower()):
-            return False, None
-        us = None
-    remote, conf = classify_remote(loc_text, job["title"], job["_meta_text"], job["_content"])
+        return False, None
+    remote, conf = classify_remote(job["location"], job["title"],
+                                   " ".join(x for x in (job["_meta_text"], job["location_detail"]) if x),
+                                   job["_content"])
     j = {k: v for k, v in job.items() if not k.startswith("_")}
     j["us"] = us                      # True / None (None => "verify" flag on dashboard)
     j["remote"] = remote
