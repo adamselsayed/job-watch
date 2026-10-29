@@ -30,6 +30,7 @@ CHANGES_FILE = os.path.join(ROOT, "data", "changes.log")
 # ---------------------------------------------------------------- criteria --
 
 TITLE_KEYWORDS = ["product"]          # title must contain one of these (case-insensitive)
+TITLE_EXCLUDE_WORDS = ["design"]      # ...and must not contain any of these as a standalone word
 KEEP_CLOSED_DAYS = 30                 # how long closed roles stay visible on the dashboard
 
 # ------------------------------------------------------------- helpers -----
@@ -330,7 +331,9 @@ ADAPTERS = {"greenhouse": fetch_greenhouse, "lever": fetch_lever, "ashby": fetch
 
 def title_matches(title):
     t = title.lower()
-    return any(k in t for k in TITLE_KEYWORDS)
+    if not any(k in t for k in TITLE_KEYWORDS):
+        return False
+    return not any(re.search(r"\b" + re.escape(w) + r"\b", t) for w in TITLE_EXCLUDE_WORDS)
 
 
 def matches(job):
@@ -449,6 +452,8 @@ def main(only=None):
                 del prev_jobs[key]
         if cname not in {c["name"] for c in companies}:
             prev_jobs.pop(key, None)
+        elif not title_matches(j.get("title", "")):      # criteria changed since this was recorded
+            prev_jobs.pop(key, None)
 
     def _ts(s):
         try:
@@ -461,7 +466,7 @@ def main(only=None):
 
     out = {
         "generated_at": ts,
-        "criteria": {"title_keywords": TITLE_KEYWORDS, "country": "United States"},
+        "criteria": {"title_keywords": TITLE_KEYWORDS, "title_exclude_words": TITLE_EXCLUDE_WORDS, "country": "United States"},
         "companies": company_status,
         "jobs": jobs,
     }

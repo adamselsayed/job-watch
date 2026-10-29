@@ -55,6 +55,8 @@
   .chip { border-radius: 999px; padding: 5px 11px; font-size: 13px; }
   .chip.on { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); }
   .controls label { font-size: 13px; color: var(--muted); display: inline-flex; align-items: center; gap: 5px; }
+  .controls select { font: inherit; font-size: 13px; padding: 5px 8px; border: 1px solid var(--border); border-radius: 8px; background: var(--surface); color: var(--text); }
+  td.co { white-space: nowrap; font-weight: 600; color: var(--muted); }
 
   .company { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); margin-bottom: 14px; box-shadow: var(--shadow); overflow: hidden; }
   .company .head { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; padding: 12px 16px; border-bottom: 1px solid var(--border); background: var(--surface-2); }
@@ -130,12 +132,21 @@
     <button class="chip" data-f="hybrid">Hybrid</button>
     <button class="chip" data-f="verify">Needs verifying</button>
     <label><input type="checkbox" id="showClosed"> show recently closed</label>
+    <span class="spacer" style="flex:1"></span>
+    <label>view <select id="view"><option value="grouped">by company</option><option value="flat">all roles</option></select></label>
+    <label>sort <select id="sort">
+      <option value="posted-desc">posted · newest first</option>
+      <option value="posted-asc">posted · oldest first</option>
+      <option value="salary-desc">salary · highest first</option>
+      <option value="company">company, then posted</option>
+      <option value="title">title A–Z</option>
+    </select></label>
   </div>
 
   <div id="companies"></div>
 
   <p class="note">
-    Matching rule: title contains “product”, location in the United States (or not stated — flagged <span class="badge b-verify">verify US</span>).
+    Matching rule: title contains “product” and does not contain the standalone word “design”, location in the United States (or not stated — flagged <span class="badge b-verify">verify US</span>).
     Remote status comes from the posting's location, then its metadata, then its description; anything inferred from the description or not found at all is flagged.
     The daily sweep runs at 6 AM Pacific via GitHub Actions. <strong>Pull now</strong> reads the company's live job board straight from your browser and shows anything the sweep hasn't recorded yet as <span class="badge b-live">live</span>.
     Edit <code>companies.yml</code> in the repo to add companies.
@@ -165,6 +176,8 @@
   // ------------------------------------------------------ classification --
   // Mirrors scripts/fetch_jobs.py so "Pull now" applies the same rules.
   const TITLE_KEYWORDS = ['product'];
+  const TITLE_EXCLUDE_WORDS = ['design'];   // standalone word only ("Designer" still passes)
+  const titleMatches = t => { t = (t || '').toLowerCase(); return TITLE_KEYWORDS.some(k => t.includes(k)) && !TITLE_EXCLUDE_WORDS.some(w => new RegExp('\\b' + esc(w) + '\\b').test(t)); };
   const US_STATES = new Set(['alabama','alaska','arizona','arkansas','california','colorado','connecticut','delaware','florida','georgia','hawaii','idaho','illinois','indiana','iowa','kansas','kentucky','louisiana','maine','maryland','massachusetts','michigan','minnesota','mississippi','missouri','montana','nebraska','nevada','new hampshire','new jersey','new mexico','new york','north carolina','north dakota','ohio','oklahoma','oregon','pennsylvania','rhode island','south carolina','south dakota','tennessee','texas','utah','vermont','virginia','washington','west virginia','wisconsin','wyoming','district of columbia']);
   const US_ABBR = new Set('AL AK AZ AR CA CO CT DE FL GA HI ID IL IN IA KS KY LA ME MD MA MI MN MS MO MT NE NV NH NJ NM NY NC ND OH OK OR PA RI SC SD TN TX UT VT VA WA WV WI WY DC'.split(' '));
   const US_CITIES = new Set(['san francisco','new york','nyc','los angeles','san diego','seattle','austin','denver','chicago','boston','atlanta','phoenix','dallas','houston','miami','portland','nashville','charlotte','washington, d.c.','washington dc','salt lake city','minneapolis','detroit','philadelphia','raleigh','durham','pittsburgh','las vegas','san jose','palo alto','mountain view','menlo park','sunnyvale','santa clara','oakland','irvine','orange county','sacramento','boulder','kansas city','st. louis','columbus','indianapolis','tampa','orlando','baltimore','richmond','buffalo','rochester','madison','milwaukee','omaha','tempe','scottsdale','bay area','sf bay area','sf','silicon valley']);
@@ -215,7 +228,7 @@
   async function liveGreenhouse(c) {
     const r = await fetch(`https://boards-api.greenhouse.io/v1/boards/${c.board}/jobs?content=true`);
     if (!r.ok) throw new Error(`HTTP ${r.status}`);
-    const js = ((await r.json()).jobs || []).filter(j => TITLE_KEYWORDS.some(k => (j.title || '').toLowerCase().includes(k)));
+    const js = ((await r.json()).jobs || []).filter(j => titleMatches(j.title));
     // The list endpoint omits pay ranges; fetch each matching job's detail (a few dozen small requests).
     await Promise.all(js.map(async j => {
       try {
@@ -280,8 +293,7 @@
   function applyCriteria(raw, c) {
     const out = [];
     for (const j of raw) {
-      const t = j.title.toLowerCase();
-      if (!TITLE_KEYWORDS.some(k => t.includes(k))) continue;
+      if (!titleMatches(j.title)) continue;
       let us = classifyUS(j.location);
       if (us === null && j.location_detail) us = classifyUS(j.location_detail);
       if (us === false) continue;
@@ -359,6 +371,18 @@
     return html;
   }
 
+  let flat = false, sortKey = 'posted-desc';
+  const postedTs = j => new Date(j.published_at || j.first_seen).getTime() || 0;
+  const SORTS = {
+    'posted-desc': (a, b) => postedTs(b) - postedTs(a),
+    'posted-asc':  (a, b) => postedTs(a) - postedTs(b),
+    'salary-desc': (a, b) => ((b.salary && b.salary.max) || 0) - ((a.salary && a.salary.max) || 0) || postedTs(b) - postedTs(a),
+    'company':     (a, b) => a.company.localeCompare(b.company) || postedTs(b) - postedTs(a),
+    'title':       (a, b) => a.title.localeCompare(b.title),
+  };
+  const sortRows = rows => rows.slice().sort((a, b) => (a.status === 'closed') - (b.status === 'closed') || SORTS[sortKey](a, b));
+  const THEAD = () => `<thead><tr>${flat ? '<th>Company</th>' : ''}<th>Role</th><th>Location</th><th>Work</th><th>Posted</th><th>Salary</th><th>IDs</th></tr></thead>`;
+
   function row(j) {
     const pub = j.published_at;
     const badges = [];
@@ -371,6 +395,7 @@
       : '<span class="sub">not listed</span>';
     const ids = [j.req_id ? `Req ${escapeHtml(j.req_id)}` : null, `#${escapeHtml(j.job_id)}`].filter(Boolean).join('<br>');
     return `<tr class="${j.status}">
+      ${flat ? `<td class="co">${escapeHtml(j.company)}</td>` : ''}
       <td class="title"><a href="${escapeHtml(j.url)}" target="_blank" rel="noopener">${escapeHtml(j.title)}</a>${j.department ? `<span class="dept">${escapeHtml(j.department)}</span>` : ''} ${badges.join(' ')}</td>
       <td>${escapeHtml(j.location || '—')}${j.location_detail && j.location_detail !== j.location ? `<span class="sub">${escapeHtml(j.location_detail)}</span>` : ''}${j.us !== true ? ' <span class="badge b-verify" title="Location does not clearly state a US location">verify US</span>' : ''}</td>
       <td class="nowrap">${remoteBadge(j)}</td>
@@ -395,8 +420,19 @@
 
     const container = $('#companies');
     container.innerHTML = '';
+
+    if (flat) {
+      const rows = sortRows(jobs.filter(visible));
+      const el = document.createElement('section');
+      el.className = 'company';
+      el.innerHTML = `<div class="head"><h2>All companies</h2><span class="meta">${rows.filter(j => j.status === 'open').length} roles shown</span><span class="spacer"></span></div>
+        ${rows.length ? `<table>${THEAD()}<tbody>${rows.map(row).join('')}</tbody></table>` : `<div class="empty">Nothing matches the current filter.</div>`}`;
+      container.appendChild(el);
+      return;
+    }
+
     for (const c of data.companies) {
-      const rows = jobs.filter(j => j.company === c.name).filter(visible);
+      const rows = sortRows(jobs.filter(j => j.company === c.name).filter(visible));
       const openCount = jobs.filter(j => j.company === c.name && j.status === 'open').length;
       const el = document.createElement('section');
       el.className = 'company';
@@ -410,7 +446,7 @@
           ${c.url ? `<a href="${escapeHtml(c.url)}" target="_blank" rel="noopener">careers page ↗</a>` : ''}
           <button class="pull">Pull now</button>
         </div>
-        ${rows.length ? `<table><thead><tr><th>Role</th><th>Location</th><th>Work</th><th>Posted</th><th>Salary</th><th>IDs</th></tr></thead><tbody>${rows.map(row).join('')}</tbody></table>`
+        ${rows.length ? `<table>${THEAD()}<tbody>${rows.map(row).join('')}</tbody></table>`
                       : `<div class="empty">${openCount ? 'Nothing matches the current filter.' : 'No open roles with “product” in the title in the US right now.'}</div>`}`;
       el.querySelector('.pull').addEventListener('click', e => pullNow(c, e.currentTarget));
       container.appendChild(el);
@@ -426,6 +462,13 @@
   }));
   $('#q').addEventListener('input', e => { query = e.target.value.trim().toLowerCase(); render(); });
   $('#showClosed').addEventListener('change', render);
+  $('#view').addEventListener('change', e => { flat = e.target.value === 'flat'; try { localStorage.setItem('jobwatch.view', e.target.value); } catch (_) {} render(); });
+  $('#sort').addEventListener('change', e => { sortKey = e.target.value; try { localStorage.setItem('jobwatch.sort', sortKey); } catch (_) {} render(); });
+  try {
+    const v = localStorage.getItem('jobwatch.view'), s = localStorage.getItem('jobwatch.sort');
+    if (v) { $('#view').value = v; flat = v === 'flat'; }
+    if (s && SORTS[s]) { $('#sort').value = s; sortKey = s; }
+  } catch (_) {}
   $('#pullAll').addEventListener('click', async e => {
     e.currentTarget.disabled = true;
     for (const c of data.companies) { const b = [...document.querySelectorAll('.company')].find(s => s.querySelector('h2').textContent === c.name)?.querySelector('.pull'); await pullNow(c, b || e.currentTarget); }
