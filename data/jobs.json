@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T05:53:13+00:00",
+  "generated_at": "2026-10-30T05:54:37+00:00",
   "criteria": {
     "title_keywords": [
       "product"
@@ -83,11 +83,11 @@
       "ats": "ashby",
       "board": "thumbtack",
       "url": "https://careers.thumbtack.com/jobs",
-      "fetched_at": "2026-10-30T05:53:13+00:00",
+      "fetched_at": "2026-10-30T05:54:37+00:00",
       "status": "ok",
       "error": null,
       "total_jobs": 43,
-      "matched": 4
+      "matched": 2
     }
   ],
   "jobs": [
@@ -1920,27 +1920,6 @@
       "closed_at": null
     },
     {
-      "job_id": "128256fa-c145-446b-9b2e-168f66ef92c8",
-      "req_id": null,
-      "title": "Product Manager",
-      "location": "Remote, Ontario",
-      "location_detail": "Remote, British Columbia",
-      "department": "Product Management / Product Management",
-      "published_at": "2026-09-15T22:17:14.286+00:00",
-      "updated_at": null,
-      "url": "https://jobs.ashbyhq.com/thumbtack/128256fa-c145-446b-9b2e-168f66ef92c8",
-      "salary": null,
-      "us": null,
-      "remote": "remote",
-      "remote_confidence": "high",
-      "company": "Thumbtack",
-      "key": "ashby:thumbtack:128256fa-c145-446b-9b2e-168f66ef92c8",
-      "first_seen": "2026-10-30T05:53:13+00:00",
-      "last_seen": "2026-10-30T05:53:13+00:00",
-      "status": "open",
-      "closed_at": null
-    },
-    {
       "job_id": "744000149391050",
       "req_id": "JB0075132",
       "title": "Senior Staff Inbound Product Manager",
@@ -2071,27 +2050,6 @@
       "closed_at": null
     },
     {
-      "job_id": "245a9552-23a1-439e-83c5-fd840961dcec",
-      "req_id": null,
-      "title": "Product Manager, Pro Integrations & Foundations ",
-      "location": "Remote, Ontario",
-      "location_detail": "Remote, British Columbia",
-      "department": "Product Management / Product Management",
-      "published_at": "2026-09-03T21:59:33.662+00:00",
-      "updated_at": null,
-      "url": "https://jobs.ashbyhq.com/thumbtack/245a9552-23a1-439e-83c5-fd840961dcec",
-      "salary": null,
-      "us": null,
-      "remote": "remote",
-      "remote_confidence": "high",
-      "company": "Thumbtack",
-      "key": "ashby:thumbtack:245a9552-23a1-439e-83c5-fd840961dcec",
-      "first_seen": "2026-10-30T05:53:13+00:00",
-      "last_seen": "2026-10-30T05:53:13+00:00",
-      "status": "open",
-      "closed_at": null
-    },
-    {
       "job_id": "323602c6-082f-4c92-953d-642eccb0ed7f",
       "req_id": null,
       "title": "Product Manager, Pro Integrations & Foundations",
@@ -2108,7 +2066,7 @@
       "company": "Thumbtack",
       "key": "ashby:thumbtack:323602c6-082f-4c92-953d-642eccb0ed7f",
       "first_seen": "2026-10-30T05:53:13+00:00",
-      "last_seen": "2026-10-30T05:53:13+00:00",
+      "last_seen": "2026-10-30T05:54:37+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2228,7 +2186,7 @@
       "company": "Thumbtack",
       "key": "ashby:thumbtack:a8c9ee4d-d5b9-4209-87b7-3e5c7dfa6222",
       "first_seen": "2026-10-30T05:53:13+00:00",
-      "last_seen": "2026-10-30T05:53:13+00:00",
+      "last_seen": "2026-10-30T05:54:37+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2701,6 +2659,48 @@
       "last_seen": "2026-10-30T05:15:36+00:00",
       "status": "closed",
       "closed_at": "2026-10-30T05:17:36+00:00"
+    },
+    {
+      "job_id": "128256fa-c145-446b-9b2e-168f66ef92c8",
+      "req_id": null,
+      "title": "Product Manager",
+      "location": "Remote, Ontario",
+      "location_detail": "Remote, British Columbia",
+      "department": "Product Management / Product Management",
+      "published_at": "2026-09-15T22:17:14.286+00:00",
+      "updated_at": null,
+      "url": "https://jobs.ashbyhq.com/thumbtack/128256fa-c145-446b-9b2e-168f66ef92c8",
+      "salary": null,
+      "us": null,
+      "remote": "remote",
+      "remote_confidence": "high",
+      "company": "Thumbtack",
+      "key": "ashby:thumbtack:128256fa-c145-446b-9b2e-168f66ef92c8",
+      "first_seen": "2026-10-30T05:53:13+00:00",
+      "last_seen": "2026-10-30T05:53:13+00:00",
+      "status": "closed",
+      "closed_at": "2026-10-30T05:54:37+00:00"
+    },
+    {
+      "job_id": "245a9552-23a1-439e-83c5-fd840961dcec",
+      "req_id": null,
+      "title": "Product Manager, Pro Integrations & Foundations ",
+      "location": "Remote, Ontario",
+      "location_detail": "Remote, British Columbia",
+      "department": "Product Management / Product Management",
+      "published_at": "2026-09-03T21:59:33.662+00:00",
+      "updated_at": null,
+      "url": "https://jobs.ashbyhq.com/thumbtack/245a9552-23a1-439e-83c5-fd840961dcec",
+      "salary": null,
+      "us": null,
+      "remote": "remote",
+      "remote_confidence": "high",
+      "company": "Thumbtack",
+      "key": "ashby:thumbtack:245a9552-23a1-439e-83c5-fd840961dcec",
+      "first_seen": "2026-10-30T05:53:13+00:00",
+      "last_seen": "2026-10-30T05:53:13+00:00",
+      "status": "closed",
+      "closed_at": "2026-10-30T05:54:37+00:00"
     }
   ]
 }
