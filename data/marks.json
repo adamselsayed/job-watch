@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T21:33:03.133Z",
+  "updated_at": "2026-10-30T21:33:58.988Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -276,6 +276,12 @@
       "at": "2026-10-30T21:33:01.629Z",
       "title": "Senior Director, Analytics and Data Science, Core Product & Growth",
       "company": "Life360"
+    },
+    "smartrecruiters:ServiceNow:744000158362202": {
+      "status": "archived",
+      "at": "2026-10-30T21:33:57.477Z",
+      "title": "Senior Staff Product Security Engineer | Product Security Incident Response Team (PSIRT) ",
+      "company": "ServiceNow"
     }
   }
 }
