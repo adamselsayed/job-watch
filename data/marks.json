@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T21:43:45.372Z",
+  "updated_at": "2026-10-30T21:44:16.663Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -318,6 +318,12 @@
       "at": "2026-10-30T21:43:43.869Z",
       "title": "Product Manager",
       "company": "Thumbtack"
+    },
+    "greenhouse:toast:8259263": {
+      "status": "archived",
+      "at": "2026-10-30T21:44:15.157Z",
+      "title": "Principal Product Manager,  Kitchen Commercial Lead",
+      "company": "Toast"
     }
   }
 }
