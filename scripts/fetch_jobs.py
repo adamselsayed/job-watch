@@ -324,6 +324,9 @@ def fetch_ashby(company):
     return out
 
 
+COUNTRY_NAMES = {'US': 'United States', 'CA': 'Canada', 'MX': 'Mexico', 'BR': 'Brazil', 'AR': 'Argentina', 'CL': 'Chile', 'CO': 'Colombia', 'PE': 'Peru', 'CR': 'Costa Rica', 'GB': 'United Kingdom', 'UK': 'United Kingdom', 'IE': 'Ireland', 'DE': 'Germany', 'FR': 'France', 'ES': 'Spain', 'PT': 'Portugal', 'IT': 'Italy', 'NL': 'Netherlands', 'BE': 'Belgium', 'CH': 'Switzerland', 'AT': 'Austria', 'SE': 'Sweden', 'NO': 'Norway', 'DK': 'Denmark', 'FI': 'Finland', 'PL': 'Poland', 'CZ': 'Czech Republic', 'RO': 'Romania', 'BG': 'Bulgaria', 'HU': 'Hungary', 'GR': 'Greece', 'TR': 'Turkey', 'UA': 'Ukraine', 'IL': 'Israel', 'AE': 'United Arab Emirates', 'SA': 'Saudi Arabia', 'QA': 'Qatar', 'EG': 'Egypt', 'ZA': 'South Africa', 'NG': 'Nigeria', 'KE': 'Kenya', 'MA': 'Morocco', 'IN': 'India', 'PK': 'Pakistan', 'BD': 'Bangladesh', 'LK': 'Sri Lanka', 'SG': 'Singapore', 'MY': 'Malaysia', 'ID': 'Indonesia', 'TH': 'Thailand', 'VN': 'Vietnam', 'PH': 'Philippines', 'JP': 'Japan', 'KR': 'South Korea', 'CN': 'China', 'HK': 'Hong Kong', 'TW': 'Taiwan', 'AU': 'Australia', 'NZ': 'New Zealand'}
+
+
 def fetch_smartrecruiters(company):
     """SmartRecruiters public Posting API (no auth). board = the company identifier
     in https://api.smartrecruiters.com/v1/companies/<identifier>/postings"""
@@ -340,9 +343,13 @@ def fetch_smartrecruiters(company):
     for j in items:
         title = j.get("name", "") or ""
         loc = j.get("location") or {}
-        country = (loc.get("country") or "").lower()
-        parts = [loc.get("city"), loc.get("region"), {"us": "United States"}.get(country, (loc.get("country") or "").upper())]
-        loc_name = ", ".join(x for x in parts if x)
+        code = (loc.get("country") or "").upper()
+        country = COUNTRY_NAMES.get(code, f"country {code}" if code else "")
+        parts, seen = [], set()
+        for x in (loc.get("city"), loc.get("region"), country):
+            if x and x.lower() not in seen:
+                parts.append(x); seen.add(x.lower())
+        loc_name = ", ".join(parts)
         flags = []
         if loc.get("remote"):
             flags.append("Remote")

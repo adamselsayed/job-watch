@@ -453,6 +453,7 @@
       };
     });
   }
+  const COUNTRY_NAMES = {"US": "United States", "CA": "Canada", "MX": "Mexico", "BR": "Brazil", "AR": "Argentina", "CL": "Chile", "CO": "Colombia", "PE": "Peru", "CR": "Costa Rica", "GB": "United Kingdom", "UK": "United Kingdom", "IE": "Ireland", "DE": "Germany", "FR": "France", "ES": "Spain", "PT": "Portugal", "IT": "Italy", "NL": "Netherlands", "BE": "Belgium", "CH": "Switzerland", "AT": "Austria", "SE": "Sweden", "NO": "Norway", "DK": "Denmark", "FI": "Finland", "PL": "Poland", "CZ": "Czech Republic", "RO": "Romania", "BG": "Bulgaria", "HU": "Hungary", "GR": "Greece", "TR": "Turkey", "UA": "Ukraine", "IL": "Israel", "AE": "United Arab Emirates", "SA": "Saudi Arabia", "QA": "Qatar", "EG": "Egypt", "ZA": "South Africa", "NG": "Nigeria", "KE": "Kenya", "MA": "Morocco", "IN": "India", "PK": "Pakistan", "BD": "Bangladesh", "LK": "Sri Lanka", "SG": "Singapore", "MY": "Malaysia", "ID": "Indonesia", "TH": "Thailand", "VN": "Vietnam", "PH": "Philippines", "JP": "Japan", "KR": "South Korea", "CN": "China", "HK": "Hong Kong", "TW": "Taiwan", "AU": "Australia", "NZ": "New Zealand"};
   async function liveSmartrecruiters(c) {
     const base = `https://api.smartrecruiters.com/v1/companies/${c.board}/postings`;
     let items = [], offset = 0, total = 0;
@@ -467,8 +468,9 @@
         j._url = d.applyUrl || d.postingUrl; } catch (e) { j._content = ''; }
     }));
     return items.map(j => {
-      const loc = j.location || {}; const country = (loc.country || '').toLowerCase();
-      let name = [loc.city, loc.region, country === 'us' ? 'United States' : (loc.country || '').toUpperCase()].filter(Boolean).join(', ');
+      const loc = j.location || {}; const code = (loc.country || '').toUpperCase();
+      const country = COUNTRY_NAMES[code] || (code ? `country ${code}` : '');
+      const seen = new Set(); let name = [loc.city, loc.region, country].filter(x => x && !seen.has(x.toLowerCase()) && seen.add(x.toLowerCase())).join(', ');
       const flags = [loc.remote && 'Remote', loc.hybrid && 'Hybrid'].filter(Boolean);
       if (flags.length) name = name ? `${flags.join(' / ')} - ${name}` : flags.join(' / ');
       return {
