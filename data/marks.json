@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T21:42:43.930Z",
+  "updated_at": "2026-10-30T21:43:45.372Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -311,6 +311,12 @@
       "status": "applied",
       "at": "2026-10-30T21:42:42.425Z",
       "title": "Product Manager, Pro Integrations & Foundations",
+      "company": "Thumbtack"
+    },
+    "ashby:thumbtack:a8c9ee4d-d5b9-4209-87b7-3e5c7dfa6222": {
+      "status": "applied",
+      "at": "2026-10-30T21:43:43.869Z",
+      "title": "Product Manager",
       "company": "Thumbtack"
     }
   }
