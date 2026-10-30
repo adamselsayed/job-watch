@@ -68,20 +68,26 @@
   .company .head a:hover { color: var(--accent); }
 
   table { width: 100%; border-collapse: collapse; }
-  th, td { text-align: left; padding: 10px 12px; vertical-align: top; border-top: 1px solid var(--border); }
+  th, td { text-align: left; padding: 5px 10px; vertical-align: middle; border-top: 1px solid var(--border); white-space: nowrap; font-size: 13.5px; line-height: 1.3; }
+  table { table-layout: fixed; }
   thead th { border-top: 0; font-size: 12px; text-transform: uppercase; letter-spacing: .04em; color: var(--faint); font-weight: 600; padding-top: 8px; padding-bottom: 6px; }
   tbody tr:first-child td { border-top: 0; }
   tr.closed td { color: var(--closed); }
   tr.closed .title a { text-decoration: line-through; }
   td.title a { font-weight: 600; text-decoration: none; }
   td.title a:hover { text-decoration: underline; color: var(--accent); }
-  td.title .dept { display: block; font-size: 12px; color: var(--faint); font-weight: 400; margin-top: 1px; }
+  td.title { max-width: 0; }
+  td.title .t { display: flex; align-items: center; gap: 6px; min-width: 0; }
+  td.title .t a { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
+  td.loc { max-width: 0; overflow: hidden; text-overflow: ellipsis; }
+  th.w-co { width: 84px; } th.w-loc { width: 17%; } th.w-work { width: 86px; } th.w-posted { width: 122px; } th.w-sal { width: 122px; } th.w-ids { width: 172px; }
   td.nowrap { white-space: nowrap; }
-  .mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12.5px; color: var(--muted); }
-  .sub { color: var(--muted); font-size: 12.5px; display: block; }
+  .mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; color: var(--muted); }
+  .sub { color: var(--faint); font-size: 12px; }
+  .sal-src { color: var(--faint); font-size: 11px; margin-left: 3px; cursor: help; }
   .empty { padding: 18px 16px; color: var(--muted); font-size: 14px; }
 
-  .badge { display: inline-block; font-size: 11.5px; font-weight: 600; padding: 2px 7px; border-radius: 999px; border: 1px solid transparent; white-space: nowrap; vertical-align: middle; }
+  .badge { display: inline-block; font-size: 11px; font-weight: 600; padding: 1px 6px; border-radius: 999px; border: 1px solid transparent; white-space: nowrap; vertical-align: middle; }
   .b-new { background: var(--new-soft); color: var(--new); }
   .b-live { background: var(--accent-soft); color: var(--accent); }
   .b-remote { background: var(--accent-soft); color: var(--accent); }
@@ -101,8 +107,9 @@
     table, thead, tbody, tr, td { display: block; }
     thead { display: none; }
     tr { padding: 10px 12px; border-top: 1px solid var(--border); }
-    td { border: 0; padding: 2px 0; }
-    td.nowrap { white-space: normal; }
+    td { border: 0; padding: 2px 0; white-space: normal; }
+    td.title, td.loc, td.mono { max-width: none; width: auto; }
+    table { table-layout: auto; }
     tbody tr:first-child { border-top: 0; }
   }
 </style>
@@ -381,7 +388,7 @@
     'title':       (a, b) => a.title.localeCompare(b.title),
   };
   const sortRows = rows => rows.slice().sort((a, b) => (a.status === 'closed') - (b.status === 'closed') || SORTS[sortKey](a, b));
-  const THEAD = () => `<thead><tr>${flat ? '<th>Company</th>' : ''}<th>Role</th><th>Location</th><th>Work</th><th>Posted</th><th>Salary</th><th>IDs</th></tr></thead>`;
+  const THEAD = () => `<thead><tr>${flat ? '<th class="w-co">Company</th>' : ''}<th>Role</th><th class="w-loc">Location</th><th class="w-work">Work</th><th class="w-posted">Posted</th><th class="w-sal">Salary</th><th class="w-ids">IDs</th></tr></thead>`;
 
   function row(j) {
     const pub = j.published_at;
@@ -390,17 +397,22 @@
     if (isNew(j) && j.status === 'open') badges.push('<span class="badge b-new">new</span>');
     if (j.live_reopened) badges.push('<span class="badge b-reopened">reopened</span>');
     if (j.status === 'closed') badges.push(`<span class="badge b-closed" title="No longer on the board${j.closed_at ? ' as of ' + fmtDate(j.closed_at) : ''}">closed</span>`);
+    const k = n => n >= 1000 ? '$' + (Math.round(n / 500) / 2).toLocaleString('en-US', { maximumFractionDigits: 1 }).replace(/\.0$/, '') + 'K' : fmtMoney(n);
     const sal = j.salary
-      ? `${fmtMoney(j.salary.min)}–${fmtMoney(j.salary.max)}${j.salary.currency && j.salary.currency !== 'USD' ? ' ' + j.salary.currency : ''}<span class="sub">${j.salary.source === 'posting' ? 'from posting' : 'from description'}</span>`
-      : '<span class="sub">not listed</span>';
-    const ids = [j.req_id ? `Req ${escapeHtml(j.req_id)}` : null, `#${escapeHtml(j.job_id)}`].filter(Boolean).join('<br>');
+      ? `<span title="${fmtMoney(j.salary.min)} – ${fmtMoney(j.salary.max)} ${escapeHtml(j.salary.currency || 'USD')} · ${j.salary.source === 'posting' ? 'from the posting\'s pay field' : 'parsed from the description'}">${k(j.salary.min)}–${k(j.salary.max)}${j.salary.currency && j.salary.currency !== 'USD' ? ' ' + escapeHtml(j.salary.currency) : ''}${j.salary.source !== 'posting' ? '<span class="sal-src">≈</span>' : ''}</span>`
+      : '<span class="sub">—</span>';
+    const ids = [j.req_id ? escapeHtml(j.req_id) : null, `#${escapeHtml(j.job_id)}`].filter(Boolean).join(' · ');
+    const titleTip = [j.title, j.department && `Team: ${j.department}`, j.location_detail && j.location_detail !== j.location && `Office: ${j.location_detail}`].filter(Boolean).join('\n');
+    const posted = pub
+      ? `<span title="${escapeHtml(new Date(pub).toLocaleString('en-US'))}">${fmtDate(pub)} <span class="sub">· ${ago(pub)}</span></span>`
+      : `<span class="sub" title="Posting has no publish date">seen ${fmtDate(j.first_seen)}</span>`;
     return `<tr class="${j.status}">
       ${flat ? `<td class="co">${escapeHtml(j.company)}</td>` : ''}
-      <td class="title"><a href="${escapeHtml(j.url)}" target="_blank" rel="noopener">${escapeHtml(j.title)}</a>${j.department ? `<span class="dept">${escapeHtml(j.department)}</span>` : ''} ${badges.join(' ')}</td>
-      <td>${escapeHtml(j.location || '—')}${j.location_detail && j.location_detail !== j.location ? `<span class="sub">${escapeHtml(j.location_detail)}</span>` : ''}${j.us !== true ? ' <span class="badge b-verify" title="Location does not clearly state a US location">verify US</span>' : ''}</td>
-      <td class="nowrap">${remoteBadge(j)}</td>
-      <td class="nowrap">${pub ? `${fmtDate(pub)}${hasTime(pub) ? ` <span class="sub">${fmtTime(pub)} · ${ago(pub)}</span>` : `<span class="sub">${ago(pub)}</span>`}` : `<span class="sub">first seen ${fmtDate(j.first_seen)}</span>`}</td>
-      <td class="nowrap">${sal}</td>
+      <td class="title" title="${escapeHtml(titleTip)}"><span class="t"><a href="${escapeHtml(j.url)}" target="_blank" rel="noopener">${escapeHtml(j.title)}</a>${badges.join('')}</span></td>
+      <td class="loc" title="${escapeHtml(j.location_detail && j.location_detail !== j.location ? j.location + ' · ' + j.location_detail : j.location || '')}">${escapeHtml(j.location || '—')}${j.us !== true ? ' <span class="badge b-verify" title="Location does not clearly state a US location">verify US</span>' : ''}</td>
+      <td>${remoteBadge(j)}</td>
+      <td>${posted}</td>
+      <td>${sal}</td>
       <td class="mono">${ids}</td>
     </tr>`;
   }
