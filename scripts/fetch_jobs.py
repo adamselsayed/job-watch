@@ -420,18 +420,18 @@ def fetch_workday(company):
     tenant = tenant_host.split(".")[0]
     base = f"https://{tenant_host}.myworkdayjobs.com/wday/cxs/{tenant}/{site}"
     filters = [x.strip().lower() for x in company.get("filter", "").split(",") if x.strip()]
+    search = "" if company.get("scan", "").lower() == "all" else " ".join(TITLE_KEYWORDS)
     postings, offset, first_page = [], 0, None
     while True:
-        page = fetch_json_post(f"{base}/jobs", {"appliedFacets": {}, "limit": 20, "offset": offset,
-                                                "searchText": " ".join(TITLE_KEYWORDS)})
+        page = fetch_json_post(f"{base}/jobs", {"appliedFacets": {}, "limit": 20, "offset": offset, "searchText": search})
         if first_page is None:
             first_page = page
         items = page.get("jobPostings") or []
         postings.extend(items)
         offset += 20
-        if not items or offset >= int(page.get("total", 0)) or offset > 2000:
+        if not items or offset >= int(page.get("total", 0)) or offset > 6000:
             break
-    out, first_detail = [], None
+    out, first_detail, orgs = [], None, {}
     for jp in postings:
         title = jp.get("title", "") or ""
         if not title_matches(title):
@@ -446,7 +446,9 @@ def fetch_workday(company):
         if first_detail is None:
             first_detail = d
         content = strip_html(info.get("jobDescription", ""))
-        hay = json.dumps(info, ensure_ascii=False).lower()
+        org = (d.get("hiringOrganization") or {}).get("name", "") if isinstance(d.get("hiringOrganization"), dict) else ""
+        orgs[org] = orgs.get(org, 0) + 1
+        hay = (org + " " + content[:1500]).lower()
         if filters and not any(f in hay for f in filters):
             continue
         locs = [info.get("location", "")] + [x for x in (info.get("additionalLocations") or []) if x]
@@ -462,7 +464,7 @@ def fetch_workday(company):
             "title": title,
             "location": loc_name,
             "location_detail": "",
-            "department": (d.get("hiringOrganization") or {}).get("name", "") if isinstance(d.get("hiringOrganization"), dict) else "",
+            "department": org,
             "published_at": published,
             "updated_at": None,
             "url": info.get("externalUrl") or f"https://{tenant_host}.myworkdayjobs.com/{site}{path}",
@@ -473,7 +475,8 @@ def fetch_workday(company):
     debug_dump(company, {"first_page_keys": list((first_page or {}).keys()), "first_postings": postings[:3],
                          "facets": [(f.get("facetParameter"), [(v.get("descriptor"), v.get("id")) for v in (f.get("values") or [])[:15]])
                                     for f in ((first_page or {}).get("facets") or [])],
-                         "first_detail": first_detail, "kept": len(out), "scanned": len(postings)})
+                         "first_detail": first_detail, "kept": len(out), "scanned": len(postings),
+                         "orgs_of_title_matches": orgs, "total_reported": (first_page or {}).get("total")})
     return out
 
 
@@ -485,7 +488,7 @@ ADAPTERS = {"greenhouse": fetch_greenhouse, "lever": fetch_lever, "ashby": fetch
 
 def title_matches(title):
     t = title.lower()
-    if not any(k in t for k in TITLE_KEYWORDS):
+    if not any(re.search(r"\b" + re.escape(k) + r"s?\b", t) for k in TITLE_KEYWORDS):   # whole word: "Products" yes, "Production" no
         return False
     return not any(re.search(r"\b" + re.escape(w) + r"\b", t) for w in TITLE_EXCLUDE_WORDS)
 

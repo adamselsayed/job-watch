@@ -11,7 +11,8 @@
 #   Ashby:      jobs.ashbyhq.com/<token>
 #   SmartRecruiters: jobs.smartrecruiters.com/<token>/...  or the company identifier in api.smartrecruiters.com/v1/companies/<token>/postings
 #   Workday:    <tenant>.<wd#>.myworkdayjobs.com/<site>  ->  board: <tenant>.<wd#>/<site>   (e.g. hitachi.wd1/hitachi)
-#               optional  filter: Name A, Name B   keeps only postings whose detail mentions one of these (shared group boards)
+#               optional  filter: Name A, Name B   keeps only postings whose hiring organization / description mentions one of these
+#               optional  scan: all                 page through the whole board instead of Workday's keyword search
 #
 # After adding a company, run:  python3 scripts/fetch_jobs.py
 # (GitHub Actions also runs it automatically every morning.)
@@ -65,4 +66,5 @@
   ats: workday
   board: hitachi.wd1/hitachi
   filter: Hitachi Vantara, Hitachi Digital Services
+  scan: all          # group-wide board: scan every posting rather than relying on Workday's search
   url: https://www.hitachivantara.com/en-us/company/careers/job-search
