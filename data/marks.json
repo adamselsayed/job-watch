@@ -1,10 +1,70 @@
 {
-  "updated_at": "2026-10-30T05:05:05.947Z",
+  "updated_at": "2026-10-30T05:05:17.854Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
       "at": "2026-10-30T05:05:04.441Z",
       "title": "Principal Product Marketing Manager - Public Sector",
+      "company": "Samsara"
+    },
+    "greenhouse:samsara:8325410": {
+      "status": "archived",
+      "at": "2026-10-30T05:05:09.674Z",
+      "title": "Specialist Seller - Enterprise Select - (AI Products)",
+      "company": "Samsara"
+    },
+    "greenhouse:samsara:8325411": {
+      "status": "archived",
+      "at": "2026-10-30T05:05:10.340Z",
+      "title": "Specialist Seller - Enterprise Select -(AI Products)",
+      "company": "Samsara"
+    },
+    "greenhouse:samsara:7982346": {
+      "status": "archived",
+      "at": "2026-10-30T05:05:11.349Z",
+      "title": "Specialist Seller, Enterprise Core (AI Products)",
+      "company": "Samsara"
+    },
+    "greenhouse:samsara:7982336": {
+      "status": "archived",
+      "at": "2026-10-30T05:05:11.932Z",
+      "title": "Specialist Seller, Enterprise Core (AI Products)",
+      "company": "Samsara"
+    },
+    "greenhouse:samsara:7982331": {
+      "status": "archived",
+      "at": "2026-10-30T05:05:12.332Z",
+      "title": "Specialist Seller, Enterprise Core (AI Products)",
+      "company": "Samsara"
+    },
+    "greenhouse:samsara:7982328": {
+      "status": "archived",
+      "at": "2026-10-30T05:05:12.657Z",
+      "title": "Specialist Seller, Enterprise Core (AI Products)",
+      "company": "Samsara"
+    },
+    "greenhouse:samsara:7982323": {
+      "status": "archived",
+      "at": "2026-10-30T05:05:12.884Z",
+      "title": "Specialist Seller, Enterprise Core (AI Products)",
+      "company": "Samsara"
+    },
+    "greenhouse:samsara:7982326": {
+      "status": "archived",
+      "at": "2026-10-30T05:05:14.174Z",
+      "title": "Specialist Seller, Enterprise Core (AI Products)",
+      "company": "Samsara"
+    },
+    "greenhouse:samsara:7960413": {
+      "status": "archived",
+      "at": "2026-10-30T05:05:15.124Z",
+      "title": "Specialist Seller, Enterprise Core (AI Products)",
+      "company": "Samsara"
+    },
+    "greenhouse:samsara:7292081": {
+      "status": "archived",
+      "at": "2026-10-30T05:05:16.348Z",
+      "title": "Specialist Seller, Enterprise Select (AI Products)",
       "company": "Samsara"
     }
   }
