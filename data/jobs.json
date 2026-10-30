@@ -1,12 +1,13 @@
 {
-  "generated_at": "2026-10-30T05:47:56+00:00",
+  "generated_at": "2026-10-30T05:51:20+00:00",
   "criteria": {
     "title_keywords": [
       "product"
     ],
     "title_exclude_words": [
       "design",
-      "designer"
+      "designer",
+      "marketing"
     ],
     "country": "United States"
   },
@@ -16,18 +17,18 @@
       "ats": "greenhouse",
       "board": "samsara",
       "url": "https://www.samsara.com/company/careers/roles",
-      "fetched_at": "2026-10-30T05:23:57+00:00",
+      "fetched_at": "2026-10-30T05:51:20+00:00",
       "status": "ok",
       "error": null,
       "total_jobs": 319,
-      "matched": 19
+      "matched": 18
     },
     {
       "name": "Motive",
       "ats": "greenhouse",
       "board": "gomotive",
       "url": "https://gomotive.com/company/careers/jobs/",
-      "fetched_at": "2026-10-30T05:23:57+00:00",
+      "fetched_at": "2026-10-30T05:51:20+00:00",
       "status": "ok",
       "error": null,
       "total_jobs": 167,
@@ -38,18 +39,18 @@
       "ats": "greenhouse",
       "board": "toast",
       "url": "https://careers.toasttab.com/jobs/search",
-      "fetched_at": "2026-10-30T05:23:57+00:00",
+      "fetched_at": "2026-10-30T05:51:20+00:00",
       "status": "ok",
       "error": null,
       "total_jobs": 337,
-      "matched": 6
+      "matched": 5
     },
     {
       "name": "Experian",
       "ats": "smartrecruiters",
       "board": "Experian",
       "url": "https://jobs.experian.com/jobs",
-      "fetched_at": "2026-10-30T05:30:31+00:00",
+      "fetched_at": "2026-10-30T05:51:20+00:00",
       "status": "ok",
       "error": null,
       "total_jobs": 390,
@@ -60,7 +61,7 @@
       "ats": "greenhouse",
       "board": "komodohealth",
       "url": "https://job-boards.greenhouse.io/komodohealth",
-      "fetched_at": "2026-10-30T05:23:57+00:00",
+      "fetched_at": "2026-10-30T05:51:20+00:00",
       "status": "ok",
       "error": null,
       "total_jobs": 24,
@@ -71,11 +72,11 @@
       "ats": "smartrecruiters",
       "board": "ServiceNow",
       "url": "https://careers.servicenow.com/",
-      "fetched_at": "2026-10-30T05:47:56+00:00",
+      "fetched_at": "2026-10-30T05:51:20+00:00",
       "status": "ok",
       "error": null,
       "total_jobs": 741,
-      "matched": 60
+      "matched": 58
     }
   ],
   "jobs": [
@@ -96,7 +97,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000158615099",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-30T05:47:56+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -117,7 +118,7 @@
       "company": "Experian",
       "key": "smartrecruiters:Experian:744000158611740",
       "first_seen": "2026-10-30T05:15:36+00:00",
-      "last_seen": "2026-10-30T05:30:31+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -138,7 +139,7 @@
       "company": "Experian",
       "key": "smartrecruiters:Experian:744000158587389",
       "first_seen": "2026-10-30T05:15:36+00:00",
-      "last_seen": "2026-10-30T05:30:31+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -164,7 +165,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000158563480",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-30T05:47:56+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -185,7 +186,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000158402969",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-30T05:47:56+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -211,7 +212,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000158364690",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-30T05:47:56+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -237,7 +238,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000158360807",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-30T05:47:56+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -263,7 +264,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000158362000",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-30T05:47:56+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -289,7 +290,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000158362202",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-30T05:47:56+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -315,7 +316,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000158162749",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-30T05:47:56+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -341,7 +342,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000158162444",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-30T05:47:56+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -367,7 +368,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000158155950",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-30T05:47:56+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -388,7 +389,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000158091470",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-30T05:47:56+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -414,7 +415,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000158070869",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-30T05:47:56+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -440,7 +441,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:8325411",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-30T05:23:57+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -466,7 +467,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:8325410",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-30T05:23:57+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -492,7 +493,7 @@
       "company": "Motive",
       "key": "greenhouse:gomotive:8913113002",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-30T05:23:57+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -518,7 +519,7 @@
       "company": "Toast",
       "key": "greenhouse:toast:8305972",
       "first_seen": "2026-10-29T23:40:13+00:00",
-      "last_seen": "2026-10-30T05:23:57+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -544,7 +545,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000157550109",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-30T05:47:56+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -570,7 +571,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000157549524",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-30T05:47:56+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -596,7 +597,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:8315136",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-30T05:23:57+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -622,7 +623,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:8315122",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-30T05:23:57+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -648,7 +649,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000156856599",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-30T05:47:56+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -674,7 +675,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000156856489",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-30T05:47:56+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -700,7 +701,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000156856309",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-30T05:47:56+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -726,7 +727,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000156842184",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-30T05:47:56+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -752,7 +753,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000156842094",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-30T05:47:56+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -778,7 +779,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000156841854",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-30T05:47:56+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -804,7 +805,7 @@
       "company": "Toast",
       "key": "greenhouse:toast:8245664",
       "first_seen": "2026-10-29T23:40:13+00:00",
-      "last_seen": "2026-10-30T05:23:57+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -830,7 +831,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:8300580",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-30T05:23:57+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -856,7 +857,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000156657507",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-30T05:47:56+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -882,7 +883,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000156543661",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-30T05:47:56+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -908,7 +909,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000156431640",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-30T05:47:56+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -934,28 +935,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000156426199",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-30T05:47:56+00:00",
-      "status": "open",
-      "closed_at": null
-    },
-    {
-      "job_id": "744000156077549",
-      "req_id": "JB0076014",
-      "title": "Sr Manager, Product Marketing - CRM",
-      "location": "Remote - Boston, Massachusetts, United States",
-      "location_detail": "",
-      "department": "",
-      "published_at": "2026-10-16T20:32:54.456Z",
-      "updated_at": null,
-      "url": "https://jobs.smartrecruiters.com/ServiceNow/744000156077549-sr-manager-product-marketing-crm",
-      "salary": null,
-      "us": true,
-      "remote": "remote",
-      "remote_confidence": "high",
-      "company": "ServiceNow",
-      "key": "smartrecruiters:ServiceNow:744000156077549",
-      "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-30T05:47:56+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -981,7 +961,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000155904829",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-30T05:47:56+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1007,7 +987,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000155822569",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-30T05:47:56+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1033,7 +1013,7 @@
       "company": "Motive",
       "key": "greenhouse:gomotive:8797393002",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-30T05:23:57+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1059,7 +1039,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:8233947",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-30T05:23:57+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1085,7 +1065,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000155472964",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-30T05:47:56+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1111,7 +1091,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000155345180",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-30T05:47:56+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1137,33 +1117,7 @@
       "company": "Motive",
       "key": "greenhouse:gomotive:8880889002",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-30T05:23:57+00:00",
-      "status": "open",
-      "closed_at": null
-    },
-    {
-      "job_id": "744000155319537",
-      "req_id": "JB0075813",
-      "title": "Data Product Manager, Marketing Technology",
-      "location": "Remote - Santa Clara, CALIFORNIA, United States",
-      "location_detail": "",
-      "department": "",
-      "published_at": "2026-10-13T16:52:52.146Z",
-      "updated_at": null,
-      "url": "https://jobs.smartrecruiters.com/ServiceNow/744000155319537-data-product-manager-marketing-technology",
-      "salary": {
-        "min": 116400,
-        "max": 192100,
-        "currency": "USD",
-        "source": "description"
-      },
-      "us": true,
-      "remote": "remote",
-      "remote_confidence": "high",
-      "company": "ServiceNow",
-      "key": "smartrecruiters:ServiceNow:744000155319537",
-      "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-30T05:47:56+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1189,7 +1143,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000155296769",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-30T05:47:56+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1215,7 +1169,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:8256425",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-30T05:23:57+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1241,7 +1195,7 @@
       "company": "Toast",
       "key": "greenhouse:toast:8259263",
       "first_seen": "2026-10-29T23:40:13+00:00",
-      "last_seen": "2026-10-30T05:23:57+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1267,7 +1221,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000154541440",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-30T05:47:56+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1293,7 +1247,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000154473649",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-30T05:47:56+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1319,7 +1273,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000154471344",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-30T05:47:56+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1340,7 +1294,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000154095380",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-30T05:47:56+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1361,7 +1315,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000154038601",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-30T05:47:56+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1382,33 +1336,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000153739678",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-30T05:47:56+00:00",
-      "status": "open",
-      "closed_at": null
-    },
-    {
-      "job_id": "8249029",
-      "req_id": "R15283",
-      "title": "Associate Counsel, Product and Marketing",
-      "location": "Remote - US",
-      "location_detail": "Remote - USA",
-      "department": "G & A : Legal",
-      "published_at": "2026-10-05T15:21:47-04:00",
-      "updated_at": "2026-10-07T10:48:12-04:00",
-      "url": "https://careers.toasttab.com/jobs?gh_jid=8249029",
-      "salary": {
-        "min": 152000,
-        "max": 243000,
-        "currency": "USD",
-        "source": "posting"
-      },
-      "us": true,
-      "remote": "remote",
-      "remote_confidence": "high",
-      "company": "Toast",
-      "key": "greenhouse:toast:8249029",
-      "first_seen": "2026-10-29T23:40:13+00:00",
-      "last_seen": "2026-10-30T05:23:57+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1429,7 +1357,7 @@
       "company": "Experian",
       "key": "smartrecruiters:Experian:744000153590289",
       "first_seen": "2026-10-30T05:15:36+00:00",
-      "last_seen": "2026-10-30T05:30:31+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1455,7 +1383,7 @@
       "company": "Komodo Health",
       "key": "greenhouse:komodohealth:8868143002",
       "first_seen": "2026-10-30T05:15:36+00:00",
-      "last_seen": "2026-10-30T05:23:57+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1481,7 +1409,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000153034225",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-30T05:47:56+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1507,7 +1435,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000153020371",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-30T05:47:56+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1528,7 +1456,7 @@
       "company": "Experian",
       "key": "smartrecruiters:Experian:744000152989400",
       "first_seen": "2026-10-30T05:15:36+00:00",
-      "last_seen": "2026-10-30T05:30:31+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1549,7 +1477,7 @@
       "company": "Experian",
       "key": "smartrecruiters:Experian:744000152972234",
       "first_seen": "2026-10-30T05:15:36+00:00",
-      "last_seen": "2026-10-30T05:30:31+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1575,7 +1503,7 @@
       "company": "Toast",
       "key": "greenhouse:toast:8226770",
       "first_seen": "2026-10-29T23:40:13+00:00",
-      "last_seen": "2026-10-30T05:23:57+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1601,7 +1529,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000151887559",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-30T05:47:56+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1627,7 +1555,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000151877639",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-30T05:47:56+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1653,7 +1581,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000151391394",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-30T05:47:56+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1679,7 +1607,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000150777598",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-30T05:47:56+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1705,7 +1633,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000150714090",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-30T05:47:56+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1731,7 +1659,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000150715459",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-30T05:47:56+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1757,7 +1685,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000150714661",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-30T05:47:56+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1783,7 +1711,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000150427265",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-30T05:47:56+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1809,7 +1737,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000150403065",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-30T05:47:56+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1835,7 +1763,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000150126949",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-30T05:47:56+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1861,7 +1789,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000150121538",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-30T05:47:56+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1887,7 +1815,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000150113995",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-30T05:47:56+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1908,7 +1836,7 @@
       "company": "Experian",
       "key": "smartrecruiters:Experian:744000149963169",
       "first_seen": "2026-10-30T05:15:36+00:00",
-      "last_seen": "2026-10-30T05:30:31+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1934,7 +1862,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000149933604",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-30T05:47:56+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1955,7 +1883,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000149869184",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-30T05:47:56+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1976,7 +1904,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000149871496",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-30T05:47:56+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2002,7 +1930,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000149391050",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-30T05:47:56+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2028,7 +1956,7 @@
       "company": "Toast",
       "key": "greenhouse:toast:8180264",
       "first_seen": "2026-10-29T23:40:13+00:00",
-      "last_seen": "2026-10-30T05:23:57+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2054,7 +1982,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000149362100",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-30T05:47:56+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2080,7 +2008,7 @@
       "company": "Motive",
       "key": "greenhouse:gomotive:8782064002",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-30T05:23:57+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2106,7 +2034,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:8179538",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-30T05:23:57+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2132,33 +2060,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:8177633",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-30T05:23:57+00:00",
-      "status": "open",
-      "closed_at": null
-    },
-    {
-      "job_id": "8148044",
-      "req_id": "JR12124",
-      "title": "Principal Product Marketing Manager - Public Sector",
-      "location": "Remote - DC",
-      "location_detail": "Remote - SF Bay Area",
-      "department": "Product Marketing",
-      "published_at": "2026-08-31T17:59:50-04:00",
-      "updated_at": "2026-10-28T13:25:49-04:00",
-      "url": "https://www.samsara.com/company/careers/roles/8148044?gh_jid=8148044",
-      "salary": {
-        "min": 128520,
-        "max": 229500,
-        "currency": "USD",
-        "source": "posting"
-      },
-      "us": true,
-      "remote": "remote",
-      "remote_confidence": "high",
-      "company": "Samsara",
-      "key": "greenhouse:samsara:8148044",
-      "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-30T05:23:57+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2184,7 +2086,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000146539137",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-30T05:47:56+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2205,7 +2107,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000143156960",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-30T05:47:56+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2231,7 +2133,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:8112836",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-30T05:23:57+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2257,7 +2159,7 @@
       "company": "Komodo Health",
       "key": "greenhouse:komodohealth:8599153002",
       "first_seen": "2026-10-30T05:15:36+00:00",
-      "last_seen": "2026-10-30T05:23:57+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2283,7 +2185,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:7982346",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-30T05:23:57+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2309,7 +2211,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:7982336",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-30T05:23:57+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2335,7 +2237,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:7982331",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-30T05:23:57+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2361,7 +2263,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:7982328",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-30T05:23:57+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2387,7 +2289,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:7982323",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-30T05:23:57+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2413,7 +2315,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:7982326",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-30T05:23:57+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2439,7 +2341,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:7960413",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-30T05:23:57+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2460,7 +2362,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000126724432",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-30T05:47:56+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2486,7 +2388,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000108296495",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-30T05:47:56+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2512,7 +2414,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:7292081",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-30T05:23:57+00:00",
+      "last_seen": "2026-10-30T05:51:20+00:00",
       "status": "open",
       "closed_at": null
     },
