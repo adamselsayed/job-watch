@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T05:22:32.489Z",
+  "updated_at": "2026-10-30T05:22:51.766Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -149,6 +149,12 @@
       "status": "archived",
       "at": "2026-10-30T05:22:30.070Z",
       "title": "Staff Product Operations Manager, Platform",
+      "company": "Samsara"
+    },
+    "greenhouse:samsara:8300580": {
+      "status": "archived",
+      "at": "2026-10-30T05:22:50.262Z",
+      "title": "Senior Strategy & Ops Lead, Post-Sale Product Adoption",
       "company": "Samsara"
     }
   }
