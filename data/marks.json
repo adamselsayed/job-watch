@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T05:24:11.829Z",
+  "updated_at": "2026-10-30T05:25:49.494Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -168,6 +168,12 @@
       "at": "2026-10-30T05:24:10.325Z",
       "title": "Principal Business Technology Product Manager",
       "company": "Samsara"
+    },
+    "greenhouse:gomotive:8913113002": {
+      "status": "archived",
+      "at": "2026-10-30T05:25:47.989Z",
+      "title": "Director, Product Management",
+      "company": "Motive"
     }
   }
 }
