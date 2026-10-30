@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T05:22:58.030Z",
+  "updated_at": "2026-10-30T05:24:11.829Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -161,6 +161,12 @@
       "status": "archived",
       "at": "2026-10-30T05:22:56.524Z",
       "title": "Senior Product Training Specialist",
+      "company": "Samsara"
+    },
+    "greenhouse:samsara:8179538": {
+      "status": "archived",
+      "at": "2026-10-30T05:24:10.325Z",
+      "title": "Principal Business Technology Product Manager",
       "company": "Samsara"
     }
   }
