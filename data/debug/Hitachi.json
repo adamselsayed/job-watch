@@ -217,5 +217,17 @@
  "kept": 0,
  "scanned": 40,
  "orgs_of_title_matches": {},
- "total_reported": 2000
+ "total_reported": 2000,
+ "pages": [
+  [
+   0,
+   20,
+   2000
+  ],
+  [
+   20,
+   20,
+   0
+  ]
+ ]
 }
