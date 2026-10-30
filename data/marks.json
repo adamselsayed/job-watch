@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T05:17:00.297Z",
+  "updated_at": "2026-10-30T05:17:09.671Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -106,6 +106,12 @@
     "smartrecruiters:Experian:744000158018579": {
       "status": "archived",
       "at": "2026-10-30T05:16:58.793Z",
+      "title": "Product Manager",
+      "company": "Experian"
+    },
+    "smartrecruiters:Experian:744000153862999": {
+      "status": "archived",
+      "at": "2026-10-30T05:17:08.167Z",
       "title": "Product Manager",
       "company": "Experian"
     }
