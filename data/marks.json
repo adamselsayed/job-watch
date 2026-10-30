@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T05:17:17.164Z",
+  "updated_at": "2026-10-30T05:17:19.871Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -125,6 +125,12 @@
       "status": "archived",
       "at": "2026-10-30T05:17:15.660Z",
       "title": "Service Now CSM Technical Product Owner",
+      "company": "Experian"
+    },
+    "smartrecruiters:Experian:744000158016594": {
+      "status": "archived",
+      "at": "2026-10-30T05:17:18.367Z",
+      "title": "Senior Product Manager - Fraud and ID Agent",
       "company": "Experian"
     }
   }
