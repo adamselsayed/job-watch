@@ -228,7 +228,7 @@
   </div>
 
   <p class="note">
-    Matching rule: title contains “product” and does not contain the standalone words “design” or “designer”, location in the United States (or not stated — flagged <span class="badge b-verify">verify US</span>).
+    Matching rule: title contains “product” and does not contain the standalone words “design”, “designer” or “marketing”, location in the United States (or not stated — flagged <span class="badge b-verify">verify US</span>).
     Remote status comes from the posting's location, then its metadata, then its description; anything inferred from the description or not found at all is flagged.
     The daily sweep runs at 6 AM Pacific via GitHub Actions. <strong>Pull now</strong> reads the company's live job board straight from your browser and shows anything the sweep hasn't recorded yet as <span class="badge b-live">live</span>.
     Edit <code>companies.yml</code> in the repo to add companies.
@@ -341,7 +341,7 @@
   // ------------------------------------------------------ classification --
   // Mirrors scripts/fetch_jobs.py so "Pull now" applies the same rules.
   const TITLE_KEYWORDS = ['product'];
-  const TITLE_EXCLUDE_WORDS = ['design', 'designer'];   // standalone words only
+  const TITLE_EXCLUDE_WORDS = ['design', 'designer', 'marketing'];   // standalone words only
   const titleMatches = t => { t = (t || '').toLowerCase(); return TITLE_KEYWORDS.some(k => t.includes(k)) && !TITLE_EXCLUDE_WORDS.some(w => new RegExp('\\b' + esc(w) + '\\b').test(t)); };
   const US_STATES = new Set(['alabama','alaska','arizona','arkansas','california','colorado','connecticut','delaware','florida','georgia','hawaii','idaho','illinois','indiana','iowa','kansas','kentucky','louisiana','maine','maryland','massachusetts','michigan','minnesota','mississippi','missouri','montana','nebraska','nevada','new hampshire','new jersey','new mexico','new york','north carolina','north dakota','ohio','oklahoma','oregon','pennsylvania','rhode island','south carolina','south dakota','tennessee','texas','utah','vermont','virginia','washington','west virginia','wisconsin','wyoming','district of columbia']);
   const US_ABBR = new Set('AL AK AZ AR CA CO CT DE FL GA HI ID IL IN IA KS KY LA ME MD MA MI MN MS MO MT NE NV NH NJ NM NY NC ND OH OK OR PA RI SC SD TN TX UT VT VA WA WV WI WY DC'.split(' '));
