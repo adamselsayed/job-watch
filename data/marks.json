@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T05:17:21.383Z",
+  "updated_at": "2026-10-30T05:20:31.785Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -138,6 +138,12 @@
       "at": "2026-10-30T05:17:19.879Z",
       "title": "Product Operations (Product Ops) – Limpa Nome ",
       "company": "Experian"
+    },
+    "greenhouse:samsara:8233947": {
+      "status": "applied",
+      "at": "2026-10-30T05:20:30.280Z",
+      "title": "Principal Product Manager",
+      "company": "Samsara"
     }
   }
 }
