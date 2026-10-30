@@ -466,7 +466,7 @@
     await Promise.all(items.map(async j => {
       try { const d = await (await fetch(`${base}/${j.id}`)).json(); const secs = (d.jobAd || {}).sections || {};
         j._content = stripHtml(['jobDescription', 'qualifications', 'additionalInformation', 'companyDescription'].map(k => (secs[k] || {}).text || '').join(' '));
-        j._url = d.applyUrl || d.postingUrl; } catch (e) { j._content = ''; }
+        j._url = d.postingUrl; } catch (e) { j._content = ''; }
     }));
     return items.map(j => {
       const loc = j.location || {}; const code = (loc.country || '').toUpperCase();

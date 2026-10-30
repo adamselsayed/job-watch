@@ -369,7 +369,8 @@ def fetch_smartrecruiters(company):
                 secs = (d.get("jobAd") or {}).get("sections") or {}
                 content = strip_html(" ".join((secs.get(k) or {}).get("text", "") for k in
                                               ("jobDescription", "qualifications", "additionalInformation", "companyDescription")))
-                url = d.get("applyUrl") or d.get("postingUrl") or url
+                # postingUrl is the job description page; applyUrl skips straight to the form
+                url = d.get("postingUrl") or url
                 salary = salary_from_text(content)
             except Exception as e:          # noqa: BLE001
                 log(f"[{company['name']}] detail fetch failed for {j.get('id')}: {e}")
