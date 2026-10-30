@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T18:55:08.155Z",
+  "updated_at": "2026-10-30T18:55:16.937Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -220,6 +220,12 @@
     "smartrecruiters:ServiceNow:744000154095380": {
       "status": "archived",
       "at": "2026-10-30T18:55:06.643Z",
+      "title": "Senior Manager, Data & Analytics Product Strategic Operations",
+      "company": "ServiceNow"
+    },
+    "smartrecruiters:ServiceNow:744000154038601": {
+      "status": "archived",
+      "at": "2026-10-30T18:55:15.426Z",
       "title": "Senior Manager, Data & Analytics Product Strategic Operations",
       "company": "ServiceNow"
     }
