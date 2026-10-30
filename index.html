@@ -30,7 +30,25 @@
   html, body { margin: 0; background: var(--bg); color: var(--text);
     font: 15px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, sans-serif; }
   a { color: inherit; }
-  .wrap { max-width: 1180px; margin: 0 auto; padding: 24px 16px 64px; }
+  .wrap { max-width: 1380px; margin: 0 auto; padding: 24px 16px 64px; }
+  .layout { display: grid; grid-template-columns: 196px minmax(0, 1fr); gap: 18px; align-items: start; }
+  nav.side { position: sticky; top: 16px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 6px; box-shadow: var(--shadow); }
+  nav.side .nh { font-size: 11px; text-transform: uppercase; letter-spacing: .05em; color: var(--faint); font-weight: 600; padding: 8px 10px 4px; }
+  nav.side button { display: flex; align-items: center; gap: 6px; width: 100%; text-align: left; border: 0; background: transparent; border-radius: 7px; padding: 7px 10px; font-size: 14px; color: var(--text); }
+  nav.side button:hover { background: var(--surface-2); }
+  nav.side button.on { background: var(--accent-soft); color: var(--accent); font-weight: 600; }
+  nav.side button .nm { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  nav.side button .cnt { font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; }
+  nav.side button.on .cnt { color: var(--accent); }
+  nav.side button .nb { font-size: 10.5px; font-weight: 700; background: var(--new-soft); color: var(--new); border-radius: 999px; padding: 0 6px; line-height: 16px; }
+  nav.side button .er { color: var(--err); font-size: 12px; }
+  nav.side hr { border: 0; border-top: 1px solid var(--border); margin: 6px 4px; }
+  @media (max-width: 900px) {
+    .layout { display: block; }
+    nav.side { position: static; display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 12px; }
+    nav.side .nh, nav.side hr { display: none; }
+    nav.side button { width: auto; padding: 5px 10px; font-size: 13px; border: 1px solid var(--border); border-radius: 999px; }
+  }
 
   header { display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px 18px; margin-bottom: 18px; }
   header h1 { font-size: 22px; margin: 0; letter-spacing: -.01em; }
@@ -176,6 +194,9 @@
     <div class="tile err" id="tErrWrap" hidden><div class="n" id="tErr">–</div><div class="l">Boards failing to fetch</div></div>
   </div>
 
+  <div class="layout">
+  <nav class="side" id="side"></nav>
+  <div>
   <div class="controls">
     <input type="search" id="q" placeholder="Search titles, locations, req IDs…">
     <button class="chip on" data-f="all">All</button>
@@ -185,7 +206,6 @@
     <button class="chip" data-f="verify">Needs verifying</button>
     <label><input type="checkbox" id="showClosed"> show recently closed</label>
     <span class="spacer" style="flex:1"></span>
-    <label>view <select id="view"><option value="grouped">by company</option><option value="flat">all roles</option></select></label>
     <label>sort <select id="sort">
       <option value="posted-desc">posted · newest first</option>
       <option value="posted-asc">posted · oldest first</option>
@@ -196,6 +216,8 @@
   </div>
 
   <div id="companies"></div>
+  </div>
+  </div>
 
   <p class="note">
     Matching rule: title contains “product” and does not contain the standalone words “design” or “designer”, location in the United States (or not stated — flagged <span class="badge b-verify">verify US</span>).
@@ -507,7 +529,8 @@
     return html;
   }
 
-  let flat = false, sortKey = 'posted-desc';
+  let selected = '*', sortKey = 'posted-desc';     // '*' = all companies
+  let flat = true;                                   // the combined table shows a Company column
   const postedTs = j => new Date(j.published_at || j.first_seen).getTime() || 0;
   const SORTS = {
     'posted-desc': (a, b) => postedTs(b) - postedTs(a),
@@ -589,8 +612,11 @@
       ? `Last sweep ${fmtDate(data.generated_at)} at ${fmtTime(data.generated_at)} (${ago(data.generated_at)})${lastVisit ? ` · showing new since your last visit ${ago(lastVisit)}` : ''}`
       : 'No sweep data yet — run the GitHub Action or scripts/fetch_jobs.py';
 
+    if (selected !== '*' && !data.companies.some(c => c.name === selected)) selected = '*';
+    renderSide(jobs);
     const container = $('#companies');
     container.innerHTML = '';
+    flat = selected === '*';
 
     if (flat) {
       const sec = section('*');
@@ -605,6 +631,7 @@
     }
 
     for (const c of data.companies) {
+      if (c.name !== selected) continue;
       const mine = jobs.filter(j => j.company === c.name);
       const sec = section(c.name);
       const rows = sortRows(mine.filter(j => visible(j, sec)));
@@ -629,6 +656,21 @@
     }
   }
 
+  function renderSide(jobs) {
+    const side = $('#side');
+    const cnt = list => list.filter(j => j.status === 'open' && markOf(j) === 'open');
+    const item = (name, label, list, extra = '') => {
+      const open = cnt(list), nw = open.filter(isNew).length;
+      return `<button class="${selected === name ? 'on' : ''}" data-name="${escapeHtml(name)}"><span class="nm">${escapeHtml(label)}</span>${nw ? `<span class="nb" title="new since your last visit">${nw}</span>` : ''}${extra}<span class="cnt" title="open, not yet triaged">${open.length}</span></button>`;
+    };
+    side.innerHTML = `<div class="nh">Companies</div>` + item('*', 'All companies', jobs) + `<hr>` +
+      data.companies.map(c => item(c.name, c.name, jobs.filter(j => j.company === c.name), c.status === 'error' ? '<span class="er" title="fetch failed in last sweep">⚠</span>' : '')).join('');
+    side.querySelectorAll('button').forEach(b => b.addEventListener('click', e => {
+      selected = e.currentTarget.dataset.name; try { localStorage.setItem('jobwatch.selected', selected); } catch (_) {} render();
+      window.scrollTo({ top: Math.min(window.scrollY, $('#side').getBoundingClientRect().top + window.scrollY - 16), behavior: 'auto' });
+    }));
+  }
+
   let toastTimer;
   function toast(msg) { const t = $('#toast'); t.textContent = msg; t.classList.add('show'); clearTimeout(toastTimer); toastTimer = setTimeout(() => t.classList.remove('show'), 4500); }
 
@@ -651,16 +693,15 @@
       saveMarks(); render(); scheduleSync(); toast(`Imported ${n} marks.`); } catch (err) { toast('Import failed: not a valid export file.'); }
     e.target.value = '';
   });
-  $('#view').addEventListener('change', e => { flat = e.target.value === 'flat'; try { localStorage.setItem('jobwatch.view', e.target.value); } catch (_) {} render(); });
   $('#sort').addEventListener('change', e => { sortKey = e.target.value; try { localStorage.setItem('jobwatch.sort', sortKey); } catch (_) {} render(); });
   try {
-    const v = localStorage.getItem('jobwatch.view'), s = localStorage.getItem('jobwatch.sort');
-    if (v) { $('#view').value = v; flat = v === 'flat'; }
+    const v = localStorage.getItem('jobwatch.selected'), s = localStorage.getItem('jobwatch.sort');
+    if (v) selected = v;
     if (s && SORTS[s]) { $('#sort').value = s; sortKey = s; }
   } catch (_) {}
   $('#pullAll').addEventListener('click', async e => {
     e.currentTarget.disabled = true;
-    for (const c of data.companies) { const b = [...document.querySelectorAll('.company')].find(s => s.querySelector('h2').textContent === c.name)?.querySelector('.pull'); await pullNow(c, b || e.currentTarget); }
+    for (const c of data.companies) { const b = [...document.querySelectorAll('.company')].find(s => s.querySelector('h2').textContent === c.name)?.querySelector('.pull'); await pullNow(c, b || e.currentTarget); e.currentTarget.textContent = 'Pull all now'; }
     e.currentTarget.disabled = false;
   });
 
