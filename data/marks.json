@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T05:10:53.763Z",
+  "updated_at": "2026-10-30T05:16:54.901Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -84,6 +84,24 @@
       "at": "2026-10-30T05:10:52.259Z",
       "title": "Senior Product Manager, Lending",
       "company": "Toast"
+    },
+    "smartrecruiters:Experian:744000156281089": {
+      "status": "archived",
+      "at": "2026-10-30T05:16:51.767Z",
+      "title": "Product Engineer - C#",
+      "company": "Experian"
+    },
+    "smartrecruiters:Experian:744000156302354": {
+      "status": "archived",
+      "at": "2026-10-30T05:16:52.604Z",
+      "title": "Product Launch Manager",
+      "company": "Experian"
+    },
+    "smartrecruiters:Experian:744000155757118": {
+      "status": "archived",
+      "at": "2026-10-30T05:16:53.396Z",
+      "title": "Product Launch Manager",
+      "company": "Experian"
     }
   }
 }
