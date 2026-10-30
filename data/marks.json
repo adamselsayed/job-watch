@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T18:58:41.346Z",
+  "updated_at": "2026-10-30T19:02:28.621Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -251,6 +251,12 @@
       "status": "archived",
       "at": "2026-10-30T18:58:39.834Z",
       "title": "Staff Outbound Product Manager - AI Agentic Platform-Moveworks",
+      "company": "ServiceNow"
+    },
+    "smartrecruiters:ServiceNow:744000150113995": {
+      "status": "archived",
+      "at": "2026-10-30T19:02:27.107Z",
+      "title": "Principal Inbound Product Manager - AI Experience",
       "company": "ServiceNow"
     }
   }
