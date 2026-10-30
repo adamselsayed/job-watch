@@ -123,7 +123,9 @@ NON_US_MARKERS = {
     "new zealand","brazil","sao paulo","são paulo","argentina","buenos aires","colombia",
     "bogota","chile","santiago","peru","lima","south africa","nigeria","kenya","philippines",
     "manila","vietnam","indonesia","malaysia","thailand","bangkok","emea","apac","latam",
-    "dach","benelux","nordics","europe",
+    "dach","benelux","nordics","europe","bulgaria","sofia","costa rica","turkey","istanbul","ukraine","kyiv",
+    "greece","athens","morocco","bangladesh","dhaka","sri lanka","colombo","south korea","czech republic",
+    "united arab emirates","saudi arabia","hong kong","north america", "canada",
 }
 
 
@@ -325,6 +327,9 @@ def fetch_ashby(company):
 
 
 COUNTRY_NAMES = {'US': 'United States', 'CA': 'Canada', 'MX': 'Mexico', 'BR': 'Brazil', 'AR': 'Argentina', 'CL': 'Chile', 'CO': 'Colombia', 'PE': 'Peru', 'CR': 'Costa Rica', 'GB': 'United Kingdom', 'UK': 'United Kingdom', 'IE': 'Ireland', 'DE': 'Germany', 'FR': 'France', 'ES': 'Spain', 'PT': 'Portugal', 'IT': 'Italy', 'NL': 'Netherlands', 'BE': 'Belgium', 'CH': 'Switzerland', 'AT': 'Austria', 'SE': 'Sweden', 'NO': 'Norway', 'DK': 'Denmark', 'FI': 'Finland', 'PL': 'Poland', 'CZ': 'Czech Republic', 'RO': 'Romania', 'BG': 'Bulgaria', 'HU': 'Hungary', 'GR': 'Greece', 'TR': 'Turkey', 'UA': 'Ukraine', 'IL': 'Israel', 'AE': 'United Arab Emirates', 'SA': 'Saudi Arabia', 'QA': 'Qatar', 'EG': 'Egypt', 'ZA': 'South Africa', 'NG': 'Nigeria', 'KE': 'Kenya', 'MA': 'Morocco', 'IN': 'India', 'PK': 'Pakistan', 'BD': 'Bangladesh', 'LK': 'Sri Lanka', 'SG': 'Singapore', 'MY': 'Malaysia', 'ID': 'Indonesia', 'TH': 'Thailand', 'VN': 'Vietnam', 'PH': 'Philippines', 'JP': 'Japan', 'KR': 'South Korea', 'CN': 'China', 'HK': 'Hong Kong', 'TW': 'Taiwan', 'AU': 'Australia', 'NZ': 'New Zealand'}
+
+
+NON_US_MARKERS |= {v.lower() for k, v in COUNTRY_NAMES.items() if k != "US"}
 
 
 def fetch_smartrecruiters(company):
