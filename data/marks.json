@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T21:39:48.878Z",
+  "updated_at": "2026-10-30T21:42:43.930Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -306,6 +306,12 @@
       "at": "2026-10-30T21:39:47.373Z",
       "title": "Product Lead, New Ventures",
       "company": "Toast"
+    },
+    "ashby:thumbtack:323602c6-082f-4c92-953d-642eccb0ed7f": {
+      "status": "applied",
+      "at": "2026-10-30T21:42:42.425Z",
+      "title": "Product Manager, Pro Integrations & Foundations",
+      "company": "Thumbtack"
     }
   }
 }
