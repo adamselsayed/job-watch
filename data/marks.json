@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T19:03:06.000Z",
+  "updated_at": "2026-10-30T21:33:03.133Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -270,6 +270,12 @@
       "at": "2026-10-30T19:03:04.490Z",
       "title": "Senior Staff Inbound Product Manager - Agentic AI Platform - Moveworks",
       "company": "ServiceNow"
+    },
+    "greenhouse:life360:8750960002": {
+      "status": "archived",
+      "at": "2026-10-30T21:33:01.629Z",
+      "title": "Senior Director, Analytics and Data Science, Core Product & Growth",
+      "company": "Life360"
     }
   }
 }
