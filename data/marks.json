@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T05:05:17.854Z",
+  "updated_at": "2026-10-30T05:05:40.006Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -66,6 +66,12 @@
       "at": "2026-10-30T05:05:16.348Z",
       "title": "Specialist Seller, Enterprise Select (AI Products)",
       "company": "Samsara"
+    },
+    "greenhouse:toast:8249029": {
+      "status": "archived",
+      "at": "2026-10-30T05:05:38.502Z",
+      "title": "Associate Counsel, Product and Marketing",
+      "company": "Toast"
     }
   }
 }
