@@ -7,30 +7,30 @@
  ],
  "first_postings": [
   {
-   "title": "Production Supervisor",
-   "externalPath": "/job/Bengaluru-Karnataka-India/Production-Supervisor_R0111564",
-   "locationsText": "Bengaluru, Karnataka, India",
-   "postedOn": "Posted 30+ Days Ago",
+   "title": "Associate Project Engineer",
+   "externalPath": "/job/Chennai-Tamil-Nadu-India/Associate-Project-Engineer_R0150060",
+   "locationsText": "Chennai, Tamil Nadu, India",
+   "postedOn": "Posted Today",
    "bulletFields": [
-    "R0111564"
+    "R0150060"
    ]
   },
   {
-   "title": "Production Supervisor",
-   "externalPath": "/job/Savli-Gujarat-India/Manufacturing-Production-Entry-Professional_R0109075",
-   "locationsText": "Savli, Gujarat, India",
-   "postedOn": "Posted 30+ Days Ago",
+   "title": "Project Document Controller",
+   "externalPath": "/job/Chennai-Tamil-Nadu-India/Project-Document-Controller_R0148625",
+   "locationsText": "Chennai, Tamil Nadu, India",
+   "postedOn": "Posted Today",
    "bulletFields": [
-    "R0109075"
+    "R0148625"
    ]
   },
   {
-   "title": "Production Engineer",
-   "externalPath": "/job/Vadodara-Gujarat-India/Production-Engineer_R0117921",
-   "locationsText": "Vadodara, Gujarat, India",
-   "postedOn": "Posted 30+ Days Ago",
+   "title": "HSE Internship",
+   "externalPath": "/job/Samut-Prakan-Samut-Prakan-Thailand/intern-HSE_R0148977",
+   "locationsText": "Samut Prakan, Samut Prakan, Thailand",
+   "postedOn": "Posted Today",
    "bulletFields": [
-    "R0117921"
+    "R0148977"
    ]
   }
  ],
@@ -43,56 +43,56 @@
      "f02270ea9793013a95d20af29e50523d"
     ],
     [
-     "Production & Skilled Trades",
-     "f02270ea97930193f8f83af29e50643d"
-    ],
-    [
      "Sales, Marketing & Product Management",
      "f02270ea97930199e3b74ff29e506c3d"
+    ],
+    [
+     "Production & Skilled Trades",
+     "f02270ea97930193f8f83af29e50643d"
     ],
     [
      "IT, Telecom & Internet",
      "f02270ea9793013aaaf32af29e505e3d"
     ],
     [
-     "Quality Management",
-     "f02270ea979301a5085e40f29e50663d"
-    ],
-    [
      "Supply Chain",
      "f02270ea9793017f4f534af29e506a3d"
-    ],
-    [
-     "Intern_Group",
-     "44d3f33caa03108ff296a30d59c657e4"
     ],
     [
      "Project/Program Management",
      "f02270ea9793015d9d4535f29e50623d"
     ],
     [
-     "Finance",
-     "f02270ea97930162fd7e10f29e50543d"
+     "Quality Management",
+     "f02270ea979301a5085e40f29e50663d"
     ],
     [
-     "Placeholder",
-     "44d3f33caa03108ff296aff95d6457ec"
+     "Intern_Group",
+     "44d3f33caa03108ff296a30d59c657e4"
+    ],
+    [
+     "Finance",
+     "f02270ea97930162fd7e10f29e50543d"
     ],
     [
      "Legal, Compliance & Audit",
      "f02270ea979301ce104a30f29e50603d"
     ],
     [
+     "Placeholder",
+     "44d3f33caa03108ff296aff95d6457ec"
+    ],
+    [
      "Human Resources",
      "f02270ea979301df728225f29e505c3d"
     ],
     [
-     "Customer Service & Contact Center Operations",
-     "f02270ea97930106568800f29e504e3d"
-    ],
-    [
      "Administration, Facilities & Secretarial",
      "f02270ea979301a71064f0f19e50483d"
+    ],
+    [
+     "Customer Service & Contact Center Operations",
+     "f02270ea97930106568800f29e504e3d"
     ],
     [
      "General Management",
@@ -116,24 +116,16 @@
      "44d3f33caa03108fe3d8f1c800d84835"
     ],
     [
-     "Apprentice (Fixed Term)",
-     "0131c8708787010d3d429ba28015e600"
-    ],
-    [
-     "Student/Work Experience (Fixed Term) (Seasonal)",
-     "17bb00ff6cdf1015495211c962190000"
-    ],
-    [
      "Temporary",
      "44d3f33caa03108fe3d8eb7d2ef94833"
     ],
     [
-     "Trainee (Trainee)",
-     "44d3f33caa03108fe3d8f83769d44838"
+     "Agency Temp",
+     "44d3f33caa03108fe550ec4ce0ae4971"
     ],
     [
-     "Dual Student (Fixed Term)",
-     "17bb00ff6cdf10154952112fe37c0000"
+     "Apprentice (Fixed Term)",
+     "0131c8708787010d3d429ba28015e600"
     ],
     [
      "Casual (Fixed Term) (Seasonal)",
@@ -144,20 +136,32 @@
      "44d3f33caa03108fe550ea5f37b24970"
     ],
     [
-     "Agency Temp",
-     "44d3f33caa03108fe550ec4ce0ae4971"
+     "Trainee (Trainee)",
+     "44d3f33caa03108fe3d8f83769d44838"
+    ],
+    [
+     "Student/Work Experience (Fixed Term) (Seasonal)",
+     "17bb00ff6cdf1015495211c962190000"
+    ],
+    [
+     "Dual Student (Fixed Term)",
+     "17bb00ff6cdf10154952112fe37c0000"
     ],
     [
      "Apprentice Permanent",
      "0131c8708787014c6d7d7aa28015e500"
     ],
     [
+     "Secondee/Expatriate",
+     "44d3f33caa03108fe3d8f660751b4837"
+    ],
+    [
      "Executive/Officer",
      "93d7e2522cb5016a402e79adcb746c00"
     ],
     [
-     "Secondee/Expatriate",
-     "44d3f33caa03108fe3d8f660751b4837"
+     "Vendor",
+     "44d3f33caa03108fe550dbd92169496e"
     ]
    ]
   ],
@@ -209,43 +213,9 @@
    ]
   ]
  ],
- "first_detail": {
-  "jobPostingInfo": {
-   "id": "e027dfe329c210019213a1fb688d0000",
-   "title": "Production Supervisor",
-   "jobDescription": "<p style=\"text-align:left\"><b>Location:</b></p>Bengaluru, Karnataka, India<p style=\"text-align:inherit\"></p><p style=\"text-align:left\"><b>Job ID:</b><span> </span></p>R0111564<p style=\"text-align:inherit\"></p><p style=\"text-align:left\"><b>Date Posted:</b></p>2025-11-13<p style=\"text-align:inherit\"></p><p style=\"text-align:left\"><b>Company Name:</b></p>HITACHI ENERGY INDIA LIMITED<p style=\"text-align:inherit\"></p><p style=\"text-align:left\"><b>Profession (Job Category):</b></p>Production &amp; Skilled Trades<p style=\"text-align:inherit\"></p><p style=\"text-align:left\"><b>Job Schedule: </b></p>Full time<p style=\"text-align:inherit\"></p><p style=\"text-align:left\"><b>Remote:</b></p>No<p style=\"text-align:inherit\"></p><p style=\"text-align:left\"><b>Job Description:</b></p><p></p><p><b>The opportunity</b></p><p></p><p>Hitachi Energy is a leader in high-voltage technology, offering a wide range of high-voltage products up to 1,200-kilovolt (kV) helping enhance the safety, reliability and efficiency of power networks while minimizing environmental impact. Our technology leadership continues to facilitate innovations in power transmission, enabling smart grids and enhancing eco-efficiency.</p><p>Hitachi Energy’s EconiQ™ high-voltage portfolio eliminates SF6 with reliable and scalable solutions for the lowest carbon footprint. The EconiQ line has achieved two world’s first – the replacement of SF6 in existing high-voltage equipment called EconiQ retrofill and the breakthrough SF6-free 420 kV circuit-breaker. Hitachi Energy has placed sustainability at the heart of its Purpose and is advancing a sustainable energy future for all. </p><p>The ideal candidate must enjoy working in a dynamic, fast-paced business environment. He or she must be flexible to accommodate business requirements and experience in working with diverse groups and cultures. The ability to multitask &amp; delivers within timelines is essential. The candidate will have excellent communications skills.</p><p></p><p><b>How you’ll make an impact</b></p><ul><li>Executing &amp; maintaining Lean Manufacturing,</li><li>Knowledge of Six Sigma, 5S, DMAIC etc.</li><li>Experience in Planning the work schedule &amp; Managing the Shift &amp; getting desired output by the team.</li><li>Assign duties to Employees, Trainees and oversee their progress.</li><li>Ensure that daily production goals are met.</li><li>Creating Production process reports.</li><li>Identify issues &amp; efficiency and suggest improvements</li><li>Train and integrate new Operators.</li><li>Full understanding of industry Safety standards</li><li>Enforce strict safety guidelines and company standards.</li><li>Responsible to ensure compliance with applicable external and internal regulations, procedures, and guidelines.</li><li>Living Hitachi Energy’s core values of safety and integrity, which means taking responsibility for your own actions while caring for your colleagues and the business</li></ul><p></p><p><b>Your background</b></p><ul><li>Education: B.E/ B. Tech Electrical &amp; Electronics</li><li>3&#43; years of Experience in relevant field.</li><li>Diploma – Electrical &amp; Electronics</li><li>5&#43; years of Experience in relevant field.</li><li>Technical Qualification - Engineering Handling the Trainees &amp; getting work done.</li><li>Understanding of industry Safety standards</li><li>GEMBA Board &amp; Chart Shift wise Production Data, Safety Incident reports in Intelex</li><li>Daily management (Tier-1 &amp; Tier-2)</li><li>Proficiency in both spoken &amp; written English &amp; Hindi language is required</li></ul><p style=\"text-align:inherit\"></p><p style=\"text-align:inherit\"></p><h2>Qualified individuals with a disability may request a reasonable accommodation if you are unable or limited in your ability to use or access the Hitachi Energy career site as a result of your disability. You may request reasonable accommodations by completing a <a href=\"https://www.hitachienergy.com/contact-us/general-inquiry?type&#61;I&#43;have&#43;a&#43;General&#43;question\" target=\"_blank\">general inquiry form</a> on our website. Please include your contact information and specific details about your required accommodation to support you during the job application process.</h2><p></p><h2>This is solely for job seekers with disabilities requiring accessibility assistance or an accommodation in the job application process. Messages left for other purposes will not receive a response. </h2><p></p><p></p>",
-   "location": "Bengaluru, Karnataka, India",
-   "postedOn": "Posted 30+ Days Ago",
-   "startDate": "2025-11-13",
-   "timeType": "Full time",
-   "jobReqId": "R0111564",
-   "jobPostingId": "Production-Supervisor_R0111564",
-   "jobPostingSiteId": "hitachi",
-   "country": {
-    "descriptor": "India",
-    "id": "c4f78be1a8f14da0ab49ce1162348a5e"
-   },
-   "canApply": true,
-   "posted": true,
-   "includeResumeParsing": true,
-   "jobRequisitionLocation": {
-    "descriptor": "(HE)Office_Doddaballapur",
-    "country": {
-     "descriptor": "India",
-     "id": "c4f78be1a8f14da0ab49ce1162348a5e",
-     "alpha2Code": "IN"
-    }
-   },
-   "externalUrl": "https://hitachi.wd1.myworkdayjobs.com/hitachi/job/Bengaluru-Karnataka-India/Production-Supervisor_R0111564",
-   "questionnaireId": "0208bb43e6e11001e6c74a48e91d0000"
-  },
-  "hiringOrganization": {
-   "name": "HITACHI ENERGY INDIA LIMITED",
-   "url": ""
-  },
-  "similarJobs": [],
-  "userAuthenticated": false
- },
+ "first_detail": null,
  "kept": 0,
- "scanned": 40
+ "scanned": 40,
+ "orgs_of_title_matches": {},
+ "total_reported": 2000
 }
