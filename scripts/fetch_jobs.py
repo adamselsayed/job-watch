@@ -140,13 +140,13 @@ def classify_us(location_text):
         return True
     if re.search(r"(^|[\s\-,(])us([\s\-,)]|$)", low):            # "Remote - US", "US Remote"
         return True
+    if any(re.search(r"\b" + re.escape(m) + r"\b", low) for m in NON_US_MARKERS):
+        return False
     toks = [t.lower() for t in _tokens(location_text)]
     if any(t in US_STATES or t in US_CITIES for t in toks):
         return True
     if any(t.strip().upper() in US_STATE_ABBR for t in _tokens(location_text) if len(t.strip()) == 2):
         return True
-    if any(re.search(r"\b" + re.escape(m) + r"\b", low) for m in NON_US_MARKERS):
-        return False
     if re.search(r"\bremote\b", low) and not toks[1:]:
         return None                                              # bare "Remote" -- can't tell
     return None

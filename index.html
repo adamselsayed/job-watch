@@ -354,10 +354,10 @@
     const low = loc.toLowerCase();
     if (/\b(united states|usa|u\.s\.a?\.?|us only|us-based)\b/.test(low)) return true;
     if (/(^|[\s\-,(])us([\s\-,)]|$)/.test(low)) return true;
+    if (NON_US.some(m => new RegExp('\\b' + esc(m) + '\\b').test(low))) return false;
     const toks = tokens(loc);
     if (toks.some(t => US_STATES.has(t.toLowerCase()) || US_CITIES.has(t.toLowerCase()))) return true;
     if (toks.some(t => t.length === 2 && US_ABBR.has(t.toUpperCase()))) return true;
-    if (NON_US.some(m => new RegExp('\\b' + esc(m) + '\\b').test(low))) return false;
     return null;
   }
   function classifyRemote(loc, title, meta = '', body = '') {
