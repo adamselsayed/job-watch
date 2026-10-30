@@ -125,7 +125,7 @@ NON_US_MARKERS = {
     "manila","vietnam","indonesia","malaysia","thailand","bangkok","emea","apac","latam",
     "dach","benelux","nordics","europe","bulgaria","sofia","costa rica","turkey","istanbul","ukraine","kyiv",
     "greece","athens","morocco","bangladesh","dhaka","sri lanka","colombo","south korea","czech republic",
-    "united arab emirates","saudi arabia","hong kong","north america", "canada",
+    "united arab emirates","saudi arabia","hong kong","north america", "canada","ontario","quebec","british columbia","alberta","manitoba","saskatchewan","nova scotia","new brunswick",
 }
 
 
