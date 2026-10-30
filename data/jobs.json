@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T05:17:36+00:00",
+  "generated_at": "2026-10-30T05:23:57+00:00",
   "criteria": {
     "title_keywords": [
       "product"
@@ -16,7 +16,7 @@
       "ats": "greenhouse",
       "board": "samsara",
       "url": "https://www.samsara.com/company/careers/roles",
-      "fetched_at": "2026-10-30T05:17:36+00:00",
+      "fetched_at": "2026-10-30T05:23:57+00:00",
       "status": "ok",
       "error": null,
       "total_jobs": 319,
@@ -27,7 +27,7 @@
       "ats": "greenhouse",
       "board": "gomotive",
       "url": "https://gomotive.com/company/careers/jobs/",
-      "fetched_at": "2026-10-30T05:17:36+00:00",
+      "fetched_at": "2026-10-30T05:23:57+00:00",
       "status": "ok",
       "error": null,
       "total_jobs": 167,
@@ -38,7 +38,7 @@
       "ats": "greenhouse",
       "board": "toast",
       "url": "https://careers.toasttab.com/jobs/search",
-      "fetched_at": "2026-10-30T05:17:36+00:00",
+      "fetched_at": "2026-10-30T05:23:57+00:00",
       "status": "ok",
       "error": null,
       "total_jobs": 337,
@@ -49,18 +49,18 @@
       "ats": "smartrecruiters",
       "board": "Experian",
       "url": "https://jobs.experian.com/jobs",
-      "fetched_at": "2026-10-30T05:17:36+00:00",
+      "fetched_at": "2026-10-30T05:23:57+00:00",
       "status": "ok",
       "error": null,
       "total_jobs": 390,
-      "matched": 8
+      "matched": 6
     },
     {
       "name": "Komodo Health",
       "ats": "greenhouse",
       "board": "komodohealth",
       "url": "https://job-boards.greenhouse.io/komodohealth",
-      "fetched_at": "2026-10-30T05:17:36+00:00",
+      "fetched_at": "2026-10-30T05:23:57+00:00",
       "status": "ok",
       "error": null,
       "total_jobs": 24,
@@ -85,7 +85,7 @@
       "company": "Experian",
       "key": "smartrecruiters:Experian:744000158611740",
       "first_seen": "2026-10-30T05:15:36+00:00",
-      "last_seen": "2026-10-30T05:17:36+00:00",
+      "last_seen": "2026-10-30T05:23:57+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -106,7 +106,7 @@
       "company": "Experian",
       "key": "smartrecruiters:Experian:744000158587389",
       "first_seen": "2026-10-30T05:15:36+00:00",
-      "last_seen": "2026-10-30T05:17:36+00:00",
+      "last_seen": "2026-10-30T05:23:57+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -132,7 +132,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:8325411",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-30T05:17:36+00:00",
+      "last_seen": "2026-10-30T05:23:57+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -158,7 +158,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:8325410",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-30T05:17:36+00:00",
+      "last_seen": "2026-10-30T05:23:57+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -184,7 +184,7 @@
       "company": "Motive",
       "key": "greenhouse:gomotive:8913113002",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-30T05:17:36+00:00",
+      "last_seen": "2026-10-30T05:23:57+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -210,7 +210,7 @@
       "company": "Toast",
       "key": "greenhouse:toast:8305972",
       "first_seen": "2026-10-29T23:40:13+00:00",
-      "last_seen": "2026-10-30T05:17:36+00:00",
+      "last_seen": "2026-10-30T05:23:57+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -236,7 +236,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:8315136",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-30T05:17:36+00:00",
+      "last_seen": "2026-10-30T05:23:57+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -262,7 +262,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:8315122",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-30T05:17:36+00:00",
+      "last_seen": "2026-10-30T05:23:57+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -288,7 +288,7 @@
       "company": "Toast",
       "key": "greenhouse:toast:8245664",
       "first_seen": "2026-10-29T23:40:13+00:00",
-      "last_seen": "2026-10-30T05:17:36+00:00",
+      "last_seen": "2026-10-30T05:23:57+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -314,7 +314,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:8300580",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-30T05:17:36+00:00",
+      "last_seen": "2026-10-30T05:23:57+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -340,28 +340,7 @@
       "company": "Motive",
       "key": "greenhouse:gomotive:8797393002",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-30T05:17:36+00:00",
-      "status": "open",
-      "closed_at": null
-    },
-    {
-      "job_id": "744000155757118",
-      "req_id": "REF33282T",
-      "title": "Product Launch Manager",
-      "location": "Hybrid - Sofia, Bulgaria",
-      "location_detail": "",
-      "department": "Product Management",
-      "published_at": "2026-10-15T13:06:24.749Z",
-      "updated_at": null,
-      "url": "https://jobs.smartrecruiters.com/Experian/744000155757118-product-launch-manager?oga=true",
-      "salary": null,
-      "us": null,
-      "remote": "hybrid",
-      "remote_confidence": "high",
-      "company": "Experian",
-      "key": "smartrecruiters:Experian:744000155757118",
-      "first_seen": "2026-10-30T05:15:36+00:00",
-      "last_seen": "2026-10-30T05:17:36+00:00",
+      "last_seen": "2026-10-30T05:23:57+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -387,7 +366,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:8233947",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-30T05:17:36+00:00",
+      "last_seen": "2026-10-30T05:23:57+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -413,7 +392,7 @@
       "company": "Motive",
       "key": "greenhouse:gomotive:8880889002",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-30T05:17:36+00:00",
+      "last_seen": "2026-10-30T05:23:57+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -439,7 +418,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:8256425",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-30T05:17:36+00:00",
+      "last_seen": "2026-10-30T05:23:57+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -465,28 +444,7 @@
       "company": "Toast",
       "key": "greenhouse:toast:8259263",
       "first_seen": "2026-10-29T23:40:13+00:00",
-      "last_seen": "2026-10-30T05:17:36+00:00",
-      "status": "open",
-      "closed_at": null
-    },
-    {
-      "job_id": "744000154156611",
-      "req_id": "REF33079S",
-      "title": "Service Now CSM Technical Product Owner",
-      "location": "Hybrid - Sofia, Sofia City Province, Bulgaria",
-      "location_detail": "",
-      "department": "Customer Service",
-      "published_at": "2026-10-07T17:06:40.100Z",
-      "updated_at": null,
-      "url": "https://jobs.smartrecruiters.com/Experian/744000154156611-service-now-csm-technical-product-owner?oga=true",
-      "salary": null,
-      "us": null,
-      "remote": "hybrid",
-      "remote_confidence": "high",
-      "company": "Experian",
-      "key": "smartrecruiters:Experian:744000154156611",
-      "first_seen": "2026-10-30T05:15:36+00:00",
-      "last_seen": "2026-10-30T05:17:36+00:00",
+      "last_seen": "2026-10-30T05:23:57+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -512,7 +470,7 @@
       "company": "Toast",
       "key": "greenhouse:toast:8249029",
       "first_seen": "2026-10-29T23:40:13+00:00",
-      "last_seen": "2026-10-30T05:17:36+00:00",
+      "last_seen": "2026-10-30T05:23:57+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -533,7 +491,7 @@
       "company": "Experian",
       "key": "smartrecruiters:Experian:744000153590289",
       "first_seen": "2026-10-30T05:15:36+00:00",
-      "last_seen": "2026-10-30T05:17:36+00:00",
+      "last_seen": "2026-10-30T05:23:57+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -559,7 +517,7 @@
       "company": "Komodo Health",
       "key": "greenhouse:komodohealth:8868143002",
       "first_seen": "2026-10-30T05:15:36+00:00",
-      "last_seen": "2026-10-30T05:17:36+00:00",
+      "last_seen": "2026-10-30T05:23:57+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -580,7 +538,7 @@
       "company": "Experian",
       "key": "smartrecruiters:Experian:744000152989400",
       "first_seen": "2026-10-30T05:15:36+00:00",
-      "last_seen": "2026-10-30T05:17:36+00:00",
+      "last_seen": "2026-10-30T05:23:57+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -601,7 +559,7 @@
       "company": "Experian",
       "key": "smartrecruiters:Experian:744000152972234",
       "first_seen": "2026-10-30T05:15:36+00:00",
-      "last_seen": "2026-10-30T05:17:36+00:00",
+      "last_seen": "2026-10-30T05:23:57+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -627,7 +585,7 @@
       "company": "Toast",
       "key": "greenhouse:toast:8226770",
       "first_seen": "2026-10-29T23:40:13+00:00",
-      "last_seen": "2026-10-30T05:17:36+00:00",
+      "last_seen": "2026-10-30T05:23:57+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -648,7 +606,7 @@
       "company": "Experian",
       "key": "smartrecruiters:Experian:744000149963169",
       "first_seen": "2026-10-30T05:15:36+00:00",
-      "last_seen": "2026-10-30T05:17:36+00:00",
+      "last_seen": "2026-10-30T05:23:57+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -674,7 +632,7 @@
       "company": "Toast",
       "key": "greenhouse:toast:8180264",
       "first_seen": "2026-10-29T23:40:13+00:00",
-      "last_seen": "2026-10-30T05:17:36+00:00",
+      "last_seen": "2026-10-30T05:23:57+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -700,7 +658,7 @@
       "company": "Motive",
       "key": "greenhouse:gomotive:8782064002",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-30T05:17:36+00:00",
+      "last_seen": "2026-10-30T05:23:57+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -726,7 +684,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:8179538",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-30T05:17:36+00:00",
+      "last_seen": "2026-10-30T05:23:57+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -752,7 +710,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:8177633",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-30T05:17:36+00:00",
+      "last_seen": "2026-10-30T05:23:57+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -778,7 +736,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:8148044",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-30T05:17:36+00:00",
+      "last_seen": "2026-10-30T05:23:57+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -804,7 +762,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:8112836",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-30T05:17:36+00:00",
+      "last_seen": "2026-10-30T05:23:57+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -830,7 +788,7 @@
       "company": "Komodo Health",
       "key": "greenhouse:komodohealth:8599153002",
       "first_seen": "2026-10-30T05:15:36+00:00",
-      "last_seen": "2026-10-30T05:17:36+00:00",
+      "last_seen": "2026-10-30T05:23:57+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -856,7 +814,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:7982346",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-30T05:17:36+00:00",
+      "last_seen": "2026-10-30T05:23:57+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -882,7 +840,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:7982336",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-30T05:17:36+00:00",
+      "last_seen": "2026-10-30T05:23:57+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -908,7 +866,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:7982331",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-30T05:17:36+00:00",
+      "last_seen": "2026-10-30T05:23:57+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -934,7 +892,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:7982328",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-30T05:17:36+00:00",
+      "last_seen": "2026-10-30T05:23:57+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -960,7 +918,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:7982323",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-30T05:17:36+00:00",
+      "last_seen": "2026-10-30T05:23:57+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -986,7 +944,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:7982326",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-30T05:17:36+00:00",
+      "last_seen": "2026-10-30T05:23:57+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1012,7 +970,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:7960413",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-30T05:17:36+00:00",
+      "last_seen": "2026-10-30T05:23:57+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1038,7 +996,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:7292081",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-30T05:17:36+00:00",
+      "last_seen": "2026-10-30T05:23:57+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1146,6 +1104,48 @@
       "last_seen": "2026-10-30T05:15:36+00:00",
       "status": "closed",
       "closed_at": "2026-10-30T05:17:36+00:00"
+    },
+    {
+      "job_id": "744000155757118",
+      "req_id": "REF33282T",
+      "title": "Product Launch Manager",
+      "location": "Hybrid - Sofia, Bulgaria",
+      "location_detail": "",
+      "department": "Product Management",
+      "published_at": "2026-10-15T13:06:24.749Z",
+      "updated_at": null,
+      "url": "https://jobs.smartrecruiters.com/Experian/744000155757118-product-launch-manager?oga=true",
+      "salary": null,
+      "us": null,
+      "remote": "hybrid",
+      "remote_confidence": "high",
+      "company": "Experian",
+      "key": "smartrecruiters:Experian:744000155757118",
+      "first_seen": "2026-10-30T05:15:36+00:00",
+      "last_seen": "2026-10-30T05:17:36+00:00",
+      "status": "closed",
+      "closed_at": "2026-10-30T05:23:57+00:00"
+    },
+    {
+      "job_id": "744000154156611",
+      "req_id": "REF33079S",
+      "title": "Service Now CSM Technical Product Owner",
+      "location": "Hybrid - Sofia, Sofia City Province, Bulgaria",
+      "location_detail": "",
+      "department": "Customer Service",
+      "published_at": "2026-10-07T17:06:40.100Z",
+      "updated_at": null,
+      "url": "https://jobs.smartrecruiters.com/Experian/744000154156611-service-now-csm-technical-product-owner?oga=true",
+      "salary": null,
+      "us": null,
+      "remote": "hybrid",
+      "remote_confidence": "high",
+      "company": "Experian",
+      "key": "smartrecruiters:Experian:744000154156611",
+      "first_seen": "2026-10-30T05:15:36+00:00",
+      "last_seen": "2026-10-30T05:17:36+00:00",
+      "status": "closed",
+      "closed_at": "2026-10-30T05:23:57+00:00"
     },
     {
       "job_id": "744000153862999",
