@@ -398,18 +398,34 @@ _WD_HEADERS = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) job-watch/1.0", "A
                "Accept-Language": "en-US,en;q=0.9"}
 
 
+def _retry(fn, tries=4):
+    import time
+    for i in range(tries):
+        try:
+            return fn()
+        except Exception as e:          # noqa: BLE001 - transient 5xx / timeouts are common on Workday
+            if i == tries - 1:
+                raise
+            log(f"  retry {i + 1} after: {e}")
+            time.sleep(2 * (i + 1))
+
+
 def wd_get(url, timeout=60, as_json=True):
-    req = urllib.request.Request(url, headers=_WD_HEADERS)
-    with _WD_OPENER.open(req, timeout=timeout) as r:
-        raw = r.read().decode("utf-8", "replace")
-        return json.loads(raw) if as_json else raw
+    def go():
+        req = urllib.request.Request(url, headers=_WD_HEADERS)
+        with _WD_OPENER.open(req, timeout=timeout) as r:
+            raw = r.read().decode("utf-8", "replace")
+            return json.loads(raw) if as_json else raw
+    return _retry(go)
 
 
 def fetch_json_post(url, body, timeout=60):
-    req = urllib.request.Request(url, data=json.dumps(body).encode(), method="POST",
-                                 headers={**_WD_HEADERS, "Content-Type": "application/json"})
-    with _WD_OPENER.open(req, timeout=timeout) as r:
-        return json.loads(r.read().decode("utf-8"))
+    def go():
+        req = urllib.request.Request(url, data=json.dumps(body).encode(), method="POST",
+                                     headers={**_WD_HEADERS, "Content-Type": "application/json"})
+        with _WD_OPENER.open(req, timeout=timeout) as r:
+            return json.loads(r.read().decode("utf-8"))
+    return _retry(go)
 
 
 DEBUG = os.environ.get("JOBWATCH_DEBUG") == "1"
@@ -433,13 +449,19 @@ def fetch_workday(company):
     base = f"https://{tenant_host}.myworkdayjobs.com/wday/cxs/{tenant}/{site}"
     filters = [x.strip().lower() for x in company.get("filter", "").split(",") if x.strip()]
     search = "" if company.get("scan", "").lower() == "all" else " ".join(TITLE_KEYWORDS)
+    # optional facets, e.g.  facets: jobFamilyGroup=abc123,def456; locationCountry=xyz
+    facets = {}
+    for part in company.get("facets", "").split(";"):
+        if "=" in part:
+            k, v = part.split("=", 1)
+            facets[k.strip()] = [x.strip() for x in v.split(",") if x.strip()]
     postings, offset, first_page, pages = [], 0, None, []
     try:
         wd_get(f"https://{tenant_host}.myworkdayjobs.com/{site}", as_json=False)     # establishes the session cookie
     except Exception as e:          # noqa: BLE001
         log(f"[{company['name']}] cookie warm-up failed: {e}")
     while True:
-        page = fetch_json_post(f"{base}/jobs", {"appliedFacets": {}, "limit": 20, "offset": offset, "searchText": search})
+        page = fetch_json_post(f"{base}/jobs", {"appliedFacets": facets, "limit": 20, "offset": offset, "searchText": search})
         pages.append((offset, len(page.get("jobPostings") or []), page.get("total")))
         if first_page is None:
             first_page = page
