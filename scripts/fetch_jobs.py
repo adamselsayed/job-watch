@@ -392,7 +392,93 @@ def fetch_smartrecruiters(company):
     return out
 
 
-ADAPTERS = {"greenhouse": fetch_greenhouse, "lever": fetch_lever, "ashby": fetch_ashby, "smartrecruiters": fetch_smartrecruiters}
+def fetch_json_post(url, body, timeout=60):
+    req = urllib.request.Request(url, data=json.dumps(body).encode(), method="POST",
+                                 headers={"User-Agent": "job-watch/1.0 (+github)", "Accept": "application/json",
+                                          "Content-Type": "application/json"})
+    with urllib.request.urlopen(req, timeout=timeout) as r:
+        return json.loads(r.read().decode("utf-8"))
+
+
+DEBUG = os.environ.get("JOBWATCH_DEBUG") == "1"
+
+
+def debug_dump(company, payload):
+    if not DEBUG:
+        return
+    os.makedirs(os.path.join(ROOT, "data", "debug"), exist_ok=True)
+    with open(os.path.join(ROOT, "data", "debug", f"{company['name'].replace(' ', '_')}.json"), "w", encoding="utf-8") as f:
+        json.dump(payload, f, indent=1, ensure_ascii=False, default=str)
+
+
+def fetch_workday(company):
+    """Workday hosted career sites.  board = "<tenant>.<wd#>/<site>", e.g. "hitachi.wd1/hitachi"
+    for https://hitachi.wd1.myworkdayjobs.com/hitachi .  Optional "filter": comma-separated
+    substrings; a posting is kept only if one of them appears in its detail (e.g. the hiring
+    company name on a shared group-wide board)."""
+    tenant_host, site = company["board"].split("/", 1)
+    tenant = tenant_host.split(".")[0]
+    base = f"https://{tenant_host}.myworkdayjobs.com/wday/cxs/{tenant}/{site}"
+    filters = [x.strip().lower() for x in company.get("filter", "").split(",") if x.strip()]
+    postings, offset, first_page = [], 0, None
+    while True:
+        page = fetch_json_post(f"{base}/jobs", {"appliedFacets": {}, "limit": 20, "offset": offset,
+                                                "searchText": " ".join(TITLE_KEYWORDS)})
+        if first_page is None:
+            first_page = page
+        items = page.get("jobPostings") or []
+        postings.extend(items)
+        offset += 20
+        if not items or offset >= int(page.get("total", 0)) or offset > 2000:
+            break
+    out, first_detail = [], None
+    for jp in postings:
+        title = jp.get("title", "") or ""
+        if not title_matches(title):
+            continue
+        path = jp.get("externalPath") or ""
+        try:
+            d = fetch_json(f"{base}{path}")
+        except Exception as e:          # noqa: BLE001
+            log(f"[{company['name']}] detail fetch failed for {path}: {e}")
+            continue
+        info = d.get("jobPostingInfo") or {}
+        if first_detail is None:
+            first_detail = d
+        content = strip_html(info.get("jobDescription", ""))
+        hay = json.dumps(info, ensure_ascii=False).lower()
+        if filters and not any(f in hay for f in filters):
+            continue
+        locs = [info.get("location", "")] + [x for x in (info.get("additionalLocations") or []) if x]
+        country = (info.get("country") or {}).get("descriptor", "") if isinstance(info.get("country"), dict) else ""
+        loc_name = "; ".join(x for x in locs if x) or jp.get("locationsText", "")
+        if country and country.lower() not in loc_name.lower():
+            loc_name = f"{loc_name}, {country}" if loc_name else country
+        remote_type = (info.get("remoteType") or "")
+        published = info.get("startDate") or None          # YYYY-MM-DD (Workday gives no time of day)
+        out.append({
+            "job_id": info.get("jobReqId") or path.rsplit("_", 1)[-1] or path,
+            "req_id": info.get("jobReqId") or None,
+            "title": title,
+            "location": loc_name,
+            "location_detail": "",
+            "department": (d.get("hiringOrganization") or {}).get("name", "") if isinstance(d.get("hiringOrganization"), dict) else "",
+            "published_at": published,
+            "updated_at": None,
+            "url": info.get("externalUrl") or f"https://{tenant_host}.myworkdayjobs.com/{site}{path}",
+            "salary": salary_from_text(content),
+            "_meta_text": f"remoteType: {remote_type} timeType: {info.get('timeType', '')} postedOn: {jp.get('postedOn', '')}",
+            "_content": content,
+        })
+    debug_dump(company, {"first_page_keys": list((first_page or {}).keys()), "first_postings": postings[:3],
+                         "facets": [(f.get("facetParameter"), [(v.get("descriptor"), v.get("id")) for v in (f.get("values") or [])[:15]])
+                                    for f in ((first_page or {}).get("facets") or [])],
+                         "first_detail": first_detail, "kept": len(out), "scanned": len(postings)})
+    return out
+
+
+ADAPTERS = {"greenhouse": fetch_greenhouse, "lever": fetch_lever, "ashby": fetch_ashby,
+            "smartrecruiters": fetch_smartrecruiters, "workday": fetch_workday}
 
 
 # --------------------------------------------------------------- filtering --

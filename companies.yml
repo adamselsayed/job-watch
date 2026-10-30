@@ -1,7 +1,7 @@
 # Companies to watch. One block per company.
 #
 #   name:  how the company appears on the dashboard
-#   ats:   greenhouse | lever | ashby | smartrecruiters   (the job-board system the company uses)
+#   ats:   greenhouse | lever | ashby | smartrecruiters | workday   (the job-board system the company uses)
 #   board: the company's board token (the slug in its job-board URL)
 #   url:   the public careers page (for reference / linking)
 #
@@ -10,6 +10,8 @@
 #   Lever:      jobs.lever.co/<token>
 #   Ashby:      jobs.ashbyhq.com/<token>
 #   SmartRecruiters: jobs.smartrecruiters.com/<token>/...  or the company identifier in api.smartrecruiters.com/v1/companies/<token>/postings
+#   Workday:    <tenant>.<wd#>.myworkdayjobs.com/<site>  ->  board: <tenant>.<wd#>/<site>   (e.g. hitachi.wd1/hitachi)
+#               optional  filter: Name A, Name B   keeps only postings whose detail mentions one of these (shared group boards)
 #
 # After adding a company, run:  python3 scripts/fetch_jobs.py
 # (GitHub Actions also runs it automatically every morning.)
@@ -58,3 +60,9 @@
   ats: greenhouse
   board: life360
   url: https://www.life360.com/open-positions
+
+- name: Hitachi
+  ats: workday
+  board: hitachi.wd1/hitachi
+  filter: Hitachi Vantara, Hitachi Digital Services
+  url: https://www.hitachivantara.com/en-us/company/careers/job-search

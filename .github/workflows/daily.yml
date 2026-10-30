@@ -10,6 +10,10 @@ on:
         description: "Only fetch this company (leave blank for all)"
         required: false
         default: ""
+      debug:
+        description: "Write a raw API sample to data/debug/ (for adapter development)"
+        required: false
+        default: "0"
 
 permissions:
   contents: write
@@ -29,7 +33,9 @@ jobs:
           python-version: "3.12"
 
       - name: Fetch job boards
-        run: python3 scripts/fetch_jobs.py ${{ inputs.company }}
+        env:
+          JOBWATCH_DEBUG: ${{ inputs.debug }}
+        run: python3 scripts/fetch_jobs.py ${{ inputs.company != '' && format('"{0}"', inputs.company) || '' }}
 
       - name: Commit updated data
         run: |
