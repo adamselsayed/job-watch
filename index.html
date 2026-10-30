@@ -112,7 +112,9 @@
   th.w-role .rz { position: absolute; top: 0; right: -4px; width: 9px; height: 100%; cursor: col-resize; user-select: none; }
   th.w-role .rz::after { content: ""; position: absolute; left: 4px; top: 6px; bottom: 6px; width: 1px; background: var(--border); }
   th.w-role .rz:hover::after, th.w-role .rz.drag::after { background: var(--accent); width: 2px; }
-  table.sized { width: max-content; min-width: 100%; }
+  table.sized { table-layout: auto; width: auto; min-width: 100%; }
+  table.sized td.title { max-width: var(--rw); width: var(--rw); }
+  table.sized td.loc { max-width: 220px; }
   td.title .t { display: flex; align-items: center; gap: 6px; min-width: 0; }
   td.title .t a { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
   td.loc { max-width: 0; overflow: hidden; text-overflow: ellipsis; }
@@ -541,7 +543,7 @@
   function wireResize(el) {
     const rz = el.querySelector('.rz'); if (!rz) return;
     const th = rz.parentElement, table = el.querySelector('table');
-    const apply = () => { th.style.width = roleW ? roleW + 'px' : ''; table.classList.toggle('sized', !!roleW); };
+    const apply = () => { th.style.width = roleW ? roleW + 'px' : ''; table.style.setProperty('--rw', roleW + 'px'); table.classList.toggle('sized', !!roleW); };
     rz.addEventListener('mousedown', e => {
       e.preventDefault(); rz.classList.add('drag');
       const x0 = e.clientX, w0 = th.getBoundingClientRect().width;
