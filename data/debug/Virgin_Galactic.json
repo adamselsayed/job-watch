@@ -1,0 +1,242 @@
+{
+ "first_page": {
+  "keys": [
+   "refineSearch"
+  ],
+  "rs_keys": [
+   "status",
+   "hits",
+   "totalHits",
+   "data",
+   "eid"
+  ],
+  "data_keys": [
+   "jobs",
+   "aggregations",
+   "SEARCH_CONFIG",
+   "suggestions",
+   "ui_skills_selection"
+  ],
+  "totalHits": 82,
+  "sample": [
+   {
+    "cityState": "Truth or Consequences, New Mexico",
+    "country": "United States",
+    "subCategory": "Corporate Functions",
+    "type": "Full-Time",
+    "descriptionTeaser": "At Virgin Galactic our Spaceline Administrative team works in a centralized team, functionally managed by the Manager, Business Support and matrix assigned to principals or departments. Guided by o...",
+    "state": "New Mexico",
+    "visibilityType": "External",
+    "siteType": "external",
+    "longitude": "-107.25281",
+    "multi_category": [
+     "Corporate Functions"
+    ],
+    "reqId": "2251",
+    "jobId": "2251",
+    "city": "Truth or Consequences",
+    "latitude": "33.1284",
+    "locale": "en_GLOBAL",
+    "multi_location": [
+     "Truth or Consequences, New Mexico, United States"
+    ],
+    "title": "Executive Assistant",
+    "jobSeqNo": "VGNVGEUS2251EXTERNALENGLOBAL",
+    "postedDate": "2026-09-29T20:25:00.606+0000",
+    "dateCreated": "2026-09-15T22:24:51.548+0000",
+    "cityStateCountry": "Truth or Consequences, New Mexico, United States",
+    "jobVisibility": [
+     "external",
+     "internal"
+    ],
+    "applyUrl": "https://career-hcm20s.ns2cloud.com/career?company=VRGNHCM20S&lang=en_US&career_ns=job_application&career_job_req_id=2251",
+    "location": "Truth or Consequences, New Mexico, United States",
+    "category": "Corporate Functions",
+    "externalApply": false,
+    "ml_skills": [
+     "executive administrative support",
+     "calendar management",
+     "microsoft office suite",
+     "travel logistics",
+     "expense report processing",
+     "document management",
+     "meeting coordination",
+     "confidentiality management",
+     "note taking",
+     "agenda preparation",
+     "sharepoint",
+     "visio",
+     "onenote",
+     "teams",
+     "word",
+     "excel",
+     "powerpoint",
+     "outlook",
+     "conflict resolution",
+     "cross-functional collaboration",
+     "strategic support",
+     "process improvement",
+     "mentoring junior staff"
+    ],
+    "ml_job_parser": {
+     "descriptionTeaser": "Become part of our team as an Executive Assistant, providing comprehensive administrative support to the Vice President, Mission Operations. Manage high-volume calendars, coordinate meetings, and ensure confidentiality. Ideal for candidates with executive support experience and strong organizational skills.",
+     "descriptionTeaser_first200": "At Virgin Galactic our Spaceline Administrative team works in a centralized team, functionally managed by the Manager, Business Support and matrix assigned to principals or departments. Guided by o...",
+     "descriptionTeaser_keyword": "At Virgin Galactic our Spaceline Administrative team works in a centralized team, functionally managed by the Manager, Business Support and matrix assigned to principals or departments. Guided by our...",
+     "descriptionTeaser_ats": "At Virgin Galactic our Spaceline Administrative team works in a centralized team, functionally managed by the Manager, Business Support and matrix assigned to principals or departments. Guided by our"
+    },
+    "isMultiLocation": false,
+    "multi_location_array": [
+     {
+      "latlong": {
+       "lon": -107.25281,
+       "lat": 33.1284
+      },
+      "location": "Truth or Consequences, New Mexico, United States"
+     }
+    ],
+    "isMultiCategory": false,
+    "multi_category_array": [
+     {
+      "category": "Corporate Functions"
+     }
+    ],
+    "badge": ""
+   },
+   {
+    "subCategory": "Information Technology",
+    "ml_skills": [
+     "oracle erp development",
+     "sql",
+     "pl/sql",
+     "oracle development tools",
+     "enterprise application integration",
+     "oracle module configuration",
+     "data migration",
+     "data validation",
+     "oracle integration architecture",
+     "bi publisher",
+     "api integration",
+     "web services",
+     "file-based interfaces",
+     "configuration management",
+     "data integrity",
+     "security incident response",
+     "oracle development lifecycle",
+     "requirements analysis",
+     "code review",
+     "release management",
+     "technical project leadership",
+     "mentoring",
+     "stakeholder management",
+     "cross-functional collaboration",
+     "technical documentation",
+     "microsoft excel",
+     "sharepoint",
+     "box",
+     "onedrive"
+    ],
+    "type": "Full-Time",
+    "descriptionTeaser": "The Developer III is a senior technical contributor within the Information Technology ERP team responsible for architecting, developing, extending, and integrating enterprise solutions across the O...",
+    "state": "California",
+    "siteType": "external",
+    "multi_category": [
+     "Corporate Functions"
+    ],
+    "reqId": "2253",
+    "city": "Tustin",
+    "latitude": "33.74585",
+    "multi_location": [
+     "Tustin, California, United States"
+    ],
+    "applyUrl": "https://career-hcm20s.ns2cloud.com/career?company=VRGNHCM20S&lang=en_US&career_ns=job_application&career_job_req_id=2253",
+    "ml_job_parser": {
+     "descriptionTeaser": "Become part of our team as a senior IT Developer III, architecting and integrating enterprise solutions across the Oracle platform. Lead technical projects, mentor junior developers, and ensure secure, scalable solutions for Supply Chain and Finance. Ideal for experienced ERP professionals with deep Oracle expertise and a strong background in enterprise application development.",
+     "descriptionTeaser_ats": "The Developer III is a senior technical contributor within the Information Technology ERP team responsible for architecting, developing, extending, and integrating enterprise solutions across the Orac",
+     "descriptionTeaser_keyword": "The Developer III is a senior technical contributor within the Information Technology ERP team responsible for architecting, developing, extending, and integrating enterprise solutions across the Orac...",
+     "descriptionTeaser_first200": "The Developer III is a senior technical contributor within the Information Technology ERP team responsible for architecting, developing, extending, and integrating enterprise solutions across the O..."
+    },
+    "externalApply": false,
+    "cityState": "Tustin, California",
+    "country": "United States",
+    "visibilityType": "External",
+    "longitude": "-117.82617",
+    "jobId": "2253",
+    "locale": "en_GLOBAL",
+    "title": "IT Developer III, Supply Chain & Finance",
+    "jobSeqNo": "VGNVGEUS2253EXTERNALENGLOBAL",
+    "postedDate": "2026-09-29T20:25:00.606+0000",
+    "dateCreated": "2026-09-16T23:24:46.318+0000",
+    "cityStateCountry": "Tustin, California, United States",
+    "jobVisibility": [
+     "external",
+     "internal"
+    ],
+    "location": "Tustin, California, United States",
+    "category": "Corporate Functions",
+    "isMultiLocation": false,
+    "multi_location_array": [
+     {
+      "latlong": {
+       "lon": -117.82617,
+       "lat": 33.74585
+      },
+      "location": "Tustin, California, United States"
+     }
+    ],
+    "isMultiCategory": false,
+    "multi_category_array": [
+     {
+      "category": "Corporate Functions"
+     }
+    ],
+    "badge": ""
+   }
+  ]
+ },
+ "scanned": 82,
+ "kept": 3,
+ "kept_rows": [
+  {
+   "job_id": "VGNVGEUS2247EXTERNALENGLOBAL",
+   "req_id": "2247",
+   "title": "Sr. Manager, Product & Merchandising",
+   "location": "Tustin, California, United States",
+   "location_detail": "Tustin, California, United States",
+   "department": "Corporate Functions",
+   "published_at": "2026-09-29T21:25:05.548+0000",
+   "updated_at": null,
+   "url": "https://career-hcm20s.ns2cloud.com/career?company=VRGNHCM20S&lang=en_US&career_ns=job_application&career_job_req_id=2247",
+   "salary": null,
+   "_meta_text": "type: Full-Time workplace: ",
+   "_content_head": " The Senior Manager, Product & Merchandising serves as Virgin Galactic's lead merchandise buyer and owns the end-to-end commercial development of merchandise supporting the astronaut journey. The portfolio includes apparel, accessories, collectibles, gifting, amenities, and premium lifestyle products for Spacefarers, flown astronauts, invited guests, and selected Virgin Galactic experiences. \n  \n "
+  },
+  {
+   "job_id": "VGNVGEUS2213EXTERNALENGLOBAL",
+   "req_id": "2213",
+   "title": "Business Systems Analyst III - Spaceline Product Development & Production",
+   "location": "Tustin, California, United States",
+   "location_detail": "Tustin, California, United States",
+   "department": "Corporate Functions",
+   "published_at": "2026-09-29T21:25:05.548+0000",
+   "updated_at": null,
+   "url": "https://career-hcm20s.ns2cloud.com/career?company=VRGNHCM20S&lang=en_US&career_ns=job_application&career_job_req_id=2213",
+   "salary": null,
+   "_meta_text": "type: Full-Time workplace: ",
+   "_content_head": " The  Business Systems Analyst III – Product Development & Production  is a key member of the Information Technology Digital Thread team, responsible for gathering, analyzing, and documenting business requirements across the engineering-to-manufacturing lifecycle. \n  \n  \n This role supports and improves cross-functional processes and data integration across Product Lifecycle Management (PLM), Engi"
+  },
+  {
+   "job_id": "VGNVGEUS2255EXTERNALENGLOBAL",
+   "req_id": "2255",
+   "title": "IT Developer III, Spaceline Product Development & Production",
+   "location": "Tustin, California, United States",
+   "location_detail": "Tustin, California, United States",
+   "department": "Corporate Functions",
+   "published_at": "2026-10-02T06:24:45.492+0000",
+   "updated_at": null,
+   "url": "https://career-hcm20s.ns2cloud.com/career?company=VRGNHCM20S&lang=en_US&career_ns=job_application&career_job_req_id=2255",
+   "salary": null,
+   "_meta_text": "type: Full-Time workplace: ",
+   "_content_head": " The Developer III – Spaceline Product Development & Production is a key member of the Information Technology Digital Thread team, responsible for designing, building, configuring, and integrating solutions on the 3DEXPERIENCE (3DX) platform across the engineering-to-manufacturing lifecycle. Guided by our values, “Safety Above All”, we proactively manage the risks inherent in human spaceflight thr"
+  }
+ ]
+}
