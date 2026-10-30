@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T19:12:39+00:00",
+  "generated_at": "2026-10-30T19:13:57+00:00",
   "criteria": {
     "title_keywords": [
       "product"
@@ -140,7 +140,7 @@
       "ats": "phenom",
       "board": "vgcareers.virgingalactic.com/global/en",
       "url": "https://vgcareers.virgingalactic.com/global/en/",
-      "fetched_at": "2026-10-30T19:12:39+00:00",
+      "fetched_at": "2026-10-30T19:13:57+00:00",
       "status": "ok",
       "error": null,
       "total_jobs": 82,
@@ -1662,7 +1662,7 @@
       "department": "Corporate Functions",
       "published_at": "2026-10-02T06:24:45.492+0000",
       "updated_at": null,
-      "url": "https://career-hcm20s.ns2cloud.com/career?company=VRGNHCM20S&lang=en_US&career_ns=job_application&career_job_req_id=2255",
+      "url": "https://vgcareers.virgingalactic.com/global/en/job/VGNVGEUS2255EXTERNALENGLOBAL/IT-Developer-III-Spaceline-Product-Development-Production",
       "salary": null,
       "us": true,
       "remote": "unknown",
@@ -1670,7 +1670,7 @@
       "company": "Virgin Galactic",
       "key": "phenom:vgcareers.virgingalactic.com/global/en:VGNVGEUS2255EXTERNALENGLOBAL",
       "first_seen": "2026-10-30T19:12:39+00:00",
-      "last_seen": "2026-10-30T19:12:39+00:00",
+      "last_seen": "2026-10-30T19:13:57+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1777,7 +1777,7 @@
       "department": "Corporate Functions",
       "published_at": "2026-09-29T21:25:05.548+0000",
       "updated_at": null,
-      "url": "https://career-hcm20s.ns2cloud.com/career?company=VRGNHCM20S&lang=en_US&career_ns=job_application&career_job_req_id=2247",
+      "url": "https://vgcareers.virgingalactic.com/global/en/job/VGNVGEUS2247EXTERNALENGLOBAL/Sr-Manager-Product-Merchandising",
       "salary": null,
       "us": true,
       "remote": "unknown",
@@ -1785,7 +1785,7 @@
       "company": "Virgin Galactic",
       "key": "phenom:vgcareers.virgingalactic.com/global/en:VGNVGEUS2247EXTERNALENGLOBAL",
       "first_seen": "2026-10-30T19:12:39+00:00",
-      "last_seen": "2026-10-30T19:12:39+00:00",
+      "last_seen": "2026-10-30T19:13:57+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1798,7 +1798,7 @@
       "department": "Corporate Functions",
       "published_at": "2026-09-29T21:25:05.548+0000",
       "updated_at": null,
-      "url": "https://career-hcm20s.ns2cloud.com/career?company=VRGNHCM20S&lang=en_US&career_ns=job_application&career_job_req_id=2213",
+      "url": "https://vgcareers.virgingalactic.com/global/en/job/VGNVGEUS2213EXTERNALENGLOBAL/Business-Systems-Analyst-III-Spaceline-Product-Development-Production",
       "salary": null,
       "us": true,
       "remote": "unknown",
@@ -1806,7 +1806,7 @@
       "company": "Virgin Galactic",
       "key": "phenom:vgcareers.virgingalactic.com/global/en:VGNVGEUS2213EXTERNALENGLOBAL",
       "first_seen": "2026-10-30T19:12:39+00:00",
-      "last_seen": "2026-10-30T19:12:39+00:00",
+      "last_seen": "2026-10-30T19:13:57+00:00",
       "status": "open",
       "closed_at": null
     },
