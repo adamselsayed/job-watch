@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T18:54:53.569Z",
+  "updated_at": "2026-10-30T18:55:08.155Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -215,6 +215,12 @@
       "status": "archived",
       "at": "2026-10-30T18:54:52.056Z",
       "title": "VP, Product Strategy-Technology Workflows",
+      "company": "ServiceNow"
+    },
+    "smartrecruiters:ServiceNow:744000154095380": {
+      "status": "archived",
+      "at": "2026-10-30T18:55:06.643Z",
+      "title": "Senior Manager, Data & Analytics Product Strategic Operations",
       "company": "ServiceNow"
     }
   }
