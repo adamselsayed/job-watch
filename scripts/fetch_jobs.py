@@ -517,14 +517,17 @@ def fetch_workday(company):
             "updated_at": None,
             "url": info.get("externalUrl") or f"https://{tenant_host}.myworkdayjobs.com/{site}{path}",
             "salary": salary_from_text(content),
-            "_meta_text": f"remoteType: {remote_type} timeType: {info.get('timeType', '')} postedOn: {jp.get('postedOn', '')}",
+            "_meta_text": f"remoteType: {remote_type} timeType: {info.get('timeType', '')} postedOn: {jp.get('postedOn', '')} "
+                          + ("remote" if re.search(r"Remote:\s*Yes", content[:800]) or remote_type.lower() in ("virtual", "remote") else "")
+                          + (" hybrid" if remote_type.lower() == "hybrid" else ""),
             "_content": content,
         })
     debug_dump(company, {"first_page_keys": list((first_page or {}).keys()), "first_postings": postings[:3],
                          "facets": [(f.get("facetParameter"), [(v.get("descriptor"), v.get("id")) for v in (f.get("values") or [])[:15]])
                                     for f in ((first_page or {}).get("facets") or [])],
                          "first_detail": first_detail, "kept": len(out), "scanned": len(postings),
-                         "orgs_of_title_matches": orgs, "total_reported": (first_page or {}).get("total"), "pages": pages[:12]})
+                         "orgs_of_title_matches": orgs, "total_reported": (first_page or {}).get("total"), "pages": pages[:12],
+                         "kept_rows": [{k: v for k, v in r.items() if k != "_content"} | {"_content_head": r["_content"][:500]} for r in out]})
     return out
 
 
