@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T06:49:06+00:00",
+  "generated_at": "2026-10-30T06:50:33+00:00",
   "criteria": {
     "title_keywords": [
       "product"
@@ -118,11 +118,9 @@
       "filter": "Hitachi Vantara, Hitachi Digital Services",
       "scan": "all",
       "url": "https://www.hitachivantara.com/en-us/company/careers/job-search",
-      "fetched_at": "2026-10-30T06:49:06+00:00",
-      "status": "ok",
-      "error": null,
-      "total_jobs": 0,
-      "matched": 0
+      "fetched_at": "2026-10-30T06:50:33+00:00",
+      "status": "error",
+      "error": "HTTP Error 504: Gateway Timeout"
     }
   ],
   "jobs": [
