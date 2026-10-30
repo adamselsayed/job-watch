@@ -53,3 +53,8 @@
   ats: greenhouse
   board: chargepoint
   url: https://www.chargepoint.com/about/opportunities
+
+- name: Life360
+  ats: greenhouse
+  board: life360
+  url: https://www.life360.com/open-positions
