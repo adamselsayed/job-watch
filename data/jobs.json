@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T06:50:33+00:00",
+  "generated_at": "2026-10-30T06:52:21+00:00",
   "criteria": {
     "title_keywords": [
       "product"
@@ -121,6 +121,17 @@
       "fetched_at": "2026-10-30T06:50:33+00:00",
       "status": "error",
       "error": "HTTP Error 504: Gateway Timeout"
+    },
+    {
+      "name": "Smartsheet",
+      "ats": "greenhouse",
+      "board": "smartsheet",
+      "url": "https://www.smartsheet.com/careers-list",
+      "fetched_at": "2026-10-30T06:52:21+00:00",
+      "status": "ok",
+      "error": null,
+      "total_jobs": 86,
+      "matched": 5
     }
   ],
   "jobs": [
@@ -668,6 +679,32 @@
       "key": "greenhouse:samsara:8315122",
       "first_seen": "2026-10-29T23:17:57+00:00",
       "last_seen": "2026-10-30T05:51:20+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "8315864",
+      "req_id": null,
+      "title": "Senior Product Manager I (Remote Eligible)",
+      "location": " -REMOTE, USA-",
+      "location_detail": "United States",
+      "department": "Product Mgt",
+      "published_at": "2026-10-22T16:15:12-04:00",
+      "updated_at": "2026-10-29T09:48:48-04:00",
+      "url": "https://job-boards.greenhouse.io/smartsheet/jobs/8315864",
+      "salary": {
+        "min": 148750,
+        "max": 176250,
+        "currency": "USD",
+        "source": "posting"
+      },
+      "us": true,
+      "remote": "remote",
+      "remote_confidence": "high",
+      "company": "Smartsheet",
+      "key": "greenhouse:smartsheet:8315864",
+      "first_seen": "2026-10-30T06:52:21+00:00",
+      "last_seen": "2026-10-30T06:52:21+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1322,6 +1359,32 @@
       "closed_at": null
     },
     {
+      "job_id": "8264858",
+      "req_id": null,
+      "title": "Senior Product Manager – People Systems",
+      "location": "-REMOTE, USA-",
+      "location_detail": "United States",
+      "department": "IT",
+      "published_at": "2026-10-08T12:23:07-04:00",
+      "updated_at": "2026-10-29T09:48:47-04:00",
+      "url": "https://job-boards.greenhouse.io/smartsheet/jobs/8264858",
+      "salary": {
+        "min": 145000,
+        "max": 175000,
+        "currency": "USD",
+        "source": "posting"
+      },
+      "us": true,
+      "remote": "remote",
+      "remote_confidence": "high",
+      "company": "Smartsheet",
+      "key": "greenhouse:smartsheet:8264858",
+      "first_seen": "2026-10-30T06:52:21+00:00",
+      "last_seen": "2026-10-30T06:52:21+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
       "job_id": "744000154473649",
       "req_id": "JB0076083",
       "title": "Senior Staff Inbound Product Manager - Agentic AI Platform - Moveworks",
@@ -1630,6 +1693,32 @@
       "closed_at": null
     },
     {
+      "job_id": "8233818",
+      "req_id": null,
+      "title": "Group Product Manager – Corporate Systems",
+      "location": "-REMOTE, USA-",
+      "location_detail": "United States",
+      "department": "IT",
+      "published_at": "2026-09-25T14:28:13-04:00",
+      "updated_at": "2026-10-29T09:48:47-04:00",
+      "url": "https://job-boards.greenhouse.io/smartsheet/jobs/8233818",
+      "salary": {
+        "min": 182500,
+        "max": 240000,
+        "currency": "USD",
+        "source": "posting"
+      },
+      "us": true,
+      "remote": "remote",
+      "remote_confidence": "high",
+      "company": "Smartsheet",
+      "key": "greenhouse:smartsheet:8233818",
+      "first_seen": "2026-10-30T06:52:21+00:00",
+      "last_seen": "2026-10-30T06:52:21+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
       "job_id": "744000151887559",
       "req_id": "JB0075686",
       "title": "Product Success Technical Director",
@@ -1704,6 +1793,32 @@
       "key": "smartrecruiters:ServiceNow:744000151391394",
       "first_seen": "2026-10-30T05:47:56+00:00",
       "last_seen": "2026-10-30T05:51:20+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "8220352",
+      "req_id": null,
+      "title": "People Business Partner - Product & Tech",
+      "location": "Bellevue, WA, USA",
+      "location_detail": "United States",
+      "department": "People & Culture",
+      "published_at": "2026-09-22T14:16:17-04:00",
+      "updated_at": "2026-10-29T09:48:47-04:00",
+      "url": "https://job-boards.greenhouse.io/smartsheet/jobs/8220352",
+      "salary": {
+        "min": 103750,
+        "max": 126250,
+        "currency": "USD",
+        "source": "posting"
+      },
+      "us": true,
+      "remote": "hybrid",
+      "remote_confidence": "low",
+      "company": "Smartsheet",
+      "key": "greenhouse:smartsheet:8220352",
+      "first_seen": "2026-10-30T06:52:21+00:00",
+      "last_seen": "2026-10-30T06:52:21+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2579,6 +2694,32 @@
       "key": "smartrecruiters:ServiceNow:744000126724432",
       "first_seen": "2026-10-30T05:47:56+00:00",
       "last_seen": "2026-10-30T05:51:20+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "7684865",
+      "req_id": null,
+      "title": "Senior Product Manager, Field Systems (Salesforce)",
+      "location": "-REMOTE, USA-",
+      "location_detail": "United States",
+      "department": "GTM Ops Field Systems",
+      "published_at": "2026-03-12T11:30:01-04:00",
+      "updated_at": "2026-10-29T09:48:45-04:00",
+      "url": "https://job-boards.greenhouse.io/smartsheet/jobs/7684865",
+      "salary": {
+        "min": 135000,
+        "max": 176250,
+        "currency": "USD",
+        "source": "posting"
+      },
+      "us": true,
+      "remote": "remote",
+      "remote_confidence": "high",
+      "company": "Smartsheet",
+      "key": "greenhouse:smartsheet:7684865",
+      "first_seen": "2026-10-30T06:52:21+00:00",
+      "last_seen": "2026-10-30T06:52:21+00:00",
       "status": "open",
       "closed_at": null
     },
