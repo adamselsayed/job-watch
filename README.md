@@ -17,7 +17,7 @@ index.html               <- the dashboard (GitHub Pages serves it)
 
 ## Watch criteria (edit in `scripts/fetch_jobs.py` **and** `index.html`)
 
-- Title contains **"product"** and does not contain the standalone word **"design"** (so "Product Designer" passes, "Product Design" does not)
+- Title contains **"product"** and does not contain the standalone words **"design"** or **"designer"**
 - Location is in the **United States** (postings that don't state a country are kept and flagged *verify US*)
 - Each role shows: remote / hybrid / on-site (flagged when inferred or unknown), posted date & time,
   salary range when the posting includes one, and the requisition ID / job ID.

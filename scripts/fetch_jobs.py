@@ -30,7 +30,7 @@ CHANGES_FILE = os.path.join(ROOT, "data", "changes.log")
 # ---------------------------------------------------------------- criteria --
 
 TITLE_KEYWORDS = ["product"]          # title must contain one of these (case-insensitive)
-TITLE_EXCLUDE_WORDS = ["design"]      # ...and must not contain any of these as a standalone word
+TITLE_EXCLUDE_WORDS = ["design", "designer"]      # ...and must not contain any of these as a standalone word
 KEEP_CLOSED_DAYS = 30                 # how long closed roles stay visible on the dashboard
 
 # ------------------------------------------------------------- helpers -----

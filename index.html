@@ -61,6 +61,18 @@
   .company { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); margin-bottom: 14px; box-shadow: var(--shadow); overflow: hidden; }
   .company .head { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; padding: 12px 16px; border-bottom: 1px solid var(--border); background: var(--surface-2); }
   .company .head h2 { font-size: 16px; margin: 0; }
+  .tabs { display: inline-flex; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+  .tabs button { border: 0; border-radius: 0; padding: 4px 10px; font-size: 12.5px; color: var(--muted); background: transparent; }
+  .tabs button + button { border-left: 1px solid var(--border); }
+  .tabs button.on { background: var(--accent-soft); color: var(--accent); font-weight: 600; }
+  .tabs button b { font-weight: 600; margin-left: 4px; opacity: .8; }
+  .act { border: 1px solid var(--border); background: transparent; color: var(--muted); border-radius: 6px; padding: 1px 7px; font-size: 11.5px; line-height: 1.5; }
+  .act:hover { color: var(--accent); border-color: var(--accent); }
+  .act.applied:hover { color: var(--new); border-color: var(--new); }
+  td.acts { white-space: nowrap; }
+  td.acts .sub { margin-right: 6px; }
+  th.w-acts { width: 205px; }
+  .note button.link { border: 0; background: none; color: var(--accent); padding: 0; font-size: inherit; text-decoration: underline; }
   .company .head .meta { color: var(--muted); font-size: 13px; }
   .company .head .meta.err { color: var(--err); }
   .company .head .spacer { flex: 1; }
@@ -80,7 +92,7 @@
   td.title .t { display: flex; align-items: center; gap: 6px; min-width: 0; }
   td.title .t a { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
   td.loc { max-width: 0; overflow: hidden; text-overflow: ellipsis; }
-  th.w-co { width: 84px; } th.w-loc { width: 17%; } th.w-work { width: 86px; } th.w-posted { width: 122px; } th.w-sal { width: 122px; } th.w-ids { width: 172px; }
+  th.w-co { width: 84px; } th.w-loc { width: 17%; } th.w-work { width: 86px; } th.w-posted { width: 122px; } th.w-sal { width: 122px; } th.w-ids { width: 160px; }
   td.nowrap { white-space: nowrap; }
   .mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; color: var(--muted); }
   .sub { color: var(--faint); font-size: 12px; }
@@ -126,7 +138,8 @@
   <div class="tiles">
     <div class="tile new"><div class="n" id="tNew">–</div><div class="l">New since your last visit</div></div>
     <div class="tile"><div class="n" id="tWeek">–</div><div class="l">Posted in last 7 days</div></div>
-    <div class="tile"><div class="n" id="tOpen">–</div><div class="l">Open matching roles</div></div>
+    <div class="tile"><div class="n" id="tOpen">–</div><div class="l">Open, not yet triaged</div></div>
+    <div class="tile"><div class="n" id="tApplied">–</div><div class="l">Applied (still open)</div></div>
     <div class="tile"><div class="n" id="tCompanies">–</div><div class="l">Companies watched</div></div>
     <div class="tile err" id="tErrWrap" hidden><div class="n" id="tErr">–</div><div class="l">Boards failing to fetch</div></div>
   </div>
@@ -153,10 +166,12 @@
   <div id="companies"></div>
 
   <p class="note">
-    Matching rule: title contains “product” and does not contain the standalone word “design”, location in the United States (or not stated — flagged <span class="badge b-verify">verify US</span>).
+    Matching rule: title contains “product” and does not contain the standalone words “design” or “designer”, location in the United States (or not stated — flagged <span class="badge b-verify">verify US</span>).
     Remote status comes from the posting's location, then its metadata, then its description; anything inferred from the description or not found at all is flagged.
     The daily sweep runs at 6 AM Pacific via GitHub Actions. <strong>Pull now</strong> reads the company's live job board straight from your browser and shows anything the sweep hasn't recorded yet as <span class="badge b-live">live</span>.
     Edit <code>companies.yml</code> in the repo to add companies.
+    <br><strong>Applied / Archive</strong> are stored in this browser. A role you've filed stays filed; if the company reposts it under a new listing ID it shows up as new again.
+    <button class="link" id="exportMarks">Export</button> · <button class="link" id="importMarks">Import</button> your Applied/Archive list to move it to another browser.<input type="file" id="importFile" accept="application/json" hidden>
   </p>
 </div>
 <div class="toast" id="toast"></div>
@@ -180,10 +195,24 @@
   // First visit ever: treat "new" as the last 24 hours.
   const newSince = lastVisit ? new Date(lastVisit) : new Date(Date.now() - 24 * 3600 * 1000);
 
+  // Applied / Archive marks, keyed by job key. Stored per browser; export/import to move them.
+  const MARKS_KEY = 'jobwatch.marks';
+  let marks = {};
+  try { marks = JSON.parse(localStorage.getItem(MARKS_KEY) || '{}') || {}; } catch (e) { marks = {}; }
+  const saveMarks = () => { try { localStorage.setItem(MARKS_KEY, JSON.stringify(marks)); } catch (e) { toast('Could not save — browser storage is unavailable.'); } };
+  const markOf = j => (marks[j.key] || {}).status || 'open';
+  function setMark(j, status) {
+    if (status === 'open') delete marks[j.key];
+    else marks[j.key] = { status, at: new Date().toISOString(), title: j.title, company: j.company };
+    saveMarks(); render();
+  }
+  const sectionOf = {};                    // company name (or '*' in flat view) -> open | applied | archived
+  const section = name => sectionOf[name] || 'open';
+
   // ------------------------------------------------------ classification --
   // Mirrors scripts/fetch_jobs.py so "Pull now" applies the same rules.
   const TITLE_KEYWORDS = ['product'];
-  const TITLE_EXCLUDE_WORDS = ['design'];   // standalone word only ("Designer" still passes)
+  const TITLE_EXCLUDE_WORDS = ['design', 'designer'];   // standalone words only
   const titleMatches = t => { t = (t || '').toLowerCase(); return TITLE_KEYWORDS.some(k => t.includes(k)) && !TITLE_EXCLUDE_WORDS.some(w => new RegExp('\\b' + esc(w) + '\\b').test(t)); };
   const US_STATES = new Set(['alabama','alaska','arizona','arkansas','california','colorado','connecticut','delaware','florida','georgia','hawaii','idaho','illinois','indiana','iowa','kansas','kentucky','louisiana','maine','maryland','massachusetts','michigan','minnesota','mississippi','missouri','montana','nebraska','nevada','new hampshire','new jersey','new mexico','new york','north carolina','north dakota','ohio','oklahoma','oregon','pennsylvania','rhode island','south carolina','south dakota','tennessee','texas','utah','vermont','virginia','washington','west virginia','wisconsin','wyoming','district of columbia']);
   const US_ABBR = new Set('AL AK AZ AR CA CO CT DE FL GA HI ID IL IN IA KS KY LA ME MD MA MI MN MS MO MT NE NV NH NJ NM NY NC ND OH OK OR PA RI SC SD TN TX UT VT VA WA WV WI WY DC'.split(' '));
@@ -353,12 +382,13 @@
   const hasTime = iso => iso && /T\d\d:\d\d/.test(iso) && !/T00:00:00/.test(iso);
   const escapeHtml = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
-  const isNew = j => j.live || new Date(j.first_seen) > newSince;
+  const isNew = j => markOf(j) === 'open' && (j.live || new Date(j.first_seen) > newSince);
   const isWeek = j => (Date.now() - new Date(j.published_at || j.first_seen)) < 7 * 86400000;
   const needsVerify = j => j.us !== true || j.remote === 'unknown' || j.remote_confidence === 'low';
 
-  function visible(j) {
-    if (j.status === 'closed' && !$('#showClosed').checked) return false;
+  function visible(j, sec) {
+    if (markOf(j) !== sec) return false;
+    if (sec === 'open' && j.status === 'closed' && !$('#showClosed').checked) return false;
     if (filter === 'new' && !isNew(j)) return false;
     if (filter === 'remote' && j.remote !== 'remote') return false;
     if (filter === 'hybrid' && j.remote !== 'hybrid') return false;
@@ -388,7 +418,7 @@
     'title':       (a, b) => a.title.localeCompare(b.title),
   };
   const sortRows = rows => rows.slice().sort((a, b) => (a.status === 'closed') - (b.status === 'closed') || SORTS[sortKey](a, b));
-  const THEAD = () => `<thead><tr>${flat ? '<th class="w-co">Company</th>' : ''}<th>Role</th><th class="w-loc">Location</th><th class="w-work">Work</th><th class="w-posted">Posted</th><th class="w-sal">Salary</th><th class="w-ids">IDs</th></tr></thead>`;
+  const THEAD = () => `<thead><tr>${flat ? '<th class="w-co">Company</th>' : ''}<th>Role</th><th class="w-loc">Location</th><th class="w-work">Work</th><th class="w-posted">Posted</th><th class="w-sal">Salary</th><th class="w-ids">IDs</th><th class="w-acts"></th></tr></thead>`;
 
   function row(j) {
     const pub = j.published_at;
@@ -414,15 +444,45 @@
       <td>${posted}</td>
       <td>${sal}</td>
       <td class="mono">${ids}</td>
+      <td class="acts">${actions(j)}</td>
     </tr>`;
   }
 
+  function actions(j) {
+    const m = marks[j.key];
+    const when = m && m.at ? `<span class="sub" title="${escapeHtml(new Date(m.at).toLocaleString('en-US'))}">${m.status === 'applied' ? 'applied' : 'archived'} ${fmtDate(m.at)}</span>` : '';
+    const btn = (st, label, cls = '') => `<button class="act ${cls}" data-key="${escapeHtml(j.key)}" data-mark="${st}">${label}</button>`;
+    if (!m) return btn('applied', '✓ Applied', 'applied') + ' ' + btn('archived', 'Archive');
+    if (m.status === 'applied') return when + btn('open', 'Restore') + ' ' + btn('archived', 'Archive');
+    return when + btn('open', 'Restore') + ' ' + btn('applied', '✓ Applied', 'applied');
+  }
+
+  function tabsHtml(name, list) {
+    const n = st => list.filter(j => markOf(j) === st && (st !== 'open' || j.status === 'open')).length;
+    const cur = section(name);
+    return `<span class="tabs" data-name="${escapeHtml(name)}">
+      <button class="${cur === 'open' ? 'on' : ''}" data-s="open">Open<b>${n('open')}</b></button>
+      <button class="${cur === 'applied' ? 'on' : ''}" data-s="applied">Applied<b>${n('applied')}</b></button>
+      <button class="${cur === 'archived' ? 'on' : ''}" data-s="archived">Archive<b>${n('archived')}</b></button></span>`;
+  }
+  function wire(el) {
+    el.querySelectorAll('.tabs button').forEach(b => b.addEventListener('click', e => { sectionOf[e.currentTarget.parentElement.dataset.name] = e.currentTarget.dataset.s; render(); }));
+    el.querySelectorAll('.act').forEach(b => b.addEventListener('click', e => {
+      const j = allJobs().find(x => x.key === e.currentTarget.dataset.key); if (j) setMark(j, e.currentTarget.dataset.mark);
+    }));
+  }
+  const allJobs = () => data.jobs.concat(...Object.values(liveExtra));
+
+  const EMPTY = { open: 'Nothing here — everything is filed under Applied or Archive, or nothing matches the filter.', applied: 'Nothing filed as applied yet. Use ✓ Applied on a role once you have applied.', archived: 'Nothing archived. Use Archive on roles that are not of interest.' };
+
   function render() {
-    const jobs = data.jobs.concat(...Object.values(liveExtra));
+    const jobs = allJobs();
     const open = jobs.filter(j => j.status === 'open');
-    $('#tNew').textContent = open.filter(isNew).length;
-    $('#tWeek').textContent = open.filter(isWeek).length;
-    $('#tOpen').textContent = open.length;
+    const untriaged = open.filter(j => markOf(j) === 'open');
+    $('#tNew').textContent = untriaged.filter(isNew).length;
+    $('#tWeek').textContent = untriaged.filter(isWeek).length;
+    $('#tOpen').textContent = untriaged.length;
+    $('#tApplied').textContent = open.filter(j => markOf(j) === 'applied').length;
     $('#tCompanies').textContent = data.companies.length;
     const errs = data.companies.filter(c => c.status === 'error');
     $('#tErrWrap').hidden = !errs.length; $('#tErr').textContent = errs.length;
@@ -434,33 +494,38 @@
     container.innerHTML = '';
 
     if (flat) {
-      const rows = sortRows(jobs.filter(visible));
+      const sec = section('*');
+      const rows = sortRows(jobs.filter(j => visible(j, sec)));
       const el = document.createElement('section');
       el.className = 'company';
-      el.innerHTML = `<div class="head"><h2>All companies</h2><span class="meta">${rows.filter(j => j.status === 'open').length} roles shown</span><span class="spacer"></span></div>
-        ${rows.length ? `<table>${THEAD()}<tbody>${rows.map(row).join('')}</tbody></table>` : `<div class="empty">Nothing matches the current filter.</div>`}`;
+      el.innerHTML = `<div class="head"><h2>All companies</h2>${tabsHtml('*', jobs)}<span class="meta">${rows.length} shown</span><span class="spacer"></span></div>
+        ${rows.length ? `<table>${THEAD()}<tbody>${rows.map(row).join('')}</tbody></table>` : `<div class="empty">${EMPTY[sec]}</div>`}`;
+      wire(el);
       container.appendChild(el);
       return;
     }
 
     for (const c of data.companies) {
-      const rows = sortRows(jobs.filter(j => j.company === c.name).filter(visible));
-      const openCount = jobs.filter(j => j.company === c.name && j.status === 'open').length;
+      const mine = jobs.filter(j => j.company === c.name);
+      const sec = section(c.name);
+      const rows = sortRows(mine.filter(j => visible(j, sec)));
+      const openCount = mine.filter(j => j.status === 'open').length;
       const el = document.createElement('section');
       el.className = 'company';
       const meta = c.status === 'error'
         ? `<span class="meta err" title="${escapeHtml(c.error || '')}">⚠ fetch failed in last sweep</span>`
         : c.status === 'ok' ? `<span class="meta">${openCount} matching of ${c.total_jobs} open roles</span>` : `<span class="meta">${escapeHtml(c.status || '')}</span>`;
       el.innerHTML = `<div class="head">
-          <h2>${escapeHtml(c.name)}</h2>${meta}
+          <h2>${escapeHtml(c.name)}</h2>${tabsHtml(c.name, mine)}${meta}
           ${liveAt[c.name] ? `<span class="meta">· live-checked ${ago(liveAt[c.name])}</span>` : ''}
           <span class="spacer"></span>
           ${c.url ? `<a href="${escapeHtml(c.url)}" target="_blank" rel="noopener">careers page ↗</a>` : ''}
           <button class="pull">Pull now</button>
         </div>
         ${rows.length ? `<table>${THEAD()}<tbody>${rows.map(row).join('')}</tbody></table>`
-                      : `<div class="empty">${openCount ? 'Nothing matches the current filter.' : 'No open roles with “product” in the title in the US right now.'}</div>`}`;
+                      : `<div class="empty">${sec === 'open' && !openCount ? 'No open roles with “product” in the title in the US right now.' : EMPTY[sec]}</div>`}`;
       el.querySelector('.pull').addEventListener('click', e => pullNow(c, e.currentTarget));
+      wire(el);
       container.appendChild(el);
     }
   }
@@ -474,6 +539,18 @@
   }));
   $('#q').addEventListener('input', e => { query = e.target.value.trim().toLowerCase(); render(); });
   $('#showClosed').addEventListener('change', render);
+  $('#exportMarks').addEventListener('click', () => {
+    const blob = new Blob([JSON.stringify({ exported_at: new Date().toISOString(), marks }, null, 2)], { type: 'application/json' });
+    const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = `job-watch-marks-${new Date().toISOString().slice(0, 10)}.json`; a.click(); URL.revokeObjectURL(a.href);
+  });
+  $('#importMarks').addEventListener('click', () => $('#importFile').click());
+  $('#importFile').addEventListener('change', async e => {
+    const f = e.target.files[0]; if (!f) return;
+    try { const d = JSON.parse(await f.text()); const m = d.marks || d; let n = 0;
+      for (const [k, v] of Object.entries(m)) if (v && (v.status === 'applied' || v.status === 'archived')) { marks[k] = v; n++; }
+      saveMarks(); render(); toast(`Imported ${n} marks.`); } catch (err) { toast('Import failed: not a valid export file.'); }
+    e.target.value = '';
+  });
   $('#view').addEventListener('change', e => { flat = e.target.value === 'flat'; try { localStorage.setItem('jobwatch.view', e.target.value); } catch (_) {} render(); });
   $('#sort').addEventListener('change', e => { sortKey = e.target.value; try { localStorage.setItem('jobwatch.sort', sortKey); } catch (_) {} render(); });
   try {
