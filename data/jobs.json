@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T05:54:37+00:00",
+  "generated_at": "2026-10-30T06:17:26+00:00",
   "criteria": {
     "title_keywords": [
       "product"
@@ -87,6 +87,17 @@
       "status": "ok",
       "error": null,
       "total_jobs": 43,
+      "matched": 2
+    },
+    {
+      "name": "ChargePoint",
+      "ats": "greenhouse",
+      "board": "chargepoint",
+      "url": "https://www.chargepoint.com/about/opportunities",
+      "fetched_at": "2026-10-30T06:17:26+00:00",
+      "status": "ok",
+      "error": null,
+      "total_jobs": 39,
       "matched": 2
     }
   ],
@@ -869,6 +880,32 @@
       "key": "smartrecruiters:ServiceNow:744000156657507",
       "first_seen": "2026-10-30T05:47:56+00:00",
       "last_seen": "2026-10-30T05:51:20+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "8890370002",
+      "req_id": "27B-3520-01",
+      "title": "Staff Product Manager, Residential Charging & Home Energy Management",
+      "location": "US",
+      "location_detail": "US Remote ",
+      "department": "Product Management - HW",
+      "published_at": "2026-10-20T14:47:13-04:00",
+      "updated_at": "2026-10-26T17:50:04-04:00",
+      "url": "https://www.chargepoint.com/about/opportunities/job/?gh_jid=8890370002",
+      "salary": {
+        "min": 182608,
+        "max": 241500,
+        "currency": "USD",
+        "source": "description"
+      },
+      "us": true,
+      "remote": "remote",
+      "remote_confidence": "medium",
+      "company": "ChargePoint",
+      "key": "greenhouse:chargepoint:8890370002",
+      "first_seen": "2026-10-30T06:17:26+00:00",
+      "last_seen": "2026-10-30T06:17:26+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1848,6 +1885,32 @@
       "key": "smartrecruiters:Experian:744000149963169",
       "first_seen": "2026-10-30T05:15:36+00:00",
       "last_seen": "2026-10-30T05:51:20+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "8807454002",
+      "req_id": "27B-3510-02",
+      "title": "Staff Product Manager, Fleet Software",
+      "location": "US-CA-Remote",
+      "location_detail": "US Remote ",
+      "department": "Product Management - SW",
+      "published_at": "2026-09-16T14:14:34-04:00",
+      "updated_at": "2026-10-16T17:03:54-04:00",
+      "url": "https://www.chargepoint.com/about/opportunities/job/?gh_jid=8807454002",
+      "salary": {
+        "min": 178500,
+        "max": 241500,
+        "currency": "USD",
+        "source": "description"
+      },
+      "us": true,
+      "remote": "remote",
+      "remote_confidence": "high",
+      "company": "ChargePoint",
+      "key": "greenhouse:chargepoint:8807454002",
+      "first_seen": "2026-10-30T06:17:26+00:00",
+      "last_seen": "2026-10-30T06:17:26+00:00",
       "status": "open",
       "closed_at": null
     },
