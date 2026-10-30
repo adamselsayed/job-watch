@@ -1,11 +1,12 @@
 {
-  "generated_at": "2026-10-29T23:40:13+00:00",
+  "generated_at": "2026-10-30T03:57:40+00:00",
   "criteria": {
     "title_keywords": [
       "product"
     ],
     "title_exclude_words": [
-      "design"
+      "design",
+      "designer"
     ],
     "country": "United States"
   },
@@ -15,18 +16,18 @@
       "ats": "greenhouse",
       "board": "samsara",
       "url": "https://www.samsara.com/company/careers/roles",
-      "fetched_at": "2026-10-29T23:40:13+00:00",
+      "fetched_at": "2026-10-30T03:57:40+00:00",
       "status": "ok",
       "error": null,
       "total_jobs": 319,
-      "matched": 21
+      "matched": 19
     },
     {
       "name": "Motive",
       "ats": "greenhouse",
       "board": "gomotive",
       "url": "https://gomotive.com/company/careers/jobs/",
-      "fetched_at": "2026-10-29T23:40:13+00:00",
+      "fetched_at": "2026-10-30T03:57:40+00:00",
       "status": "ok",
       "error": null,
       "total_jobs": 167,
@@ -37,7 +38,7 @@
       "ats": "greenhouse",
       "board": "toast",
       "url": "https://careers.toasttab.com/jobs/search",
-      "fetched_at": "2026-10-29T23:40:13+00:00",
+      "fetched_at": "2026-10-30T03:57:40+00:00",
       "status": "ok",
       "error": null,
       "total_jobs": 337,
@@ -67,7 +68,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:8325411",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-29T23:40:13+00:00",
+      "last_seen": "2026-10-30T03:57:40+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -93,7 +94,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:8325410",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-29T23:40:13+00:00",
+      "last_seen": "2026-10-30T03:57:40+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -119,7 +120,7 @@
       "company": "Motive",
       "key": "greenhouse:gomotive:8913113002",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-29T23:40:13+00:00",
+      "last_seen": "2026-10-30T03:57:40+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -145,7 +146,7 @@
       "company": "Toast",
       "key": "greenhouse:toast:8305972",
       "first_seen": "2026-10-29T23:40:13+00:00",
-      "last_seen": "2026-10-29T23:40:13+00:00",
+      "last_seen": "2026-10-30T03:57:40+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -171,7 +172,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:8315136",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-29T23:40:13+00:00",
+      "last_seen": "2026-10-30T03:57:40+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -197,7 +198,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:8315122",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-29T23:40:13+00:00",
+      "last_seen": "2026-10-30T03:57:40+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -223,7 +224,7 @@
       "company": "Toast",
       "key": "greenhouse:toast:8245664",
       "first_seen": "2026-10-29T23:40:13+00:00",
-      "last_seen": "2026-10-29T23:40:13+00:00",
+      "last_seen": "2026-10-30T03:57:40+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -249,7 +250,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:8300580",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-29T23:40:13+00:00",
+      "last_seen": "2026-10-30T03:57:40+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -275,7 +276,7 @@
       "company": "Motive",
       "key": "greenhouse:gomotive:8797393002",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-29T23:40:13+00:00",
+      "last_seen": "2026-10-30T03:57:40+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -301,7 +302,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:8233947",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-29T23:40:13+00:00",
+      "last_seen": "2026-10-30T03:57:40+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -327,33 +328,7 @@
       "company": "Motive",
       "key": "greenhouse:gomotive:8880889002",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-29T23:40:13+00:00",
-      "status": "open",
-      "closed_at": null
-    },
-    {
-      "job_id": "8275248",
-      "req_id": "5372",
-      "title": "Staff Product Designer",
-      "location": "Remote - US",
-      "location_detail": "Remote - US",
-      "department": "Product Design",
-      "published_at": "2026-10-12T17:36:43-04:00",
-      "updated_at": "2026-10-13T14:47:21-04:00",
-      "url": "https://www.samsara.com/company/careers/roles/8275248?gh_jid=8275248",
-      "salary": {
-        "min": 143640,
-        "max": 256500,
-        "currency": "USD",
-        "source": "posting"
-      },
-      "us": true,
-      "remote": "remote",
-      "remote_confidence": "high",
-      "company": "Samsara",
-      "key": "greenhouse:samsara:8275248",
-      "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-29T23:40:13+00:00",
+      "last_seen": "2026-10-30T03:57:40+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -379,7 +354,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:8256425",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-29T23:40:13+00:00",
+      "last_seen": "2026-10-30T03:57:40+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -405,7 +380,7 @@
       "company": "Toast",
       "key": "greenhouse:toast:8259263",
       "first_seen": "2026-10-29T23:40:13+00:00",
-      "last_seen": "2026-10-29T23:40:13+00:00",
+      "last_seen": "2026-10-30T03:57:40+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -431,7 +406,7 @@
       "company": "Toast",
       "key": "greenhouse:toast:8249029",
       "first_seen": "2026-10-29T23:40:13+00:00",
-      "last_seen": "2026-10-29T23:40:13+00:00",
+      "last_seen": "2026-10-30T03:57:40+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -457,7 +432,7 @@
       "company": "Toast",
       "key": "greenhouse:toast:8226770",
       "first_seen": "2026-10-29T23:40:13+00:00",
-      "last_seen": "2026-10-29T23:40:13+00:00",
+      "last_seen": "2026-10-30T03:57:40+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -483,7 +458,7 @@
       "company": "Toast",
       "key": "greenhouse:toast:8180264",
       "first_seen": "2026-10-29T23:40:13+00:00",
-      "last_seen": "2026-10-29T23:40:13+00:00",
+      "last_seen": "2026-10-30T03:57:40+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -509,7 +484,7 @@
       "company": "Motive",
       "key": "greenhouse:gomotive:8782064002",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-29T23:40:13+00:00",
+      "last_seen": "2026-10-30T03:57:40+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -535,7 +510,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:8179538",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-29T23:40:13+00:00",
+      "last_seen": "2026-10-30T03:57:40+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -561,7 +536,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:8177633",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-29T23:40:13+00:00",
+      "last_seen": "2026-10-30T03:57:40+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -587,7 +562,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:8148044",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-29T23:40:13+00:00",
+      "last_seen": "2026-10-30T03:57:40+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -613,33 +588,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:8112836",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-29T23:40:13+00:00",
-      "status": "open",
-      "closed_at": null
-    },
-    {
-      "job_id": "8007939",
-      "req_id": "5372",
-      "title": "Lead Product Designer",
-      "location": "Remote - US",
-      "location_detail": "Remote - US",
-      "department": "Product Design",
-      "published_at": "2026-06-22T15:15:20-04:00",
-      "updated_at": "2026-10-12T17:19:15-04:00",
-      "url": "https://www.samsara.com/company/careers/roles/8007939?gh_jid=8007939",
-      "salary": {
-        "min": 137445,
-        "max": 231000,
-        "currency": "USD",
-        "source": "posting"
-      },
-      "us": true,
-      "remote": "remote",
-      "remote_confidence": "high",
-      "company": "Samsara",
-      "key": "greenhouse:samsara:8007939",
-      "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-29T23:40:13+00:00",
+      "last_seen": "2026-10-30T03:57:40+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -665,7 +614,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:7982346",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-29T23:40:13+00:00",
+      "last_seen": "2026-10-30T03:57:40+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -691,7 +640,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:7982336",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-29T23:40:13+00:00",
+      "last_seen": "2026-10-30T03:57:40+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -717,7 +666,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:7982331",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-29T23:40:13+00:00",
+      "last_seen": "2026-10-30T03:57:40+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -743,7 +692,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:7982328",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-29T23:40:13+00:00",
+      "last_seen": "2026-10-30T03:57:40+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -769,7 +718,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:7982323",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-29T23:40:13+00:00",
+      "last_seen": "2026-10-30T03:57:40+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -795,7 +744,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:7982326",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-29T23:40:13+00:00",
+      "last_seen": "2026-10-30T03:57:40+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -821,7 +770,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:7960413",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-29T23:40:13+00:00",
+      "last_seen": "2026-10-30T03:57:40+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -847,7 +796,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:7292081",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-29T23:40:13+00:00",
+      "last_seen": "2026-10-30T03:57:40+00:00",
       "status": "open",
       "closed_at": null
     }
