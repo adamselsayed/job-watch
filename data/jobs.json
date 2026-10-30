@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T06:39:37+00:00",
+  "generated_at": "2026-10-30T06:44:36+00:00",
   "criteria": {
     "title_keywords": [
       "product"
@@ -110,6 +110,18 @@
       "error": null,
       "total_jobs": 22,
       "matched": 3
+    },
+    {
+      "name": "Hitachi",
+      "ats": "workday",
+      "board": "hitachi.wd1/hitachi",
+      "filter": "Hitachi Vantara, Hitachi Digital Services",
+      "url": "https://www.hitachivantara.com/en-us/company/careers/job-search",
+      "fetched_at": "2026-10-30T06:44:36+00:00",
+      "status": "ok",
+      "error": null,
+      "total_jobs": 0,
+      "matched": 0
     }
   ],
   "jobs": [
