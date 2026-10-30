@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T05:22:51.766Z",
+  "updated_at": "2026-10-30T05:22:58.030Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -155,6 +155,12 @@
       "status": "archived",
       "at": "2026-10-30T05:22:50.262Z",
       "title": "Senior Strategy & Ops Lead, Post-Sale Product Adoption",
+      "company": "Samsara"
+    },
+    "greenhouse:samsara:8177633": {
+      "status": "archived",
+      "at": "2026-10-30T05:22:56.524Z",
+      "title": "Senior Product Training Specialist",
       "company": "Samsara"
     }
   }
