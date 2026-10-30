@@ -573,8 +573,9 @@ def fetch_phenom(company):
             except Exception as e:          # noqa: BLE001
                 log(f"[{company['name']}] detail fetch failed for {seq}: {e}")
                 content = strip_html(j.get("descriptionTeaser") or "")
-        if not url:
-            url = f"{base}/{country}/{lang}/job/{seq}"
+        # Always link to the Phenom job page (applyUrl drops straight into the application form).
+        slug = re.sub(r"[^A-Za-z0-9]+", "-", title).strip("-") or "job"
+        url = f"{base}/{country}/{lang}/job/{seq}/{slug}" if seq else url
         posted = j.get("postedDate") or j.get("dateCreated") or None
         if isinstance(posted, (int, float)):
             posted = datetime.fromtimestamp(posted / 1000, tz=timezone.utc).isoformat()
