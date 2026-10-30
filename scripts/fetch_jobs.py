@@ -493,7 +493,15 @@ def fetch_workday(company):
             continue
         locs = [info.get("location", "")] + [x for x in (info.get("additionalLocations") or []) if x]
         country = (info.get("country") or {}).get("descriptor", "") if isinstance(info.get("country"), dict) else ""
-        loc_name = "; ".join(x for x in locs if x) or jp.get("locationsText", "")
+        loc_name = "; ".join(x for x in locs if x) or jp.get("locationsText", "") or ""
+        if not loc_name:                                   # fall back to the requisition location, then the description's "Location:" line
+            rl = info.get("jobRequisitionLocation") or {}
+            loc_name = re.sub(r"^\([A-Z]+\)", "", rl.get("descriptor", "") or "").replace("_", " ").strip()
+            if not country and isinstance(rl.get("country"), dict):
+                country = rl["country"].get("descriptor", "") or COUNTRY_NAMES.get(rl["country"].get("alpha2Code", ""), "")
+            m = re.search(r"Location:\s*(.+?)\s*(?:Job ID|Req(?:uisition)? ID|Date Posted|$)", content[:600])
+            if m and len(m.group(1)) < 80:
+                loc_name = m.group(1).strip(" .,:") or loc_name
         if country and country.lower() not in loc_name.lower():
             loc_name = f"{loc_name}, {country}" if loc_name else country
         remote_type = (info.get("remoteType") or "")
