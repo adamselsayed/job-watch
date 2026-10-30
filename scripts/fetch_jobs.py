@@ -531,8 +531,74 @@ def fetch_workday(company):
     return out
 
 
+def fetch_phenom(company):
+    """Phenom People career sites (URLs like https://<host>/<country>/<lang>/search-results).
+    board = "<host>/<country>/<lang>", e.g. "vgcareers.virgingalactic.com/global/en" """
+    host, country, lang = company["board"].split("/", 2)
+    base = f"https://{host}"
+    body_base = {"lang": f"{lang}_{country}", "deviceType": "desktop", "country": country, "pageName": "search-results",
+                 "ddoKey": "refineSearch", "sortBy": "", "subsearch": "", "jobs": True, "counts": True,
+                 "all_fields": ["category", "country", "state", "city", "type"], "size": 50, "clearAll": False,
+                 "jdsource": "facets", "isSliderEnable": False, "siteType": "external", "keywords": "",
+                 "global": country == "global", "selected_fields": {}}
+    jobs, offset, first = [], 0, None
+    while True:
+        page = fetch_json_post(f"{base}/widgets", {**body_base, "from": offset})
+        rs = (page.get("refineSearch") or {})
+        data = rs.get("data") or {}
+        items = data.get("jobs") or []
+        if first is None:
+            first = {"keys": list(page.keys()), "rs_keys": list(rs.keys()), "data_keys": list(data.keys()),
+                     "totalHits": rs.get("totalHits") or data.get("totalHits"), "sample": items[:2]}
+        jobs.extend(items)
+        offset += len(items)
+        total = int(rs.get("totalHits") or data.get("totalHits") or 0)
+        if not items or offset >= total or offset > 5000:
+            break
+    out = []
+    for j in jobs:
+        title = j.get("title", "") or ""
+        loc = ", ".join(x for x in (j.get("city"), j.get("state"), j.get("country")) if x) or (j.get("location") or "")
+        content, url = "", j.get("applyUrl") or ""
+        seq = j.get("jobSeqNo") or j.get("jobId") or ""
+        if title_matches(title):
+            # job page: the Phenom "jobDetail" widget returns the full description
+            try:
+                d = fetch_json_post(f"{base}/widgets", {"lang": f"{lang}_{country}", "deviceType": "desktop", "country": country,
+                                                        "pageName": "job-details", "ddoKey": "jobDetail", "jobId": seq, "siteType": "external"})
+                jd = (d.get("jobDetail") or {}).get("data") or {}
+                jo = jd.get("job") or jd
+                content = strip_html(jo.get("description") or jo.get("descriptionTeaser") or "")
+                url = jo.get("jobUrl") or url
+            except Exception as e:          # noqa: BLE001
+                log(f"[{company['name']}] detail fetch failed for {seq}: {e}")
+                content = strip_html(j.get("descriptionTeaser") or "")
+        if not url:
+            url = f"{base}/{country}/{lang}/job/{seq}"
+        posted = j.get("postedDate") or j.get("dateCreated") or None
+        if isinstance(posted, (int, float)):
+            posted = datetime.fromtimestamp(posted / 1000, tz=timezone.utc).isoformat()
+        out.append({
+            "job_id": str(seq or j.get("reqId") or title),
+            "req_id": j.get("reqId") or None,
+            "title": title,
+            "location": loc,
+            "location_detail": "; ".join(x for x in (j.get("multi_location") or []) if isinstance(x, str)),
+            "department": j.get("category") or "",
+            "published_at": posted,
+            "updated_at": None,
+            "url": url,
+            "salary": salary_from_text(content) if content else None,
+            "_meta_text": f"type: {j.get('type', '')} workplace: {j.get('workplaceType', '') or j.get('remote', '')}",
+            "_content": content,
+        })
+    debug_dump(company, {"first_page": first, "scanned": len(jobs), "kept": len([o for o in out if title_matches(o['title'])]),
+                         "kept_rows": [{k: v for k, v in r.items() if k != "_content"} | {"_content_head": r["_content"][:400]} for r in out if title_matches(r["title"])]})
+    return out
+
+
 ADAPTERS = {"greenhouse": fetch_greenhouse, "lever": fetch_lever, "ashby": fetch_ashby,
-            "smartrecruiters": fetch_smartrecruiters, "workday": fetch_workday}
+            "smartrecruiters": fetch_smartrecruiters, "workday": fetch_workday, "phenom": fetch_phenom}
 
 
 # --------------------------------------------------------------- filtering --

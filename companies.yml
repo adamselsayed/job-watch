@@ -1,7 +1,7 @@
 # Companies to watch. One block per company.
 #
 #   name:  how the company appears on the dashboard
-#   ats:   greenhouse | lever | ashby | smartrecruiters | workday   (the job-board system the company uses)
+#   ats:   greenhouse | lever | ashby | smartrecruiters | workday | phenom   (the job-board system the company uses)
 #   board: the company's board token (the slug in its job-board URL)
 #   url:   the public careers page (for reference / linking)
 #
@@ -14,6 +14,7 @@
 #               optional  filter: Name A, Name B   keeps only postings whose hiring organization / description mentions one of these
 #               optional  scan: all                 page through the whole board instead of Workday's keyword search
 #               optional  facets: key=id,id; key2=id  Workday facet filters (ids come from the board's /jobs response)
+#   Phenom:     careers site with URLs like <host>/global/en/search-results  ->  board: <host>/global/en
 #
 # After adding a company, run:  python3 scripts/fetch_jobs.py
 # (GitHub Actions also runs it automatically every morning.)
@@ -75,3 +76,8 @@
   ats: greenhouse
   board: smartsheet
   url: https://www.smartsheet.com/careers-list
+
+- name: Virgin Galactic
+  ats: phenom
+  board: vgcareers.virgingalactic.com/global/en
+  url: https://vgcareers.virgingalactic.com/global/en/
