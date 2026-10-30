@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T19:02:35.135Z",
+  "updated_at": "2026-10-30T19:03:06.000Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -263,6 +263,12 @@
       "status": "archived",
       "at": "2026-10-30T19:02:33.624Z",
       "title": "Principal Inbound Product Manager - MoveWorks - Enterprise Search Platform ",
+      "company": "ServiceNow"
+    },
+    "smartrecruiters:ServiceNow:744000154473649": {
+      "status": "archived",
+      "at": "2026-10-30T19:03:04.490Z",
+      "title": "Senior Staff Inbound Product Manager - Agentic AI Platform - Moveworks",
       "company": "ServiceNow"
     }
   }
