@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T21:34:11.048Z",
+  "updated_at": "2026-10-30T21:35:22.862Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -293,6 +293,12 @@
       "status": "archived",
       "at": "2026-10-30T21:34:09.539Z",
       "title": "Senior Staff Product Security Engineer | Product Security Incident Response Team (PSIRT) ",
+      "company": "ServiceNow"
+    },
+    "smartrecruiters:ServiceNow:744000156431640": {
+      "status": "archived",
+      "at": "2026-10-30T21:35:21.352Z",
+      "title": "Senior Director Product Analytics",
       "company": "ServiceNow"
     }
   }
