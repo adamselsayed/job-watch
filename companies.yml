@@ -68,3 +68,8 @@
   filter: Hitachi Vantara, Hitachi Digital Services
   scan: all          # group-wide board: scan every posting rather than relying on Workday's search
   url: https://www.hitachivantara.com/en-us/company/careers/job-search
+
+- name: Smartsheet
+  ats: greenhouse
+  board: smartsheet
+  url: https://www.smartsheet.com/careers-list
