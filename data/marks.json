@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T05:28:25.941Z",
+  "updated_at": "2026-10-30T06:22:01.026Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -192,6 +192,12 @@
       "at": "2026-10-30T05:28:24.438Z",
       "title": "Director, Product Strategy & Monetization",
       "company": "Motive"
+    },
+    "greenhouse:chargepoint:8807454002": {
+      "status": "applied",
+      "at": "2026-10-30T06:21:59.521Z",
+      "title": "Staff Product Manager, Fleet Software",
+      "company": "ChargePoint"
     }
   }
 }
