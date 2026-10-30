@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T05:17:19.871Z",
+  "updated_at": "2026-10-30T05:17:21.383Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -131,6 +131,12 @@
       "status": "archived",
       "at": "2026-10-30T05:17:18.367Z",
       "title": "Senior Product Manager - Fraud and ID Agent",
+      "company": "Experian"
+    },
+    "smartrecruiters:Experian:744000156567757": {
+      "status": "archived",
+      "at": "2026-10-30T05:17:19.879Z",
+      "title": "Product Operations (Product Ops) – Limpa Nome ",
       "company": "Experian"
     }
   }
