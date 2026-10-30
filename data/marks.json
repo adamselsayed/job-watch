@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T05:25:49.494Z",
+  "updated_at": "2026-10-30T05:26:46.788Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -173,6 +173,12 @@
       "status": "archived",
       "at": "2026-10-30T05:25:47.989Z",
       "title": "Director, Product Management",
+      "company": "Motive"
+    },
+    "greenhouse:gomotive:8782064002": {
+      "status": "archived",
+      "at": "2026-10-30T05:26:45.285Z",
+      "title": "Senior / Staff Product Manager - IoT Connected Devices",
       "company": "Motive"
     }
   }
