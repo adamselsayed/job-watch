@@ -66,7 +66,7 @@
 - name: Hitachi
   ats: workday
   board: hitachi.wd1/hitachi
-  filter: Hitachi Vantara, Hitachi Digital Services
+  # whole Hitachi group (Vantara, Digital Services, Energy, Global Air Power, ...); the subsidiary shows on each row
   scan: all
   facets: jobFamilyGroup=f02270ea97930199e3b74ff29e506c3d,f02270ea9793013aaaf32af29e505e3d,f02270ea979301ae45c015f29e50563d   # Sales/Marketing/Product Mgmt, IT, General Mgmt
   url: https://www.hitachivantara.com/en-us/company/careers/job-search
