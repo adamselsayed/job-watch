@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T06:17:26+00:00",
+  "generated_at": "2026-10-30T06:39:37+00:00",
   "criteria": {
     "title_keywords": [
       "product"
@@ -99,6 +99,17 @@
       "error": null,
       "total_jobs": 39,
       "matched": 2
+    },
+    {
+      "name": "Life360",
+      "ats": "greenhouse",
+      "board": "life360",
+      "url": "https://www.life360.com/open-positions",
+      "fetched_at": "2026-10-30T06:39:37+00:00",
+      "status": "ok",
+      "error": null,
+      "total_jobs": 22,
+      "matched": 3
     }
   ],
   "jobs": [
@@ -988,6 +999,32 @@
       "closed_at": null
     },
     {
+      "job_id": "8895619002",
+      "req_id": "1468",
+      "title": "Principal Product Manager, Identity & Trust",
+      "location": "Remote, USA",
+      "location_detail": "Remote, USA",
+      "department": "Product",
+      "published_at": "2026-10-16T16:33:58-04:00",
+      "updated_at": "2026-10-28T19:33:31-04:00",
+      "url": "https://job-boards.greenhouse.io/life360/jobs/8895619002",
+      "salary": {
+        "min": 178500,
+        "max": 261500,
+        "currency": "USD",
+        "source": "description"
+      },
+      "us": true,
+      "remote": "remote",
+      "remote_confidence": "high",
+      "company": "Life360",
+      "key": "greenhouse:life360:8895619002",
+      "first_seen": "2026-10-30T06:39:37+00:00",
+      "last_seen": "2026-10-30T06:39:37+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
       "job_id": "744000155904829",
       "req_id": "JB0075818",
       "title": "Senior Director, Product Creative Direction",
@@ -1432,6 +1469,32 @@
       "key": "greenhouse:komodohealth:8868143002",
       "first_seen": "2026-10-30T05:15:36+00:00",
       "last_seen": "2026-10-30T05:51:20+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "8863976002",
+      "req_id": "1459",
+      "title": "Associate Legal Counsel, Product & Privacy, Ads   ",
+      "location": "Remote, USA",
+      "location_detail": "Remote, USA",
+      "department": "Legal",
+      "published_at": "2026-10-02T12:20:41-04:00",
+      "updated_at": "2026-10-28T19:29:07-04:00",
+      "url": "https://job-boards.greenhouse.io/life360/jobs/8863976002",
+      "salary": {
+        "min": 129000,
+        "max": 190000,
+        "currency": "USD",
+        "source": "description"
+      },
+      "us": true,
+      "remote": "remote",
+      "remote_confidence": "high",
+      "company": "Life360",
+      "key": "greenhouse:life360:8863976002",
+      "first_seen": "2026-10-30T06:39:37+00:00",
+      "last_seen": "2026-10-30T06:39:37+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2182,6 +2245,32 @@
       "key": "smartrecruiters:ServiceNow:744000146539137",
       "first_seen": "2026-10-30T05:47:56+00:00",
       "last_seen": "2026-10-30T05:51:20+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "8750960002",
+      "req_id": "1448",
+      "title": "Senior Director, Analytics and Data Science, Core Product & Growth",
+      "location": "Remote, USA; Remote, Canada",
+      "location_detail": "Remote, Canada | Remote, USA",
+      "department": "Analytics",
+      "published_at": "2026-08-26T12:45:33-04:00",
+      "updated_at": "2026-10-28T19:35:55-04:00",
+      "url": "https://job-boards.greenhouse.io/life360/jobs/8750960002",
+      "salary": {
+        "min": 247000,
+        "max": 366000,
+        "currency": "USD",
+        "source": "description"
+      },
+      "us": true,
+      "remote": "remote",
+      "remote_confidence": "high",
+      "company": "Life360",
+      "key": "greenhouse:life360:8750960002",
+      "first_seen": "2026-10-30T06:39:37+00:00",
+      "last_seen": "2026-10-30T06:39:37+00:00",
       "status": "open",
       "closed_at": null
     },
