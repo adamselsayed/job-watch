@@ -42,6 +42,13 @@ python3 -m http.server 8000              # then open http://localhost:8000
 
 The script uses only the Python standard library (3.9+).
 
+## Applied / Archive
+
+Each role can be filed as **Applied** or **Archive** from the dashboard. Marks are kept in the browser
+and, once **Sync** is set up (top-right button; needs a fine-grained GitHub token with *Contents: read & write*
+on this repo only), written to `data/marks.json` so they follow you across devices. A filed role stays filed
+while its listing ID exists; a repost under a new ID shows up as new again.
+
 ## "Pull now"
 
 The dashboard's **Pull now** button reads the company's live job board directly from your browser

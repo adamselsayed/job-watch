@@ -41,5 +41,6 @@ jobs:
           else
             NEW=$(grep -c " NEW " <(git diff --cached data/changes.log | grep '^+' || true) || true)
             git commit -m "Daily sweep: $(date -u +%Y-%m-%d) (${NEW:-0} new)"
+            git pull --rebase origin main   # the dashboard may have saved data/marks.json meanwhile
             git push
           fi

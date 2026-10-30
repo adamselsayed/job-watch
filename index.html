@@ -111,6 +111,17 @@
   .b-src { font-weight: 500; color: var(--faint); background: transparent; border-color: var(--border); }
 
   .note { font-size: 13px; color: var(--muted); margin-top: 20px; }
+  #sync.on { border-color: var(--new); color: var(--new); }
+  #sync.err { border-color: var(--err); color: var(--err); }
+  dialog { border: 1px solid var(--border); border-radius: 12px; background: var(--surface); color: var(--text); max-width: 560px; padding: 20px 22px; }
+  dialog::backdrop { background: rgba(0,0,0,.35); }
+  dialog h3 { margin: 0 0 8px; font-size: 17px; }
+  dialog p, dialog li { font-size: 14px; color: var(--muted); }
+  dialog ol { padding-left: 20px; }
+  dialog input { width: 100%; font: inherit; padding: 8px 10px; border: 1px solid var(--border); border-radius: 8px; background: var(--surface-2); color: var(--text); }
+  dialog .row { display: flex; gap: 8px; align-items: center; margin-top: 12px; }
+  dialog .spacer { flex: 1; }
+  button.danger { color: var(--err); }
   .toast { position: fixed; bottom: 18px; left: 50%; transform: translateX(-50%); background: var(--text); color: var(--bg);
     padding: 9px 14px; border-radius: 8px; font-size: 13.5px; opacity: 0; transition: opacity .2s; pointer-events: none; }
   .toast.show { opacity: 1; }
@@ -132,8 +143,29 @@
     <h1>Job Watch</h1>
     <span class="sub" id="generated">Loading…</span>
     <span class="spacer"></span>
+    <button id="sync" title="Sync Applied/Archive to the GitHub repo">Sync: off</button>
     <button id="pullAll">Pull all now</button>
   </header>
+
+  <dialog id="syncDlg">
+    <form method="dialog">
+      <h3>Sync Applied / Archive to GitHub</h3>
+      <p>With a token, your Applied/Archive list is saved to <code>data/marks.json</code> in the repo, so it follows you to any browser or device that opens this dashboard with the same token.</p>
+      <ol>
+        <li>GitHub → <strong>Settings → Developer settings → Personal access tokens → Fine-grained tokens → Generate new token</strong></li>
+        <li>Name: <code>job-watch dashboard</code> · Expiration: up to 1 year · Repository access: <strong>Only select repositories → job-watch</strong></li>
+        <li>Permissions → Repository permissions → <strong>Contents: Read and write</strong> (nothing else) → Generate, then copy it</li>
+      </ol>
+      <input type="password" id="tokenInput" placeholder="github_pat_…" autocomplete="off">
+      <p class="sub">The token is stored only in this browser. Anyone with it could edit this repo, so keep it scoped to job-watch only.</p>
+      <div class="row">
+        <button type="button" id="tokenRemove" class="danger">Remove token</button>
+        <span class="spacer"></span>
+        <button type="button" id="tokenCancel">Cancel</button>
+        <button type="button" id="tokenSave" class="primary">Save &amp; sync</button>
+      </div>
+    </form>
+  </dialog>
 
   <div class="tiles">
     <div class="tile new"><div class="n" id="tNew">–</div><div class="l">New since your last visit</div></div>
@@ -170,7 +202,7 @@
     Remote status comes from the posting's location, then its metadata, then its description; anything inferred from the description or not found at all is flagged.
     The daily sweep runs at 6 AM Pacific via GitHub Actions. <strong>Pull now</strong> reads the company's live job board straight from your browser and shows anything the sweep hasn't recorded yet as <span class="badge b-live">live</span>.
     Edit <code>companies.yml</code> in the repo to add companies.
-    <br><strong>Applied / Archive</strong> are stored in this browser. A role you've filed stays filed; if the company reposts it under a new listing ID it shows up as new again.
+    <br><strong>Applied / Archive</strong> are saved in this browser and, with <strong>Sync</strong> turned on (top right), to <code>data/marks.json</code> in the repo so they follow you across devices. A role you've filed stays filed; if the company reposts it under a new listing ID it shows up as new again.
     <button class="link" id="exportMarks">Export</button> · <button class="link" id="importMarks">Import</button> your Applied/Archive list to move it to another browser.<input type="file" id="importFile" accept="application/json" hidden>
   </p>
 </div>
@@ -202,9 +234,76 @@
   const saveMarks = () => { try { localStorage.setItem(MARKS_KEY, JSON.stringify(marks)); } catch (e) { toast('Could not save — browser storage is unavailable.'); } };
   const markOf = j => (marks[j.key] || {}).status || 'open';
   function setMark(j, status) {
-    if (status === 'open') delete marks[j.key];
-    else marks[j.key] = { status, at: new Date().toISOString(), title: j.title, company: j.company };
-    saveMarks(); render();
+    // 'open' is kept as a tombstone (not deleted) so a restore wins over an older remote copy when syncing.
+    marks[j.key] = { status, at: new Date().toISOString(), title: j.title, company: j.company };
+    saveMarks(); render(); scheduleSync();
+  }
+
+  // ------------------------------------------------------- GitHub sync ----
+  // Writes marks to data/marks.json in the repo through the GitHub Contents API,
+  // using a fine-grained token (Contents: read/write on this repo only) kept in localStorage.
+  const REPO = (() => { const m = location.hostname.match(/^([^.]+)\.github\.io$/); const seg = location.pathname.split('/').filter(Boolean)[0]; return m && seg ? `${m[1]}/${seg}` : 'adamselsayed/job-watch'; })();
+  const MARKS_PATH = 'data/marks.json';
+  const TOKEN_KEY = 'jobwatch.token';
+  let token = null, marksSha = null, syncTimer = null, syncing = false;
+  try { token = localStorage.getItem(TOKEN_KEY); } catch (e) {}
+  const api = (path, opts = {}) => fetch(`https://api.github.com/repos/${REPO}/${path}`, { ...opts, headers: { Accept: 'application/vnd.github+json', Authorization: `Bearer ${token}`, 'X-GitHub-Api-Version': '2022-11-28', ...(opts.headers || {}) } });
+  const b64 = str => btoa(unescape(encodeURIComponent(str)));
+  const unb64 = str => decodeURIComponent(escape(atob(str.replace(/\n/g, ''))));
+  function syncStatus(state, text) { const b = $('#sync'); b.className = state; b.textContent = text; }
+
+  function mergeMarks(remote) {
+    let changed = false;
+    for (const [k, v] of Object.entries(remote || {})) {
+      const mine = marks[k];
+      if (!mine || (v.at || '') > (mine.at || '')) { marks[k] = v; changed = true; }
+    }
+    return changed;
+  }
+  async function pullMarks() {
+    if (!token) return;
+    syncStatus('', 'Syncing…');
+    const r = await api(`contents/${MARKS_PATH}?ref=main`, { cache: 'no-store' });
+    if (r.status === 404) { marksSha = null; syncStatus('on', 'Synced ✓'); return scheduleSync(0); }   // first time: create the file
+    if (!r.ok) throw new Error(`GitHub ${r.status}`);
+    const d = await r.json(); marksSha = d.sha;
+    const remote = JSON.parse(unb64(d.content) || '{}').marks || {};
+    const localNewer = Object.entries(marks).some(([k, v]) => !remote[k] || (v.at || '') > (remote[k].at || ''));
+    if (mergeMarks(remote)) { saveMarks(); render(); }
+    syncStatus('on', 'Synced ✓');
+    if (localNewer) scheduleSync(0);
+  }
+  async function pushMarks(retry = true) {
+    if (!token || syncing) return;
+    syncing = true; syncStatus('', 'Syncing…');
+    try {
+      const body = { message: `Update applied/archive marks (${new Date().toISOString().slice(0, 16).replace('T', ' ')} UTC)`, content: b64(JSON.stringify({ updated_at: new Date().toISOString(), marks }, null, 2) + '\n'), branch: 'main' };
+      if (marksSha) body.sha = marksSha;
+      const r = await api(`contents/${MARKS_PATH}`, { method: 'PUT', body: JSON.stringify(body) });
+      if (r.status === 409 || r.status === 422) {            // someone else wrote first: re-pull, merge, retry once
+        syncing = false; if (retry) { await pullMarks(); return pushMarks(false); } throw new Error('conflict');
+      }
+      if (r.status === 401 || r.status === 403) throw new Error('token rejected (check it has Contents: read & write on this repo)');
+      if (!r.ok) throw new Error(`GitHub ${r.status}`);
+      marksSha = (await r.json()).content.sha;
+      syncStatus('on', 'Synced ✓');
+    } catch (e) {
+      syncStatus('err', 'Sync error'); toast(`Sync failed: ${e.message}. Your marks are still saved in this browser.`);
+    } finally { syncing = false; }
+  }
+  function scheduleSync(delay = 1500) { if (!token) return; clearTimeout(syncTimer); syncTimer = setTimeout(pushMarks, delay); }
+
+  function wireSync() {
+  $('#sync').addEventListener('click', () => { $('#tokenInput').value = ''; $('#tokenRemove').hidden = !token; $('#syncDlg').showModal(); });
+  $('#tokenCancel').addEventListener('click', () => $('#syncDlg').close());
+  $('#tokenRemove').addEventListener('click', () => { token = null; try { localStorage.removeItem(TOKEN_KEY); } catch (e) {} syncStatus('', 'Sync: off'); $('#syncDlg').close(); toast('Token removed. Marks stay in this browser only.'); });
+  $('#tokenSave').addEventListener('click', async () => {
+    const t = $('#tokenInput').value.trim(); if (!t) return;
+    token = t; try { localStorage.setItem(TOKEN_KEY, t); } catch (e) {}
+    $('#syncDlg').close();
+    try { await pullMarks(); toast('Sync on — Applied/Archive now saved to the repo.'); }
+    catch (e) { syncStatus('err', 'Sync error'); toast(`Could not reach the repo: ${e.message}`); }
+  });
   }
   const sectionOf = {};                    // company name (or '*' in flat view) -> open | applied | archived
   const section = name => sectionOf[name] || 'open';
@@ -539,6 +638,7 @@
   }));
   $('#q').addEventListener('input', e => { query = e.target.value.trim().toLowerCase(); render(); });
   $('#showClosed').addEventListener('change', render);
+  wireSync();
   $('#exportMarks').addEventListener('click', () => {
     const blob = new Blob([JSON.stringify({ exported_at: new Date().toISOString(), marks }, null, 2)], { type: 'application/json' });
     const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = `job-watch-marks-${new Date().toISOString().slice(0, 10)}.json`; a.click(); URL.revokeObjectURL(a.href);
@@ -547,8 +647,8 @@
   $('#importFile').addEventListener('change', async e => {
     const f = e.target.files[0]; if (!f) return;
     try { const d = JSON.parse(await f.text()); const m = d.marks || d; let n = 0;
-      for (const [k, v] of Object.entries(m)) if (v && (v.status === 'applied' || v.status === 'archived')) { marks[k] = v; n++; }
-      saveMarks(); render(); toast(`Imported ${n} marks.`); } catch (err) { toast('Import failed: not a valid export file.'); }
+      for (const [k, v] of Object.entries(m)) if (v && ['applied', 'archived', 'open'].includes(v.status)) { marks[k] = v; if (v.status !== 'open') n++; }
+      saveMarks(); render(); scheduleSync(); toast(`Imported ${n} marks.`); } catch (err) { toast('Import failed: not a valid export file.'); }
     e.target.value = '';
   });
   $('#view').addEventListener('change', e => { flat = e.target.value === 'flat'; try { localStorage.setItem('jobwatch.view', e.target.value); } catch (_) {} render(); });
@@ -566,6 +666,7 @@
 
   fetch(DATA_URL + '?t=' + Date.now()).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
     .then(d => { data = d; render(); })
+    .then(() => token ? pullMarks().catch(e => { syncStatus('err', 'Sync error'); toast(`Sync failed: ${e.message}`); }) : fetch('data/marks.json?t=' + Date.now()).then(r => r.ok ? r.json() : null).then(d => { if (d && mergeMarks(d.marks)) { saveMarks(); render(); } }).catch(() => {}))
     .catch(() => { $('#generated').textContent = 'No sweep data yet — run the GitHub Action (or scripts/fetch_jobs.py) to create data/jobs.json.'; render(); });
 })();
 </script>
