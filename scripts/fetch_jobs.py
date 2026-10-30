@@ -502,7 +502,7 @@ def fetch_workday(company):
             m = re.search(r"Location:\s*(.+?)\s*(?:Job ID|Req(?:uisition)? ID|Date Posted|$)", content[:600])
             if m and len(m.group(1)) < 80:
                 loc_name = m.group(1).strip(" .,:") or loc_name
-        if country and country.lower() not in loc_name.lower():
+        if country and country.lower().split(" of ")[0] not in loc_name.lower():     # "United States of America" vs "United States"
             loc_name = f"{loc_name}, {country}" if loc_name else country
         remote_type = (info.get("remoteType") or "")
         published = info.get("startDate") or None          # YYYY-MM-DD (Workday gives no time of day)
