@@ -107,6 +107,12 @@
   td.title a { font-weight: 600; text-decoration: none; }
   td.title a:hover { text-decoration: underline; color: var(--accent); }
   td.title { max-width: 0; }
+  .company { overflow-x: auto; }
+  th.w-role { position: relative; }
+  th.w-role .rz { position: absolute; top: 0; right: -4px; width: 9px; height: 100%; cursor: col-resize; user-select: none; }
+  th.w-role .rz::after { content: ""; position: absolute; left: 4px; top: 6px; bottom: 6px; width: 1px; background: var(--border); }
+  th.w-role .rz:hover::after, th.w-role .rz.drag::after { background: var(--accent); width: 2px; }
+  table.sized { width: max-content; min-width: 100%; }
   td.title .t { display: flex; align-items: center; gap: 6px; min-width: 0; }
   td.title .t a { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
   td.loc { max-width: 0; overflow: hidden; text-overflow: ellipsis; }
@@ -529,6 +535,33 @@
     return html;
   }
 
+  let roleW = 0;                                     // 0 = automatic; otherwise a pixel width for the Role column
+  try { roleW = parseInt(localStorage.getItem('jobwatch.roleW') || '0', 10) || 0; } catch (_) {}
+  const saveRoleW = () => { try { localStorage.setItem('jobwatch.roleW', String(roleW)); } catch (_) {} };
+  function wireResize(el) {
+    const rz = el.querySelector('.rz'); if (!rz) return;
+    const th = rz.parentElement, table = el.querySelector('table');
+    const apply = () => { th.style.width = roleW ? roleW + 'px' : ''; table.classList.toggle('sized', !!roleW); };
+    rz.addEventListener('mousedown', e => {
+      e.preventDefault(); rz.classList.add('drag');
+      const x0 = e.clientX, w0 = th.getBoundingClientRect().width;
+      const move = ev => { roleW = Math.max(160, Math.round(w0 + ev.clientX - x0)); apply(); };
+      const up = () => { document.removeEventListener('mousemove', move); document.removeEventListener('mouseup', up); rz.classList.remove('drag'); saveRoleW(); };
+      document.addEventListener('mousemove', move); document.addEventListener('mouseup', up);
+    });
+    rz.addEventListener('dblclick', () => {
+      // fit: measure the widest title (plus its badges) in this table
+      let max = 0;
+      const probe = document.createElement('span'); probe.style.cssText = 'position:absolute;visibility:hidden;white-space:nowrap';
+      const sample = el.querySelector('td.title .t a'); if (sample) probe.style.font = getComputedStyle(sample).font;
+      document.body.appendChild(probe);
+      el.querySelectorAll('td.title .t').forEach(t => { probe.textContent = t.querySelector('a').textContent; const badges = [...t.children].slice(1).reduce((n, b) => n + b.getBoundingClientRect().width + 6, 0); max = Math.max(max, probe.getBoundingClientRect().width + badges + 24); });
+      probe.remove();
+      roleW = roleW && Math.abs(roleW - Math.round(max)) < 4 ? 0 : Math.round(max);   // second double-click resets to automatic
+      apply(); saveRoleW();
+    });
+    apply();
+  }
   let selected = '*', sortKey = 'posted-desc';     // '*' = all companies
   let flat = true;                                   // the combined table shows a Company column
   const postedTs = j => new Date(j.published_at || j.first_seen).getTime() || 0;
@@ -540,7 +573,7 @@
     'title':       (a, b) => a.title.localeCompare(b.title),
   };
   const sortRows = rows => rows.slice().sort((a, b) => (a.status === 'closed') - (b.status === 'closed') || SORTS[sortKey](a, b));
-  const THEAD = () => `<thead><tr>${flat ? '<th class="w-co">Company</th>' : ''}<th>Role</th><th class="w-loc">Location</th><th class="w-work">Work</th><th class="w-posted">Posted</th><th class="w-sal">Salary</th><th class="w-ids">IDs</th><th class="w-acts"></th></tr></thead>`;
+  const THEAD = () => `<thead><tr>${flat ? '<th class="w-co">Company</th>' : ''}<th class="w-role"${roleW ? ` style="width:${roleW}px"` : ''}>Role<span class="rz" title="Drag to widen the Role column · double-click to fit the longest title"></span></th><th class="w-loc">Location</th><th class="w-work">Work</th><th class="w-posted">Posted</th><th class="w-sal">Salary</th><th class="w-ids">IDs</th><th class="w-acts"></th></tr></thead>`;
 
   function row(j) {
     const pub = j.published_at;
@@ -625,7 +658,7 @@
       el.className = 'company';
       el.innerHTML = `<div class="head"><h2>All companies</h2>${tabsHtml('*', jobs)}<span class="meta">${rows.length} shown</span><span class="spacer"></span></div>
         ${rows.length ? `<table>${THEAD()}<tbody>${rows.map(row).join('')}</tbody></table>` : `<div class="empty">${EMPTY[sec]}</div>`}`;
-      wire(el);
+      wire(el); wireResize(el);
       container.appendChild(el);
       return;
     }
@@ -651,7 +684,7 @@
         ${rows.length ? `<table>${THEAD()}<tbody>${rows.map(row).join('')}</tbody></table>`
                       : `<div class="empty">${sec === 'open' && !openCount ? 'No open roles with “product” in the title in the US right now.' : EMPTY[sec]}</div>`}`;
       el.querySelector('.pull').addEventListener('click', e => pullNow(c, e.currentTarget));
-      wire(el);
+      wire(el); wireResize(el);
       container.appendChild(el);
     }
   }
