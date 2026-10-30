@@ -29,7 +29,7 @@ index.html               <- the dashboard (GitHub Pages serves it)
 3. Run `python3 scripts/fetch_jobs.py` locally, or wait for the next morning's sweep, or trigger
    **Actions → Daily job sweep → Run workflow** on GitHub.
 
-Supported boards: Greenhouse, Lever, Ashby. Companies on Workday or custom career sites need a
+Supported boards: Greenhouse, Lever, Ashby, SmartRecruiters. Companies on Workday or custom career sites need a
 new adapter in `fetch_jobs.py` (a function that returns the same normalized dicts).
 
 ## Running locally

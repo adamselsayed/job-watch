@@ -1,7 +1,7 @@
 # Companies to watch. One block per company.
 #
 #   name:  how the company appears on the dashboard
-#   ats:   greenhouse | lever | ashby   (the job-board system the company uses)
+#   ats:   greenhouse | lever | ashby | smartrecruiters   (the job-board system the company uses)
 #   board: the company's board token (the slug in its job-board URL)
 #   url:   the public careers page (for reference / linking)
 #
@@ -9,6 +9,7 @@
 #   Greenhouse: careers page loads from boards.greenhouse.io/<token>  or  job-boards.greenhouse.io/<token>
 #   Lever:      jobs.lever.co/<token>
 #   Ashby:      jobs.ashbyhq.com/<token>
+#   SmartRecruiters: jobs.smartrecruiters.com/<token>/...  or the company identifier in api.smartrecruiters.com/v1/companies/<token>/postings
 #
 # After adding a company, run:  python3 scripts/fetch_jobs.py
 # (GitHub Actions also runs it automatically every morning.)
@@ -27,3 +28,13 @@
   ats: greenhouse
   board: toast
   url: https://careers.toasttab.com/jobs/search
+
+- name: Experian
+  ats: smartrecruiters
+  board: Experian
+  url: https://jobs.experian.com/jobs
+
+- name: Komodo Health
+  ats: greenhouse
+  board: komodohealth
+  url: https://job-boards.greenhouse.io/komodohealth

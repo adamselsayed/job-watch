@@ -324,7 +324,62 @@ def fetch_ashby(company):
     return out
 
 
-ADAPTERS = {"greenhouse": fetch_greenhouse, "lever": fetch_lever, "ashby": fetch_ashby}
+def fetch_smartrecruiters(company):
+    """SmartRecruiters public Posting API (no auth). board = the company identifier
+    in https://api.smartrecruiters.com/v1/companies/<identifier>/postings"""
+    board = company["board"]
+    base = f"https://api.smartrecruiters.com/v1/companies/{board}/postings"
+    items, offset = [], 0
+    while True:
+        page = fetch_json(f"{base}?limit=100&offset={offset}")
+        items.extend(page.get("content", []))
+        offset += 100
+        if offset >= int(page.get("totalFound", 0)) or not page.get("content"):
+            break
+    out = []
+    for j in items:
+        title = j.get("name", "") or ""
+        loc = j.get("location") or {}
+        country = (loc.get("country") or "").lower()
+        parts = [loc.get("city"), loc.get("region"), {"us": "United States"}.get(country, (loc.get("country") or "").upper())]
+        loc_name = ", ".join(x for x in parts if x)
+        flags = []
+        if loc.get("remote"):
+            flags.append("Remote")
+        if loc.get("hybrid"):
+            flags.append("Hybrid")
+        if flags:
+            loc_name = f"{' / '.join(flags)} - {loc_name}" if loc_name else " / ".join(flags)
+        content, url, salary = "", f"https://jobs.smartrecruiters.com/{board}/{j.get('id')}", None
+        if title_matches(title):
+            try:
+                d = fetch_json(f"{base}/{j.get('id')}")
+                secs = (d.get("jobAd") or {}).get("sections") or {}
+                content = strip_html(" ".join((secs.get(k) or {}).get("text", "") for k in
+                                              ("jobDescription", "qualifications", "additionalInformation", "companyDescription")))
+                url = d.get("applyUrl") or d.get("postingUrl") or url
+                salary = salary_from_text(content)
+            except Exception as e:          # noqa: BLE001
+                log(f"[{company['name']}] detail fetch failed for {j.get('id')}: {e}")
+        meta = " ".join(f"{c.get('fieldLabel','')}: {c.get('valueLabel','')}" for c in (j.get("customField") or []) if c.get("valueLabel"))
+        out.append({
+            "job_id": str(j.get("id")),
+            "req_id": j.get("refNumber") or None,
+            "title": title,
+            "location": loc_name,
+            "location_detail": "",
+            "department": (j.get("department") or {}).get("label", "") or "",
+            "published_at": j.get("releasedDate"),
+            "updated_at": None,
+            "url": url,
+            "salary": salary,
+            "_meta_text": meta + (" remote" if loc.get("remote") else "") + (" hybrid" if loc.get("hybrid") else ""),
+            "_content": content,
+        })
+    return out
+
+
+ADAPTERS = {"greenhouse": fetch_greenhouse, "lever": fetch_lever, "ashby": fetch_ashby, "smartrecruiters": fetch_smartrecruiters}
 
 
 # --------------------------------------------------------------- filtering --

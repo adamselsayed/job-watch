@@ -453,7 +453,34 @@
       };
     });
   }
-  const LIVE = { greenhouse: liveGreenhouse, lever: liveLever, ashby: liveAshby };
+  async function liveSmartrecruiters(c) {
+    const base = `https://api.smartrecruiters.com/v1/companies/${c.board}/postings`;
+    let items = [], offset = 0, total = 0;
+    do {
+      const r = await fetch(`${base}?limit=100&offset=${offset}`); if (!r.ok) throw new Error(`HTTP ${r.status}`);
+      const pg = await r.json(); items = items.concat(pg.content || []); total = pg.totalFound || 0; offset += 100;
+    } while (offset < total && items.length);
+    items = items.filter(j => titleMatches(j.name));
+    await Promise.all(items.map(async j => {
+      try { const d = await (await fetch(`${base}/${j.id}`)).json(); const secs = (d.jobAd || {}).sections || {};
+        j._content = stripHtml(['jobDescription', 'qualifications', 'additionalInformation', 'companyDescription'].map(k => (secs[k] || {}).text || '').join(' '));
+        j._url = d.applyUrl || d.postingUrl; } catch (e) { j._content = ''; }
+    }));
+    return items.map(j => {
+      const loc = j.location || {}; const country = (loc.country || '').toLowerCase();
+      let name = [loc.city, loc.region, country === 'us' ? 'United States' : (loc.country || '').toUpperCase()].filter(Boolean).join(', ');
+      const flags = [loc.remote && 'Remote', loc.hybrid && 'Hybrid'].filter(Boolean);
+      if (flags.length) name = name ? `${flags.join(' / ')} - ${name}` : flags.join(' / ');
+      return {
+        job_id: String(j.id), req_id: j.refNumber || null, title: j.name || '', location: name, location_detail: '',
+        department: (j.department || {}).label || '', published_at: j.releasedDate, updated_at: null,
+        url: j._url || `https://jobs.smartrecruiters.com/${c.board}/${j.id}`, salary: salaryFromText(j._content || ''),
+        _meta: (j.customField || []).filter(x => x.valueLabel).map(x => `${x.fieldLabel}: ${x.valueLabel}`).join(' ') + (loc.remote ? ' remote' : '') + (loc.hybrid ? ' hybrid' : ''),
+        _content: j._content || '',
+      };
+    });
+  }
+  const LIVE = { greenhouse: liveGreenhouse, lever: liveLever, ashby: liveAshby, smartrecruiters: liveSmartrecruiters };
 
   function applyCriteria(raw, c) {
     const out = [];
