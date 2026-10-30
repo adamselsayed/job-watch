@@ -392,11 +392,23 @@ def fetch_smartrecruiters(company):
     return out
 
 
+import http.cookiejar
+_WD_OPENER = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(http.cookiejar.CookieJar()))
+_WD_HEADERS = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) job-watch/1.0", "Accept": "application/json",
+               "Accept-Language": "en-US,en;q=0.9"}
+
+
+def wd_get(url, timeout=60, as_json=True):
+    req = urllib.request.Request(url, headers=_WD_HEADERS)
+    with _WD_OPENER.open(req, timeout=timeout) as r:
+        raw = r.read().decode("utf-8", "replace")
+        return json.loads(raw) if as_json else raw
+
+
 def fetch_json_post(url, body, timeout=60):
     req = urllib.request.Request(url, data=json.dumps(body).encode(), method="POST",
-                                 headers={"User-Agent": "job-watch/1.0 (+github)", "Accept": "application/json",
-                                          "Content-Type": "application/json"})
-    with urllib.request.urlopen(req, timeout=timeout) as r:
+                                 headers={**_WD_HEADERS, "Content-Type": "application/json"})
+    with _WD_OPENER.open(req, timeout=timeout) as r:
         return json.loads(r.read().decode("utf-8"))
 
 
@@ -421,9 +433,14 @@ def fetch_workday(company):
     base = f"https://{tenant_host}.myworkdayjobs.com/wday/cxs/{tenant}/{site}"
     filters = [x.strip().lower() for x in company.get("filter", "").split(",") if x.strip()]
     search = "" if company.get("scan", "").lower() == "all" else " ".join(TITLE_KEYWORDS)
-    postings, offset, first_page = [], 0, None
+    postings, offset, first_page, pages = [], 0, None, []
+    try:
+        wd_get(f"https://{tenant_host}.myworkdayjobs.com/{site}", as_json=False)     # establishes the session cookie
+    except Exception as e:          # noqa: BLE001
+        log(f"[{company['name']}] cookie warm-up failed: {e}")
     while True:
         page = fetch_json_post(f"{base}/jobs", {"appliedFacets": {}, "limit": 20, "offset": offset, "searchText": search})
+        pages.append((offset, len(page.get("jobPostings") or []), page.get("total")))
         if first_page is None:
             first_page = page
         items = page.get("jobPostings") or []
@@ -438,7 +455,7 @@ def fetch_workday(company):
             continue
         path = jp.get("externalPath") or ""
         try:
-            d = fetch_json(f"{base}{path}")
+            d = wd_get(f"{base}{path}")
         except Exception as e:          # noqa: BLE001
             log(f"[{company['name']}] detail fetch failed for {path}: {e}")
             continue
@@ -476,7 +493,7 @@ def fetch_workday(company):
                          "facets": [(f.get("facetParameter"), [(v.get("descriptor"), v.get("id")) for v in (f.get("values") or [])[:15]])
                                     for f in ((first_page or {}).get("facets") or [])],
                          "first_detail": first_detail, "kept": len(out), "scanned": len(postings),
-                         "orgs_of_title_matches": orgs, "total_reported": (first_page or {}).get("total")})
+                         "orgs_of_title_matches": orgs, "total_reported": (first_page or {}).get("total"), "pages": pages[:12]})
     return out
 
 
