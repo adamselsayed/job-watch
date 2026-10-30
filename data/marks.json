@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T21:33:58.988Z",
+  "updated_at": "2026-10-30T21:34:04.878Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -280,6 +280,12 @@
     "smartrecruiters:ServiceNow:744000158362202": {
       "status": "archived",
       "at": "2026-10-30T21:33:57.477Z",
+      "title": "Senior Staff Product Security Engineer | Product Security Incident Response Team (PSIRT) ",
+      "company": "ServiceNow"
+    },
+    "smartrecruiters:ServiceNow:744000158362000": {
+      "status": "archived",
+      "at": "2026-10-30T21:34:03.369Z",
       "title": "Senior Staff Product Security Engineer | Product Security Incident Response Team (PSIRT) ",
       "company": "ServiceNow"
     }
