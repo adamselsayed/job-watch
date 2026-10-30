@@ -112,12 +112,12 @@
      "44d3f33caa03108fe3d8f1c800d84835"
     ],
     [
-     "Temporary",
-     "44d3f33caa03108fe3d8eb7d2ef94833"
-    ],
-    [
      "Trainee (Trainee)",
      "44d3f33caa03108fe3d8f83769d44838"
+    ],
+    [
+     "Temporary",
+     "44d3f33caa03108fe3d8eb7d2ef94833"
     ],
     [
      "Executive/Officer",
@@ -337,5 +337,21 @@
    20,
    0
   ]
+ ],
+ "kept_rows": [
+  {
+   "job_id": "R0147632",
+   "req_id": "R0147632",
+   "title": "Manager, Product Management — Hitachi IQ and AI solutions",
+   "location": "(DEAI HV) SG Singapore - Temasek Boulevard",
+   "location_detail": "",
+   "department": "HITACHI VANTARA LLC",
+   "published_at": "2026-10-16",
+   "updated_at": null,
+   "url": "https://hitachi.wd1.myworkdayjobs.com/hitachi/job/Manager--Product-Management---Hitachi-IQ-and-AI-solutions_R0147632-1",
+   "salary": null,
+   "_meta_text": "remoteType: Virtual timeType: Full time postedOn: Posted 13 Days Ago remote",
+   "_content_head": " Function \n \nProduct \n Our Company \n \n We’re Hitachi Vantara, the data foundation trusted by the world’s innovators. Our resilient, high-performance data infrastructure means that customers – from banks to theme parks ­– can focus on achieving the incredible with data.   \n \n If you’ve seen the Las Vegas Sphere, you’ve seen just one example of how we empower businesses to automate, optimize, innovate – and wow their customers. Right now, we’re laying the foundation for our next wave of growth.  W"
+  }
  ]
 }

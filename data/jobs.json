@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T06:55:20+00:00",
+  "generated_at": "2026-10-30T06:57:51+00:00",
   "criteria": {
     "title_keywords": [
       "product"
@@ -119,7 +119,7 @@
       "scan": "all",
       "facets": "jobFamilyGroup=f02270ea97930199e3b74ff29e506c3d,f02270ea9793013aaaf32af29e505e3d,f02270ea979301ae45c015f29e50563d",
       "url": "https://www.hitachivantara.com/en-us/company/careers/job-search",
-      "fetched_at": "2026-10-30T06:55:20+00:00",
+      "fetched_at": "2026-10-30T06:57:51+00:00",
       "status": "ok",
       "error": null,
       "total_jobs": 1,
