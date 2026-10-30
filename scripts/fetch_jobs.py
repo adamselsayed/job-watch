@@ -446,7 +446,8 @@ def fetch_workday(company):
         items = page.get("jobPostings") or []
         postings.extend(items)
         offset += 20
-        if not items or offset >= int(page.get("total", 0)) or offset > 6000:
+        total = int((first_page or {}).get("total") or 0)          # later pages report total=0
+        if not items or offset >= total or offset > 6000:
             break
     out, first_detail, orgs = [], None, {}
     for jp in postings:
