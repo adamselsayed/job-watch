@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T07:03:48.694Z",
+  "updated_at": "2026-10-30T18:54:48.927Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -204,6 +204,12 @@
       "at": "2026-10-30T07:03:47.189Z",
       "title": "Associate Legal Counsel, Product & Privacy, Ads   ",
       "company": "Life360"
+    },
+    "smartrecruiters:ServiceNow:744000126724432": {
+      "status": "archived",
+      "at": "2026-10-30T18:54:47.414Z",
+      "title": "Tech Lead, Agentic AI Product - Moveworks",
+      "company": "ServiceNow"
     }
   }
 }
