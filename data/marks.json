@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T06:22:01.026Z",
+  "updated_at": "2026-10-30T07:03:48.694Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -198,6 +198,12 @@
       "at": "2026-10-30T06:21:59.521Z",
       "title": "Staff Product Manager, Fleet Software",
       "company": "ChargePoint"
+    },
+    "greenhouse:life360:8863976002": {
+      "status": "archived",
+      "at": "2026-10-30T07:03:47.189Z",
+      "title": "Associate Legal Counsel, Product & Privacy, Ads   ",
+      "company": "Life360"
     }
   }
 }
