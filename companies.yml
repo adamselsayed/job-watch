@@ -43,3 +43,8 @@
   ats: smartrecruiters
   board: ServiceNow
   url: https://careers.servicenow.com/
+
+- name: Thumbtack
+  ats: ashby
+  board: thumbtack
+  url: https://careers.thumbtack.com/jobs
