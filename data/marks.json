@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-01T04:34:36.963Z",
+  "updated_at": "2026-11-01T04:49:49.450Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -378,8 +378,9 @@
     ],
     "out": [
       "Serve Robotics",
+      "EVgo",
       "Housecall Pro"
     ],
-    "at": "2026-11-01T04:33:50.961Z"
+    "at": "2026-11-01T04:49:47.946Z"
   }
 }
