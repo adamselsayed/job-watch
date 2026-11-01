@@ -679,6 +679,10 @@ def fetch_jobvite(company):
         })
     debug_dump(company, {"rows_found": len(rows), "first_detail": first, "sample_rows": [r[2][:80] + " @ " + strip_html(re.search(r'jv-job-list-location[^>]*>(.*?)</', r[3], re.S).group(1) if re.search(r'jv-job-list-location[^>]*>(.*?)</', r[3], re.S) else '?') for r in rows[:5]],
                          "html_head": html_list[:1500] if not rows else None,
+                         "job_links": sorted(set(re.findall(r'href="([^"]*?/job/[^"]*)"', html_list)))[:40] if not rows else None,
+                         "around_first_job": (lambda i: html_list[max(0, i - 1500): i + 1500] if i >= 0 else None)(html_list.find("/job/")) if not rows else None,
+                         "scripts": re.findall(r'<script[^>]+src="([^"]+)"', html_list)[:20] if not rows else None,
+                         "json_blobs": [b[:300] for b in re.findall(r'<script[^>]*type="application/(?:ld\+)?json"[^>]*>(.*?)</script>', html_list, re.S)][:5] if not rows else None,
                          "kept_rows": [{k: v for k, v in r.items() if k != "_content"} | {"_content_head": r["_content"][:300]} for r in out if title_matches(r["title"])]})
     return out
 
