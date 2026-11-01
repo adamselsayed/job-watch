@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-01T05:27:30.094Z",
+  "updated_at": "2026-11-01T05:27:40.673Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -380,16 +380,16 @@
       "Motive",
       "ServiceNow",
       "ChargePoint",
-      "Experian"
+      "Experian",
+      "Serve Robotics"
     ],
     "out": [
       "Angi",
       "Taskrabbit",
-      "Serve Robotics",
       "EVgo",
       "Nextdoor",
       "Housecall Pro"
     ],
-    "at": "2026-11-01T05:27:28.589Z"
+    "at": "2026-11-01T05:27:39.170Z"
   }
 }
