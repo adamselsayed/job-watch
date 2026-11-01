@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T04:40:34+00:00",
+  "generated_at": "2026-11-01T04:45:18+00:00",
   "criteria": {
     "title_keywords": [
       "product"
@@ -200,6 +200,17 @@
       "error": null,
       "total_jobs": 138,
       "matched": 90
+    },
+    {
+      "name": "EVgo",
+      "ats": "jobvite",
+      "board": "evgo",
+      "url": "https://evgo.com/company/careers/",
+      "fetched_at": "2026-11-01T04:45:18+00:00",
+      "status": "ok",
+      "error": null,
+      "total_jobs": 0,
+      "matched": 0
     }
   ],
   "jobs": [
