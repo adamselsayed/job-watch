@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T04:27:26+00:00",
+  "generated_at": "2026-11-01T04:33:03+00:00",
   "criteria": {
     "title_keywords": [
       "product"
@@ -178,6 +178,17 @@
       "error": null,
       "total_jobs": 54,
       "matched": 7
+    },
+    {
+      "name": "Serve Robotics",
+      "ats": "ashby",
+      "board": "serverobotics",
+      "url": "https://www.serverobotics.com/careers",
+      "fetched_at": "2026-11-01T04:33:03+00:00",
+      "status": "ok",
+      "error": null,
+      "total_jobs": 27,
+      "matched": 2
     }
   ],
   "jobs": [
@@ -2531,6 +2542,32 @@
       "closed_at": null
     },
     {
+      "job_id": "71f193a1-f287-4758-9f75-18e2cf5d45aa",
+      "req_id": null,
+      "title": "VP, Product ",
+      "location": "USA (remote)",
+      "location_detail": "",
+      "department": "Product & Design / Product & Design",
+      "published_at": "2026-09-11T22:25:22.899+00:00",
+      "updated_at": null,
+      "url": "https://jobs.ashbyhq.com/serverobotics/71f193a1-f287-4758-9f75-18e2cf5d45aa",
+      "salary": {
+        "min": 240000,
+        "max": 300000,
+        "currency": "USD",
+        "source": "posting"
+      },
+      "us": true,
+      "remote": "remote",
+      "remote_confidence": "high",
+      "company": "Serve Robotics",
+      "key": "ashby:serverobotics:71f193a1-f287-4758-9f75-18e2cf5d45aa",
+      "first_seen": "2026-11-01T04:33:03+00:00",
+      "last_seen": "2026-11-01T04:33:03+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
       "job_id": "6190537004",
       "req_id": "1156",
       "title": "Product Manager II (Recurring Jobs + Service Plans)",
@@ -3153,6 +3190,32 @@
       "key": "smartrecruiters:ServiceNow:744000108296495",
       "first_seen": "2026-10-30T05:47:56+00:00",
       "last_seen": "2026-10-31T13:37:55+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "2cc4efc4-d08f-4019-a474-71d06c62e72e",
+      "req_id": null,
+      "title": "Director of Product , Data Flywheel",
+      "location": "Redwood City, CA",
+      "location_detail": "Montreal (remote) | USA (remote) | British Columbia (remote) | Vancouver, BC (remote) | Calgary (remote) | Edmonton (remote) | Toronto (remote) | Ottawa (remote) | Surrey",
+      "department": "Product & Design / Product & Design",
+      "published_at": "2026-02-03T20:02:00.145+00:00",
+      "updated_at": null,
+      "url": "https://jobs.ashbyhq.com/serverobotics/2cc4efc4-d08f-4019-a474-71d06c62e72e",
+      "salary": {
+        "min": 221000,
+        "max": 275000,
+        "currency": "USD",
+        "source": "posting"
+      },
+      "us": true,
+      "remote": "remote",
+      "remote_confidence": "medium",
+      "company": "Serve Robotics",
+      "key": "ashby:serverobotics:2cc4efc4-d08f-4019-a474-71d06c62e72e",
+      "first_seen": "2026-11-01T04:33:03+00:00",
+      "last_seen": "2026-11-01T04:33:03+00:00",
       "status": "open",
       "closed_at": null
     },
