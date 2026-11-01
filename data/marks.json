@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-01T03:44:45.290Z",
+  "updated_at": "2026-11-01T04:10:07.269Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -342,6 +342,18 @@
       "at": "2026-11-01T03:44:43.781Z",
       "title": "Principal Product Success Architect",
       "company": "ServiceNow"
+    },
+    "ashby:cognition:60ac2393-2727-4c88-953b-013e7bb418f8": {
+      "status": "archived",
+      "at": "2026-11-01T04:10:04.942Z",
+      "title": "Product Marketer",
+      "company": "Cognition"
+    },
+    "ashby:cognition:439404bb-3185-4d22-b6df-4a5e39a510d6": {
+      "status": "archived",
+      "at": "2026-11-01T04:10:05.766Z",
+      "title": "Product Engineer",
+      "company": "Cognition"
     }
   }
 }
