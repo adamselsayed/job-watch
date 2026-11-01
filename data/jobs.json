@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T05:32:04+00:00",
+  "generated_at": "2026-11-01T05:42:36+00:00",
   "criteria": {
     "title_keywords": [
       "product"
@@ -266,6 +266,17 @@
       "status": "ok",
       "error": null,
       "total_jobs": 25,
+      "matched": 2
+    },
+    {
+      "name": "Aya Healthcare",
+      "ats": "greenhouse",
+      "board": "ayahealthcare",
+      "url": "https://www.ayahealthcare.com/corporate-careers/jobs/",
+      "fetched_at": "2026-11-01T05:42:36+00:00",
+      "status": "ok",
+      "error": null,
+      "total_jobs": 45,
       "matched": 2
     }
   ],
@@ -3976,6 +3987,32 @@
       "closed_at": null
     },
     {
+      "job_id": "8262242",
+      "req_id": "JR100343",
+      "title": "Product Manager II",
+      "location": "Remote, US",
+      "location_detail": "Remote",
+      "department": "IT / Software / Product",
+      "published_at": "2026-10-07T14:25:14-04:00",
+      "updated_at": "2026-10-07T14:25:14-04:00",
+      "url": "https://www.ayahealthcare.com/corporate-careers/jobs/8262242?gh_jid=8262242",
+      "salary": {
+        "min": 140000,
+        "max": 155000,
+        "currency": "USD",
+        "source": "description"
+      },
+      "us": true,
+      "remote": "remote",
+      "remote_confidence": "high",
+      "company": "Aya Healthcare",
+      "key": "greenhouse:ayahealthcare:8262242",
+      "first_seen": "2026-11-01T05:42:36+00:00",
+      "last_seen": "2026-11-01T05:42:36+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
       "job_id": "744000154095380",
       "req_id": "JB0076127",
       "title": "Senior Manager, Data & Analytics Product Strategic Operations",
@@ -5510,6 +5547,32 @@
       "key": "phenom:www.yelp.careers/us/en:YELPUS14002EXTERNALENUS",
       "first_seen": "2026-11-01T05:32:04+00:00",
       "last_seen": "2026-11-01T05:32:04+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "8055580",
+      "req_id": "JR100236",
+      "title": "Product Manager IV",
+      "location": "Remote, US",
+      "location_detail": "Remote",
+      "department": "IT / Software / Product",
+      "published_at": "2026-07-10T13:28:30-04:00",
+      "updated_at": "2026-09-30T13:47:22-04:00",
+      "url": "https://www.ayahealthcare.com/corporate-careers/jobs/8055580?gh_jid=8055580",
+      "salary": {
+        "min": 185000,
+        "max": 205000,
+        "currency": "USD",
+        "source": "description"
+      },
+      "us": true,
+      "remote": "remote",
+      "remote_confidence": "high",
+      "company": "Aya Healthcare",
+      "key": "greenhouse:ayahealthcare:8055580",
+      "first_seen": "2026-11-01T05:42:36+00:00",
+      "last_seen": "2026-11-01T05:42:36+00:00",
       "status": "open",
       "closed_at": null
     },
