@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-01T04:33:52.466Z",
+  "updated_at": "2026-11-01T04:34:35.246Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -354,6 +354,12 @@
       "at": "2026-11-01T04:10:05.766Z",
       "title": "Product Engineer",
       "company": "Cognition"
+    },
+    "ashby:serverobotics:71f193a1-f287-4758-9f75-18e2cf5d45aa": {
+      "status": "applied",
+      "at": "2026-11-01T04:34:33.742Z",
+      "title": "VP, Product ",
+      "company": "Serve Robotics"
     }
   },
   "groups": {
