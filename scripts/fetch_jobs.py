@@ -705,9 +705,59 @@ def fetch_unknown(company):
     return []
 
 
+def fetch_rippling(company):
+    """Rippling ATS boards (https://ats.rippling.com/<board>/jobs) via Rippling's public board API."""
+    board = company["board"]
+    base = f"https://api.rippling.com/platform/api/ats/v1/board/{board}"
+    data = wd_get(f"{base}/jobs")
+    items = data if isinstance(data, list) else (data.get("items") or data.get("jobs") or data.get("results") or [])
+    out, first_detail = [], None
+    for j in items:
+        title = j.get("name") or j.get("title") or ""
+        wl = j.get("workLocation") or j.get("location") or {}
+        loc = (wl.get("label") or wl.get("name") or ", ".join(x for x in (wl.get("city"), wl.get("state"), wl.get("country")) if x)) if isinstance(wl, dict) else str(wl or "")
+        locs = j.get("workLocations") or []
+        extra = "; ".join((x.get("label") or x.get("name") or "") for x in locs if isinstance(x, dict) and (x.get("label") or x.get("name")))
+        if not loc and extra:
+            loc = extra
+        content, salary, published = "", None, j.get("createdAt") or j.get("publishedAt") or j.get("postedAt")
+        url = j.get("url") or f"https://ats.rippling.com/{board}/jobs/{j.get('id')}"
+        if title_matches(title):
+            try:
+                d = wd_get(f"{base}/jobs/{j.get('id')}")
+                if first_detail is None:
+                    first_detail = {k: (v if k != "description" else str(v)[:300]) for k, v in d.items()} if isinstance(d, dict) else d
+                if isinstance(d, dict):
+                    content = strip_html(d.get("description") or d.get("descriptionHtml") or d.get("content") or "")
+                    published = d.get("createdAt") or d.get("publishedAt") or d.get("postedAt") or published
+                    comp = d.get("compensation") or d.get("salary") or {}
+                    if isinstance(comp, dict) and comp.get("min") and comp.get("max"):
+                        salary = {"min": int(float(comp["min"])), "max": int(float(comp["max"])), "currency": comp.get("currency", "USD"), "source": "posting"}
+            except Exception as e:          # noqa: BLE001
+                log(f"[{company['name']}] detail fetch failed for {j.get('id')}: {e}")
+            if salary is None:
+                salary = salary_from_text(content)
+        if isinstance(published, (int, float)):
+            published = datetime.fromtimestamp(published / (1000 if published > 1e11 else 1), tz=timezone.utc).isoformat()
+        dept = j.get("department")
+        dept = dept.get("name", "") if isinstance(dept, dict) else (dept or "")
+        wt = j.get("employmentType") or ""
+        out.append({
+            "job_id": str(j.get("id")), "req_id": j.get("requisitionId") or None, "title": title, "location": loc,
+            "location_detail": extra if extra != loc else "", "department": dept, "published_at": published, "updated_at": None,
+            "url": url, "salary": salary,
+            "_meta_text": f"type: {wt} " + " ".join(f"{k}: {v}" for k, v in j.items() if isinstance(v, str) and k.lower() in ("workplacetype", "locationtype", "remote")),
+            "_content": content,
+        })
+    debug_dump(company, {"count": len(items), "top_type": type(data).__name__, "top_keys": list(data.keys()) if isinstance(data, dict) else None,
+                         "first_items": items[:2], "first_detail": first_detail,
+                         "kept_rows": [{k: v for k, v in r.items() if k != "_content"} | {"_content_head": r["_content"][:300]} for r in out if title_matches(r["title"])]})
+    return out
+
+
 ADAPTERS = {"greenhouse": fetch_greenhouse, "lever": fetch_lever, "ashby": fetch_ashby,
             "smartrecruiters": fetch_smartrecruiters, "workday": fetch_workday, "phenom": fetch_phenom,
-            "jobvite": fetch_jobvite, "unknown": fetch_unknown}
+            "jobvite": fetch_jobvite, "rippling": fetch_rippling, "unknown": fetch_unknown}
 
 
 # --------------------------------------------------------------- filtering --
