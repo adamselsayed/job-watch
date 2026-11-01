@@ -1,0 +1,473 @@
+{
+ "first_page": {
+  "keys": [
+   "refineSearch"
+  ],
+  "rs_keys": [
+   "status",
+   "hits",
+   "totalHits",
+   "data",
+   "eid"
+  ],
+  "data_keys": [
+   "jobs",
+   "aggregations",
+   "SEARCH_CONFIG",
+   "suggestions",
+   "ui_skills_selection"
+  ],
+  "totalHits": 25,
+  "sample": [
+   {
+    "cityState": "Detroit, Michigan",
+    "country": "United States",
+    "ml_skills": [
+     "outbound sales",
+     "crm",
+     "customer relationship management",
+     "salesforce",
+     "pipeline management",
+     "quota attainment",
+     "product recommendation",
+     "objection handling",
+     "closing techniques",
+     "upselling",
+     "google suite",
+     "email proficiency",
+     "task prioritization",
+     "independent work",
+     "interpersonal skills",
+     "client needs analysis",
+     "adaptability",
+     "feedback acceptance"
+    ],
+    "category_raw": "Sales & Customer Success - Small Business Sales",
+    "type": "Regular (Full-Time)",
+    "descriptionTeaser": "We are seeking an Inside Sales Representative to engage with small business owners in the Eastern Region, providing tailored advertising solutions and driving results through outbound calls. This remote role requires strong interpersonal skills and a high volume of client outreach. Ideal for candidates with customer-facing experience and a passion for sales.",
+    "state": "Michigan",
+    "siteType": "external",
+    "longitude": "-83.04575",
+    "multi_category": [
+     "Sales & Customer Success"
+    ],
+    "reqId": "13979",
+    "jobId": "13979",
+    "city": "Detroit",
+    "latitude": "42.33143",
+    "industry": "Software",
+    "locale": "en_US",
+    "multi_location": [
+     "Atlanta, Georgia, United States",
+     "Charlotte, North Carolina, United States",
+     "Grand Rapids, Michigan, United States",
+     "Harrisburg, Pennsylvania, United States",
+     "Orlando, Florida, United States",
+     "Cleveland, Ohio, United States",
+     "Arlington, Virginia, United States",
+     "Asheville, North Carolina, United States",
+     "Buffalo, New York, United States",
+     "Charleston, South Carolina, United States",
+     "Gainesville, Florida, United States",
+     "Fort Lauderdale, Florida, United States",
+     "Detroit, Michigan, United States"
+    ],
+    "title": "Inside Sales Representative  (Remote - Eastern Region)",
+    "jobSeqNo": "YELPUS13979EXTERNALENUS",
+    "postedDate": "2026-06-24T00:00:00.000+0000",
+    "dateCreated": "2026-08-20T20:28:56.291+0000",
+    "cityStateCountry": "Detroit, Michigan, United States",
+    "address": "Detroit -   Detroit, Michigan  United States ",
+    "jobVisibility": [
+     "external"
+    ],
+    "applyUrl": "https://uscareers-yelp.icims.com/jobs/13979/inside-sales-representative--%28remote---eastern-region%29/job",
+    "location": "Detroit, Michigan, United States",
+    "category": "Sales & Customer Success",
+    "ml_job_parser": {
+     "descriptionTeaser": "We are seeking an Inside Sales Representative to engage with small business owners in the Eastern Region, providing tailored advertising solutions and driving results through outbound calls. This remote role requires strong interpersonal skills and a high volume of client outreach. Ideal for candidates with customer-facing experience and a passion for sales.",
+     "descriptionTeaser_first200": "Summary. *Please note that while this role will operate remotely, it is required that the candidate resides in the Eastern Region of the United States. This includes candidates residing in Eastern ...",
+     "descriptionTeaser_keyword": "Summary. * Please note that while this role will operate remotely, it is required that the candidate resides in the Eastern Region of the United States. This includes candidates residing in Eastern Ti...",
+     "descriptionTeaser_ats": "Summary*Please note that while this role will operate remotely, it is required that the candidate resides in the Eastern Region of the United States. This includes candidates residing in Eastern Time "
+    },
+    "externalApply": true,
+    "isMultiLocation": true,
+    "multi_location_array": [
+     {
+      "latlong": {
+       "lon": -84.38798,
+       "lat": 33.749
+      },
+      "location": "Atlanta, Georgia, United States"
+     },
+     {
+      "latlong": {
+       "lon": -80.84313,
+       "lat": 35.22709
+      },
+      "location": "Charlotte, North Carolina, United States"
+     },
+     {
+      "latlong": {
+       "lon": -85.66809,
+       "lat": 42.96336
+      },
+      "location": "Grand Rapids, Michigan, United States"
+     },
+     {
+      "latlong": {
+       "lon": -76.88442,
+       "lat": 40.2737
+      },
+      "location": "Harrisburg, Pennsylvania, United States"
+     },
+     {
+      "latlong": {
+       "lon": -81.37924,
+       "lat": 28.53834
+      },
+      "location": "Orlando, Florida, United States"
+     },
+     {
+      "latlong": {
+       "lon": -81.69541,
+       "lat": 41.4995
+      },
+      "location": "Cleveland, Ohio, United States"
+     },
+     {
+      "latlong": {
+       "lon": -77.10428,
+       "lat": 38.88101
+      },
+      "location": "Arlington, Virginia, United States"
+     },
+     {
+      "latlong": {
+       "lon": -82.55402,
+       "lat": 35.60095
+      },
+      "location": "Asheville, North Carolina, United States"
+     },
+     {
+      "latlong": {
+       "lon": -78.87837,
+       "lat": 42.88645
+      },
+      "location": "Buffalo, New York, United States"
+     },
+     {
+      "latlong": {
+       "lon": -79.93275,
+       "lat": 32.77632
+      },
+      "location": "Charleston, South Carolina, United States"
+     },
+     {
+      "latlong": {
+       "lon": -82.32483,
+       "lat": 29.65163
+      },
+      "location": "Gainesville, Florida, United States"
+     },
+     {
+      "latlong": {
+       "lon": -80.14338,
+       "lat": 26.12231
+      },
+      "location": "Fort Lauderdale, Florida, United States"
+     },
+     {
+      "latlong": {
+       "lon": -83.04575,
+       "lat": 42.33143
+      },
+      "location": "Detroit, Michigan, United States"
+     }
+    ],
+    "isMultiCategory": false,
+    "multi_category_array": [
+     {
+      "category": "Sales & Customer Success"
+     }
+    ],
+    "badge": ""
+   },
+   {
+    "ml_skills": [
+     "digital advertising sales",
+     "cpc advertising models",
+     "api integration",
+     "salesforce",
+     "google ads",
+     "facebook ads",
+     "performance-based media",
+     "sales forecasting",
+     "pipeline management",
+     "account management",
+     "consultative selling",
+     "presentation skills",
+     "storytelling",
+     "powerpoint",
+     "excel",
+     "agency relationship management",
+     "cross-functional collaboration",
+     "sales pipeline management",
+     "revenue target achievement",
+     "local services ads"
+    ],
+    "category_raw": "Sales & Customer Success - Multi Location",
+    "type": "Regular (Full-Time)",
+    "descriptionTeaser": "Exciting opportunity for a driven sales professional to join Yelp’s Partner Sales team, focusing on identifying and closing new agency partnerships in digital advertising. Engage directly with digital marketing agencies, pitching Yelp’s advertising solutions and building strong relationships. Ideal for candidates with significant digital advertising sales experience and a passion for the fast-paced, high-impact environment.",
+    "state": "Remote",
+    "siteType": "external",
+    "multi_category": [
+     "Sales & Customer Success"
+    ],
+    "reqId": "14014",
+    "city": "Remote",
+    "latitude": "0.0",
+    "industry": "Software",
+    "multi_location": [
+     "Albany, New York, United States",
+     "Asheville, North Carolina, United States",
+     "Austin, Texas, United States",
+     "Baltimore, Maryland, United States",
+     "Baton Rouge, Louisiana, United States",
+     "Birmingham, Alabama, United States",
+     "Remote, Remote, United States",
+     "Charleston, South Carolina, United States",
+     "Bronx, New York, United States",
+     "Buffalo, New York, United States",
+     "Cape Coral-Fort Myers, Florida, United States",
+     "Charlotte, North Carolina, United States",
+     "Chattanooga, Tennessee, United States",
+     "Cleveland, Ohio, United States",
+     "Columbia, Missouri, United States",
+     "Fort Wayne, Indiana, United States",
+     "Grand Rapids, Michigan, United States",
+     "Champaign-Urbana, Illinois, United States",
+     "Remote, Remote, United States"
+    ],
+    "address": "Remote -   Remote, Remote  United States ",
+    "applyUrl": "https://uscareers-yelp.icims.com/jobs/14014/senior-partner-account-executive---digital-advertising---east-midwest-region-%28remote--us%29/job",
+    "ml_job_parser": {
+     "descriptionTeaser": "Exciting opportunity for a driven sales professional to join Yelp’s Partner Sales team, focusing on identifying and closing new agency partnerships in digital advertising. Engage directly with digital marketing agencies, pitching Yelp’s advertising solutions and building strong relationships. Ideal for candidates with significant digital advertising sales experience and a passion for the fast-paced, high-impact environment.",
+     "descriptionTeaser_first200": "Summary. Yelp is on the hunt for a driven, high-energy sales professional to join our fast-growing Partner Sales team. This is not your typical Account Executive role, this is a pure hunter positio...",
+     "descriptionTeaser_keyword": "Summary. Yelp is on the hunt for a driven, high-energy sales professional to join our fast-growing Partner Sales team. This is not your typical Account Executive role, this is a pure hunter position f...",
+     "descriptionTeaser_ats": "SummaryYelp is on the hunt for a driven, high-energy sales professional to join our fast-growing Partner Sales team. This is not your typical Account Executive role, this is a pure hunter position foc"
+    },
+    "externalApply": true,
+    "cityState": "Remote, Remote",
+    "country": "United States",
+    "longitude": "0.0",
+    "jobId": "14014",
+    "locale": "en_US",
+    "title": "Senior Partner Account Executive - Digital Advertising - East/Midwest Region (Remote- US)",
+    "jobSeqNo": "YELPUS14014EXTERNALENUS",
+    "postedDate": "2026-08-03T00:00:00.000+0000",
+    "dateCreated": "2026-08-07T20:47:57.683+0000",
+    "cityStateCountry": "Remote, Remote, United States",
+    "jobVisibility": [
+     "external"
+    ],
+    "location": "Remote, Remote, United States",
+    "category": "Sales & Customer Success",
+    "isMultiLocation": true,
+    "multi_location_array": [
+     {
+      "latlong": {
+       "lon": -73.75623,
+       "lat": 42.65258
+      },
+      "location": "Albany, New York, United States"
+     },
+     {
+      "latlong": {
+       "lon": -82.55402,
+       "lat": 35.60095
+      },
+      "location": "Asheville, North Carolina, United States"
+     },
+     {
+      "latlong": {
+       "lon": -97.74306,
+       "lat": 30.26715
+      },
+      "location": "Austin, Texas, United States"
+     },
+     {
+      "latlong": {
+       "lon": -76.61219,
+       "lat": 39.29038
+      },
+      "location": "Baltimore, Maryland, United States"
+     },
+     {
+      "latlong": {
+       "lon": -91.18747,
+       "lat": 30.44332
+      },
+      "location": "Baton Rouge, Louisiana, United States"
+     },
+     {
+      "latlong": {
+       "lon": -86.80249,
+       "lat": 33.52066
+      },
+      "location": "Birmingham, Alabama, United States"
+     },
+     {
+      "latlong": {
+       "lon": 5e-324,
+       "lat": 5e-324
+      },
+      "location": "Remote, Remote, United States"
+     },
+     {
+      "latlong": {
+       "lon": -79.93275,
+       "lat": 32.77632
+      },
+      "location": "Charleston, South Carolina, United States"
+     },
+     {
+      "latlong": {
+       "lon": -73.86641,
+       "lat": 40.84985
+      },
+      "location": "Bronx, New York, United States"
+     },
+     {
+      "latlong": {
+       "lon": -78.87837,
+       "lat": 42.88645
+      },
+      "location": "Buffalo, New York, United States"
+     },
+     {
+      "latlong": {
+       "lon": -81.94953,
+       "lat": 26.56285
+      },
+      "location": "Cape Coral-Fort Myers, Florida, United States"
+     },
+     {
+      "latlong": {
+       "lon": -80.84313,
+       "lat": 35.22709
+      },
+      "location": "Charlotte, North Carolina, United States"
+     },
+     {
+      "latlong": {
+       "lon": -85.30968,
+       "lat": 35.04563
+      },
+      "location": "Chattanooga, Tennessee, United States"
+     },
+     {
+      "latlong": {
+       "lon": -81.69541,
+       "lat": 41.4995
+      },
+      "location": "Cleveland, Ohio, United States"
+     },
+     {
+      "latlong": {
+       "lon": -92.33407,
+       "lat": 38.95171
+      },
+      "location": "Columbia, Missouri, United States"
+     },
+     {
+      "latlong": {
+       "lon": -85.12886,
+       "lat": 41.1306
+      },
+      "location": "Fort Wayne, Indiana, United States"
+     },
+     {
+      "latlong": {
+       "lon": -85.66809,
+       "lat": 42.96336
+      },
+      "location": "Grand Rapids, Michigan, United States"
+     },
+     {
+      "latlong": {
+       "lon": -88.24338,
+       "lat": 40.11642
+      },
+      "location": "Champaign-Urbana, Illinois, United States"
+     },
+     {
+      "latlong": {
+       "lon": 5e-324,
+       "lat": 5e-324
+      },
+      "location": "Remote, Remote, United States"
+     }
+    ],
+    "isMultiCategory": false,
+    "multi_category_array": [
+     {
+      "category": "Sales & Customer Success"
+     }
+    ],
+    "badge": ""
+   }
+  ]
+ },
+ "scanned": 25,
+ "kept": 3,
+ "kept_rows": [
+  {
+   "job_id": "YELPUS14002EXTERNALENUS",
+   "req_id": "14002",
+   "title": "Principal Product Manager - Ads Auction and Measurements (Remote - United States)",
+   "location": "San Francisco, California, United States",
+   "location_detail": "New York City, New York, United States; Los Angeles, California, United States; Austin, Texas, United States; Remote, Remote, United States; San Francisco, California, United States",
+   "department": "Product Management",
+   "published_at": "2026-07-27T00:00:00.000+0000",
+   "updated_at": null,
+   "url": "https://www.yelp.careers/us/en/job/YELPUS14002EXTERNALENUS/Principal-Product-Manager-Ads-Auction-and-Measurements-Remote-United-States",
+   "salary": null,
+   "_meta_text": "type: Regular (Full-Time) workplace: ",
+   "_content_head": " Summary\n Yelp connects people with great local businesses. Our platform is powered by a vibrant community contributing reviews and engaging with local businesses daily. We monetize primarily through advertising, helping millions of businesses connect with high-intent consumers. The Ads Auction system sits at the heart of this exchange, determining which ads are shown for every opportunity.\n  \n Th"
+  },
+  {
+   "job_id": "YELPUS14003EXTERNALENUS",
+   "req_id": "14003",
+   "title": "Principal Product Manager - Ads Auction and Measurements (Remote - Canada)",
+   "location": "Toronto, Ontario, Canada",
+   "location_detail": "Vancouver, British Columbia, Canada; Calgary, Alberta, Canada; Montreal, Quebec, Canada; Remote, Remote, Canada; Toronto, Ontario, Canada",
+   "department": "Product Management",
+   "published_at": "2026-07-27T00:00:00.000+0000",
+   "updated_at": null,
+   "url": "https://www.yelp.careers/us/en/job/YELPUS14003EXTERNALENUS/Principal-Product-Manager-Ads-Auction-and-Measurements-Remote-Canada",
+   "salary": null,
+   "_meta_text": "type: Regular (Full-Time) workplace: ",
+   "_content_head": " Summary\n Yelp connects people with great local businesses. Our platform is powered by a vibrant community contributing reviews and engaging with local businesses daily. We monetize primarily through advertising, helping millions of businesses connect with high-intent consumers. The Ads Auction system sits at the heart of this exchange, determining which ads are shown for every opportunity.\n  \n Th"
+  },
+  {
+   "job_id": "YELPUS14009EXTERNALENUS",
+   "req_id": "14009",
+   "title": "VP of Product Management, Monetization",
+   "location": "Remote, Remote, United States",
+   "location_detail": "Remote, Remote, United States",
+   "department": "Product Management",
+   "published_at": "2026-07-30T00:00:00.000+0000",
+   "updated_at": null,
+   "url": "https://www.yelp.careers/us/en/job/YELPUS14009EXTERNALENUS/VP-of-Product-Management-Monetization",
+   "salary": {
+    "min": 300000,
+    "max": 400000,
+    "currency": "USD",
+    "source": "description"
+   },
+   "_meta_text": "type: Regular (Full-Time) workplace: ",
+   "_content_head": " Summary\n At Yelp, our mission is to connect people with great local businesses. We’re seeking a VP of Product Management, Monetization to lead product strategy, vision and execution for overall Yelp monetization. Reporting directly to our Chief Product Officer, you'll oversee how Yelp monetizes, ensuring Ad products and platform systems work together across all consumer-facing experiences to deli"
+  }
+ ]
+}
