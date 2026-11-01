@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-01T04:49:49.450Z",
+  "updated_at": "2026-11-01T04:51:23.277Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -366,6 +366,12 @@
       "at": "2026-11-01T04:34:35.459Z",
       "title": "Director of Product , Data Flywheel",
       "company": "Serve Robotics"
+    },
+    "greenhouse:samsara:8112836": {
+      "status": "applied",
+      "at": "2026-11-01T04:51:21.773Z",
+      "title": "Senior Product Manager, Device Experience",
+      "company": "Samsara"
     }
   },
   "groups": {
