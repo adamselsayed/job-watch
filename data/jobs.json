@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T05:13:04+00:00",
+  "generated_at": "2026-11-01T05:14:21+00:00",
   "criteria": {
     "title_keywords": [
       "product"
@@ -205,8 +205,9 @@
       "name": "EVgo",
       "ats": "rippling",
       "board": "evgo-careers",
+      "country": "US",
       "url": "https://evgo.com/company/careers/",
-      "fetched_at": "2026-11-01T05:13:04+00:00",
+      "fetched_at": "2026-11-01T05:14:21+00:00",
       "status": "ok",
       "error": null,
       "total_jobs": 11,
