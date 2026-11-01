@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T04:50:04+00:00",
+  "generated_at": "2026-11-01T04:54:59+00:00",
   "criteria": {
     "title_keywords": [
       "product"
@@ -195,7 +195,7 @@
       "ats": "workday",
       "board": "nvidia.wd5/NVIDIAExternalCareerSite",
       "url": "https://jobs.nvidia.com/careers",
-      "fetched_at": "2026-11-01T04:50:04+00:00",
+      "fetched_at": "2026-11-01T04:54:59+00:00",
       "status": "ok",
       "error": null,
       "total_jobs": 138,
@@ -251,7 +251,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2017653",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -277,7 +277,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2021525",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -303,7 +303,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2025360",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -329,7 +329,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2025501",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -355,7 +355,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2027434",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -381,7 +381,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2027699",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -407,7 +407,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2014812",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -433,7 +433,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2017024",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -459,7 +459,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2019253",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -485,7 +485,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2019808",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -511,7 +511,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2020401",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -537,7 +537,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2020197",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -563,7 +563,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2022381",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -589,7 +589,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2020823",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -615,7 +615,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2019271",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -641,7 +641,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2026207",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -667,7 +667,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2026487",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -693,7 +693,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2027072",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -719,7 +719,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2028509",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -745,7 +745,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2028336",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -771,7 +771,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2012430",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -797,7 +797,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2015801",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -823,7 +823,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2016909",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -849,7 +849,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2019079",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -875,7 +875,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2019756",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -901,7 +901,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2019072",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -927,7 +927,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2020111",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -953,7 +953,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2022366",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -979,7 +979,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2023455",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1005,7 +1005,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2021325",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1031,7 +1031,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2024923",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1057,7 +1057,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2025119",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1083,7 +1083,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2025321",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1109,7 +1109,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2023483",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1135,7 +1135,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2026358",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1161,7 +1161,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2027080",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1187,7 +1187,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2027838",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1213,7 +1213,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2028160",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1239,7 +1239,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2022730",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1260,7 +1260,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2023788",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1286,7 +1286,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2008001",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1312,7 +1312,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2010907",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1338,7 +1338,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2011865",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1364,7 +1364,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2017285",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1390,7 +1390,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2016992",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1416,7 +1416,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2017274",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1442,7 +1442,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2018760",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1468,7 +1468,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2020922",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1494,7 +1494,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2021455",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1520,7 +1520,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2022724",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1546,7 +1546,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2022876",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1572,7 +1572,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2023620",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1598,7 +1598,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2023471",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1624,7 +1624,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2024199",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1650,7 +1650,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2024647",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1676,7 +1676,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2026204",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1702,7 +1702,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2026946",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1728,7 +1728,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2025794",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1754,7 +1754,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2027685",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1780,7 +1780,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2027865",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1806,7 +1806,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2027361",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1832,7 +1832,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR1996264",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1858,7 +1858,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2001089",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1884,7 +1884,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2014827",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1910,7 +1910,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2016407",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1936,7 +1936,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2013910",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1962,7 +1962,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2018422",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1988,7 +1988,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2020110",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2014,7 +2014,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2023311",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2040,7 +2040,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2023442",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2066,7 +2066,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2022611",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2092,7 +2092,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2022860",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2118,7 +2118,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2021690",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2144,7 +2144,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2024902",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2170,7 +2170,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2025433",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2196,7 +2196,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2026141",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2222,7 +2222,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2027360",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2248,7 +2248,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2016350",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2274,7 +2274,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2021002",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2300,7 +2300,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2016860",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2326,7 +2326,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2019242",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2352,7 +2352,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2023964",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2378,7 +2378,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2023409",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2399,7 +2399,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2025905",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2425,7 +2425,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2027355",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2446,7 +2446,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2029162",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2472,7 +2472,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2019817",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2493,7 +2493,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2026707",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2514,7 +2514,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2025670",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2535,7 +2535,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2026962",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:50:04+00:00",
+      "last_seen": "2026-11-01T04:54:59+00:00",
       "status": "open",
       "closed_at": null
     },

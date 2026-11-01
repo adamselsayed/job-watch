@@ -376,7 +376,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Product-Architect_JR2017653",
-   "salary": null,
+   "salary": {
+    "min": 168000,
+    "max": 258750,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " NVIDIA has continuously reinvented itself over two decades. Our invention of the GPU in 1999 sparked the growth of the PC gaming market, redefined modern computer graphics, and revolutionized parallel computing. More recently, GPU deep learning ignited modern AI — the next era of computing. NVIDIA is a “learning machine” that constantly evolves by adapting to new challenges that are hard to tackle, that only we can pursue, and that matter to the world. This is our life’s work, to amplify human "
   },
@@ -488,7 +493,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Product-Program-Manager_JR2021525",
-   "salary": null,
+   "salary": {
+    "min": 168000,
+    "max": 258750,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " NVIDIA has been transforming computer graphics, PC gaming, and accelerated computing for more than 25 years. It’s a unique legacy of innovation that’s fueled by great technology—and amazing people. Today, we’re tapping into the unlimited potential of AI to define the next era of computing. An era in which our GPU acts as the brains of computers, robots, and self-driving cars that can understand the world. Doing what’s never been done before takes vision, innovation, and the world’s best talent."
   },
@@ -558,7 +568,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-DC-Remote/Quantum-Product-Architect_JR2025360",
-   "salary": null,
+   "salary": {
+    "min": 320000,
+    "max": 488750,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " At NVIDIA, we're solving the world's most demanding problems with our unique approach to accelerated computing. Quantum computing is one of the transformative technologies we are bringing to life — and the US national laboratories and federal research community are key hubs for much of that work. NVIDIA's quantum platform, spanning CUDA-Q, cuQuantum, CUDA-Q QEC, and NVQLink, is already central to how researchers simulate quantum systems, develop error-corrected architectures, and connect QPUs t"
   },
@@ -572,7 +587,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Datacenter-Product-Architect_JR2025501",
-   "salary": null,
+   "salary": {
+    "min": 168000,
+    "max": 258750,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " NVIDIA has been transforming computer graphics, PC gaming, and accelerated computing for more than 25 years. It’s a unique legacy of innovation that’s fueled by great technology—and amazing people. Today, we’re tapping into the unlimited potential of AI to define the next era of computing. An era in which our GPU acts as the brains of computers, robots, and self-driving cars that can understand the world. Doing what’s never been done before takes vision, innovation, and the world’s best talent."
   },
@@ -614,7 +634,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Product-Program-Manager_JR2027434",
-   "salary": null,
+   "salary": {
+    "min": 136000,
+    "max": 212750,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " NVIDIA has been transforming computer graphics, PC gaming, and accelerated computing for more than 25 years. It’s a unique legacy of innovation that’s fueled by great technology—and amazing people. Today, we’re tapping into the unlimited potential of AI to define the next era of computing. An era in which our GPU acts as the brains of computers, robots, and self-driving cars that can understand the world. Doing what’s never been done before takes vision, innovation, and the world’s best talent."
   },
@@ -628,7 +653,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Engineering-Product-Manager_JR2027699",
-   "salary": null,
+   "salary": {
+    "min": 168000,
+    "max": 258750,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " NVIDIA has been transforming computer graphics, PC gaming, and accelerated computing for more than 25 years. It’s a unique legacy of innovation that’s fueled by great technology—and amazing people. Today, we’re tapping into the unlimited potential of AI to define the next era of computing. An era in which our GPU acts as the brains of computers, robots, and self-driving cars that can understand the world. Doing what’s never been done before takes vision, innovation, and the world’s best talent."
   },
@@ -726,7 +756,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Product-Architect--Storage_JR2014812-1",
-   "salary": null,
+   "salary": {
+    "min": 224000,
+    "max": 356500,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " NVIDIA has been transforming computer graphics, PC gaming, and accelerated computing for more than 25 years. It’s a unique legacy of innovation that’s fueled by phenomenal technology—and amazing people. Today, we’re tapping into the unlimited potential of AI to define the next era of computing. An era in which our GPU acts as the brains of computers, robots, and self-driving cars that can understand the world. Doing what’s never been done before takes vision, innovation, and the world’s best ta"
   },
@@ -740,7 +775,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Board-Product-Development-Engineer_JR2017024",
-   "salary": null,
+   "salary": {
+    "min": 108000,
+    "max": 184000,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " Join NVIDIA as a Product Development Engineer, where you’ll be at the forefront of innovation! This is an outstanding opportunity to work on new product development in an environment that values technical excellence and leadership. Our work opens new universes to explore, enables amazing creativity and discovery, and powers what were once science fiction inventions from artificial intelligence PC to autonomous cars. NVIDIA is looking for extraordinary people like you to help us accelerate the n"
   },
@@ -796,7 +836,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Product-Quality-Engineer_JR2019253",
-   "salary": null,
+   "salary": {
+    "min": 116000,
+    "max": 184000,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " NVIDIA is widely considered to be one of the technology world's most desirable employers. We have some of the most experienced and hardworking people in the world working for us. If you're creative, autonomous, and energized by deep technical problem solving, we want to hear from you!\n We are looking for a Product Quality Engineer to join our Systems Product Quality team as the system-level power debug domain expert for customer returns and field failures. This role will lead technical failure "
   },
@@ -810,7 +855,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Product-Development-Engineer_JR2019808",
-   "salary": null,
+   "salary": {
+    "min": 136000,
+    "max": 212750,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " NVIDIA is a leading provider of cutting-edge technology solutions in the semiconductor industry! We specialize in the development and enhancement of integrated circuits (ICs) for a wide range of applications, including consumer electronics, automotive, and telecommunications. Our team is dedicated to innovation, quality, and pushing the boundaries of what is possible in the world of microelectronics. We are seeking a highly skilled and motivated Product Development engineer to drive bring up of"
   },
@@ -838,7 +888,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Manager--Product-Reliability_JR2020401",
-   "salary": null,
+   "salary": {
+    "min": 256000,
+    "max": 385250,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " Joining NVIDIA means becoming part of a legacy of innovation that has been transforming computer graphics, PC gaming, and accelerated computing for more than 25 years. As a Manager, Product Reliability, you will be at the forefront of defining the next era of computing, driven by our groundbreaking AI technologies. This outstanding opportunity allows you to lead and build the future of our engineering projects, making a lasting impact on the world.\n \n Our team in Santa Clara, CA, is dedicated t"
   },
@@ -880,7 +935,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Product-Engineer---Datacenter_JR2020197-1",
-   "salary": null,
+   "salary": {
+    "min": 168000,
+    "max": 258750,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " We are now looking for a Datacenter Product Engineer! NVIDIA Corporation is a world leader in visual computing technology. The GPU, which the company invented, serves as the visual cortex of modern computers and is at the heart of their products and services. NVIDIA has transformed into a specialized platform company that targets four large markets – Gaming, Professional Visualization, Datacenter and Automotive – where visual computing is essential and deeply valued. Their work also uncovers ne"
   },
@@ -894,7 +954,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-NC-Remote/Networking-Product-Sales-Specialist_JR2022381",
-   "salary": null,
+   "salary": {
+    "min": 148000,
+    "max": 235750,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " Would you like to be part of one of the most exciting companies in technology? NVIDIA, the world leader in accelerated computing and AI infrastructure, is seeking a Networking Product Sales Specialist with a proven track record of selling complex AI Infrastructure solutions to Enterprise customers. \n \n In this role, you will work closely with NVIDIA Account Managers, Solution Architects, Business Development leaders, and ecosystem partners to drive adoption of NVIDIA's industry-leading networki"
   },
@@ -908,7 +973,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Product-Manager---BioNeMo-Inference_JR2020823",
-   "salary": null,
+   "salary": {
+    "min": 148000,
+    "max": 224250,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " NVIDIA is advancing the frontier of AI for biology with BioNeMo, bringing accelerated computing and generative AI to biomolecular research and drug discovery.  We are seeking a technical Product Manager to lead BioNeMo Inference. You will define how developers, researchers, and enterprise platform teams deploy, operate, and scale biomolecular AI inference workloads. This role sits at the intersection of AI infrastructure, developer experience, and product execution: translating the needs of mod"
   },
@@ -950,7 +1020,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Product-Development-Engineer_JR2019271",
-   "salary": null,
+   "salary": {
+    "min": 200000,
+    "max": 322000,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " NVIDIA continues to reinvent itself. Our invention of the GPU in 1999 fueled the growth of the PC gaming market, redefined modern computer graphics, and revolutionized parallel computing. More recently, GPU deep learning ignited modern AI — a new chapter in computing. Are you passionate about working at the groundbreaking of technology? Make the choice to join us today. As part of the Operations NPI Product Development Engineering team, you will work on taking products from engineering concepts"
   },
@@ -978,7 +1053,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Product-Manager---Open-Models_JR2026207",
-   "salary": null,
+   "salary": {
+    "min": 116000,
+    "max": 184000,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " Ready to help developers and researchers get more from open AI models? At NVIDIA, our team improves support for leading community models such as Nemotron, Llama, Gemma, DeepSeek, and Qwen. As a Product Manager for Open Models, you will help coordinate model enablement, developer experiences, technical content, and product launches across NVIDIA’s accelerated computing platform.\n\n You will work alongside experienced product managers, engineers, model builders, and product marketing teams. This r"
   },
@@ -1006,7 +1086,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Director--Simulation-Product-Management_JR2026487",
-   "salary": null,
+   "salary": {
+    "min": 272000,
+    "max": 425500,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " NVIDIA has been transforming autonomous vehicle development for more than a decade—and today, simulation is the engine at the heart of it all. As the world races toward Level 4 autonomy, the ability to reconstruct real-world driving scenes, generate infinite synthetic scenarios, and validate AV policies across millions of virtual miles before a single vehicle touches the road has become the defining competitive advantage. NVIDIA is building the full stack that makes this possible: from NuRec ne"
   },
@@ -1020,7 +1105,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Director--Product-Management---Nemotron_JR2027072-2",
-   "salary": null,
+   "salary": {
+    "min": 272000,
+    "max": 425500,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " Open large language models (LLMs) are unlocking exciting new capabilities. Developing, training, and deploying these models requires both technical expertise and domain-specific knowledge. They power applications in data centers and at the edge, including automobiles, drones, and medical devices. As their agentic capabilities expand, so does the need to identify and mitigate potential risks. NVIDIA is at the forefront of advancing research and delivering product innovations for the broader AI c"
   },
@@ -1034,7 +1124,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Product-Manager---Telecom_JR2028509",
-   "salary": null,
+   "salary": {
+    "min": 208000,
+    "max": 327750,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " At NVIDIA, we are at the forefront of innovation in AI, accelerated computing, and networking. Our work is redefining industries from healthcare and automotive to telecommunications. NVIDIA Aerial RAN Computer (ARC) is a key platform for the telco market: a high-performance, energy efficient, 6G-ready accelerated computing platform, designed for telecom networks, enabling commercial AI-RAN deployments and on-ramping to AI-native 5G and 6G. It unifies AI and radio access workloads on a software-"
   },
@@ -1048,7 +1143,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Silicon-Product-Engineer---Manufacturing_JR2028336",
-   "salary": null,
+   "salary": {
+    "min": 116000,
+    "max": 189750,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " NVIDIA’s Silicon Co-Design Group sits at the crossroads of architecture, silicon, systems, and manufacturing, where first-principles thinking and engineering judgment at the highest level translate directly into product outcomes at scale. Our team gets every GPU, SoC, and CPU silicon program from first power-on to high-volume production.\n\n We are hiring a Silicon Product Engineer – Manufacturing to join our Testability, Manufacturability, Reliability & Quality (TMRQ) team. In this role, you wil"
   },
@@ -1076,7 +1176,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Product-Development-Engineer_JR2012430",
-   "salary": null,
+   "salary": {
+    "min": 168000,
+    "max": 258750,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " As one of the technology industry's most desirable employers, NVIDIA is an industry leader in high performance computing, gaming and AI. NVIDIA's GPUs are extraordinary in performance and efficiency, and we are continually innovating in creative ways to deliver outstanding solutions in a wide range of sectors. We are seeking Product Development Engineers who are experienced, creative problem solvers in various areas and passionate to want to make a visible impact with the work they do. As part "
   },
@@ -1104,7 +1209,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/System-Level-Product-Development-Engineer_JR2015801",
-   "salary": null,
+   "salary": {
+    "min": 136000,
+    "max": 212750,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " NVIDIA continues to reinvent itself. Our invention of the GPU in 1999 fueled the growth of the PC gaming market, redefined modern computer graphics, and revolutionized parallel computing. More recently, GPU deep learning ignited modern AI — the next era of computing. NVIDIA is a “learning machine” that constantly evolves by adapting to new opportunities that are hard to solve, that only we can take on, and that matter to the world. Are you passionate about working at the groundbreaking of techn"
   },
@@ -1132,7 +1242,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Product-Development-Engineer---Boards_JR2016909",
-   "salary": null,
+   "salary": {
+    "min": 136000,
+    "max": 212750,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " NVIDIA is an industry leader in AI, high performance computing and gaming. We are the Board Product Development Engineering team within NVIDIA’s operations group. Our work lies at the intersection of multi-disciplinary engineering fields – including but not limited to electrical, electronics, mechanical, thermal and software engineering. We are looking for a Senior Product Development Engineer - Boards, to help bring highly complex board products from its design phase into mass production.\n \n W"
   },
@@ -1146,7 +1261,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/L11-System-Product-Development-Engineer_JR2019079",
-   "salary": null,
+   "salary": {
+    "min": 168000,
+    "max": 258750,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " NVIDIA’s NPI Operations Team is looking for a highly motivated System Product Development Engineer to lead the development and productization of DGX and MGX products through mass production ramp. This role focuses on DGX systems and L11 rack-scale AI supercomputer reference platforms—some of the most advanced computing systems in the world for Artificial Intelligence. These products form the foundation for training and deploying industry-leading LLMs and represent NVIDIA’s fastest-growing busin"
   },
@@ -1160,7 +1280,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/SoC-Product-Architect--Memory-Ecosystem_JR2019756",
-   "salary": null,
+   "salary": {
+    "min": 320000,
+    "max": 488750,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " NVIDIA’s SoC Product Architecture team defines the platforms that power AI, graphics, and accelerated computing across data center, automotive, client, and edge products. As a Senior SoC Product Architect, Memory Ecosystem , you will drive NVIDIA’s external memory ecosystem across DRAM and non‑volatile flash, working with major memory vendors to align roadmaps, co‑innovate new technologies, and ensure our SoC portfolio delivers industry‑leading bandwidth, latency, power, and cost. \n \n What you’"
   },
@@ -1174,7 +1299,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/L11-System-Product-Development-Engineer_JR2019072",
-   "salary": null,
+   "salary": {
+    "min": 168000,
+    "max": 258750,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " NVIDIA’s NPI Operations Team is looking for a highly motivated System Product Development Engineer to lead the development and productization of DGX products through mass production ramp. This role focuses on MGX/DGX systems and L11 rack-scale AI supercomputer reference platforms—some of the most advanced computing systems in the world for Artificial Intelligence. These products form the foundation for training and deploying industry-leading LLMs and represent NVIDIA’s fastest-growing business "
   },
@@ -1188,7 +1318,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Product-Manager---Omniverse-Rendering_JR2020111",
-   "salary": null,
+   "salary": {
+    "min": 208000,
+    "max": 327750,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " NVIDIA has been transforming computer graphics, PC gaming, and accelerated computing for more than 25 years. It’s a unique legacy of innovation that’s fueled by great technology—and amazing people. Today, we’re tapping into the unlimited potential of AI to define the next era of computing. An era in which our GPU acts as the brains of computers, robots, and self-driving cars that can understand the world. Doing what’s never been done before takes vision, innovation, and the world’s best talent."
   },
@@ -1202,7 +1337,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Go-to-Market-Product-Manager_JR2022366",
-   "salary": null,
+   "salary": {
+    "min": 136000,
+    "max": 212750,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " NVIDIA’s invention of the GPU in 1999 fueled the growth of the PC gaming market, redefined modern computer graphics, and revolutionized parallel computing. More recently, GPU deep learning ignited modern AI — the next era of computing — with the GPU acting as the brain of computers, robots, and self-driving cars that can perceive and understand the world. This is our life’s work — to amplify human creativity and intelligence. Are you ready to help us change the world?\n \n Our team takes pride in"
   },
@@ -1244,7 +1384,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/System-Level-Product-Development-Engineer_JR2023455",
-   "salary": null,
+   "salary": {
+    "min": 136000,
+    "max": 212750,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " NVIDIA continues to reinvent itself. Our invention of the GPU in 1999 fueled the growth of the PC gaming market, redefined modern computer graphics, and revolutionized parallel computing. More recently, GPU deep learning ignited modern AI — the next era of computing. NVIDIA is a “learning machine” that constantly evolves by adapting to new opportunities that are hard to solve, that only we can take on, and that matter to the world. Are you passionate about working at the groundbreaking of techn"
   },
@@ -1286,7 +1431,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Manager--Product-Development-Engineering---HBM_JR2021325",
-   "salary": null,
+   "salary": {
+    "min": 200000,
+    "max": 322000,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " NVIDIA has been transforming computer graphics, PC gaming, and accelerated computing for more than 25 years. It’s a unique legacy of innovation that’s fueled by great technology—and amazing people. Today, we’re tapping into the unlimited potential of AI to define the next era of computing. An era in which our GPU acts as the brains of computers, robots, and self-driving cars that can understand the world. Doing what’s never been done before takes vision, innovation, and the world’s best talent."
   },
@@ -1300,7 +1450,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Accelerated-Computing-GPU-Product-Manager_JR2024923",
-   "salary": null,
+   "salary": {
+    "min": 168000,
+    "max": 258750,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " NVIDIA has been redefining computer graphics, PC gaming, and accelerated computing for more than 25 years. It’s a unique legacy of innovation that’s fueled by great technology—and amazing people!\n \n Today, we’re tapping into the unlimited potential of AI to define the next era of computing. An era in which our GPU acts as the brains of computers, robots, and self-driving cars that can understand the world. Doing what’s never been done before takes vision, innovation, and the world’s best talent"
   },
@@ -1328,7 +1483,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Silicon-Product-Definition-Engineer_JR2025119",
-   "salary": null,
+   "salary": {
+    "min": 168000,
+    "max": 264500,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " NVIDIA has transformed computer graphics, PC gaming, and accelerated computing for more than 25 years. Today, we're defining the next era of computing, where GPUs power the computers, robots, and autonomous vehicles that understand the world. NVIDIA's Silicon Co-Design Group (SCG) gets every GPU, SoC, and CPU program from first power-on to high-volume production. We sit at the crossroads of architecture, design, marketing, operations, and productization, serving Datacenter, Server, Gaming, Robo"
   },
@@ -1342,7 +1502,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Director--Server-CPU-Product-Architecture_JR2025321",
-   "salary": null,
+   "salary": {
+    "min": 288000,
+    "max": 437000,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " Agentic AI is revolutionizing CPUs — and we're redesigning the data center to keep up. At NVIDIA, we build the CPU, GPU, and infrastructure as a single unit of design. Ready to help us define what comes next? Widely considered to be one of the technology world’s most desirable employers, NVIDIA offers highly competitive salaries and a comprehensive benefits package. \n \n What you'll be doing: \n We're expanding our team and looking for a Director/Senior Director, Server CPU Product Architecture, "
   },
@@ -1356,7 +1521,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Datacenter-Product-Development-Engineer_JR2023483",
-   "salary": null,
+   "salary": {
+    "min": 200000,
+    "max": 322000,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " NVIDIA is the leader in groundbreaking developments in Artificial Intelligence, High-Performance Computing and Visualization. The GPU, our invention, serves as the visual cortex of modern computers and is at the heart of our products and services. Our work opens new universes to explore, enables amazing creativity and discovery, and powers what were once science fiction inventions from artificial intelligence to autonomous cars. NVIDIA is looking for extraordinary people like you to help us acc"
   },
@@ -1370,7 +1540,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Product-Manager--Inference-Platform_JR2026358",
-   "salary": null,
+   "salary": {
+    "min": 208000,
+    "max": 327750,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " At NVIDIA, we are building the foundation & blueprints for how AI workloads are served at scale for NVIDIA employees and DSX Partners. As a Product Manager for Inference Platform, you will help define and drive the products and platform capabilities that enable large-scale models serving across a broad portfolio of models, both open source and proprietary. You will work at the intersection of AI research, infrastructure engineering, and real user needs, shaping how inference is delivered reliab"
   },
@@ -1398,7 +1573,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Product-Manager---Local-AI-GPUs_JR2027080",
-   "salary": null,
+   "salary": {
+    "min": 168000,
+    "max": 258750,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " NVIDIA is the engine behind modern agentic AI - from frontier model training and inference to accelerated data analytics, simulation, both in the cloud as well as locally at the edge. We are looking for a technical and hands-on Senior Product Manager who can turn the needs of developers, researchers, and enterprises into product requirements for personal AI systems and help define, build, and launch the next generation of GPU products for Local AI.\n\n Generative AI is moving from the cloud to th"
   },
@@ -1412,7 +1592,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Product-Manager--Data-Center-GPU_JR2027838",
-   "salary": null,
+   "salary": {
+    "min": 168000,
+    "max": 258750,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " NVIDIA has become the platform upon which every new AI-powered application is built. From big challenging Generative AI applications to autonomous vehicles, or voice-recognition systems, the need for advanced perception and cognitive capabilities is exploding... and NVIDIA is right in the center of this revolution!  We are now looking for a Product Manager – Data Center GPU. NVIDIA is the engine behind modern accelerated computing, powering AI, visualization, simulation, and enterprise workload"
   },
@@ -1426,7 +1611,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Silicon-Product-Engineer---Manufacturing_JR2028160",
-   "salary": null,
+   "salary": {
+    "min": 168000,
+    "max": 264500,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " NVIDIA’s Silicon Co-Design Group sits at the crossroads of architecture, silicon, systems, and manufacturing, where first-principles thinking and engineering judgment at the highest level translate directly into product outcomes at scale. Our team gets every GPU, SoC, and CPU silicon program from first power-on to high-volume production!\n\n We are hiring a Senior Silicon Product Engineer – Manufacturing to join our Testability, Manufacturability, Reliability & Quality (TMRQ) team. In this role, "
   },
@@ -1440,7 +1630,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Board-Product-Development-Engineer_JR2022730",
-   "salary": null,
+   "salary": {
+    "min": 136000,
+    "max": 212750,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " At NVIDIA, we have been at the forefront of transforming computer graphics, PC gaming, and accelerated computing for over 25 years. Our legacy of innovation is fueled by our exceptional technology and amazing team of people.\n \n We are seeking a creative and experienced Senior Board Product Development Engineer to join our Operations Engineering team. This role is pivotal in ensuring the successful release of NVIDIA’s board and system products to high-volume manufacturing.\n \n What you'll be doin"
   },
@@ -1468,7 +1663,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Principal-Product-Manager--AI-Frameworks_JR2008001",
-   "salary": null,
+   "salary": {
+    "min": 240000,
+    "max": 379500,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " At Nvidia we meet customers where they are on their AI journey on our GPUs - this means we build best in class frameworks in OSS and support a robust eco system of other OSS frameworks. and As a Product Manager for AI Platform training you will be responsible for building the tools, SDKs, and libraries which enable model builders to get the best large scale performance, resilience and experience on NVIDIA GPUs.\n \n As NVIDIA Product Managers, our goal is to enable researchers and operators to be"
   },
@@ -1482,7 +1682,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Product-Development-Engineer---Datacenter_JR2010907",
-   "salary": null,
+   "salary": {
+    "min": 200000,
+    "max": 322000,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " NVIDIA is the leader in groundbreaking developments in Artificial Intelligence, High-Performance Computing and Visualization. The GPU, our invention, serves as the visual cortex of modern computers and is at the heart of our products and services. Our work opens new universes to explore, enables amazing creativity and discovery, and powers what were once science fiction inventions from artificial intelligence to autonomous cars. NVIDIA is looking for extraordinary people like you to help us acc"
   },
@@ -1496,7 +1701,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Principal-Product-Manager--AI-Frameworks_JR2011865",
-   "salary": null,
+   "salary": {
+    "min": 240000,
+    "max": 379500,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " At Nvidia we meet customers where they are on their AI journey on our GPUs - this means we build best in class frameworks in OSS and support a robust eco system of other OSS frameworks. and As a Product Manager for AI Platform post-training and RL, you will be responsible for building the tools, SDKs, and libraries which enable model builders to get the best large scale performance, resilience and experience on NVIDIA GPUs.\n \n As NVIDIA Product Managers, our goal is to enable researchers and op"
   },
@@ -1510,7 +1720,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Partner-Enablement-Product-Manager--Storage_JR2017285",
-   "salary": null,
+   "salary": {
+    "min": 208000,
+    "max": 327750,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " This Senior Partner Enablement Product Manager, Storage Platform role owns storage solution adoption and enablement across our ODM partners, with a focus on integrating NVIDIA storage platforms into cluster-level and rack-scale deployments. The person in this role serves as the main point of contact linking NVIDIA storage architecture with the ODM ecosystem. They are responsible for enabling partners to compose, build, and deliver storage systems aligned with NVIDIA’s architecture and product r"
   },
@@ -1524,7 +1739,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Product-Manager--AI-Platform-SW---Agentic-AI-Kernel-Generation_JR2016992",
-   "salary": null,
+   "salary": {
+    "min": 168000,
+    "max": 258750,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " NVIDIA's AI Software Platforms team is building the next generation of agentic AI infrastructure that lets coding agents synthesize, optimize, and deploy GPU kernels automatically. This job focuses on crafting AI kernels that connect data pipelines, evaluation suites, and GPU-accelerated runtimes. This helps developers safely release faster, better-performing inference and training solutions.\n \n As Product Managers at NVIDIA, we enable developers to be successful on the NVIDIA platform and push"
   },
@@ -1538,7 +1758,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Principal-Partner-Enablement-Product-Manager--AI-Infrastructure_JR2017274",
-   "salary": null,
+   "salary": {
+    "min": 240000,
+    "max": 379500,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " This Principal Partner Enablement Product Manager, AI Infrastructure owns adoption and alignment for our ODM partners delivering data center solutions to customers. The person in this seat represents our ODM to the DSX suite ecosystem. They will position the primary DSX composition, help partners build accurately, and keep them aligned with the DSX architecture during delivery. Equally important, the person serves as the structured voice of the ODM for our in-house DSX solution and data center "
   },
@@ -1552,7 +1777,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Technical-Product-Manager--Accelerated-Computing_JR2018760",
-   "salary": null,
+   "salary": {
+    "min": 168000,
+    "max": 258750,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " NVIDIA has been redefining computer graphics, PC gaming, and accelerated computing for more than 25 years. It’s a unique legacy of innovation that’s fueled by great technology—and amazing people! Today, we’re tapping into the unlimited potential of AI to define the next era of computing. An era in which our GPU acts as the brains of computers, robots, and self-driving cars that can understand the world. Doing what’s never been done before takes vision, innovation, and the world’s best talent. A"
   },
@@ -1580,7 +1810,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Product-Manager--Physical-AI-Robotics-Data_JR2020922",
-   "salary": null,
+   "salary": {
+    "min": 168000,
+    "max": 258750,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " NVIDIA is seeking a Product Manager to own data strategy for robotics data. Physical Intelligence runs on data. NVIDIA’s robotics data powers the Isaac GR00T and Cosmos models which are advancing the development of Physical A!! \n \n NVIDIA Physical AI data roles offer an outstanding opportunity to define the future of deployed physical intelligence. You will collaborate closely with AI researchers, our operations team, and external partners to set an industry standard, build and release datasets"
   },
@@ -1594,7 +1829,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Principal-Product-Manager--NVIDIA-Trust-Services---DGX-Cloud_JR2021455",
-   "salary": null,
+   "salary": {
+    "min": 240000,
+    "max": 379500,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " Today, we’re tapping into the unlimited potential of AI to define the next era of computing. An era in which our GPU acts as the brains of computers, robots, and self-driving cars that can understand the world. Doing what’s never been done before takes vision, innovation, and the world’s best talent. As an NVIDIAN, you’ll be immersed in a diverse, supportive environment where everyone is inspired to do their best work. Come join the team and see how you can make a lasting impact on the world. N"
   },
@@ -1608,7 +1848,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Product-Manager---AI-Platform-Inference_JR2022724",
-   "salary": null,
+   "salary": {
+    "min": 168000,
+    "max": 258750,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " Inference is the fastest growing and most competitive area in Generative AI today. It is where AI models impact our daily life, and where ever bit of accuracy and performance matters for quality, safety, and cost. Inference is also constantly evolving, with new acceleration algorithms, usecases, and deployment techniques. As a Senior Product Manager for AI Platform Inference you will be responsible for building the tools, SDKs, and libraries which enables developers' Inference deployments to th"
   },
@@ -1622,7 +1867,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Product-Manager---AI-Inference-Performance_JR2022876",
-   "salary": null,
+   "salary": {
+    "min": 208000,
+    "max": 327750,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " NVIDIA has been transforming computer graphics, PC gaming, and accelerated computing for more than 25 years. It’s an outstanding legacy of innovation that’s fueled by great technology—and amazing people. Today, we’re tapping into the unlimited potential of AI to define the next era of computing. An era in which our GPU acts as the brains of computers, robots, and self-driving cars that can understand the world. Doing what’s never been done before takes vision, innovation, and the world’s best t"
   },
@@ -1636,7 +1886,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-WA-Seattle/Senior-Product-Manager--AI-Software-Defined-Networking_JR2023620",
-   "salary": null,
+   "salary": {
+    "min": 208000,
+    "max": 327750,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " NVIDIA has been transforming computer graphics, PC gaming, and accelerated computing for more than 25 years. It’s a unique legacy of innovation that’s fueled by great technology—and amazing people. Today, we’re tapping into the unlimited potential of AI to define the next era of computing. An era in which our GPU acts as the brains of computers, robots, and self-driving cars that can understand the world. Doing what’s never been done before takes vision, innovation, and the world’s best talent."
   },
@@ -1650,7 +1905,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Remote/Senior-Product-Manager--HPC-and-AI-for-Physics_JR2023471",
-   "salary": null,
+   "salary": {
+    "min": 168000,
+    "max": 258750,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " HPC and AI can reshape the Exabytes data processing/analysis, development of high energy density physics simulations, and discovery of resilient materials across various industries ranging from supercomputing, higher education, clean energy, manufacturing, semiconductors, etc. We are looking for a Senior Product Manager who will drive the development of product and capabilities that combine HPC and AI/ML techniques to accelerate the discovery and design of plasma and high energy physics includi"
   },
@@ -1664,7 +1924,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Product-Manager--Kubernetes-Accelerated-Runtime_JR2024199",
-   "salary": null,
+   "salary": {
+    "min": 208000,
+    "max": 327750,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " Running GPU-accelerated Kubernetes reliably is deceptively hard. A small change to a driver, kernel, operator, or Kubernetes version can break a cluster in ways that are painful to diagnose and expensive to reproduce. AI Cluster Runtime (AICR) is NVIDIA's open source project to define a validated, reproducible software stack that can go into every AI cluster, published as version-locked recipes customers can trust through end-to-end supply-chain provenance.\n \n NVIDIA is hiring a product manager"
   },
@@ -1678,7 +1943,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Principal-Product-Manager---Laptop-GPU-and-SoC_JR2024647-1",
-   "salary": null,
+   "salary": {
+    "min": 240000,
+    "max": 379500,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " As Principal Product Manager (SoC/RTX Spark & Discrete Graphics), you will play a pivotal role in shaping the future of our laptop product line and experiences. If you’re a tech enthusiast with a passion for Local AI, creation, and gaming, and can lead large cross-functional teams with a dedicated work ethic, this role is tailor-made for you!\n \n What You'll Be Doing: \n Closely partner across engineering, marketing, and external partners to define and prioritize product features, enhancements, a"
   },
@@ -1692,7 +1962,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Product-Manager---Embedded-AI-and-Next-Gen-Computing_JR2026204-1",
-   "salary": null,
+   "salary": {
+    "min": 184000,
+    "max": 287500,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " At NVIDIA, we are harnessing the boundless possibilities of AI to build the next generation of computing. We are turning the GPU into the living brain of computers, autonomous machines, and driverless vehicles that truly perceive and grasp the world! Achieving what has never been accomplished requires bold vision, relentless creativity, and top-tier global expertise. At NVIDIA, you will dive into a high-energy, diverse, and encouraging environment that motivates everyone to perform at their lif"
   },
@@ -1706,7 +1981,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Principal-Product-Manager---DSX-and-DGXC-Storage_JR2026946",
-   "salary": null,
+   "salary": {
+    "min": 240000,
+    "max": 379500,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " NVIDIA is developing AI factories that bring together compute, networking, storage, and software in a single platform. This position directs storage product strategy for DSX/DGXC. The product manager will establish how storage partners align with NVIDIA’s architecture, convert customer and field insights into roadmap objectives, and support partner and launch readiness.\n\n What you’ll be doing: \n Take charge of the strategic direction for storage products, roadmap, and requirements for DSX/DGXC "
   },
@@ -1720,7 +2000,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Product-Manager--Developer-Experience-and-Platform-Excellence---Edge-AI-and-Robotics_JR2025794-1",
-   "salary": null,
+   "salary": {
+    "min": 208000,
+    "max": 327750,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " NVIDIA has been transforming computer graphics, PC gaming, and accelerated computing for more than 25 years. It’s a unique legacy of innovation that’s fueled by great technology—and amazing people. Today, we’re tapping into the unlimited potential of AI to define the next era of computing. An era in which our GPU acts as the brains of computers, robots, and self-driving cars that can understand the world. Doing what’s never been done before takes vision, innovation, and the world’s best talent."
   },
@@ -1734,7 +2019,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Technical-Product-Manager--Infrastructure-Resilience_JR2027685",
-   "salary": null,
+   "salary": {
+    "min": 208000,
+    "max": 327750,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " We're building software that helps cloud partners and operators understand why AI workloads fail and keep GPU clusters ready for work. You'll bring deep experience in GPU cluster operations to help automate investigations across hardware and software. Working with engineering and operations teams, you'll turn those findings into product priorities. We're hiring a Technical Product Manager to own AI infrastructure resilience platform capabilities and developer experience, including GPU node heal"
   },
@@ -1748,7 +2038,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Technical-Product-Manager--Accelerated-Compute-Platforms_JR2027865-1",
-   "salary": null,
+   "salary": {
+    "min": 168000,
+    "max": 258750,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " Want to help us chart a course toward the future of the data center? We are seeking a world-class Technical Product Manager to define and build the next generation of NVIDIA's Accelerated Computing platforms. If you are passionate about technology products, have experience with data center technology and servers, and have been looking for a role where you'll be able to stretch your system design, project management, and creative marketing muscles on the same day, this high visibility role offer"
   },
@@ -1762,7 +2057,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Technical-Product-Manager---CPU-Hardware-Program_JR2027361",
-   "salary": null,
+   "salary": {
+    "min": 168000,
+    "max": 258750,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " NVIDIA is transforming accelerated computing, and our Data Center CPU Product Management team is developing the silicon and platforms that power the next generation of AI and data center infrastructure. We are seeking a Technical Program Manager, CPU Hardware Programs to lead progress across complex CPU silicon and platform projects. Working closely with the CPU Hardware Lead, this role links technical priorities and trade-offs to actionable plans involving architecture, silicon, platform, firm"
   },
@@ -1776,7 +2076,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Accelerated-Computing-GPU-Product-Manager_JR1996264",
-   "salary": null,
+   "salary": {
+    "min": 208000,
+    "max": 327750,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " NVIDIA has been redefining computer graphics, PC gaming, and accelerated computing for more than 25 years. It’s a unique legacy of innovation that’s fueled by great technology—and amazing people! Today, we’re tapping into the unlimited potential of AI to define the next era of computing. An era in which our GPU acts as the brains of computers, robots, and self-driving cars that can understand the world. Doing what’s never been done before takes vision, innovation, and the world’s best talent. A"
   },
@@ -1790,7 +2095,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Technical-Product-Manager---GPU-Direct-Storage_JR2001089",
-   "salary": null,
+   "salary": {
+    "min": 208000,
+    "max": 327750,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " NVIDIA's pioneering CUDA platform has transformed industries from AI and HPC to Autonomous Driving and Robotics, empowering millions of developers worldwide. As data volumes explode and computational demands rise, GPU-accelerated storage solutions like GPUDirect Storage and cuFile become critical for unlocking unprecedented performance in data-intensive applications.\n \n We are seeking a passionate and technically adept Technical Product Manager to guide and grow our GPUDirect Storage and cuFile"
   },
@@ -1804,7 +2114,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Software-Program-Manager--New-Product-Introduction_JR2014827-1",
-   "salary": null,
+   "salary": {
+    "min": 136000,
+    "max": 212750,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " Do you want to join a team of motivated and experienced program managers who drive the successful introduction of NVIDIA's next generation GPU based products? We work closely with internal leaders in Software, Hardware, Marketing and Operations to ensure the SW team delivers outstanding products while operating across multiple functional units and all levels of management to achieve Time-To-Market. As a part of the team, your knowledge of driver and firmware development processes and priorities"
   },
@@ -1818,7 +2133,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/DGX-NPI-System-Product-Development-Engineer_JR2016407",
-   "salary": null,
+   "salary": {
+    "min": 200000,
+    "max": 322000,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " NVIDIA’s NPI Operations Team is looking for a highly motivated System Product Development Engineer to lead the development and productization of DGX products through mass production ramp. This role focuses on DGX systems and L11 rack-scale AI supercomputer reference platforms—some of the most advanced computing systems in the world for Artificial Intelligence. These products form the foundation for training and deploying industry-leading LLMs and represent NVIDIA’s fastest-growing business segm"
   },
@@ -1846,7 +2166,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Hardware-Product-Quality-Manager--PQM_JR2013910",
-   "salary": null,
+   "salary": {
+    "min": 168000,
+    "max": 258750,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " We are looking for a Senior Hardware Product Quality Manager (PQM) in an individual contributor role to support NVIDIA’s datacenter hardware quality initiatives, and will be stationed in Santa Clara, California! Your primary responsibility will be to collaborate with internal and external customers to address their complaints, develop profound technical expertise in NVIDIA’s products, and coordinate with internal teams to drive effective issue resolution.\n \n What you will be doing: \n Participat"
   },
@@ -1874,7 +2199,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Product-Development-Engineer---Datacenter-Boards_JR2018422",
-   "salary": null,
+   "salary": {
+    "min": 136000,
+    "max": 212750,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " We build the hardware that runs the world's AI — and our Operations NPI team is how we bring it from silicon to data center at scale. At NVIDIA, we're proud to work on GPU platforms like Blackwell and Vera Rubin that push the boundaries of what's possible in compute. We move fast, we care deeply about quality, and we invest in people who want to grow across disciplines — board design, test engineering, yield analytics, and global manufacturing, often within a single program cycle. If you're ene"
   },
@@ -1888,7 +2218,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Technical-Product-Marketing-Manager_JR2020110",
-   "salary": null,
+   "salary": {
+    "min": 148000,
+    "max": 235750,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " We are now looking for a Technical Program Manager, Silicon Product Definition. The NVIDIA Program Operations group has an immediate opening for a top Technical Program Manager. This group is responsible for the product plan from bring-up to production release. You are someone who thrives in a dynamic environment and isn’t afraid to roll-up your sleeves and get hands dirty. You are a self-starter, with great interpersonal skills, and a leader with a deep sense of dedication to execution excelle"
   },
@@ -1902,7 +2237,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Director--Board-Product-Development-Engineering_JR2023311",
-   "salary": null,
+   "salary": {
+    "min": 332000,
+    "max": 500250,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " NVIDIA has been transforming computer graphics, PC gaming, and accelerated computing for more than 25 years. It’s a unique legacy of innovation that’s fueled by great technology—and amazing people. Today, we’re tapping into the unlimited potential of AI to define the next era of computing. An era in which our GPU acts as the brains of computers, robots, and self-driving cars that can understand the world. Doing what’s never been done before takes vision, innovation, and the world’s best talent."
   },
@@ -1916,7 +2256,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Product-Dev-Rel-Engineer---DSX_JR2023442-1",
-   "salary": null,
+   "salary": {
+    "min": 224000,
+    "max": 356500,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " NVIDIA has been transforming computer graphics, PC gaming, and accelerated computing for more than 25 years. It’s a unique legacy of innovation that’s fueled by great technology—and amazing people. Become part of NVIDIA’s groundbreaking efforts to transform computer graphics, PC gaming, and accelerated computing. As a Senior Staff Product Developer Relations Engineer - DSX, you will advance the developer experience across NVIDIA’s Data Science & AI System Software platform (DSX). In this high-i"
   },
@@ -1930,7 +2275,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Hardware-Product-Quality-Manager--PQM_JR2022611",
-   "salary": null,
+   "salary": {
+    "min": 168000,
+    "max": 258750,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " At NVIDIA, we have been at the forefront of transforming computer graphics, PC gaming, and accelerated computing for over 25 years. Our legacy of innovation is fueled by our exceptional technology and amazing team of people.\n We are looking for a Senior Hardware Product Quality Manager (PQM) in an individual contributor role to support NVIDIA’s datacenter hardware quality initiatives, and will be stationed in Santa Clara, California! Your primary responsibility will be to collaborate with our c"
   },
@@ -1944,7 +2294,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Product-Quality-Engineer--Chip---Automotive_JR2022860",
-   "salary": null,
+   "salary": {
+    "min": 148000,
+    "max": 235750,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " Nvidia's state of art products are powering Artificial Intelligence, Gaming, Virtual Reality, Autonomous Vehicles, Enterprise Servers, Visual Computing, Home Entertainment, Datacenters, Servers, Automotive, Embedded Systems, and more. This is a once in lifetime opportunity to do your life’s work with NVIDIA's groundbreaking products in a multi-functional environment!\n \n Welcome to NVIDIA's Quality and Reliability Group where we strive to develop and continuously improve quality system for bette"
   },
@@ -1958,7 +2313,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Product-Quality-Engineer--Board---Automotive_JR2021690",
-   "salary": null,
+   "salary": {
+    "min": 148000,
+    "max": 235750,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " NVIDIA's state of art products are powering Artificial Intelligence, Gaming, Virtual Reality, Autonomous Vehicles, Enterprise Servers, Visual Computing, Home Entertainment, Datacenters, Servers, Automotive, Embedded Systems, and more. This is a once in lifetime opportunity to work with Nvidia's groundbreaking products in a multi-functional environment!\n \n Welcome to NVIDIA's Quality and Reliability Group where we strive to develop and continuously improve quality system for better customer expe"
   },
@@ -1972,7 +2332,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Software-Program-Manager--New-Product-Introduction_JR2024902",
-   "salary": null,
+   "salary": {
+    "min": 108000,
+    "max": 184000,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " Do you want to join a team of motivated and experienced program managers who drive the successful introduction of NVIDIA's next generation GPU-based products? We work closely with internal leaders in Software, Hardware, Marketing and Operations to ensure the SW team delivers outstanding products while operating across multiple functional units and all levels of management to achieve Time-To-Market. As a part of the team, your knowledge of driver and firmware development processes and priorities"
   },
@@ -1986,7 +2351,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Product-Security-Lead---NVIDIA-Jetson_JR2025433",
-   "salary": null,
+   "salary": {
+    "min": 224000,
+    "max": 356500,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " NVIDIA has been transforming computer graphics, PC gaming, and accelerated computing for more than 25 years. It’s a unique legacy of innovation that’s fueled by great technology—and amazing people. Today, we’re tapping into the unlimited potential of AI to define the next era of computing. An era in which our GPU acts as the brains of computers, robots, and self-driving cars that can understand the world. Doing what’s never been done before takes vision, innovation, and the world’s best talent."
   },
@@ -2000,7 +2370,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Technical-Program-Manager--Silicon-Product-Definition_JR2026141",
-   "salary": null,
+   "salary": {
+    "min": 148000,
+    "max": 235750,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " We are now looking for a Program Manager specializing in Silicon Product Definition. The NVIDIA Program Operations group has an immediate opening for a top Technical Project Lead. This group is responsible for the product plan from bring-up to production release. You are someone who thrives in a dynamic environment and isn’t afraid to roll-up your sleeves and get hands dirty. You are a self-starter, with great interpersonal skills, and a leader with a deep sense of dedication to execution excel"
   },
@@ -2014,7 +2389,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Technical-Product-Manager--CPU-Platform-Ecosystem_JR2027360",
-   "salary": null,
+   "salary": {
+    "min": 148000,
+    "max": 235750,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " At NVIDIA, we're shaping the future of accelerated computing infrastructure — and we believe a CPU platform is only as strong as the ecosystem around it. This role sits at the heart of that ecosystem, bringing clarity to what must work, what is qualified, and what customers can count on when deploying NVIDIA data center CPUs alongside GPUs, networking, storage, DPUs, and third-party components. We're looking for someone who wants to lead a tangible product outcome: customers who can configure, "
   },
@@ -2028,7 +2408,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/New-Product-Enablement-Business-System-Analyst_JR2016350",
-   "salary": null,
+   "salary": {
+    "min": 168000,
+    "max": 258750,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " NVIDIA has been transforming computer graphics, PC gaming, and accelerated computing for more than 25 years. It’s a unique legacy of innovation that’s fueled by great technology—and amazing people. NVIDIA is seeking an experienced Business Systems Analyst (New Product Enablement) to partner with IT and Ops teams to define needs and support system readiness for new products and new site launches. This role connects NPI, Manufacturing Operations, Planning/Procurement, Engineering, and Data/IT tea"
   },
@@ -2070,7 +2455,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-WA-Remote/Senior-Research-Engineer---Enterprise-Products_JR2021002",
-   "salary": null,
+   "salary": {
+    "min": 192000,
+    "max": 304750,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " We are now looking for a Senior Research Engineer passionate about Generative AI inference. Are you excited to change the way people infuse AI into products and services? NVIDIA is at the forefront of generative AI models, from language to images. NVIDIA provides building blocks to democratize AI and make generative AI easy to develop, integrate, and deploy. Our team is dedicated to developing optimized inferencing technologies to support our growing generative AI needs. We contribute to all st"
   },
@@ -2098,7 +2488,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Director--ADAS-User-Experience-Product---Autonomous-Vehicles_JR2016860",
-   "salary": null,
+   "salary": {
+    "min": 248000,
+    "max": 396750,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " NVIDIA has been transforming computer graphics, PC gaming, and accelerated computing for more than 25 years. It’s a unique legacy of innovation that’s fueled by great technology—and amazing people. Today, we’re tapping into the unlimited potential of AI to define the next era of computing. An era in which our GPU acts as the brains of computers, robots, and self-driving cars that can understand the world. Doing what’s never been done before takes vision, innovation, and the world’s best talent."
   },
@@ -2112,7 +2507,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Director--Product-Management---AI-Networking-Spectrum-X_JR2019242",
-   "salary": null,
+   "salary": {
+    "min": 272000,
+    "max": 425500,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " NVIDIA’s Datacenter Ethernet Business is growing rapidly. We are seeking a Director-level Product Manager with deep technical expertise in networking hardware, silicon, and platform architecture to lead global product strategy for next-generation Ethernet networking solutions. This senior leadership role offers broad cross-functional collaboration, executive visibility, and global responsibility for shaping NVIDIA’s intelligent networking portfolio. \n \n As a product management leader, you will "
   },
@@ -2126,7 +2526,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Product-Architect--K8s-Based-AI-Infrastructure_JR2023964",
-   "salary": null,
+   "salary": {
+    "min": 184000,
+    "max": 287500,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " NVIDIA is the engine of modern Artificial Intelligence, Parallel Compute Infrastructure, and Agentic AI - the biggest technology breakthroughs of our time. We’re on a mission to redefine how data moves, connects, and accelerates workloads at scale, and we’re seeking a visionary Product Architect with strong expertise in systems architecture to join our cause. As a key member of our team, you’ll design and shape the architectures that connect the world’s most powerful AI clusters. As a Product A"
   },
@@ -2140,7 +2545,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Director--System-Level-Testing---Product-Development-Engineering_JR2023409",
-   "salary": null,
+   "salary": {
+    "min": 272000,
+    "max": 425500,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " NVIDIA is seeking an experienced and highly motivated Director of System level Testing  to lead the end-to-end post-silicon validation, test architecture, and manufacturing ramp for cutting-edge AI, data center, SOC and Tegra Automotive product lines. In this leadership role, you will guide a team responsible for bringing next-generation GPU/SOC/LPU/Auto/Tegra technologies from design validation through manufacturing ramp and high-volume production. \n \n You will collaborate across design, Silic"
   },
@@ -2168,7 +2578,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Data-Analytics-CPU-Workload-Performance-Product-Manager_JR2027355-1",
-   "salary": null,
+   "salary": {
+    "min": 184000,
+    "max": 287500,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " We're building a new generation of data center CPUs at NVIDIA — Vera, Grace, and future designs purpose-built for accelerated computing and the workloads defining infrastructure. Data analytics is one of the highest-value arenas for CPU performance, and we need someone to own NVIDIA's strategy and value proposition there! This role sits at the nexus of go-to-market, software architecture, platform architecture, performance measurement, and competitive positioning — making it a true workload str"
   },
@@ -2196,7 +2611,12 @@
    "published_at": "2026-10-30",
    "updated_at": null,
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Director--Supply-Planning-Networking-Products_JR2019817",
-   "salary": null,
+   "salary": {
+    "min": 292000,
+    "max": 442750,
+    "currency": "USD",
+    "source": "description"
+   },
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " Are you ready to lead the supply planning strategy for a company at the forefront of AI and accelerated computing? NVIDIA is seeking a Senior Director, Supply Planning for our networking products division! This high-impact role will develop supply planning capabilities aligned to NVIDIA’s explosive growth in the AI and data center markets. With a focus on optics, switches, adapters, and the broader planning ecosystem, you will ensure stable, long-range supply commitments that keep pace with our"
   },
@@ -2242,5 +2662,17 @@
    "_meta_text": "remoteType:  timeType: Full time postedOn: Posted Yesterday ",
    "_content_head": " Do you want to be part of the team changing PC gaming, content creation, and everyday computing experiences with the power of Artificial Intelligence (AI)? We are looking for a Product Manager intern to join the NVIDIA GeForce/Spark team, focused on bringing GPU-accelerated AI technology to some of the world's most popular applications and games.\n\n You will work in NVIDIA's GeForce/Spark Product Team alongside other Product Managers. You'll join an outstanding group of colleagues who are the dr"
   }
+ ],
+ "pay_snippets": [
+  [],
+  [],
+  [],
+  [],
+  [
+   "on, experience, and other objective job-related factors. The expected base salary ranges for this position are:\n168,000 USD – 258,750 USD for Level 4; and 200,000 USD – 322,000 USD fo",
+   ", and other objective job-related factors. The expected base salary ranges for this position are:\n168,000 USD – 258,750 USD for Level 4; and 200,000 USD – 322,000 USD for Level 5. \n Y",
+   "ated factors. The expected base salary ranges for this position are:\n168,000 USD – 258,750 USD for Level 4; and 200,000 USD – 322,000 USD for Level 5. \n You will also be eligible for "
+  ],
+  []
  ]
 }
