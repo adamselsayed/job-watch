@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T05:22:03+00:00",
+  "generated_at": "2026-11-01T05:23:21+00:00",
   "criteria": {
     "title_keywords": [
       "product"
@@ -223,6 +223,17 @@
       "error": null,
       "total_jobs": 19,
       "matched": 2
+    },
+    {
+      "name": "Taskrabbit",
+      "ats": "greenhouse",
+      "board": "taskrabbit",
+      "url": "https://www.taskrabbit.com/careers",
+      "fetched_at": "2026-11-01T05:23:21+00:00",
+      "status": "ok",
+      "error": null,
+      "total_jobs": 20,
+      "matched": 1
     }
   ],
   "jobs": [
@@ -2976,6 +2987,32 @@
       "key": "greenhouse:gomotive:8913113002",
       "first_seen": "2026-10-29T23:17:57+00:00",
       "last_seen": "2026-10-31T13:37:55+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "8301199",
+      "req_id": "426",
+      "title": "Senior Product Manager",
+      "location": "San Francisco, California, United States",
+      "location_detail": "San Francisco, California, United States",
+      "department": "Product",
+      "published_at": "2026-10-23T16:03:42-04:00",
+      "updated_at": "2026-10-23T16:03:42-04:00",
+      "url": "https://job-boards.greenhouse.io/taskrabbit/jobs/8301199",
+      "salary": {
+        "min": 140000,
+        "max": 185000,
+        "currency": "USD",
+        "source": "description"
+      },
+      "us": true,
+      "remote": "hybrid",
+      "remote_confidence": "low",
+      "company": "Taskrabbit",
+      "key": "greenhouse:taskrabbit:8301199",
+      "first_seen": "2026-11-01T05:23:21+00:00",
+      "last_seen": "2026-11-01T05:23:21+00:00",
       "status": "open",
       "closed_at": null
     },
