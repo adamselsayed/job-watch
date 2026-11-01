@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T21:44:18.206Z",
+  "updated_at": "2026-11-01T03:44:30.437Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -330,6 +330,12 @@
       "at": "2026-10-30T21:44:16.703Z",
       "title": "Associate Product Manager, Data Governance",
       "company": "Toast"
+    },
+    "smartrecruiters:ServiceNow:744000156657507": {
+      "status": "archived",
+      "at": "2026-11-01T03:44:28.927Z",
+      "title": "Senior Staff Product Success Architect",
+      "company": "ServiceNow"
     }
   }
 }
