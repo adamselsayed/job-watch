@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T13:37:55+00:00",
+  "generated_at": "2026-11-01T04:08:28+00:00",
   "criteria": {
     "title_keywords": [
       "product"
@@ -145,6 +145,17 @@
       "error": null,
       "total_jobs": 80,
       "matched": 3
+    },
+    {
+      "name": "Cognition",
+      "ats": "ashby",
+      "board": "cognition",
+      "url": "https://cognition.com/careers",
+      "fetched_at": "2026-11-01T04:08:28+00:00",
+      "status": "ok",
+      "error": null,
+      "total_jobs": 106,
+      "matched": 2
     }
   ],
   "jobs": [
@@ -2577,6 +2588,27 @@
       "closed_at": null
     },
     {
+      "job_id": "439404bb-3185-4d22-b6df-4a5e39a510d6",
+      "req_id": null,
+      "title": "Product Engineer",
+      "location": "San Francisco",
+      "location_detail": "New York City",
+      "department": "Research & Development / Core Engineering",
+      "published_at": "2026-08-06T18:12:49.963+00:00",
+      "updated_at": null,
+      "url": "https://jobs.ashbyhq.com/cognition/439404bb-3185-4d22-b6df-4a5e39a510d6",
+      "salary": null,
+      "us": true,
+      "remote": "onsite",
+      "remote_confidence": "medium",
+      "company": "Cognition",
+      "key": "ashby:cognition:439404bb-3185-4d22-b6df-4a5e39a510d6",
+      "first_seen": "2026-11-01T04:08:28+00:00",
+      "last_seen": "2026-11-01T04:08:28+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
       "job_id": "8599153002",
       "req_id": "21632",
       "title": "Senior Product Manager, GTM Systems",
@@ -2823,6 +2855,27 @@
       "key": "workday:hitachi.wd1/hitachi:R0105015",
       "first_seen": "2026-10-30T07:05:09+00:00",
       "last_seen": "2026-10-31T13:37:55+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "60ac2393-2727-4c88-953b-013e7bb418f8",
+      "req_id": null,
+      "title": "Product Marketer",
+      "location": "San Francisco",
+      "location_detail": "New York City",
+      "department": "Marketing / Marketing",
+      "published_at": "2026-04-18T11:27:37.751+00:00",
+      "updated_at": null,
+      "url": "https://jobs.ashbyhq.com/cognition/60ac2393-2727-4c88-953b-013e7bb418f8",
+      "salary": null,
+      "us": true,
+      "remote": "onsite",
+      "remote_confidence": "medium",
+      "company": "Cognition",
+      "key": "ashby:cognition:60ac2393-2727-4c88-953b-013e7bb418f8",
+      "first_seen": "2026-11-01T04:08:28+00:00",
+      "last_seen": "2026-11-01T04:08:28+00:00",
       "status": "open",
       "closed_at": null
     },
