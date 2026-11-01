@@ -110,9 +110,13 @@
   board: nvidia.wd5/NVIDIAExternalCareerSite
   url: https://jobs.nvidia.com/careers
 
-
 - name: EVgo
   ats: rippling
   board: evgo-careers
   country: US
   url: https://evgo.com/company/careers/#open_positions
+
+- name: Nextdoor
+  ats: greenhouse
+  board: nextdoor
+  url: https://about.nextdoor.com/careers-list/
