@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T05:28:32+00:00",
+  "generated_at": "2026-11-01T05:29:39+00:00",
   "criteria": {
     "title_keywords": [
       "product"
@@ -248,14 +248,14 @@
     },
     {
       "name": "Care.com",
-      "ats": "unknown",
-      "board": "care",
-      "url": "https://www.care.com/vis/careers/department/caregiver",
-      "fetched_at": "2026-11-01T05:28:32+00:00",
+      "ats": "smartrecruiters",
+      "board": "Carecom1",
+      "url": "https://www.care.com/careers",
+      "fetched_at": "2026-11-01T05:29:39+00:00",
       "status": "ok",
       "error": null,
-      "total_jobs": 0,
-      "matched": 0
+      "total_jobs": 58,
+      "matched": 3
     }
   ],
   "jobs": [
@@ -3861,6 +3861,32 @@
       "closed_at": null
     },
     {
+      "job_id": "3743990015994966",
+      "req_id": "P13270",
+      "title": "Senior Product Manager - CareBenefits ",
+      "location": "Remote - Austin, TX, United States",
+      "location_detail": "",
+      "department": "",
+      "published_at": "2026-10-08T16:48:57.195Z",
+      "updated_at": null,
+      "url": "https://jobs.smartrecruiters.com/Carecom1/3743990015994966-senior-product-manager-carebenefits-",
+      "salary": {
+        "min": 150000,
+        "max": 170000,
+        "currency": "USD",
+        "source": "description"
+      },
+      "us": true,
+      "remote": "remote",
+      "remote_confidence": "high",
+      "company": "Care.com",
+      "key": "smartrecruiters:Carecom1:3743990015994966",
+      "first_seen": "2026-11-01T05:29:39+00:00",
+      "last_seen": "2026-11-01T05:29:39+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
       "job_id": "8264858",
       "req_id": null,
       "title": "Senior Product Manager – People Systems",
@@ -4024,6 +4050,32 @@
       "key": "smartrecruiters:ServiceNow:744000153739678",
       "first_seen": "2026-10-30T05:47:56+00:00",
       "last_seen": "2026-10-31T13:37:55+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "3743990015902166",
+      "req_id": "P13252",
+      "title": "Product Manager, Benefits Strategy - Core Care Delivery",
+      "location": "Hybrid - Dallas, TX, United States",
+      "location_detail": "",
+      "department": "",
+      "published_at": "2026-10-05T19:56:30.814Z",
+      "updated_at": null,
+      "url": "https://jobs.smartrecruiters.com/Carecom1/3743990015902166-product-manager-benefits-strategy-core-care-delivery",
+      "salary": {
+        "min": 155000,
+        "max": 170000,
+        "currency": "USD",
+        "source": "description"
+      },
+      "us": true,
+      "remote": "hybrid",
+      "remote_confidence": "high",
+      "company": "Care.com",
+      "key": "smartrecruiters:Carecom1:3743990015902166",
+      "first_seen": "2026-11-01T05:29:39+00:00",
+      "last_seen": "2026-11-01T05:29:39+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4280,6 +4332,32 @@
       "key": "phenom:vgcareers.virgingalactic.com/global/en:VGNVGEUS2213EXTERNALENGLOBAL",
       "first_seen": "2026-10-30T19:12:39+00:00",
       "last_seen": "2026-10-31T13:37:55+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "3743990015782736",
+      "req_id": "P13232",
+      "title": "Director, Technical Product Management",
+      "location": "Remote - Dallas, TX, United States",
+      "location_detail": "",
+      "department": "",
+      "published_at": "2026-09-29T20:23:21.921Z",
+      "updated_at": null,
+      "url": "https://jobs.smartrecruiters.com/Carecom1/3743990015782736-director-technical-product-management",
+      "salary": {
+        "min": 200000,
+        "max": 225000,
+        "currency": "USD",
+        "source": "description"
+      },
+      "us": true,
+      "remote": "remote",
+      "remote_confidence": "high",
+      "company": "Care.com",
+      "key": "smartrecruiters:Carecom1:3743990015782736",
+      "first_seen": "2026-11-01T05:29:39+00:00",
+      "last_seen": "2026-11-01T05:29:39+00:00",
       "status": "open",
       "closed_at": null
     },
