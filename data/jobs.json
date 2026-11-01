@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T04:24:29+00:00",
+  "generated_at": "2026-11-01T04:25:11+00:00",
   "criteria": {
     "title_keywords": [
       "product"
@@ -173,7 +173,11 @@
       "ats": "greenhouse",
       "board": "housecall",
       "url": "https://www.housecallpro.com/careers/",
-      "status": "never fetched"
+      "fetched_at": "2026-11-01T04:25:11+00:00",
+      "status": "ok",
+      "error": null,
+      "total_jobs": 54,
+      "matched": 7
     }
   ],
   "jobs": [
@@ -1391,6 +1395,32 @@
       "closed_at": null
     },
     {
+      "job_id": "6221432004",
+      "req_id": "1174",
+      "title": "Senior Staff Product Manager (Estimates)",
+      "location": "United States",
+      "location_detail": "United States",
+      "department": "Product",
+      "published_at": "2026-10-09T13:36:45-04:00",
+      "updated_at": "2026-10-09T13:36:45-04:00",
+      "url": "https://www.housecallpro.com/careers/open-positions/?gh_jid=6221432004",
+      "salary": {
+        "min": 165000,
+        "max": 190000,
+        "currency": "USD",
+        "source": "description"
+      },
+      "us": true,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Housecall Pro",
+      "key": "greenhouse:housecall:6221432004",
+      "first_seen": "2026-11-01T04:25:11+00:00",
+      "last_seen": "2026-11-01T04:25:11+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
       "job_id": "744000154541440",
       "req_id": "JB0076074",
       "title": "Director, Product Management",
@@ -1918,6 +1948,58 @@
       "closed_at": null
     },
     {
+      "job_id": "6206487004",
+      "req_id": "1164",
+      "title": "Senior Product Manager II (Growth)",
+      "location": "United States",
+      "location_detail": "United States",
+      "department": "Product",
+      "published_at": "2026-09-23T11:12:56-04:00",
+      "updated_at": "2026-09-30T14:56:19-04:00",
+      "url": "https://www.housecallpro.com/careers/open-positions/?gh_jid=6206487004",
+      "salary": {
+        "min": 144000,
+        "max": 179000,
+        "currency": "USD",
+        "source": "description"
+      },
+      "us": true,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Housecall Pro",
+      "key": "greenhouse:housecall:6206487004",
+      "first_seen": "2026-11-01T04:25:11+00:00",
+      "last_seen": "2026-11-01T04:25:11+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "6205082004",
+      "req_id": "1163",
+      "title": "Product Manager (Applied AI)",
+      "location": "United States",
+      "location_detail": "United States",
+      "department": "Product",
+      "published_at": "2026-09-23T11:06:04-04:00",
+      "updated_at": "2026-10-28T12:33:52-04:00",
+      "url": "https://www.housecallpro.com/careers/open-positions/?gh_jid=6205082004",
+      "salary": {
+        "min": 141680,
+        "max": 180320,
+        "currency": "USD",
+        "source": "description"
+      },
+      "us": true,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Housecall Pro",
+      "key": "greenhouse:housecall:6205082004",
+      "first_seen": "2026-11-01T04:25:11+00:00",
+      "last_seen": "2026-11-01T04:25:11+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
       "job_id": "744000151391394",
       "req_id": "JB0075141",
       "title": "Senior Staff Inbound Product Manager - AI Search",
@@ -2122,6 +2204,58 @@
       "key": "smartrecruiters:ServiceNow:744000150403065",
       "first_seen": "2026-10-30T05:47:56+00:00",
       "last_seen": "2026-10-31T13:37:55+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "6196665004",
+      "req_id": "1161",
+      "title": "Senior Staff Product Manager (AI Software Factory)",
+      "location": "United States",
+      "location_detail": "United States",
+      "department": "Product",
+      "published_at": "2026-09-17T12:16:40-04:00",
+      "updated_at": "2026-10-01T16:06:30-04:00",
+      "url": "https://www.housecallpro.com/careers/open-positions/?gh_jid=6196665004",
+      "salary": {
+        "min": 165000,
+        "max": 190000,
+        "currency": "USD",
+        "source": "description"
+      },
+      "us": true,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Housecall Pro",
+      "key": "greenhouse:housecall:6196665004",
+      "first_seen": "2026-11-01T04:25:11+00:00",
+      "last_seen": "2026-11-01T04:25:11+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "6196648004",
+      "req_id": "1160",
+      "title": "Director, Product Management (Platform)",
+      "location": "United States",
+      "location_detail": "United States",
+      "department": "Product",
+      "published_at": "2026-09-17T12:13:38-04:00",
+      "updated_at": "2026-10-01T15:46:25-04:00",
+      "url": "https://www.housecallpro.com/careers/open-positions/?gh_jid=6196648004",
+      "salary": {
+        "min": 175000,
+        "max": 210000,
+        "currency": "USD",
+        "source": "description"
+      },
+      "us": true,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Housecall Pro",
+      "key": "greenhouse:housecall:6196648004",
+      "first_seen": "2026-11-01T04:25:11+00:00",
+      "last_seen": "2026-11-01T04:25:11+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2393,6 +2527,53 @@
       "key": "smartrecruiters:ServiceNow:744000149362100",
       "first_seen": "2026-10-30T05:47:56+00:00",
       "last_seen": "2026-10-31T13:37:55+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "6190537004",
+      "req_id": "1156",
+      "title": "Product Manager II (Recurring Jobs + Service Plans)",
+      "location": "United States",
+      "location_detail": "United States",
+      "department": "Product",
+      "published_at": "2026-09-11T15:44:00-04:00",
+      "updated_at": "2026-09-17T16:00:27-04:00",
+      "url": "https://www.housecallpro.com/careers/open-positions/?gh_jid=6190537004",
+      "salary": {
+        "min": 130000,
+        "max": 150000,
+        "currency": "USD",
+        "source": "description"
+      },
+      "us": true,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Housecall Pro",
+      "key": "greenhouse:housecall:6190537004",
+      "first_seen": "2026-11-01T04:25:11+00:00",
+      "last_seen": "2026-11-01T04:25:11+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "6187388004",
+      "req_id": "1149",
+      "title": "Vice President, Product Management (Enterprise)",
+      "location": "United States",
+      "location_detail": "United States",
+      "department": "Product",
+      "published_at": "2026-09-11T12:41:53-04:00",
+      "updated_at": "2026-09-16T14:26:13-04:00",
+      "url": "https://www.housecallpro.com/careers/open-positions/?gh_jid=6187388004",
+      "salary": null,
+      "us": true,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Housecall Pro",
+      "key": "greenhouse:housecall:6187388004",
+      "first_seen": "2026-11-01T04:25:11+00:00",
+      "last_seen": "2026-11-01T04:25:11+00:00",
       "status": "open",
       "closed_at": null
     },
