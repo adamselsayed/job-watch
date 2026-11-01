@@ -108,7 +108,3 @@
   board: nvidia.wd5/NVIDIAExternalCareerSite
   url: https://jobs.nvidia.com/careers
 
-- name: EVgo
-  ats: unknown
-  board: evgo
-  url: https://evgo.com/company/careers/#open_positions
