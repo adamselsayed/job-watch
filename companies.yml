@@ -101,3 +101,9 @@
   ats: ashby
   board: serverobotics
   url: https://www.serverobotics.com/careers
+
+- name: NVIDIA
+  ats: workday
+  board: nvidia.wd5/NVIDIAExternalCareerSite
+  facets: locationCountry=bc33aa3152ec42d4995f4791a106ed09   # United States (Workday's global country id)
+  url: https://jobs.nvidia.com/careers
