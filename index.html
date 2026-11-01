@@ -410,7 +410,12 @@
   }
   const SAL_RE = /\$\s?(\d{2,3}(?:,\d{3})+|\d{2,3}(?:\.\d)?\s?[kK])\s*(?:-|–|—|to)\s*\$?\s?(\d{2,3}(?:,\d{3})+|\d{2,3}(?:\.\d)?\s?[kK])/g;
   const money = s => { s = s.replace(/[,\s]/g, ''); return /[kK]$/.test(s) ? Math.round(parseFloat(s) * 1000) : parseInt(s, 10); };
+  const SAL_USD_RE = /(?:USD\s*\$?\s*)?(\d{2,3},\d{3})\s*(?:USD)?\s*(?:-|–|—|to)\s*\$?\s*(\d{2,3},\d{3})\s*USD\b/g;
   function salaryFromText(t) {
+    for (const m of t.matchAll(SAL_USD_RE)) {
+      const lo = money(m[1]), hi = money(m[2]);
+      if (lo >= 40000 && lo <= hi && hi <= 2000000) return { min: lo, max: hi, currency: 'USD', source: 'description' };
+    }
     for (const m of t.matchAll(SAL_RE)) {
       const lo = money(m[1]), hi = money(m[2]);
       if (lo >= 40000 && lo <= hi && hi <= 2000000) return { min: lo, max: hi, currency: 'USD', source: 'description' };

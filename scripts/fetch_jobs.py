@@ -193,7 +193,14 @@ def _money(s):
     return int(s)
 
 
+SALARY_USD_RE = re.compile(r"(?:USD\s*\$?\s*)?(\d{2,3},\d{3})\s*(?:USD)?\s*(?:-|–|—|to)\s*\$?\s*(\d{2,3},\d{3})\s*USD\b")
+
+
 def salary_from_text(text):
+    for m in SALARY_USD_RE.finditer(text):
+        lo, hi = _money(m.group(1)), _money(m.group(2))
+        if 40_000 <= lo <= hi <= 2_000_000:
+            return {"min": lo, "max": hi, "currency": "USD", "source": "description"}
     for m in SALARY_RE.finditer(text):
         lo, hi = _money(m.group(1)), _money(m.group(2))
         if 40_000 <= lo <= hi <= 2_000_000:
@@ -509,6 +516,12 @@ def fetch_workday(company):
             loc_name = f"{loc_name}, {country}" if loc_name else country
         remote_type = (info.get("remoteType") or "")
         published = info.get("startDate") or None          # YYYY-MM-DD (Workday gives no time of day)
+        m = re.search(r"Posted\s+(Today|Yesterday|(\d+)\+?\s+Days?\s+Ago)", jp.get("postedOn", "") or info.get("postedOn", "") or "", re.I)
+        if m:                                              # some tenants bump startDate on every refresh; "Posted N Days Ago" is steadier
+            days = 0 if m.group(1).lower() == "today" else 1 if m.group(1).lower() == "yesterday" else int(m.group(2))
+            derived = (datetime.now(timezone.utc) - timedelta(days=days)).strftime("%Y-%m-%d")
+            if "+" not in m.group(0) and (not published or derived < published):
+                published = derived
         out.append({
             "job_id": info.get("jobReqId") or path.rsplit("_", 1)[-1] or path,
             "req_id": info.get("jobReqId") or None,
@@ -601,8 +614,77 @@ def fetch_phenom(company):
     return out
 
 
+def fetch_jobvite(company):
+    """Jobvite career pages (https://jobs.jobvite.com/<token>/jobs).  No JSON feed, so this
+    parses the HTML job list and each matching job's page (which carries schema.org JSON-LD)."""
+    token = company["board"]
+    base = f"https://jobs.jobvite.com/{token}"
+    html_list = wd_get(f"{base}/jobs", as_json=False)
+    out, first = [], None
+    # Each row: <a href="/<token>/job/<id>" class="jv-job-list-name">Title</a> ... <div class="jv-job-list-location">Loc</div>
+    rows = re.findall(r'href="(/' + re.escape(token) + r'/job/([^"]+))"[^>]*class="jv-job-list-name"[^>]*>(.*?)</a>(.*?)(?=<a [^>]*class="jv-job-list-name"|</table>|$)',
+                      html_list, re.S)
+    if not rows:   # alternate markup: name inside an <a> that comes after the class attribute
+        rows = re.findall(r'<a[^>]*class="jv-job-list-name"[^>]*href="(/' + re.escape(token) + r'/job/([^"]+))"[^>]*>(.*?)</a>(.*?)(?=<a [^>]*class="jv-job-list-name"|</table>|$)',
+                          html_list, re.S)
+    for href, jid, title_html, rest in rows:
+        title = strip_html(title_html).strip()
+        locm = re.search(r'jv-job-list-location[^>]*>(.*?)</', rest, re.S)
+        loc = strip_html(locm.group(1)).strip() if locm else ""
+        content, published, salary, url = "", None, None, f"{base}/job/{jid}"
+        if title_matches(title):
+            try:
+                page = wd_get(url, as_json=False)
+                ld = None
+                for blob in re.findall(r'<script[^>]*type="application/ld\+json"[^>]*>(.*?)</script>', page, re.S):
+                    try:
+                        obj = json.loads(blob.strip())
+                        objs = obj if isinstance(obj, list) else [obj]
+                        ld = next((o for o in objs if isinstance(o, dict) and o.get("@type") == "JobPosting"), None)
+                        if ld:
+                            break
+                    except Exception:
+                        continue
+                if first is None:
+                    first = {"ld_keys": list(ld.keys()) if ld else None, "page_head": re.sub(r"\s+", " ", strip_html(page))[:600]}
+                if ld:
+                    content = strip_html(ld.get("description", ""))
+                    published = ld.get("datePosted")
+                    jl = ld.get("jobLocation")
+                    jl = jl[0] if isinstance(jl, list) and jl else jl
+                    addr = (jl or {}).get("address") or {}
+                    if isinstance(addr, dict):
+                        parts = [addr.get("addressLocality"), addr.get("addressRegion"), addr.get("addressCountry")]
+                        loc2 = ", ".join(x for x in parts if isinstance(x, str) and x)
+                        if loc2 and len(loc2) > len(loc):
+                            loc = loc2
+                    if str(ld.get("jobLocationType", "")).upper() == "TELECOMMUTE":
+                        loc = f"Remote - {loc}" if loc else "Remote"
+                    bs = ld.get("baseSalary") or {}
+                    v = bs.get("value") if isinstance(bs, dict) else None
+                    if isinstance(v, dict) and v.get("minValue") and v.get("maxValue"):
+                        salary = {"min": int(float(v["minValue"])), "max": int(float(v["maxValue"])),
+                                  "currency": bs.get("currency", "USD"), "source": "posting"}
+                if not content:
+                    m = re.search(r'jv-job-detail-description[^>]*>(.*?)<div[^>]*class="jv-job-detail-apply', page, re.S)
+                    content = strip_html(m.group(1)) if m else strip_html(page)[:8000]
+                if salary is None:
+                    salary = salary_from_text(content)
+            except Exception as e:          # noqa: BLE001
+                log(f"[{company['name']}] detail fetch failed for {jid}: {e}")
+        out.append({
+            "job_id": jid, "req_id": None, "title": title, "location": loc, "location_detail": "",
+            "department": "", "published_at": published, "updated_at": None, "url": url, "salary": salary,
+            "_meta_text": "", "_content": content,
+        })
+    debug_dump(company, {"rows_found": len(rows), "first_detail": first, "sample_rows": [r[2][:80] + " @ " + strip_html(re.search(r'jv-job-list-location[^>]*>(.*?)</', r[3], re.S).group(1) if re.search(r'jv-job-list-location[^>]*>(.*?)</', r[3], re.S) else '?') for r in rows[:5]],
+                         "html_head": html_list[:1500] if not rows else None,
+                         "kept_rows": [{k: v for k, v in r.items() if k != "_content"} | {"_content_head": r["_content"][:300]} for r in out if title_matches(r["title"])]})
+    return out
+
+
 ADAPTERS = {"greenhouse": fetch_greenhouse, "lever": fetch_lever, "ashby": fetch_ashby,
-            "smartrecruiters": fetch_smartrecruiters, "workday": fetch_workday, "phenom": fetch_phenom}
+            "smartrecruiters": fetch_smartrecruiters, "workday": fetch_workday, "phenom": fetch_phenom, "jobvite": fetch_jobvite}
 
 
 # --------------------------------------------------------------- filtering --
