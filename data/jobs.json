@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T05:43:31+00:00",
+  "generated_at": "2026-11-01T05:44:35+00:00",
   "criteria": {
     "title_keywords": [
       "product"
@@ -289,6 +289,17 @@
       "error": null,
       "total_jobs": 2,
       "matched": 2
+    },
+    {
+      "name": "Jackson Healthcare",
+      "ats": "workday",
+      "board": "jacksonhealthcare.wd1/careers-jacksonhealthcare",
+      "url": "https://jacksonhealthcare.com/careers/search-apply/",
+      "fetched_at": "2026-11-01T05:44:35+00:00",
+      "status": "ok",
+      "error": null,
+      "total_jobs": 1,
+      "matched": 1
     }
   ],
   "jobs": [
@@ -5511,6 +5522,27 @@
       "key": "ashby:thumbtack:a8c9ee4d-d5b9-4209-87b7-3e5c7dfa6222",
       "first_seen": "2026-10-30T05:53:13+00:00",
       "last_seen": "2026-10-31T13:37:55+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "JR109106",
+      "req_id": "JR109106",
+      "title": "Vice President of Product",
+      "location": "Nashville-Tennessee, United States of America",
+      "location_detail": "",
+      "department": "Kimedics, LLC",
+      "published_at": "2026-08-07",
+      "updated_at": null,
+      "url": "https://jacksonhealthcare.wd1.myworkdayjobs.com/careers-jacksonhealthcare/job/Nashville-Tennessee/Vice-President-of-Product_JR109106-2",
+      "salary": null,
+      "us": true,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Jackson Healthcare",
+      "key": "workday:jacksonhealthcare.wd1/careers-jacksonhealthcare:JR109106",
+      "first_seen": "2026-11-01T05:44:35+00:00",
+      "last_seen": "2026-11-01T05:44:35+00:00",
       "status": "open",
       "closed_at": null
     },
