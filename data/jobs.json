@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T05:14:21+00:00",
+  "generated_at": "2026-11-01T05:22:03+00:00",
   "criteria": {
     "title_keywords": [
       "product"
@@ -212,6 +212,17 @@
       "error": null,
       "total_jobs": 11,
       "matched": 0
+    },
+    {
+      "name": "Nextdoor",
+      "ats": "greenhouse",
+      "board": "nextdoor",
+      "url": "https://about.nextdoor.com/careers-list/",
+      "fetched_at": "2026-11-01T05:22:03+00:00",
+      "status": "ok",
+      "error": null,
+      "total_jobs": 19,
+      "matched": 2
     }
   ],
   "jobs": [
@@ -3911,6 +3922,32 @@
       "closed_at": null
     },
     {
+      "job_id": "8259381",
+      "req_id": null,
+      "title": "Principal Product Manager, Ads Delivery & Optimization",
+      "location": "US Remote",
+      "location_detail": "San Francisco, California, United States",
+      "department": "Product Management",
+      "published_at": "2026-10-06T15:20:56-04:00",
+      "updated_at": "2026-10-06T15:27:59-04:00",
+      "url": "https://about.nextdoor.com/careers-list/?gh_jid=8259381",
+      "salary": {
+        "min": 200000,
+        "max": 335000,
+        "currency": "USD",
+        "source": "description"
+      },
+      "us": true,
+      "remote": "remote",
+      "remote_confidence": "high",
+      "company": "Nextdoor",
+      "key": "greenhouse:nextdoor:8259381",
+      "first_seen": "2026-11-01T05:22:03+00:00",
+      "last_seen": "2026-11-01T05:22:03+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
       "job_id": "744000153739678",
       "req_id": "JB0075536",
       "title": "Staff Inbound Product Manager - ServiceNow University",
@@ -5111,6 +5148,32 @@
       "key": "greenhouse:life360:8750960002",
       "first_seen": "2026-10-30T06:39:37+00:00",
       "last_seen": "2026-10-31T13:37:55+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "8142001",
+      "req_id": null,
+      "title": "Staff Product Manager, Search",
+      "location": "US Remote",
+      "location_detail": "US Remote",
+      "department": "Product Management",
+      "published_at": "2026-08-20T12:56:37-04:00",
+      "updated_at": "2026-08-20T15:42:13-04:00",
+      "url": "https://about.nextdoor.com/careers-list/?gh_jid=8142001",
+      "salary": {
+        "min": 170000,
+        "max": 250000,
+        "currency": "USD",
+        "source": "description"
+      },
+      "us": true,
+      "remote": "remote",
+      "remote_confidence": "high",
+      "company": "Nextdoor",
+      "key": "greenhouse:nextdoor:8142001",
+      "first_seen": "2026-11-01T05:22:03+00:00",
+      "last_seen": "2026-11-01T05:22:03+00:00",
       "status": "open",
       "closed_at": null
     },
