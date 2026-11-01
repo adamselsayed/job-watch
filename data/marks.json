@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-01T04:14:18.464Z",
+  "updated_at": "2026-11-01T04:14:26.213Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -361,8 +361,9 @@
       "Samsara",
       "Motive",
       "ServiceNow",
+      "ChargePoint",
       "Experian"
     ],
-    "at": "2026-11-01T04:14:16.960Z"
+    "at": "2026-11-01T04:14:24.709Z"
   }
 }
