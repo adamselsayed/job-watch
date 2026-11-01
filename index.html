@@ -521,7 +521,16 @@
       };
     });
   }
-  const LIVE = { greenhouse: liveGreenhouse, lever: liveLever, ashby: liveAshby, smartrecruiters: liveSmartrecruiters };
+  async function liveRippling(c) {
+    const r = await fetch(`https://api.rippling.com/platform/api/ats/v1/board/${c.board}/jobs`); if (!r.ok) throw new Error(`HTTP ${r.status}`);
+    const items = await r.json();
+    return (Array.isArray(items) ? items : []).map(j => ({
+      job_id: String(j.uuid || j.id), req_id: null, title: j.name || '', location: (j.workLocation || {}).label || '', location_detail: '',
+      department: (j.department || {}).label || '', published_at: null, updated_at: null,
+      url: j.url || `https://ats.rippling.com/${c.board}/jobs/${j.uuid || j.id}`, salary: null, _meta: '', _content: '',
+    }));
+  }
+  const LIVE = { greenhouse: liveGreenhouse, lever: liveLever, ashby: liveAshby, smartrecruiters: liveSmartrecruiters, rippling: liveRippling };
 
   function applyCriteria(raw, c) {
     const out = [];
@@ -529,6 +538,7 @@
       if (!titleMatches(j.title)) continue;
       let us = classifyUS(j.location);
       if (us === null && j.location_detail) us = classifyUS(j.location_detail);
+      if (us === null && /^(us|usa|united states)$/i.test(c.country || '')) us = true;
       if (us === false) continue;
       const [remote, conf] = classifyRemote(j.location, j.title, [j._meta, j.location_detail].filter(Boolean).join(' '), j._content);
       const { _meta, _content, ...clean } = j;

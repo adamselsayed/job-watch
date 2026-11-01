@@ -721,10 +721,16 @@ def fetch_rippling(company):
         if not loc and extra:
             loc = extra
         content, salary, published = "", None, j.get("createdAt") or j.get("publishedAt") or j.get("postedAt")
-        url = j.get("url") or f"https://ats.rippling.com/{board}/jobs/{j.get('id')}"
+        jid = j.get("uuid") or j.get("id")
+        url = j.get("url") or f"https://ats.rippling.com/{board}/jobs/{jid}"
         if title_matches(title):
             try:
-                d = wd_get(f"{base}/jobs/{j.get('id')}")
+                try:
+                    d = wd_get(f"{base}/jobs/{jid}")
+                except Exception:                       # no detail endpoint: read the public job page instead
+                    page = wd_get(url, as_json=False)
+                    m = re.search(r"<main[^>]*>(.*?)</main>", page, re.S)
+                    d = {"description": (m.group(1) if m else page)}
                 if first_detail is None:
                     first_detail = {k: (v if k != "description" else str(v)[:300]) for k, v in d.items()} if isinstance(d, dict) else d
                 if isinstance(d, dict):
@@ -734,7 +740,7 @@ def fetch_rippling(company):
                     if isinstance(comp, dict) and comp.get("min") and comp.get("max"):
                         salary = {"min": int(float(comp["min"])), "max": int(float(comp["max"])), "currency": comp.get("currency", "USD"), "source": "posting"}
             except Exception as e:          # noqa: BLE001
-                log(f"[{company['name']}] detail fetch failed for {j.get('id')}: {e}")
+                log(f"[{company['name']}] detail fetch failed for {jid}: {e}")
             if salary is None:
                 salary = salary_from_text(content)
         if isinstance(published, (int, float)):
@@ -743,7 +749,7 @@ def fetch_rippling(company):
         dept = dept.get("name", "") if isinstance(dept, dict) else (dept or "")
         wt = j.get("employmentType") or ""
         out.append({
-            "job_id": str(j.get("id")), "req_id": j.get("requisitionId") or None, "title": title, "location": loc,
+            "job_id": str(jid), "req_id": j.get("requisitionId") or None, "title": title, "location": loc,
             "location_detail": extra if extra != loc else "", "department": dept, "published_at": published, "updated_at": None,
             "url": url, "salary": salary,
             "_meta_text": f"type: {wt} " + " ".join(f"{k}: {v}" for k, v in j.items() if isinstance(v, str) and k.lower() in ("workplacetype", "locationtype", "remote")),
@@ -769,7 +775,7 @@ def title_matches(title):
     return not any(re.search(r"\b" + re.escape(w) + r"\b", t) for w in TITLE_EXCLUDE_WORDS)
 
 
-def matches(job):
+def matches(job, company=None):
     """Apply the watch criteria. Returns (keep, annotated_job)."""
     if not title_matches(job["title"]):
         return False, None
@@ -778,6 +784,8 @@ def matches(job):
     us = classify_us(job["location"])
     if us is None and job["location_detail"]:
         us = classify_us(job["location_detail"])
+    if us is None and company and (company.get("country") or "").upper() in ("US", "USA", "UNITED STATES"):
+        us = True                                   # company declares it only posts US roles
     if us is False:
         return False, None
     remote, conf = classify_remote(job["location"], job["title"],
@@ -846,7 +854,7 @@ def main(only=None):
             continue
         kept = []
         for job in raw:
-            ok, j = matches(job)
+            ok, j = matches(job, c)
             if ok:
                 j["company"] = c["name"]
                 j["key"] = f"{c['ats']}:{c['board']}:{j['job_id']}"

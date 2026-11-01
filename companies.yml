@@ -4,6 +4,7 @@
 #   ats:   greenhouse | lever | ashby | smartrecruiters | workday | phenom | jobvite | rippling   (the job-board system the company uses)
 #   board: the company's board token (the slug in its job-board URL)
 #   url:   the public careers page (for reference / linking)
+#   country: US   (optional) treat locations with no country stated (e.g. "Remote") as US for this company
 #
 # Finding the board token:
 #   Greenhouse: careers page loads from boards.greenhouse.io/<token>  or  job-boards.greenhouse.io/<token>
@@ -113,4 +114,5 @@
 - name: EVgo
   ats: rippling
   board: evgo-careers
+  country: US
   url: https://evgo.com/company/careers/#open_positions
