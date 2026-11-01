@@ -86,3 +86,13 @@
   ats: ashby
   board: cognition
   url: https://cognition.com/careers
+
+- name: AMN Healthcare
+  ats: workday
+  board: amn.wd1/AMN_Careers
+  url: https://www.amncareers.com/careers/
+
+- name: Housecall Pro
+  ats: greenhouse
+  board: housecall
+  url: https://www.housecallpro.com/careers/
