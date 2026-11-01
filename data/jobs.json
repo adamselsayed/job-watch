@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T04:25:11+00:00",
+  "generated_at": "2026-11-01T04:27:26+00:00",
   "criteria": {
     "title_keywords": [
       "product"
@@ -173,7 +173,7 @@
       "ats": "greenhouse",
       "board": "housecall",
       "url": "https://www.housecallpro.com/careers/",
-      "fetched_at": "2026-11-01T04:25:11+00:00",
+      "fetched_at": "2026-11-01T04:27:26+00:00",
       "status": "ok",
       "error": null,
       "total_jobs": 54,
@@ -1411,12 +1411,12 @@
         "source": "description"
       },
       "us": true,
-      "remote": "unknown",
-      "remote_confidence": "none",
+      "remote": "remote",
+      "remote_confidence": "medium",
       "company": "Housecall Pro",
       "key": "greenhouse:housecall:6221432004",
       "first_seen": "2026-11-01T04:25:11+00:00",
-      "last_seen": "2026-11-01T04:25:11+00:00",
+      "last_seen": "2026-11-01T04:27:26+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1964,12 +1964,12 @@
         "source": "description"
       },
       "us": true,
-      "remote": "unknown",
-      "remote_confidence": "none",
+      "remote": "remote",
+      "remote_confidence": "medium",
       "company": "Housecall Pro",
       "key": "greenhouse:housecall:6206487004",
       "first_seen": "2026-11-01T04:25:11+00:00",
-      "last_seen": "2026-11-01T04:25:11+00:00",
+      "last_seen": "2026-11-01T04:27:26+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1990,12 +1990,12 @@
         "source": "description"
       },
       "us": true,
-      "remote": "unknown",
-      "remote_confidence": "none",
+      "remote": "remote",
+      "remote_confidence": "medium",
       "company": "Housecall Pro",
       "key": "greenhouse:housecall:6205082004",
       "first_seen": "2026-11-01T04:25:11+00:00",
-      "last_seen": "2026-11-01T04:25:11+00:00",
+      "last_seen": "2026-11-01T04:27:26+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2224,12 +2224,12 @@
         "source": "description"
       },
       "us": true,
-      "remote": "unknown",
-      "remote_confidence": "none",
+      "remote": "remote",
+      "remote_confidence": "medium",
       "company": "Housecall Pro",
       "key": "greenhouse:housecall:6196665004",
       "first_seen": "2026-11-01T04:25:11+00:00",
-      "last_seen": "2026-11-01T04:25:11+00:00",
+      "last_seen": "2026-11-01T04:27:26+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2250,12 +2250,12 @@
         "source": "description"
       },
       "us": true,
-      "remote": "unknown",
-      "remote_confidence": "none",
+      "remote": "remote",
+      "remote_confidence": "medium",
       "company": "Housecall Pro",
       "key": "greenhouse:housecall:6196648004",
       "first_seen": "2026-11-01T04:25:11+00:00",
-      "last_seen": "2026-11-01T04:25:11+00:00",
+      "last_seen": "2026-11-01T04:27:26+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2547,12 +2547,12 @@
         "source": "description"
       },
       "us": true,
-      "remote": "unknown",
-      "remote_confidence": "none",
+      "remote": "remote",
+      "remote_confidence": "medium",
       "company": "Housecall Pro",
       "key": "greenhouse:housecall:6190537004",
       "first_seen": "2026-11-01T04:25:11+00:00",
-      "last_seen": "2026-11-01T04:25:11+00:00",
+      "last_seen": "2026-11-01T04:27:26+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2568,12 +2568,12 @@
       "url": "https://www.housecallpro.com/careers/open-positions/?gh_jid=6187388004",
       "salary": null,
       "us": true,
-      "remote": "unknown",
-      "remote_confidence": "none",
+      "remote": "remote",
+      "remote_confidence": "medium",
       "company": "Housecall Pro",
       "key": "greenhouse:housecall:6187388004",
       "first_seen": "2026-11-01T04:25:11+00:00",
-      "last_seen": "2026-11-01T04:25:11+00:00",
+      "last_seen": "2026-11-01T04:27:26+00:00",
       "status": "open",
       "closed_at": null
     },
