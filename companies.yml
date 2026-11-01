@@ -130,3 +130,8 @@
   ats: ashby
   board: angi
   url: https://www.angi.com/careers/jobs
+
+- name: Care.com
+  ats: unknown
+  board: care
+  url: https://www.care.com/vis/careers/department/caregiver
