@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-01T05:23:03.543Z",
+  "updated_at": "2026-11-01T05:27:27.962Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -383,11 +383,12 @@
       "Experian"
     ],
     "out": [
+      "Taskrabbit",
       "Serve Robotics",
       "EVgo",
       "Nextdoor",
       "Housecall Pro"
     ],
-    "at": "2026-11-01T05:23:02.039Z"
+    "at": "2026-11-01T05:27:26.457Z"
   }
 }
