@@ -543,7 +543,8 @@ def fetch_workday(company):
                                     for f in ((first_page or {}).get("facets") or [])],
                          "first_detail": first_detail, "kept": len(out), "scanned": len(postings),
                          "orgs_of_title_matches": orgs, "total_reported": (first_page or {}).get("total"), "pages": pages[:12],
-                         "kept_rows": [{k: v for k, v in r.items() if k != "_content"} | {"_content_head": r["_content"][:500]} for r in out]})
+                         "kept_rows": [{k: v for k, v in r.items() if k != "_content"} | {"_content_head": r["_content"][:500]} for r in out],
+                         "pay_snippets": [[r["_content"][max(0, m.start() - 120): m.end() + 60] for m in list(re.finditer(r"USD|\$\s?\d", r["_content"]))[:3]] for r in out[:6]]})
     return out
 
 
