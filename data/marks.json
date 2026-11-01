@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-01T04:34:35.246Z",
+  "updated_at": "2026-11-01T04:34:36.963Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -359,6 +359,12 @@
       "status": "applied",
       "at": "2026-11-01T04:34:33.742Z",
       "title": "VP, Product ",
+      "company": "Serve Robotics"
+    },
+    "ashby:serverobotics:2cc4efc4-d08f-4019-a474-71d06c62e72e": {
+      "status": "archived",
+      "at": "2026-11-01T04:34:35.459Z",
+      "title": "Director of Product , Data Flywheel",
       "company": "Serve Robotics"
     }
   },
