@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T04:08:28+00:00",
+  "generated_at": "2026-11-01T04:24:29+00:00",
   "criteria": {
     "title_keywords": [
       "product"
@@ -156,6 +156,24 @@
       "error": null,
       "total_jobs": 106,
       "matched": 2
+    },
+    {
+      "name": "AMN Healthcare",
+      "ats": "workday",
+      "board": "amn.wd1/AMN_Careers",
+      "url": "https://www.amncareers.com/careers/",
+      "fetched_at": "2026-11-01T04:24:29+00:00",
+      "status": "ok",
+      "error": null,
+      "total_jobs": 1,
+      "matched": 1
+    },
+    {
+      "name": "Housecall Pro",
+      "ats": "greenhouse",
+      "board": "housecall",
+      "url": "https://www.housecallpro.com/careers/",
+      "status": "never fetched"
     }
   ],
   "jobs": [
@@ -1792,6 +1810,32 @@
       "key": "greenhouse:toast:8226770",
       "first_seen": "2026-10-29T23:40:13+00:00",
       "last_seen": "2026-10-31T13:37:55+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "Req23778",
+      "req_id": "Req23778",
+      "title": "AI Product Manager",
+      "location": "Dallas, TX; Remote - TX, United States of America",
+      "location_detail": "",
+      "department": "Medefis, Inc.",
+      "published_at": "2026-09-29",
+      "updated_at": null,
+      "url": "https://amn.wd1.myworkdayjobs.com/AMN_Careers/job/Dallas-TX/AI-Product-Manager_Req23778",
+      "salary": {
+        "min": 113500,
+        "max": 134500,
+        "currency": "USD",
+        "source": "description"
+      },
+      "us": true,
+      "remote": "remote",
+      "remote_confidence": "high",
+      "company": "AMN Healthcare",
+      "key": "workday:amn.wd1/AMN_Careers:Req23778",
+      "first_seen": "2026-11-01T04:24:29+00:00",
+      "last_seen": "2026-11-01T04:24:29+00:00",
       "status": "open",
       "closed_at": null
     },

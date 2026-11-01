@@ -1,0 +1,214 @@
+{
+ "first_page_keys": [
+  "total",
+  "jobPostings",
+  "facets",
+  "userAuthenticated"
+ ],
+ "first_postings": [
+  {
+   "title": "AI Product Manager",
+   "externalPath": "/job/Dallas-TX/AI-Product-Manager_Req23778",
+   "locationsText": "2 Locations",
+   "postedOn": "Posted 30+ Days Ago",
+   "bulletFields": [
+    "IT Products & Solutions"
+   ]
+  },
+  {
+   "title": "Privacy AI Counsel",
+   "externalPath": "/job/Dallas-TX/Privacy-AI-Counsel_Req23989",
+   "locationsText": "Dallas, TX",
+   "postedOn": "Posted 8 Days Ago",
+   "bulletFields": [
+    "Legal"
+   ]
+  },
+  {
+   "title": "Solution Architect",
+   "externalPath": "/job/Dallas-TX/Software-Architect-I_Req23907",
+   "locationsText": "2 Locations",
+   "postedOn": "Posted 11 Days Ago",
+   "bulletFields": [
+    "IT Architecture"
+   ]
+  }
+ ],
+ "facets": [
+  [
+   "jobFamily",
+   [
+    [
+     "Staffing & Recruitment – Nursing & Allied",
+     "343d18602a031000cd0098a4e0db0000"
+    ],
+    [
+     "Staffing & Recruitment – Physician & Leadership",
+     "343d18602a031000cd009e0d68790000"
+    ],
+    [
+     "Direct Sales",
+     "343d18602a031000cd00672355c20000"
+    ],
+    [
+     "Staffing Support",
+     "6ad89def45e81001ff7cbc9160000000"
+    ],
+    [
+     "Legal",
+     "343d18602a031000cd002b82ba910000"
+    ],
+    [
+     "Lead Generation",
+     "6ad89def45e81001ff9776df505c0000"
+    ],
+    [
+     "Sales Program Management",
+     "6ad89def45e81001ff9012ac9b040000"
+    ],
+    [
+     "Proposal & Contract Solutions",
+     "6ad89def45e81001ff80059b292f0000"
+    ],
+    [
+     "Staffing & Recruitment – RPO",
+     "343d18602a031000cd00a4adc5600000"
+    ],
+    [
+     "Staffing & Recruitment – International",
+     "343d18602a031000cd008b62566f0000"
+    ],
+    [
+     "Risk Management",
+     "343d18602a031000cd00318922960000"
+    ],
+    [
+     "IT Products & Solutions",
+     "343d18602a031000cd0007fad0990000"
+    ],
+    [
+     "IT Architecture",
+     "343d18602a031000ccfffbecbc9e0000"
+    ],
+    [
+     "Administration",
+     "343d18602a031000ccff8053a92f0000"
+    ],
+    [
+     "Account Management – Nursing & Allied",
+     "343d18602a031000ccfec4be7ef30000"
+    ]
+   ]
+  ],
+  [
+   "workerSubType",
+   [
+    [
+     "Regular",
+     "af84377355254139a9c550cc05eed9b9"
+    ],
+    [
+     "AMN Temp (Fixed Term)",
+     "e18dd34dcb7a455080c89ca4e1dbf7ac"
+    ]
+   ]
+  ],
+  [
+   "timeType",
+   [
+    [
+     "Full time",
+     "948961007b93459ab4a300bb7ec0df47"
+    ]
+   ]
+  ],
+  [
+   "locationMainGroup",
+   [
+    [
+     "Locations",
+     null
+    ]
+   ]
+  ]
+ ],
+ "first_detail": {
+  "jobPostingInfo": {
+   "id": "d9af5129e7671001a9c259504fb90000",
+   "title": "AI Product Manager",
+   "jobDescription": "<h1><b><u><span class=\"emphasis\">Job Description</span></u></b></h1><p style=\"text-align:inherit\"></p><p style=\"text-align:inherit\"></p><h2></h2><p><b>Welcome to AMN Healthcare — Where Talent Meets Purpose</b></p><p>Ever wondered what it takes to build one of the largest and most respected healthcare staffing and total talent solutions companies? It takes trailblazers, innovators, and exceptional people like you.</p><p>At AMN Healthcare, we don’t just offer jobs — we build careers that make a difference.</p><br /><p><b>Why AMN Healthcare? Because Excellence Is Our Standard:</b></p><ul><li>Named to <i>Becker’s Top 150 Places to Work in Healthcare</i> — three years running.</li><li>Consistently ranked among <i>SIA’s Largest Staffing Firms in America</i>.</li><li>Honored with <i>Modern Healthcare’s Innovators Award</i> for driving change through innovation.</li><li>Proud holder of <i>The Joint Commission’s Gold Seal of Approval for Staffing Companies</i> since 2006.</li></ul><p><b>Job Summary</b></p><br /><p>AI Product Manager</p><p><i>Location: Remote or Hybrid (Dallas)</i><br /> </p><p><b>About Shiftwise</b><br />Shiftwise, a leader in healthcare workforce management, helps hospitals and health systems streamline contingent staffing through our Vendor Management System (VMS). Our mission is to simplify workforce complexity so providers can focus on what matters most: delivering exceptional care.<br /> </p><p>We’re now looking for an <b>AI Product Manager</b> to lead the strategy, definition, and execution of AI-powered features that transform how healthcare organizations manage their contingent workforce. This is a unique role for someone who both uses AI in their day-to-day product craft and can shape how AI is integrated into a large-scale SaaS platform.<br /> </p><p><b>What you will do</b></p><ul><li><b>Own the AI product strategy</b>: Identify opportunities where AI/ML can create value for our customers, from workforce forecasting to smarter workflows.</li><li><b>Shape features end-to-end</b>: Translate AI concepts into intuitive user experiences and partner with design and engineering to deliver high-impact functionality.</li><li><b>Be an AI practitioner</b>: Actively use AI tools (e.g. ChatGPT, Copilot, Claude, Bard, Jasper, etc.) in your daily workflow for research, writing, and decision support.</li><li><b>Collaborate cross-functionally</b>: Work with data science, engineering, customer success, and clinical experts to define requirements, validate use cases, and ensure ethical AI practices.</li><li><b>Customer obsession</b>: Conduct discovery with healthcare administrators, staffing agencies, and clinicians to uncover problems that AI can solve.</li><li><b>Data-driven product management</b>: Define success metrics, run experiments, and measure adoption and impact of AI features.</li><li><b>Educate &amp; evangelize</b>: Help internal teams and customers understand how AI is shaping Shiftwise’s roadmap and product vision.</li></ul><br /><p><b>Qualifications</b></p><ul><li>4–7&#43; years in product management (SaaS or enterprise preferred), with at least 1 year building or managing AI-powered features.</li><li>Hands-on experience using AI/ML in daily product workflows (prompt engineering, prototyping with LLMs, data analysis, etc.).</li><li>Customer-first mindset with proven ability to gather insights, run discovery, and translate needs into solutions.</li><li>Strong communication skills</li><li>Experience in healthcare or workforce management is a plus but not required.</li><li>Demonstrate the ability to effectively use technology, automation, and AI-enabled tools to improve productivity, support decision-making, and enhance business outcomes while adhering to company policies and responsible AI practices.</li></ul><br /><p><b>Job Responsibilities</b></p><br /><ul><li>Evaluate market trends and competitors to find opportunities to improve or develop a product; including settling the timeline to take action and the specific features that the product should possess.</li><li>This individual delivers the operating plan, the achievement of growth objectives, including market share, revenue, profit, and return on investment for all the channels/categories of business and key customers.</li><li>Develop product briefs nd define achievable acceptance criteria.</li><li>Stay updated on the progress of work and resolve any issues related to details or information during sprints.</li><li>Stay up to date with the latest industry trends and practices.</li></ul><br /><br /><p><b>Work Environment / Physical Requirements</b></p><br /><ul><li>Work is performed in an office/home office environment.</li><li>Team Members must have the ability to operate standard office equipment and keyboards.</li></ul><br /><p>AMN Healthcare will provide reasonable accommodations to qualified individuals with disabilities to enable them to perform the essential functions of the job.</p><br /><br /><p><b>Our Core Values</b></p><br /><br /><p>● Respect ● Passion ● Continuous Improvement ● Trust ● Customer Focus ● Innovation</p><br /><p>At AMN we embrace the ways we are similar and different; respecting all voices and ensuring everyone has the opportunity to contribute to our collective success. We acknowledge our shared responsibility to foster a welcoming environment where everyone feels recognized and valued. We cast a wide net to recruit and retain competitive talent and build healthcare workforces supportive of the communities we serve. We believe in the power of compassion and collaboration to build healthy communities where access to quality care is available to all. Equal opportunity employer as to all protected groups, including protected veterans and individuals with disabilities.</p><br /><br /><br /><p>At AMN we recognize that in-person connections have value and promote collaboration. You will be expected to come into an AMN Healthcare office at a frequency dependent on the work arrangement for your role.</p><br /><br /><p style=\"text-align:inherit\"></p><p style=\"text-align:inherit\"></p><h2><b>Pay Rate</b></h2>$113,500 - $134,500 Salary<p style=\"text-align:left\"><span>Final pay rate is dependent on experience, training, education, and location.</span></p>",
+   "location": "Dallas, TX",
+   "additionalLocations": [
+    "Remote - TX"
+   ],
+   "postedOn": "Posted 30+ Days Ago",
+   "startDate": "2026-09-29",
+   "timeType": "Full time",
+   "jobReqId": "Req23778",
+   "jobPostingId": "AI-Product-Manager_Req23778",
+   "jobPostingSiteId": "AMN_Careers",
+   "country": {
+    "descriptor": "United States of America",
+    "id": "bc33aa3152ec42d4995f4791a106ed09"
+   },
+   "canApply": true,
+   "posted": true,
+   "includeResumeParsing": true,
+   "jobRequisitionLocation": {
+    "descriptor": "Dallas, TX",
+    "country": {
+     "descriptor": "United States of America",
+     "id": "bc33aa3152ec42d4995f4791a106ed09",
+     "alpha2Code": "US"
+    }
+   },
+   "externalUrl": "https://amn.wd1.myworkdayjobs.com/AMN_Careers/job/Dallas-TX/AI-Product-Manager_Req23778",
+   "questionnaireId": "7e88383dc15910010601d4d4e7580000"
+  },
+  "hiringOrganization": {
+   "name": "Medefis, Inc.",
+   "url": ""
+  },
+  "similarJobs": [],
+  "userAuthenticated": false
+ },
+ "kept": 1,
+ "scanned": 24,
+ "orgs_of_title_matches": {
+  "Medefis, Inc.": 1
+ },
+ "total_reported": 24,
+ "pages": [
+  [
+   0,
+   20,
+   24
+  ],
+  [
+   20,
+   4,
+   0
+  ]
+ ],
+ "kept_rows": [
+  {
+   "job_id": "Req23778",
+   "req_id": "Req23778",
+   "title": "AI Product Manager",
+   "location": "Dallas, TX; Remote - TX, United States of America",
+   "location_detail": "",
+   "department": "Medefis, Inc.",
+   "published_at": "2026-09-29",
+   "updated_at": null,
+   "url": "https://amn.wd1.myworkdayjobs.com/AMN_Careers/job/Dallas-TX/AI-Product-Manager_Req23778",
+   "salary": {
+    "min": 113500,
+    "max": 134500,
+    "currency": "USD",
+    "source": "description"
+   },
+   "_meta_text": "remoteType:  timeType: Full time postedOn: Posted 30+ Days Ago ",
+   "_content_head": " Job Description \n \n \n \n Welcome to AMN Healthcare — Where Talent Meets Purpose \n Ever wondered what it takes to build one of the largest and most respected healthcare staffing and total talent solutions companies? It takes trailblazers, innovators, and exceptional people like you.\n At AMN Healthcare, we don’t just offer jobs — we build careers that make a difference.\n\n Why AMN Healthcare? Because Excellence Is Our Standard: \n Named to Becker’s Top 150 Places to Work in Healthcare — three years "
+  }
+ ]
+}
