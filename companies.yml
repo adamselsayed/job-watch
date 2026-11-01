@@ -150,3 +150,8 @@
   ats: workday
   board: chghealthcare.wd1/External
   url: https://chghealthcare.wd1.myworkdayjobs.com/External
+
+- name: Jackson Healthcare
+  ats: workday
+  board: jacksonhealthcare.wd1/careers-jacksonhealthcare
+  url: https://jacksonhealthcare.com/careers/search-apply/
