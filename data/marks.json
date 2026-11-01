@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-01T04:28:25.214Z",
+  "updated_at": "2026-11-01T04:33:50.283Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -365,8 +365,9 @@
       "Experian"
     ],
     "out": [
+      "Serve Robotics",
       "Housecall Pro"
     ],
-    "at": "2026-11-01T04:28:23.707Z"
+    "at": "2026-11-01T04:33:48.778Z"
   }
 }
