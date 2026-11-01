@@ -162,6 +162,9 @@ def classify_remote(location_text, title, metadata_text="", content_text=""):
     if re.search(r"\b(on-?site|in[- ]office)\b", loc):
         return "onsite", "high"
     meta = metadata_text.lower()
+    tag = re.search(r"#li-(remote|hybrid|onsite)", content_text.lower())      # LinkedIn workplace tags are reliable
+    if tag:
+        return tag.group(1), "medium"
     if "hybrid" in meta:
         return "hybrid", "medium"
     if re.search(r"\bremote\b", meta):
