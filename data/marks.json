@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-01T05:28:00.173Z",
+  "updated_at": "2026-11-01T05:34:18.582Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -385,11 +385,13 @@
     "out": [
       "Angi",
       "Serve Robotics",
+      "Yelp",
+      "Care.com",
       "Taskrabbit",
       "EVgo",
       "Nextdoor",
       "Housecall Pro"
     ],
-    "at": "2026-11-01T05:27:58.670Z"
+    "at": "2026-11-01T05:34:17.074Z"
   }
 }
