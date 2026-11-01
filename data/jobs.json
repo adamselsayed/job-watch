@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T05:44:35+00:00",
+  "generated_at": "2026-11-01T13:38:56+00:00",
   "criteria": {
     "title_keywords": [
       "product"
@@ -17,10 +17,10 @@
       "ats": "greenhouse",
       "board": "samsara",
       "url": "https://www.samsara.com/company/careers/roles",
-      "fetched_at": "2026-10-31T13:37:55+00:00",
+      "fetched_at": "2026-11-01T13:38:56+00:00",
       "status": "ok",
       "error": null,
-      "total_jobs": 326,
+      "total_jobs": 338,
       "matched": 18
     },
     {
@@ -28,10 +28,10 @@
       "ats": "greenhouse",
       "board": "gomotive",
       "url": "https://gomotive.com/company/careers/jobs/",
-      "fetched_at": "2026-10-31T13:37:55+00:00",
+      "fetched_at": "2026-11-01T13:38:56+00:00",
       "status": "ok",
       "error": null,
-      "total_jobs": 167,
+      "total_jobs": 166,
       "matched": 3
     },
     {
@@ -39,10 +39,10 @@
       "ats": "greenhouse",
       "board": "toast",
       "url": "https://careers.toasttab.com/jobs/search",
-      "fetched_at": "2026-10-31T13:37:55+00:00",
+      "fetched_at": "2026-11-01T13:38:56+00:00",
       "status": "ok",
       "error": null,
-      "total_jobs": 328,
+      "total_jobs": 329,
       "matched": 4
     },
     {
@@ -50,7 +50,7 @@
       "ats": "smartrecruiters",
       "board": "Experian",
       "url": "https://jobs.experian.com/jobs",
-      "fetched_at": "2026-10-31T13:37:55+00:00",
+      "fetched_at": "2026-11-01T13:38:56+00:00",
       "status": "ok",
       "error": null,
       "total_jobs": 399,
@@ -61,10 +61,10 @@
       "ats": "greenhouse",
       "board": "komodohealth",
       "url": "https://job-boards.greenhouse.io/komodohealth",
-      "fetched_at": "2026-10-31T13:37:55+00:00",
+      "fetched_at": "2026-11-01T13:38:56+00:00",
       "status": "ok",
       "error": null,
-      "total_jobs": 23,
+      "total_jobs": 22,
       "matched": 2
     },
     {
@@ -72,7 +72,7 @@
       "ats": "smartrecruiters",
       "board": "ServiceNow",
       "url": "https://careers.servicenow.com/",
-      "fetched_at": "2026-10-31T13:37:55+00:00",
+      "fetched_at": "2026-11-01T13:38:56+00:00",
       "status": "ok",
       "error": null,
       "total_jobs": 731,
@@ -83,7 +83,7 @@
       "ats": "ashby",
       "board": "thumbtack",
       "url": "https://careers.thumbtack.com/jobs",
-      "fetched_at": "2026-10-31T13:37:55+00:00",
+      "fetched_at": "2026-11-01T13:38:56+00:00",
       "status": "ok",
       "error": null,
       "total_jobs": 41,
@@ -94,7 +94,7 @@
       "ats": "greenhouse",
       "board": "chargepoint",
       "url": "https://www.chargepoint.com/about/opportunities",
-      "fetched_at": "2026-10-31T13:37:55+00:00",
+      "fetched_at": "2026-11-01T13:38:56+00:00",
       "status": "ok",
       "error": null,
       "total_jobs": 40,
@@ -105,7 +105,7 @@
       "ats": "greenhouse",
       "board": "life360",
       "url": "https://www.life360.com/open-positions",
-      "fetched_at": "2026-10-31T13:37:55+00:00",
+      "fetched_at": "2026-11-01T13:38:56+00:00",
       "status": "ok",
       "error": null,
       "total_jobs": 25,
@@ -118,7 +118,7 @@
       "scan": "all",
       "facets": "jobFamilyGroup=f02270ea97930199e3b74ff29e506c3d,f02270ea9793013aaaf32af29e505e3d,f02270ea979301ae45c015f29e50563d",
       "url": "https://www.hitachivantara.com/en-us/company/careers/job-search",
-      "fetched_at": "2026-10-31T13:37:55+00:00",
+      "fetched_at": "2026-11-01T13:38:56+00:00",
       "status": "ok",
       "error": null,
       "total_jobs": 20,
@@ -129,7 +129,7 @@
       "ats": "greenhouse",
       "board": "smartsheet",
       "url": "https://www.smartsheet.com/careers-list",
-      "fetched_at": "2026-10-31T13:37:55+00:00",
+      "fetched_at": "2026-11-01T13:38:56+00:00",
       "status": "ok",
       "error": null,
       "total_jobs": 80,
@@ -140,7 +140,7 @@
       "ats": "phenom",
       "board": "vgcareers.virgingalactic.com/global/en",
       "url": "https://vgcareers.virgingalactic.com/global/en/",
-      "fetched_at": "2026-10-31T13:37:55+00:00",
+      "fetched_at": "2026-11-01T13:38:56+00:00",
       "status": "ok",
       "error": null,
       "total_jobs": 80,
@@ -151,7 +151,7 @@
       "ats": "ashby",
       "board": "cognition",
       "url": "https://cognition.com/careers",
-      "fetched_at": "2026-11-01T04:08:28+00:00",
+      "fetched_at": "2026-11-01T13:38:56+00:00",
       "status": "ok",
       "error": null,
       "total_jobs": 106,
@@ -162,7 +162,7 @@
       "ats": "workday",
       "board": "amn.wd1/AMN_Careers",
       "url": "https://www.amncareers.com/careers/",
-      "fetched_at": "2026-11-01T04:24:29+00:00",
+      "fetched_at": "2026-11-01T13:38:56+00:00",
       "status": "ok",
       "error": null,
       "total_jobs": 1,
@@ -173,7 +173,7 @@
       "ats": "greenhouse",
       "board": "housecall",
       "url": "https://www.housecallpro.com/careers/",
-      "fetched_at": "2026-11-01T04:27:26+00:00",
+      "fetched_at": "2026-11-01T13:38:56+00:00",
       "status": "ok",
       "error": null,
       "total_jobs": 54,
@@ -184,7 +184,7 @@
       "ats": "ashby",
       "board": "serverobotics",
       "url": "https://www.serverobotics.com/careers",
-      "fetched_at": "2026-11-01T04:33:03+00:00",
+      "fetched_at": "2026-11-01T13:38:56+00:00",
       "status": "ok",
       "error": null,
       "total_jobs": 27,
@@ -195,7 +195,7 @@
       "ats": "workday",
       "board": "nvidia.wd5/NVIDIAExternalCareerSite",
       "url": "https://jobs.nvidia.com/careers",
-      "fetched_at": "2026-11-01T04:54:59+00:00",
+      "fetched_at": "2026-11-01T13:38:56+00:00",
       "status": "ok",
       "error": null,
       "total_jobs": 138,
@@ -207,7 +207,7 @@
       "board": "evgo-careers",
       "country": "US",
       "url": "https://evgo.com/company/careers/",
-      "fetched_at": "2026-11-01T05:14:21+00:00",
+      "fetched_at": "2026-11-01T13:38:56+00:00",
       "status": "ok",
       "error": null,
       "total_jobs": 11,
@@ -218,7 +218,7 @@
       "ats": "greenhouse",
       "board": "nextdoor",
       "url": "https://about.nextdoor.com/careers-list/",
-      "fetched_at": "2026-11-01T05:22:03+00:00",
+      "fetched_at": "2026-11-01T13:38:56+00:00",
       "status": "ok",
       "error": null,
       "total_jobs": 19,
@@ -229,7 +229,7 @@
       "ats": "greenhouse",
       "board": "taskrabbit",
       "url": "https://www.taskrabbit.com/careers",
-      "fetched_at": "2026-11-01T05:23:21+00:00",
+      "fetched_at": "2026-11-01T13:38:56+00:00",
       "status": "ok",
       "error": null,
       "total_jobs": 20,
@@ -240,7 +240,7 @@
       "ats": "ashby",
       "board": "angi",
       "url": "https://www.angi.com/careers/jobs",
-      "fetched_at": "2026-11-01T05:27:02+00:00",
+      "fetched_at": "2026-11-01T13:38:56+00:00",
       "status": "ok",
       "error": null,
       "total_jobs": 19,
@@ -251,7 +251,7 @@
       "ats": "smartrecruiters",
       "board": "Carecom1",
       "url": "https://www.care.com/careers",
-      "fetched_at": "2026-11-01T05:29:39+00:00",
+      "fetched_at": "2026-11-01T13:38:56+00:00",
       "status": "ok",
       "error": null,
       "total_jobs": 58,
@@ -262,7 +262,7 @@
       "ats": "phenom",
       "board": "www.yelp.careers/us/en",
       "url": "https://www.yelp.careers/us/en/search-results",
-      "fetched_at": "2026-11-01T05:32:04+00:00",
+      "fetched_at": "2026-11-01T13:38:56+00:00",
       "status": "ok",
       "error": null,
       "total_jobs": 25,
@@ -273,7 +273,7 @@
       "ats": "greenhouse",
       "board": "ayahealthcare",
       "url": "https://www.ayahealthcare.com/corporate-careers/jobs/",
-      "fetched_at": "2026-11-01T05:42:36+00:00",
+      "fetched_at": "2026-11-01T13:38:56+00:00",
       "status": "ok",
       "error": null,
       "total_jobs": 45,
@@ -284,7 +284,7 @@
       "ats": "workday",
       "board": "chghealthcare.wd1/External",
       "url": "https://chghealthcare.wd1.myworkdayjobs.com/External",
-      "fetched_at": "2026-11-01T05:43:31+00:00",
+      "fetched_at": "2026-11-01T13:38:56+00:00",
       "status": "ok",
       "error": null,
       "total_jobs": 2,
@@ -295,7 +295,7 @@
       "ats": "workday",
       "board": "jacksonhealthcare.wd1/careers-jacksonhealthcare",
       "url": "https://jacksonhealthcare.com/careers/search-apply/",
-      "fetched_at": "2026-11-01T05:44:35+00:00",
+      "fetched_at": "2026-11-01T13:38:56+00:00",
       "status": "ok",
       "error": null,
       "total_jobs": 1,
@@ -325,7 +325,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000158742369",
       "first_seen": "2026-10-30T13:50:09+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -351,7 +351,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2017653",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -377,7 +377,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2021525",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -403,7 +403,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2025360",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -429,7 +429,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2025501",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -455,7 +455,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2027434",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -481,7 +481,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2027699",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -507,7 +507,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2014812",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -533,7 +533,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2017024",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -559,7 +559,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2019253",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -585,7 +585,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2019808",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -611,7 +611,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2020401",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -637,7 +637,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2020197",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -663,7 +663,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2022381",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -689,7 +689,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2020823",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -715,7 +715,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2019271",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -741,7 +741,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2026207",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -767,7 +767,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2026487",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -793,7 +793,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2027072",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -819,7 +819,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2028509",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -845,7 +845,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2028336",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -871,7 +871,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2012430",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -897,7 +897,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2015801",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -923,7 +923,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2016909",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -949,7 +949,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2019079",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -975,7 +975,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2019756",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1001,7 +1001,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2019072",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1027,7 +1027,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2020111",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1053,7 +1053,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2022366",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1079,7 +1079,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2023455",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1105,7 +1105,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2021325",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1131,7 +1131,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2024923",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1157,7 +1157,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2025119",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1183,7 +1183,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2025321",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1209,7 +1209,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2023483",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1235,7 +1235,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2026358",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1261,7 +1261,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2027080",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1287,7 +1287,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2027838",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1313,7 +1313,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2028160",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1339,7 +1339,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2022730",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1360,7 +1360,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2023788",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1386,7 +1386,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2008001",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1412,7 +1412,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2010907",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1438,7 +1438,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2011865",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1464,7 +1464,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2017285",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1490,7 +1490,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2016992",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1516,7 +1516,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2017274",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1542,7 +1542,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2018760",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1568,7 +1568,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2020922",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1594,7 +1594,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2021455",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1620,7 +1620,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2022724",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1646,7 +1646,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2022876",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1672,7 +1672,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2023620",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1698,7 +1698,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2023471",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1724,7 +1724,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2024199",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1750,7 +1750,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2024647",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1776,7 +1776,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2026204",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1802,7 +1802,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2026946",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1828,7 +1828,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2025794",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1854,7 +1854,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2027685",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1880,7 +1880,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2027865",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1906,7 +1906,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2027361",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1932,7 +1932,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR1996264",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1958,7 +1958,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2001089",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1984,7 +1984,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2014827",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2010,7 +2010,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2016407",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2036,7 +2036,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2013910",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2062,7 +2062,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2018422",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2088,7 +2088,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2020110",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2114,7 +2114,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2023311",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2140,7 +2140,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2023442",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2166,7 +2166,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2022611",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2192,7 +2192,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2022860",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2218,7 +2218,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2021690",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2244,7 +2244,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2024902",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2270,7 +2270,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2025433",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2296,7 +2296,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2026141",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2322,7 +2322,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2027360",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2348,7 +2348,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2016350",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2374,7 +2374,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2021002",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2400,7 +2400,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2016860",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2426,7 +2426,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2019242",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2452,7 +2452,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2023964",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2478,7 +2478,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2023409",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2499,7 +2499,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2025905",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2525,7 +2525,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2027355",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2546,7 +2546,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2029162",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2572,7 +2572,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2019817",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2593,7 +2593,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2026707",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2614,7 +2614,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2025670",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2635,7 +2635,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2026962",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-01T04:54:59+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2656,7 +2656,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000158615099",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2677,7 +2677,7 @@
       "company": "Experian",
       "key": "smartrecruiters:Experian:744000158611740",
       "first_seen": "2026-10-30T05:15:36+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2698,7 +2698,7 @@
       "company": "Experian",
       "key": "smartrecruiters:Experian:744000158587389",
       "first_seen": "2026-10-30T05:15:36+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2724,7 +2724,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000158563480",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2745,7 +2745,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000158402969",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2771,7 +2771,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000158364690",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2797,7 +2797,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000158360807",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2823,7 +2823,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000158362000",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2849,7 +2849,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000158362202",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2875,7 +2875,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000158162749",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2901,7 +2901,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000158162444",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2927,7 +2927,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000158155950",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2948,7 +2948,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000158091470",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2974,7 +2974,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000158070869",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3000,7 +3000,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:8325411",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3026,7 +3026,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:8325410",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3052,7 +3052,7 @@
       "company": "Motive",
       "key": "greenhouse:gomotive:8913113002",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3078,7 +3078,7 @@
       "company": "Taskrabbit",
       "key": "greenhouse:taskrabbit:8301199",
       "first_seen": "2026-11-01T05:23:21+00:00",
-      "last_seen": "2026-11-01T05:23:21+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3104,7 +3104,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000157550109",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3130,7 +3130,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000157549524",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3156,7 +3156,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:8315136",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3182,7 +3182,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:8315122",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3208,7 +3208,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000156856599",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3234,7 +3234,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000156856489",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3260,7 +3260,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000156856309",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3286,7 +3286,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000156842184",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3312,7 +3312,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000156842094",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3338,7 +3338,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000156841854",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3364,7 +3364,7 @@
       "company": "Toast",
       "key": "greenhouse:toast:8245664",
       "first_seen": "2026-10-29T23:40:13+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3390,7 +3390,7 @@
       "company": "CHG Healthcare",
       "key": "workday:chghealthcare.wd1/External:JR104370",
       "first_seen": "2026-11-01T05:43:31+00:00",
-      "last_seen": "2026-11-01T05:43:31+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3416,7 +3416,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:8300580",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3442,7 +3442,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000156657507",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3468,7 +3468,7 @@
       "company": "ChargePoint",
       "key": "greenhouse:chargepoint:8890370002",
       "first_seen": "2026-10-30T06:17:26+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3494,7 +3494,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000156543661",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3515,7 +3515,7 @@
       "company": "Hitachi",
       "key": "workday:hitachi.wd1/hitachi:R0141167",
       "first_seen": "2026-10-30T07:05:09+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3541,7 +3541,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000156431640",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3567,7 +3567,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000156426199",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3588,7 +3588,7 @@
       "company": "CHG Healthcare",
       "key": "workday:chghealthcare.wd1/External:JR104551",
       "first_seen": "2026-11-01T05:43:31+00:00",
-      "last_seen": "2026-11-01T05:43:31+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3614,7 +3614,7 @@
       "company": "Life360",
       "key": "greenhouse:life360:8895619002",
       "first_seen": "2026-10-30T06:39:37+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3640,7 +3640,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000155904829",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3666,7 +3666,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000155822569",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3692,7 +3692,7 @@
       "company": "Motive",
       "key": "greenhouse:gomotive:8797393002",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3718,7 +3718,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:8233947",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3744,7 +3744,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000155472964",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3770,7 +3770,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000155345180",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3796,7 +3796,7 @@
       "company": "Motive",
       "key": "greenhouse:gomotive:8880889002",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3822,7 +3822,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000155296769",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3843,7 +3843,7 @@
       "company": "Hitachi",
       "key": "workday:hitachi.wd1/hitachi:R0146458",
       "first_seen": "2026-10-30T07:05:09+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3869,7 +3869,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:8256425",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3895,7 +3895,7 @@
       "company": "Toast",
       "key": "greenhouse:toast:8259263",
       "first_seen": "2026-10-29T23:40:13+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3921,7 +3921,7 @@
       "company": "Housecall Pro",
       "key": "greenhouse:housecall:6221432004",
       "first_seen": "2026-11-01T04:25:11+00:00",
-      "last_seen": "2026-11-01T04:27:26+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3947,7 +3947,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000154541440",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3973,7 +3973,7 @@
       "company": "Care.com",
       "key": "smartrecruiters:Carecom1:3743990015994966",
       "first_seen": "2026-11-01T05:29:39+00:00",
-      "last_seen": "2026-11-01T05:29:39+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3999,7 +3999,7 @@
       "company": "Smartsheet",
       "key": "greenhouse:smartsheet:8264858",
       "first_seen": "2026-10-30T06:52:21+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4025,7 +4025,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000154473649",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4051,7 +4051,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000154471344",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4077,7 +4077,7 @@
       "company": "Aya Healthcare",
       "key": "greenhouse:ayahealthcare:8262242",
       "first_seen": "2026-11-01T05:42:36+00:00",
-      "last_seen": "2026-11-01T05:42:36+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4098,7 +4098,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000154095380",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4119,7 +4119,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000154038601",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4145,7 +4145,7 @@
       "company": "Nextdoor",
       "key": "greenhouse:nextdoor:8259381",
       "first_seen": "2026-11-01T05:22:03+00:00",
-      "last_seen": "2026-11-01T05:22:03+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4166,7 +4166,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000153739678",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4192,7 +4192,7 @@
       "company": "Care.com",
       "key": "smartrecruiters:Carecom1:3743990015902166",
       "first_seen": "2026-11-01T05:29:39+00:00",
-      "last_seen": "2026-11-01T05:29:39+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4213,7 +4213,7 @@
       "company": "Experian",
       "key": "smartrecruiters:Experian:744000153590289",
       "first_seen": "2026-10-30T05:15:36+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4239,7 +4239,7 @@
       "company": "Komodo Health",
       "key": "greenhouse:komodohealth:8868143002",
       "first_seen": "2026-10-30T05:15:36+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4265,7 +4265,7 @@
       "company": "Angi",
       "key": "ashby:angi:a43286ba-263b-49b0-b527-ca143238ec7e",
       "first_seen": "2026-11-01T05:27:02+00:00",
-      "last_seen": "2026-11-01T05:27:02+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4291,7 +4291,7 @@
       "company": "Life360",
       "key": "greenhouse:life360:8863976002",
       "first_seen": "2026-10-30T06:39:37+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4312,7 +4312,7 @@
       "company": "Virgin Galactic",
       "key": "phenom:vgcareers.virgingalactic.com/global/en:VGNVGEUS2255EXTERNALENGLOBAL",
       "first_seen": "2026-10-30T19:12:39+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4338,7 +4338,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000153034225",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4364,7 +4364,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000153020371",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4385,7 +4385,7 @@
       "company": "Experian",
       "key": "smartrecruiters:Experian:744000152989400",
       "first_seen": "2026-10-30T05:15:36+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4406,7 +4406,7 @@
       "company": "Experian",
       "key": "smartrecruiters:Experian:744000152972234",
       "first_seen": "2026-10-30T05:15:36+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4427,7 +4427,7 @@
       "company": "Virgin Galactic",
       "key": "phenom:vgcareers.virgingalactic.com/global/en:VGNVGEUS2247EXTERNALENGLOBAL",
       "first_seen": "2026-10-30T19:12:39+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4448,7 +4448,7 @@
       "company": "Virgin Galactic",
       "key": "phenom:vgcareers.virgingalactic.com/global/en:VGNVGEUS2213EXTERNALENGLOBAL",
       "first_seen": "2026-10-30T19:12:39+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4474,7 +4474,7 @@
       "company": "Care.com",
       "key": "smartrecruiters:Carecom1:3743990015782736",
       "first_seen": "2026-11-01T05:29:39+00:00",
-      "last_seen": "2026-11-01T05:29:39+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4500,7 +4500,7 @@
       "company": "Toast",
       "key": "greenhouse:toast:8226770",
       "first_seen": "2026-10-29T23:40:13+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4526,7 +4526,7 @@
       "company": "AMN Healthcare",
       "key": "workday:amn.wd1/AMN_Careers:Req23778",
       "first_seen": "2026-11-01T04:24:29+00:00",
-      "last_seen": "2026-11-01T04:24:29+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4552,7 +4552,7 @@
       "company": "Smartsheet",
       "key": "greenhouse:smartsheet:8233818",
       "first_seen": "2026-10-30T06:52:21+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4578,7 +4578,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000151887559",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4604,7 +4604,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000151877639",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4630,7 +4630,7 @@
       "company": "Housecall Pro",
       "key": "greenhouse:housecall:6206487004",
       "first_seen": "2026-11-01T04:25:11+00:00",
-      "last_seen": "2026-11-01T04:27:26+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4656,7 +4656,7 @@
       "company": "Housecall Pro",
       "key": "greenhouse:housecall:6205082004",
       "first_seen": "2026-11-01T04:25:11+00:00",
-      "last_seen": "2026-11-01T04:27:26+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4682,7 +4682,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000151391394",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4703,12 +4703,12 @@
         "source": "posting"
       },
       "us": true,
-      "remote": "hybrid",
-      "remote_confidence": "low",
+      "remote": "remote",
+      "remote_confidence": "medium",
       "company": "Smartsheet",
       "key": "greenhouse:smartsheet:8220352",
       "first_seen": "2026-10-30T06:52:21+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4734,7 +4734,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000150777598",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4760,7 +4760,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000150714090",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4786,7 +4786,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000150715459",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4812,7 +4812,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000150714661",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4838,7 +4838,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000150427265",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4864,7 +4864,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000150403065",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4890,7 +4890,7 @@
       "company": "Housecall Pro",
       "key": "greenhouse:housecall:6196665004",
       "first_seen": "2026-11-01T04:25:11+00:00",
-      "last_seen": "2026-11-01T04:27:26+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4916,7 +4916,7 @@
       "company": "Housecall Pro",
       "key": "greenhouse:housecall:6196648004",
       "first_seen": "2026-11-01T04:25:11+00:00",
-      "last_seen": "2026-11-01T04:27:26+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4942,7 +4942,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000150126949",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4968,7 +4968,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000150121538",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4994,7 +4994,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000150113995",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5015,7 +5015,7 @@
       "company": "Experian",
       "key": "smartrecruiters:Experian:744000149963169",
       "first_seen": "2026-10-30T05:15:36+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5041,7 +5041,7 @@
       "company": "ChargePoint",
       "key": "greenhouse:chargepoint:8807454002",
       "first_seen": "2026-10-30T06:17:26+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5067,7 +5067,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000149933604",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5088,7 +5088,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000149869184",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5109,7 +5109,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000149871496",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5135,7 +5135,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000149391050",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5161,7 +5161,7 @@
       "company": "Toast",
       "key": "greenhouse:toast:8180264",
       "first_seen": "2026-10-29T23:40:13+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5187,7 +5187,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000149362100",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5213,7 +5213,7 @@
       "company": "Serve Robotics",
       "key": "ashby:serverobotics:71f193a1-f287-4758-9f75-18e2cf5d45aa",
       "first_seen": "2026-11-01T04:33:03+00:00",
-      "last_seen": "2026-11-01T04:33:03+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5239,7 +5239,7 @@
       "company": "Housecall Pro",
       "key": "greenhouse:housecall:6190537004",
       "first_seen": "2026-11-01T04:25:11+00:00",
-      "last_seen": "2026-11-01T04:27:26+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5260,7 +5260,7 @@
       "company": "Housecall Pro",
       "key": "greenhouse:housecall:6187388004",
       "first_seen": "2026-11-01T04:25:11+00:00",
-      "last_seen": "2026-11-01T04:27:26+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5286,7 +5286,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:8179538",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5307,7 +5307,7 @@
       "company": "Thumbtack",
       "key": "ashby:thumbtack:323602c6-082f-4c92-953d-642eccb0ed7f",
       "first_seen": "2026-10-30T05:53:13+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5333,7 +5333,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:8177633",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5354,7 +5354,7 @@
       "company": "Hitachi",
       "key": "workday:hitachi.wd1/hitachi:R0140695",
       "first_seen": "2026-10-30T07:05:09+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5375,7 +5375,7 @@
       "company": "Hitachi",
       "key": "workday:hitachi.wd1/hitachi:R0120995",
       "first_seen": "2026-10-30T07:05:09+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5401,7 +5401,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000146539137",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5427,7 +5427,7 @@
       "company": "Life360",
       "key": "greenhouse:life360:8750960002",
       "first_seen": "2026-10-30T06:39:37+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5453,7 +5453,7 @@
       "company": "Nextdoor",
       "key": "greenhouse:nextdoor:8142001",
       "first_seen": "2026-11-01T05:22:03+00:00",
-      "last_seen": "2026-11-01T05:22:03+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5474,7 +5474,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000143156960",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5500,7 +5500,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:8112836",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5521,7 +5521,7 @@
       "company": "Thumbtack",
       "key": "ashby:thumbtack:a8c9ee4d-d5b9-4209-87b7-3e5c7dfa6222",
       "first_seen": "2026-10-30T05:53:13+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5542,7 +5542,7 @@
       "company": "Jackson Healthcare",
       "key": "workday:jacksonhealthcare.wd1/careers-jacksonhealthcare:JR109106",
       "first_seen": "2026-11-01T05:44:35+00:00",
-      "last_seen": "2026-11-01T05:44:35+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5563,7 +5563,7 @@
       "company": "Cognition",
       "key": "ashby:cognition:439404bb-3185-4d22-b6df-4a5e39a510d6",
       "first_seen": "2026-11-01T04:08:28+00:00",
-      "last_seen": "2026-11-01T04:08:28+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5589,7 +5589,7 @@
       "company": "Angi",
       "key": "ashby:angi:59a468ef-aef4-41a1-8bf2-5c920524e5d0",
       "first_seen": "2026-11-01T05:27:02+00:00",
-      "last_seen": "2026-11-01T05:27:02+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5615,7 +5615,7 @@
       "company": "Yelp",
       "key": "phenom:www.yelp.careers/us/en:YELPUS14009EXTERNALENUS",
       "first_seen": "2026-11-01T05:32:04+00:00",
-      "last_seen": "2026-11-01T05:32:04+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5636,7 +5636,7 @@
       "company": "Yelp",
       "key": "phenom:www.yelp.careers/us/en:YELPUS14002EXTERNALENUS",
       "first_seen": "2026-11-01T05:32:04+00:00",
-      "last_seen": "2026-11-01T05:32:04+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5662,7 +5662,7 @@
       "company": "Aya Healthcare",
       "key": "greenhouse:ayahealthcare:8055580",
       "first_seen": "2026-11-01T05:42:36+00:00",
-      "last_seen": "2026-11-01T05:42:36+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5683,12 +5683,12 @@
         "source": "posting"
       },
       "us": true,
-      "remote": "hybrid",
-      "remote_confidence": "low",
+      "remote": "remote",
+      "remote_confidence": "medium",
       "company": "Komodo Health",
       "key": "greenhouse:komodohealth:8599153002",
       "first_seen": "2026-10-30T05:15:36+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5714,7 +5714,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:7982346",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5740,7 +5740,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:7982336",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5766,7 +5766,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:7982331",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5792,7 +5792,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:7982328",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5818,7 +5818,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:7982323",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5844,7 +5844,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:7982326",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5870,7 +5870,7 @@
       "company": "Angi",
       "key": "ashby:angi:b272e53a-7acd-4ab3-bc62-f37edf8582c7",
       "first_seen": "2026-11-01T05:27:02+00:00",
-      "last_seen": "2026-11-01T05:27:02+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5896,7 +5896,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:7960413",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5917,7 +5917,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000126724432",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5938,7 +5938,7 @@
       "company": "Hitachi",
       "key": "workday:hitachi.wd1/hitachi:R0105015",
       "first_seen": "2026-10-30T07:05:09+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5959,7 +5959,7 @@
       "company": "Cognition",
       "key": "ashby:cognition:60ac2393-2727-4c88-953b-013e7bb418f8",
       "first_seen": "2026-11-01T04:08:28+00:00",
-      "last_seen": "2026-11-01T04:08:28+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5985,7 +5985,7 @@
       "company": "Smartsheet",
       "key": "greenhouse:smartsheet:7684865",
       "first_seen": "2026-10-30T06:52:21+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -6011,7 +6011,7 @@
       "company": "ServiceNow",
       "key": "smartrecruiters:ServiceNow:744000108296495",
       "first_seen": "2026-10-30T05:47:56+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -6037,7 +6037,7 @@
       "company": "Serve Robotics",
       "key": "ashby:serverobotics:2cc4efc4-d08f-4019-a474-71d06c62e72e",
       "first_seen": "2026-11-01T04:33:03+00:00",
-      "last_seen": "2026-11-01T04:33:03+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -6063,7 +6063,7 @@
       "company": "Samsara",
       "key": "greenhouse:samsara:7292081",
       "first_seen": "2026-10-29T23:17:57+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -6084,7 +6084,7 @@
       "company": "Hitachi",
       "key": "workday:hitachi.wd1/hitachi:R0040237",
       "first_seen": "2026-10-30T07:05:09+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -6105,7 +6105,7 @@
       "company": "Hitachi",
       "key": "workday:hitachi.wd1/hitachi:R0008293",
       "first_seen": "2026-10-30T07:05:09+00:00",
-      "last_seen": "2026-10-31T13:37:55+00:00",
+      "last_seen": "2026-11-01T13:38:56+00:00",
       "status": "open",
       "closed_at": null
     },
