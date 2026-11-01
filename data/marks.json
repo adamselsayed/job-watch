@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-01T04:10:07.269Z",
+  "updated_at": "2026-11-01T04:13:59.145Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -355,5 +355,11 @@
       "title": "Product Engineer",
       "company": "Cognition"
     }
+  },
+  "primary": {
+    "names": [
+      "Samsara"
+    ],
+    "at": "2026-11-01T04:13:57.642Z"
   }
 }
