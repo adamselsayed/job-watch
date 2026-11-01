@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T05:23:21+00:00",
+  "generated_at": "2026-11-01T05:27:02+00:00",
   "criteria": {
     "title_keywords": [
       "product"
@@ -234,6 +234,17 @@
       "error": null,
       "total_jobs": 20,
       "matched": 1
+    },
+    {
+      "name": "Angi",
+      "ats": "ashby",
+      "board": "angi",
+      "url": "https://www.angi.com/careers/jobs",
+      "fetched_at": "2026-11-01T05:27:02+00:00",
+      "status": "ok",
+      "error": null,
+      "total_jobs": 19,
+      "matched": 3
     }
   ],
   "jobs": [
@@ -4053,6 +4064,32 @@
       "closed_at": null
     },
     {
+      "job_id": "a43286ba-263b-49b0-b527-ca143238ec7e",
+      "req_id": null,
+      "title": "Senior Product Manager, Data Infrastructure",
+      "location": "Remote - United States",
+      "location_detail": "",
+      "department": "Product / Product Management",
+      "published_at": "2026-10-02T18:25:51.898+00:00",
+      "updated_at": null,
+      "url": "https://jobs.ashbyhq.com/angi/a43286ba-263b-49b0-b527-ca143238ec7e",
+      "salary": {
+        "min": 150000,
+        "max": 235000,
+        "currency": "USD",
+        "source": "description"
+      },
+      "us": true,
+      "remote": "remote",
+      "remote_confidence": "high",
+      "company": "Angi",
+      "key": "ashby:angi:a43286ba-263b-49b0-b527-ca143238ec7e",
+      "first_seen": "2026-11-01T05:27:02+00:00",
+      "last_seen": "2026-11-01T05:27:02+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
       "job_id": "8863976002",
       "req_id": "1459",
       "title": "Associate Legal Counsel, Product & Privacy, Ads   ",
@@ -5304,6 +5341,32 @@
       "closed_at": null
     },
     {
+      "job_id": "59a468ef-aef4-41a1-8bf2-5c920524e5d0",
+      "req_id": null,
+      "title": "Principal Product Manager, AI Platform",
+      "location": "Remote - United States",
+      "location_detail": "",
+      "department": "Product / Product Management",
+      "published_at": "2026-08-04T22:01:55.690+00:00",
+      "updated_at": null,
+      "url": "https://jobs.ashbyhq.com/angi/59a468ef-aef4-41a1-8bf2-5c920524e5d0",
+      "salary": {
+        "min": 190000,
+        "max": 280000,
+        "currency": "USD",
+        "source": "description"
+      },
+      "us": true,
+      "remote": "remote",
+      "remote_confidence": "high",
+      "company": "Angi",
+      "key": "ashby:angi:59a468ef-aef4-41a1-8bf2-5c920524e5d0",
+      "first_seen": "2026-11-01T05:27:02+00:00",
+      "last_seen": "2026-11-01T05:27:02+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
       "job_id": "8599153002",
       "req_id": "21632",
       "title": "Senior Product Manager, GTM Systems",
@@ -5482,6 +5545,32 @@
       "key": "greenhouse:samsara:7982326",
       "first_seen": "2026-10-29T23:17:57+00:00",
       "last_seen": "2026-10-31T13:37:55+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "b272e53a-7acd-4ab3-bc62-f37edf8582c7",
+      "req_id": null,
+      "title": "Staff AI Product Analyst",
+      "location": "Remote - United States",
+      "location_detail": "",
+      "department": "Product / Product",
+      "published_at": "2026-05-29T15:40:45.371+00:00",
+      "updated_at": null,
+      "url": "https://jobs.ashbyhq.com/angi/b272e53a-7acd-4ab3-bc62-f37edf8582c7",
+      "salary": {
+        "min": 165000,
+        "max": 225000,
+        "currency": "USD",
+        "source": "description"
+      },
+      "us": true,
+      "remote": "remote",
+      "remote_confidence": "high",
+      "company": "Angi",
+      "key": "ashby:angi:b272e53a-7acd-4ab3-bc62-f37edf8582c7",
+      "first_seen": "2026-11-01T05:27:02+00:00",
+      "last_seen": "2026-11-01T05:27:02+00:00",
       "status": "open",
       "closed_at": null
     },
