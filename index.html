@@ -43,10 +43,21 @@
   nav.side button .nb { font-size: 10.5px; font-weight: 700; background: var(--new-soft); color: var(--new); border-radius: 999px; padding: 0 6px; line-height: 16px; }
   nav.side button .er { color: var(--err); font-size: 12px; }
   nav.side hr { border: 0; border-top: 1px solid var(--border); margin: 6px 4px; }
+  nav.side .grp { min-height: 34px; border-radius: 8px; padding: 2px; transition: background .12s; }
+  nav.side .grp.over { background: var(--accent-soft); outline: 1px dashed var(--accent); }
+  nav.side .grp .hint { font-size: 12px; color: var(--faint); padding: 6px 10px; }
+  nav.side button[draggable=true] { cursor: grab; }
+  nav.side button.dragging { opacity: .4; }
+  nav.side button .star { font-size: 13px; color: var(--faint); opacity: 0; padding: 0 2px; }
+  nav.side button:hover .star { opacity: 1; }
+  nav.side button .star:hover { color: var(--accent); }
+  nav.side button.on .star { color: var(--accent); }
+  @media (hover: none) { nav.side button .star { opacity: 1; } }
   @media (max-width: 900px) {
     .layout { display: block; }
     nav.side { position: static; display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 12px; }
-    nav.side .nh, nav.side hr { display: none; }
+    nav.side .nh, nav.side hr, nav.side .hint { display: none; }
+    nav.side .grp { display: contents; }
     nav.side button { width: auto; padding: 5px 10px; font-size: 13px; border: 1px solid var(--border); border-radius: 999px; }
   }
 
@@ -118,7 +129,8 @@
   td.title .t { display: flex; align-items: center; gap: 6px; min-width: 0; }
   td.title .t a { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
   td.loc { max-width: 0; overflow: hidden; text-overflow: ellipsis; }
-  th.w-co { width: 84px; } th.w-loc { width: 17%; } th.w-work { width: 86px; } th.w-posted { width: 122px; } th.w-sal { width: 122px; } th.w-ids { width: 160px; }
+  th.w-co { width: 84px; } th.w-loc { width: 17%; } th.w-work { width: 118px; } th.w-posted { width: 122px; } th.w-sal { width: 122px; } th.w-ids { width: 118px; }
+  td.mono { overflow: hidden; text-overflow: ellipsis; max-width: 0; }
   td.nowrap { white-space: nowrap; }
   .mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; color: var(--muted); }
   .sub { color: var(--faint); font-size: 12px; }
@@ -232,6 +244,7 @@
     Remote status comes from the posting's location, then its metadata, then its description; anything inferred from the description or not found at all is flagged.
     The daily sweep runs at 6 AM Pacific via GitHub Actions. <strong>Pull now</strong> reads the company's live job board straight from your browser and shows anything the sweep hasn't recorded yet as <span class="badge b-live">live</span>.
     Edit <code>companies.yml</code> in the repo to add companies.
+    <br><strong>Primary / General</strong>: drag companies between the two sidebar groups (or tap ☆). New companies start in General. The grouping is saved with your Applied/Archive marks.
     <br><strong>Applied / Archive</strong> are saved in this browser and, with <strong>Sync</strong> turned on (top right), to <code>data/marks.json</code> in the repo so they follow you across devices. A role you've filed stays filed; if the company reposts it under a new listing ID it shows up as new again.
     <button class="link" id="exportMarks">Export</button> · <button class="link" id="importMarks">Import</button> your Applied/Archive list to move it to another browser.<input type="file" id="importFile" accept="application/json" hidden>
   </p>
@@ -297,9 +310,12 @@
     if (r.status === 404) { marksSha = null; syncStatus('on', 'Synced ✓'); return scheduleSync(0); }   // first time: create the file
     if (!r.ok) throw new Error(`GitHub ${r.status}`);
     const d = await r.json(); marksSha = d.sha;
-    const remote = JSON.parse(unb64(d.content) || '{}').marks || {};
-    const localNewer = Object.entries(marks).some(([k, v]) => !remote[k] || (v.at || '') > (remote[k].at || ''));
-    if (mergeMarks(remote)) { saveMarks(); render(); }
+    const parsed = JSON.parse(unb64(d.content) || '{}');
+    const remote = parsed.marks || {};
+    const localNewer = Object.entries(marks).some(([k, v]) => !remote[k] || (v.at || '') > (remote[k].at || ''))
+                    || ((primary.at || '') > ((parsed.primary || {}).at || ''));
+    const changed = mergeMarks(remote) | mergePrimary(parsed.primary);
+    if (changed) { saveMarks(); render(); }
     syncStatus('on', 'Synced ✓');
     if (localNewer) scheduleSync(0);
   }
@@ -307,7 +323,7 @@
     if (!token || syncing) return;
     syncing = true; syncStatus('', 'Syncing…');
     try {
-      const body = { message: `Update applied/archive marks (${new Date().toISOString().slice(0, 16).replace('T', ' ')} UTC)`, content: b64(JSON.stringify({ updated_at: new Date().toISOString(), marks }, null, 2) + '\n'), branch: 'main' };
+      const body = { message: `Update applied/archive marks (${new Date().toISOString().slice(0, 16).replace('T', ' ')} UTC)`, content: b64(JSON.stringify({ updated_at: new Date().toISOString(), marks, primary }, null, 2) + '\n'), branch: 'main' };
       if (marksSha) body.sha = marksSha;
       const r = await api(`contents/${MARKS_PATH}`, { method: 'PUT', body: JSON.stringify(body) });
       if (r.status === 409 || r.status === 422) {            // someone else wrote first: re-pull, merge, retry once
@@ -334,6 +350,15 @@
     try { await pullMarks(); toast('Sync on — Applied/Archive now saved to the repo.'); }
     catch (e) { syncStatus('err', 'Sync error'); toast(`Could not reach the repo: ${e.message}`); }
   });
+  }
+  // "Primary" companies: a user-ordered list, stored with the marks and synced the same way.
+  let primary = { names: [], at: '' };
+  try { primary = JSON.parse(localStorage.getItem('jobwatch.primary') || 'null') || primary; } catch (e) {}
+  const savePrimary = () => { try { localStorage.setItem('jobwatch.primary', JSON.stringify(primary)); } catch (e) {} };
+  function setPrimary(names) { primary = { names: [...new Set(names)], at: new Date().toISOString() }; savePrimary(); render(); scheduleSync(); }
+  function mergePrimary(remote) {
+    if (remote && remote.at && remote.at > (primary.at || '')) { primary = { names: remote.names || [], at: remote.at }; savePrimary(); return true; }
+    return false;
   }
   const sectionOf = {};                    // company name (or '*' in flat view) -> open | applied | archived
   const section = name => sectionOf[name] || 'open';
@@ -618,7 +643,9 @@
     const sal = j.salary
       ? `<span title="${fmtMoney(j.salary.min)} – ${fmtMoney(j.salary.max)} ${escapeHtml(j.salary.currency || 'USD')} · ${j.salary.source === 'posting' ? 'from the posting\'s pay field' : 'parsed from the description'}">${k(j.salary.min)}–${k(j.salary.max)}${j.salary.currency && j.salary.currency !== 'USD' ? ' ' + escapeHtml(j.salary.currency) : ''}${j.salary.source !== 'posting' ? '<span class="sal-src">≈</span>' : ''}</span>`
       : '<span class="sub">—</span>';
-    const ids = [j.req_id ? escapeHtml(j.req_id) : null, `#${escapeHtml(j.job_id)}`].filter(Boolean).join(' · ');
+    const ids = j.req_id
+      ? `<span title="Req ${escapeHtml(j.req_id)} · job #${escapeHtml(j.job_id)}">${escapeHtml(j.req_id)}</span>`
+      : `<span title="Job #${escapeHtml(j.job_id)}">#${escapeHtml(j.job_id)}</span>`;
     const titleTip = [j.title, j.department && `Team: ${j.department}`, j.location_detail && j.location_detail !== j.location && `Office: ${j.location_detail}`].filter(Boolean).join('\n');
     const posted = pub
       ? `<span title="${escapeHtml(new Date(pub).toLocaleString('en-US'))}">${fmtDate(pub)} <span class="sub">· ${ago(pub)}</span></span>`
@@ -728,12 +755,42 @@
       const open = cnt(list), nw = open.filter(isNew).length;
       return `<button class="${selected === name ? 'on' : ''}" data-name="${escapeHtml(name)}"><span class="nm">${escapeHtml(label)}</span>${nw ? `<span class="nb" title="new since your last visit">${nw}</span>` : ''}${extra}<span class="cnt" title="open, not yet triaged">${open.length}</span></button>`;
     };
+    const known = new Set(data.companies.map(c => c.name));
+    const prim = primary.names.filter(n => known.has(n));
+    const gen = data.companies.map(c => c.name).filter(n => !prim.includes(n));
+    const cItem = (n, isPrimary) => { const c = data.companies.find(x => x.name === n);
+      return item(n, n, jobs.filter(j => j.company === n), (c.status === 'error' ? '<span class="er" title="fetch failed in last sweep">⚠</span>' : '') +
+        `<span class="star" data-star="${escapeHtml(n)}" title="${isPrimary ? 'Move to General' : 'Move to Primary'}">${isPrimary ? '★' : '☆'}</span>`); };
     side.innerHTML = `<div class="nh">Companies</div>` + item('*', 'All companies', jobs) + `<hr>` +
-      data.companies.map(c => item(c.name, c.name, jobs.filter(j => j.company === c.name), c.status === 'error' ? '<span class="er" title="fetch failed in last sweep">⚠</span>' : '')).join('');
+      `<div class="nh">Primary</div><div class="grp" data-grp="primary">${prim.length ? prim.map(n => cItem(n, true)).join('') : '<div class="hint">Drag companies here</div>'}</div>` +
+      `<div class="nh">General</div><div class="grp" data-grp="general">${gen.map(n => cItem(n, false)).join('')}</div>`;
     side.querySelectorAll('button').forEach(b => b.addEventListener('click', e => {
+      if (e.target.closest('.star')) return;
       selected = e.currentTarget.dataset.name; try { localStorage.setItem('jobwatch.selected', selected); } catch (_) {} render();
       window.scrollTo({ top: Math.min(window.scrollY, $('#side').getBoundingClientRect().top + window.scrollY - 16), behavior: 'auto' });
     }));
+    // star = tap/click fallback for touch screens
+    side.querySelectorAll('.star').forEach(st => st.addEventListener('click', e => { e.stopPropagation(); const n = e.currentTarget.dataset.star;
+      setPrimary(prim.includes(n) ? prim.filter(x => x !== n) : [...prim, n]); }));
+    // drag & drop between the two groups (and reorder inside Primary)
+    let dragName = null;
+    side.querySelectorAll('.grp button').forEach(b => {
+      b.draggable = true;
+      b.addEventListener('dragstart', e => { dragName = b.dataset.name; b.classList.add('dragging'); e.dataTransfer.effectAllowed = 'move'; e.dataTransfer.setData('text/plain', dragName); });
+      b.addEventListener('dragend', () => { b.classList.remove('dragging'); side.querySelectorAll('.grp').forEach(g => g.classList.remove('over')); });
+    });
+    side.querySelectorAll('.grp').forEach(g => {
+      g.addEventListener('dragover', e => { e.preventDefault(); e.dataTransfer.dropEffect = 'move'; g.classList.add('over'); });
+      g.addEventListener('dragleave', e => { if (!g.contains(e.relatedTarget)) g.classList.remove('over'); });
+      g.addEventListener('drop', e => {
+        e.preventDefault(); g.classList.remove('over');
+        const n = dragName || e.dataTransfer.getData('text/plain'); if (!n) return;
+        if (g.dataset.grp === 'general') { setPrimary(prim.filter(x => x !== n)); return; }
+        const rest = prim.filter(x => x !== n);
+        const after = e.target.closest('button'); const idx = after ? rest.indexOf(after.dataset.name) : -1;   // drop onto an item = insert before it
+        rest.splice(idx < 0 ? rest.length : idx, 0, n); setPrimary(rest);
+      });
+    });
   }
 
   let toastTimer;
@@ -772,7 +829,7 @@
 
   fetch(DATA_URL + '?t=' + Date.now()).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
     .then(d => { data = d; render(); })
-    .then(() => token ? pullMarks().catch(e => { syncStatus('err', 'Sync error'); toast(`Sync failed: ${e.message}`); }) : fetch('data/marks.json?t=' + Date.now()).then(r => r.ok ? r.json() : null).then(d => { if (d && mergeMarks(d.marks)) { saveMarks(); render(); } }).catch(() => {}))
+    .then(() => token ? pullMarks().catch(e => { syncStatus('err', 'Sync error'); toast(`Sync failed: ${e.message}`); }) : fetch('data/marks.json?t=' + Date.now()).then(r => r.ok ? r.json() : null).then(d => { if (d && (mergeMarks(d.marks) | mergePrimary(d.primary))) { saveMarks(); render(); } }).catch(() => {}))
     .catch(() => { $('#generated').textContent = 'No sweep data yet — run the GitHub Action (or scripts/fetch_jobs.py) to create data/jobs.json.'; render(); });
 })();
 </script>
