@@ -145,3 +145,8 @@
   ats: greenhouse
   board: ayahealthcare
   url: https://www.ayahealthcare.com/corporate-careers/jobs/
+
+- name: CHG Healthcare
+  ats: workday
+  board: chghealthcare.wd1/External
+  url: https://chghealthcare.wd1.myworkdayjobs.com/External
