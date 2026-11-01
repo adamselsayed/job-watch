@@ -687,8 +687,26 @@ def fetch_jobvite(company):
     return out
 
 
+def fetch_unknown(company):
+    """ats: unknown -- placeholder for a company whose job-board system hasn't been identified yet.
+    Returns no jobs; in debug mode it records the careers page's scripts/iframes/links so the
+    board behind it can be found."""
+    if DEBUG and company.get("url"):
+        page = wd_get(company["url"], as_json=False)
+        debug_dump(company, {
+            "scripts": re.findall(r'<script[^>]+src="([^"]+)"', page)[:40],
+            "iframes": re.findall(r'<iframe[^>]+src="([^"]+)"', page)[:10],
+            "ats_mentions": sorted(set(re.findall(r'https?://[^"\' <>]*(?:greenhouse|lever\.co|ashbyhq|myworkdayjobs|smartrecruiters|icims|jobvite|bamboohr|rippling|workable|applytojob|phenom|eightfold|successfactors|taleo|ultipro|paylocity|paycom|adp|recruitee|teamtailor|breezy|jazz|comeet|pinpoint|dover|wellfound|gem\.com)[^"\' <>]*', page, re.I)))[:30],
+            "data_attrs": re.findall(r'(data-[a-z\-]*(?:board|job|career|token|company)[a-z\-]*="[^"]+")', page, re.I)[:20],
+            "fetch_calls": re.findall(r'(?:fetch|axios\.get|\$\.getJSON|XMLHttpRequest)\(["\']([^"\']+)', page)[:20],
+            "head": page[:800],
+        })
+    return []
+
+
 ADAPTERS = {"greenhouse": fetch_greenhouse, "lever": fetch_lever, "ashby": fetch_ashby,
-            "smartrecruiters": fetch_smartrecruiters, "workday": fetch_workday, "phenom": fetch_phenom, "jobvite": fetch_jobvite}
+            "smartrecruiters": fetch_smartrecruiters, "workday": fetch_workday, "phenom": fetch_phenom,
+            "jobvite": fetch_jobvite, "unknown": fetch_unknown}
 
 
 # --------------------------------------------------------------- filtering --
