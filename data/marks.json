@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-01T04:14:28.163Z",
+  "updated_at": "2026-11-01T04:28:25.214Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -356,14 +356,17 @@
       "company": "Cognition"
     }
   },
-  "primary": {
-    "names": [
+  "groups": {
+    "primary": [
       "Samsara",
       "Motive",
       "ServiceNow",
       "ChargePoint",
       "Experian"
     ],
-    "at": "2026-11-01T04:14:26.659Z"
+    "out": [
+      "Housecall Pro"
+    ],
+    "at": "2026-11-01T04:28:23.707Z"
   }
 }
