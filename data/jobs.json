@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T05:42:36+00:00",
+  "generated_at": "2026-11-01T05:43:31+00:00",
   "criteria": {
     "title_keywords": [
       "product"
@@ -277,6 +277,17 @@
       "status": "ok",
       "error": null,
       "total_jobs": 45,
+      "matched": 2
+    },
+    {
+      "name": "CHG Healthcare",
+      "ats": "workday",
+      "board": "chghealthcare.wd1/External",
+      "url": "https://chghealthcare.wd1.myworkdayjobs.com/External",
+      "fetched_at": "2026-11-01T05:43:31+00:00",
+      "status": "ok",
+      "error": null,
+      "total_jobs": 2,
       "matched": 2
     }
   ],
@@ -3347,6 +3358,32 @@
       "closed_at": null
     },
     {
+      "job_id": "JR104370",
+      "req_id": "JR104370",
+      "title": "AI Product Engineer",
+      "location": "Salt Lake City, UT; Remote, United States of America",
+      "location_detail": "",
+      "department": "CHG Management, Inc.",
+      "published_at": "2026-10-21",
+      "updated_at": null,
+      "url": "https://chghealthcare.wd1.myworkdayjobs.com/External/job/Salt-Lake-City-UT/AI-Product-Engineer_JR104370",
+      "salary": {
+        "min": 129000,
+        "max": 193500,
+        "currency": "USD",
+        "source": "description"
+      },
+      "us": true,
+      "remote": "remote",
+      "remote_confidence": "high",
+      "company": "CHG Healthcare",
+      "key": "workday:chghealthcare.wd1/External:JR104370",
+      "first_seen": "2026-11-01T05:43:31+00:00",
+      "last_seen": "2026-11-01T05:43:31+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
       "job_id": "8300580",
       "req_id": "JR12361",
       "title": "Sr. Customer Success Strategy Manager, New Products",
@@ -3520,6 +3557,27 @@
       "key": "smartrecruiters:ServiceNow:744000156426199",
       "first_seen": "2026-10-30T05:47:56+00:00",
       "last_seen": "2026-10-31T13:37:55+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "JR104551",
+      "req_id": "JR104551",
+      "title": "Senior Product Manager",
+      "location": "Salt Lake City, UT, United States of America",
+      "location_detail": "",
+      "department": "CHG Management, Inc.",
+      "published_at": "2026-10-19",
+      "updated_at": null,
+      "url": "https://chghealthcare.wd1.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Principal-Product-Manager_JR104551",
+      "salary": null,
+      "us": true,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "CHG Healthcare",
+      "key": "workday:chghealthcare.wd1/External:JR104551",
+      "first_seen": "2026-11-01T05:43:31+00:00",
+      "last_seen": "2026-11-01T05:43:31+00:00",
       "status": "open",
       "closed_at": null
     },
