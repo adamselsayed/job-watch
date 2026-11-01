@@ -1,27 +1,35 @@
 {
- "rows_found": 0,
+ "count": 11,
+ "top_type": "list",
+ "top_keys": null,
+ "first_items": [
+  {
+   "uuid": "a48c553e-976f-4439-aa0f-2aabf5b2ff46",
+   "name": "Assistant Manager, Accounts Payable ",
+   "department": {
+    "id": "Finance",
+    "label": "Finance"
+   },
+   "url": "https://ats.rippling.com/evgo-careers/jobs/a48c553e-976f-4439-aa0f-2aabf5b2ff46",
+   "workLocation": {
+    "label": "Remote",
+    "id": "Remote"
+   }
+  },
+  {
+   "uuid": "c2841a8b-27ea-459a-a624-2559707f5792",
+   "name": "Grid Integration Manager - Central/Eastern (Remote) ",
+   "department": {
+    "id": "Deployment",
+    "label": "Deployment"
+   },
+   "url": "https://ats.rippling.com/evgo-careers/jobs/c2841a8b-27ea-459a-a624-2559707f5792",
+   "workLocation": {
+    "label": "Remote",
+    "id": "Remote"
+   }
+  }
+ ],
  "first_detail": null,
- "sample_rows": [],
- "html_head": "<!DOCTYPE html>\n<html dir=\"ltr\" lang=\"en-US\" prefix=\"og: https://ogp.me/ns#\">\n<head >\n<meta charset=\"UTF-8\" /><script type=\"text/javascript\">(window.NREUM||(NREUM={})).init={privacy:{cookies_enabled:true},ajax:{deny_list:[\"bam.nr-data.net\"]},distributed_tracing:{enabled:true}};(window.NREUM||(NREUM={})).loader_config={agentID:\"1103391986\",accountID:\"6434384\",trustKey:\"6434384\",xpid:\"UgIEVVVbDBABVFNRDwMFUFwD\",licenseKey:\"NRJS-b34122c1b3becdb58f0\",applicationID:\"1023822682\",browserID:\"1103391986\"};;/*! For license information please see nr-loader-spa-1.324.1.min.js.LICENSE.txt */\n(()=>{var e={8122(e,t,r){\"use strict\";r.d(t,{a:()=>i});var n=r(944);function i(e,t){try{if(!e||\"object\"!=typeof e)return(0,n.R)(3);if(!t||\"object\"!=typeof t)return(0,n.R)(4);const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),s=0===Object.keys(r).length?e:r;for(let a in s)if(void 0!==e[a])try{if(null===e[a]){r[a]=null;continue}Array.isArray(e[a])&&Array.isArray(t[a])?r[a]=Array.from(new Set([...e[a],...t[a]])):e[a]instanceof Map||e[a]instanceof Set||e[a]instanceof Date||e[a]instanceof RegExp?r[a]=e[a]:\"object\"==typeof e[a]&&null!==t[a]&&\"object\"==typeof t[a]?r[a]=i(e[a],t[a]):r[a]=e[a]}catch(e){r[a]||(0,n.R)(1,e)}return r}catch(e){(0,n.R)(2,e)}}},2555(e,t,r){\"use strict\";r.d(t,{f:()=>a});var n=r(384),i=r(8122);const s={beacon:n.NT.beacon,errorBeacon:n.NT.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,use",
- "job_links": [],
- "around_first_job": null,
- "scripts": [
-  "https://www.jobvite.com/wp-content/plugins/nelio-ab-testing/assets/dist/js/visitor-type.js?ver=493f3fb005029d7ebf0b",
-  "https://cdn-cookieyes.com/client_data/4920c3eff4c41d1a0eb688cb/script.js",
-  "https://plausible.io/js/plausible.outbound-links.tagged-events.js",
-  "https://wec-assets.terminus.services/041cd41c-222d-40c4-8dcc-5be319c29809/t.js",
-  "https://cdn.getsmartcontent.com/87CVTV94.js",
-  "//659-JST-226.mktoweb.com/js/forms2/js/forms2.min.js",
-  "https://www.jobvite.com/wp-content/plugins/the-events-calendar/common/build/js/user-agent.js?ver=da75d0bdea6dde3898df",
-  "https://www.jobvite.com/wp-includes/js/jquery/jquery.js",
-  "https://www.jobvite.com/wp-content/plugins/accordion-blocks/js/accordion-blocks.min.js?ver=1.5.0",
-  "https://www.jobvite.com/wp-content/plugins/genesis-blocks/dist/assets/js/dismiss.js?ver=1793457836",
-  "https://www.jobvite.com/wp-content/themes/jobvite/dist/scripts/script-min.js?ver=1793457840",
-  "https://www.jobvite.com/wp-content/themes/jobvite/dist/scripts/lib/rbm-scripts.js?ver=1793457840",
-  "https://www.jobvite.com/wp-content/themes/genesis/lib/js/skip-links.min.js?ver=3.6.1"
- ],
- "json_blobs": [
-  "\n\t\t\t{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/www.jobvite.com\\/support\\/job-seeker-support\\/#breadcrumblist\",\"itemListElement\":[{\"@type\":\"ListItem\",\"@id\":\"https:\\/\\/www.jobvite.com#listItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/www.jobvite.com\",\""
- ],
  "kept_rows": []
 }
