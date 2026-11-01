@@ -120,3 +120,8 @@
   ats: greenhouse
   board: nextdoor
   url: https://about.nextdoor.com/careers-list/
+
+- name: Taskrabbit
+  ats: greenhouse
+  board: taskrabbit
+  url: https://www.taskrabbit.com/careers
