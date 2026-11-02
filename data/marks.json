@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T20:12:39.557Z",
+  "updated_at": "2026-11-02T20:12:48.063Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -206,8 +206,8 @@
       "company": "Life360"
     },
     "smartrecruiters:ServiceNow:744000126724432": {
-      "status": "open",
-      "at": "2026-11-02T19:43:12.901Z",
+      "status": "archived",
+      "at": "2026-11-02T20:12:46.555Z",
       "title": "Tech Lead, Agentic AI Product - Moveworks",
       "company": "ServiceNow"
     },
