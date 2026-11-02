@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T18:49:41.447Z",
+  "updated_at": "2026-11-02T18:49:48.827Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -425,6 +425,12 @@
       "status": "archived",
       "at": "2026-11-02T18:49:39.941Z",
       "title": "Senior Director, Product  Unified Security and Exposure Management ",
+      "company": "ServiceNow"
+    },
+    "smartrecruiters:ServiceNow:744000150427265": {
+      "status": "archived",
+      "at": "2026-11-02T18:49:47.322Z",
+      "title": "Product Management Director - Contact Center Frameworks",
       "company": "ServiceNow"
     }
   },
