@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T20:12:48.063Z",
+  "updated_at": "2026-11-02T20:13:34.234Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -212,8 +212,8 @@
       "company": "ServiceNow"
     },
     "smartrecruiters:ServiceNow:744000158070869": {
-      "status": "open",
-      "at": "2026-11-02T19:43:12.901Z",
+      "status": "archived",
+      "at": "2026-11-02T20:13:32.722Z",
       "title": "VP, Product Strategy-Technology Workflows",
       "company": "ServiceNow"
     },
