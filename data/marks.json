@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T20:13:34.234Z",
+  "updated_at": "2026-11-02T20:14:24.106Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -620,8 +620,8 @@
       "company": "ServiceNow"
     },
     "smartrecruiters:ServiceNow:744000149362100": {
-      "status": "open",
-      "at": "2026-11-02T19:43:05.993Z",
+      "status": "archived",
+      "at": "2026-11-02T20:14:22.600Z",
       "title": "Staff Technical Product Manager - Quote to Cash",
       "company": "ServiceNow"
     }
