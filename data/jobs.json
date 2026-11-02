@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T13:38:56+00:00",
+  "generated_at": "2026-11-02T06:23:44+00:00",
   "criteria": {
     "title_keywords": [
       "product"
@@ -300,6 +300,17 @@
       "error": null,
       "total_jobs": 1,
       "matched": 1
+    },
+    {
+      "name": "DoorDash",
+      "ats": "greenhouse",
+      "board": "doordashusa",
+      "url": "https://careersatdoordash.com/job-search/",
+      "fetched_at": "2026-11-02T06:23:44+00:00",
+      "status": "ok",
+      "error": null,
+      "total_jobs": 439,
+      "matched": 9
     }
   ],
   "jobs": [
@@ -3187,6 +3198,32 @@
       "closed_at": null
     },
     {
+      "job_id": "8311047",
+      "req_id": "2026.03652",
+      "title": "Manager, Technical Program Management - Product & Platforms",
+      "location": "San Francisco, CA; Sunnyvale, CA; Seattle, WA",
+      "location_detail": "San Francisco",
+      "department": "317 Engineering Technical Program Management",
+      "published_at": "2026-10-22T11:33:47-04:00",
+      "updated_at": "2026-10-30T13:27:04-04:00",
+      "url": "https://job-boards.greenhouse.io/doordashusa/jobs/8311047",
+      "salary": {
+        "min": 193800,
+        "max": 285000,
+        "currency": "USD",
+        "source": "posting"
+      },
+      "us": true,
+      "remote": "hybrid",
+      "remote_confidence": "low",
+      "company": "DoorDash",
+      "key": "greenhouse:doordashusa:8311047",
+      "first_seen": "2026-11-02T06:23:44+00:00",
+      "last_seen": "2026-11-02T06:23:44+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
       "job_id": "744000156856599",
       "req_id": "JB0075422",
       "title": "Senior Staff Outbound Product Manager - GTM / Data & Analytics",
@@ -3473,6 +3510,32 @@
       "closed_at": null
     },
     {
+      "job_id": "8301438",
+      "req_id": "2026.09741",
+      "title": "DashOS, Product Strategy & Operations",
+      "location": "Los Angeles, CA; San Francisco, CA; New York, NY",
+      "location_detail": "New York",
+      "department": "637 DashOS Strategy & Operations",
+      "published_at": "2026-10-20T12:48:44-04:00",
+      "updated_at": "2026-10-30T14:49:37-04:00",
+      "url": "https://job-boards.greenhouse.io/doordashusa/jobs/8301438",
+      "salary": {
+        "min": 105400,
+        "max": 155000,
+        "currency": "USD",
+        "source": "posting"
+      },
+      "us": true,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "DoorDash",
+      "key": "greenhouse:doordashusa:8301438",
+      "first_seen": "2026-11-02T06:23:44+00:00",
+      "last_seen": "2026-11-02T06:23:44+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
       "job_id": "744000156543661",
       "req_id": "JB0076087",
       "title": "Senior Staff Inbound Product Manager",
@@ -3615,6 +3678,32 @@
       "key": "greenhouse:life360:8895619002",
       "first_seen": "2026-10-30T06:39:37+00:00",
       "last_seen": "2026-11-01T13:38:56+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "8289029",
+      "req_id": "2025.05450",
+      "title": "Product Manager Airspace & Autonomy - DoorDash Air",
+      "location": "San Francisco, CA",
+      "location_detail": "San Francisco",
+      "department": "311 Autonomy",
+      "published_at": "2026-10-16T10:28:41-04:00",
+      "updated_at": "2026-10-30T13:02:17-04:00",
+      "url": "https://job-boards.greenhouse.io/doordashusa/jobs/8289029",
+      "salary": {
+        "min": 193800,
+        "max": 285000,
+        "currency": "USD",
+        "source": "posting"
+      },
+      "us": true,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "DoorDash",
+      "key": "greenhouse:doordashusa:8289029",
+      "first_seen": "2026-11-02T06:23:44+00:00",
+      "last_seen": "2026-11-02T06:23:44+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4411,6 +4500,32 @@
       "closed_at": null
     },
     {
+      "job_id": "8243349",
+      "req_id": "P-110454",
+      "title": "Associate Manager Product Operations, Autonomy Commercialization - DoorDash Dot",
+      "location": "San Francisco, CA",
+      "location_detail": "San Francisco",
+      "department": "631 Autonomy Operations",
+      "published_at": "2026-09-30T11:57:32-04:00",
+      "updated_at": "2026-10-30T13:44:11-04:00",
+      "url": "https://job-boards.greenhouse.io/doordashusa/jobs/8243349",
+      "salary": {
+        "min": 105400,
+        "max": 155000,
+        "currency": "USD",
+        "source": "posting"
+      },
+      "us": true,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "DoorDash",
+      "key": "greenhouse:doordashusa:8243349",
+      "first_seen": "2026-11-02T06:23:44+00:00",
+      "last_seen": "2026-11-02T06:23:44+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
       "job_id": "VGNVGEUS2247EXTERNALENGLOBAL",
       "req_id": "2247",
       "title": "Sr. Manager, Product & Merchandising",
@@ -4527,6 +4642,32 @@
       "key": "workday:amn.wd1/AMN_Careers:Req23778",
       "first_seen": "2026-11-01T04:24:29+00:00",
       "last_seen": "2026-11-01T13:38:56+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "8237757",
+      "req_id": "2026.09115",
+      "title": "Senior Product Manager, People Product",
+      "location": "United States - Remote",
+      "location_detail": "Los Angeles",
+      "department": "264 People Technology & Insights",
+      "published_at": "2026-09-28T17:52:19-04:00",
+      "updated_at": "2026-10-30T14:35:42-04:00",
+      "url": "https://job-boards.greenhouse.io/doordashusa/jobs/8237757",
+      "salary": {
+        "min": 137400,
+        "max": 202000,
+        "currency": "USD",
+        "source": "posting"
+      },
+      "us": true,
+      "remote": "remote",
+      "remote_confidence": "high",
+      "company": "DoorDash",
+      "key": "greenhouse:doordashusa:8237757",
+      "first_seen": "2026-11-02T06:23:44+00:00",
+      "last_seen": "2026-11-02T06:23:44+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5406,6 +5547,32 @@
       "closed_at": null
     },
     {
+      "job_id": "8160170",
+      "req_id": "P-111795",
+      "title": "Associate Manager, New Verticals - Fulfillment Product Strategy & Operations ",
+      "location": "New York, NY; San Francisco, CA; Los Angeles, CA; Chicago, IL; Seattle, WA; Tempe, AZ; Washington, D.C.",
+      "location_detail": "San Francisco",
+      "department": "632 New Business Verticals",
+      "published_at": "2026-08-26T16:33:17-04:00",
+      "updated_at": "2026-10-30T14:06:57-04:00",
+      "url": "https://job-boards.greenhouse.io/doordashusa/jobs/8160170",
+      "salary": {
+        "min": 105400,
+        "max": 155000,
+        "currency": "USD",
+        "source": "posting"
+      },
+      "us": true,
+      "remote": "hybrid",
+      "remote_confidence": "low",
+      "company": "DoorDash",
+      "key": "greenhouse:doordashusa:8160170",
+      "first_seen": "2026-11-02T06:23:44+00:00",
+      "last_seen": "2026-11-02T06:23:44+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
       "job_id": "8750960002",
       "req_id": "1448",
       "title": "Senior Director, Analytics and Data Science, Core Product & Growth",
@@ -5689,6 +5856,32 @@
       "key": "greenhouse:komodohealth:8599153002",
       "first_seen": "2026-10-30T05:15:36+00:00",
       "last_seen": "2026-11-01T13:38:56+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "7993015",
+      "req_id": "2026.01088",
+      "title": "Product Manager, In-Store",
+      "location": "New York, NY",
+      "location_detail": "New York",
+      "department": "351 In-Store R&D",
+      "published_at": "2026-06-10T09:38:19-04:00",
+      "updated_at": "2026-10-30T13:14:58-04:00",
+      "url": "https://job-boards.greenhouse.io/doordashusa/jobs/7993015",
+      "salary": {
+        "min": 159800,
+        "max": 235000,
+        "currency": "USD",
+        "source": "posting"
+      },
+      "us": true,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "DoorDash",
+      "key": "greenhouse:doordashusa:7993015",
+      "first_seen": "2026-11-02T06:23:44+00:00",
+      "last_seen": "2026-11-02T06:23:44+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -6068,6 +6261,32 @@
       "closed_at": null
     },
     {
+      "job_id": "7071290",
+      "req_id": "P-110381",
+      "title": "Senior Product Manager, Trust & Safety, Integrity and Fraud",
+      "location": "San Francisco, CA; Seattle, WA; New York, NY; Chicago, IL",
+      "location_detail": "New York",
+      "department": "322 Product Management",
+      "published_at": "2025-07-14T19:29:57-04:00",
+      "updated_at": "2026-10-30T13:43:25-04:00",
+      "url": "https://job-boards.greenhouse.io/doordashusa/jobs/7071290",
+      "salary": {
+        "min": 159800,
+        "max": 235000,
+        "currency": "USD",
+        "source": "posting"
+      },
+      "us": true,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "DoorDash",
+      "key": "greenhouse:doordashusa:7071290",
+      "first_seen": "2026-11-02T06:23:44+00:00",
+      "last_seen": "2026-11-02T06:23:44+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
       "job_id": "R0040237",
       "req_id": "R0040237",
       "title": "HVDC Market Product Manager – North America",
@@ -6085,6 +6304,32 @@
       "key": "workday:hitachi.wd1/hitachi:R0040237",
       "first_seen": "2026-10-30T07:05:09+00:00",
       "last_seen": "2026-11-01T13:38:56+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "5523275",
+      "req_id": "EG.2025.8001",
+      "title": "Product Manager (Multiple Levels)",
+      "location": "San Francisco, CA; Seattle, WA; New York, NY",
+      "location_detail": "San Francisco",
+      "department": "322 Product Management",
+      "published_at": "2023-12-15T21:41:58-05:00",
+      "updated_at": "2026-10-30T12:29:50-04:00",
+      "url": "https://job-boards.greenhouse.io/doordashusa/jobs/5523275",
+      "salary": {
+        "min": 130600,
+        "max": 192000,
+        "currency": "USD",
+        "source": "posting"
+      },
+      "us": true,
+      "remote": "hybrid",
+      "remote_confidence": "low",
+      "company": "DoorDash",
+      "key": "greenhouse:doordashusa:5523275",
+      "first_seen": "2026-11-02T06:23:44+00:00",
+      "last_seen": "2026-11-02T06:23:44+00:00",
       "status": "open",
       "closed_at": null
     },
