@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T20:11:10.363Z",
+  "updated_at": "2026-11-02T20:11:45.660Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -254,8 +254,8 @@
       "company": "ServiceNow"
     },
     "smartrecruiters:ServiceNow:744000150113995": {
-      "status": "open",
-      "at": "2026-11-02T19:43:12.901Z",
+      "status": "archived",
+      "at": "2026-11-02T20:11:43.139Z",
       "title": "Principal Inbound Product Manager - AI Experience",
       "company": "ServiceNow"
     },
