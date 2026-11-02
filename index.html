@@ -83,6 +83,7 @@
     background: var(--surface); color: var(--text); min-width: 220px; }
   .chip { border-radius: 999px; padding: 5px 11px; font-size: 13px; }
   .chip.on { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); }
+  .gchips { display: inline-flex; gap: 6px; padding-left: 10px; margin-left: 4px; border-left: 1px solid var(--border); }
   .controls label { font-size: 13px; color: var(--muted); display: inline-flex; align-items: center; gap: 5px; }
   .controls select { font: inherit; font-size: 13px; padding: 5px 8px; border: 1px solid var(--border); border-radius: 8px; background: var(--surface); color: var(--text); }
   td.co { white-space: nowrap; font-weight: 600; color: var(--muted); }
@@ -225,6 +226,12 @@
     <button class="chip" data-f="hybrid">Hybrid</button>
     <button class="chip" data-f="verify">Needs verifying</button>
     <label><input type="checkbox" id="showClosed"> show recently closed</label>
+    <span class="gchips" title="Filter by sidebar group">
+      <button class="chip gchip on" data-g="all">Any group</button>
+      <button class="chip gchip" data-g="primary">★ Primary</button>
+      <button class="chip gchip" data-g="general">☆ General</button>
+      <button class="chip gchip" data-g="out">○ Out of Network</button>
+    </span>
     <span class="spacer" style="flex:1"></span>
     <label>sort <select id="sort">
       <option value="posted-desc">posted · newest first</option>
@@ -260,6 +267,7 @@
   let liveExtra = {};           // company -> array of live-only jobs
   let liveAt = {};              // company -> ISO time of last live pull
   let filter = 'all';
+  let groupFilter = 'all';      // all | primary | general | out  (sidebar group of the role's company)
   let query = '';
   let lastVisit = null;         // ISO of the previous visit (comparison point)
 
@@ -593,8 +601,10 @@
   const isWeek = j => (Date.now() - new Date(j.published_at || j.first_seen)) < 7 * 86400000;
   const needsVerify = j => j.us !== true || j.remote === 'unknown' || j.remote_confidence === 'low';
 
+  const companyGroup = name => groups.primary.includes(name) ? 'primary' : groups.out.includes(name) ? 'out' : 'general';
   function visible(j, sec) {
     if (markOf(j) !== sec) return false;
+    if (groupFilter !== 'all' && companyGroup(j.company) !== groupFilter) return false;
     if (sec === 'open' && j.status === 'closed' && !$('#showClosed').checked) return false;
     if (filter === 'new' && !isNew(j)) return false;
     if (filter === 'remote' && j.remote !== 'remote') return false;
@@ -829,9 +839,14 @@
   function toast(msg) { const t = $('#toast'); t.textContent = msg; t.classList.add('show'); clearTimeout(toastTimer); toastTimer = setTimeout(() => t.classList.remove('show'), 4500); }
 
   // --------------------------------------------------------------- wiring --
-  document.querySelectorAll('.chip').forEach(b => b.addEventListener('click', () => {
-    document.querySelectorAll('.chip').forEach(x => x.classList.remove('on')); b.classList.add('on'); filter = b.dataset.f; render();
+  document.querySelectorAll('.chip:not(.gchip)').forEach(b => b.addEventListener('click', () => {
+    document.querySelectorAll('.chip:not(.gchip)').forEach(x => x.classList.remove('on')); b.classList.add('on'); filter = b.dataset.f; render();
   }));
+  document.querySelectorAll('.gchip').forEach(b => b.addEventListener('click', () => {
+    document.querySelectorAll('.gchip').forEach(x => x.classList.remove('on')); b.classList.add('on'); groupFilter = b.dataset.g;
+    try { localStorage.setItem('jobwatch.groupFilter', groupFilter); } catch (_) {} render();
+  }));
+  try { const gf = localStorage.getItem('jobwatch.groupFilter'); if (gf) { groupFilter = gf; document.querySelectorAll('.gchip').forEach(x => x.classList.toggle('on', x.dataset.g === gf)); } } catch (_) {}
   $('#q').addEventListener('input', e => { query = e.target.value.trim().toLowerCase(); render(); });
   $('#showClosed').addEventListener('change', render);
   wireSync();
