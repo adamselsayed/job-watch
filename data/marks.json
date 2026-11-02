@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T19:23:52.173Z",
+  "updated_at": "2026-11-02T19:42:59.559Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -290,8 +290,8 @@
       "company": "ServiceNow"
     },
     "smartrecruiters:ServiceNow:744000158360807": {
-      "status": "open",
-      "at": "2026-11-02T19:23:50.661Z",
+      "status": "applied",
+      "at": "2026-11-02T19:42:58.052Z",
       "title": "Senior Staff Product Security Engineer | Product Security Incident Response Team (PSIRT) ",
       "company": "ServiceNow"
     },
@@ -437,6 +437,192 @@
       "status": "archived",
       "at": "2026-11-02T18:49:49.505Z",
       "title": "Director, Product Innovation - Business Workflows",
+      "company": "ServiceNow"
+    },
+    "smartrecruiters:ServiceNow:744000158742369": {
+      "status": "applied",
+      "at": "2026-11-02T19:42:58.052Z",
+      "title": "Business Systems Product Manager",
+      "company": "ServiceNow"
+    },
+    "smartrecruiters:ServiceNow:744000158615099": {
+      "status": "applied",
+      "at": "2026-11-02T19:42:58.052Z",
+      "title": "Senior Staff Inbound Product Manager - AI Search",
+      "company": "ServiceNow"
+    },
+    "smartrecruiters:ServiceNow:744000158563480": {
+      "status": "applied",
+      "at": "2026-11-02T19:42:58.052Z",
+      "title": "Senior Staff Outbound Product Manager",
+      "company": "ServiceNow"
+    },
+    "smartrecruiters:ServiceNow:744000158402969": {
+      "status": "applied",
+      "at": "2026-11-02T19:42:58.052Z",
+      "title": "Senior Staff Outbound Product Manager",
+      "company": "ServiceNow"
+    },
+    "smartrecruiters:ServiceNow:744000158364690": {
+      "status": "applied",
+      "at": "2026-11-02T19:42:58.052Z",
+      "title": "Sr. Staff Product Manager, AI-Native IT Service Management ",
+      "company": "ServiceNow"
+    },
+    "smartrecruiters:ServiceNow:744000158155950": {
+      "status": "applied",
+      "at": "2026-11-02T19:42:58.052Z",
+      "title": "Senior Staff Technical Program Manager | Product Security",
+      "company": "ServiceNow"
+    },
+    "smartrecruiters:ServiceNow:744000158091470": {
+      "status": "applied",
+      "at": "2026-11-02T19:42:58.052Z",
+      "title": "Senior Manager, Partner Product Enablement & Advocacy ",
+      "company": "ServiceNow"
+    },
+    "smartrecruiters:ServiceNow:744000157550109": {
+      "status": "applied",
+      "at": "2026-11-02T19:42:58.052Z",
+      "title": "Senior Staff Inbound Product Manager, AI/Super Intelligence Control Tower Observability",
+      "company": "ServiceNow"
+    },
+    "smartrecruiters:ServiceNow:744000157549524": {
+      "status": "applied",
+      "at": "2026-11-02T19:42:58.052Z",
+      "title": "Senior Staff Inbound Product Manager, AI/Super Intelligence Control Tower - End to End Experience",
+      "company": "ServiceNow"
+    },
+    "smartrecruiters:ServiceNow:744000156856599": {
+      "status": "applied",
+      "at": "2026-11-02T19:42:58.052Z",
+      "title": "Senior Staff Outbound Product Manager - GTM / Data & Analytics",
+      "company": "ServiceNow"
+    },
+    "smartrecruiters:ServiceNow:744000156856489": {
+      "status": "applied",
+      "at": "2026-11-02T19:42:58.052Z",
+      "title": "Senior Staff Outbound Product Manager - GTM / Data & Analytics",
+      "company": "ServiceNow"
+    },
+    "smartrecruiters:ServiceNow:744000156856309": {
+      "status": "applied",
+      "at": "2026-11-02T19:42:58.052Z",
+      "title": "Senior Staff Outbound Product Manager - GTM / Data & Analytics",
+      "company": "ServiceNow"
+    },
+    "smartrecruiters:ServiceNow:744000156543661": {
+      "status": "applied",
+      "at": "2026-11-02T19:42:58.052Z",
+      "title": "Senior Staff Inbound Product Manager",
+      "company": "ServiceNow"
+    },
+    "smartrecruiters:ServiceNow:744000156426199": {
+      "status": "applied",
+      "at": "2026-11-02T19:42:58.052Z",
+      "title": "Principal  Product Success Manager",
+      "company": "ServiceNow"
+    },
+    "smartrecruiters:ServiceNow:744000155345180": {
+      "status": "applied",
+      "at": "2026-11-02T19:42:58.052Z",
+      "title": " AI Product Strategy & Operations Senior Manager",
+      "company": "ServiceNow"
+    },
+    "smartrecruiters:ServiceNow:744000155296769": {
+      "status": "applied",
+      "at": "2026-11-02T19:42:58.052Z",
+      "title": "Senior Staff Technical Product Manager, Conversational AI",
+      "company": "ServiceNow"
+    },
+    "smartrecruiters:ServiceNow:744000153739678": {
+      "status": "applied",
+      "at": "2026-11-02T19:42:58.052Z",
+      "title": "Staff Inbound Product Manager - ServiceNow University",
+      "company": "ServiceNow"
+    },
+    "smartrecruiters:ServiceNow:744000153020371": {
+      "status": "applied",
+      "at": "2026-11-02T19:42:58.052Z",
+      "title": "Principal Inbound Product Manager - Now Engage",
+      "company": "ServiceNow"
+    },
+    "smartrecruiters:ServiceNow:744000151391394": {
+      "status": "applied",
+      "at": "2026-11-02T19:42:58.052Z",
+      "title": "Senior Staff Inbound Product Manager - AI Search",
+      "company": "ServiceNow"
+    },
+    "smartrecruiters:ServiceNow:744000150777598": {
+      "status": "applied",
+      "at": "2026-11-02T19:42:58.052Z",
+      "title": "Sr Staff Inbound Product Manager",
+      "company": "ServiceNow"
+    },
+    "smartrecruiters:ServiceNow:744000150714090": {
+      "status": "applied",
+      "at": "2026-11-02T19:42:58.052Z",
+      "title": "Senior Principal Inbound Product Manager, CRM Voice AI ",
+      "company": "ServiceNow"
+    },
+    "smartrecruiters:ServiceNow:744000150715459": {
+      "status": "applied",
+      "at": "2026-11-02T19:42:58.052Z",
+      "title": "Principal Inbound Product Manager, CRM Voice AI ",
+      "company": "ServiceNow"
+    },
+    "smartrecruiters:ServiceNow:744000150714661": {
+      "status": "applied",
+      "at": "2026-11-02T19:42:58.052Z",
+      "title": "Senior Inbound Product Manager, CRM Voice AI ",
+      "company": "ServiceNow"
+    },
+    "smartrecruiters:ServiceNow:744000150403065": {
+      "status": "applied",
+      "at": "2026-11-02T19:42:58.052Z",
+      "title": "Principal Product Manager - WEM Analytics and Planning",
+      "company": "ServiceNow"
+    },
+    "smartrecruiters:ServiceNow:744000150126949": {
+      "status": "applied",
+      "at": "2026-11-02T19:42:58.052Z",
+      "title": "Senior Principal Inbound Product Manager, CRM Voice AI ",
+      "company": "ServiceNow"
+    },
+    "smartrecruiters:ServiceNow:744000150121538": {
+      "status": "applied",
+      "at": "2026-11-02T19:42:58.052Z",
+      "title": "Senior Inbound Product Manager, CRM Voice AI ",
+      "company": "ServiceNow"
+    },
+    "smartrecruiters:ServiceNow:744000149933604": {
+      "status": "applied",
+      "at": "2026-11-02T19:42:58.052Z",
+      "title": "Principal Outbound Product Security Manager",
+      "company": "ServiceNow"
+    },
+    "smartrecruiters:ServiceNow:744000149869184": {
+      "status": "applied",
+      "at": "2026-11-02T19:42:58.052Z",
+      "title": "Senior Staff Inbound Product Manager - Conversational AI ",
+      "company": "ServiceNow"
+    },
+    "smartrecruiters:ServiceNow:744000149871496": {
+      "status": "applied",
+      "at": "2026-11-02T19:42:58.052Z",
+      "title": "Senior Staff Inbound Product Manager - Conversational AI ",
+      "company": "ServiceNow"
+    },
+    "smartrecruiters:ServiceNow:744000149391050": {
+      "status": "applied",
+      "at": "2026-11-02T19:42:58.052Z",
+      "title": "Senior Staff Inbound Product Manager",
+      "company": "ServiceNow"
+    },
+    "smartrecruiters:ServiceNow:744000149362100": {
+      "status": "applied",
+      "at": "2026-11-02T19:42:58.052Z",
+      "title": "Staff Technical Product Manager - Quote to Cash",
       "company": "ServiceNow"
     }
   },
