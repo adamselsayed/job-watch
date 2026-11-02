@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T20:14:24.106Z",
+  "updated_at": "2026-11-02T20:14:57.605Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -470,8 +470,8 @@
       "company": "ServiceNow"
     },
     "smartrecruiters:ServiceNow:744000158155950": {
-      "status": "open",
-      "at": "2026-11-02T19:43:05.993Z",
+      "status": "archived",
+      "at": "2026-11-02T20:14:56.101Z",
       "title": "Senior Staff Technical Program Manager | Product Security",
       "company": "ServiceNow"
     },
