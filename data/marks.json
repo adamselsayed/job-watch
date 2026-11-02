@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T06:28:40.316Z",
+  "updated_at": "2026-11-02T18:49:35.765Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -372,6 +372,30 @@
       "at": "2026-11-01T04:51:21.773Z",
       "title": "Senior Product Manager, Device Experience",
       "company": "Samsara"
+    },
+    "smartrecruiters:ServiceNow:744000158162749": {
+      "status": "archived",
+      "at": "2026-11-02T18:49:31.691Z",
+      "title": "Director, Product Management - Security and Risk Partnerships",
+      "company": "ServiceNow"
+    },
+    "smartrecruiters:ServiceNow:744000158162444": {
+      "status": "archived",
+      "at": "2026-11-02T18:49:33.126Z",
+      "title": "Director, Product Management - Security and Risk Partnerships",
+      "company": "ServiceNow"
+    },
+    "smartrecruiters:ServiceNow:744000156842184": {
+      "status": "archived",
+      "at": "2026-11-02T18:49:33.591Z",
+      "title": "Director, Regional Product Management",
+      "company": "ServiceNow"
+    },
+    "smartrecruiters:ServiceNow:744000156842094": {
+      "status": "archived",
+      "at": "2026-11-02T18:49:34.258Z",
+      "title": "Director, Regional Product Management",
+      "company": "ServiceNow"
     }
   },
   "groups": {
