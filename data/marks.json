@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T20:14:57.605Z",
+  "updated_at": "2026-11-02T20:15:36.931Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -230,8 +230,8 @@
       "company": "ServiceNow"
     },
     "smartrecruiters:ServiceNow:744000151887559": {
-      "status": "open",
-      "at": "2026-11-02T19:43:12.901Z",
+      "status": "archived",
+      "at": "2026-11-02T20:15:35.425Z",
       "title": "Product Success Technical Director",
       "company": "ServiceNow"
     },
