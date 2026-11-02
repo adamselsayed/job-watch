@@ -1,0 +1,252 @@
+{
+ "first_page": {
+  "keys": [
+   "refineSearch"
+  ],
+  "rs_keys": [
+   "status",
+   "hits",
+   "totalHits",
+   "data",
+   "eid"
+  ],
+  "data_keys": [
+   "jobs",
+   "aggregations",
+   "SEARCH_CONFIG",
+   "suggestions",
+   "ui_skills_selection"
+  ],
+  "totalHits": 708,
+  "sample": [
+   {
+    "ml_skills": [
+     "automotive sales",
+     "credit decision making",
+     "customer financing",
+     "compliance with state and federal regulations",
+     "sales goal achievement",
+     "consultative interviewing",
+     "product knowledge",
+     "finance transaction processing",
+     "customer relationship management",
+     "sales process management",
+     "administrative process management",
+     "technology adoption",
+     "people development",
+     "strategic thinking",
+     "leadership",
+     "interpersonal skills",
+     "organizational skills"
+    ],
+    "type": "Full time",
+    "descriptionTeaser": "We are looking for a CFS Manager to lead the finance and insurance process for automotive sales at AutoNation. Oversee credit decisions, process finance transactions, and ensure compliance. Ideal for candidates with leadership experience and a passion for customer service in the automotive sector.",
+    "departmentCategory": "F&I Sales",
+    "state": "Washington",
+    "siteType": "external",
+    "multi_category": [
+     "Operations"
+    ],
+    "reqId": "JR2026150446",
+    "city": "Bellevue",
+    "latitude": "47.61038",
+    "multi_location": [
+     "Bellevue, Washington, United States of America"
+    ],
+    "address": "411 - 116th Avenue NE, Bellevue, WA 98004, United States of America",
+    "applyUrl": "https://autonation.wd5.myworkdayjobs.com/Careers/job/AutoNation-Ford-Bellevue/CFS-Manager---AN-Ford-Bellevue_JR2026150446/apply",
+    "ml_job_parser": {
+     "descriptionTeaser": "We are looking for a CFS Manager to lead the finance and insurance process for automotive sales at AutoNation. Oversee credit decisions, process finance transactions, and ensure compliance. Ideal for candidates with leadership experience and a passion for customer service in the automotive sector.",
+     "descriptionTeaser_first200": "AutoNation is one of the largest automotive retailers in the United States, offering innovative products, exceptional services, and comprehensive solutions, empowering our customers to make the bes...",
+     "descriptionTeaser_keyword": "AutoNation is one of the largest automotive retailers in the United States, offering innovative products, exceptional services, and comprehensive solutions, empowering our customers to make the best d...",
+     "descriptionTeaser_ats": "AutoNation is one of the largest automotive retailers in the United States, offering innovative products, exceptional services, and comprehensive solutions, empowering our customers to make the best d"
+    },
+    "externalApply": true,
+    "cityState": "Bellevue, Washington",
+    "country": "United States of America",
+    "visibilityType": "External",
+    "longitude": "-122.20068",
+    "jobId": "JR2026150446",
+    "locale": "en_US",
+    "title": "CFS Manager - AN Ford Bellevue",
+    "jobSeqNo": "AUMAIHUSJR2026150446EXTERNALENUS",
+    "postedDate": "2026-10-07T00:00:00.000+0000",
+    "dateCreated": "2026-10-07T18:27:34.616+0000",
+    "company": "AutoNation Ford Bellevue",
+    "cityStateCountry": "Bellevue, Washington, United States of America",
+    "jobVisibility": [
+     "external"
+    ],
+    "location": "Bellevue, Washington, United States of America",
+    "category": "Operations",
+    "isMultiLocation": true,
+    "multi_location_array": [
+     {
+      "latlong": {
+       "lon": -122.20068,
+       "lat": 47.61038
+      },
+      "location": "Bellevue, Washington, United States of America"
+     }
+    ],
+    "isMultiCategory": false,
+    "multi_category_array": [
+     {
+      "category": "Operations"
+     }
+    ],
+    "badge": ""
+   },
+   {
+    "ml_skills": [
+     "inventory management",
+     "parts inventory control",
+     "parts database management",
+     "order processing",
+     "stock replenishment",
+     "safety compliance",
+     "vendor catalog interpretation",
+     "parts inspection",
+     "parts reordering",
+     "parts re-shelving",
+     "parts re-packing",
+     "parts warranty coordination",
+     "purchase order matching",
+     "invoice processing",
+     "parts counter invoice filing",
+     "parts inventory preparation",
+     "parts database updating",
+     "parts order placement",
+     "parts order processing",
+     "parts order crediting",
+     "parts order removal",
+     "parts order matching",
+     "parts order approval",
+     "parts order forwarding"
+    ],
+    "type": "Full time",
+    "descriptionTeaser": "We are looking for a Retail Parts Inventory Control Associate to ensure proper control of parts inventory and related administrative functions. Key responsibilities include receiving and recording new parts inventory and maintaining a safe, secure environment. Ideal candidates have strong communication skills and experience in inventory management.",
+    "departmentCategory": "Parts Support",
+    "state": "Washington",
+    "siteType": "external",
+    "multi_category": [
+     "Operations"
+    ],
+    "reqId": "JR2026150787",
+    "city": "Bellevue",
+    "latitude": "47.61038",
+    "multi_location": [
+     "Bellevue, Washington, United States of America"
+    ],
+    "address": "11910 NE 8th Street, Bellevue, WA 98005, United States of America",
+    "applyUrl": "https://autonation.wd5.myworkdayjobs.com/Careers/job/Porsche-Bellevue/Retail-Parts-Inventory-Control-Associate---AN-Porsche-Bellevue_JR2026150787/apply",
+    "ml_job_parser": {
+     "descriptionTeaser": "We are looking for a Retail Parts Inventory Control Associate to ensure proper control of parts inventory and related administrative functions. Key responsibilities include receiving and recording new parts inventory and maintaining a safe, secure environment. Ideal candidates have strong communication skills and experience in inventory management.",
+     "descriptionTeaser_first200": "AutoNation is one of the largest automotive retailers in the United States, offering innovative products, exceptional services, and comprehensive solutions, empowering our customers to make the bes...",
+     "descriptionTeaser_keyword": "AutoNation is one of the largest automotive retailers in the United States, offering innovative products, exceptional services, and comprehensive solutions, empowering our customers to make the best d...",
+     "descriptionTeaser_ats": "AutoNation is one of the largest automotive retailers in the United States, offering innovative products, exceptional services, and comprehensive solutions, empowering our customers to make the best d"
+    },
+    "externalApply": true,
+    "cityState": "Bellevue, Washington",
+    "country": "United States of America",
+    "visibilityType": "External",
+    "longitude": "-122.20068",
+    "jobId": "JR2026150787",
+    "locale": "en_US",
+    "title": "Retail Parts Inventory Control Associate - AN Porsche Bellevue",
+    "jobSeqNo": "AUMAIHUSJR2026150787EXTERNALENUS",
+    "postedDate": "2026-10-22T00:00:00.000+0000",
+    "dateCreated": "2026-10-20T06:20:15.758+0000",
+    "company": "Porsche Bellevue",
+    "cityStateCountry": "Bellevue, Washington, United States of America",
+    "jobVisibility": [
+     "external"
+    ],
+    "location": "Bellevue, Washington, United States of America",
+    "category": "Operations",
+    "isMultiLocation": true,
+    "multi_location_array": [
+     {
+      "latlong": {
+       "lon": -122.20068,
+       "lat": 47.61038
+      },
+      "location": "Bellevue, Washington, United States of America"
+     }
+    ],
+    "isMultiCategory": false,
+    "multi_category_array": [
+     {
+      "category": "Operations"
+     }
+    ],
+    "badge": ""
+   }
+  ]
+ },
+ "scanned": 708,
+ "kept": 4,
+ "kept_rows": [
+  {
+   "job_id": "AUMAIHUSJR2026148772EXTERNALENUS",
+   "req_id": "JR2026148772",
+   "title": "BMW Product Specialist-Laurel BMW of Westmont",
+   "location": "Westmont, Illinois, United States of America",
+   "location_detail": "Westmont, Illinois, United States of America",
+   "department": "Operations",
+   "published_at": "2026-09-08T00:00:00.000+0000",
+   "updated_at": null,
+   "url": "https://careers.autonation.com/us/en/job/AUMAIHUSJR2026148772EXTERNALENUS/BMW-Product-Specialist-Laurel-BMW-of-Westmont",
+   "salary": null,
+   "_meta_text": "type: Full time workplace: ",
+   "_content_head": "The Product Specialist is responsible for delivering comprehensive product information throughout the sales and aftersales processes. Our dealership seeks individuals with creativity to provide “world class” customer-oriented support. We will provide everything else - including the most professional sales and customer-oriented training that is available.   The right individual will be a self-start"
+  },
+  {
+   "job_id": "AUMAIHUSJR2026143646EXTERNALENUS",
+   "req_id": "JR2026143646",
+   "title": "Group Product Manager",
+   "location": "Remote-CA, California, United States of America",
+   "location_detail": "Remote-CA, California, United States of America; Remote-NY, New York, United States of America; Remote-TX, Texas, United States of America; Remote-FL, Florida, United States of America",
+   "department": "Other",
+   "published_at": "2026-08-11T00:00:00.000+0000",
+   "updated_at": null,
+   "url": "https://careers.autonation.com/us/en/job/AUMAIHUSJR2026143646EXTERNALENUS/Group-Product-Manager",
+   "salary": null,
+   "_meta_text": "type: Full time workplace: ",
+   "_content_head": "We are seeking an experienced and dynamic Group Product Manager to play a key role in shaping the future of our product portfolio. In role, you will collaborate closely with cross-functional teams, including engineering, design, marketing, and leadership, to define and execute the vision, strategy, and roadmap for innovative products that delight our customers and drive business growth. As a Group"
+  },
+  {
+   "job_id": "AUMAIHUSJR2026143821EXTERNALENUS",
+   "req_id": "JR2026143821",
+   "title": "Director, Product",
+   "location": "Remote-CA, California, United States of America",
+   "location_detail": "Remote-CA, California, United States of America; Remote-FL, Florida, United States of America; Remote-TX, Texas, United States of America; Remote-NY, New York, United States of America",
+   "department": "Other",
+   "published_at": "2026-08-11T00:00:00.000+0000",
+   "updated_at": null,
+   "url": "https://careers.autonation.com/us/en/job/AUMAIHUSJR2026143821EXTERNALENUS/Director-Product",
+   "salary": null,
+   "_meta_text": "type: Full time workplace: ",
+   "_content_head": "We are seeking an experienced and dynamic Director of Product Management to play a key role in shaping the future of our product portfolio. In this hands-on role, you will collaborate closely with cross-functional teams, including engineering, design, marketing, and leadership, to drive the vision, strategy, and execution of innovative products that delight our customers and contribute to our busi"
+  },
+  {
+   "job_id": "AUMAIHUSJR2026148296EXTERNALENUS",
+   "req_id": "JR2026148296",
+   "title": "Sr. Product Manager",
+   "location": "Fort Lauderdale, Florida, United States of America",
+   "location_detail": "Fort Lauderdale, Florida, United States of America",
+   "department": "Other",
+   "published_at": "2026-10-08T00:00:00.000+0000",
+   "updated_at": null,
+   "url": "https://careers.autonation.com/us/en/job/AUMAIHUSJR2026148296EXTERNALENUS/Sr-Product-Manager",
+   "salary": {
+    "min": 138000,
+    "max": 184000,
+    "currency": "USD",
+    "source": "description"
+   },
+   "_meta_text": "type: Full time workplace: ",
+   "_content_head": "We are seeking an experienced and dynamic Senior Product Manager to play a key role in shaping the future of our product portfolio. In this role, you will collaborate closely with cross-functional teams, including engineering, design, marketing, and leadership, to define and execute the strategy, and roadmap for innovative products that delight our customers and drive business growth. As a Senior "
+  }
+ ]
+}

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-02T14:00:12+00:00",
+  "generated_at": "2026-11-02T20:08:55+00:00",
   "criteria": {
     "title_keywords": [
       "product"
@@ -311,6 +311,17 @@
       "error": null,
       "total_jobs": 440,
       "matched": 9
+    },
+    {
+      "name": "AutoNation",
+      "ats": "phenom",
+      "board": "careers.autonation.com/us/en",
+      "url": "https://careers.autonation.com/us/en/search-results",
+      "fetched_at": "2026-11-02T20:08:55+00:00",
+      "status": "ok",
+      "error": null,
+      "total_jobs": 708,
+      "matched": 4
     }
   ],
   "jobs": [
@@ -4114,6 +4125,32 @@
       "closed_at": null
     },
     {
+      "job_id": "AUMAIHUSJR2026148296EXTERNALENUS",
+      "req_id": "JR2026148296",
+      "title": "Sr. Product Manager",
+      "location": "Fort Lauderdale, Florida, United States of America",
+      "location_detail": "Fort Lauderdale, Florida, United States of America",
+      "department": "Other",
+      "published_at": "2026-10-08T00:00:00.000+0000",
+      "updated_at": null,
+      "url": "https://careers.autonation.com/us/en/job/AUMAIHUSJR2026148296EXTERNALENUS/Sr-Product-Manager",
+      "salary": {
+        "min": 138000,
+        "max": 184000,
+        "currency": "USD",
+        "source": "description"
+      },
+      "us": true,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "AutoNation",
+      "key": "phenom:careers.autonation.com/us/en:AUMAIHUSJR2026148296EXTERNALENUS",
+      "first_seen": "2026-11-02T20:08:55+00:00",
+      "last_seen": "2026-11-02T20:08:55+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
       "job_id": "8262242",
       "req_id": "JR100343",
       "title": "Product Manager II",
@@ -5401,6 +5438,27 @@
       "closed_at": null
     },
     {
+      "job_id": "AUMAIHUSJR2026148772EXTERNALENUS",
+      "req_id": "JR2026148772",
+      "title": "BMW Product Specialist-Laurel BMW of Westmont",
+      "location": "Westmont, Illinois, United States of America",
+      "location_detail": "Westmont, Illinois, United States of America",
+      "department": "Operations",
+      "published_at": "2026-09-08T00:00:00.000+0000",
+      "updated_at": null,
+      "url": "https://careers.autonation.com/us/en/job/AUMAIHUSJR2026148772EXTERNALENUS/BMW-Product-Specialist-Laurel-BMW-of-Westmont",
+      "salary": null,
+      "us": true,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "AutoNation",
+      "key": "phenom:careers.autonation.com/us/en:AUMAIHUSJR2026148772EXTERNALENUS",
+      "first_seen": "2026-11-02T20:08:55+00:00",
+      "last_seen": "2026-11-02T20:08:55+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
       "job_id": "323602c6-082f-4c92-953d-642eccb0ed7f",
       "req_id": null,
       "title": "Product Manager, Pro Integrations & Foundations",
@@ -5611,6 +5669,48 @@
       "key": "smartrecruiters:ServiceNow:744000143156960",
       "first_seen": "2026-10-30T05:47:56+00:00",
       "last_seen": "2026-11-02T14:00:12+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "AUMAIHUSJR2026143646EXTERNALENUS",
+      "req_id": "JR2026143646",
+      "title": "Group Product Manager",
+      "location": "Remote-CA, California, United States of America",
+      "location_detail": "Remote-CA, California, United States of America; Remote-NY, New York, United States of America; Remote-TX, Texas, United States of America; Remote-FL, Florida, United States of America",
+      "department": "Other",
+      "published_at": "2026-08-11T00:00:00.000+0000",
+      "updated_at": null,
+      "url": "https://careers.autonation.com/us/en/job/AUMAIHUSJR2026143646EXTERNALENUS/Group-Product-Manager",
+      "salary": null,
+      "us": true,
+      "remote": "remote",
+      "remote_confidence": "high",
+      "company": "AutoNation",
+      "key": "phenom:careers.autonation.com/us/en:AUMAIHUSJR2026143646EXTERNALENUS",
+      "first_seen": "2026-11-02T20:08:55+00:00",
+      "last_seen": "2026-11-02T20:08:55+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "AUMAIHUSJR2026143821EXTERNALENUS",
+      "req_id": "JR2026143821",
+      "title": "Director, Product",
+      "location": "Remote-CA, California, United States of America",
+      "location_detail": "Remote-CA, California, United States of America; Remote-FL, Florida, United States of America; Remote-TX, Texas, United States of America; Remote-NY, New York, United States of America",
+      "department": "Other",
+      "published_at": "2026-08-11T00:00:00.000+0000",
+      "updated_at": null,
+      "url": "https://careers.autonation.com/us/en/job/AUMAIHUSJR2026143821EXTERNALENUS/Director-Product",
+      "salary": null,
+      "us": true,
+      "remote": "remote",
+      "remote_confidence": "high",
+      "company": "AutoNation",
+      "key": "phenom:careers.autonation.com/us/en:AUMAIHUSJR2026143821EXTERNALENUS",
+      "first_seen": "2026-11-02T20:08:55+00:00",
+      "last_seen": "2026-11-02T20:08:55+00:00",
       "status": "open",
       "closed_at": null
     },
