@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T18:49:39.114Z",
+  "updated_at": "2026-11-02T18:49:41.447Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -419,6 +419,12 @@
       "status": "archived",
       "at": "2026-11-02T18:49:37.608Z",
       "title": "Director, Product Management",
+      "company": "ServiceNow"
+    },
+    "smartrecruiters:ServiceNow:744000153034225": {
+      "status": "archived",
+      "at": "2026-11-02T18:49:39.941Z",
+      "title": "Senior Director, Product  Unified Security and Exposure Management ",
       "company": "ServiceNow"
     }
   },
