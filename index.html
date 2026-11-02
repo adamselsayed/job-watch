@@ -100,6 +100,15 @@
   .act:hover { color: var(--accent); border-color: var(--accent); }
   .act.applied:hover { color: var(--new); border-color: var(--new); }
   td.acts { white-space: nowrap; }
+  th.w-sel, td.sel { width: 30px; padding-right: 0; padding-left: 10px; }
+  td.sel input, th.w-sel input { margin: 0; vertical-align: middle; cursor: pointer; }
+  tr.selected td { background: var(--accent-soft); }
+  tr.dragging-row td { opacity: .5; }
+  .tabs button.drop-ok { outline: 2px dashed var(--accent); outline-offset: -2px; }
+  .tabs button.drop-over { background: var(--accent); color: #fff; }
+  .bulk { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; padding: 8px 16px; border-bottom: 1px solid var(--border); background: var(--accent-soft); font-size: 13px; }
+  .bulk b { color: var(--accent); }
+  .bulk .act { background: var(--surface); }
   td.acts .sub { margin-right: 6px; }
   th.w-acts { width: 205px; }
   .note button.link { border: 0; background: none; color: var(--accent); padding: 0; font-size: inherit; text-decoration: underline; }
@@ -252,6 +261,7 @@
     The daily sweep runs at 6 AM Pacific via GitHub Actions. <strong>Pull now</strong> reads the company's live job board straight from your browser and shows anything the sweep hasn't recorded yet as <span class="badge b-live">live</span>.
     Edit <code>companies.yml</code> in the repo to add companies.
     <br><strong>Primary / General / Out of Network</strong>: drag companies between the sidebar groups (or tap the ★ ☆ ○ symbol to cycle). New companies start in General; Out of Network is for companies where you have no one to refer you. The grouping is saved with your Applied/Archive marks.
+    <br><strong>Bulk moves</strong>: tick the checkboxes (or the header box for all shown), then use the bar that appears or drag the checked rows onto the Open / Applied / Archive tab.
     <br><strong>Applied / Archive</strong> are saved in this browser and, with <strong>Sync</strong> turned on (top right), to <code>data/marks.json</code> in the repo so they follow you across devices. A role you've filed stays filed; if the company reposts it under a new listing ID it shows up as new again.
     <button class="link" id="exportMarks">Export</button> · <button class="link" id="importMarks">Import</button> your Applied/Archive list to move it to another browser.<input type="file" id="importFile" accept="application/json" hidden>
   </p>
@@ -284,11 +294,17 @@
   try { marks = JSON.parse(localStorage.getItem(MARKS_KEY) || '{}') || {}; } catch (e) { marks = {}; }
   const saveMarks = () => { try { localStorage.setItem(MARKS_KEY, JSON.stringify(marks)); } catch (e) { toast('Could not save — browser storage is unavailable.'); } };
   const markOf = j => (marks[j.key] || {}).status || 'open';
-  function setMark(j, status) {
+  function setMark(j, status) { setMarks([j], status); }
+  function setMarks(list, status) {
     // 'open' is kept as a tombstone (not deleted) so a restore wins over an older remote copy when syncing.
-    marks[j.key] = { status, at: new Date().toISOString(), title: j.title, company: j.company };
+    const at = new Date().toISOString();
+    for (const j of list) marks[j.key] = { status, at, title: j.title, company: j.company };
+    for (const j of list) selected_.delete(j.key);
     saveMarks(); render(); scheduleSync();
+    if (list.length > 1) toast(`${list.length} roles moved to ${({ open: 'Open', applied: 'Applied', archived: 'Archive' })[status]}.`);
   }
+  const selected_ = new Set();                 // keys of checked rows (multi-select)
+  const SECTION_LABEL = { open: 'Open', applied: 'Applied', archived: 'Archive' };
 
   // ------------------------------------------------------- GitHub sync ----
   // Writes marks to data/marks.json in the repo through the GitHub Contents API,
@@ -663,7 +679,7 @@
     'title':       (a, b) => a.title.localeCompare(b.title),
   };
   const sortRows = rows => rows.slice().sort((a, b) => (a.status === 'closed') - (b.status === 'closed') || SORTS[sortKey](a, b));
-  const THEAD = () => `<thead><tr>${flat ? '<th class="w-co">Company</th>' : ''}<th class="w-role"${roleW ? ` style="width:${roleW}px"` : ''}>Role<span class="rz" title="Drag to widen the Role column · double-click to fit the longest title"></span></th><th class="w-loc">Location</th><th class="w-work">Work</th><th class="w-posted">Posted</th><th class="w-sal">Salary</th><th class="w-ids">IDs</th><th class="w-acts"></th></tr></thead>`;
+  const THEAD = () => `<thead><tr><th class="w-sel"><input type="checkbox" class="selall" title="Select all shown"></th>${flat ? '<th class="w-co">Company</th>' : ''}<th class="w-role"${roleW ? ` style="width:${roleW}px"` : ''}>Role<span class="rz" title="Drag to widen the Role column · double-click to fit the longest title"></span></th><th class="w-loc">Location</th><th class="w-work">Work</th><th class="w-posted">Posted</th><th class="w-sal">Salary</th><th class="w-ids">IDs</th><th class="w-acts"></th></tr></thead>`;
 
   function row(j) {
     const pub = j.published_at;
@@ -683,7 +699,8 @@
     const posted = pub
       ? `<span title="${escapeHtml(new Date(pub).toLocaleString('en-US'))}">${fmtDate(pub)} <span class="sub">· ${ago(pub)}</span></span>`
       : `<span class="sub" title="Posting has no publish date">seen ${fmtDate(j.first_seen)}</span>`;
-    return `<tr class="${j.status}">
+    return `<tr class="${j.status}${selected_.has(j.key) ? ' selected' : ''}" data-key="${escapeHtml(j.key)}" draggable="true">
+      <td class="sel"><input type="checkbox" class="selrow" data-key="${escapeHtml(j.key)}"${selected_.has(j.key) ? ' checked' : ''}></td>
       ${flat ? `<td class="co">${escapeHtml(j.company)}</td>` : ''}
       <td class="title" title="${escapeHtml(titleTip)}"><span class="t"><a href="${escapeHtml(j.url)}" target="_blank" rel="noopener">${escapeHtml(j.title)}</a>${badges.join('')}</span></td>
       <td class="loc" title="${escapeHtml(j.location_detail && j.location_detail !== j.location ? j.location + ' · ' + j.location_detail : j.location || '')}">${escapeHtml(j.location || '—')}${j.us !== true ? ' <span class="badge b-verify" title="Location does not clearly state a US location">verify US</span>' : ''}</td>
@@ -699,7 +716,7 @@
     const m = marks[j.key];
     const when = m && m.at ? `<span class="sub" title="${escapeHtml(new Date(m.at).toLocaleString('en-US'))}">${m.status === 'applied' ? 'applied' : 'archived'} ${fmtDate(m.at)}</span>` : '';
     const btn = (st, label, cls = '') => `<button class="act ${cls}" data-key="${escapeHtml(j.key)}" data-mark="${st}">${label}</button>`;
-    if (!m) return btn('applied', '✓ Applied', 'applied') + ' ' + btn('archived', 'Archive');
+    if (!m || m.status === 'open') return btn('applied', '✓ Applied', 'applied') + ' ' + btn('archived', 'Archive');
     if (m.status === 'applied') return when + btn('open', 'Restore') + ' ' + btn('archived', 'Archive');
     return when + btn('open', 'Restore') + ' ' + btn('applied', '✓ Applied', 'applied');
   }
@@ -712,8 +729,44 @@
       <button class="${cur === 'applied' ? 'on' : ''}" data-s="applied">Applied<b>${n('applied')}</b></button>
       <button class="${cur === 'archived' ? 'on' : ''}" data-s="archived">Archive<b>${n('archived')}</b></button></span>`;
   }
-  function wire(el) {
+  function bulkBar(rows) {
+    const chosen = rows.filter(j => selected_.has(j.key));
+    if (!chosen.length) return '';
+    const btn = (st, label, cls = '') => `<button class="act bulk-act ${cls}" data-mark="${st}">${label}</button>`;
+    const cur = markOf(chosen[0]);
+    return `<div class="bulk"><b>${chosen.length} selected</b> · move to:
+      ${cur !== 'applied' ? btn('applied', '✓ Applied', 'applied') : ''} ${cur !== 'archived' ? btn('archived', 'Archive') : ''} ${cur !== 'open' ? btn('open', 'Open (restore)') : ''}
+      <span class="sub">or drag the checked rows onto the Open / Applied / Archive tab</span>
+      <button class="act bulk-clear">Clear selection</button></div>`;
+  }
+  function wire(el, rows = []) {
     el.querySelectorAll('.tabs button').forEach(b => b.addEventListener('click', e => { sectionOf[e.currentTarget.parentElement.dataset.name] = e.currentTarget.dataset.s; render(); }));
+    // --- multi-select
+    const byKey = k => allJobs().find(x => x.key === k);
+    const chosen = () => [...selected_].map(byKey).filter(Boolean);
+    el.querySelectorAll('.selrow').forEach(cb => cb.addEventListener('change', e => {
+      const k = e.currentTarget.dataset.key; if (e.currentTarget.checked) selected_.add(k); else selected_.delete(k); render();
+    }));
+    const all = el.querySelector('.selall');
+    if (all) { all.checked = rows.length > 0 && rows.every(j => selected_.has(j.key));
+      all.addEventListener('change', e => { for (const j of rows) e.currentTarget.checked ? selected_.add(j.key) : selected_.delete(j.key); render(); }); }
+    el.querySelectorAll('.bulk-act').forEach(b => b.addEventListener('click', e => setMarks(chosen(), e.currentTarget.dataset.mark)));
+    el.querySelectorAll('.bulk-clear').forEach(b => b.addEventListener('click', () => { selected_.clear(); render(); }));
+    // --- drag rows (the checked set, or just the dragged row) onto a section tab
+    el.querySelectorAll('tbody tr[draggable]').forEach(tr => {
+      tr.addEventListener('dragstart', e => {
+        const k = tr.dataset.key; if (!selected_.has(k)) { selected_.clear(); selected_.add(k); el.querySelectorAll('tr').forEach(r => r.classList.toggle('selected', selected_.has(r.dataset.key))); }
+        e.dataTransfer.effectAllowed = 'move'; e.dataTransfer.setData('text/plain', 'rows'); tr.classList.add('dragging-row');
+        el.querySelectorAll('.tabs button').forEach(b => { if (b.dataset.s !== markOf(byKey(k) || {})) b.classList.add('drop-ok'); });
+        const n = selected_.size; if (n > 1) { const g = document.createElement('div'); g.textContent = `${n} roles`; g.style.cssText = 'position:absolute;top:-1000px;padding:4px 10px;background:var(--accent);color:#fff;border-radius:6px;font-size:13px'; document.body.appendChild(g); e.dataTransfer.setDragImage(g, 10, 10); setTimeout(() => g.remove(), 0); }
+      });
+      tr.addEventListener('dragend', () => { tr.classList.remove('dragging-row'); el.querySelectorAll('.tabs button').forEach(b => b.classList.remove('drop-ok', 'drop-over')); });
+    });
+    el.querySelectorAll('.tabs button').forEach(b => {
+      b.addEventListener('dragover', e => { if (!b.classList.contains('drop-ok')) return; e.preventDefault(); e.dataTransfer.dropEffect = 'move'; b.classList.add('drop-over'); });
+      b.addEventListener('dragleave', () => b.classList.remove('drop-over'));
+      b.addEventListener('drop', e => { if (!b.classList.contains('drop-ok')) return; e.preventDefault(); const list = chosen(); if (list.length) setMarks(list, b.dataset.s); });
+    });
     el.querySelectorAll('.act').forEach(b => b.addEventListener('click', e => {
       const j = allJobs().find(x => x.key === e.currentTarget.dataset.key); if (j) setMark(j, e.currentTarget.dataset.mark);
     }));
@@ -749,8 +802,8 @@
       const el = document.createElement('section');
       el.className = 'company';
       el.innerHTML = `<div class="head"><h2>All companies</h2>${tabsHtml('*', jobs)}<span class="meta">${rows.length} shown</span><span class="spacer"></span></div>
-        ${rows.length ? `<table>${THEAD()}<tbody>${rows.map(row).join('')}</tbody></table>` : `<div class="empty">${EMPTY[sec]}</div>`}`;
-      wire(el); wireResize(el);
+        ${bulkBar(rows)}${rows.length ? `<table>${THEAD()}<tbody>${rows.map(row).join('')}</tbody></table>` : `<div class="empty">${EMPTY[sec]}</div>`}`;
+      wire(el, rows); wireResize(el);
       container.appendChild(el);
       return;
     }
@@ -773,10 +826,10 @@
           ${c.url ? `<a href="${escapeHtml(c.url)}" target="_blank" rel="noopener">careers page ↗</a>` : ''}
           <button class="pull">Pull now</button>
         </div>
-        ${rows.length ? `<table>${THEAD()}<tbody>${rows.map(row).join('')}</tbody></table>`
+        ${bulkBar(rows)}${rows.length ? `<table>${THEAD()}<tbody>${rows.map(row).join('')}</tbody></table>`
                       : `<div class="empty">${sec === 'open' && !openCount ? 'No open roles with “product” in the title in the US right now.' : EMPTY[sec]}</div>`}`;
       el.querySelector('.pull').addEventListener('click', e => pullNow(c, e.currentTarget));
-      wire(el); wireResize(el);
+      wire(el, rows); wireResize(el);
       container.appendChild(el);
     }
   }
