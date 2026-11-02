@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T18:49:35.765Z",
+  "updated_at": "2026-11-02T18:49:39.114Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -395,6 +395,30 @@
       "status": "archived",
       "at": "2026-11-02T18:49:34.258Z",
       "title": "Director, Regional Product Management",
+      "company": "ServiceNow"
+    },
+    "smartrecruiters:ServiceNow:744000156841854": {
+      "status": "archived",
+      "at": "2026-11-02T18:49:35.824Z",
+      "title": "Director, Regional Product Management",
+      "company": "ServiceNow"
+    },
+    "smartrecruiters:ServiceNow:744000155904829": {
+      "status": "archived",
+      "at": "2026-11-02T18:49:36.575Z",
+      "title": "Senior Director, Product Creative Direction",
+      "company": "ServiceNow"
+    },
+    "smartrecruiters:ServiceNow:744000155472964": {
+      "status": "archived",
+      "at": "2026-11-02T18:49:37.042Z",
+      "title": "Director, Product Management, Microsoft Product Partnership",
+      "company": "ServiceNow"
+    },
+    "smartrecruiters:ServiceNow:744000154541440": {
+      "status": "archived",
+      "at": "2026-11-02T18:49:37.608Z",
+      "title": "Director, Product Management",
       "company": "ServiceNow"
     }
   },
