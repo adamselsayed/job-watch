@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T22:19:10.272Z",
+  "updated_at": "2026-11-03T23:21:06.836Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -666,6 +666,12 @@
       "at": "2026-11-03T22:09:49.575Z",
       "title": "Principal Product Manager, Identity & Trust",
       "company": "Life360"
+    },
+    "greenhouse:komodohealth:8868143002": {
+      "status": "applied",
+      "at": "2026-11-03T23:21:05.327Z",
+      "title": "Principal Product Manager, AI Products",
+      "company": "Komodo Health"
     }
   },
   "groups": {
