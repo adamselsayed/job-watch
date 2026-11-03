@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T22:19:02.378Z",
+  "updated_at": "2026-11-03T22:19:10.272Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -677,12 +677,12 @@
       "Experian"
     ],
     "out": [
-      "AMN Healthcare",
       "DoorDash",
       "Angi",
       "Serve Robotics",
       "Yelp",
       "Care.com",
+      "AMN Healthcare",
       "Jackson Healthcare",
       "Aya Healthcare",
       "CHG Healthcare",
@@ -691,6 +691,6 @@
       "Nextdoor",
       "Housecall Pro"
     ],
-    "at": "2026-11-03T22:19:00.873Z"
+    "at": "2026-11-03T22:19:08.767Z"
   }
 }
