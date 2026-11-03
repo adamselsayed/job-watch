@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T21:14:07.180Z",
+  "updated_at": "2026-11-03T21:14:13.654Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -635,6 +635,12 @@
       "status": "archived",
       "at": "2026-11-03T21:14:05.668Z",
       "title": "Technical Product Manager, Legal AI and Platforms ",
+      "company": "ServiceNow"
+    },
+    "smartrecruiters:ServiceNow:744000159265259": {
+      "status": "archived",
+      "at": "2026-11-03T21:14:12.143Z",
+      "title": "Vice President, Corporate and Product Public Relations (Americas)",
       "company": "ServiceNow"
     }
   },
