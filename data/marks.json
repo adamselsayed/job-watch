@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T22:09:51.081Z",
+  "updated_at": "2026-11-03T22:19:02.378Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -677,6 +677,7 @@
       "Experian"
     ],
     "out": [
+      "AMN Healthcare",
       "DoorDash",
       "Angi",
       "Serve Robotics",
@@ -690,6 +691,6 @@
       "Nextdoor",
       "Housecall Pro"
     ],
-    "at": "2026-11-02T06:28:38.811Z"
+    "at": "2026-11-03T22:19:00.873Z"
   }
 }
