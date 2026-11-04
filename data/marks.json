@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T00:46:10.915Z",
+  "updated_at": "2026-11-04T18:49:20.719Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -672,6 +672,12 @@
       "at": "2026-11-03T23:21:05.327Z",
       "title": "Principal Product Manager, AI Products",
       "company": "Komodo Health"
+    },
+    "smartrecruiters:ServiceNow:744000159604947": {
+      "status": "archived",
+      "at": "2026-11-04T18:49:19.207Z",
+      "title": "Senior Manager, Partner Product Enablement & Advocacy ",
+      "company": "ServiceNow"
     }
   },
   "groups": {
