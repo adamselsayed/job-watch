@@ -761,9 +761,58 @@ def fetch_rippling(company):
     return out
 
 
+def fetch_bamboohr(company):
+    """BambooHR career sites (https://<token>.bamboohr.com/careers) via their JSON list/detail endpoints."""
+    token = company["board"]
+    base = f"https://{token}.bamboohr.com/careers"
+    data = wd_get(f"{base}/list")
+    items = (data.get("result") or []) if isinstance(data, dict) else (data or [])
+    out, first_item, first_detail = [], None, None
+    for j in items:
+        if first_item is None:
+            first_item = j
+        title = j.get("jobOpeningName") or j.get("title") or ""
+        loc = j.get("location") or {}
+        loc_name = ", ".join(x for x in (loc.get("city"), loc.get("state"), loc.get("country") if isinstance(loc, dict) else None) if x) if isinstance(loc, dict) else str(loc or "")
+        if not loc_name:
+            loc_name = j.get("atsLocation") or j.get("locationLabel") or ""
+        remote = bool(j.get("isRemote"))
+        if remote:
+            loc_name = f"Remote - {loc_name}" if loc_name else "Remote"
+        jid = str(j.get("id"))
+        url = f"{base}/{jid}"
+        content, published, salary = "", j.get("datePosted") or None, None
+        if title_matches(title):
+            try:
+                d = wd_get(f"{base}/{jid}/detail")
+                jo = ((d.get("result") or {}).get("jobOpening") or {}) if isinstance(d, dict) else {}
+                if first_detail is None:
+                    first_detail = {k: (str(v)[:200] if k == "description" else v) for k, v in jo.items()}
+                content = strip_html(jo.get("description") or "")
+                published = jo.get("datePosted") or published
+                comp = jo.get("compensation") or ""
+                if isinstance(comp, str) and comp:
+                    salary = salary_from_text(comp)
+                if salary is None:
+                    salary = salary_from_text(content)
+                if not loc_name and isinstance(jo.get("location"), dict):
+                    lo = jo["location"]; loc_name = ", ".join(x for x in (lo.get("city"), lo.get("state"), lo.get("country")) if x)
+            except Exception as e:          # noqa: BLE001
+                log(f"[{company['name']}] detail fetch failed for {jid}: {e}")
+        out.append({
+            "job_id": jid, "req_id": None, "title": title, "location": loc_name, "location_detail": "",
+            "department": j.get("departmentLabel") or "", "published_at": published, "updated_at": None,
+            "url": url, "salary": salary, "_meta_text": ("remote " if remote else "") + f"type: {j.get('employmentStatusLabel', '')}",
+            "_content": content,
+        })
+    debug_dump(company, {"count": len(items), "first_item": first_item, "first_detail": first_detail,
+                         "kept_rows": [{k: v for k, v in r.items() if k != "_content"} | {"_content_head": r["_content"][:300]} for r in out if title_matches(r["title"])]})
+    return out
+
+
 ADAPTERS = {"greenhouse": fetch_greenhouse, "lever": fetch_lever, "ashby": fetch_ashby,
             "smartrecruiters": fetch_smartrecruiters, "workday": fetch_workday, "phenom": fetch_phenom,
-            "jobvite": fetch_jobvite, "rippling": fetch_rippling, "unknown": fetch_unknown}
+            "jobvite": fetch_jobvite, "rippling": fetch_rippling, "bamboohr": fetch_bamboohr, "unknown": fetch_unknown}
 
 
 # --------------------------------------------------------------- filtering --
