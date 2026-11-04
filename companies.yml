@@ -1,7 +1,7 @@
 # Companies to watch. One block per company.
 #
 #   name:  how the company appears on the dashboard
-#   ats:   greenhouse | lever | ashby | smartrecruiters | workday | phenom | jobvite | rippling | bamboohr   (the job-board system the company uses)
+#   ats:   greenhouse | lever | ashby | smartrecruiters | workday | phenom | jobvite | rippling | bamboohr | jibe   (the job-board system the company uses)
 #   board: the company's board token (the slug in its job-board URL)
 #   url:   the public careers page (for reference / linking)
 #   country: US   (optional) treat locations with no country stated (e.g. "Remote") as US for this company
@@ -19,6 +19,7 @@
 #   Jobvite:    jobs.jobvite.com/<token>/jobs  ->  board: <token>
 #   Rippling:   ats.rippling.com/<token>/jobs  ->  board: <token>
 #   BambooHR:   <token>.bamboohr.com/careers  ->  board: <token>
+#   Jibe/iCIMS: <host>/careers-home/jobs  ->  board: <host>   (e.g. careers.rivian.com)
 #
 # After adding a company, run:  python3 scripts/fetch_jobs.py
 # (GitHub Actions also runs it automatically every morning.)
@@ -171,3 +172,8 @@
   ats: bamboohr
   board: cwx
   url: https://cwx.ai/careers#roles
+
+- name: Rivian
+  ats: jibe
+  board: careers.rivian.com
+  url: https://careers.rivian.com/careers-home/jobs

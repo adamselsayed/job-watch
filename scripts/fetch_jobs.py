@@ -19,6 +19,7 @@ import os
 import re
 import sys
 import urllib.request
+import urllib.parse
 import urllib.error
 from datetime import datetime, timezone, timedelta
 
@@ -814,9 +815,49 @@ def fetch_bamboohr(company):
     return out
 
 
+def fetch_jibe(company):
+    """iCIMS / Jibe career sites (https://<host>/careers-home/jobs) via the site's /api/jobs JSON endpoint.
+    board = "<host>", e.g. "careers.rivian.com" """
+    host = company["board"]
+    base = f"https://{host}/api/jobs"
+    items, page, first = [], 1, None
+    while True:
+        data = wd_get(f"{base}?page={page}&limit=100&sortBy=relevance&descending=false&internal=false&keywords={urllib.parse.quote(' '.join(TITLE_KEYWORDS))}")
+        if first is None:
+            first = {"keys": list(data.keys()) if isinstance(data, dict) else type(data).__name__, "totalCount": data.get("totalCount") if isinstance(data, dict) else None,
+                     "sample": (data.get("jobs") or [None])[0] if isinstance(data, dict) else None}
+        jobs = (data.get("jobs") or []) if isinstance(data, dict) else []
+        items.extend(jobs)
+        total = int((data.get("totalCount") or 0) if isinstance(data, dict) else 0)
+        if not jobs or len(items) >= total or page > 60:
+            break
+        page += 1
+    out = []
+    for w in items:
+        j = w.get("data") if isinstance(w, dict) and isinstance(w.get("data"), dict) else w
+        title = j.get("title", "") or ""
+        loc = j.get("location_name") or j.get("full_location") or ", ".join(x for x in (j.get("city"), j.get("state"), j.get("country")) if x)
+        content = strip_html(j.get("description") or "")
+        meta = " ".join(f"{k}: {v}" for k, v in j.items() if isinstance(v, str) and k.lower() in ("category", "employment_type", "remote", "workplace_type", "work_location_type", "location_type"))
+        posted = j.get("posted_date") or j.get("create_date") or j.get("update_date") or None
+        out.append({
+            "job_id": str(j.get("req_id") or j.get("id") or j.get("slug")),
+            "req_id": j.get("req_id") or None,
+            "title": title, "location": loc or "", "location_detail": "",
+            "department": j.get("category") or j.get("department") or "",
+            "published_at": posted, "updated_at": j.get("update_date"),
+            "url": j.get("apply_url") and j["apply_url"].replace("/apply", "") or f"https://{host}/careers-home/jobs/{j.get('req_id') or j.get('slug')}",
+            "salary": salary_from_text(content),
+            "_meta_text": meta, "_content": content,
+        })
+    debug_dump(company, {"first": first, "count": len(items),
+                         "kept_rows": [{k: v for k, v in r.items() if k != "_content"} | {"_content_head": r["_content"][:300]} for r in out if title_matches(r["title"])][:8]})
+    return out
+
+
 ADAPTERS = {"greenhouse": fetch_greenhouse, "lever": fetch_lever, "ashby": fetch_ashby,
             "smartrecruiters": fetch_smartrecruiters, "workday": fetch_workday, "phenom": fetch_phenom,
-            "jobvite": fetch_jobvite, "rippling": fetch_rippling, "bamboohr": fetch_bamboohr, "unknown": fetch_unknown}
+            "jobvite": fetch_jobvite, "rippling": fetch_rippling, "bamboohr": fetch_bamboohr, "jibe": fetch_jibe, "unknown": fetch_unknown}
 
 
 # --------------------------------------------------------------- filtering --
