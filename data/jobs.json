@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T00:45:23+00:00",
+  "generated_at": "2026-11-04T00:50:31+00:00",
   "criteria": {
     "title_keywords": [
       "product"
@@ -333,9 +333,43 @@
       "error": null,
       "total_jobs": 4,
       "matched": 0
+    },
+    {
+      "name": "Rivian",
+      "ats": "jibe",
+      "board": "careers.rivian.com",
+      "url": "https://careers.rivian.com/careers-home/jobs",
+      "fetched_at": "2026-11-04T00:50:31+00:00",
+      "status": "ok",
+      "error": null,
+      "total_jobs": 506,
+      "matched": 68
     }
   ],
   "jobs": [
+    {
+      "job_id": "28669",
+      "req_id": "28669",
+      "title": "Product Guide III (Part-time) - Dallas Showroom",
+      "location": "3010 Knox Street (Dallas Texas)",
+      "location_detail": "",
+      "department": [
+        " Customer Service"
+      ],
+      "published_at": "2026-11-03T18:51:00+0000",
+      "updated_at": "2026-11-04T00:00:27+0000",
+      "url": "https://us-careers-rivian.icims.com/jobs/28669/login",
+      "salary": null,
+      "us": null,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Rivian",
+      "key": "jibe:careers.rivian.com:28669",
+      "first_seen": "2026-11-04T00:50:31+00:00",
+      "last_seen": "2026-11-04T00:50:31+00:00",
+      "status": "open",
+      "closed_at": null
+    },
     {
       "job_id": "744000159265259",
       "req_id": "JB0073664",
@@ -432,6 +466,29 @@
       "key": "smartrecruiters:ServiceNow:744000159200529",
       "first_seen": "2026-11-03T14:00:15+00:00",
       "last_seen": "2026-11-03T14:00:15+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "35287",
+      "req_id": "35287",
+      "title": "Product Guide IV - Charlotte Service Center",
+      "location": "9309 Monroe Road (Charlotte North Carolina)",
+      "location_detail": "",
+      "department": [
+        " Sales"
+      ],
+      "published_at": "2026-11-02T14:28:00+0000",
+      "updated_at": "2026-11-03T00:00:31+0000",
+      "url": "https://us-careers-rivian.icims.com/jobs/35287/login",
+      "salary": null,
+      "us": null,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Rivian",
+      "key": "jibe:careers.rivian.com:35287",
+      "first_seen": "2026-11-04T00:50:31+00:00",
+      "last_seen": "2026-11-04T00:50:31+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -604,6 +661,57 @@
       "key": "workday:chghealthcare.wd1/External:JR104409",
       "first_seen": "2026-11-02T14:00:12+00:00",
       "last_seen": "2026-11-03T14:00:15+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "35054",
+      "req_id": "35054",
+      "title": "Product Concept Lead Engineer",
+      "location": "14600 Myford (Irvine California)",
+      "location_detail": "",
+      "department": [
+        " Attributes"
+      ],
+      "published_at": "2026-10-30T22:14:00+0000",
+      "updated_at": "2026-10-31T00:00:18+0000",
+      "url": "https://us-careers-rivian.icims.com/jobs/35054/login",
+      "salary": {
+        "min": 137800,
+        "max": 172200,
+        "currency": "USD",
+        "source": "description"
+      },
+      "us": null,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Rivian",
+      "key": "jibe:careers.rivian.com:35054",
+      "first_seen": "2026-11-04T00:50:31+00:00",
+      "last_seen": "2026-11-04T00:50:31+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "35468",
+      "req_id": "35468",
+      "title": "Product Guide III (Part-time) - Brickell Showroom",
+      "location": "900 S Miami Ave (Miami Florida)",
+      "location_detail": "",
+      "department": [
+        " Customer Service"
+      ],
+      "published_at": "2026-10-30T17:54:00+0000",
+      "updated_at": "2026-10-31T00:00:18+0000",
+      "url": "https://us-careers-rivian.icims.com/jobs/35468/login",
+      "salary": null,
+      "us": null,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Rivian",
+      "key": "jibe:careers.rivian.com:35468",
+      "first_seen": "2026-11-04T00:50:31+00:00",
+      "last_seen": "2026-11-04T00:50:31+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2934,6 +3042,52 @@
       "closed_at": null
     },
     {
+      "job_id": "35339",
+      "req_id": "35339",
+      "title": "Product Guide IV - South San Francisco Service Center",
+      "location": "United States, California, South San Francisco",
+      "location_detail": "",
+      "department": [
+        " Customer Service"
+      ],
+      "published_at": "2026-10-28T21:47:00+0000",
+      "updated_at": "2026-10-29T00:00:05+0000",
+      "url": "https://us-careers-rivian.icims.com/jobs/35339/login",
+      "salary": null,
+      "us": true,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Rivian",
+      "key": "jibe:careers.rivian.com:35339",
+      "first_seen": "2026-11-04T00:50:31+00:00",
+      "last_seen": "2026-11-04T00:50:31+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "35337",
+      "req_id": "35337",
+      "title": "Product Guide III (Part-time) - San Francisco Spaces",
+      "location": "340 Fell Street (San Francisco California)",
+      "location_detail": "",
+      "department": [
+        " Customer Service"
+      ],
+      "published_at": "2026-10-28T21:41:00+0000",
+      "updated_at": "2026-10-29T00:00:05+0000",
+      "url": "https://us-careers-rivian.icims.com/jobs/35337/login",
+      "salary": null,
+      "us": null,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Rivian",
+      "key": "jibe:careers.rivian.com:35337",
+      "first_seen": "2026-11-04T00:50:31+00:00",
+      "last_seen": "2026-11-04T00:50:31+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
       "job_id": "744000158364690",
       "req_id": "JB0076184",
       "title": "Sr. Staff Product Manager, AI-Native IT Service Management ",
@@ -3034,6 +3188,29 @@
       "key": "smartrecruiters:ServiceNow:744000158362202",
       "first_seen": "2026-10-30T05:47:56+00:00",
       "last_seen": "2026-11-03T14:00:15+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "35451",
+      "req_id": "35451",
+      "title": "Inside Product Guide - Atlanta",
+      "location": "667 Auburn Ave NE (Atlanta Georgia)",
+      "location_detail": "",
+      "department": [
+        " Sales"
+      ],
+      "published_at": "2026-10-28T13:32:00+0000",
+      "updated_at": "2026-10-29T00:00:05+0000",
+      "url": "https://us-careers-rivian.icims.com/jobs/35451/login",
+      "salary": null,
+      "us": null,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Rivian",
+      "key": "jibe:careers.rivian.com:35451",
+      "first_seen": "2026-11-04T00:50:31+00:00",
+      "last_seen": "2026-11-04T00:50:31+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3163,6 +3340,29 @@
       "closed_at": null
     },
     {
+      "job_id": "35001",
+      "req_id": "35001",
+      "title": "Product Guide III (Part-time) - Malvern Service Center",
+      "location": "70 Three Tun Road (Malvern PA)",
+      "location_detail": "",
+      "department": [
+        " Sales"
+      ],
+      "published_at": "2026-10-27T12:51:00+0000",
+      "updated_at": "2026-10-27T23:55:26+0000",
+      "url": "https://us-careers-rivian.icims.com/jobs/35001/login",
+      "salary": null,
+      "us": null,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Rivian",
+      "key": "jibe:careers.rivian.com:35001",
+      "first_seen": "2026-11-04T00:50:31+00:00",
+      "last_seen": "2026-11-04T00:50:31+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
       "job_id": "8325411",
       "req_id": "JR10103",
       "title": "Specialist Seller - Enterprise Select -(AI Products)",
@@ -3215,6 +3415,75 @@
       "closed_at": null
     },
     {
+      "job_id": "32915",
+      "req_id": "32915",
+      "title": "Product Advisor IV - Alpharetta Spaces",
+      "location": "2820 Old Milton Pkwy (Alpharetta Georgia)",
+      "location_detail": "",
+      "department": [
+        " Sales"
+      ],
+      "published_at": "2026-10-26T19:03:00+0000",
+      "updated_at": "2026-10-26T23:55:12+0000",
+      "url": "https://us-careers-rivian.icims.com/jobs/32915/login",
+      "salary": null,
+      "us": null,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Rivian",
+      "key": "jibe:careers.rivian.com:32915",
+      "first_seen": "2026-11-04T00:50:31+00:00",
+      "last_seen": "2026-11-04T00:50:31+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "35000",
+      "req_id": "35000",
+      "title": "Product Advisor IV - El Segundo Service Center",
+      "location": "401 Coral Circle (El Segundo California)",
+      "location_detail": "",
+      "department": [
+        " Sales"
+      ],
+      "published_at": "2026-10-26T17:29:00+0000",
+      "updated_at": "2026-10-26T23:55:22+0000",
+      "url": "https://us-careers-rivian.icims.com/jobs/35000/login",
+      "salary": null,
+      "us": null,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Rivian",
+      "key": "jibe:careers.rivian.com:35000",
+      "first_seen": "2026-11-04T00:50:31+00:00",
+      "last_seen": "2026-11-04T00:50:31+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "34870",
+      "req_id": "34870",
+      "title": "Product Guide III (Part-Time) - Laguna Showroom",
+      "location": "160 South Coast Highway (Laguna Beach California)",
+      "location_detail": "",
+      "department": [
+        " Sales"
+      ],
+      "published_at": "2026-10-26T16:46:00+0000",
+      "updated_at": "2026-10-26T23:55:22+0000",
+      "url": "https://us-careers-rivian.icims.com/jobs/34870/login",
+      "salary": null,
+      "us": null,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Rivian",
+      "key": "jibe:careers.rivian.com:34870",
+      "first_seen": "2026-11-04T00:50:31+00:00",
+      "last_seen": "2026-11-04T00:50:31+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
       "job_id": "8913113002",
       "req_id": "P-503099",
       "title": "Director, Product Management",
@@ -3237,6 +3506,75 @@
       "key": "greenhouse:gomotive:8913113002",
       "first_seen": "2026-10-29T23:17:57+00:00",
       "last_seen": "2026-11-03T14:00:15+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "34949",
+      "req_id": "34949",
+      "title": "Product Guide III (Part-Time) - Dallas Service Center",
+      "location": "2512 Hawes (Dallas Texas)",
+      "location_detail": "",
+      "department": [
+        " Customer Service"
+      ],
+      "published_at": "2026-10-26T16:03:00+0000",
+      "updated_at": "2026-10-26T23:55:22+0000",
+      "url": "https://us-careers-rivian.icims.com/jobs/34949/login",
+      "salary": null,
+      "us": null,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Rivian",
+      "key": "jibe:careers.rivian.com:34949",
+      "first_seen": "2026-11-04T00:50:31+00:00",
+      "last_seen": "2026-11-04T00:50:31+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "34859",
+      "req_id": "34859",
+      "title": "Product Guide III (Part-time) - Scottsdale Spaces",
+      "location": "15051 N Kierland Blvd. (Scottsdale Arizona)",
+      "location_detail": "",
+      "department": [
+        " Sales"
+      ],
+      "published_at": "2026-10-26T15:53:00+0000",
+      "updated_at": "2026-10-26T23:55:22+0000",
+      "url": "https://us-careers-rivian.icims.com/jobs/34859/login",
+      "salary": null,
+      "us": null,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Rivian",
+      "key": "jibe:careers.rivian.com:34859",
+      "first_seen": "2026-11-04T00:50:31+00:00",
+      "last_seen": "2026-11-04T00:50:31+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "35062",
+      "req_id": "35062",
+      "title": "Product Guide III (Part-time) - Pompano Beach Service Center",
+      "location": "311 Racetrack Loop (Pompano Beach Florida)",
+      "location_detail": "",
+      "department": [
+        " Customer Service"
+      ],
+      "published_at": "2026-10-23T20:39:00+0000",
+      "updated_at": "2026-10-29T00:00:01+0000",
+      "url": "https://us-careers-rivian.icims.com/jobs/35062/login",
+      "salary": null,
+      "us": null,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Rivian",
+      "key": "jibe:careers.rivian.com:35062",
+      "first_seen": "2026-11-04T00:50:31+00:00",
+      "last_seen": "2026-11-04T00:50:31+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3341,6 +3679,75 @@
       "key": "greenhouse:samsara:8315122",
       "first_seen": "2026-10-29T23:17:57+00:00",
       "last_seen": "2026-11-03T14:00:15+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "34951",
+      "req_id": "34951",
+      "title": "Product Guide III (Part-time) -  Austin Service Center",
+      "location": "622 Morrow (Austin Texas)",
+      "location_detail": "",
+      "department": [
+        " Sales"
+      ],
+      "published_at": "2026-10-23T14:31:00+0000",
+      "updated_at": "2026-10-31T00:00:18+0000",
+      "url": "https://us-careers-rivian.icims.com/jobs/34951/login",
+      "salary": null,
+      "us": null,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Rivian",
+      "key": "jibe:careers.rivian.com:34951",
+      "first_seen": "2026-11-04T00:50:31+00:00",
+      "last_seen": "2026-11-04T00:50:31+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "34920",
+      "req_id": "34920",
+      "title": "Product Guide III (Part-Time) - Roslyn Long Island Spaces",
+      "location": "1073 Northern Blvd (Roslyn New York)",
+      "location_detail": "",
+      "department": [
+        " Customer Service"
+      ],
+      "published_at": "2026-10-23T14:31:00+0000",
+      "updated_at": "2026-10-23T23:55:01+0000",
+      "url": "https://us-careers-rivian.icims.com/jobs/34920/login",
+      "salary": null,
+      "us": null,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Rivian",
+      "key": "jibe:careers.rivian.com:34920",
+      "first_seen": "2026-11-04T00:50:31+00:00",
+      "last_seen": "2026-11-04T00:50:31+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "35039",
+      "req_id": "35039",
+      "title": "Inside Product Guide - Normal",
+      "location": "301 W. Kerrick (Normal Illinois)",
+      "location_detail": "",
+      "department": [
+        " Sales"
+      ],
+      "published_at": "2026-10-22T16:41:00+0000",
+      "updated_at": "2026-10-22T23:50:46+0000",
+      "url": "https://us-careers-rivian.icims.com/jobs/35039/login",
+      "salary": null,
+      "us": null,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Rivian",
+      "key": "jibe:careers.rivian.com:35039",
+      "first_seen": "2026-11-04T00:50:31+00:00",
+      "last_seen": "2026-11-04T00:50:31+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3579,6 +3986,29 @@
       "closed_at": null
     },
     {
+      "job_id": "28666",
+      "req_id": "28666",
+      "title": "Product Guide III (Part-time) - Dallas Service Center",
+      "location": "2512 Hawes (Dallas Texas)",
+      "location_detail": "",
+      "department": [
+        " Customer Service"
+      ],
+      "published_at": "2026-10-20T22:48:00+0000",
+      "updated_at": "2026-10-20T23:50:27+0000",
+      "url": "https://us-careers-rivian.icims.com/jobs/28666/login",
+      "salary": null,
+      "us": null,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Rivian",
+      "key": "jibe:careers.rivian.com:28666",
+      "first_seen": "2026-11-04T00:50:31+00:00",
+      "last_seen": "2026-11-04T00:50:31+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
       "job_id": "744000156657507",
       "req_id": "JB0076126",
       "title": "Senior Staff Product Success Architect",
@@ -3657,6 +4087,29 @@
       "closed_at": null
     },
     {
+      "job_id": "33620",
+      "req_id": "33620",
+      "title": "Product Guide III (Part-time) - Normal Service Center",
+      "location": "2219 West College (Normal Illinois)",
+      "location_detail": "",
+      "department": [
+        " Customer Service"
+      ],
+      "published_at": "2026-10-20T12:54:00+0000",
+      "updated_at": "2026-11-04T00:00:27+0000",
+      "url": "https://us-careers-rivian.icims.com/jobs/33620/login",
+      "salary": null,
+      "us": null,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Rivian",
+      "key": "jibe:careers.rivian.com:33620",
+      "first_seen": "2026-11-04T00:50:31+00:00",
+      "last_seen": "2026-11-04T00:50:31+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
       "job_id": "744000156543661",
       "req_id": "JB0076087",
       "title": "Senior Staff Inbound Product Manager",
@@ -3700,6 +4153,29 @@
       "key": "workday:hitachi.wd1/hitachi:R0141167",
       "first_seen": "2026-10-30T07:05:09+00:00",
       "last_seen": "2026-11-03T14:00:15+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "34399",
+      "req_id": "34399",
+      "title": "Product Guide III (Part-time) - Downtown San Diego Showroom",
+      "location": "925 Waterfront Place (San Diego California)",
+      "location_detail": "",
+      "department": [
+        " Customer Service"
+      ],
+      "published_at": "2026-10-19T22:45:00+0000",
+      "updated_at": "2026-10-19T23:50:33+0000",
+      "url": "https://us-careers-rivian.icims.com/jobs/34399/login",
+      "salary": null,
+      "us": null,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Rivian",
+      "key": "jibe:careers.rivian.com:34399",
+      "first_seen": "2026-11-04T00:50:31+00:00",
+      "last_seen": "2026-11-04T00:50:31+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3756,6 +4232,75 @@
       "closed_at": null
     },
     {
+      "job_id": "34424",
+      "req_id": "34424",
+      "title": "Product Guide III - Denver Showroom",
+      "location": "2763 Blake Street (Denver Colorado)",
+      "location_detail": "",
+      "department": [
+        " Customer Service"
+      ],
+      "published_at": "2026-10-19T19:39:00+0000",
+      "updated_at": "2026-10-28T23:59:58+0000",
+      "url": "https://us-careers-rivian.icims.com/jobs/34424/login",
+      "salary": null,
+      "us": null,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Rivian",
+      "key": "jibe:careers.rivian.com:34424",
+      "first_seen": "2026-11-04T00:50:31+00:00",
+      "last_seen": "2026-11-04T00:50:31+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "34628",
+      "req_id": "34628",
+      "title": "Product & Delivery Specialist IV - Van Nuys Service Center",
+      "location": "7701 Haskell Ave (Los Angeles California)",
+      "location_detail": "",
+      "department": [
+        " Customer Service"
+      ],
+      "published_at": "2026-10-19T15:29:00+0000",
+      "updated_at": "2026-10-28T23:59:58+0000",
+      "url": "https://us-careers-rivian.icims.com/jobs/34628/login",
+      "salary": null,
+      "us": null,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Rivian",
+      "key": "jibe:careers.rivian.com:34628",
+      "first_seen": "2026-11-04T00:50:31+00:00",
+      "last_seen": "2026-11-04T00:50:31+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "34473",
+      "req_id": "34473",
+      "title": "Product Guide III - Park Meadows Service Center",
+      "location": "8445 Park Meadows Drive (Lone Tree Colorado)",
+      "location_detail": "",
+      "department": [
+        " Customer Service"
+      ],
+      "published_at": "2026-10-19T14:46:00+0000",
+      "updated_at": "2026-10-28T23:59:58+0000",
+      "url": "https://us-careers-rivian.icims.com/jobs/34473/login",
+      "salary": null,
+      "us": null,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Rivian",
+      "key": "jibe:careers.rivian.com:34473",
+      "first_seen": "2026-11-04T00:50:31+00:00",
+      "last_seen": "2026-11-04T00:50:31+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
       "job_id": "JR104551",
       "req_id": "JR104551",
       "title": "Senior Product Manager",
@@ -3799,6 +4344,29 @@
       "key": "greenhouse:life360:8895619002",
       "first_seen": "2026-10-30T06:39:37+00:00",
       "last_seen": "2026-11-03T14:00:15+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "34668",
+      "req_id": "34668",
+      "title": "Product Guide IV - Woodbury, Long Island Service Center",
+      "location": "1 Media Crossways (Woodbury New York)",
+      "location_detail": "",
+      "department": [
+        " Customer Service"
+      ],
+      "published_at": "2026-10-16T16:33:00+0000",
+      "updated_at": "2026-10-28T23:59:58+0000",
+      "url": "https://us-careers-rivian.icims.com/jobs/34668/login",
+      "salary": null,
+      "us": null,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Rivian",
+      "key": "jibe:careers.rivian.com:34668",
+      "first_seen": "2026-11-04T00:50:31+00:00",
+      "last_seen": "2026-11-04T00:50:31+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3851,6 +4419,34 @@
       "key": "smartrecruiters:ServiceNow:744000155904829",
       "first_seen": "2026-10-30T05:47:56+00:00",
       "last_seen": "2026-11-03T14:00:15+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "34208",
+      "req_id": "34208",
+      "title": "Sr. Manager of Adventure Products",
+      "location": "14600 Myford (Irvine California)",
+      "location_detail": "",
+      "department": [
+        " Design"
+      ],
+      "published_at": "2026-10-16T00:52:00+0000",
+      "updated_at": "2026-10-16T23:50:14+0000",
+      "url": "https://us-careers-rivian.icims.com/jobs/34208/login",
+      "salary": {
+        "min": 196000,
+        "max": 259700,
+        "currency": "USD",
+        "source": "description"
+      },
+      "us": null,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Rivian",
+      "key": "jibe:careers.rivian.com:34208",
+      "first_seen": "2026-11-04T00:50:31+00:00",
+      "last_seen": "2026-11-04T00:50:31+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3933,6 +4529,29 @@
       "closed_at": null
     },
     {
+      "job_id": "34304",
+      "req_id": "34304",
+      "title": "AI Product Engineer, Technology, Facilities",
+      "location": "667 Auburn Ave NE (Atlanta Georgia)",
+      "location_detail": "",
+      "department": [
+        " Facilities & Real Estate"
+      ],
+      "published_at": "2026-10-14T17:40:00+0000",
+      "updated_at": "2026-11-03T00:00:28+0000",
+      "url": "https://us-careers-rivian.icims.com/jobs/34304/login",
+      "salary": null,
+      "us": null,
+      "remote": "hybrid",
+      "remote_confidence": "medium",
+      "company": "Rivian",
+      "key": "jibe:careers.rivian.com:34304",
+      "first_seen": "2026-11-04T00:50:31+00:00",
+      "last_seen": "2026-11-04T00:50:31+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
       "job_id": "744000155472964",
       "req_id": "JB0075986",
       "title": "Director, Product Management, Microsoft Product Partnership",
@@ -3981,6 +4600,29 @@
       "key": "smartrecruiters:ServiceNow:744000155345180",
       "first_seen": "2026-10-30T05:47:56+00:00",
       "last_seen": "2026-11-03T14:00:15+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "34320",
+      "req_id": "34320",
+      "title": "Product Guide III (Part-Time) - Aventura Miami Showroom",
+      "location": "19501 Biscayne Blvd. (Miami Florida)",
+      "location_detail": "",
+      "department": [
+        " Sales"
+      ],
+      "published_at": "2026-10-13T18:25:00+0000",
+      "updated_at": "2026-10-14T23:50:08+0000",
+      "url": "https://us-careers-rivian.icims.com/jobs/34320/login",
+      "salary": null,
+      "us": null,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Rivian",
+      "key": "jibe:careers.rivian.com:34320",
+      "first_seen": "2026-11-04T00:50:31+00:00",
+      "last_seen": "2026-11-04T00:50:31+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4054,6 +4696,29 @@
       "key": "workday:hitachi.wd1/hitachi:R0146458",
       "first_seen": "2026-10-30T07:05:09+00:00",
       "last_seen": "2026-11-03T14:00:15+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "33948",
+      "req_id": "33948",
+      "title": "Product Guide III (Part-time) - Corte Madera Showroom",
+      "location": "1700 Redwood Highway (Corte Madera California)",
+      "location_detail": "",
+      "department": [
+        " Customer Service"
+      ],
+      "published_at": "2026-10-09T21:28:00+0000",
+      "updated_at": "2026-10-20T23:50:34+0000",
+      "url": "https://us-careers-rivian.icims.com/jobs/33948/login",
+      "salary": null,
+      "us": null,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Rivian",
+      "key": "jibe:careers.rivian.com:33948",
+      "first_seen": "2026-11-04T00:50:31+00:00",
+      "last_seen": "2026-11-04T00:50:31+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4132,6 +4797,29 @@
       "key": "greenhouse:housecall:6221432004",
       "first_seen": "2026-11-01T04:25:11+00:00",
       "last_seen": "2026-11-03T14:00:15+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "34306",
+      "req_id": "34306",
+      "title": "Product Development, Vehicle Attributes and Test Engineering - Summer 2027 Internships",
+      "location": "14600 Myford (Irvine California)",
+      "location_detail": "",
+      "department": [
+        " Internships & Early Career"
+      ],
+      "published_at": "2026-10-09T13:33:00+0000",
+      "updated_at": "2026-10-20T23:50:37+0000",
+      "url": "https://us-careers-rivian.icims.com/jobs/34306/login",
+      "salary": null,
+      "us": null,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Rivian",
+      "key": "jibe:careers.rivian.com:34306",
+      "first_seen": "2026-11-04T00:50:31+00:00",
+      "last_seen": "2026-11-04T00:50:31+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4266,6 +4954,29 @@
       "closed_at": null
     },
     {
+      "job_id": "31723",
+      "req_id": "31723",
+      "title": "Product Guide III (Part-Time) - American Dream Mall Showroom",
+      "location": "1 American Dream Way (East Rutherford New Jersey)",
+      "location_detail": "",
+      "department": [
+        " Customer Service"
+      ],
+      "published_at": "2026-10-08T15:17:00+0000",
+      "updated_at": "2026-10-08T23:45:03+0000",
+      "url": "https://us-careers-rivian.icims.com/jobs/31723/login",
+      "salary": null,
+      "us": null,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Rivian",
+      "key": "jibe:careers.rivian.com:31723",
+      "first_seen": "2026-11-04T00:50:31+00:00",
+      "last_seen": "2026-11-04T00:50:31+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
       "job_id": "AUMAIHUSJR2026148296EXTERNALENUS",
       "req_id": "JR2026148296",
       "title": "Sr. Product Manager",
@@ -4360,6 +5071,29 @@
       "closed_at": null
     },
     {
+      "job_id": "28667",
+      "req_id": "28667",
+      "title": "Product Guide III (Part-time) - Katy Service Center",
+      "location": "21021 Campanile Dr (Katy Texas)",
+      "location_detail": "",
+      "department": [
+        " Customer Service"
+      ],
+      "published_at": "2026-10-06T20:57:00+0000",
+      "updated_at": "2026-10-08T23:44:59+0000",
+      "url": "https://us-careers-rivian.icims.com/jobs/28667/login",
+      "salary": null,
+      "us": null,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Rivian",
+      "key": "jibe:careers.rivian.com:28667",
+      "first_seen": "2026-11-04T00:50:31+00:00",
+      "last_seen": "2026-11-04T00:50:31+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
       "job_id": "8259381",
       "req_id": null,
       "title": "Principal Product Manager, Ads Delivery & Optimization",
@@ -4407,6 +5141,52 @@
       "closed_at": null
     },
     {
+      "job_id": "33616",
+      "req_id": "33616",
+      "title": "Product Guide III (Part-time) - Northbrook Service Center",
+      "location": "1818 Skokie Blvd (Northbrook Illinois)",
+      "location_detail": "",
+      "department": [
+        " Customer Service"
+      ],
+      "published_at": "2026-10-05T21:54:00+0000",
+      "updated_at": "2026-10-30T00:00:06+0000",
+      "url": "https://us-careers-rivian.icims.com/jobs/33616/login",
+      "salary": null,
+      "us": null,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Rivian",
+      "key": "jibe:careers.rivian.com:33616",
+      "first_seen": "2026-11-04T00:50:31+00:00",
+      "last_seen": "2026-11-04T00:50:31+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "33615",
+      "req_id": "33615",
+      "title": "Product Guide IV - Northbrook Service Center",
+      "location": "1818 Skokie Blvd (Northbrook Illinois)",
+      "location_detail": "",
+      "department": [
+        " Customer Service"
+      ],
+      "published_at": "2026-10-05T21:53:00+0000",
+      "updated_at": "2026-10-30T00:00:06+0000",
+      "url": "https://us-careers-rivian.icims.com/jobs/33615/login",
+      "salary": null,
+      "us": null,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Rivian",
+      "key": "jibe:careers.rivian.com:33615",
+      "first_seen": "2026-11-04T00:50:31+00:00",
+      "last_seen": "2026-11-04T00:50:31+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
       "job_id": "3743990015902166",
       "req_id": "P13252",
       "title": "Product Manager, Benefits Strategy - Core Care Delivery",
@@ -4450,6 +5230,62 @@
       "key": "smartrecruiters:Experian:744000153590289",
       "first_seen": "2026-10-30T05:15:36+00:00",
       "last_seen": "2026-11-03T14:00:15+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "34111",
+      "req_id": "34111",
+      "title": "Sr. Product Manager, Financial Systems",
+      "location": "13250 North Haggerty (Plymouth Michigan)",
+      "location_detail": "",
+      "department": [
+        " Information Technology"
+      ],
+      "published_at": "2026-10-05T17:55:00+0000",
+      "updated_at": "2026-10-08T23:47:36+0000",
+      "url": "https://us-careers-rivian.icims.com/jobs/34111/login",
+      "salary": {
+        "min": 111000,
+        "max": 138700,
+        "currency": "USD",
+        "source": "description"
+      },
+      "us": null,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Rivian",
+      "key": "jibe:careers.rivian.com:34111",
+      "first_seen": "2026-11-04T00:50:31+00:00",
+      "last_seen": "2026-11-04T00:50:31+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "33966",
+      "req_id": "33966",
+      "title": "Staff Field Service Engineer, Product Integrity & Defense",
+      "location": "800 Bradley Hill RD (Blauvelt New York)",
+      "location_detail": "",
+      "department": [
+        " Mechanical & Electrical Engineering"
+      ],
+      "published_at": "2026-10-05T17:41:00+0000",
+      "updated_at": "2026-10-23T23:54:57+0000",
+      "url": "https://us-careers-rivian.icims.com/jobs/33966/login",
+      "salary": {
+        "min": 121800,
+        "max": 152300,
+        "currency": "USD",
+        "source": "description"
+      },
+      "us": null,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Rivian",
+      "key": "jibe:careers.rivian.com:33966",
+      "first_seen": "2026-11-04T00:50:31+00:00",
+      "last_seen": "2026-11-04T00:50:31+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4647,6 +5483,34 @@
       "closed_at": null
     },
     {
+      "job_id": "34004",
+      "req_id": "34004",
+      "title": "Sr. Product Manager, Enterprise Productivity & AI",
+      "location": "667 Auburn Ave NE (Atlanta Georgia)",
+      "location_detail": "",
+      "department": [
+        " Information Technology"
+      ],
+      "published_at": "2026-09-30T16:44:00+0000",
+      "updated_at": "2026-10-08T23:47:20+0000",
+      "url": "https://us-careers-rivian.icims.com/jobs/34004/login",
+      "salary": {
+        "min": 111000,
+        "max": 138700,
+        "currency": "USD",
+        "source": "description"
+      },
+      "us": null,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Rivian",
+      "key": "jibe:careers.rivian.com:34004",
+      "first_seen": "2026-11-04T00:50:31+00:00",
+      "last_seen": "2026-11-04T00:50:31+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
       "job_id": "8243349",
       "req_id": "P-110454",
       "title": "Associate Manager Product Operations, Autonomy Commercialization - DoorDash Dot",
@@ -4669,6 +5533,29 @@
       "key": "greenhouse:doordashusa:8243349",
       "first_seen": "2026-11-02T06:23:44+00:00",
       "last_seen": "2026-11-03T14:00:15+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "34010",
+      "req_id": "34010",
+      "title": "Product Advisor IV - Westchester Showroom",
+      "location": "125 Westchester Ave (White Plains New York)",
+      "location_detail": "",
+      "department": [
+        " Sales"
+      ],
+      "published_at": "2026-09-29T22:27:00+0000",
+      "updated_at": "2026-10-08T23:47:23+0000",
+      "url": "https://us-careers-rivian.icims.com/jobs/34010/login",
+      "salary": null,
+      "us": null,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Rivian",
+      "key": "jibe:careers.rivian.com:34010",
+      "first_seen": "2026-11-04T00:50:31+00:00",
+      "last_seen": "2026-11-04T00:50:31+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4763,6 +5650,34 @@
       "key": "greenhouse:toast:8226770",
       "first_seen": "2026-10-29T23:40:13+00:00",
       "last_seen": "2026-11-03T14:00:15+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "31384",
+      "req_id": "31384",
+      "title": "Staff Autonomy Product Manager",
+      "location": "630 - 660 Hansen (Palo Alto California)",
+      "location_detail": "",
+      "department": [
+        " Autonomous Driving"
+      ],
+      "published_at": "2026-09-29T19:00:00+0000",
+      "updated_at": "2026-10-07T23:45:35+0000",
+      "url": "https://us-careers-rivian.icims.com/jobs/31384/login",
+      "salary": {
+        "min": 206500,
+        "max": 258100,
+        "currency": "USD",
+        "source": "description"
+      },
+      "us": null,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Rivian",
+      "key": "jibe:careers.rivian.com:31384",
+      "first_seen": "2026-11-04T00:50:31+00:00",
+      "last_seen": "2026-11-04T00:50:31+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4897,6 +5812,29 @@
       "closed_at": null
     },
     {
+      "job_id": "33866",
+      "req_id": "33866",
+      "title": "Product Guide III (Part-time) - Denver Showroom",
+      "location": "2763 Blake Street (Denver Colorado)",
+      "location_detail": "",
+      "department": [
+        " Customer Service"
+      ],
+      "published_at": "2026-09-24T18:27:00+0000",
+      "updated_at": "2026-10-28T23:59:54+0000",
+      "url": "https://us-careers-rivian.icims.com/jobs/33866/login",
+      "salary": null,
+      "us": null,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Rivian",
+      "key": "jibe:careers.rivian.com:33866",
+      "first_seen": "2026-11-04T00:50:31+00:00",
+      "last_seen": "2026-11-04T00:50:31+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
       "job_id": "6206487004",
       "req_id": "1164",
       "title": "Senior Product Manager II (Growth)",
@@ -4975,6 +5913,34 @@
       "closed_at": null
     },
     {
+      "job_id": "33675",
+      "req_id": "33675",
+      "title": "Sr. Product Manager",
+      "location": "607 Hansen (Palo Alto California)",
+      "location_detail": "",
+      "department": [
+        " Information Technology"
+      ],
+      "published_at": "2026-09-22T21:42:00+0000",
+      "updated_at": "2026-10-08T23:46:41+0000",
+      "url": "https://us-careers-rivian.icims.com/jobs/33675/login",
+      "salary": {
+        "min": 132100,
+        "max": 165100,
+        "currency": "USD",
+        "source": "description"
+      },
+      "us": null,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Rivian",
+      "key": "jibe:careers.rivian.com:33675",
+      "first_seen": "2026-11-04T00:50:31+00:00",
+      "last_seen": "2026-11-04T00:50:31+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
       "job_id": "8220352",
       "req_id": null,
       "title": "People Business Partner - Product & Tech",
@@ -4997,6 +5963,98 @@
       "key": "greenhouse:smartsheet:8220352",
       "first_seen": "2026-10-30T06:52:21+00:00",
       "last_seen": "2026-11-03T14:00:15+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "33745",
+      "req_id": "33745",
+      "title": "Software Engineering Intern - Product Development Portal (Spring Co-Op)",
+      "location": "607 Hansen (Palo Alto California)",
+      "location_detail": "",
+      "department": [
+        " Internships & Early Career"
+      ],
+      "published_at": "2026-09-21T22:52:00+0000",
+      "updated_at": "2026-10-20T23:50:30+0000",
+      "url": "https://us-careers-rivian.icims.com/jobs/33745/login",
+      "salary": null,
+      "us": null,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Rivian",
+      "key": "jibe:careers.rivian.com:33745",
+      "first_seen": "2026-11-04T00:50:31+00:00",
+      "last_seen": "2026-11-04T00:50:31+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "33746",
+      "req_id": "33746",
+      "title": "Software Engineering Intern - Product Lifecycle Management (Spring 2027 Co-Op)",
+      "location": "607 Hansen (Palo Alto California)",
+      "location_detail": "",
+      "department": [
+        " Internships & Early Career"
+      ],
+      "published_at": "2026-09-21T22:51:00+0000",
+      "updated_at": "2026-10-08T23:46:47+0000",
+      "url": "https://us-careers-rivian.icims.com/jobs/33746/login",
+      "salary": null,
+      "us": null,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Rivian",
+      "key": "jibe:careers.rivian.com:33746",
+      "first_seen": "2026-11-04T00:50:31+00:00",
+      "last_seen": "2026-11-04T00:50:31+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "33793",
+      "req_id": "33793",
+      "title": "Technical Program Management Intern - Product Management Product Development (Spring 2027 Co-Op)",
+      "location": "607 Hansen (Palo Alto California)",
+      "location_detail": "",
+      "department": [
+        " Internships & Early Career"
+      ],
+      "published_at": "2026-09-21T22:36:00+0000",
+      "updated_at": "2026-10-30T00:00:06+0000",
+      "url": "https://us-careers-rivian.icims.com/jobs/33793/login",
+      "salary": null,
+      "us": null,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Rivian",
+      "key": "jibe:careers.rivian.com:33793",
+      "first_seen": "2026-11-04T00:50:31+00:00",
+      "last_seen": "2026-11-04T00:50:31+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "33798",
+      "req_id": "33798",
+      "title": "Engineering Intern - Product Development Systems (Spring 2027 Co-Op)",
+      "location": "2700 California (Torrance California)",
+      "location_detail": "",
+      "department": [
+        " Internships & Early Career"
+      ],
+      "published_at": "2026-09-21T22:35:00+0000",
+      "updated_at": "2026-10-08T23:46:53+0000",
+      "url": "https://us-careers-rivian.icims.com/jobs/33798/login",
+      "salary": null,
+      "us": null,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Rivian",
+      "key": "jibe:careers.rivian.com:33798",
+      "first_seen": "2026-11-04T00:50:31+00:00",
+      "last_seen": "2026-11-04T00:50:31+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5105,6 +6163,29 @@
       "closed_at": null
     },
     {
+      "job_id": "33787",
+      "req_id": "33787",
+      "title": "Product Guide III (Part-Time) - Boston Showroom",
+      "location": "1001 Boylston St. (Boston Massachusetts)",
+      "location_detail": "",
+      "department": [
+        " Customer Service"
+      ],
+      "published_at": "2026-09-18T17:38:00+0000",
+      "updated_at": "2026-10-08T23:46:53+0000",
+      "url": "https://us-careers-rivian.icims.com/jobs/33787/login",
+      "salary": null,
+      "us": null,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Rivian",
+      "key": "jibe:careers.rivian.com:33787",
+      "first_seen": "2026-11-04T00:50:31+00:00",
+      "last_seen": "2026-11-04T00:50:31+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
       "job_id": "744000150427265",
       "req_id": "JB0075366",
       "title": "Product Management Director - Contact Center Frameworks",
@@ -5205,6 +6286,29 @@
       "key": "greenhouse:housecall:6196648004",
       "first_seen": "2026-11-01T04:25:11+00:00",
       "last_seen": "2026-11-03T14:00:15+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "33725",
+      "req_id": "33725",
+      "title": "Engineering Intern - Test and Validation, Charging Products (Spring 2027 Co-Op)",
+      "location": "2700 California (Torrance California)",
+      "location_detail": "",
+      "department": [
+        " Internships & Early Career"
+      ],
+      "published_at": "2026-09-17T15:23:00+0000",
+      "updated_at": "2026-10-08T23:46:44+0000",
+      "url": "https://us-careers-rivian.icims.com/jobs/33725/login",
+      "salary": null,
+      "us": null,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Rivian",
+      "key": "jibe:careers.rivian.com:33725",
+      "first_seen": "2026-11-04T00:50:31+00:00",
+      "last_seen": "2026-11-04T00:50:31+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5579,6 +6683,29 @@
       "closed_at": null
     },
     {
+      "job_id": "30901",
+      "req_id": "30901",
+      "title": "Product Guide III (Part-time) - Stanford Showroom",
+      "location": "180 El Camino Real (Palo Alto California)",
+      "location_detail": "",
+      "department": [
+        " Customer Service"
+      ],
+      "published_at": "2026-09-09T22:27:00+0000",
+      "updated_at": "2026-10-16T23:50:08+0000",
+      "url": "https://us-careers-rivian.icims.com/jobs/30901/login",
+      "salary": null,
+      "us": null,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Rivian",
+      "key": "jibe:careers.rivian.com:30901",
+      "first_seen": "2026-11-04T00:50:31+00:00",
+      "last_seen": "2026-11-04T00:50:31+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
       "job_id": "AUMAIHUSJR2026148772EXTERNALENUS",
       "req_id": "JR2026148772",
       "title": "BMW Product Specialist-Laurel BMW of Westmont",
@@ -5596,6 +6723,34 @@
       "key": "phenom:careers.autonation.com/us/en:AUMAIHUSJR2026148772EXTERNALENUS",
       "first_seen": "2026-11-02T20:08:55+00:00",
       "last_seen": "2026-11-03T14:00:15+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "33411",
+      "req_id": "33411",
+      "title": "Senior Analytics Engineer, Product Development Data & Analytics",
+      "location": "14600 Myford (Irvine California)",
+      "location_detail": "",
+      "department": [
+        " Product Management"
+      ],
+      "published_at": "2026-09-03T22:40:00+0000",
+      "updated_at": "2026-10-08T23:46:15+0000",
+      "url": "https://us-careers-rivian.icims.com/jobs/33411/login",
+      "salary": {
+        "min": 135100,
+        "max": 168900,
+        "currency": "USD",
+        "source": "description"
+      },
+      "us": null,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Rivian",
+      "key": "jibe:careers.rivian.com:33411",
+      "first_seen": "2026-11-04T00:50:31+00:00",
+      "last_seen": "2026-11-04T00:50:31+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5715,6 +6870,29 @@
       "closed_at": null
     },
     {
+      "job_id": "33175",
+      "req_id": "33175",
+      "title": "Product Guide III (Part-time) - Alpharetta Space",
+      "location": "2820 Old Milton Pkwy (Alpharetta Georgia)",
+      "location_detail": "",
+      "department": [
+        " Sales"
+      ],
+      "published_at": "2026-08-27T18:33:00+0000",
+      "updated_at": "2026-10-08T23:45:52+0000",
+      "url": "https://us-careers-rivian.icims.com/jobs/33175/login",
+      "salary": null,
+      "us": null,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Rivian",
+      "key": "jibe:careers.rivian.com:33175",
+      "first_seen": "2026-11-04T00:50:31+00:00",
+      "last_seen": "2026-11-04T00:50:31+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
       "job_id": "8160170",
       "req_id": "P-111795",
       "title": "Associate Manager, New Verticals - Fulfillment Product Strategy & Operations ",
@@ -5737,6 +6915,29 @@
       "key": "greenhouse:doordashusa:8160170",
       "first_seen": "2026-11-02T06:23:44+00:00",
       "last_seen": "2026-11-03T14:00:15+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "31709",
+      "req_id": "31709",
+      "title": "Product Advisor IV - Alpharetta Showroom",
+      "location": "2820 Old Milton Pkwy (Alpharetta Georgia)",
+      "location_detail": "",
+      "department": [
+        " Sales"
+      ],
+      "published_at": "2026-08-26T16:59:00+0000",
+      "updated_at": "2026-10-07T23:45:49+0000",
+      "url": "https://us-careers-rivian.icims.com/jobs/31709/login",
+      "salary": null,
+      "us": null,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Rivian",
+      "key": "jibe:careers.rivian.com:31709",
+      "first_seen": "2026-11-04T00:50:31+00:00",
+      "last_seen": "2026-11-04T00:50:31+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5767,6 +6968,29 @@
       "closed_at": null
     },
     {
+      "job_id": "32586",
+      "req_id": "32586",
+      "title": "Product Guide III (Part-time) - Pompano Beach Service Center",
+      "location": "Pompano Beach",
+      "location_detail": "",
+      "department": [
+        " Customer Service"
+      ],
+      "published_at": "2026-08-20T17:08:00+0000",
+      "updated_at": "2026-10-08T23:45:11+0000",
+      "url": "https://us-careers-rivian.icims.com/jobs/32586/login",
+      "salary": null,
+      "us": null,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Rivian",
+      "key": "jibe:careers.rivian.com:32586",
+      "first_seen": "2026-11-04T00:50:31+00:00",
+      "last_seen": "2026-11-04T00:50:31+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
       "job_id": "8142001",
       "req_id": null,
       "title": "Staff Product Manager, Search",
@@ -5789,6 +7013,52 @@
       "key": "greenhouse:nextdoor:8142001",
       "first_seen": "2026-11-01T05:22:03+00:00",
       "last_seen": "2026-11-03T14:00:15+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "31990",
+      "req_id": "31990",
+      "title": "Product Guide III (Part-time) - Colma Service Center",
+      "location": "475 Serramonte Blvd (Colma California)",
+      "location_detail": "",
+      "department": [
+        " Customer Service"
+      ],
+      "published_at": "2026-08-14T19:22:00+0000",
+      "updated_at": "2026-10-16T23:50:11+0000",
+      "url": "https://us-careers-rivian.icims.com/jobs/31990/login",
+      "salary": null,
+      "us": null,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Rivian",
+      "key": "jibe:careers.rivian.com:31990",
+      "first_seen": "2026-11-04T00:50:31+00:00",
+      "last_seen": "2026-11-04T00:50:31+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "32794",
+      "req_id": "32794",
+      "title": "Product Advisor IV - Oklahoma City Service Center",
+      "location": "9495 W. Reno Ave (Oklahoma City Oklahoma)",
+      "location_detail": "",
+      "department": [
+        " Sales"
+      ],
+      "published_at": "2026-08-13T19:18:00+0000",
+      "updated_at": "2026-10-08T23:45:23+0000",
+      "url": "https://us-careers-rivian.icims.com/jobs/32794/login",
+      "salary": null,
+      "us": null,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Rivian",
+      "key": "jibe:careers.rivian.com:32794",
+      "first_seen": "2026-11-04T00:50:31+00:00",
+      "last_seen": "2026-11-04T00:50:31+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5997,6 +7267,75 @@
       "closed_at": null
     },
     {
+      "job_id": "31673",
+      "req_id": "31673",
+      "title": "Product Guide III (Part-time) - Boise Area (For Future Consideration)",
+      "location": "740 N Five Mile Rd (Boise Idaho)",
+      "location_detail": "",
+      "department": [
+        " Sales"
+      ],
+      "published_at": "2026-07-29T04:07:00+0000",
+      "updated_at": "2026-10-16T23:50:11+0000",
+      "url": "https://us-careers-rivian.icims.com/jobs/31673/login",
+      "salary": null,
+      "us": null,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Rivian",
+      "key": "jibe:careers.rivian.com:31673",
+      "first_seen": "2026-11-04T00:50:31+00:00",
+      "last_seen": "2026-11-04T00:50:31+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "30904",
+      "req_id": "30904",
+      "title": "Product Guide III (Part-time) - Portland Area (For Future Consideration)",
+      "location": "2620 SW First Avenue (Portland Oregon)",
+      "location_detail": "",
+      "department": [
+        " Sales"
+      ],
+      "published_at": "2026-07-29T04:05:00+0000",
+      "updated_at": "2026-10-22T23:50:40+0000",
+      "url": "https://us-careers-rivian.icims.com/jobs/30904/login",
+      "salary": null,
+      "us": null,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Rivian",
+      "key": "jibe:careers.rivian.com:30904",
+      "first_seen": "2026-11-04T00:50:31+00:00",
+      "last_seen": "2026-11-04T00:50:31+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "32013",
+      "req_id": "32013",
+      "title": "Product Guide IV - Ventura Service Center",
+      "location": "6404 Auto Center Drive (Ventura California)",
+      "location_detail": "",
+      "department": [
+        " Customer Service"
+      ],
+      "published_at": "2026-07-28T17:01:00+0000",
+      "updated_at": "2026-10-07T23:46:02+0000",
+      "url": "https://us-careers-rivian.icims.com/jobs/32013/login",
+      "salary": null,
+      "us": null,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Rivian",
+      "key": "jibe:careers.rivian.com:32013",
+      "first_seen": "2026-11-04T00:50:31+00:00",
+      "last_seen": "2026-11-04T00:50:31+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
       "job_id": "YELPUS14002EXTERNALENUS",
       "req_id": "14002",
       "title": "Principal Product Manager - Ads Auction and Measurements (Remote - United States)",
@@ -6014,6 +7353,52 @@
       "key": "phenom:www.yelp.careers/us/en:YELPUS14002EXTERNALENUS",
       "first_seen": "2026-11-01T05:32:04+00:00",
       "last_seen": "2026-11-03T14:00:15+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "29438",
+      "req_id": "29438",
+      "title": "Product Guide III (Part-time) - Bay Area (For Future Consideration)",
+      "location": "755 Yosemite Dr (Milpitas California)",
+      "location_detail": "",
+      "department": [
+        " Customer Service"
+      ],
+      "published_at": "2026-07-21T22:22:00+0000",
+      "updated_at": "2026-10-16T23:50:08+0000",
+      "url": "https://us-careers-rivian.icims.com/jobs/29438/login",
+      "salary": null,
+      "us": null,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Rivian",
+      "key": "jibe:careers.rivian.com:29438",
+      "first_seen": "2026-11-04T00:50:31+00:00",
+      "last_seen": "2026-11-04T00:50:31+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "31986",
+      "req_id": "31986",
+      "title": "Product Guide IV - Colmar Service Center",
+      "location": "92 County Line Road (Colmar Pennsylvania)",
+      "location_detail": "",
+      "department": [
+        " Customer Service"
+      ],
+      "published_at": "2026-07-14T17:02:00+0000",
+      "updated_at": "2026-10-07T23:45:59+0000",
+      "url": "https://us-careers-rivian.icims.com/jobs/31986/login",
+      "salary": null,
+      "us": null,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Rivian",
+      "key": "jibe:careers.rivian.com:31986",
+      "first_seen": "2026-11-04T00:50:31+00:00",
+      "last_seen": "2026-11-04T00:50:31+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -6040,6 +7425,52 @@
       "key": "greenhouse:ayahealthcare:8055580",
       "first_seen": "2026-11-01T05:42:36+00:00",
       "last_seen": "2026-11-03T14:00:15+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "31520",
+      "req_id": "31520",
+      "title": "Product Guide III (Part-time) - Calabasas Showroom",
+      "location": "4776 Commons Way (Calabasas California)",
+      "location_detail": "",
+      "department": [
+        " Customer Service"
+      ],
+      "published_at": "2026-07-02T22:26:00+0000",
+      "updated_at": "2026-10-07T23:45:42+0000",
+      "url": "https://us-careers-rivian.icims.com/jobs/31520/login",
+      "salary": null,
+      "us": null,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Rivian",
+      "key": "jibe:careers.rivian.com:31520",
+      "first_seen": "2026-11-04T00:50:31+00:00",
+      "last_seen": "2026-11-04T00:50:31+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "29465",
+      "req_id": "29465",
+      "title": "Product Guide (Part-time)- Meatpacking/Brooklyn Showroom Locations (For Future Consideration)",
+      "location": "60 10th (New York New York)",
+      "location_detail": "",
+      "department": [
+        " Customer Service"
+      ],
+      "published_at": "2026-06-19T00:32:00+0000",
+      "updated_at": "2026-10-08T23:44:59+0000",
+      "url": "https://us-careers-rivian.icims.com/jobs/29465/login",
+      "salary": null,
+      "us": null,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Rivian",
+      "key": "jibe:careers.rivian.com:29465",
+      "first_seen": "2026-11-04T00:50:31+00:00",
+      "last_seen": "2026-11-04T00:50:31+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -6252,6 +7683,29 @@
       "closed_at": null
     },
     {
+      "job_id": "31074",
+      "req_id": "31074",
+      "title": "Product Guide III (Part-time) - Las Vegas and Sparks Service Centers (For Future Consideration)",
+      "location": "1914 Mendenhall (North Las Vegas Nevada)",
+      "location_detail": "",
+      "department": [
+        " Customer Service"
+      ],
+      "published_at": "2026-06-02T15:54:00+0000",
+      "updated_at": "2026-10-16T23:50:08+0000",
+      "url": "https://us-careers-rivian.icims.com/jobs/31074/login",
+      "salary": null,
+      "us": null,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Rivian",
+      "key": "jibe:careers.rivian.com:31074",
+      "first_seen": "2026-11-04T00:50:31+00:00",
+      "last_seen": "2026-11-04T00:50:31+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
       "job_id": "b272e53a-7acd-4ab3-bc62-f37edf8582c7",
       "req_id": null,
       "title": "Staff AI Product Analyst",
@@ -6300,6 +7754,52 @@
       "key": "greenhouse:samsara:7960413",
       "first_seen": "2026-10-29T23:17:57+00:00",
       "last_seen": "2026-11-03T14:00:15+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "31156",
+      "req_id": "31156",
+      "title": "Product Guide III (Part-time) - Rocklin Service Center (For Future Consideration)",
+      "location": "4401 Granite Drive (Rocklin CA)",
+      "location_detail": "",
+      "department": [
+        " Customer Service"
+      ],
+      "published_at": "2026-05-26T17:07:00+0000",
+      "updated_at": "2026-10-15T23:50:03+0000",
+      "url": "https://us-careers-rivian.icims.com/jobs/31156/login",
+      "salary": null,
+      "us": null,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Rivian",
+      "key": "jibe:careers.rivian.com:31156",
+      "first_seen": "2026-11-04T00:50:31+00:00",
+      "last_seen": "2026-11-04T00:50:31+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "30162",
+      "req_id": "30162",
+      "title": "Product Guide III (Part-time) - Gold Coast Spaces (Chicago, IL)",
+      "location": "871 N. Rush Street (Chicago Illinois)",
+      "location_detail": "",
+      "department": [
+        " Customer Service"
+      ],
+      "published_at": "2026-05-22T16:32:00+0000",
+      "updated_at": "2026-10-31T00:00:08+0000",
+      "url": "https://us-careers-rivian.icims.com/jobs/30162/login",
+      "salary": null,
+      "us": null,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Rivian",
+      "key": "jibe:careers.rivian.com:30162",
+      "first_seen": "2026-11-04T00:50:31+00:00",
+      "last_seen": "2026-11-04T00:50:31+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -6363,6 +7863,29 @@
       "key": "ashby:cognition:60ac2393-2727-4c88-953b-013e7bb418f8",
       "first_seen": "2026-11-01T04:08:28+00:00",
       "last_seen": "2026-11-03T14:00:15+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "30170",
+      "req_id": "30170",
+      "title": "Product Guide III (Part-time) - Edina Spaces",
+      "location": "1 West 69th (Edina MN)",
+      "location_detail": "",
+      "department": [
+        " Customer Service"
+      ],
+      "published_at": "2026-04-16T15:04:00+0000",
+      "updated_at": "2026-10-07T23:45:11+0000",
+      "url": "https://us-careers-rivian.icims.com/jobs/30170/login",
+      "salary": null,
+      "us": null,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Rivian",
+      "key": "jibe:careers.rivian.com:30170",
+      "first_seen": "2026-11-04T00:50:31+00:00",
+      "last_seen": "2026-11-04T00:50:31+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -6441,6 +7964,98 @@
       "key": "smartrecruiters:ServiceNow:744000108296495",
       "first_seen": "2026-10-30T05:47:56+00:00",
       "last_seen": "2026-11-03T14:00:15+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "29118",
+      "req_id": "29118",
+      "title": "Product Guide III (Part-time) - San Diego (For Future Consideration)",
+      "location": "3665 Paseo Place (San Diego California)",
+      "location_detail": "",
+      "department": [
+        " Customer Service"
+      ],
+      "published_at": "2026-02-04T18:20:00+0000",
+      "updated_at": "2026-10-06T23:43:50+0000",
+      "url": "https://us-careers-rivian.icims.com/jobs/29118/login",
+      "salary": null,
+      "us": null,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Rivian",
+      "key": "jibe:careers.rivian.com:29118",
+      "first_seen": "2026-11-04T00:50:31+00:00",
+      "last_seen": "2026-11-04T00:50:31+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "29117",
+      "req_id": "29117",
+      "title": "Product Guide III (Part-time) - Orange County (For Future Consideration)",
+      "location": "26845 Vista Terrace (Lake Forest California)",
+      "location_detail": "",
+      "department": [
+        " Customer Service"
+      ],
+      "published_at": "2026-02-04T18:19:00+0000",
+      "updated_at": "2026-10-06T23:43:50+0000",
+      "url": "https://us-careers-rivian.icims.com/jobs/29117/login",
+      "salary": null,
+      "us": null,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Rivian",
+      "key": "jibe:careers.rivian.com:29117",
+      "first_seen": "2026-11-04T00:50:31+00:00",
+      "last_seen": "2026-11-04T00:50:31+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "29115",
+      "req_id": "29115",
+      "title": "Product Guide III (Part-time) - Los Angeles (For Future Consideration)",
+      "location": "United States, California, Los Angeles",
+      "location_detail": "",
+      "department": [
+        " Customer Service"
+      ],
+      "published_at": "2026-02-04T16:54:00+0000",
+      "updated_at": "2026-10-06T23:43:50+0000",
+      "url": "https://us-careers-rivian.icims.com/jobs/29115/login",
+      "salary": null,
+      "us": true,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Rivian",
+      "key": "jibe:careers.rivian.com:29115",
+      "first_seen": "2026-11-04T00:50:31+00:00",
+      "last_seen": "2026-11-04T00:50:31+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "29121",
+      "req_id": "29121",
+      "title": "Product Guide III (Part-time) - Joshua Tree (For Future Consideration)",
+      "location": "61142 29 Palms Hwy. (Joshua Tree California)",
+      "location_detail": "",
+      "department": [
+        " Customer Service"
+      ],
+      "published_at": "2026-02-04T16:54:00+0000",
+      "updated_at": "2026-10-06T23:43:50+0000",
+      "url": "https://us-careers-rivian.icims.com/jobs/29121/login",
+      "salary": null,
+      "us": null,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Rivian",
+      "key": "jibe:careers.rivian.com:29121",
+      "first_seen": "2026-11-04T00:50:31+00:00",
+      "last_seen": "2026-11-04T00:50:31+00:00",
       "status": "open",
       "closed_at": null
     },
