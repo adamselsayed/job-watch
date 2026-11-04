@@ -560,6 +560,7 @@
     const out = [];
     for (const j of raw) {
       if (!titleMatches(j.title)) continue;
+      if ((c.exclude || '').split(',').map(x => x.trim().toLowerCase()).filter(Boolean).some(w => new RegExp('\\b' + esc(w) + '\\b').test(j.title.toLowerCase()))) continue;
       let us = classifyUS(j.location);
       if (us === null && j.location_detail) us = classifyUS(j.location_detail);
       if (us === null && /^(us|usa|united states)$/i.test(c.country || '')) us = true;

@@ -5,6 +5,7 @@
 #   board: the company's board token (the slug in its job-board URL)
 #   url:   the public careers page (for reference / linking)
 #   country: US   (optional) treat locations with no country stated (e.g. "Remote") as US for this company
+#   exclude: word, word   (optional) extra standalone title words to drop for this company only (e.g. retail "Product Guide" roles)
 #
 # Finding the board token:
 #   Greenhouse: careers page loads from boards.greenhouse.io/<token>  or  job-boards.greenhouse.io/<token>
@@ -176,4 +177,5 @@
 - name: Rivian
   ats: jibe
   board: careers.rivian.com
+  exclude: guide, advisor, specialist   # showroom / retail "Product Guide" roles
   url: https://careers.rivian.com/careers-home/jobs

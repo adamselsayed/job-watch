@@ -844,9 +844,9 @@ def fetch_jibe(company):
             "job_id": str(j.get("req_id") or j.get("id") or j.get("slug")),
             "req_id": j.get("req_id") or None,
             "title": title, "location": loc or "", "location_detail": "",
-            "department": j.get("category") or j.get("department") or "",
+            "department": ", ".join(x.strip() for x in (j.get("category") if isinstance(j.get("category"), list) else [j.get("category") or j.get("department") or ""]) if x),
             "published_at": posted, "updated_at": j.get("update_date"),
-            "url": j.get("apply_url") and j["apply_url"].replace("/apply", "") or f"https://{host}/careers-home/jobs/{j.get('req_id') or j.get('slug')}",
+            "url": f"https://{host}/careers-home/jobs/{j.get('req_id') or j.get('slug')}?lang=en-us",
             "salary": salary_from_text(content),
             "_meta_text": meta, "_content": content,
         })
@@ -862,16 +862,20 @@ ADAPTERS = {"greenhouse": fetch_greenhouse, "lever": fetch_lever, "ashby": fetch
 
 # --------------------------------------------------------------- filtering --
 
-def title_matches(title):
+def title_matches(title, extra_exclude=()):
     t = title.lower()
     if not any(re.search(r"\b" + re.escape(k) + r"s?\b", t) for k in TITLE_KEYWORDS):   # whole word: "Products" yes, "Production" no
         return False
-    return not any(re.search(r"\b" + re.escape(w) + r"\b", t) for w in TITLE_EXCLUDE_WORDS)
+    return not any(re.search(r"\b" + re.escape(w) + r"\b", t) for w in list(TITLE_EXCLUDE_WORDS) + list(extra_exclude))
+
+
+def company_excludes(company):
+    return [x.strip().lower() for x in (company or {}).get("exclude", "").split(",") if x.strip()]
 
 
 def matches(job, company=None):
     """Apply the watch criteria. Returns (keep, annotated_job)."""
-    if not title_matches(job["title"]):
+    if not title_matches(job["title"], company_excludes(company)):
         return False, None
     # The posting's own location field is authoritative. Office metadata is only a
     # fallback: boards often attach a generic "United States" office to every role.
