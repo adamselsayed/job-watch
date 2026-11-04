@@ -1,0 +1,25 @@
+{
+ "count": 4,
+ "first_item": {
+  "id": "23",
+  "jobOpeningName": "Principal Technical Consultant, Google Cloud (GCP)",
+  "departmentId": "18679",
+  "departmentLabel": "Delivery",
+  "employmentStatusLabel": "Full-Time",
+  "employmentType": null,
+  "location": {
+   "city": null,
+   "state": null
+  },
+  "atsLocation": {
+   "country": "United States",
+   "state": null,
+   "province": null,
+   "city": null
+  },
+  "isRemote": null,
+  "locationType": "1"
+ },
+ "first_detail": null,
+ "kept_rows": []
+}

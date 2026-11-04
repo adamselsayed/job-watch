@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-03T14:00:15+00:00",
+  "generated_at": "2026-11-04T00:45:23+00:00",
   "criteria": {
     "title_keywords": [
       "product"
@@ -322,6 +322,17 @@
       "error": null,
       "total_jobs": 705,
       "matched": 4
+    },
+    {
+      "name": "CWX",
+      "ats": "bamboohr",
+      "board": "cwx",
+      "url": "https://cwx.ai/careers",
+      "fetched_at": "2026-11-04T00:45:23+00:00",
+      "status": "ok",
+      "error": null,
+      "total_jobs": 4,
+      "matched": 0
     }
   ],
   "jobs": [
