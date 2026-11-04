@@ -774,8 +774,12 @@ def fetch_bamboohr(company):
         title = j.get("jobOpeningName") or j.get("title") or ""
         loc = j.get("location") or {}
         loc_name = ", ".join(x for x in (loc.get("city"), loc.get("state"), loc.get("country") if isinstance(loc, dict) else None) if x) if isinstance(loc, dict) else str(loc or "")
-        if not loc_name:
-            loc_name = j.get("atsLocation") or j.get("locationLabel") or ""
+        ats = j.get("atsLocation") if isinstance(j.get("atsLocation"), dict) else {}
+        for part in (ats.get("city"), ats.get("state") or ats.get("province"), ats.get("country")):
+            if part and part.lower() not in loc_name.lower():
+                loc_name = f"{loc_name}, {part}" if loc_name else part
+        if not loc_name and isinstance(j.get("locationLabel"), str):
+            loc_name = j["locationLabel"]
         remote = bool(j.get("isRemote"))
         if remote:
             loc_name = f"Remote - {loc_name}" if loc_name else "Remote"
