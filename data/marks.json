@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T18:50:16.234Z",
+  "updated_at": "2026-11-04T18:51:04.335Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -684,6 +684,84 @@
       "at": "2026-11-04T18:50:14.729Z",
       "title": "Senior Security Engineer, Product Security",
       "company": "Komodo Health"
+    },
+    "jibe:careers.rivian.com:34304": {
+      "status": "archived",
+      "at": "2026-11-04T18:51:02.831Z",
+      "title": "AI Product Engineer, Technology, Facilities",
+      "company": "Rivian"
+    },
+    "jibe:careers.rivian.com:33798": {
+      "status": "archived",
+      "at": "2026-11-04T18:51:02.831Z",
+      "title": "Engineering Intern - Product Development Systems (Spring 2027 Co-Op)",
+      "company": "Rivian"
+    },
+    "jibe:careers.rivian.com:33725": {
+      "status": "archived",
+      "at": "2026-11-04T18:51:02.831Z",
+      "title": "Engineering Intern - Test and Validation, Charging Products (Spring 2027 Co-Op)",
+      "company": "Rivian"
+    },
+    "jibe:careers.rivian.com:35054": {
+      "status": "archived",
+      "at": "2026-11-04T18:51:02.831Z",
+      "title": "Product Concept Lead Engineer",
+      "company": "Rivian"
+    },
+    "jibe:careers.rivian.com:34306": {
+      "status": "archived",
+      "at": "2026-11-04T18:51:02.831Z",
+      "title": "Product Development, Vehicle Attributes and Test Engineering - Summer 2027 Internships",
+      "company": "Rivian"
+    },
+    "jibe:careers.rivian.com:33411": {
+      "status": "archived",
+      "at": "2026-11-04T18:51:02.831Z",
+      "title": "Senior Analytics Engineer, Product Development Data & Analytics",
+      "company": "Rivian"
+    },
+    "jibe:careers.rivian.com:33745": {
+      "status": "archived",
+      "at": "2026-11-04T18:51:02.831Z",
+      "title": "Software Engineering Intern - Product Development Portal (Spring Co-Op)",
+      "company": "Rivian"
+    },
+    "jibe:careers.rivian.com:33746": {
+      "status": "archived",
+      "at": "2026-11-04T18:51:02.831Z",
+      "title": "Software Engineering Intern - Product Lifecycle Management (Spring 2027 Co-Op)",
+      "company": "Rivian"
+    },
+    "jibe:careers.rivian.com:34208": {
+      "status": "archived",
+      "at": "2026-11-04T18:51:02.831Z",
+      "title": "Sr. Manager of Adventure Products",
+      "company": "Rivian"
+    },
+    "jibe:careers.rivian.com:34004": {
+      "status": "archived",
+      "at": "2026-11-04T18:51:02.831Z",
+      "title": "Sr. Product Manager, Enterprise Productivity & AI",
+      "company": "Rivian"
+    },
+    "jibe:careers.rivian.com:34111": {
+      "status": "archived",
+      "at": "2026-11-04T18:51:02.831Z",
+      "title": "Sr. Product Manager, Financial Systems",
+      "company": "Rivian"
+    },
+    "jibe:careers.rivian.com:33966": {
+      "status": "archived",
+      "at": "2026-11-04T18:51:02.831Z",
+      "title": "Staff Field Service Engineer, Product Integrity & Defense",
+      "company": "Rivian"
+    },
+    "jibe:careers.rivian.com:33793": {
+      "status": "archived",
+      "at": "2026-11-04T18:51:02.831Z",
+      "title": "Technical Program Management Intern - Product Management Product Development (Spring 2027 Co-Op)",
+      "company": "Rivian"
     }
   },
   "groups": {
