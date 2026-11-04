@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T00:45:32.667Z",
+  "updated_at": "2026-11-04T00:46:10.915Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -683,6 +683,7 @@
       "Experian"
     ],
     "out": [
+      "EVgo",
       "DoorDash",
       "Angi",
       "Serve Robotics",
@@ -692,10 +693,9 @@
       "Aya Healthcare",
       "CHG Healthcare",
       "Taskrabbit",
-      "EVgo",
       "Nextdoor",
       "Housecall Pro"
     ],
-    "at": "2026-11-04T00:45:28.342Z"
+    "at": "2026-11-04T00:46:09.410Z"
   }
 }
