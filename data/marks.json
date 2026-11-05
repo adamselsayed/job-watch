@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T18:51:04.335Z",
+  "updated_at": "2026-11-05T19:20:48.119Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -762,6 +762,12 @@
       "at": "2026-11-04T18:51:02.831Z",
       "title": "Technical Program Management Intern - Product Management Product Development (Spring 2027 Co-Op)",
       "company": "Rivian"
+    },
+    "greenhouse:samsara:8315122": {
+      "status": "applied",
+      "at": "2026-11-05T19:20:46.615Z",
+      "title": "Lead Product Manager",
+      "company": "Samsara"
     }
   },
   "groups": {
