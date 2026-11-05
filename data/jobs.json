@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T21:12:47+00:00",
+  "generated_at": "2026-11-05T23:08:41+00:00",
   "criteria": {
     "title_keywords": [
       "product"
@@ -359,6 +359,17 @@
       "error": null,
       "total_jobs": 678,
       "matched": 25
+    },
+    {
+      "name": "Curri",
+      "ats": "ashby",
+      "board": "curri",
+      "url": "https://www.curri.com/careers",
+      "fetched_at": "2026-11-05T23:08:41+00:00",
+      "status": "ok",
+      "error": null,
+      "total_jobs": 25,
+      "matched": 2
     }
   ],
   "jobs": [
@@ -3304,6 +3315,32 @@
       "closed_at": null
     },
     {
+      "job_id": "76070c78-1a0b-47d1-b9c4-4ec6a82846f9",
+      "req_id": null,
+      "title": "Senior Product Manager, Marketplace Supply ",
+      "location": "Remote - United States",
+      "location_detail": "",
+      "department": "Technology / Product",
+      "published_at": "2026-10-19T23:50:29.856+00:00",
+      "updated_at": null,
+      "url": "https://jobs.ashbyhq.com/curri/76070c78-1a0b-47d1-b9c4-4ec6a82846f9",
+      "salary": {
+        "min": 175000,
+        "max": 200000,
+        "currency": "USD",
+        "source": "posting"
+      },
+      "us": true,
+      "remote": "remote",
+      "remote_confidence": "high",
+      "company": "Curri",
+      "key": "ashby:curri:76070c78-1a0b-47d1-b9c4-4ec6a82846f9",
+      "first_seen": "2026-11-05T23:08:41+00:00",
+      "last_seen": "2026-11-05T23:08:41+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
       "job_id": "744000156431640",
       "req_id": "JB0076131",
       "title": "Senior Director Product Analytics",
@@ -4029,6 +4066,32 @@
       "key": "talentbrew:www.careers.ford.com/en:101662067600",
       "first_seen": "2026-11-05T20:48:07+00:00",
       "last_seen": "2026-11-05T21:12:47+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "dbabd019-e0e7-46d1-a1d8-554f3fec2232",
+      "req_id": null,
+      "title": "VP of Product ",
+      "location": "United States",
+      "location_detail": "Ventura, CA",
+      "department": "Technology / Product",
+      "published_at": "2026-10-06T23:11:27.432+00:00",
+      "updated_at": null,
+      "url": "https://jobs.ashbyhq.com/curri/dbabd019-e0e7-46d1-a1d8-554f3fec2232",
+      "salary": {
+        "min": 280000,
+        "max": 320000,
+        "currency": "USD",
+        "source": "posting"
+      },
+      "us": true,
+      "remote": "remote",
+      "remote_confidence": "medium",
+      "company": "Curri",
+      "key": "ashby:curri:dbabd019-e0e7-46d1-a1d8-554f3fec2232",
+      "first_seen": "2026-11-05T23:08:41+00:00",
+      "last_seen": "2026-11-05T23:08:41+00:00",
       "status": "open",
       "closed_at": null
     },
