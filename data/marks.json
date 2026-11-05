@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T19:21:07.904Z",
+  "updated_at": "2026-11-05T20:17:00.048Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -786,6 +786,7 @@
     ],
     "out": [
       "EVgo",
+      "Rivian",
       "DoorDash",
       "Angi",
       "Serve Robotics",
@@ -798,6 +799,6 @@
       "Nextdoor",
       "Housecall Pro"
     ],
-    "at": "2026-11-04T00:46:09.410Z"
+    "at": "2026-11-05T20:16:58.543Z"
   }
 }
