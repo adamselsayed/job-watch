@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T19:20:48.119Z",
+  "updated_at": "2026-11-05T19:21:07.904Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -768,6 +768,12 @@
       "at": "2026-11-05T19:20:46.615Z",
       "title": "Lead Product Manager",
       "company": "Samsara"
+    },
+    "smartrecruiters:Experian:744000159641657": {
+      "status": "archived",
+      "at": "2026-11-05T19:21:06.398Z",
+      "title": "Product Operations Coordinator - Customer Programs",
+      "company": "Experian"
     }
   },
   "groups": {
