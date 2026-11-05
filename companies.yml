@@ -1,7 +1,7 @@
 # Companies to watch. One block per company.
 #
 #   name:  how the company appears on the dashboard
-#   ats:   greenhouse | lever | ashby | smartrecruiters | workday | phenom | jobvite | rippling | bamboohr | jibe   (the job-board system the company uses)
+#   ats:   greenhouse | lever | ashby | smartrecruiters | workday | phenom | jobvite | rippling | bamboohr | jibe | oracle   (the job-board system the company uses)
 #   board: the company's board token (the slug in its job-board URL)
 #   url:   the public careers page (for reference / linking)
 #   country: US   (optional) treat locations with no country stated (e.g. "Remote") as US for this company
@@ -21,6 +21,7 @@
 #   Rippling:   ats.rippling.com/<token>/jobs  ->  board: <token>
 #   BambooHR:   <token>.bamboohr.com/careers  ->  board: <token>
 #   Jibe/iCIMS: <host>/careers-home/jobs  ->  board: <host>   (e.g. careers.rivian.com)
+#   Oracle Recruiting: <host>/en/sites/<site>/...  ->  board: <host>/<site>   (e.g. apply.ford.com/CX_1)
 #
 # After adding a company, run:  python3 scripts/fetch_jobs.py
 # (GitHub Actions also runs it automatically every morning.)
@@ -179,3 +180,8 @@
   board: careers.rivian.com
   exclude: guide, advisor, specialist   # showroom / retail "Product Guide" roles
   url: https://careers.rivian.com/careers-home/jobs
+
+- name: Ford
+  ats: oracle
+  board: apply.ford.com/CX_1
+  url: https://www.careers.ford.com/en/search-jobs

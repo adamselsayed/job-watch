@@ -815,6 +815,61 @@ def fetch_bamboohr(company):
     return out
 
 
+def fetch_oracle(company):
+    """Oracle Recruiting Cloud (Candidate Experience) sites, e.g. https://apply.ford.com/en/sites/CX_1/...
+    board = "<host>/<siteNumber>", e.g. "apply.ford.com/CX_1".  Uses the public CE REST API with a
+    keyword search for "product" (these boards are large), then the usual title filter."""
+    host, site = company["board"].split("/", 1)
+    api = f"https://{host}/hcmRestApi/resources/latest"
+    reqs, offset, total, first = [], 0, None, None
+    while True:
+        finder = f'findReqs;siteNumber={site},keyword="product",limit=25,offset={offset},sortBy=POSTING_DATES_DESC'
+        page = fetch_json(f"{api}/recruitingCEJobRequisitions?onlyData=true&expand=requisitionList.secondaryLocations"
+                          f"&finder={urllib.parse.quote(finder, safe=';=,')}", timeout=45)
+        it = (page.get("items") or [{}])[0]
+        items = it.get("requisitionList") or []
+        if first is None:
+            first = {"keys": list(it.keys()), "total": it.get("TotalJobsCount"), "sample": items[:2]}
+        total = int(it.get("TotalJobsCount") or 0)
+        reqs.extend(items)
+        offset += len(items)
+        if not items or offset >= total or offset >= 2000:
+            break
+    out = []
+    for j in reqs:
+        title = j.get("Title") or ""
+        rid = str(j.get("Id") or "")
+        sec = [x.get("Name") for x in (j.get("secondaryLocations") or []) if x.get("Name")]
+        content, meta = strip_html(j.get("ShortDescriptionStr") or ""), f"workplace: {j.get('WorkplaceType') or ''}"
+        if title_matches(title):
+            try:
+                byid = 'ById;Id="' + rid + '",siteNumber=' + site
+                d = fetch_json(f"{api}/recruitingCEJobRequisitionDetails?expand=all&onlyData=true"
+                               f"&finder={urllib.parse.quote(byid, safe=';=,')}", timeout=45)
+                dj = (d.get("items") or [{}])[0]
+                content = strip_html(" ".join(dj.get(k) or "" for k in ("ExternalDescriptionStr", "ExternalResponsibilitiesStr",
+                                                                         "ExternalQualificationsStr", "CorporateDescriptionStr")))
+                meta = f"workplace: {dj.get('WorkplaceType') or j.get('WorkplaceType') or ''} {dj.get('JobSchedule') or ''}"
+            except Exception as e:          # noqa: BLE001
+                log(f"[{company['name']}] detail fetch failed for {rid}: {e}")
+        out.append({
+            "job_id": rid,
+            "req_id": rid or None,
+            "title": title,
+            "location": j.get("PrimaryLocation") or "",
+            "location_detail": "; ".join(sec),
+            "department": j.get("JobFamily") or j.get("Organization") or "",
+            "published_at": j.get("PostedDate"),
+            "updated_at": None,
+            "url": f"https://{host}/en/sites/{site}/job/{rid}",
+            "salary": salary_from_text(content) if content else None,
+            "_meta_text": meta,
+            "_content": content,
+        })
+    debug_dump(company, {"first_page": first, "scanned": len(reqs), "kept": len([o for o in out if title_matches(o["title"])])})
+    return out
+
+
 def fetch_jibe(company):
     """iCIMS / Jibe career sites (https://<host>/careers-home/jobs) via the site's /api/jobs JSON endpoint.
     board = "<host>", e.g. "careers.rivian.com" """
@@ -857,7 +912,7 @@ def fetch_jibe(company):
 
 ADAPTERS = {"greenhouse": fetch_greenhouse, "lever": fetch_lever, "ashby": fetch_ashby,
             "smartrecruiters": fetch_smartrecruiters, "workday": fetch_workday, "phenom": fetch_phenom,
-            "jobvite": fetch_jobvite, "rippling": fetch_rippling, "bamboohr": fetch_bamboohr, "jibe": fetch_jibe, "unknown": fetch_unknown}
+            "jobvite": fetch_jobvite, "rippling": fetch_rippling, "bamboohr": fetch_bamboohr, "jibe": fetch_jibe, "oracle": fetch_oracle, "unknown": fetch_unknown}
 
 
 # --------------------------------------------------------------- filtering --
