@@ -1,0 +1,170 @@
+{
+ "first_page": {
+  "keys": [
+   "filters",
+   "results",
+   "hasJobs",
+   "hasContent"
+  ],
+  "html_head": "\r\n\r\n    <section id=\"search-results\" data-keywords=\"product\" data-location=\"\" data-distance=\"50\" data-latitude=\"\" data-longitude=\"\" data-show-radius=\"False\" data-total-results=\"678\" data-total-job-results=\"678\" data-total-pages=\"7\" data-current-page=\"1\" data-records-per-page=\"100\" data-active-facet-id=\"0\" data-custom-facet-name=\"\" data-facet-term=\"\" data-facet-type=\"0\" data-search-results-module-name=\"Search Results\" data-sort-criteria=\"0\" data-sort-direction=\"0\" data-search-type=\"5\" data-ajax-url=\"/en/search-jobs/results\" data-ajax-post-url=\"/en/search-jobs/resultspost\" data-server-error-message=\"There was an error retrieving your results. Please refresh and try again.\" data-keyword-type=\"\" data-location-type=\"\" data-location-path=\"\" data-organization-ids=\"\" data-selector-name=\"searchresults\" data-refined-keywords=\"[]\" data-postal-code=\"\" data-save-jobs=\"false\" data-results-type=\"0\" data-use-noindex=\"true\">\r\n        <h1>Results for product</h1>\r\n\r\n            <section id=\"search-results-list\">\r\n\r\n\r\n                <ul>\r\n                        <li>\r\n                            <a href=\"/en/job/dearborn/product-manager/48560/101671475104\" data-job-id=\"101671475104\">\r\n                                <h2>Product Manager</h2>\r\n                                    <span class=\"job-location\">Dearborn, MI</span>\r\n                                    <span class=\"job-date-posted\">10/07/2026</span>\r\n                            </a>\r\n                        </li>\r\n                      "
+ },
+ "pages": 7,
+ "scanned": 678,
+ "kept_rows": [
+  {
+   "job_id": "101671475104",
+   "req_id": null,
+   "title": "Product Manager",
+   "location": "Dearborn, MI, United States",
+   "location_detail": "Dearborn, MI",
+   "department": "",
+   "published_at": "2026-10-07",
+   "updated_at": null,
+   "url": "https://www.careers.ford.com/en/job/dearborn/product-manager/48560/101671475104",
+   "salary": {
+    "min": 86600,
+    "max": 166200,
+    "currency": "USD",
+    "source": "description"
+   },
+   "_meta_text": "workplace:  Full time"
+  },
+  {
+   "job_id": "102622793248",
+   "req_id": null,
+   "title": "IT Product Manager",
+   "location": "Bangkok, Thailand",
+   "location_detail": "Bangkok, Bangkok",
+   "department": "",
+   "published_at": "2026-10-30",
+   "updated_at": null,
+   "url": "https://www.careers.ford.com/en/job/bangkok/it-product-manager/48560/102622793248",
+   "salary": null,
+   "_meta_text": "workplace:  Full time"
+  },
+  {
+   "job_id": "102314380208",
+   "req_id": null,
+   "title": "Product Manager - Global Uptime, Digital Product",
+   "location": "Dearborn, MI, United States",
+   "location_detail": "Dearborn, MI",
+   "department": "",
+   "published_at": "2026-10-22",
+   "updated_at": null,
+   "url": "https://www.careers.ford.com/en/job/dearborn/product-manager-global-uptime-digital-product/48560/102314380208",
+   "salary": {
+    "min": 99100,
+    "max": 149000,
+    "currency": "USD",
+    "source": "description"
+   },
+   "_meta_text": "workplace:  Full time"
+  },
+  {
+   "job_id": "102480733360",
+   "req_id": null,
+   "title": "PVT Product Engineer",
+   "location": "Dearborn, MI, United States",
+   "location_detail": "Dearborn, MI",
+   "department": "",
+   "published_at": "2026-10-26",
+   "updated_at": null,
+   "url": "https://www.careers.ford.com/en/job/dearborn/pvt-product-engineer/48560/102480733360",
+   "salary": null,
+   "_meta_text": "workplace:  Full time"
+  },
+  {
+   "job_id": "102824321392",
+   "req_id": null,
+   "title": "Group Product Manager, Privacy",
+   "location": "Remote",
+   "location_detail": "United States",
+   "department": "",
+   "published_at": "2026-11-03",
+   "updated_at": null,
+   "url": "https://www.careers.ford.com/en/job/united-states/group-product-manager-privacy/48560/102824321392",
+   "salary": {
+    "min": 115500,
+    "max": 268300,
+    "currency": "USD",
+    "source": "description"
+   },
+   "_meta_text": "workplace:  Full time"
+  },
+  {
+   "job_id": "102639388832",
+   "req_id": null,
+   "title": "Senior Product Manager Digital Product",
+   "location": "Köln, Nordrhein Westfalen, Germany",
+   "location_detail": "Cologne, North Rhine-Westphalia",
+   "department": "",
+   "published_at": "2026-10-30",
+   "updated_at": null,
+   "url": "https://www.careers.ford.com/en/job/cologne/senior-product-manager-digital-product/48560/102639388832",
+   "salary": null,
+   "_meta_text": "workplace:  Full time"
+  },
+  {
+   "job_id": "96642678208",
+   "req_id": null,
+   "title": "IMG Product Concepting Lead",
+   "location": "Bangkok, Thailand",
+   "location_detail": "Bangkok, Bangkok",
+   "department": "",
+   "published_at": "2026-06-19",
+   "updated_at": null,
+   "url": "https://www.careers.ford.com/en/job/bangkok/img-product-concepting-lead/48560/96642678208",
+   "salary": null,
+   "_meta_text": "workplace:  Full time"
+  },
+  {
+   "job_id": "100963778688",
+   "req_id": null,
+   "title": "Manager, Product Performance",
+   "location": "Dearborn, MI, United States",
+   "location_detail": "Dearborn, MI",
+   "department": "",
+   "published_at": "2026-09-21",
+   "updated_at": null,
+   "url": "https://www.careers.ford.com/en/job/dearborn/manager-product-performance/48560/100963778688",
+   "salary": {
+    "min": 115500,
+    "max": 218100,
+    "currency": "USD",
+    "source": "description"
+   },
+   "_meta_text": "workplace:  Full time"
+  },
+  {
+   "job_id": "97613524880",
+   "req_id": null,
+   "title": "Head of Product Operations",
+   "location": "Dunton, Essex, United Kingdom",
+   "location_detail": "",
+   "department": "",
+   "published_at": "2026-07-29",
+   "updated_at": null,
+   "url": "https://www.careers.ford.com/en/job/united-kingdom/head-of-product-operations/48560/97613524880",
+   "salary": null,
+   "_meta_text": "workplace:  Full time"
+  },
+  {
+   "job_id": "101945551856",
+   "req_id": null,
+   "title": "Product Development Engineer",
+   "location": "Dearborn, MI, United States",
+   "location_detail": "Dearborn, MI",
+   "department": "",
+   "published_at": "2026-10-14",
+   "updated_at": null,
+   "url": "https://www.careers.ford.com/en/job/dearborn/product-development-engineer/48560/101945551856",
+   "salary": {
+    "min": 65100,
+    "max": 166200,
+    "currency": "USD",
+    "source": "description"
+   },
+   "_meta_text": "workplace:  Full time"
+  }
+ ]
+}
