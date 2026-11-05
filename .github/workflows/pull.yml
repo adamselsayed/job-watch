@@ -1,0 +1,48 @@
+name: Pull now (from dashboard)
+
+# The dashboard's "Pull all now" button writes data/pull-request.json (with the Sync token)
+# for boards a browser can't read directly (Workday, Phenom, Oracle, ...). That push lands here.
+on:
+  push:
+    branches: [main]
+    paths: [data/pull-request.json]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: job-sweep
+  cancel-in-progress: false
+
+jobs:
+  pull:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch requested boards
+        run: |
+          python3 - <<'PY'
+          import json, subprocess, sys
+          names = json.load(open("data/pull-request.json")).get("companies") or []
+          print("Pulling:", ", ".join(names) or "(none)")
+          if names:
+              sys.exit(subprocess.call([sys.executable, "scripts/fetch_jobs.py", *names]))
+          PY
+
+      - name: Commit updated data
+        run: |
+          git config user.name "job-watch bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/
+          if git diff --cached --quiet; then
+            echo "No changes."
+          else
+            git commit -m "Pull now from dashboard: $(date -u +%Y-%m-%d\ %H:%M) UTC"
+            git pull --rebase origin main
+            git push
+          fi

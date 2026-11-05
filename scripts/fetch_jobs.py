@@ -69,10 +69,42 @@ def read_companies(path=COMPANIES_FILE):
     return companies
 
 
+_AIA_CTX = {}
+
+
+def _aia_context(host):
+    """Some career sites (e.g. apply.ford.com) send their certificate without the intermediate.
+    Browsers fill the gap from the certificate's "CA Issuers" link; Python doesn't. Do the same
+    here: download that intermediate and add it to an otherwise normal, fully-verifying context."""
+    if host in _AIA_CTX:
+        return _AIA_CTX[host]
+    import ssl, tempfile
+    leaf = ssl.get_server_certificate((host, 443))
+    with tempfile.NamedTemporaryFile("w", suffix=".pem", delete=False) as f:
+        f.write(leaf)
+    info = ssl._ssl._test_decode_cert(f.name)          # stdlib helper; exposes the CA Issuers URL
+    os.unlink(f.name)
+    ctx = ssl.create_default_context()
+    for issuer_url in info.get("caIssuers") or ():
+        with urllib.request.urlopen(issuer_url, timeout=20) as r:
+            der = r.read()
+        pem = der.decode() if der.startswith(b"-----") else ssl.DER_cert_to_PEM_cert(der)
+        ctx.load_verify_locations(cadata=pem)
+    _AIA_CTX[host] = ctx
+    return ctx
+
+
 def fetch_json(url, timeout=30):
     req = urllib.request.Request(url, headers={"User-Agent": "job-watch/1.0 (+github)"})
-    with urllib.request.urlopen(req, timeout=timeout) as r:
-        return json.loads(r.read().decode("utf-8"))
+    try:
+        with urllib.request.urlopen(req, timeout=timeout) as r:
+            return json.loads(r.read().decode("utf-8"))
+    except urllib.error.URLError as e:
+        if "CERTIFICATE_VERIFY_FAILED" not in str(e) or "local issuer" not in str(e):
+            raise
+        host = urllib.parse.urlsplit(url).hostname
+        with urllib.request.urlopen(req, timeout=timeout, context=_aia_context(host)) as r:
+            return json.loads(r.read().decode("utf-8"))
 
 
 def strip_html(s):
