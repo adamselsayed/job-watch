@@ -104,7 +104,11 @@ def fetch_json(url, timeout=30):
             raise
         host = urllib.parse.urlsplit(url).hostname
         with urllib.request.urlopen(req, timeout=timeout, context=_aia_context(host)) as r:
-            return json.loads(r.read().decode("utf-8"))
+            body = r.read().decode("utf-8", "replace")
+            try:
+                return json.loads(body)
+            except ValueError:
+                raise ValueError(f"not JSON (HTTP {r.status}, {r.headers.get('Content-Type')}): {body[:300]!r}") from None
 
 
 def strip_html(s):
