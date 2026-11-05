@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T20:34:49+00:00",
+  "generated_at": "2026-11-05T20:45:25+00:00",
   "criteria": {
     "title_keywords": [
       "product"
@@ -351,9 +351,9 @@
       "ats": "oracle",
       "board": "apply.ford.com/CX_1",
       "url": "https://www.careers.ford.com/en/search-jobs",
-      "fetched_at": "2026-11-05T20:34:49+00:00",
+      "fetched_at": "2026-11-05T20:45:25+00:00",
       "status": "error",
-      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)>"
+      "error": "Expecting value: line 1 column 1 (char 0)"
     }
   ],
   "jobs": [
