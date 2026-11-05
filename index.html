@@ -169,16 +169,18 @@
   dialog input { width: 100%; font: inherit; padding: 8px 10px; border: 1px solid var(--border); border-radius: 8px; background: var(--surface-2); color: var(--text); }
   dialog .row { display: flex; gap: 8px; align-items: center; margin-top: 12px; }
   dialog .spacer { flex: 1; }
-  #pullDlg { width: min(520px, 92vw); padding: 0; }
+  #pullDlg { width: min(1040px, 94vw); max-width: none; padding: 0; }
   #pullDlg::backdrop { background: rgba(0,0,0,.2); }
-  #pullDlg .ph { display: flex; align-items: center; gap: 10px; padding: 14px 16px 10px; border-bottom: 1px solid var(--border); }
+  #pullDlg .ph { display: flex; align-items: center; gap: 10px; padding: 16px 20px 12px; border-bottom: 1px solid var(--border); }
   #pullDlg .ph h3 { margin: 0; font-size: 15px; }
   #pullDlg .ph .sum { color: var(--muted); font-size: 13px; font-variant-numeric: tabular-nums; }
   #pullDlg .x { margin-left: auto; border: 0; background: none; font-size: 20px; line-height: 1; color: var(--muted); padding: 2px 6px; }
   #pullDlg .x:hover { color: var(--text); }
-  #pullDlg .overall { margin: 10px 16px 4px; }
-  #pullDlg ul { list-style: none; margin: 0; padding: 4px 16px 14px; max-height: 45vh; overflow-y: auto; }
-  #pullDlg li { display: grid; grid-template-columns: 9.5em 1fr 8.5em; align-items: center; gap: 10px; padding: 5px 0; font-size: 13px; color: var(--text); }
+  #pullDlg .overall { margin: 12px 20px 6px; height: 8px; }
+  #pullDlg li.gh .bar.ind > i { background: var(--faint); }
+  #pullDlg ul { list-style: none; margin: 0; padding: 6px 20px 16px; display: grid; grid-template-columns: 1fr 1fr; column-gap: 32px; }
+  #pullDlg .hint { margin: 0 20px 14px; font-size: 12.5px; color: var(--muted); }
+  #pullDlg li { display: grid; grid-template-columns: 10em 1fr 11em; align-items: center; gap: 10px; padding: 5px 0; font-size: 13px; color: var(--text); }
   #pullDlg li .nm { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   #pullDlg li .st { color: var(--muted); font-size: 12px; text-align: right; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   #pullDlg li.ok .st { color: var(--muted); } #pullDlg li.ok.hasnew .st { color: var(--new); font-weight: 600; }
@@ -192,7 +194,7 @@
   li.err .bar > i { background: var(--err); width: 100%; }
   li.skip .bar > i { width: 0; }
   @media (prefers-reduced-motion: reduce) { .bar.ind > i { animation: none; width: 100%; opacity: .4; } }
-  @media (max-width: 520px) { #pullDlg li { grid-template-columns: 7em 1fr 6.5em; } }
+  @media (max-width: 760px) { #pullDlg ul { grid-template-columns: 1fr; } #pullDlg li { grid-template-columns: 8em 1fr 8.5em; } }
   button.danger { color: var(--err); }
   .toast { position: fixed; bottom: 18px; left: 50%; transform: translateX(-50%); background: var(--text); color: var(--bg);
     padding: 9px 14px; border-radius: 8px; font-size: 13.5px; opacity: 0; transition: opacity .2s; pointer-events: none; }
@@ -223,6 +225,7 @@
     <div class="ph"><h3 id="pullTitle">Pulling live</h3><span class="sum" id="pullSum"></span><button class="x" id="pullClose" aria-label="Close" title="Close (the pull keeps going)">×</button></div>
     <div class="bar overall"><i id="pullOverall"></i></div>
     <ul id="pullList"></ul>
+    <p class="hint" id="pullHint" hidden></p>
   </dialog>
 
   <dialog id="syncDlg">
@@ -983,42 +986,108 @@
     bar.classList.toggle('ind', pct === null);
     fill.style.width = pct == null ? '' : pct + '%';
   }
+  // Boards a browser can't read (Workday, Phenom, Oracle, …) are pulled by GitHub: the dashboard writes
+  // data/pull-request.json with the Sync token, which starts .github/workflows/pull.yml, then watches
+  // data/jobs.json until those companies show a fresh fetched_at.
+  async function requestServerPull(names) {
+    const path = 'data/pull-request.json';
+    const cur = await api(`contents/${path}?ref=main`, { cache: 'no-store' });
+    const sha = cur.ok ? (await cur.json()).sha : undefined;
+    const body = { message: `Pull now from dashboard: ${names.length} board${names.length > 1 ? 's' : ''}`, branch: 'main',
+      content: b64(JSON.stringify({ requested_at: new Date().toISOString(), companies: names }, null, 2) + '\n'), ...(sha ? { sha } : {}) };
+    const r = await api(`contents/${path}`, { method: 'PUT', body: JSON.stringify(body) });
+    if (!r.ok) throw new Error(r.status === 401 || r.status === 403 ? 'token rejected' : `GitHub ${r.status}`);
+  }
+  async function readServerData() {
+    const r = await api(`contents/${DATA_URL.replace(/^\.?\//, '')}?ref=main`, { cache: 'no-store', headers: { Accept: 'application/vnd.github.raw+json' } });
+    if (!r.ok) throw new Error(`GitHub ${r.status}`);
+    return r.json();
+  }
+
   $('#pullAll').addEventListener('click', async e => {
     const btn = e.currentTarget;            // currentTarget is null after the first await, so keep a reference
     if (pullRun) { pullDlg.showModal(); return; }   // already running: just show progress again
-    const companies = [...data.companies].sort((a, b) => (!!LIVE[b.ats] - !!LIVE[a.ats]) || a.name.localeCompare(b.name));
-    const live = companies.filter(c => LIVE[c.ats]);
+    const companies = [...data.companies].sort((a, b) => a.name.localeCompare(b.name));
+    const browser = companies.filter(c => LIVE[c.ats]);
+    const server = companies.filter(c => !LIVE[c.ats]);
     const list = $('#pullList'); list.innerHTML = '';
     const rows = new Map(companies.map(c => { const li = pullRow(c); list.append(li); return [c.name, li]; }));
-    for (const c of companies) setRow(rows.get(c.name), LIVE[c.ats] ? '' : 'skip', LIVE[c.ats] ? 'Waiting' : 'Daily sweep only', LIVE[c.ats] ? 0 : 0);
+    const hint = $('#pullHint'); hint.hidden = true;
     let done = 0, newTotal = 0, failed = 0;
+    const total = companies.length;
     const sum = () => {
-      $('#pullSum').textContent = `${done} of ${live.length} boards` + (newTotal ? ` · ${newTotal} new` : '') + (failed ? ` · ${failed} failed` : '');
-      $('#pullOverall').style.width = (live.length ? done / live.length * 100 : 100) + '%';
-      btn.textContent = done < live.length ? `Pulling ${done}/${live.length}…` : 'Pull all now';
+      $('#pullSum').textContent = `${done} of ${total} boards` + (newTotal ? ` · ${newTotal} new` : '') + (failed ? ` · ${failed} failed` : '');
+      $('#pullOverall').style.width = (done / total * 100) + '%';
+      btn.textContent = done < total ? `Pulling ${done}/${total}…` : 'Pull all now';
     };
-    $('#pullTitle').textContent = 'Pulling live';
+    const finish = (li, r) => {
+      done++;
+      if (r.status === 'ok') { newTotal += r.n; setRow(li, r.n ? 'ok hasnew' : 'ok', r.n ? `${r.n} new` : 'Nothing new', 100); }
+      else { failed++; setRow(li, 'err', `Failed: ${r.msg || 'error'}`, 100); }
+      li.querySelector('.st').title = li.querySelector('.st').textContent;
+      sum();
+    };
+    for (const c of browser) setRow(rows.get(c.name), '', 'Waiting', 0);
+    for (const c of server) setRow(rows.get(c.name), 'gh', token ? 'Sending to GitHub…' : 'Waiting', token ? null : 0);
+    $('#pullTitle').textContent = 'Pulling all boards';
     sum(); pullDlg.showModal();
     pullRun = true;
+
+    // --- boards the browser can read: three at a time
     const scratch = document.createElement('button');   // pullNow writes "Pulling…" here instead of the header button
-    const queue = [...live];
+    const queue = [...browser];
     const worker = async () => {
       for (let c; (c = queue.shift());) {
         const li = rows.get(c.name);
         setRow(li, 'run', 'Fetching list…', null);
         const prog = (d, t) => setRow(li, 'run', t ? `Pay details ${d}/${t}` : 'No matching roles', t ? Math.max(4, d / t * 100) : 100);
-        const r = await pullNow(c, scratch, true, prog);
-        done++;
-        if (r && r.status === 'ok') { newTotal += r.n; setRow(li, r.n ? 'ok hasnew' : 'ok', r.n ? `${r.n} new` : 'Nothing new', 100); }
-        else { failed++; setRow(li, 'err', `Failed: ${(r && r.msg) || 'error'}`, 100); }
-        li.querySelector('.st').title = li.querySelector('.st').textContent;
-        sum();
+        finish(li, (await pullNow(c, scratch, true, prog)) || { status: 'err' });
       }
     };
+
+    // --- boards only GitHub can read
+    const viaGitHub = async () => {
+      if (!server.length) return;
+      if (!token) {
+        for (const c of server) finish(rows.get(c.name), { status: 'err', msg: 'needs Sync' });
+        hint.hidden = false;
+        hint.textContent = `${server.length} board${server.length > 1 ? 's' : ''} (Workday, Phenom, Oracle…) block browser access and are pulled by GitHub instead. Turn on Sync (top right) on this device to include them.`;
+        return;
+      }
+      const t0 = Date.now() - 5000;           // small allowance for clock differences
+      const names = server.map(c => c.name);
+      try { await requestServerPull(names); }
+      catch (err) { for (const c of server) finish(rows.get(c.name), { status: 'err', msg: err.message }); return; }
+      for (const c of server) setRow(rows.get(c.name), 'gh run', 'Running on GitHub…', null);
+      hint.hidden = false; hint.textContent = 'Workday, Phenom and Oracle boards are pulled by GitHub (usually 1–3 minutes). You can close this; results appear when it finishes.';
+      const pending = new Set(names);
+      const known = new Map(server.map(c => [c.name, new Set(data.jobs.filter(j => j.company === c.name).map(j => j.key))]));
+      const deadline = Date.now() + 10 * 60000;
+      while (pending.size && Date.now() < deadline) {
+        await new Promise(r => setTimeout(r, 12000));
+        let fresh; try { fresh = await readServerData(); } catch (_) { continue; }
+        for (const name of [...pending]) {
+          const sc = fresh.companies.find(x => x.name === name);
+          if (!sc || !sc.fetched_at || new Date(sc.fetched_at) < t0) continue;
+          pending.delete(name);
+          // swap this company's snapshot rows for the fresh ones
+          const idx = data.companies.findIndex(x => x.name === name);
+          if (idx >= 0) data.companies[idx] = sc;
+          const rowsNew = fresh.jobs.filter(j => j.company === name);
+          data.jobs = data.jobs.filter(j => j.company !== name).concat(rowsNew);
+          const n = rowsNew.filter(j => j.status === 'open' && !known.get(name).has(j.key)).length;
+          finish(rows.get(name), sc.status === 'ok' ? { status: 'ok', n } : { status: 'err', msg: (sc.error || 'error').slice(0, 80) });
+        }
+        if (!pending.size) render();
+      }
+      for (const name of pending) { done++; setRow(rows.get(name), 'gh', 'Still running on GitHub', null); }
+      if (pending.size) { sum(); hint.textContent = 'GitHub is taking longer than usual. Results will be on the dashboard after the run finishes — refresh in a few minutes.'; }
+    };
+
     try {
-      await Promise.all([worker(), worker(), worker()]);   // three boards at a time
+      await Promise.all([worker(), worker(), worker(), viaGitHub()]);
       $('#pullTitle').textContent = 'Pull finished';
-      if (!pullDlg.open) toast(`Pull finished: ${newTotal ? newTotal + ' new role' + (newTotal > 1 ? 's' : '') : 'nothing new'} across ${live.length} boards` + (failed ? `, ${failed} failed` : '') + '.');
+      if (!pullDlg.open) toast(`Pull finished: ${newTotal ? newTotal + ' new role' + (newTotal > 1 ? 's' : '') : 'nothing new'} across ${total} boards` + (failed ? `, ${failed} failed` : '') + '.');
     } finally { pullRun = null; btn.textContent = 'Pull all now'; btn.disabled = false; render(); }
   });
 

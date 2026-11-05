@@ -94,21 +94,28 @@ def _aia_context(host):
     return ctx
 
 
-def fetch_json(url, timeout=30):
-    req = urllib.request.Request(url, headers={"User-Agent": "job-watch/1.0 (+github)"})
+_BROWSER_UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36"
+
+
+def fetch_text(url, timeout=30, headers=None):
+    req = urllib.request.Request(url, headers={"User-Agent": "job-watch/1.0 (+github)", **(headers or {})})
     try:
         with urllib.request.urlopen(req, timeout=timeout) as r:
-            return json.loads(r.read().decode("utf-8"))
+            return r.read().decode("utf-8", "replace"), r
     except urllib.error.URLError as e:
         if "CERTIFICATE_VERIFY_FAILED" not in str(e) or "local issuer" not in str(e):
             raise
         host = urllib.parse.urlsplit(url).hostname
         with urllib.request.urlopen(req, timeout=timeout, context=_aia_context(host)) as r:
-            body = r.read().decode("utf-8", "replace")
-            try:
-                return json.loads(body)
-            except ValueError:
-                raise ValueError(f"not JSON (HTTP {r.status}, {r.headers.get('Content-Type')}): {body[:300]!r}") from None
+            return r.read().decode("utf-8", "replace"), r
+
+
+def fetch_json(url, timeout=30, headers=None):
+    body, r = fetch_text(url, timeout, headers)
+    try:
+        return json.loads(body)
+    except ValueError:
+        raise ValueError(f"not JSON (HTTP {r.status}, {r.headers.get('Content-Type')}): {body[:300]!r}") from None
 
 
 def strip_html(s):
@@ -906,6 +913,89 @@ def fetch_oracle(company):
     return out
 
 
+def fetch_talentbrew(company):
+    """Radancy / TalentBrew career sites (URLs like https://<host>/<lang>/search-jobs), e.g. careers.ford.com.
+    board = "<host>/<lang>", e.g. "www.careers.ford.com/en".  The search page has a JSON endpoint that
+    returns the result list as HTML; each job page carries schema.org JobPosting data for the details."""
+    host, lang = company["board"].split("/", 1)
+    base = f"https://{host}"
+    hdr = {"User-Agent": _BROWSER_UA, "X-Requested-With": "XMLHttpRequest", "Accept": "application/json, text/javascript, */*"}
+    seen, rows, first, page, pages = set(), [], None, 1, 1
+    while page <= min(pages, 30):
+        q = urllib.parse.urlencode({"ActiveFacetID": 0, "CurrentPage": page, "RecordsPerPage": 100, "Distance": 50,
+                                    "RadiusUnitType": 0, "Keywords": "product", "Location": "", "ShowRadius": "False",
+                                    "IsPagination": "False" if page == 1 else "True", "CustomFacetName": "", "FacetTerm": "",
+                                    "FacetType": 0, "SearchResultsModuleName": "Search Results",
+                                    "SearchFiltersModuleName": "Search Filters", "SortCriteria": 0, "SortDirection": 0,
+                                    "SearchType": 5, "ResultsType": 0})
+        d = fetch_json(f"{base}/{lang}/search-jobs/results?{q}", timeout=45, headers=hdr)
+        h = d.get("results") or ""
+        if first is None:
+            first = {"keys": list(d.keys()), "html_head": h[:1500]}
+        m = re.search(r'data-total-pages="(\d+)"', h)
+        pages = int(m.group(1)) if m else 1
+        found = 0
+        for li in re.split(r"<li\b", h)[1:]:
+            a = re.search(r'href="([^"]*/job/[^"]+?/(\d+))"', li)
+            if not a or a.group(2) in seen:
+                continue
+            seen.add(a.group(2)); found += 1
+            title = re.search(r"<h2[^>]*>(.*?)</h2>", li, re.S) or re.search(r'class="[^"]*job-title[^"]*"[^>]*>(.*?)<', li, re.S)
+            loc = re.search(r'class="[^"]*job-location[^"]*"[^>]*>(.*?)</span>', li, re.S)
+            posted = re.search(r'class="[^"]*job-date-posted[^"]*"[^>]*>(.*?)</span>', li, re.S)
+            clean = lambda x: re.sub(r"\s+", " ", strip_html(x.group(1))).strip() if x else ""
+            href = a.group(1)
+            rows.append({"id": a.group(2), "url": href if href.startswith("http") else base + href,
+                         "title": clean(title), "location": clean(loc), "posted": clean(posted)})
+        if not found:
+            break
+        page += 1
+    out = []
+    for r in rows:
+        content, meta, salary, posted, loc = "", "", None, None, r["location"]
+        if r["posted"]:
+            for fmt in ("%m/%d/%Y", "%b. %d, %Y", "%b %d, %Y", "%d/%m/%Y"):
+                try: posted = datetime.strptime(r["posted"], fmt).replace(tzinfo=timezone.utc).isoformat(); break
+                except ValueError: pass
+        if title_matches(r["title"]):
+            try:
+                page_html, _ = fetch_text(r["url"], timeout=45, headers={"User-Agent": _BROWSER_UA})
+                for blob in re.findall(r'<script[^>]+application/ld\+json[^>]*>(.*?)</script>', page_html, re.S):
+                    try: jp = json.loads(blob)
+                    except ValueError: continue
+                    jp = next((x for x in (jp if isinstance(jp, list) else [jp]) if isinstance(x, dict) and x.get("@type") == "JobPosting"), None)
+                    if not jp: continue
+                    content = strip_html(jp.get("description") or "")
+                    posted = jp.get("datePosted") or posted
+                    meta = f"workplace: {jp.get('jobLocationType') or ''} {jp.get('employmentType') or ''}"
+                    locs = jp.get("jobLocation") or []
+                    for L in (locs if isinstance(locs, list) else [locs]):
+                        ad = (L or {}).get("address") or {}
+                        c = (ad.get("addressCountry") or {})
+                        c = c.get("name") if isinstance(c, dict) else c
+                        full = ", ".join(x for x in (ad.get("addressLocality"), ad.get("addressRegion"), c) if x)
+                        if full: loc = full if not loc or loc == r["location"] else loc + "; " + full
+                    bs = (jp.get("baseSalary") or {}).get("value") or {}
+                    if isinstance(bs, dict) and bs.get("minValue") and bs.get("maxValue") and str(bs.get("unitText", "YEAR")).upper() == "YEAR":
+                        salary = {"min": float(bs["minValue"]), "max": float(bs["maxValue"]), "currency": (jp.get("baseSalary") or {}).get("currency") or "USD", "source": "posting"}
+                    break
+                if not content:
+                    m = re.search(r'class="[^"]*ats-description[^"]*"[^>]*>(.*?)</section>', page_html, re.S)
+                    content = strip_html(m.group(1)) if m else ""
+            except Exception as e:          # noqa: BLE001
+                log(f"[{company['name']}] detail fetch failed for {r['id']}: {e}")
+        out.append({
+            "job_id": r["id"], "req_id": None, "title": r["title"], "location": loc or r["location"],
+            "location_detail": r["location"] if loc and loc != r["location"] else "",
+            "department": "", "published_at": posted, "updated_at": None, "url": r["url"],
+            "salary": salary or (salary_from_text(content) if content else None),
+            "_meta_text": meta, "_content": content,
+        })
+    debug_dump(company, {"first_page": first, "pages": pages, "scanned": len(rows),
+                         "kept_rows": [{k: v for k, v in o.items() if k != "_content"} for o in out if title_matches(o["title"])][:10]})
+    return out
+
+
 def fetch_jibe(company):
     """iCIMS / Jibe career sites (https://<host>/careers-home/jobs) via the site's /api/jobs JSON endpoint.
     board = "<host>", e.g. "careers.rivian.com" """
@@ -948,7 +1038,7 @@ def fetch_jibe(company):
 
 ADAPTERS = {"greenhouse": fetch_greenhouse, "lever": fetch_lever, "ashby": fetch_ashby,
             "smartrecruiters": fetch_smartrecruiters, "workday": fetch_workday, "phenom": fetch_phenom,
-            "jobvite": fetch_jobvite, "rippling": fetch_rippling, "bamboohr": fetch_bamboohr, "jibe": fetch_jibe, "oracle": fetch_oracle, "unknown": fetch_unknown}
+            "jobvite": fetch_jobvite, "rippling": fetch_rippling, "bamboohr": fetch_bamboohr, "jibe": fetch_jibe, "oracle": fetch_oracle, "talentbrew": fetch_talentbrew, "unknown": fetch_unknown}
 
 
 # --------------------------------------------------------------- filtering --
@@ -1036,8 +1126,8 @@ def main(only=None):
             continue
         try:
             raw = adapter(c)
-        except (urllib.error.URLError, urllib.error.HTTPError, json.JSONDecodeError, TimeoutError) as e:
-            status.update(status="error", error=str(e))
+        except Exception as e:          # noqa: BLE001 - one bad board must never sink the whole sweep
+            status.update(status="error", error=str(e)[:500])
             company_status.append(status)
             log(f"[{c['name']}] ERROR {e}")
             continue
