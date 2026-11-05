@@ -169,6 +169,30 @@
   dialog input { width: 100%; font: inherit; padding: 8px 10px; border: 1px solid var(--border); border-radius: 8px; background: var(--surface-2); color: var(--text); }
   dialog .row { display: flex; gap: 8px; align-items: center; margin-top: 12px; }
   dialog .spacer { flex: 1; }
+  #pullDlg { width: min(520px, 92vw); padding: 0; }
+  #pullDlg::backdrop { background: rgba(0,0,0,.2); }
+  #pullDlg .ph { display: flex; align-items: center; gap: 10px; padding: 14px 16px 10px; border-bottom: 1px solid var(--border); }
+  #pullDlg .ph h3 { margin: 0; font-size: 15px; }
+  #pullDlg .ph .sum { color: var(--muted); font-size: 13px; font-variant-numeric: tabular-nums; }
+  #pullDlg .x { margin-left: auto; border: 0; background: none; font-size: 20px; line-height: 1; color: var(--muted); padding: 2px 6px; }
+  #pullDlg .x:hover { color: var(--text); }
+  #pullDlg .overall { margin: 10px 16px 4px; }
+  #pullDlg ul { list-style: none; margin: 0; padding: 4px 16px 14px; max-height: 45vh; overflow-y: auto; }
+  #pullDlg li { display: grid; grid-template-columns: 9.5em 1fr 8.5em; align-items: center; gap: 10px; padding: 5px 0; font-size: 13px; color: var(--text); }
+  #pullDlg li .nm { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  #pullDlg li .st { color: var(--muted); font-size: 12px; text-align: right; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  #pullDlg li.ok .st { color: var(--muted); } #pullDlg li.ok.hasnew .st { color: var(--new); font-weight: 600; }
+  #pullDlg li.err .st { color: var(--err); }
+  #pullDlg li.skip { opacity: .55; }
+  .bar { height: 6px; border-radius: 999px; background: var(--surface-2); overflow: hidden; position: relative; }
+  .bar > i { position: absolute; inset: 0 auto 0 0; width: 0; background: var(--accent); border-radius: inherit; transition: width .25s; }
+  .bar.ind > i { width: 30%; animation: slide 1.1s ease-in-out infinite; }
+  @keyframes slide { from { left: -30%; } to { left: 100%; } }
+  li.ok .bar > i { background: var(--new); width: 100%; }
+  li.err .bar > i { background: var(--err); width: 100%; }
+  li.skip .bar > i { width: 0; }
+  @media (prefers-reduced-motion: reduce) { .bar.ind > i { animation: none; width: 100%; opacity: .4; } }
+  @media (max-width: 520px) { #pullDlg li { grid-template-columns: 7em 1fr 6.5em; } }
   button.danger { color: var(--err); }
   .toast { position: fixed; bottom: 18px; left: 50%; transform: translateX(-50%); background: var(--text); color: var(--bg);
     padding: 9px 14px; border-radius: 8px; font-size: 13.5px; opacity: 0; transition: opacity .2s; pointer-events: none; }
@@ -194,6 +218,12 @@
     <button id="sync" title="Sync Applied/Archive to the GitHub repo">Sync: off</button>
     <button id="pullAll">Pull all now</button>
   </header>
+
+  <dialog id="pullDlg" aria-labelledby="pullTitle">
+    <div class="ph"><h3 id="pullTitle">Pulling live</h3><span class="sum" id="pullSum"></span><button class="x" id="pullClose" aria-label="Close" title="Close (the pull keeps going)">×</button></div>
+    <div class="bar overall"><i id="pullOverall"></i></div>
+    <ul id="pullList"></ul>
+  </dialog>
 
   <dialog id="syncDlg">
     <form method="dialog">
@@ -452,16 +482,18 @@
   }
 
   // ------------------------------------------------------- live adapters --
-  async function liveGreenhouse(c) {
+  async function liveGreenhouse(c, prog = () => {}) {
     const r = await fetchT(`https://boards-api.greenhouse.io/v1/boards/${c.board}/jobs?content=true`);
     if (!r.ok) throw new Error(`HTTP ${r.status}`);
     const js = ((await r.json()).jobs || []).filter(j => titleMatches(j.title));
     // The list endpoint omits pay ranges; fetch each matching job's detail (a few dozen small requests).
+    let gd = 0; prog(0, js.length);
     await Promise.all(js.map(async j => {
       try {
         const d = await (await fetchT(`https://boards-api.greenhouse.io/v1/boards/${c.board}/jobs/${j.id}?pay_transparency=true`)).json();
         for (const k of ['content', 'pay_input_ranges', 'metadata', 'offices', 'location']) if (d[k] != null) j[k] = d[k];
       } catch (e) { /* best effort */ }
+      prog(++gd, js.length);
     }));
     return js.map(j => {
       const content = stripHtml(j.content);
@@ -517,7 +549,7 @@
   }
   const COUNTRY_NAMES = {"US": "United States", "CA": "Canada", "MX": "Mexico", "BR": "Brazil", "AR": "Argentina", "CL": "Chile", "CO": "Colombia", "PE": "Peru", "CR": "Costa Rica", "GB": "United Kingdom", "UK": "United Kingdom", "IE": "Ireland", "DE": "Germany", "FR": "France", "ES": "Spain", "PT": "Portugal", "IT": "Italy", "NL": "Netherlands", "BE": "Belgium", "CH": "Switzerland", "AT": "Austria", "SE": "Sweden", "NO": "Norway", "DK": "Denmark", "FI": "Finland", "PL": "Poland", "CZ": "Czech Republic", "RO": "Romania", "BG": "Bulgaria", "HU": "Hungary", "GR": "Greece", "TR": "Turkey", "UA": "Ukraine", "IL": "Israel", "AE": "United Arab Emirates", "SA": "Saudi Arabia", "QA": "Qatar", "EG": "Egypt", "ZA": "South Africa", "NG": "Nigeria", "KE": "Kenya", "MA": "Morocco", "IN": "India", "PK": "Pakistan", "BD": "Bangladesh", "LK": "Sri Lanka", "SG": "Singapore", "MY": "Malaysia", "ID": "Indonesia", "TH": "Thailand", "VN": "Vietnam", "PH": "Philippines", "JP": "Japan", "KR": "South Korea", "CN": "China", "HK": "Hong Kong", "TW": "Taiwan", "AU": "Australia", "NZ": "New Zealand"};
   for (const [k, v] of Object.entries(COUNTRY_NAMES)) if (k !== 'US' && !NON_US.includes(v.toLowerCase())) NON_US.push(v.toLowerCase());
-  async function liveSmartrecruiters(c) {
+  async function liveSmartrecruiters(c, prog = () => {}) {
     const base = `https://api.smartrecruiters.com/v1/companies/${c.board}/postings`;
     let items = [], offset = 0, total = 0;
     do {
@@ -525,10 +557,12 @@
       const pg = await r.json(); items = items.concat(pg.content || []); total = pg.totalFound || 0; offset += 100;
     } while (offset < total && items.length);
     items = items.filter(j => titleMatches(j.name));
+    let sd = 0; prog(0, items.length);
     await Promise.all(items.map(async j => {
       try { const d = await (await fetchT(`${base}/${j.id}`)).json(); const secs = (d.jobAd || {}).sections || {};
         j._content = stripHtml(['jobDescription', 'qualifications', 'additionalInformation', 'companyDescription'].map(k => (secs[k] || {}).text || '').join(' '));
         j._url = d.postingUrl; } catch (e) { j._content = ''; }
+      prog(++sd, items.length);
     }));
     return items.map(j => {
       const loc = j.location || {}; const code = (loc.country || '').toUpperCase();
@@ -574,12 +608,14 @@
 
   const _fetch = window.fetch.bind(window);
   const fetchT = (u, o = {}) => _fetch(u, { signal: AbortSignal.timeout(20000), ...o });
-  async function pullNow(c, btn, quiet = false) {
+  // Returns { status: 'ok', n } | { status: 'skip' } | { status: 'err', msg } so Pull all can report per company.
+  async function pullNow(c, btn, quiet = false, prog) {
     const fn = LIVE[c.ats];
-    if (!fn) { if (!quiet) toast(`Live pull isn't supported for ${c.ats} boards yet.`); return; }
+    if (!fn) { if (!quiet) toast(`Live pull isn't supported for ${c.ats} boards yet.`); return { status: 'skip' }; }
+    let result;
     btn.disabled = true; btn.textContent = 'Pulling…';
     try {
-      const matched = applyCriteria(await fn(c), c);
+      const matched = applyCriteria(await fn(c, prog), c);
       const known = new Set(data.jobs.filter(j => j.company === c.name).map(j => j.key));
       const nowOpen = new Set(matched.map(j => j.key));
       liveExtra[c.name] = matched.filter(j => !known.has(j.key)).map(j => ({ ...j, live: true, first_seen: new Date().toISOString() }));
@@ -590,13 +626,16 @@
       }
       liveAt[c.name] = new Date().toISOString();
       const n = liveExtra[c.name].length;
+      result = { status: 'ok', n };
       if (!quiet) toast(n ? `${c.name}: ${n} new role${n > 1 ? 's' : ''} not in this morning's sweep` : `${c.name}: nothing new since the sweep`);
     } catch (e) {
+      result = { status: 'err', msg: e.name === 'TimeoutError' ? 'timed out' : e.message };
       if (!quiet) toast(`${c.name}: live pull failed (${e.message}). The board may block browser access; the daily sweep still works.`);
     } finally {
       btn.disabled = false; btn.textContent = 'Pull now';
       if (!quiet) render();
     }
+    return result;
   }
 
   // ---------------------------------------------------------- rendering --
@@ -925,16 +964,62 @@
     if (v) selected = v;
     if (s && SORTS[s]) { $('#sort').value = s; sortKey = s; }
   } catch (_) {}
+  // ------------------------------------------------- Pull all + progress modal --
+  // The modal can be closed at any time; the pull keeps going and the header button
+  // (showing "Pulling n/N…") reopens it.
+  let pullRun = null;
+  const pullDlg = $('#pullDlg');
+  const closePull = () => pullDlg.close();
+  $('#pullClose').addEventListener('click', closePull);
+  pullDlg.addEventListener('click', e => { if (e.target === pullDlg) closePull(); });   // click on the backdrop
+  function pullRow(c) {
+    const li = document.createElement('li');
+    li.innerHTML = `<span class="nm" title="${escapeHtml(c.name)}">${escapeHtml(c.name)}</span><span class="bar"><i></i></span><span class="st"></span>`;
+    return li;
+  }
+  function setRow(li, cls, text, pct) {
+    li.className = cls; li.querySelector('.st').textContent = text;
+    const bar = li.querySelector('.bar'), fill = bar.querySelector('i');
+    bar.classList.toggle('ind', pct === null);
+    fill.style.width = pct == null ? '' : pct + '%';
+  }
   $('#pullAll').addEventListener('click', async e => {
     const btn = e.currentTarget;            // currentTarget is null after the first await, so keep a reference
-    const live = data.companies.filter(c => LIVE[c.ats]);
-    btn.disabled = true; let done = 0;
+    if (pullRun) { pullDlg.showModal(); return; }   // already running: just show progress again
+    const companies = [...data.companies].sort((a, b) => (!!LIVE[b.ats] - !!LIVE[a.ats]) || a.name.localeCompare(b.name));
+    const live = companies.filter(c => LIVE[c.ats]);
+    const list = $('#pullList'); list.innerHTML = '';
+    const rows = new Map(companies.map(c => { const li = pullRow(c); list.append(li); return [c.name, li]; }));
+    for (const c of companies) setRow(rows.get(c.name), LIVE[c.ats] ? '' : 'skip', LIVE[c.ats] ? 'Waiting' : 'Daily sweep only', LIVE[c.ats] ? 0 : 0);
+    let done = 0, newTotal = 0, failed = 0;
+    const sum = () => {
+      $('#pullSum').textContent = `${done} of ${live.length} boards` + (newTotal ? ` · ${newTotal} new` : '') + (failed ? ` · ${failed} failed` : '');
+      $('#pullOverall').style.width = (live.length ? done / live.length * 100 : 100) + '%';
+      btn.textContent = done < live.length ? `Pulling ${done}/${live.length}…` : 'Pull all now';
+    };
+    $('#pullTitle').textContent = 'Pulling live';
+    sum(); pullDlg.showModal();
+    pullRun = true;
     const scratch = document.createElement('button');   // pullNow writes "Pulling…" here instead of the header button
+    const queue = [...live];
+    const worker = async () => {
+      for (let c; (c = queue.shift());) {
+        const li = rows.get(c.name);
+        setRow(li, 'run', 'Fetching list…', null);
+        const prog = (d, t) => setRow(li, 'run', t ? `Pay details ${d}/${t}` : 'No matching roles', t ? Math.max(4, d / t * 100) : 100);
+        const r = await pullNow(c, scratch, true, prog);
+        done++;
+        if (r && r.status === 'ok') { newTotal += r.n; setRow(li, r.n ? 'ok hasnew' : 'ok', r.n ? `${r.n} new` : 'Nothing new', 100); }
+        else { failed++; setRow(li, 'err', `Failed: ${(r && r.msg) || 'error'}`, 100); }
+        li.querySelector('.st').title = li.querySelector('.st').textContent;
+        sum();
+      }
+    };
     try {
-      for (const c of live) { btn.textContent = `Pulling ${++done}/${live.length}…`; await pullNow(c, scratch, true); }
-      const skipped = data.companies.length - live.length;
-      toast(`Pulled ${live.length} boards live` + (skipped ? ` (${skipped} on Workday/other boards rely on the daily sweep)` : '') + '.');
-    } finally { btn.textContent = 'Pull all now'; btn.disabled = false; render(); }
+      await Promise.all([worker(), worker(), worker()]);   // three boards at a time
+      $('#pullTitle').textContent = 'Pull finished';
+      if (!pullDlg.open) toast(`Pull finished: ${newTotal ? newTotal + ' new role' + (newTotal > 1 ? 's' : '') : 'nothing new'} across ${live.length} boards` + (failed ? `, ${failed} failed` : '') + '.');
+    } finally { pullRun = null; btn.textContent = 'Pull all now'; btn.disabled = false; render(); }
   });
 
   fetch(DATA_URL + '?t=' + Date.now()).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
