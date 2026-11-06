@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T19:49:41.185Z",
+  "updated_at": "2026-11-06T19:49:49.722Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1073,6 +1073,12 @@
       "status": "archived",
       "at": "2026-11-06T19:49:39.677Z",
       "title": "Expert Product Manager, Clearinghouse Platform",
+      "company": "Experian"
+    },
+    "smartrecruiters:Experian:744000160276430": {
+      "status": "archived",
+      "at": "2026-11-06T19:49:47.481Z",
+      "title": "Senior Product Manager, Clearinghouse Connectivity & Remittance",
       "company": "Experian"
     }
   },
