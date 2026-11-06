@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T20:11:26.159Z",
+  "updated_at": "2026-11-06T20:12:31.911Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1133,6 +1133,12 @@
       "status": "archived",
       "at": "2026-11-06T20:11:24.648Z",
       "title": "Product Manager , CRM Lifecycle Communications & Automation",
+      "company": "Ford"
+    },
+    "talentbrew:www.careers.ford.com/en:102463064784": {
+      "status": "archived",
+      "at": "2026-11-06T20:12:30.402Z",
+      "title": "Product Manager",
       "company": "Ford"
     }
   },
