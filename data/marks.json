@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T19:26:14.284Z",
+  "updated_at": "2026-11-06T19:26:32.158Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1056,6 +1056,12 @@
       "at": "2026-11-06T19:26:12.778Z",
       "title": "Principal Product Manager, Ads Delivery & Optimization",
       "company": "Nextdoor"
+    },
+    "phenom:www.yelp.careers/us/en:YELPUS14009EXTERNALENUS": {
+      "status": "archived",
+      "at": "2026-11-06T19:26:30.653Z",
+      "title": "VP of Product Management, Monetization",
+      "company": "Yelp"
     }
   },
   "groups": {
