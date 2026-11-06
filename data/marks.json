@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T20:12:31.911Z",
+  "updated_at": "2026-11-06T20:12:34.028Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1138,6 +1138,12 @@
     "talentbrew:www.careers.ford.com/en:102463064784": {
       "status": "archived",
       "at": "2026-11-06T20:12:30.402Z",
+      "title": "Product Manager",
+      "company": "Ford"
+    },
+    "talentbrew:www.careers.ford.com/en:101671475104": {
+      "status": "archived",
+      "at": "2026-11-06T20:12:32.518Z",
       "title": "Product Manager",
       "company": "Ford"
     }
