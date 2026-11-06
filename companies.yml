@@ -196,3 +196,8 @@
   ats: lever
   board: field-ai
   url: https://www.fieldai.com/careers
+
+- name: General Motors
+  ats: workday
+  board: generalmotors.wd5/Careers_GM
+  url: https://search-careers.gm.com/en/jobs/
