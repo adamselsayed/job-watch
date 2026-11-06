@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T21:09:31.353Z",
+  "updated_at": "2026-11-06T05:49:09.476Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -780,6 +780,12 @@
       "at": "2026-11-05T21:09:29.847Z",
       "title": "BMW Product Specialist -  BMW Roseville $21/hr",
       "company": "AutoNation"
+    },
+    "smartrecruiters:Experian:744000159947279": {
+      "status": "archived",
+      "at": "2026-11-06T05:49:07.969Z",
+      "title": "Senior Director, Payer Product Strategy & Integration",
+      "company": "Experian"
     }
   },
   "groups": {
