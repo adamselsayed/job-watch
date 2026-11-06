@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T06:32:17.635Z",
+  "updated_at": "2026-11-06T06:32:25.262Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -803,6 +803,216 @@
       "status": "archived",
       "at": "2026-11-06T06:32:16.122Z",
       "title": "Accelerated Computing GPU Product Manager",
+      "company": "NVIDIA"
+    },
+    "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2027355": {
+      "status": "archived",
+      "at": "2026-11-06T06:32:23.754Z",
+      "title": "Data Analytics CPU Workload Performance Product Manager",
+      "company": "NVIDIA"
+    },
+    "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2025501": {
+      "status": "archived",
+      "at": "2026-11-06T06:32:23.754Z",
+      "title": "Datacenter Product Architect",
+      "company": "NVIDIA"
+    },
+    "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2016860": {
+      "status": "archived",
+      "at": "2026-11-06T06:32:23.754Z",
+      "title": "Director, ADAS User Experience Product - Autonomous Vehicles",
+      "company": "NVIDIA"
+    },
+    "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2019242": {
+      "status": "archived",
+      "at": "2026-11-06T06:32:23.754Z",
+      "title": "Director, Product Management – AI Networking Spectrum HW",
+      "company": "NVIDIA"
+    },
+    "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2025321": {
+      "status": "archived",
+      "at": "2026-11-06T06:32:23.754Z",
+      "title": "Director, Server CPU Product Architecture",
+      "company": "NVIDIA"
+    },
+    "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2016350": {
+      "status": "archived",
+      "at": "2026-11-06T06:32:23.754Z",
+      "title": "New Product Enablement Business System Analyst",
+      "company": "NVIDIA"
+    },
+    "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2025670": {
+      "status": "archived",
+      "at": "2026-11-06T06:32:23.754Z",
+      "title": "Product Management MBA Intern, Data Center GPU - Summer 2027",
+      "company": "NVIDIA"
+    },
+    "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2026962": {
+      "status": "archived",
+      "at": "2026-11-06T06:32:23.754Z",
+      "title": "Product Management MBA Intern, Gaming, Content Creation, and PC AI - Summer 2027",
+      "company": "NVIDIA"
+    },
+    "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2025905": {
+      "status": "archived",
+      "at": "2026-11-06T06:32:23.754Z",
+      "title": "Product Management MBA Intern, Laptop - Summer 2027",
+      "company": "NVIDIA"
+    },
+    "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2026707": {
+      "status": "archived",
+      "at": "2026-11-06T06:32:23.754Z",
+      "title": "Product Manager MBA Intern, Enterprise AI - Summer 2027",
+      "company": "NVIDIA"
+    },
+    "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2023411": {
+      "status": "archived",
+      "at": "2026-11-06T06:32:23.754Z",
+      "title": "Product Manager, AI for Quantum",
+      "company": "NVIDIA"
+    },
+    "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2016992": {
+      "status": "archived",
+      "at": "2026-11-06T06:32:23.754Z",
+      "title": "Product Manager, AI Platform SW - Agentic AI Kernel Generation",
+      "company": "NVIDIA"
+    },
+    "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2027838": {
+      "status": "archived",
+      "at": "2026-11-06T06:32:23.754Z",
+      "title": "Product Manager, Data Center GPU",
+      "company": "NVIDIA"
+    },
+    "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2025794": {
+      "status": "archived",
+      "at": "2026-11-06T06:32:23.754Z",
+      "title": "Product Manager, Developer Experience and Platform Excellence – Edge AI and Robotics",
+      "company": "NVIDIA"
+    },
+    "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2025360": {
+      "status": "archived",
+      "at": "2026-11-06T06:32:23.754Z",
+      "title": "Quantum Product Architect",
+      "company": "NVIDIA"
+    },
+    "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR1996264": {
+      "status": "archived",
+      "at": "2026-11-06T06:32:23.754Z",
+      "title": "Senior Accelerated Computing GPU Product Manager",
+      "company": "NVIDIA"
+    },
+    "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2019817": {
+      "status": "archived",
+      "at": "2026-11-06T06:32:23.754Z",
+      "title": "Senior Director, Supply Planning Networking Products",
+      "company": "NVIDIA"
+    },
+    "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2013910": {
+      "status": "archived",
+      "at": "2026-11-06T06:32:23.754Z",
+      "title": "Senior Hardware Product Quality Manager, PQM",
+      "company": "NVIDIA"
+    },
+    "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2022611": {
+      "status": "archived",
+      "at": "2026-11-06T06:32:23.754Z",
+      "title": "Senior Hardware Product Quality Manager, PQM",
+      "company": "NVIDIA"
+    },
+    "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2020401": {
+      "status": "archived",
+      "at": "2026-11-06T06:32:23.754Z",
+      "title": "Senior Manager, Product Reliability",
+      "company": "NVIDIA"
+    },
+    "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2017653": {
+      "status": "archived",
+      "at": "2026-11-06T06:32:23.754Z",
+      "title": "Senior Product Architect",
+      "company": "NVIDIA"
+    },
+    "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2023964": {
+      "status": "archived",
+      "at": "2026-11-06T06:32:23.754Z",
+      "title": "Senior Product Architect, K8s-Based AI Infrastructure",
+      "company": "NVIDIA"
+    },
+    "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2014812": {
+      "status": "archived",
+      "at": "2026-11-06T06:32:23.754Z",
+      "title": "Senior Product Architect, Storage",
+      "company": "NVIDIA"
+    },
+    "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2025433": {
+      "status": "archived",
+      "at": "2026-11-06T06:32:23.754Z",
+      "title": "Senior Product Security Lead – NVIDIA Jetson",
+      "company": "NVIDIA"
+    },
+    "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2029162": {
+      "status": "archived",
+      "at": "2026-11-06T06:32:23.754Z",
+      "title": "Senior Silicon Product Architect, Performance and Power",
+      "company": "NVIDIA"
+    },
+    "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2001089": {
+      "status": "archived",
+      "at": "2026-11-06T06:32:23.754Z",
+      "title": "Senior Technical Product Manager - GPU Direct Storage",
+      "company": "NVIDIA"
+    },
+    "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2027865": {
+      "status": "archived",
+      "at": "2026-11-06T06:32:23.754Z",
+      "title": "Senior Technical Product Manager, Accelerated Compute Platforms",
+      "company": "NVIDIA"
+    },
+    "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2018760": {
+      "status": "archived",
+      "at": "2026-11-06T06:32:23.754Z",
+      "title": "Senior Technical Product Manager, Accelerated Computing",
+      "company": "NVIDIA"
+    },
+    "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2027685": {
+      "status": "archived",
+      "at": "2026-11-06T06:32:23.754Z",
+      "title": "Senior Technical Product Manager, Infrastructure Resilience",
+      "company": "NVIDIA"
+    },
+    "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2028926": {
+      "status": "archived",
+      "at": "2026-11-06T06:32:23.754Z",
+      "title": "Senior Technical Program Manager, DGX Cloud Software Products and Services",
+      "company": "NVIDIA"
+    },
+    "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2019819": {
+      "status": "archived",
+      "at": "2026-11-06T06:32:23.754Z",
+      "title": "Technical Product Manager - AI Infra Resilience",
+      "company": "NVIDIA"
+    },
+    "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2027361": {
+      "status": "archived",
+      "at": "2026-11-06T06:32:23.754Z",
+      "title": "Technical Product Manager - CPU Hardware Program",
+      "company": "NVIDIA"
+    },
+    "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2027360": {
+      "status": "archived",
+      "at": "2026-11-06T06:32:23.754Z",
+      "title": "Technical Product Manager, CPU Platform Ecosystem",
+      "company": "NVIDIA"
+    },
+    "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2020110": {
+      "status": "archived",
+      "at": "2026-11-06T06:32:23.754Z",
+      "title": "Technical Program Manager, Silicon Product Definition",
+      "company": "NVIDIA"
+    },
+    "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2026141": {
+      "status": "archived",
+      "at": "2026-11-06T06:32:23.754Z",
+      "title": "Technical Program Manager, Silicon Product Definition",
       "company": "NVIDIA"
     }
   },
