@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T07:22:34.732Z",
+  "updated_at": "2026-11-06T19:24:44.019Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1032,6 +1032,12 @@
       "at": "2026-11-06T06:57:01.255Z",
       "title": "Senior Product Manager, Eligibility & Coverage",
       "company": "Experian"
+    },
+    "greenhouse:ayahealthcare:8262242": {
+      "status": "archived",
+      "at": "2026-11-06T19:24:42.512Z",
+      "title": "Product Manager II",
+      "company": "Aya Healthcare"
     }
   },
   "groups": {
