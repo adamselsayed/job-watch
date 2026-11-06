@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T19:25:19.615Z",
+  "updated_at": "2026-11-06T19:25:32.777Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1038,6 +1038,12 @@
       "at": "2026-11-06T19:24:42.512Z",
       "title": "Product Manager II",
       "company": "Aya Healthcare"
+    },
+    "workday:jacksonhealthcare.wd1/careers-jacksonhealthcare:JR109106": {
+      "status": "archived",
+      "at": "2026-11-06T19:25:31.272Z",
+      "title": "Vice President of Product",
+      "company": "Jackson Healthcare"
     }
   },
   "groups": {
