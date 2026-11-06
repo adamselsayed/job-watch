@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T20:12:34.028Z",
+  "updated_at": "2026-11-06T20:14:42.165Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1145,6 +1145,12 @@
       "status": "archived",
       "at": "2026-11-06T20:12:32.518Z",
       "title": "Product Manager",
+      "company": "Ford"
+    },
+    "talentbrew:www.careers.ford.com/en:102486253632": {
+      "status": "archived",
+      "at": "2026-11-06T20:14:40.656Z",
+      "title": "Senior Manager, Product Research",
       "company": "Ford"
     }
   },
