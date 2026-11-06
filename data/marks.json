@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T06:55:57.820Z",
+  "updated_at": "2026-11-06T06:56:31.824Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1019,6 +1019,12 @@
       "status": "archived",
       "at": "2026-11-06T06:55:56.314Z",
       "title": "Principal Product Manager, Contract Management",
+      "company": "Experian"
+    },
+    "smartrecruiters:Experian:744000153590289": {
+      "status": "archived",
+      "at": "2026-11-06T06:56:30.317Z",
+      "title": "Product Manager, Strategic Integrations (Remote)",
       "company": "Experian"
     }
   },
