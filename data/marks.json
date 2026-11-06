@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T19:26:32.158Z",
+  "updated_at": "2026-11-06T19:49:18.435Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1062,6 +1062,12 @@
       "at": "2026-11-06T19:26:30.653Z",
       "title": "VP of Product Management, Monetization",
       "company": "Yelp"
+    },
+    "greenhouse:samsara:8359984": {
+      "status": "archived",
+      "at": "2026-11-06T19:49:16.927Z",
+      "title": "Staff Product Operations Manager, Platform",
+      "company": "Samsara"
     }
   },
   "groups": {
