@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T19:38:39+00:00",
+  "generated_at": "2026-11-06T22:19:14+00:00",
   "criteria": {
     "title_keywords": [
       "product"
@@ -369,6 +369,17 @@
       "status": "ok",
       "error": null,
       "total_jobs": 25,
+      "matched": 2
+    },
+    {
+      "name": "FieldAI",
+      "ats": "lever",
+      "board": "field-ai",
+      "url": "https://www.fieldai.com/careers",
+      "fetched_at": "2026-11-06T22:19:14+00:00",
+      "status": "ok",
+      "error": null,
+      "total_jobs": 106,
       "matched": 2
     }
   ],
@@ -5854,6 +5865,53 @@
       "key": "workday:jacksonhealthcare.wd1/careers-jacksonhealthcare:JR109106",
       "first_seen": "2026-11-01T05:44:35+00:00",
       "last_seen": "2026-11-06T19:38:39+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "8a953c26-d093-4fa2-88ea-9a5e810b2ef3",
+      "req_id": null,
+      "title": "Senior Product Manager, Core Platform (Customer Portal & Data Delivery)",
+      "location": "Irvine, CA",
+      "location_detail": "",
+      "department": "Product Management / Product",
+      "published_at": "2026-08-05T02:39:02.066000+00:00",
+      "updated_at": null,
+      "url": "https://jobs.lever.co/field-ai/8a953c26-d093-4fa2-88ea-9a5e810b2ef3",
+      "salary": {
+        "min": 180000,
+        "max": 250000,
+        "currency": "USD",
+        "source": "posting"
+      },
+      "us": true,
+      "remote": "onsite",
+      "remote_confidence": "medium",
+      "company": "FieldAI",
+      "key": "lever:field-ai:8a953c26-d093-4fa2-88ea-9a5e810b2ef3",
+      "first_seen": "2026-11-06T22:19:14+00:00",
+      "last_seen": "2026-11-06T22:19:14+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "ba73b59a-fb3c-4871-a90d-c2642a41e409",
+      "req_id": null,
+      "title": "Senior Product Manager, Security & Urban Operations",
+      "location": "Irvine, CA",
+      "location_detail": "",
+      "department": "Product Management / Product",
+      "published_at": "2026-08-05T02:31:38.090000+00:00",
+      "updated_at": null,
+      "url": "https://jobs.lever.co/field-ai/ba73b59a-fb3c-4871-a90d-c2642a41e409",
+      "salary": null,
+      "us": true,
+      "remote": "onsite",
+      "remote_confidence": "medium",
+      "company": "FieldAI",
+      "key": "lever:field-ai:ba73b59a-fb3c-4871-a90d-c2642a41e409",
+      "first_seen": "2026-11-06T22:19:14+00:00",
+      "last_seen": "2026-11-06T22:19:14+00:00",
       "status": "open",
       "closed_at": null
     },
