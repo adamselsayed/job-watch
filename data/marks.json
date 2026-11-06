@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T06:30:23.179Z",
+  "updated_at": "2026-11-06T06:32:17.635Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -798,6 +798,12 @@
       "at": "2026-11-06T06:30:21.672Z",
       "title": "VP of Product ",
       "company": "Curri"
+    },
+    "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2024923": {
+      "status": "archived",
+      "at": "2026-11-06T06:32:16.122Z",
+      "title": "Accelerated Computing GPU Product Manager",
+      "company": "NVIDIA"
     }
   },
   "groups": {
