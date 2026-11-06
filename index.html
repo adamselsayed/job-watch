@@ -271,7 +271,8 @@
     <span class="gchips" title="Filter by sidebar group">
       <button class="chip gchip on" data-g="all">Any group</button>
       <button class="chip gchip" data-g="primary">★ Primary</button>
-      <button class="chip gchip" data-g="general">☆ General</button>
+      <button class="chip gchip" data-g="general">☆ Secondary</button>
+      <button class="chip gchip" data-g="tertiary">◇ Tertiary</button>
       <button class="chip gchip" data-g="out">○ Out of Network</button>
     </span>
     <span class="spacer" style="flex:1"></span>
@@ -293,7 +294,7 @@
     Remote status comes from the posting's location, then its metadata, then its description; anything inferred from the description or not found at all is flagged.
     The daily sweep runs at 6 AM Pacific via GitHub Actions. <strong>Pull now</strong> reads the company's live job board straight from your browser and shows anything the sweep hasn't recorded yet as <span class="badge b-live">live</span>.
     Edit <code>companies.yml</code> in the repo to add companies.
-    <br><strong>Primary / General / Out of Network</strong>: drag companies between the sidebar groups (or tap the ★ ☆ ○ symbol to cycle). New companies start in General; Out of Network is for companies where you have no one to refer you. The grouping is saved with your Applied/Archive marks.
+    <br><strong>Primary / Secondary / Tertiary / Out of Network</strong>: drag companies between the sidebar groups (or tap the ★ ☆ ◇ ○ symbol to cycle). New companies start in Secondary; Out of Network is for companies where you have no one to refer you. The grouping is saved with your Applied/Archive marks.
     <br><strong>Bulk moves</strong>: tick the checkboxes (or the header box for all shown), then use the bar that appears or drag the checked rows onto the Open / Applied / Archive tab.
     <br><strong>Applied / Archive</strong> are saved in this browser and, with <strong>Sync</strong> turned on (top right), to <code>data/marks.json</code> in the repo so they follow you across devices. A role you've filed stays filed; if the company reposts it under a new listing ID it shows up as new again.
     <button class="link" id="exportMarks">Export</button> · <button class="link" id="importMarks">Import</button> your Applied/Archive list to move it to another browser.<input type="file" id="importFile" accept="application/json" hidden>
@@ -310,7 +311,7 @@
   let liveExtra = {};           // company -> array of live-only jobs
   let liveAt = {};              // company -> ISO time of last live pull
   let filter = 'all';
-  let groupFilter = 'all';      // all | primary | general | out  (sidebar group of the role's company)
+  let groupFilter = 'all';      // all | primary | general (shown as Secondary) | tertiary | out  (sidebar group of the role's company)
   let query = '';
   let lastVisit = null;         // ISO of the previous visit (comparison point)
 
@@ -408,15 +409,17 @@
     catch (e) { syncStatus('err', 'Sync error'); toast(`Could not reach the repo: ${e.message}`); }
   });
   }
-  // Sidebar groups (Primary / General / Out of Network): user-ordered lists, stored with the marks and synced the same way.
-  // General is everything not in another group.  Backward-compatible with the older { names, at } "primary" shape.
-  let groups = { primary: [], out: [], at: '' };
-  const normGroups = g => g && Array.isArray(g.names) ? { primary: g.names, out: [], at: g.at || '' } : (g && (g.primary || g.out)) ? { primary: g.primary || [], out: g.out || [], at: g.at || '' } : null;
+  // Sidebar groups (Primary / Secondary / Tertiary / Out of Network): user-ordered lists, stored with the marks and synced
+  // the same way. Secondary (internal key "general") is everything not in another group, so new companies land there.
+  // Backward-compatible with the older { names, at } "primary" shape.
+  let groups = { primary: [], tertiary: [], out: [], at: '' };
+  const normGroups = g => g && Array.isArray(g.names) ? { primary: g.names, tertiary: [], out: [], at: g.at || '' }
+    : (g && (g.primary || g.out || g.tertiary)) ? { primary: g.primary || [], tertiary: g.tertiary || [], out: g.out || [], at: g.at || '' } : null;
   try { groups = normGroups(JSON.parse(localStorage.getItem('jobwatch.groups') || 'null')) || normGroups(JSON.parse(localStorage.getItem('jobwatch.primary') || 'null')) || groups; } catch (e) {}
   const saveGroups = () => { try { localStorage.setItem('jobwatch.groups', JSON.stringify(groups)); } catch (e) {} };
-  function setGroups(primary, out) {
-    const p = [...new Set(primary)], o = [...new Set(out)].filter(n => !p.includes(n));
-    groups = { primary: p, out: o, at: new Date().toISOString() }; saveGroups(); render(); scheduleSync();
+  function setGroups(primary, tertiary, out) {
+    const p = [...new Set(primary)], t = [...new Set(tertiary)].filter(n => !p.includes(n)), o = [...new Set(out)].filter(n => !p.includes(n) && !t.includes(n));
+    groups = { primary: p, tertiary: t, out: o, at: new Date().toISOString() }; saveGroups(); render(); scheduleSync();
   }
   function mergeGroups(remote) {
     const r = normGroups(remote);
@@ -663,7 +666,7 @@
   const isWeek = j => (Date.now() - new Date(j.published_at || j.first_seen)) < 7 * 86400000;
   const needsVerify = j => j.us !== true || j.remote === 'unknown' || j.remote_confidence === 'low';
 
-  const companyGroup = name => groups.primary.includes(name) ? 'primary' : groups.out.includes(name) ? 'out' : 'general';
+  const companyGroup = name => groups.primary.includes(name) ? 'primary' : groups.tertiary.includes(name) ? 'tertiary' : groups.out.includes(name) ? 'out' : 'general';
   function visible(j, sec) {
     if (!titleMatches(j.title)) return false;      // rules apply to saved data too, not just new pulls
     if (markOf(j) !== sec) return false;
@@ -890,17 +893,20 @@
     };
     const known = new Set(data.companies.map(c => c.name));
     const prim = groups.primary.filter(n => known.has(n));
-    const out = groups.out.filter(n => known.has(n) && !prim.includes(n));
-    const gen = data.companies.map(c => c.name).filter(n => !prim.includes(n) && !out.includes(n));
-    const grpOf = n => prim.includes(n) ? 'primary' : out.includes(n) ? 'out' : 'general';
-    // star cycles Primary -> General -> Out of Network -> Primary (tap fallback for touch screens)
-    const STAR = { primary: ['★', 'Move to General'], general: ['☆', 'Move to Out of Network'], out: ['○', 'Move to Primary'] };
+    const ter = groups.tertiary.filter(n => known.has(n) && !prim.includes(n));
+    const out = groups.out.filter(n => known.has(n) && !prim.includes(n) && !ter.includes(n));
+    const gen = data.companies.map(c => c.name).filter(n => !prim.includes(n) && !ter.includes(n) && !out.includes(n));
+    const grpOf = n => prim.includes(n) ? 'primary' : ter.includes(n) ? 'tertiary' : out.includes(n) ? 'out' : 'general';
+    // symbol cycles Primary -> Secondary -> Tertiary -> Out of Network -> Primary (tap fallback for touch screens)
+    const NEXT = { primary: 'general', general: 'tertiary', tertiary: 'out', out: 'primary' };
+    const STAR = { primary: ['★', 'Move to Secondary'], general: ['☆', 'Move to Tertiary'], tertiary: ['◇', 'Move to Out of Network'], out: ['○', 'Move to Primary'] };
     const cItem = n => { const c = data.companies.find(x => x.name === n); const [glyph, tip] = STAR[grpOf(n)];
       return item(n, n, jobs.filter(j => j.company === n), (c.status === 'error' ? '<span class="er" title="fetch failed in last sweep">⚠</span>' : '') +
         `<span class="star" data-star="${escapeHtml(n)}" title="${tip}">${glyph}</span>`); };
     side.innerHTML = `<div class="nh">Companies</div>` + item('*', 'All companies', jobs) + `<hr>` +
       `<div class="nh">Primary</div><div class="grp" data-grp="primary">${prim.length ? prim.map(cItem).join('') : '<div class="hint">Drag companies here</div>'}</div>` +
-      `<div class="nh">General</div><div class="grp" data-grp="general">${gen.length ? gen.map(cItem).join('') : '<div class="hint">Drag companies here</div>'}</div>` +
+      `<div class="nh">Secondary</div><div class="grp" data-grp="general">${gen.length ? gen.map(cItem).join('') : '<div class="hint">Drag companies here</div>'}</div>` +
+      `<div class="nh">Tertiary</div><div class="grp" data-grp="tertiary">${ter.length ? ter.map(cItem).join('') : '<div class="hint">Drag companies here</div>'}</div>` +
       `<div class="nh" title="Companies where you have no contact who can refer you">Out of Network</div><div class="grp" data-grp="out">${out.length ? out.map(cItem).join('') : '<div class="hint">Drag companies here</div>'}</div>`;
     side.querySelectorAll('button').forEach(b => b.addEventListener('click', e => {
       if (e.target.closest('.star')) return;
@@ -909,13 +915,13 @@
     }));
     // star = tap/click fallback for touch screens
     const moveTo = (n, grp, beforeName) => {
-      let p = prim.filter(x => x !== n), o = out.filter(x => x !== n);
-      if (grp === 'primary') { const i = beforeName ? p.indexOf(beforeName) : -1; p.splice(i < 0 ? p.length : i, 0, n); }
-      if (grp === 'out')     { const i = beforeName ? o.indexOf(beforeName) : -1; o.splice(i < 0 ? o.length : i, 0, n); }
-      setGroups(p, o);
+      const lists = { primary: prim.filter(x => x !== n), tertiary: ter.filter(x => x !== n), out: out.filter(x => x !== n) };
+      const L = lists[grp];
+      if (L) { const i = beforeName ? L.indexOf(beforeName) : -1; L.splice(i < 0 ? L.length : i, 0, n); }
+      setGroups(lists.primary, lists.tertiary, lists.out);
     };
     side.querySelectorAll('.star').forEach(st => st.addEventListener('click', e => { e.stopPropagation(); const n = e.currentTarget.dataset.star;
-      moveTo(n, { primary: 'general', general: 'out', out: 'primary' }[grpOf(n)]); }));
+      moveTo(n, NEXT[grpOf(n)]); }));
     // drag & drop between the two groups (and reorder inside Primary)
     let dragName = null;
     side.querySelectorAll('.grp button').forEach(b => {
