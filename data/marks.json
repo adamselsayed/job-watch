@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T19:26:05.626Z",
+  "updated_at": "2026-11-06T19:26:14.284Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1050,6 +1050,12 @@
       "at": "2026-11-06T19:26:04.120Z",
       "title": "Senior Product Manager",
       "company": "Taskrabbit"
+    },
+    "greenhouse:nextdoor:8259381": {
+      "status": "archived",
+      "at": "2026-11-06T19:26:12.778Z",
+      "title": "Principal Product Manager, Ads Delivery & Optimization",
+      "company": "Nextdoor"
     }
   },
   "groups": {
