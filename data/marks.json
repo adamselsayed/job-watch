@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T06:30:05.074Z",
+  "updated_at": "2026-11-06T06:30:23.179Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -786,6 +786,18 @@
       "at": "2026-11-06T05:49:07.969Z",
       "title": "Senior Director, Payer Product Strategy & Integration",
       "company": "Experian"
+    },
+    "ashby:curri:76070c78-1a0b-47d1-b9c4-4ec6a82846f9": {
+      "status": "applied",
+      "at": "2026-11-06T06:30:20.739Z",
+      "title": "Senior Product Manager, Marketplace Supply ",
+      "company": "Curri"
+    },
+    "ashby:curri:dbabd019-e0e7-46d1-a1d8-554f3fec2232": {
+      "status": "applied",
+      "at": "2026-11-06T06:30:21.672Z",
+      "title": "VP of Product ",
+      "company": "Curri"
     }
   },
   "groups": {
