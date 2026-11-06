@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T06:25:26.050Z",
+  "updated_at": "2026-11-06T06:25:27.572Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -799,6 +799,7 @@
     "tertiary": [
       "Virgin Galactic",
       "Cognition",
+      "Ford",
       "CWX",
       "AMN Healthcare",
       "Smartsheet",
@@ -819,6 +820,6 @@
       "Nextdoor",
       "Housecall Pro"
     ],
-    "at": "2026-11-06T06:25:24.530Z"
+    "at": "2026-11-06T06:25:26.055Z"
   }
 }
