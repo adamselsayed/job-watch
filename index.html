@@ -46,6 +46,16 @@
   nav.side .grp { min-height: 34px; border-radius: 8px; padding: 2px; transition: background .12s; }
   nav.side .grp.over { background: var(--accent-soft); outline: 1px dashed var(--accent); }
   nav.side .grp .hint { font-size: 12px; color: var(--faint); padding: 6px 10px; }
+  nav.side .nh.tog { all: unset; box-sizing: border-box; display: flex; align-items: center; gap: 6px; width: 100%; cursor: pointer; border-radius: 6px;
+    font-size: 11px; text-transform: uppercase; letter-spacing: .05em; color: var(--faint); font-weight: 600; padding: 8px 10px 4px; }
+  nav.side .nh.tog:hover { color: var(--muted); }
+  nav.side .nh.tog:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+  nav.side .nh.tog .car { display: inline-block; width: 10px; font-size: 9px; transition: transform .15s; }
+  nav.side .nh.tog[aria-expanded="false"] .car { transform: rotate(-90deg); }
+  nav.side .nh.tog .gc { margin-left: auto; white-space: nowrap; font-size: 12px; color: var(--muted); text-transform: none; letter-spacing: 0; font-weight: 500; font-variant-numeric: tabular-nums; }
+  nav.side .nh.tog .gc .nb { margin-right: 6px; }
+  nav.side .nh.tog.over { background: var(--accent-soft); outline: 1px dashed var(--accent); color: var(--accent); }
+  nav.side .grp.collapsed { display: none; }
   nav.side button[draggable=true] { cursor: grab; }
   nav.side button.dragging { opacity: .4; }
   nav.side button .star { font-size: 13px; color: var(--faint); opacity: 0; padding: 0 2px; }
@@ -57,7 +67,8 @@
     .layout { display: block; }
     nav.side { position: static; display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 12px; }
     nav.side .nh, nav.side hr, nav.side .hint { display: none; }
-    nav.side .grp { display: contents; }
+    nav.side .grp, nav.side .grp.collapsed { display: contents; }   /* phone chips ignore collapse */
+    nav.side .nh.tog { display: none; }
     nav.side button { width: auto; padding: 5px 10px; font-size: 13px; border: 1px solid var(--border); border-radius: 999px; }
   }
 
@@ -412,14 +423,19 @@
   // Sidebar groups (Primary / Secondary / Tertiary / Out of Network): user-ordered lists, stored with the marks and synced
   // the same way. Secondary (internal key "general") is everything not in another group, so new companies land there.
   // Backward-compatible with the older { names, at } "primary" shape.
-  let groups = { primary: [], tertiary: [], out: [], at: '' };
-  const normGroups = g => g && Array.isArray(g.names) ? { primary: g.names, tertiary: [], out: [], at: g.at || '' }
-    : (g && (g.primary || g.out || g.tertiary)) ? { primary: g.primary || [], tertiary: g.tertiary || [], out: g.out || [], at: g.at || '' } : null;
+  // collapsed = group keys folded shut in the sidebar; saved and synced with the groups.
+  let groups = { primary: [], tertiary: [], out: [], collapsed: [], at: '' };
+  const normGroups = g => g && Array.isArray(g.names) ? { primary: g.names, tertiary: [], out: [], collapsed: [], at: g.at || '' }
+    : (g && (g.primary || g.out || g.tertiary || g.collapsed)) ? { primary: g.primary || [], tertiary: g.tertiary || [], out: g.out || [], collapsed: g.collapsed || [], at: g.at || '' } : null;
   try { groups = normGroups(JSON.parse(localStorage.getItem('jobwatch.groups') || 'null')) || normGroups(JSON.parse(localStorage.getItem('jobwatch.primary') || 'null')) || groups; } catch (e) {}
   const saveGroups = () => { try { localStorage.setItem('jobwatch.groups', JSON.stringify(groups)); } catch (e) {} };
   function setGroups(primary, tertiary, out) {
     const p = [...new Set(primary)], t = [...new Set(tertiary)].filter(n => !p.includes(n)), o = [...new Set(out)].filter(n => !p.includes(n) && !t.includes(n));
-    groups = { primary: p, tertiary: t, out: o, at: new Date().toISOString() }; saveGroups(); render(); scheduleSync();
+    groups = { primary: p, tertiary: t, out: o, collapsed: groups.collapsed || [], at: new Date().toISOString() }; saveGroups(); render(); scheduleSync();
+  }
+  function toggleCollapsed(key) {
+    const c = new Set(groups.collapsed || []); c.has(key) ? c.delete(key) : c.add(key);
+    groups = { ...groups, collapsed: [...c], at: new Date().toISOString() }; saveGroups(); render(); scheduleSync();
   }
   function mergeGroups(remote) {
     const r = normGroups(remote);
@@ -903,12 +919,24 @@
     const cItem = n => { const c = data.companies.find(x => x.name === n); const [glyph, tip] = STAR[grpOf(n)];
       return item(n, n, jobs.filter(j => j.company === n), (c.status === 'error' ? '<span class="er" title="fetch failed in last sweep">⚠</span>' : '') +
         `<span class="star" data-star="${escapeHtml(n)}" title="${tip}">${glyph}</span>`); };
+    const isCol = k => (groups.collapsed || []).includes(k);
+    const section = (key, label, names, tip = '') => {
+      const open = names.flatMap(n => cnt(jobs.filter(j => j.company === n))), nw = open.filter(isNew).length, col = isCol(key);
+      return `<button type="button" class="nh tog" data-tog="${key}" aria-expanded="${!col}"${tip ? ` title="${tip}"` : ''}>` +
+        `<span class="car">▾</span>${label}<span class="gc">${col && nw ? `<span class="nb" title="new since your last visit">${nw}</span>` : ''}${col ? `<span title="${names.length} compan${names.length === 1 ? 'y' : 'ies'}, ${open.length} open roles not yet triaged">${open.length}</span>` : ''}</span></button>` +
+        `<div class="grp${col ? ' collapsed' : ''}" data-grp="${key}">${names.length ? names.map(cItem).join('') : '<div class="hint">Drag companies here</div>'}</div>`;
+    };
     side.innerHTML = `<div class="nh">Companies</div>` + item('*', 'All companies', jobs) + `<hr>` +
-      `<div class="nh">Primary</div><div class="grp" data-grp="primary">${prim.length ? prim.map(cItem).join('') : '<div class="hint">Drag companies here</div>'}</div>` +
-      `<div class="nh">Secondary</div><div class="grp" data-grp="general">${gen.length ? gen.map(cItem).join('') : '<div class="hint">Drag companies here</div>'}</div>` +
-      `<div class="nh">Tertiary</div><div class="grp" data-grp="tertiary">${ter.length ? ter.map(cItem).join('') : '<div class="hint">Drag companies here</div>'}</div>` +
-      `<div class="nh" title="Companies where you have no contact who can refer you">Out of Network</div><div class="grp" data-grp="out">${out.length ? out.map(cItem).join('') : '<div class="hint">Drag companies here</div>'}</div>`;
-    side.querySelectorAll('button').forEach(b => b.addEventListener('click', e => {
+      section('primary', 'Primary', prim) + section('general', 'Secondary', gen) + section('tertiary', 'Tertiary', ter) +
+      section('out', 'Out of Network', out, 'Companies where you have no contact who can refer you');
+    side.querySelectorAll('.tog').forEach(t => {
+      t.addEventListener('click', () => toggleCollapsed(t.dataset.tog));
+      // a heading is also a drop target, so companies can be dragged into a collapsed group
+      t.addEventListener('dragover', e => { e.preventDefault(); t.classList.add('over'); });
+      t.addEventListener('dragleave', () => t.classList.remove('over'));
+      t.addEventListener('drop', e => { e.preventDefault(); t.classList.remove('over'); const n = dragName || e.dataTransfer.getData('text/plain'); if (n) moveTo(n, t.dataset.tog); });
+    });
+    side.querySelectorAll('button[data-name]').forEach(b => b.addEventListener('click', e => {
       if (e.target.closest('.star')) return;
       selected = e.currentTarget.dataset.name; try { localStorage.setItem('jobwatch.selected', selected); } catch (_) {} render();
       window.scrollTo({ top: Math.min(window.scrollY, $('#side').getBoundingClientRect().top + window.scrollY - 16), behavior: 'auto' });
