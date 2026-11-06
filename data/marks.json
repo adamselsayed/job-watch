@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T05:49:09.476Z",
+  "updated_at": "2026-11-06T06:25:09.440Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -796,6 +796,9 @@
       "ChargePoint",
       "Experian"
     ],
+    "tertiary": [
+      "Hitachi"
+    ],
     "out": [
       "EVgo",
       "Rivian",
@@ -811,6 +814,6 @@
       "Nextdoor",
       "Housecall Pro"
     ],
-    "at": "2026-11-05T20:16:58.543Z"
+    "at": "2026-11-06T06:25:07.920Z"
   }
 }
