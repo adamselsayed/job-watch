@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T19:49:18.435Z",
+  "updated_at": "2026-11-06T19:49:41.185Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1068,6 +1068,12 @@
       "at": "2026-11-06T19:49:16.927Z",
       "title": "Staff Product Operations Manager, Platform",
       "company": "Samsara"
+    },
+    "smartrecruiters:Experian:744000160276860": {
+      "status": "archived",
+      "at": "2026-11-06T19:49:39.677Z",
+      "title": "Expert Product Manager, Clearinghouse Platform",
+      "company": "Experian"
     }
   },
   "groups": {
