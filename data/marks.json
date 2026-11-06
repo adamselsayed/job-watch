@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T06:54:03.106Z",
+  "updated_at": "2026-11-06T06:55:57.820Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1014,6 +1014,12 @@
       "at": "2026-11-06T06:32:23.754Z",
       "title": "Technical Program Manager, Silicon Product Definition",
       "company": "NVIDIA"
+    },
+    "smartrecruiters:Experian:744000158611740": {
+      "status": "archived",
+      "at": "2026-11-06T06:55:56.314Z",
+      "title": "Principal Product Manager, Contract Management",
+      "company": "Experian"
     }
   },
   "groups": {
