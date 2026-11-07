@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T22:48:50+00:00",
+  "generated_at": "2026-11-07T07:55:21+00:00",
   "criteria": {
     "title_keywords": [
       "product"
@@ -396,6 +396,17 @@
       "error": null,
       "total_jobs": 15,
       "matched": 12
+    },
+    {
+      "name": "Fleetio",
+      "ats": "greenhouse",
+      "board": "fleetio",
+      "url": "https://www.fleetio.com/careers/apply",
+      "fetched_at": "2026-11-07T07:55:21+00:00",
+      "status": "ok",
+      "error": null,
+      "total_jobs": 18,
+      "matched": 1
     }
   ],
   "jobs": [
@@ -5233,6 +5244,27 @@
       "key": "talentbrew:www.careers.ford.com/en:98847422048",
       "first_seen": "2026-11-05T20:48:07+00:00",
       "last_seen": "2026-11-06T22:48:50+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "5241221007",
+      "req_id": "TBH586",
+      "title": "Staff Product Manager, Connected Ecosystem",
+      "location": "Remote - USA, CAN, MEX",
+      "location_detail": "Remote",
+      "department": "Product",
+      "published_at": "2026-09-17T14:02:42-04:00",
+      "updated_at": "2026-10-20T10:42:13-04:00",
+      "url": "https://job-boards.greenhouse.io/fleetio/jobs/5241221007",
+      "salary": null,
+      "us": true,
+      "remote": "remote",
+      "remote_confidence": "high",
+      "company": "Fleetio",
+      "key": "greenhouse:fleetio:5241221007",
+      "first_seen": "2026-11-07T07:55:21+00:00",
+      "last_seen": "2026-11-07T07:55:21+00:00",
       "status": "open",
       "closed_at": null
     },
