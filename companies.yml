@@ -201,3 +201,8 @@
   ats: workday
   board: generalmotors.wd5/Careers_GM
   url: https://search-careers.gm.com/en/jobs/
+
+- name: Fleetio
+  ats: greenhouse
+  board: fleetio
+  url: https://www.fleetio.com/careers/apply
