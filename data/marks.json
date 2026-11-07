@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T20:14:42.165Z",
+  "updated_at": "2026-11-07T23:12:49.466Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1152,6 +1152,12 @@
       "at": "2026-11-06T20:14:40.656Z",
       "title": "Senior Manager, Product Research",
       "company": "Ford"
+    },
+    "greenhouse:gomotive:8890306002": {
+      "status": "archived",
+      "at": "2026-11-07T23:12:47.958Z",
+      "title": "Product Support Specialist",
+      "company": "Motive"
     }
   },
   "groups": {
