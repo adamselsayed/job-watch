@@ -1183,7 +1183,10 @@ def main(only=None):
                 extra = {k[5:]: v for k, v in c.items() if k.startswith("also_")}
                 sub = {**{k: v for k, v in c.items() if not k.startswith("also_") and k not in ("scan", "facets", "filter")}, **extra}
                 have = {r["job_id"] for r in raw}
-                raw += [r for r in ADAPTERS[sub["ats"]](sub) if r["job_id"] not in have]
+                try:
+                    raw += [r for r in ADAPTERS[sub["ats"]](sub) if r["job_id"] not in have]
+                except Exception as e:          # noqa: BLE001 - the extra board failing must not hide the main one
+                    log(f"[{c['name']}] extra board {sub['board']} failed: {e}")
         except Exception as e:          # noqa: BLE001 - one bad board must never sink the whole sweep
             status.update(status="error", error=str(e)[:500])
             company_status.append(status)

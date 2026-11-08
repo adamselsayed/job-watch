@@ -82,10 +82,7 @@
   # Energy, Rail, Global Air Power, ...); the subsidiary shows on each row. Whole US board, every job family.
   scan: all
   facets: locationCountry=bc33aa3152ec42d4995f4791a106ed09   # United States
-  # GlobalLogic (the IRC-numbered jobs on careers.hitachi.com) runs its own system; read it from the careers.hitachi.com feed
-  also_ats: paradox
-  also_board: careers.hitachi.com
-  also_sources: globallogic
+  # GlobalLogic's jobs (IRC-numbered on careers.hitachi.com) are not included: that site blocks automated access
   url: https://careers.hitachi.com/jobs
 
 - name: Smartsheet
