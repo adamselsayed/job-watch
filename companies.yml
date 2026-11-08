@@ -76,10 +76,11 @@
 - name: Hitachi
   ats: workday
   board: hitachi.wd1/hitachi
-  # whole Hitachi group (Vantara, Digital Services, Energy, Global Air Power, ...); the subsidiary shows on each row
+  # Hitachi's group-wide Workday board, i.e. the R-numbered jobs on careers.hitachi.com (Vantara, Digital Services,
+  # Energy, Rail, Global Air Power, ...); the subsidiary shows on each row. Whole US board, every job family.
   scan: all
-  facets: jobFamilyGroup=f02270ea97930199e3b74ff29e506c3d,f02270ea9793013aaaf32af29e505e3d,f02270ea979301ae45c015f29e50563d   # Sales/Marketing/Product Mgmt, IT, General Mgmt
-  url: https://www.hitachivantara.com/en-us/company/careers/job-search
+  facets: locationCountry=bc33aa3152ec42d4995f4791a106ed09   # United States
+  url: https://careers.hitachi.com/jobs
 
 - name: Smartsheet
   ats: greenhouse
