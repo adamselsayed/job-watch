@@ -904,7 +904,7 @@ def fetch_oracle(company):
             "department": j.get("JobFamily") or j.get("Organization") or "",
             "published_at": j.get("PostedDate"),
             "updated_at": None,
-            "url": f"https://{host}/en/sites/{site}/job/{rid}",
+            "url": (company.get("link") or f"https://{host}/hcmUI/CandidateExperience/en/sites/{site}/job/{{id}}").replace("{id}", rid),
             "salary": salary_from_text(content) if content else None,
             "_meta_text": meta,
             "_content": content,

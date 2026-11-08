@@ -21,7 +21,8 @@
 #   Rippling:   ats.rippling.com/<token>/jobs  ->  board: <token>
 #   BambooHR:   <token>.bamboohr.com/careers  ->  board: <token>
 #   Jibe/iCIMS: <host>/careers-home/jobs  ->  board: <host>   (e.g. careers.rivian.com)
-#   Oracle Recruiting: <host>/en/sites/<site>/...  ->  board: <host>/<site>   (must be Oracle's own fa.*.oraclecloud.com host)
+#   Oracle Recruiting: <host>/en/sites/<site>/...  ->  board: <host>/<site>   (must be Oracle's own fa-*.oraclecloud.com host)
+#               optional  link: job URL template with {id}, for companies that front Oracle with their own domain
 #   TalentBrew/Radancy: <host>/<lang>/search-jobs  ->  board: <host>/<lang>   (e.g. www.careers.ford.com/en)
 #
 # After adding a company, run:  python3 scripts/fetch_jobs.py
@@ -206,3 +207,9 @@
   ats: greenhouse
   board: fleetio
   url: https://www.fleetio.com/careers/apply
+
+- name: Hertz
+  ats: oracle
+  board: fa-evlf-saasfaprod1.fa.ocs.oraclecloud.com/CX_1
+  link: https://jobs.hertzcareers.com/#en/sites/CX_1/job/{id}
+  url: https://jobs.hertzcareers.com/#en/sites/CX_1/jobs
