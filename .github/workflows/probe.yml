@@ -1,0 +1,28 @@
+name: Probe (temporary)
+on: workflow_dispatch
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          python3 - <<'PY'
+          import json, re, sys, urllib.request
+          sys.path.insert(0, "scripts")
+          import fetch_jobs as F
+          url = "https://hitachi.wd1.myworkdayjobs.com/wday/cxs/hitachi/hitachi/jobs"
+          def q(body):
+              r = urllib.request.Request(url, data=json.dumps(body).encode(), headers={"Content-Type": "application/json", "Accept": "application/json", "User-Agent": "Mozilla/5.0"})
+              return json.load(urllib.request.urlopen(r, timeout=60))
+          seen, off, total = [], 0, None
+          while True:
+              d = q({"appliedFacets": {}, "limit": 20, "offset": off, "searchText": "product"})
+              total = d.get("total", total); ps = d.get("jobPostings", [])
+              seen += ps; off += 20
+              if not ps or off >= (total or 0) or off > 2000: break
+          print("NOFACET total", total, "fetched", len(seen))
+          for p in seen:
+              t = p.get("title", "")
+              if F.title_matches(t):
+                  print("MATCH", t, "|", p.get("locationsText"), "|", p.get("externalPath"))
+          PY
