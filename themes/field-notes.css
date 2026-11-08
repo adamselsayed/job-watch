@@ -8,8 +8,8 @@
   --radius: 14px; --shadow: none;
 }
 html, body { font: 15px/1.5 "Instrument Sans", system-ui, sans-serif; }
-.wrap { max-width: 1320px; padding-top: 36px; }
-.layout { grid-template-columns: 220px minmax(0, 1fr); gap: 32px; }
+.wrap { max-width: 1400px; padding-top: 36px; }
+.layout { grid-template-columns: 200px minmax(0, 1fr); gap: 26px; }
 nav.side { background: transparent; border: 0; padding: 0; }
 nav.side .nh, nav.side .nh.tog { font: 600 15px/1.2 "Fraunces", serif; text-transform: none; letter-spacing: 0; color: var(--text); padding: 18px 10px 6px; }
 nav.side button { border-radius: 999px; font-size: 14px; }
@@ -25,8 +25,12 @@ header h1 { font: 600 34px/1 "Fraunces", serif; letter-spacing: -.01em; }
 .company .head { background: transparent; border-bottom: 1px solid var(--border); padding: 18px 20px 12px; }
 .company .head h2 { font: 600 24px/1.1 "Fraunces", serif; letter-spacing: -.01em; }
 thead th { text-transform: none; letter-spacing: 0; font-size: 12.5px; color: var(--faint); font-weight: 500; }
-th, td { padding: 9px 14px; font-size: 14px; border-top-color: #e3e9e1; }
+th, td { padding: 9px 10px; font-size: 13.5px; border-top-color: #e3e9e1; }
+th.w-loc { width: 15%; } th.w-ids { width: 96px; } th.w-acts { width: 180px; }
 td.title a { font-weight: 500; color: var(--text); }
 td.title a:hover { color: var(--accent); }
 .badge { font-weight: 500; padding: 2px 8px; }
 button, .chip, .controls input[type=search], .controls select { border-radius: 999px; }
+
+/* shared fix: long company names no longer run into the role */
+th.w-co { width: 124px; } td.co { overflow: hidden; text-overflow: ellipsis; max-width: 0; }

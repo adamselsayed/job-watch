@@ -24,9 +24,13 @@ header h1 { font-size: 46px; line-height: .9; font-weight: 800; font-stretch: 12
 .company .head { background: transparent; border-bottom: 0; padding: 14px 0 8px; }
 .company .head h2 { font-size: 22px; font-weight: 750; font-stretch: 118%; }
 thead th { text-transform: none; letter-spacing: 0; font-size: 12.5px; color: var(--faint); font-weight: 500; }
-th, td { padding: 10px 12px 10px 0; font-size: 14px; }
+th, td { padding: 10px 10px 10px 0; font-size: 14px; }
+th.w-ids { width: 100px; }
 td.title a { font-weight: 600; }
 .badge { border-radius: 0; font-weight: 600; }
 .b-new { background: var(--accent); color: #fff; }
 button, .chip, .controls input[type=search], .controls select { border-radius: 0; }
 button.primary, #pullAll { background: var(--text); color: #fff; border-color: var(--text); }
+
+/* shared fix: long company names no longer run into the role */
+th.w-co { width: 124px; } td.co { overflow: hidden; text-overflow: ellipsis; max-width: 0; }
