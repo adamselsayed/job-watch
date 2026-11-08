@@ -213,3 +213,8 @@
   board: fa-evlf-saasfaprod1.fa.ocs.oraclecloud.com/CX_1
   link: https://jobs.hertzcareers.com/#en/sites/CX_1/job/{id}
   url: https://jobs.hertzcareers.com/#en/sites/CX_1/jobs
+
+- name: Oro Mobility
+  ats: oracle
+  board: fa-evlf-saasfaprod1.fa.ocs.oraclecloud.com/CX_2001
+  url: https://fa-evlf-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_2001/jobs
