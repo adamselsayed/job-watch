@@ -50,7 +50,7 @@ def read_companies(path=COMPANIES_FILE):
     companies, cur = [], None
     with open(path, encoding="utf-8") as f:
         for raw in f:
-            line = raw.split("#", 1)[0].rstrip()
+            line = re.sub(r"(^|\s)#.*$", "", raw).rstrip()     # comments start at "#" after a space; URLs may contain "#"
             if not line.strip():
                 continue
             m = re.match(r"^-\s+(\w+):\s*(.*)$", line)
@@ -996,6 +996,59 @@ def fetch_talentbrew(company):
     return out
 
 
+def fetch_paradox(company):
+    """Paradox career sites (careers.<company>.com/jobs, assets from cdn.sites.paradox.ai), e.g. careers.hitachi.com.
+    board = "<host>".  Optional "sources": comma-separated substrings of the feed's companyName / brandName to keep
+    (careers.hitachi.com mixes Hitachi's Workday board with GlobalLogic's own system)."""
+    host = company["board"]
+    keep = [x.strip().lower() for x in company.get("sources", "").split(",") if x.strip()]
+    rows, seen, page, total, first = [], set(), 1, None, None
+    while True:
+        q = urllib.parse.urlencode({"radius": 25, "keyword": " ".join(TITLE_KEYWORDS), "page_number": page, "enable_kilometers": "false"})
+        req = urllib.request.Request(f"https://{host}/api/get-jobs?{q}", method="POST",
+                                     data=json.dumps({"disable_switch_search_mode": False, "site_available_languages": ["en", "en-us"]}).encode(),
+                                     headers={"User-Agent": _BROWSER_UA, "Content-Type": "application/json", "Accept": "application/json",
+                                              "Referer": f"https://{host}/jobs?keyword=product&page_number={page}"})
+        d = _retry(lambda: json.loads(urllib.request.urlopen(req, timeout=45).read().decode("utf-8")))
+        jobs = d.get("jobs") or []
+        total = d.get("totalJob") if total is None else total
+        if first is None:
+            first = {"totalJob": total, "sample": [{k: j.get(k) for k in ("title", "reference", "companyName", "brandName")} for j in jobs[:5]]}
+        new = [j for j in jobs if j.get("uniqueID") not in seen]
+        for j in new:
+            seen.add(j.get("uniqueID"))
+        rows.extend(new)
+        page += 1
+        if not new or len(seen) >= int(total or 0) or page > 300:
+            break
+    out = []
+    for j in rows:
+        src = f"{j.get('companyName') or ''} {j.get('brandName') or ''}".lower()
+        if keep and not any(k in src for k in keep):
+            continue
+        locs = j.get("locations") or []
+        loc = "; ".join(x.get("locationText") or ", ".join(y for y in (x.get("city"), x.get("state"), x.get("country")) if y) for x in locs)
+        countries = {x.get("country") for x in locs if x.get("country")}
+        if countries and not any(c in loc for c in countries):
+            loc = f"{loc}, {'; '.join(sorted(countries))}" if loc else "; ".join(sorted(countries))
+        cf = {c.get("cfKey"): c.get("value") for c in (j.get("customFields") or [])}
+        content = strip_html(j.get("description") or "")
+        ref = j.get("reference") or j.get("requisitionID") or j.get("uniqueID")
+        out.append({
+            "job_id": ref, "req_id": ref, "title": j.get("title") or "",
+            "location": loc, "location_detail": "",
+            "department": cf.get("cf_legal_name") or j.get("brandName") or "",
+            "published_at": j.get("postedDate") or j.get("datePosted") or None, "updated_at": None,
+            "url": f"https://{host}/{(j.get('originalURL') or '').lstrip('/')}" if j.get("originalURL") else j.get("applyURL"),
+            "salary": salary_from_text(content),
+            "_meta_text": f"workplace: {cf.get('cf_remote_type') or ''} {'remote' if j.get('isRemote') else ''}",
+            "_content": content,
+        })
+    debug_dump(company, {"first_page": first, "scanned": len(rows), "kept_sources": len(out),
+                         "sources_seen": sorted({f"{j.get('companyName')} | {j.get('brandName')}" for j in rows})[:30]})
+    return out
+
+
 def fetch_jibe(company):
     """iCIMS / Jibe career sites (https://<host>/careers-home/jobs) via the site's /api/jobs JSON endpoint.
     board = "<host>", e.g. "careers.rivian.com" """
@@ -1038,7 +1091,7 @@ def fetch_jibe(company):
 
 ADAPTERS = {"greenhouse": fetch_greenhouse, "lever": fetch_lever, "ashby": fetch_ashby,
             "smartrecruiters": fetch_smartrecruiters, "workday": fetch_workday, "phenom": fetch_phenom,
-            "jobvite": fetch_jobvite, "rippling": fetch_rippling, "bamboohr": fetch_bamboohr, "jibe": fetch_jibe, "oracle": fetch_oracle, "talentbrew": fetch_talentbrew, "unknown": fetch_unknown}
+            "jobvite": fetch_jobvite, "rippling": fetch_rippling, "bamboohr": fetch_bamboohr, "jibe": fetch_jibe, "oracle": fetch_oracle, "talentbrew": fetch_talentbrew, "paradox": fetch_paradox, "unknown": fetch_unknown}
 
 
 # --------------------------------------------------------------- filtering --
@@ -1126,6 +1179,11 @@ def main(only=None):
             continue
         try:
             raw = adapter(c)
+            if c.get("also_ats"):                          # an extra board shown under the same company (e.g. Hitachi + GlobalLogic)
+                extra = {k[5:]: v for k, v in c.items() if k.startswith("also_")}
+                sub = {**{k: v for k, v in c.items() if not k.startswith("also_") and k not in ("scan", "facets", "filter")}, **extra}
+                have = {r["job_id"] for r in raw}
+                raw += [r for r in ADAPTERS[sub["ats"]](sub) if r["job_id"] not in have]
         except Exception as e:          # noqa: BLE001 - one bad board must never sink the whole sweep
             status.update(status="error", error=str(e)[:500])
             company_status.append(status)
