@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T20:03:30+00:00",
+  "generated_at": "2026-11-08T20:05:37+00:00",
   "criteria": {
     "title_keywords": [
       "product"
@@ -447,11 +447,12 @@
       "ats": "talentbrew",
       "board": "jobs.intuit.com",
       "url": "https://www.intuit.com/careers/#Open-Roles",
-      "fetched_at": "2026-11-08T20:03:30+00:00",
+      "exclude": "analyst, scientist, security",
+      "fetched_at": "2026-11-08T20:05:37+00:00",
       "status": "ok",
       "error": null,
       "total_jobs": 473,
-      "matched": 56
+      "matched": 51
     }
   ],
   "jobs": [
@@ -597,7 +598,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:102941609696",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-08T20:03:30+00:00",
+      "last_seen": "2026-11-08T20:05:37+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -623,7 +624,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:102948086912",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-08T20:03:30+00:00",
+      "last_seen": "2026-11-08T20:05:37+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -649,7 +650,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:102948086896",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-08T20:03:30+00:00",
+      "last_seen": "2026-11-08T20:05:37+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -675,7 +676,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:102948086848",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-08T20:03:30+00:00",
+      "last_seen": "2026-11-08T20:05:37+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -873,7 +874,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:102918028672",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-08T20:03:30+00:00",
+      "last_seen": "2026-11-08T20:05:37+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -899,7 +900,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:102926585280",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-08T20:03:30+00:00",
+      "last_seen": "2026-11-08T20:05:37+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1144,7 +1145,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:102821460976",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-08T20:03:30+00:00",
+      "last_seen": "2026-11-08T20:05:37+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1170,7 +1171,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:102821460928",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-08T20:03:30+00:00",
+      "last_seen": "2026-11-08T20:05:37+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1321,7 +1322,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:102778301376",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-08T20:03:30+00:00",
+      "last_seen": "2026-11-08T20:05:37+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2725,7 +2726,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:102649903136",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-08T20:03:30+00:00",
+      "last_seen": "2026-11-08T20:05:37+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3111,7 +3112,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:102516305200",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-08T20:03:30+00:00",
+      "last_seen": "2026-11-08T20:05:37+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3423,7 +3424,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:102296004416",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-08T20:03:30+00:00",
+      "last_seen": "2026-11-08T20:05:37+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3636,32 +3637,6 @@
       "closed_at": null
     },
     {
-      "job_id": "102258941968",
-      "req_id": null,
-      "title": "Staff Financial Analyst: Product Engagement & Lifecycle Strategy",
-      "location": "Oakland, California, United States; Charlotte, North Carolina, United States",
-      "location_detail": "Multiple Locations",
-      "department": "",
-      "published_at": "2026-10-21",
-      "updated_at": null,
-      "url": "https://jobs.intuit.com/job/oakland/staff-financial-analyst-product-engagement-and-lifecycle-strategy/27595/102258941968",
-      "salary": {
-        "min": 154000,
-        "max": 208500,
-        "currency": "USD",
-        "source": "description"
-      },
-      "us": true,
-      "remote": "unknown",
-      "remote_confidence": "none",
-      "company": "Intuit",
-      "key": "talentbrew:jobs.intuit.com:102258941968",
-      "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-08T20:03:30+00:00",
-      "status": "open",
-      "closed_at": null
-    },
-    {
       "job_id": "8300580",
       "req_id": "JR12361",
       "title": "Sr. Customer Success Strategy Manager, New Products",
@@ -3834,7 +3809,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:102211454096",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-08T20:03:30+00:00",
+      "last_seen": "2026-11-08T20:05:37+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3860,7 +3835,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:102211454144",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-08T20:03:30+00:00",
+      "last_seen": "2026-11-08T20:05:37+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4006,7 +3981,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:102181804640",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-08T20:03:30+00:00",
+      "last_seen": "2026-11-08T20:05:37+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4032,7 +4007,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:102119697696",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-08T20:03:30+00:00",
+      "last_seen": "2026-11-08T20:05:37+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4106,32 +4081,6 @@
       "key": "talentbrew:www.careers.ford.com/en:102040948656",
       "first_seen": "2026-11-05T20:48:07+00:00",
       "last_seen": "2026-11-08T17:58:20+00:00",
-      "status": "open",
-      "closed_at": null
-    },
-    {
-      "job_id": "102558812352",
-      "req_id": null,
-      "title": "Staff Data Scientist - Product Growh",
-      "location": "Mountain View, California, United States; San Diego, California, United States",
-      "location_detail": "Multiple Locations",
-      "department": "",
-      "published_at": "2026-10-16",
-      "updated_at": null,
-      "url": "https://jobs.intuit.com/job/mountain-view/staff-data-scientist-product-growh/27595/102558812352",
-      "salary": {
-        "min": 194000,
-        "max": 262500,
-        "currency": "USD",
-        "source": "description"
-      },
-      "us": true,
-      "remote": "unknown",
-      "remote_confidence": "none",
-      "company": "Intuit",
-      "key": "talentbrew:jobs.intuit.com:102558812352",
-      "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-08T20:03:30+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4236,32 +4185,6 @@
       "key": "smartrecruiters:ServiceNow:744000155472964",
       "first_seen": "2026-10-30T05:47:56+00:00",
       "last_seen": "2026-11-08T13:40:43+00:00",
-      "status": "open",
-      "closed_at": null
-    },
-    {
-      "job_id": "101969195232",
-      "req_id": null,
-      "title": "Staff Financial Analyst - Payroll Product & HCM",
-      "location": "Mountain View, California, United States",
-      "location_detail": "Mountain View, California",
-      "department": "",
-      "published_at": "2026-10-14",
-      "updated_at": null,
-      "url": "https://jobs.intuit.com/job/mountain-view/staff-financial-analyst-payroll-product-and-hcm/27595/101969195232",
-      "salary": {
-        "min": 154000,
-        "max": 208500,
-        "currency": "USD",
-        "source": "description"
-      },
-      "us": true,
-      "remote": "unknown",
-      "remote_confidence": "none",
-      "company": "Intuit",
-      "key": "talentbrew:jobs.intuit.com:101969195232",
-      "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-08T20:03:30+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4501,7 +4424,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:101748803264",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-08T20:03:30+00:00",
+      "last_seen": "2026-11-08T20:05:37+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4527,7 +4450,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:101748803232",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-08T20:03:30+00:00",
+      "last_seen": "2026-11-08T20:05:37+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4881,32 +4804,6 @@
       "closed_at": null
     },
     {
-      "job_id": "101619853104",
-      "req_id": null,
-      "title": "Senior Staff Data Scientist, Product",
-      "location": "Mountain View, California, United States",
-      "location_detail": "Mountain View, California",
-      "department": "",
-      "published_at": "2026-10-06",
-      "updated_at": null,
-      "url": "https://jobs.intuit.com/job/mountain-view/senior-staff-data-scientist-product/27595/101619853104",
-      "salary": {
-        "min": 210500,
-        "max": 284500,
-        "currency": "USD",
-        "source": "description"
-      },
-      "us": true,
-      "remote": "hybrid",
-      "remote_confidence": "low",
-      "company": "Intuit",
-      "key": "talentbrew:jobs.intuit.com:101619853104",
-      "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-08T20:03:30+00:00",
-      "status": "open",
-      "closed_at": null
-    },
-    {
       "job_id": "3743990015902166",
       "req_id": "P13252",
       "title": "Product Manager, Benefits Strategy - Core Care Delivery",
@@ -5126,7 +5023,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:101456093760",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-08T20:03:30+00:00",
+      "last_seen": "2026-11-08T20:05:37+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5449,32 +5346,6 @@
       "closed_at": null
     },
     {
-      "job_id": "101332969104",
-      "req_id": null,
-      "title": "Manager 3, Product Security",
-      "location": "Mountain View, California, United States; San Diego, California, United States",
-      "location_detail": "Multiple Locations",
-      "department": "",
-      "published_at": "2026-09-29",
-      "updated_at": null,
-      "url": "https://jobs.intuit.com/job/mountain-view/manager-3-product-security/27595/101332969104",
-      "salary": {
-        "min": 255000,
-        "max": 345000,
-        "currency": "USD",
-        "source": "description"
-      },
-      "us": true,
-      "remote": "unknown",
-      "remote_confidence": "none",
-      "company": "Intuit",
-      "key": "talentbrew:jobs.intuit.com:101332969104",
-      "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-08T20:03:30+00:00",
-      "status": "open",
-      "closed_at": null
-    },
-    {
       "job_id": "8237757",
       "req_id": "2026.09115",
       "title": "Senior Product Manager, People Product",
@@ -5600,7 +5471,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:101107221232",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-08T20:03:30+00:00",
+      "last_seen": "2026-11-08T20:05:37+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5959,7 +5830,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:100963419344",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-08T20:03:30+00:00",
+      "last_seen": "2026-11-08T20:05:37+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5985,7 +5856,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:100807241040",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-08T20:03:30+00:00",
+      "last_seen": "2026-11-08T20:05:37+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -6230,7 +6101,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:100674391472",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-08T20:03:30+00:00",
+      "last_seen": "2026-11-08T20:05:37+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -6256,7 +6127,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:100674391408",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-08T20:03:30+00:00",
+      "last_seen": "2026-11-08T20:05:37+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -6282,7 +6153,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:100674391328",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-08T20:03:30+00:00",
+      "last_seen": "2026-11-08T20:05:37+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -6386,7 +6257,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:100595831952",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-08T20:03:30+00:00",
+      "last_seen": "2026-11-08T20:05:37+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -6511,7 +6382,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:101143613440",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-08T20:03:30+00:00",
+      "last_seen": "2026-11-08T20:05:37+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -6563,7 +6434,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:100450676992",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-08T20:03:30+00:00",
+      "last_seen": "2026-11-08T20:05:37+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -6589,7 +6460,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:100412450320",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-08T20:03:30+00:00",
+      "last_seen": "2026-11-08T20:05:37+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -6636,7 +6507,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:100183029472",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-08T20:03:30+00:00",
+      "last_seen": "2026-11-08T20:05:37+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -6662,7 +6533,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:100183029504",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-08T20:03:30+00:00",
+      "last_seen": "2026-11-08T20:05:37+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -6777,7 +6648,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:100138148208",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-08T20:03:30+00:00",
+      "last_seen": "2026-11-08T20:05:37+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -6803,7 +6674,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:100076767424",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-08T20:03:30+00:00",
+      "last_seen": "2026-11-08T20:05:37+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -6829,7 +6700,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:100089160352",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-08T20:03:30+00:00",
+      "last_seen": "2026-11-08T20:05:37+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -6881,7 +6752,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:99985094368",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-08T20:03:30+00:00",
+      "last_seen": "2026-11-08T20:05:37+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -6954,7 +6825,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:99677351552",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-08T20:03:30+00:00",
+      "last_seen": "2026-11-08T20:05:37+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -6980,7 +6851,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:99544281088",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-08T20:03:30+00:00",
+      "last_seen": "2026-11-08T20:05:37+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -7006,7 +6877,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:99493492384",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-08T20:03:30+00:00",
+      "last_seen": "2026-11-08T20:05:37+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -7032,7 +6903,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:99691119152",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-08T20:03:30+00:00",
+      "last_seen": "2026-11-08T20:05:37+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -7079,7 +6950,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:99121993328",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-08T20:03:30+00:00",
+      "last_seen": "2026-11-08T20:05:37+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -7189,7 +7060,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:99048102816",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-08T20:03:30+00:00",
+      "last_seen": "2026-11-08T20:05:37+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -7382,7 +7253,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:98472064704",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-08T20:03:30+00:00",
+      "last_seen": "2026-11-08T20:05:37+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -7408,7 +7279,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:98440066752",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-08T20:03:30+00:00",
+      "last_seen": "2026-11-08T20:05:37+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -7434,7 +7305,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:97850406528",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-08T20:03:30+00:00",
+      "last_seen": "2026-11-08T20:05:37+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -7460,7 +7331,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:97850406544",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-08T20:03:30+00:00",
+      "last_seen": "2026-11-08T20:05:37+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -7538,7 +7409,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:97617057552",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-08T20:03:30+00:00",
+      "last_seen": "2026-11-08T20:05:37+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -7564,7 +7435,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:96477128608",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-08T20:03:30+00:00",
+      "last_seen": "2026-11-08T20:05:37+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -7642,7 +7513,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:95852079168",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-08T20:03:30+00:00",
+      "last_seen": "2026-11-08T20:05:37+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -7741,7 +7612,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:94774645552",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-08T20:03:30+00:00",
+      "last_seen": "2026-11-08T20:05:37+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -7767,7 +7638,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:96482379856",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-08T20:03:30+00:00",
+      "last_seen": "2026-11-08T20:05:37+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -7887,7 +7758,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:92055106736",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-08T20:03:30+00:00",
+      "last_seen": "2026-11-08T20:05:37+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -8849,6 +8720,32 @@
       "closed_at": "2026-11-03T14:00:15+00:00"
     },
     {
+      "job_id": "102258941968",
+      "req_id": null,
+      "title": "Staff Financial Analyst: Product Engagement & Lifecycle Strategy",
+      "location": "Oakland, California, United States; Charlotte, North Carolina, United States",
+      "location_detail": "Multiple Locations",
+      "department": "",
+      "published_at": "2026-10-21",
+      "updated_at": null,
+      "url": "https://jobs.intuit.com/job/oakland/staff-financial-analyst-product-engagement-and-lifecycle-strategy/27595/102258941968",
+      "salary": {
+        "min": 154000,
+        "max": 208500,
+        "currency": "USD",
+        "source": "description"
+      },
+      "us": true,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Intuit",
+      "key": "talentbrew:jobs.intuit.com:102258941968",
+      "first_seen": "2026-11-08T20:03:30+00:00",
+      "last_seen": "2026-11-08T20:03:30+00:00",
+      "status": "closed",
+      "closed_at": "2026-11-08T20:05:37+00:00"
+    },
+    {
       "job_id": "28666",
       "req_id": "28666",
       "title": "Product Guide III (Part-time) - Dallas Service Center",
@@ -9104,6 +9001,32 @@
       "closed_at": "2026-11-05T14:07:58+00:00"
     },
     {
+      "job_id": "102558812352",
+      "req_id": null,
+      "title": "Staff Data Scientist - Product Growh",
+      "location": "Mountain View, California, United States; San Diego, California, United States",
+      "location_detail": "Multiple Locations",
+      "department": "",
+      "published_at": "2026-10-16",
+      "updated_at": null,
+      "url": "https://jobs.intuit.com/job/mountain-view/staff-data-scientist-product-growh/27595/102558812352",
+      "salary": {
+        "min": 194000,
+        "max": 262500,
+        "currency": "USD",
+        "source": "description"
+      },
+      "us": true,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Intuit",
+      "key": "talentbrew:jobs.intuit.com:102558812352",
+      "first_seen": "2026-11-08T20:03:30+00:00",
+      "last_seen": "2026-11-08T20:03:30+00:00",
+      "status": "closed",
+      "closed_at": "2026-11-08T20:05:37+00:00"
+    },
+    {
       "job_id": "R0147632",
       "req_id": "R0147632",
       "title": "Manager, Product Management — Hitachi IQ and AI solutions",
@@ -9144,6 +9067,32 @@
       "last_seen": "2026-10-30T05:17:36+00:00",
       "status": "closed",
       "closed_at": "2026-10-30T05:23:57+00:00"
+    },
+    {
+      "job_id": "101969195232",
+      "req_id": null,
+      "title": "Staff Financial Analyst - Payroll Product & HCM",
+      "location": "Mountain View, California, United States",
+      "location_detail": "Mountain View, California",
+      "department": "",
+      "published_at": "2026-10-14",
+      "updated_at": null,
+      "url": "https://jobs.intuit.com/job/mountain-view/staff-financial-analyst-payroll-product-and-hcm/27595/101969195232",
+      "salary": {
+        "min": 154000,
+        "max": 208500,
+        "currency": "USD",
+        "source": "description"
+      },
+      "us": true,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Intuit",
+      "key": "talentbrew:jobs.intuit.com:101969195232",
+      "first_seen": "2026-11-08T20:03:30+00:00",
+      "last_seen": "2026-11-08T20:03:30+00:00",
+      "status": "closed",
+      "closed_at": "2026-11-08T20:05:37+00:00"
     },
     {
       "job_id": "34320",
@@ -9358,6 +9307,32 @@
       "closed_at": "2026-11-04T00:53:10+00:00"
     },
     {
+      "job_id": "101619853104",
+      "req_id": null,
+      "title": "Senior Staff Data Scientist, Product",
+      "location": "Mountain View, California, United States",
+      "location_detail": "Mountain View, California",
+      "department": "",
+      "published_at": "2026-10-06",
+      "updated_at": null,
+      "url": "https://jobs.intuit.com/job/mountain-view/senior-staff-data-scientist-product/27595/101619853104",
+      "salary": {
+        "min": 210500,
+        "max": 284500,
+        "currency": "USD",
+        "source": "description"
+      },
+      "us": true,
+      "remote": "hybrid",
+      "remote_confidence": "low",
+      "company": "Intuit",
+      "key": "talentbrew:jobs.intuit.com:101619853104",
+      "first_seen": "2026-11-08T20:03:30+00:00",
+      "last_seen": "2026-11-08T20:03:30+00:00",
+      "status": "closed",
+      "closed_at": "2026-11-08T20:05:37+00:00"
+    },
+    {
       "job_id": "33616",
       "req_id": "33616",
       "title": "Product Guide III (Part-time) - Northbrook Service Center",
@@ -9472,6 +9447,32 @@
       "last_seen": "2026-11-05T21:12:47+00:00",
       "status": "closed",
       "closed_at": "2026-11-06T14:00:14+00:00"
+    },
+    {
+      "job_id": "101332969104",
+      "req_id": null,
+      "title": "Manager 3, Product Security",
+      "location": "Mountain View, California, United States; San Diego, California, United States",
+      "location_detail": "Multiple Locations",
+      "department": "",
+      "published_at": "2026-09-29",
+      "updated_at": null,
+      "url": "https://jobs.intuit.com/job/mountain-view/manager-3-product-security/27595/101332969104",
+      "salary": {
+        "min": 255000,
+        "max": 345000,
+        "currency": "USD",
+        "source": "description"
+      },
+      "us": true,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Intuit",
+      "key": "talentbrew:jobs.intuit.com:101332969104",
+      "first_seen": "2026-11-08T20:03:30+00:00",
+      "last_seen": "2026-11-08T20:03:30+00:00",
+      "status": "closed",
+      "closed_at": "2026-11-08T20:05:37+00:00"
     },
     {
       "job_id": "8233818",
