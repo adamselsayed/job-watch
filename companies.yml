@@ -232,3 +232,4 @@
   ats: talentbrew
   board: jobs.intuit.com
   url: https://www.intuit.com/careers/#Open-Roles
+  exclude: analyst, scientist, security
