@@ -1,0 +1,11 @@
+name: Design mockups
+on: workflow_dispatch
+jobs:
+  shots:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: npm i playwright@1.47.2 >/dev/null 2>&1 && npx playwright install --with-deps chromium >/dev/null 2>&1
+      - run: (python3 -m http.server 8000 >/dev/null 2>&1 &) && sleep 1 && node scripts/mockups.js
+      - uses: actions/upload-artifact@v4
+        with: { name: shots, path: shots/ }

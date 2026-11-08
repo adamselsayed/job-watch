@@ -1,0 +1,38 @@
+/* A — Workbench: dense, tool-like. Dark graphite rail, safety-yellow "new" signal, IBM Plex Sans throughout. */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Sans+Condensed:wght@500;600&display=swap');
+:root, :root:not([data-theme="light"]) {
+  --bg: #e7eaee; --surface: #ffffff; --surface-2: #f3f5f7; --border: #d5dae1;
+  --text: #1f242b; --muted: #56606d; --faint: #848d99;
+  --accent: #2b59c3; --accent-soft: #e6ecfa;
+  --new: #7a5a00; --new-soft: #ffd84d;
+  --radius: 4px; --shadow: none;
+}
+html, body { font: 14px/1.4 "IBM Plex Sans", system-ui, sans-serif; }
+.wrap { max-width: 1440px; padding: 0 20px 64px 0; }
+.layout { grid-template-columns: 228px minmax(0, 1fr); gap: 22px; }
+nav.side { top: 0; min-height: 100vh; border: 0; border-radius: 0; background: #262b33; padding: 18px 10px; }
+nav.side .nh, nav.side .nh.tog { color: #8e98a6; font: 600 12px/1 "IBM Plex Sans Condensed", sans-serif; text-transform: none; letter-spacing: .02em; padding: 14px 10px 6px; }
+nav.side .nh.tog .gc { color: #8e98a6; }
+nav.side hr { border-color: #39404b; }
+nav.side button { color: #d7dce3; border-radius: 3px; padding: 6px 10px; font-size: 13.5px; }
+nav.side button .cnt { color: #8e98a6; }
+nav.side button:hover { background: #313741; }
+nav.side button.on { background: #313741; color: #fff; box-shadow: inset 3px 0 0 #ffcf33; }
+nav.side button.on .cnt { color: #ffcf33; }
+nav.side button .nb { background: #ffcf33; color: #262b33; }
+header { padding-top: 22px; }
+header h1 { font: 700 20px/1 "IBM Plex Sans Condensed", sans-serif; letter-spacing: 0; }
+.tile { border-radius: 3px; border-color: var(--border); padding: 10px 12px; }
+.tile .n { font: 600 24px/1.1 "IBM Plex Sans Condensed", sans-serif; }
+.tile.new .n { color: #1f242b; }
+.tile.new { box-shadow: inset 0 3px 0 #ffcf33; }
+.company { border-radius: 3px; }
+.company .head { background: #fff; border-bottom: 2px solid #1f242b; padding: 10px 14px; }
+.company .head h2 { font: 700 15px/1 "IBM Plex Sans Condensed", sans-serif; }
+thead th { font: 600 11.5px/1 "IBM Plex Sans Condensed", sans-serif; text-transform: none; letter-spacing: .02em; color: var(--muted); background: var(--surface-2); }
+th, td { padding: 4px 10px; font-size: 13px; }
+tbody tr:hover td { background: #f6f8fb; }
+.badge { border-radius: 2px; font-weight: 600; }
+.b-new { background: #ffcf33; color: #262b33; }
+button { border-radius: 3px; }
+.chip { border-radius: 3px; }
