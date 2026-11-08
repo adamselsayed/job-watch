@@ -1,5 +1,7 @@
 name: Design mockups
-on: workflow_dispatch
+on:
+  push:
+    branches: [design-mockups]
 jobs:
   shots:
     runs-on: ubuntu-latest
