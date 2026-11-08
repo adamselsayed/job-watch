@@ -17,12 +17,15 @@ jobs:
           seen, off, total = [], 0, None
           while True:
               d = q({"appliedFacets": {}, "limit": 20, "offset": off, "searchText": "product"})
-              total = d.get("total", total); ps = d.get("jobPostings", [])
+              total = d.get("total") or total; ps = d.get("jobPostings", [])
               seen += ps; off += 20
               if not ps or off >= (total or 0) or off > 2000: break
           print("NOFACET total", total, "fetched", len(seen))
           for p in seen:
               t = p.get("title", "")
               if F.title_matches(t):
-                  print("MATCH", t, "|", p.get("locationsText"), "|", p.get("externalPath"))
+                  print("MATCH", t, "|", p.get("locationsText"), "|", p.get("externalPath"), "|", (p.get("bulletFields") or [""])[0])
+          # same search with the dashboard's job-family filter, for comparison
+          fam = {"jobFamilyGroup": ["f02270ea97930199e3b74ff29e506c3d","f02270ea9793013aaaf32af29e505e3d","f02270ea979301ae45c015f29e50563d"]}
+          d = q({"appliedFacets": fam, "limit": 20, "offset": 0, "searchText": "product"}); print("WITHFACET total", d.get("total"))
           PY
