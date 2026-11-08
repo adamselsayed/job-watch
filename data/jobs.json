@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T00:10:35+00:00",
+  "generated_at": "2026-11-08T00:31:41+00:00",
   "criteria": {
     "title_keywords": [
       "product"
@@ -407,6 +407,18 @@
       "error": null,
       "total_jobs": 18,
       "matched": 1
+    },
+    {
+      "name": "Hertz",
+      "ats": "oracle",
+      "board": "fa-evlf-saasfaprod1.fa.ocs.oraclecloud.com/CX_1",
+      "link": "https://jobs.hertzcareers.com/",
+      "url": "https://jobs.hertzcareers.com/",
+      "fetched_at": "2026-11-08T00:31:41+00:00",
+      "status": "ok",
+      "error": null,
+      "total_jobs": 183,
+      "matched": 0
     }
   ],
   "jobs": [
