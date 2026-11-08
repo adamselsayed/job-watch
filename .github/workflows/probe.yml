@@ -10,16 +10,12 @@ jobs:
           const { chromium } = require('playwright');
           (async () => {
             const b = await chromium.launch(); const pg = await b.newPage();
-            pg.on('response', async r => { const u = r.url(); const ct = r.headers()['content-type'] || '';
-              if (/json/.test(ct) && !/google|facebook|hotjar|segment|onetrust|cookielaw/.test(u)) { let t = ''; try { t = (await r.text()).slice(0, 300); } catch (e) {} console.log('JSON', r.request().method(), u.slice(0, 300), '\n   ', t.replace(/\s+/g, ' ')); } });
-            await pg.goto('https://careers.hitachi.com/jobs', { waitUntil: 'networkidle', timeout: 90000 }).catch(e => console.log('ERR', e.message));
-            const box = await pg.$('input[type=search], input[name*=keyword i], input[placeholder*=earch i]');
-            if (box) { await box.fill('product manager'); await box.press('Enter'); await pg.waitForTimeout(6000); console.log('AFTER', pg.url()); }
-            const links = await pg.$$eval('a[href*="/job/"]', as => as.slice(0, 8).map(a => a.href));
-            console.log('LINKS', JSON.stringify(links));
+            pg.on('request', r => { if (r.url().includes('/api/get-jobs')) console.log('REQ', r.url(), '\n BODY', (r.postData() || '').slice(0, 1500), '\n HDR', JSON.stringify(r.headers())); });
+            pg.on('response', async r => { if (r.url().includes('/api/get-jobs')) { const j = await r.json().catch(() => null); if (j) { console.log('KEYS', Object.keys(j), 'n', (j.jobs || []).length, JSON.stringify(Object.fromEntries(Object.entries(j).filter(([k]) => k !== 'jobs'))).slice(0, 800)); const x = (j.jobs || [])[0]; if (x) console.log('JOBKEYS', JSON.stringify(Object.fromEntries(Object.entries(x).map(([k, v]) => [k, typeof v === 'string' ? v.slice(0, 80) : v]))).slice(0, 2500)); } } });
+            await pg.goto('https://careers.hitachi.com/jobs?keyword=product%20manager', { waitUntil: 'networkidle', timeout: 90000 }).catch(e => console.log('ERR', e.message));
+            await pg.waitForTimeout(3000);
+            const nxt = await pg.$('a[href*="/jobs/page/2"]'); if (nxt) { await nxt.click(); await pg.waitForTimeout(5000); }
             await b.close();
           })();
           JS
           node p.js
-      - run: |
-          for u in "https://www.globallogic.com/career-search-page/?keywords=product+manager&experience=&locations=united-states" "https://careers.hitachi.com/jobs?keyword=product"; do echo "== $u"; curl -sL -A "Mozilla/5.0" "$u" | grep -oE '(https?:)?//[^"'"'"' ]*(api|ajax|wp-json|search)[^"'"'"' ]*' | sort -u | head -15; done
