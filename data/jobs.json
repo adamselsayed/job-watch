@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T00:46:01+00:00",
+  "generated_at": "2026-11-08T00:54:47+00:00",
   "criteria": {
     "title_keywords": [
       "product"
@@ -123,13 +123,13 @@
       "ats": "workday",
       "board": "hitachi.wd1/hitachi",
       "scan": "all",
-      "facets": "jobFamilyGroup=f02270ea97930199e3b74ff29e506c3d,f02270ea9793013aaaf32af29e505e3d,f02270ea979301ae45c015f29e50563d",
-      "url": "https://www.hitachivantara.com/en-us/company/careers/job-search",
-      "fetched_at": "2026-11-08T00:10:35+00:00",
+      "facets": "locationCountry=bc33aa3152ec42d4995f4791a106ed09",
+      "url": "https://careers.hitachi.com/jobs",
+      "fetched_at": "2026-11-08T00:54:47+00:00",
       "status": "ok",
       "error": null,
-      "total_jobs": 19,
-      "matched": 7
+      "total_jobs": 8,
+      "matched": 8
     },
     {
       "name": "Smartsheet",
@@ -3448,7 +3448,7 @@
       "company": "Hitachi",
       "key": "workday:hitachi.wd1/hitachi:R0141167",
       "first_seen": "2026-10-30T07:05:09+00:00",
-      "last_seen": "2026-11-08T00:10:35+00:00",
+      "last_seen": "2026-11-08T00:54:47+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3907,7 +3907,7 @@
       "company": "Hitachi",
       "key": "workday:hitachi.wd1/hitachi:R0146458",
       "first_seen": "2026-10-30T07:05:09+00:00",
-      "last_seen": "2026-11-08T00:10:35+00:00",
+      "last_seen": "2026-11-08T00:54:47+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5245,6 +5245,27 @@
       "closed_at": null
     },
     {
+      "job_id": "R0143453",
+      "req_id": "R0143453",
+      "title": "Senior Service Product Specialist – AIS and GIS",
+      "location": "Mount Pleasant, Pennsylvania, United States of America",
+      "location_detail": "",
+      "department": "HITACHI ENERGY USA INC",
+      "published_at": "2026-09-21",
+      "updated_at": null,
+      "url": "https://hitachi.wd1.myworkdayjobs.com/hitachi/job/Mount-Pleasant-Pennsylvania-United-States-of-America/Senior-Service-Product-Specialist---AIS-and-GIS_R0143453",
+      "salary": null,
+      "us": true,
+      "remote": "hybrid",
+      "remote_confidence": "medium",
+      "company": "Hitachi",
+      "key": "workday:hitachi.wd1/hitachi:R0143453",
+      "first_seen": "2026-11-08T00:54:47+00:00",
+      "last_seen": "2026-11-08T00:54:47+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
       "job_id": "5241221007",
       "req_id": "TBH586",
       "title": "Staff Product Manager, Connected Ecosystem",
@@ -5751,7 +5772,7 @@
       "company": "Hitachi",
       "key": "workday:hitachi.wd1/hitachi:R0140695",
       "first_seen": "2026-10-30T07:05:09+00:00",
-      "last_seen": "2026-11-08T00:10:35+00:00",
+      "last_seen": "2026-11-08T00:54:47+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5772,7 +5793,7 @@
       "company": "Hitachi",
       "key": "workday:hitachi.wd1/hitachi:R0120995",
       "first_seen": "2026-10-30T07:05:09+00:00",
-      "last_seen": "2026-11-08T00:10:35+00:00",
+      "last_seen": "2026-11-08T00:54:47+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -6315,7 +6336,7 @@
       "company": "Hitachi",
       "key": "workday:hitachi.wd1/hitachi:R0105015",
       "first_seen": "2026-10-30T07:05:09+00:00",
-      "last_seen": "2026-11-08T00:10:35+00:00",
+      "last_seen": "2026-11-08T00:54:47+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -6487,7 +6508,7 @@
       "company": "Hitachi",
       "key": "workday:hitachi.wd1/hitachi:R0040237",
       "first_seen": "2026-10-30T07:05:09+00:00",
-      "last_seen": "2026-11-08T00:10:35+00:00",
+      "last_seen": "2026-11-08T00:54:47+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -6534,7 +6555,7 @@
       "company": "Hitachi",
       "key": "workday:hitachi.wd1/hitachi:R0008293",
       "first_seen": "2026-10-30T07:05:09+00:00",
-      "last_seen": "2026-11-08T00:10:35+00:00",
+      "last_seen": "2026-11-08T00:54:47+00:00",
       "status": "open",
       "closed_at": null
     },
