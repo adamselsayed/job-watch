@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T00:54:47+00:00",
+  "generated_at": "2026-11-08T04:58:16+00:00",
   "criteria": {
     "title_keywords": [
       "product"
@@ -124,12 +124,13 @@
       "board": "hitachi.wd1/hitachi",
       "scan": "all",
       "facets": "locationCountry=bc33aa3152ec42d4995f4791a106ed09",
+      "also_ats": "paradox",
+      "also_board": "careers.hitachi.com",
+      "also_sources": "globallogic",
       "url": "https://careers.hitachi.com/jobs",
-      "fetched_at": "2026-11-08T00:54:47+00:00",
-      "status": "ok",
-      "error": null,
-      "total_jobs": 8,
-      "matched": 8
+      "fetched_at": "2026-11-08T04:58:16+00:00",
+      "status": "error",
+      "error": "HTTP Error 403: Forbidden"
     },
     {
       "name": "Smartsheet",
