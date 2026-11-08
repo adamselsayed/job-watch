@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-08T00:47:29.355Z",
+  "updated_at": "2026-11-08T00:47:31.222Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1217,6 +1217,7 @@
       "General Motors",
       "CWX",
       "Hertz",
+      "Oro Mobility",
       "AMN Healthcare",
       "Smartsheet",
       "Hitachi"
@@ -1237,6 +1238,6 @@
       "Housecall Pro"
     ],
     "collapsed": [],
-    "at": "2026-11-08T00:47:27.848Z"
+    "at": "2026-11-08T00:47:29.715Z"
   }
 }
