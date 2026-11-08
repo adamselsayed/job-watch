@@ -1049,6 +1049,61 @@ def fetch_paradox(company):
     return out
 
 
+def fetch_globallogic(company):
+    """GlobalLogic's own job search (www.globallogic.com/career-search-page/), which robots.txt allows.
+    Results are server-rendered cards: <a class="job_box" href=".../careers/<slug>-irc123/"> with
+    <span class="job_location"> parts, <span class="job_tag"> work model and an <h4> title ending in the IRC id."""
+    base = "https://www.globallogic.com"
+    hdr = {"User-Agent": "job-watch/1.0 (+github)"}
+    rows, seen, page, first = [], set(), 1, None
+    while page <= 60:
+        url = f"{base}/career-search-page/" + (f"page/{page}/" if page > 1 else "") + "?keywords=" + urllib.parse.quote(" ".join(TITLE_KEYWORDS))
+        h, _ = fetch_text(url, timeout=45, headers=hdr)
+        cards = re.findall(r'<a href="(https://www\.globallogic\.com/careers/[^"]+)" class="job_box">(.*?)</a>', h, re.S)
+        if first is None:
+            first = {"cards": len(cards), "pages": sorted(set(re.findall(r"career-search-page/page/(\d+)/", h)), key=int)[-3:]}
+        new = 0
+        for href, body in cards:
+            if href in seen:
+                continue
+            seen.add(href); new += 1
+            t = re.search(r"<h4>(.*?)</h4>", body, re.S)
+            title = re.sub(r"\s+", " ", strip_html(t.group(1))).strip() if t else ""
+            m = re.search(r"\s*\b(IRC\d+)\s*$", title, re.I)
+            irc = m.group(1).upper() if m else (re.search(r"(irc\d+)", href) or [None, href])[1].upper()
+            title = title[:m.start()].strip() if m else title
+            locs = [strip_html(x).strip() for x in re.findall(r'<span class="job_location">(.*?)</span>', body, re.S)]
+            tags = [strip_html(x).strip() for x in re.findall(r'<span class="job_tag">(.*?)</span>', body, re.S)]
+            rows.append({"irc": irc, "url": href, "title": title, "locs": [x for x in locs if x], "tags": tags})
+        if not new:
+            break
+        page += 1
+    out = []
+    for r in rows:
+        locs, content = r["locs"], ""
+        # cards list cities then the country, e.g. ["San Jose CA", "United States"]
+        location = ", ".join(locs[:-1]) + (", " if len(locs) > 1 else "") + (locs[-1] if locs else "")
+        if title_matches(r["title"]):
+            try:
+                page_html, _ = fetch_text(r["url"], timeout=45, headers=hdr)
+                m = re.search(r'<div class="(?:job_description|job-description|single_job_content|content_area)[^"]*"[^>]*>(.*?)</section>', page_html, re.S) \
+                    or re.search(r"<main[^>]*>(.*?)</main>", page_html, re.S)
+                content = strip_html(m.group(1)) if m else ""
+            except Exception as e:          # noqa: BLE001
+                log(f"[{company['name']}] detail fetch failed for {r['irc']}: {e}")
+        out.append({
+            "job_id": r["irc"], "req_id": r["irc"], "title": r["title"],
+            "location": location, "location_detail": "",
+            "department": "", "published_at": None, "updated_at": None, "url": r["url"],
+            "salary": salary_from_text(content) if content else None,
+            "_meta_text": "workplace: " + " ".join(r["tags"]),
+            "_content": content,
+        })
+    debug_dump(company, {"first_page": first, "pages_read": page, "scanned": len(rows),
+                         "kept": [{k: v for k, v in o.items() if k != "_content"} for o in out if title_matches(o["title"])][:15]})
+    return out
+
+
 def fetch_jibe(company):
     """iCIMS / Jibe career sites (https://<host>/careers-home/jobs) via the site's /api/jobs JSON endpoint.
     board = "<host>", e.g. "careers.rivian.com" """
@@ -1091,7 +1146,7 @@ def fetch_jibe(company):
 
 ADAPTERS = {"greenhouse": fetch_greenhouse, "lever": fetch_lever, "ashby": fetch_ashby,
             "smartrecruiters": fetch_smartrecruiters, "workday": fetch_workday, "phenom": fetch_phenom,
-            "jobvite": fetch_jobvite, "rippling": fetch_rippling, "bamboohr": fetch_bamboohr, "jibe": fetch_jibe, "oracle": fetch_oracle, "talentbrew": fetch_talentbrew, "paradox": fetch_paradox, "unknown": fetch_unknown}
+            "jobvite": fetch_jobvite, "rippling": fetch_rippling, "bamboohr": fetch_bamboohr, "jibe": fetch_jibe, "oracle": fetch_oracle, "talentbrew": fetch_talentbrew, "paradox": fetch_paradox, "globallogic": fetch_globallogic, "unknown": fetch_unknown}
 
 
 # --------------------------------------------------------------- filtering --

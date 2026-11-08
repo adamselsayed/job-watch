@@ -82,7 +82,7 @@
   # Energy, Rail, Global Air Power, ...); the subsidiary shows on each row. Whole US board, every job family.
   scan: all
   facets: locationCountry=bc33aa3152ec42d4995f4791a106ed09   # United States
-  # GlobalLogic's jobs (IRC-numbered on careers.hitachi.com) are not included: that site blocks automated access
+  # GlobalLogic's jobs (IRC-numbered on careers.hitachi.com) are tracked as their own company below
   url: https://careers.hitachi.com/jobs
 
 - name: Smartsheet
@@ -222,3 +222,8 @@
   ats: oracle
   board: fa-evlf-saasfaprod1.fa.ocs.oraclecloud.com/CX_2001
   url: https://fa-evlf-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_2001/jobs
+
+- name: GlobalLogic
+  ats: globallogic
+  board: globallogic.com
+  url: https://www.globallogic.com/career-search-page/
