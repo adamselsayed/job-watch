@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T04:58:16+00:00",
+  "generated_at": "2026-11-08T05:00:03+00:00",
   "criteria": {
     "title_keywords": [
       "product"
@@ -124,13 +124,12 @@
       "board": "hitachi.wd1/hitachi",
       "scan": "all",
       "facets": "locationCountry=bc33aa3152ec42d4995f4791a106ed09",
-      "also_ats": "paradox",
-      "also_board": "careers.hitachi.com",
-      "also_sources": "globallogic",
       "url": "https://careers.hitachi.com/jobs",
-      "fetched_at": "2026-11-08T04:58:16+00:00",
-      "status": "error",
-      "error": "HTTP Error 403: Forbidden"
+      "fetched_at": "2026-11-08T05:00:03+00:00",
+      "status": "ok",
+      "error": null,
+      "total_jobs": 8,
+      "matched": 8
     },
     {
       "name": "Smartsheet",
@@ -3449,7 +3448,7 @@
       "company": "Hitachi",
       "key": "workday:hitachi.wd1/hitachi:R0141167",
       "first_seen": "2026-10-30T07:05:09+00:00",
-      "last_seen": "2026-11-08T00:54:47+00:00",
+      "last_seen": "2026-11-08T05:00:03+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3908,7 +3907,7 @@
       "company": "Hitachi",
       "key": "workday:hitachi.wd1/hitachi:R0146458",
       "first_seen": "2026-10-30T07:05:09+00:00",
-      "last_seen": "2026-11-08T00:54:47+00:00",
+      "last_seen": "2026-11-08T05:00:03+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5262,7 +5261,7 @@
       "company": "Hitachi",
       "key": "workday:hitachi.wd1/hitachi:R0143453",
       "first_seen": "2026-11-08T00:54:47+00:00",
-      "last_seen": "2026-11-08T00:54:47+00:00",
+      "last_seen": "2026-11-08T05:00:03+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5773,7 +5772,7 @@
       "company": "Hitachi",
       "key": "workday:hitachi.wd1/hitachi:R0140695",
       "first_seen": "2026-10-30T07:05:09+00:00",
-      "last_seen": "2026-11-08T00:54:47+00:00",
+      "last_seen": "2026-11-08T05:00:03+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5794,7 +5793,7 @@
       "company": "Hitachi",
       "key": "workday:hitachi.wd1/hitachi:R0120995",
       "first_seen": "2026-10-30T07:05:09+00:00",
-      "last_seen": "2026-11-08T00:54:47+00:00",
+      "last_seen": "2026-11-08T05:00:03+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -6337,7 +6336,7 @@
       "company": "Hitachi",
       "key": "workday:hitachi.wd1/hitachi:R0105015",
       "first_seen": "2026-10-30T07:05:09+00:00",
-      "last_seen": "2026-11-08T00:54:47+00:00",
+      "last_seen": "2026-11-08T05:00:03+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -6509,7 +6508,7 @@
       "company": "Hitachi",
       "key": "workday:hitachi.wd1/hitachi:R0040237",
       "first_seen": "2026-10-30T07:05:09+00:00",
-      "last_seen": "2026-11-08T00:54:47+00:00",
+      "last_seen": "2026-11-08T05:00:03+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -6556,7 +6555,7 @@
       "company": "Hitachi",
       "key": "workday:hitachi.wd1/hitachi:R0008293",
       "first_seen": "2026-10-30T07:05:09+00:00",
-      "last_seen": "2026-11-08T00:54:47+00:00",
+      "last_seen": "2026-11-08T05:00:03+00:00",
       "status": "open",
       "closed_at": null
     },
