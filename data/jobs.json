@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T00:31:41+00:00",
+  "generated_at": "2026-11-08T00:46:01+00:00",
   "criteria": {
     "title_keywords": [
       "product"
@@ -418,6 +418,17 @@
       "status": "ok",
       "error": null,
       "total_jobs": 183,
+      "matched": 0
+    },
+    {
+      "name": "Oro Mobility",
+      "ats": "oracle",
+      "board": "fa-evlf-saasfaprod1.fa.ocs.oraclecloud.com/CX_2001",
+      "url": "https://fa-evlf-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_2001/jobs",
+      "fetched_at": "2026-11-08T00:46:01+00:00",
+      "status": "ok",
+      "error": null,
+      "total_jobs": 0,
       "matched": 0
     }
   ],
