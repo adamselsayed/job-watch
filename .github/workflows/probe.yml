@@ -1,0 +1,25 @@
+name: Probe careers page (temporary)
+on: workflow_dispatch
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - run: npm i playwright@1.47.2 >/dev/null 2>&1 && npx playwright install --with-deps chromium >/dev/null 2>&1
+      - run: |
+          cat > p.js <<'JS'
+          const { chromium } = require('playwright');
+          (async () => {
+            const b = await chromium.launch(); const pg = await b.newPage();
+            pg.on('response', async r => { const u = r.url(); const ct = r.headers()['content-type'] || '';
+              if (/json/.test(ct) && !/google|facebook|hotjar|segment|onetrust|cookielaw/.test(u)) { let t = ''; try { t = (await r.text()).slice(0, 300); } catch (e) {} console.log('JSON', r.request().method(), u.slice(0, 300), '\n   ', t.replace(/\s+/g, ' ')); } });
+            await pg.goto('https://careers.hitachi.com/jobs', { waitUntil: 'networkidle', timeout: 90000 }).catch(e => console.log('ERR', e.message));
+            const box = await pg.$('input[type=search], input[name*=keyword i], input[placeholder*=earch i]');
+            if (box) { await box.fill('product manager'); await box.press('Enter'); await pg.waitForTimeout(6000); console.log('AFTER', pg.url()); }
+            const links = await pg.$$eval('a[href*="/job/"]', as => as.slice(0, 8).map(a => a.href));
+            console.log('LINKS', JSON.stringify(links));
+            await b.close();
+          })();
+          JS
+          node p.js
+      - run: |
+          for u in "https://www.globallogic.com/career-search-page/?keywords=product+manager&experience=&locations=united-states" "https://careers.hitachi.com/jobs?keyword=product"; do echo "== $u"; curl -sL -A "Mozilla/5.0" "$u" | grep -oE '(https?:)?//[^"'"'"' ]*(api|ajax|wp-json|search)[^"'"'"' ]*' | sort -u | head -15; done
