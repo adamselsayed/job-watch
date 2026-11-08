@@ -25,7 +25,7 @@
 #               optional  link: job URL template with {id}, for companies that front Oracle with their own domain
 #   Paradox: careers.<co>.com/jobs (cdn.sites.paradox.ai)  ->  board: <host>   (optional sources: substrings of the feed's company/brand)
 #   also_ats / also_board / also_<key>: one extra board whose jobs are shown under the same company
-#   TalentBrew/Radancy: <host>/<lang>/search-jobs  ->  board: <host>/<lang>   (e.g. www.careers.ford.com/en)
+#   TalentBrew/Radancy: <host>/<lang>/search-jobs  ->  board: <host>/<lang>   (e.g. www.careers.ford.com/en; just <host> if there is no language segment, e.g. jobs.intuit.com)
 #
 # After adding a company, run:  python3 scripts/fetch_jobs.py
 # (GitHub Actions also runs it automatically every morning.)
@@ -227,3 +227,8 @@
   ats: globallogic
   board: globallogic.com
   url: https://www.globallogic.com/career-search-page/
+
+- name: Intuit
+  ats: talentbrew
+  board: jobs.intuit.com
+  url: https://www.intuit.com/careers/#Open-Roles
