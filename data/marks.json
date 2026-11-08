@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-07T23:23:59.787Z",
+  "updated_at": "2026-11-08T00:47:29.355Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -655,18 +655,6 @@
       "title": "Product Manager, Healthcare Platforms & Integrations",
       "company": "Experian"
     },
-    "greenhouse:smartsheet:8220352": {
-      "status": "archived",
-      "at": "2026-11-03T21:27:10.303Z",
-      "title": "People Business Partner - Product & Tech",
-      "company": "Smartsheet"
-    },
-    "greenhouse:smartsheet:7684865": {
-      "status": "archived",
-      "at": "2026-11-03T21:27:18.271Z",
-      "title": "Senior Product Manager, Field Systems (Salesforce)",
-      "company": "Smartsheet"
-    },
     "greenhouse:komodohealth:8599153002": {
       "status": "archived",
       "at": "2026-11-03T22:07:33.948Z",
@@ -696,12 +684,6 @@
       "at": "2026-11-04T18:50:14.729Z",
       "title": "Senior Security Engineer, Product Security",
       "company": "Komodo Health"
-    },
-    "greenhouse:samsara:8315122": {
-      "status": "applied",
-      "at": "2026-11-05T19:20:46.615Z",
-      "title": "Lead Product Manager",
-      "company": "Samsara"
     },
     "jibe:careers.rivian.com:34304": {
       "status": "archived",
@@ -781,6 +763,12 @@
       "title": "Technical Program Management Intern - Product Management Product Development (Spring 2027 Co-Op)",
       "company": "Rivian"
     },
+    "greenhouse:samsara:8315122": {
+      "status": "applied",
+      "at": "2026-11-05T19:20:46.615Z",
+      "title": "Lead Product Manager",
+      "company": "Samsara"
+    },
     "smartrecruiters:Experian:744000159641657": {
       "status": "archived",
       "at": "2026-11-05T19:21:06.398Z",
@@ -792,72 +780,6 @@
       "at": "2026-11-05T21:09:29.847Z",
       "title": "BMW Product Specialist -  BMW Roseville $21/hr",
       "company": "AutoNation"
-    },
-    "talentbrew:www.careers.ford.com/en:102653138368": {
-      "status": "archived",
-      "at": "2026-11-06T20:09:59.604Z",
-      "title": "Manager, Investigations and New Product Security",
-      "company": "Ford"
-    },
-    "talentbrew:www.careers.ford.com/en:102876255248": {
-      "status": "archived",
-      "at": "2026-11-05T23:04:27.174Z",
-      "title": "Senior Product Manager, Health and Telemetry",
-      "company": "Ford"
-    },
-    "talentbrew:www.careers.ford.com/en:101714132832": {
-      "status": "archived",
-      "at": "2026-11-05T23:04:36.823Z",
-      "title": "Product Specialist - Internal Requirement Applications Development",
-      "company": "Ford"
-    },
-    "talentbrew:www.careers.ford.com/en:102524325840": {
-      "status": "archived",
-      "at": "2026-11-06T20:10:14.357Z",
-      "title": "Manager, Product Line Performance",
-      "company": "Ford"
-    },
-    "talentbrew:www.careers.ford.com/en:102524325280": {
-      "status": "archived",
-      "at": "2026-11-05T23:04:43.411Z",
-      "title": "Product Development Mechanical Joining SME",
-      "company": "Ford"
-    },
-    "talentbrew:www.careers.ford.com/en:100453516384": {
-      "status": "archived",
-      "at": "2026-11-05T23:05:04.123Z",
-      "title": "Analyst, Product Operations & Performance",
-      "company": "Ford"
-    },
-    "talentbrew:www.careers.ford.com/en:102261519472": {
-      "status": "archived",
-      "at": "2026-11-06T20:09:54.194Z",
-      "title": "Manager, Data Product Management",
-      "company": "Ford"
-    },
-    "talentbrew:www.careers.ford.com/en:101767553744": {
-      "status": "archived",
-      "at": "2026-11-05T23:05:12.840Z",
-      "title": "Group Product Manager, Non-Vehicle eCommerce",
-      "company": "Ford"
-    },
-    "talentbrew:www.careers.ford.com/en:101662067600": {
-      "status": "archived",
-      "at": "2026-11-06T20:11:22.190Z",
-      "title": "Product Manager , CRM Platform Specialist",
-      "company": "Ford"
-    },
-    "talentbrew:www.careers.ford.com/en:101677005312": {
-      "status": "archived",
-      "at": "2026-11-06T20:11:24.648Z",
-      "title": "Product Manager , CRM Lifecycle Communications & Automation",
-      "company": "Ford"
-    },
-    "talentbrew:www.careers.ford.com/en:101376351360": {
-      "status": "archived",
-      "at": "2026-11-06T20:10:26.846Z",
-      "title": "Staff Product Manager - 3D Print & Additive Mfg",
-      "company": "Ford"
     },
     "smartrecruiters:Experian:744000159947279": {
       "status": "archived",
@@ -1171,10 +1093,46 @@
       "title": "Senior Manager, Product Management - UEV Services & Upgrades",
       "company": "Ford"
     },
+    "talentbrew:www.careers.ford.com/en:102261519472": {
+      "status": "archived",
+      "at": "2026-11-06T20:09:54.194Z",
+      "title": "Manager, Data Product Management",
+      "company": "Ford"
+    },
+    "talentbrew:www.careers.ford.com/en:102653138368": {
+      "status": "archived",
+      "at": "2026-11-06T20:09:59.604Z",
+      "title": "Manager, Investigations and New Product Security",
+      "company": "Ford"
+    },
+    "talentbrew:www.careers.ford.com/en:102524325840": {
+      "status": "archived",
+      "at": "2026-11-06T20:10:14.357Z",
+      "title": "Manager, Product Line Performance",
+      "company": "Ford"
+    },
     "talentbrew:www.careers.ford.com/en:100963778688": {
       "status": "archived",
       "at": "2026-11-06T20:10:16.832Z",
       "title": "Manager, Product Performance",
+      "company": "Ford"
+    },
+    "talentbrew:www.careers.ford.com/en:101376351360": {
+      "status": "archived",
+      "at": "2026-11-06T20:10:26.846Z",
+      "title": "Staff Product Manager - 3D Print & Additive Mfg",
+      "company": "Ford"
+    },
+    "talentbrew:www.careers.ford.com/en:101662067600": {
+      "status": "archived",
+      "at": "2026-11-06T20:11:22.190Z",
+      "title": "Product Manager , CRM Platform Specialist",
+      "company": "Ford"
+    },
+    "talentbrew:www.careers.ford.com/en:101677005312": {
+      "status": "archived",
+      "at": "2026-11-06T20:11:24.648Z",
+      "title": "Product Manager , CRM Lifecycle Communications & Automation",
       "company": "Ford"
     },
     "talentbrew:www.careers.ford.com/en:102463064784": {
@@ -1200,6 +1158,48 @@
       "at": "2026-11-07T23:12:47.958Z",
       "title": "Product Support Specialist",
       "company": "Motive"
+    },
+    "greenhouse:smartsheet:8220352": {
+      "status": "archived",
+      "at": "2026-11-03T21:27:10.303Z",
+      "title": "People Business Partner - Product & Tech",
+      "company": "Smartsheet"
+    },
+    "greenhouse:smartsheet:7684865": {
+      "status": "archived",
+      "at": "2026-11-03T21:27:18.271Z",
+      "title": "Senior Product Manager, Field Systems (Salesforce)",
+      "company": "Smartsheet"
+    },
+    "talentbrew:www.careers.ford.com/en:102876255248": {
+      "status": "archived",
+      "at": "2026-11-05T23:04:27.174Z",
+      "title": "Senior Product Manager, Health and Telemetry",
+      "company": "Ford"
+    },
+    "talentbrew:www.careers.ford.com/en:101714132832": {
+      "status": "archived",
+      "at": "2026-11-05T23:04:36.823Z",
+      "title": "Product Specialist - Internal Requirement Applications Development",
+      "company": "Ford"
+    },
+    "talentbrew:www.careers.ford.com/en:102524325280": {
+      "status": "archived",
+      "at": "2026-11-05T23:04:43.411Z",
+      "title": "Product Development Mechanical Joining SME",
+      "company": "Ford"
+    },
+    "talentbrew:www.careers.ford.com/en:100453516384": {
+      "status": "archived",
+      "at": "2026-11-05T23:05:04.123Z",
+      "title": "Analyst, Product Operations & Performance",
+      "company": "Ford"
+    },
+    "talentbrew:www.careers.ford.com/en:101767553744": {
+      "status": "archived",
+      "at": "2026-11-05T23:05:12.840Z",
+      "title": "Group Product Manager, Non-Vehicle eCommerce",
+      "company": "Ford"
     }
   },
   "groups": {
@@ -1216,6 +1216,7 @@
       "Ford",
       "General Motors",
       "CWX",
+      "Hertz",
       "AMN Healthcare",
       "Smartsheet",
       "Hitachi"
@@ -1236,6 +1237,6 @@
       "Housecall Pro"
     ],
     "collapsed": [],
-    "at": "2026-11-07T23:13:18.305Z"
+    "at": "2026-11-08T00:47:27.848Z"
   }
 }
