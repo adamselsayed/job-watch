@@ -1,0 +1,23 @@
+name: Probe (temporary)
+on: workflow_dispatch
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          curl -sL -A "job-watch/1.0 (+github)" "https://www.globallogic.com/career-search-page/?keywords=product&locations=united-states" -o list.html -w 'list %{http_code} %{size_download}\n'
+          python3 - <<'PY'
+          import re
+          h = open("list.html", encoding="utf-8", errors="replace").read()
+          i = h.find("/careers/product-owner-irc")
+          if i < 0: i = h.find("-irc")
+          print("SNIP", re.sub(r"\s+", " ", h[max(0, i - 1500): i + 1500]))
+          print("PAGES", sorted(set(re.findall(r'career-search-page/page/(\d+)/', h))))
+          PY
+          curl -sL -A "job-watch/1.0 (+github)" "https://www.globallogic.com/careers/product-owner-irc303907/" -o job.html -w 'job %{http_code} %{size_download}\n'
+          python3 - <<'PY'
+          import re
+          h = open("job.html", encoding="utf-8", errors="replace").read()
+          for m in re.finditer(r'<script[^>]+ld\+json[^>]*>(.*?)</script>', h, re.S): print("LD", re.sub(r"\s+", " ", m.group(1))[:1500])
+          i = h.find("Job Description"); print("JD", re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", h[i:i + 1500])) if i >= 0 else "none")
+          PY
