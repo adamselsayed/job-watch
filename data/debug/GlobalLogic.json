@@ -1,0 +1,117 @@
+{
+ "first_page": {
+  "cards": 10,
+  "pages": [
+   "2",
+   "3"
+  ]
+ },
+ "pages_read": 4,
+ "scanned": 21,
+ "kept": [
+  {
+   "job_id": "IRC307796",
+   "req_id": "IRC307796",
+   "title": "Product owner",
+   "location": "Gothenburg, Sweden",
+   "location_detail": "",
+   "department": "",
+   "published_at": null,
+   "updated_at": null,
+   "url": "https://www.globallogic.com/careers/product-owner-irc307796/",
+   "salary": null,
+   "_meta_text": "workplace: On-site"
+  },
+  {
+   "job_id": "IRC307477",
+   "req_id": "IRC307477",
+   "title": "Product Owner – Adobe",
+   "location": "London, United Kingdom",
+   "location_detail": "",
+   "department": "",
+   "published_at": null,
+   "updated_at": null,
+   "url": "https://www.globallogic.com/careers/product-owner-adobe-irc307477/",
+   "salary": null,
+   "_meta_text": "workplace: Hybrid"
+  },
+  {
+   "job_id": "IRC302290",
+   "req_id": "IRC302290",
+   "title": "Product Area Lead Andriod Application",
+   "location": "Gothenburg, Sweden",
+   "location_detail": "",
+   "department": "",
+   "published_at": null,
+   "updated_at": null,
+   "url": "https://www.globallogic.com/careers/product-area-lead-andriod-application-irc302290/",
+   "salary": null,
+   "_meta_text": "workplace: On-site"
+  },
+  {
+   "job_id": "IRC302350",
+   "req_id": "IRC302350",
+   "title": "Forward-Deployed AI Product Architect",
+   "location": "Poland",
+   "location_detail": "",
+   "department": "",
+   "published_at": null,
+   "updated_at": null,
+   "url": "https://www.globallogic.com/careers/forward-deployed-ai-product-architect-irc302350/",
+   "salary": null,
+   "_meta_text": "workplace: Remote"
+  },
+  {
+   "job_id": "IRC302350",
+   "req_id": "IRC302350",
+   "title": "Forward-Deployed AI Product Architect",
+   "location": "Romania",
+   "location_detail": "",
+   "department": "",
+   "published_at": null,
+   "updated_at": null,
+   "url": "https://www.globallogic.com/careers/forward-deployed-ai-product-architect-irc302350-2/",
+   "salary": null,
+   "_meta_text": "workplace: Remote"
+  },
+  {
+   "job_id": "IRC302506",
+   "req_id": "IRC302506",
+   "title": "Strategic Product Manager – Workforce Management (WFM)",
+   "location": "India, Noida",
+   "location_detail": "",
+   "department": "",
+   "published_at": null,
+   "updated_at": null,
+   "url": "https://www.globallogic.com/careers/strategic-product-manager-workforce-management-wfm-irc302506/",
+   "salary": null,
+   "_meta_text": "workplace: Hybrid"
+  },
+  {
+   "job_id": "IRC301942",
+   "req_id": "IRC301942",
+   "title": "Python Architect (Data Product)",
+   "location": "Oradea, Romania",
+   "location_detail": "",
+   "department": "",
+   "published_at": null,
+   "updated_at": null,
+   "url": "https://www.globallogic.com/careers/python-architect-data-product-irc301942/",
+   "salary": null,
+   "_meta_text": "workplace: Hybrid"
+  },
+  {
+   "job_id": "IRC286354",
+   "req_id": "IRC286354",
+   "title": "Product Security Architect",
+   "location": "Bangalore, Chennai, Gurgaon, Hyderabad, India, Nagpur, Noida",
+   "location_detail": "",
+   "department": "",
+   "published_at": null,
+   "updated_at": null,
+   "url": "https://www.globallogic.com/careers/product-security-architect-irc286354/",
+   "salary": null,
+   "_meta_text": "workplace: Hybrid"
+  }
+ ]
+}
