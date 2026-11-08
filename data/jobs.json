@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T13:41:39+00:00",
+  "generated_at": "2026-11-08T00:10:35+00:00",
   "criteria": {
     "title_keywords": [
       "product"
@@ -125,7 +125,7 @@
       "scan": "all",
       "facets": "jobFamilyGroup=f02270ea97930199e3b74ff29e506c3d,f02270ea9793013aaaf32af29e505e3d,f02270ea979301ae45c015f29e50563d",
       "url": "https://www.hitachivantara.com/en-us/company/careers/job-search",
-      "fetched_at": "2026-11-07T13:41:39+00:00",
+      "fetched_at": "2026-11-08T00:10:35+00:00",
       "status": "ok",
       "error": null,
       "total_jobs": 19,
@@ -147,7 +147,7 @@
       "ats": "phenom",
       "board": "vgcareers.virgingalactic.com/global/en",
       "url": "https://vgcareers.virgingalactic.com/global/en/",
-      "fetched_at": "2026-11-07T13:41:39+00:00",
+      "fetched_at": "2026-11-08T00:10:35+00:00",
       "status": "ok",
       "error": null,
       "total_jobs": 75,
@@ -169,7 +169,7 @@
       "ats": "workday",
       "board": "amn.wd1/AMN_Careers",
       "url": "https://www.amncareers.com/careers/",
-      "fetched_at": "2026-11-07T13:41:39+00:00",
+      "fetched_at": "2026-11-08T00:10:35+00:00",
       "status": "ok",
       "error": null,
       "total_jobs": 1,
@@ -202,7 +202,7 @@
       "ats": "workday",
       "board": "nvidia.wd5/NVIDIAExternalCareerSite",
       "url": "https://jobs.nvidia.com/careers",
-      "fetched_at": "2026-11-07T13:41:39+00:00",
+      "fetched_at": "2026-11-08T00:10:35+00:00",
       "status": "ok",
       "error": null,
       "total_jobs": 66,
@@ -269,7 +269,7 @@
       "ats": "phenom",
       "board": "www.yelp.careers/us/en",
       "url": "https://www.yelp.careers/us/en/search-results",
-      "fetched_at": "2026-11-07T13:41:39+00:00",
+      "fetched_at": "2026-11-08T00:10:35+00:00",
       "status": "ok",
       "error": null,
       "total_jobs": 27,
@@ -291,7 +291,7 @@
       "ats": "workday",
       "board": "chghealthcare.wd1/External",
       "url": "https://chghealthcare.wd1.myworkdayjobs.com/External",
-      "fetched_at": "2026-11-07T13:41:39+00:00",
+      "fetched_at": "2026-11-08T00:10:35+00:00",
       "status": "ok",
       "error": null,
       "total_jobs": 3,
@@ -302,7 +302,7 @@
       "ats": "workday",
       "board": "jacksonhealthcare.wd1/careers-jacksonhealthcare",
       "url": "https://jacksonhealthcare.com/careers/search-apply/",
-      "fetched_at": "2026-11-07T13:41:39+00:00",
+      "fetched_at": "2026-11-08T00:10:35+00:00",
       "status": "ok",
       "error": null,
       "total_jobs": 1,
@@ -324,7 +324,7 @@
       "ats": "phenom",
       "board": "careers.autonation.com/us/en",
       "url": "https://careers.autonation.com/us/en/search-results",
-      "fetched_at": "2026-11-07T13:41:39+00:00",
+      "fetched_at": "2026-11-08T00:10:35+00:00",
       "status": "ok",
       "error": null,
       "total_jobs": 709,
@@ -335,7 +335,7 @@
       "ats": "bamboohr",
       "board": "cwx",
       "url": "https://cwx.ai/careers",
-      "fetched_at": "2026-11-07T13:41:39+00:00",
+      "fetched_at": "2026-11-08T00:10:35+00:00",
       "status": "ok",
       "error": null,
       "total_jobs": 2,
@@ -347,7 +347,7 @@
       "board": "careers.rivian.com",
       "exclude": "guide, advisor, specialist",
       "url": "https://careers.rivian.com/careers-home/jobs",
-      "fetched_at": "2026-11-07T13:41:39+00:00",
+      "fetched_at": "2026-11-08T00:10:35+00:00",
       "status": "ok",
       "error": null,
       "total_jobs": 519,
@@ -358,10 +358,10 @@
       "ats": "talentbrew",
       "board": "www.careers.ford.com/en",
       "url": "https://www.careers.ford.com/en/search-jobs",
-      "fetched_at": "2026-11-07T13:41:39+00:00",
+      "fetched_at": "2026-11-08T00:10:35+00:00",
       "status": "ok",
       "error": null,
-      "total_jobs": 679,
+      "total_jobs": 680,
       "matched": 26
     },
     {
@@ -391,7 +391,7 @@
       "ats": "workday",
       "board": "generalmotors.wd5/Careers_GM",
       "url": "https://search-careers.gm.com/en/jobs/",
-      "fetched_at": "2026-11-07T13:41:39+00:00",
+      "fetched_at": "2026-11-08T00:10:35+00:00",
       "status": "ok",
       "error": null,
       "total_jobs": 15,
@@ -526,7 +526,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2027147",
       "first_seen": "2026-11-06T19:38:39+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -625,7 +625,7 @@
       "company": "Ford",
       "key": "talentbrew:www.careers.ford.com/en:102876255248",
       "first_seen": "2026-11-05T20:48:07+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -646,7 +646,7 @@
       "company": "AutoNation",
       "key": "phenom:careers.autonation.com/us/en:AUMAIHUSJR2026151862EXTERNALENUS",
       "first_seen": "2026-11-05T20:59:02+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -672,7 +672,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2021069",
       "first_seen": "2026-11-06T06:59:11+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -698,7 +698,7 @@
       "company": "Ford",
       "key": "talentbrew:www.careers.ford.com/en:102920099568",
       "first_seen": "2026-11-06T06:59:11+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -766,7 +766,7 @@
       "company": "CHG Healthcare",
       "key": "workday:chghealthcare.wd1/External:JR104638",
       "first_seen": "2026-11-05T14:07:58+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -844,7 +844,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2028926",
       "first_seen": "2026-11-03T14:00:15+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -870,7 +870,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2019756",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -896,7 +896,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2019819",
       "first_seen": "2026-11-04T13:59:00+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -917,7 +917,7 @@
       "company": "CHG Healthcare",
       "key": "workday:chghealthcare.wd1/External:JR104622",
       "first_seen": "2026-11-04T13:59:00+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1016,7 +1016,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2029162",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1042,7 +1042,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2023411",
       "first_seen": "2026-11-03T14:00:15+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1068,7 +1068,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2017653",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1094,7 +1094,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2021525",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1120,7 +1120,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2025360",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1146,7 +1146,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2025501",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1172,7 +1172,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2027434",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1198,7 +1198,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2014812",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1224,7 +1224,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2020401",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1250,7 +1250,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2020823",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1276,7 +1276,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2026207",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1302,7 +1302,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2026487",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1328,7 +1328,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2027072",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1354,7 +1354,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2028509",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1380,7 +1380,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2020111",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1406,7 +1406,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2022366",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1432,7 +1432,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2024923",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1458,7 +1458,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2025321",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1484,7 +1484,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2026358",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1510,7 +1510,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2027080",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1536,7 +1536,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2027838",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1562,7 +1562,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2008001",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1588,7 +1588,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2011865",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1614,7 +1614,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2016992",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1640,7 +1640,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2018760",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1666,7 +1666,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2020922",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1692,7 +1692,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2021455",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1718,7 +1718,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2022724",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1744,7 +1744,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2022876",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1770,7 +1770,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2023620",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1796,7 +1796,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2023471",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1822,7 +1822,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2024199",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1848,7 +1848,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2024647",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1874,7 +1874,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2026204",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1900,7 +1900,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2026946",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1926,7 +1926,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2025794",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1952,7 +1952,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2027865",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1978,7 +1978,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2027361",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2004,7 +2004,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR1996264",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2030,7 +2030,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2001089",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2056,7 +2056,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2014827",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2082,7 +2082,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2013910",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2108,7 +2108,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2020110",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2134,7 +2134,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2022611",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2160,7 +2160,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2024902",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2186,7 +2186,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2025433",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2212,7 +2212,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2026141",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2238,7 +2238,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2027360",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2264,7 +2264,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2016350",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2290,7 +2290,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2016860",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2316,7 +2316,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2019242",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2342,7 +2342,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2023964",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2368,7 +2368,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2027355",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2394,7 +2394,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2019817",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2420,7 +2420,7 @@
       "company": "Ford",
       "key": "talentbrew:www.careers.ford.com/en:102653138368",
       "first_seen": "2026-11-05T20:48:07+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2504,7 +2504,7 @@
       "company": "General Motors",
       "key": "workday:generalmotors.wd5/Careers_GM:JR-202602596",
       "first_seen": "2026-11-06T22:46:00+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2525,7 +2525,7 @@
       "company": "General Motors",
       "key": "workday:generalmotors.wd5/Careers_GM:JR-202623273",
       "first_seen": "2026-11-06T22:46:00+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2577,7 +2577,7 @@
       "company": "Ford",
       "key": "talentbrew:www.careers.ford.com/en:101714132832",
       "first_seen": "2026-11-05T20:48:07+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2598,7 +2598,7 @@
       "company": "General Motors",
       "key": "workday:generalmotors.wd5/Careers_GM:JR-202623223",
       "first_seen": "2026-11-06T22:46:00+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2728,7 +2728,7 @@
       "company": "Ford",
       "key": "talentbrew:www.careers.ford.com/en:102529946176",
       "first_seen": "2026-11-05T20:48:07+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2754,7 +2754,7 @@
       "company": "Ford",
       "key": "talentbrew:www.careers.ford.com/en:102524325840",
       "first_seen": "2026-11-05T20:48:07+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2780,7 +2780,7 @@
       "company": "Ford",
       "key": "talentbrew:www.careers.ford.com/en:102524325280",
       "first_seen": "2026-11-05T20:48:07+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2832,7 +2832,7 @@
       "company": "Ford",
       "key": "talentbrew:www.careers.ford.com/en:102463064784",
       "first_seen": "2026-11-05T20:48:07+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2858,7 +2858,7 @@
       "company": "Ford",
       "key": "talentbrew:www.careers.ford.com/en:102486253632",
       "first_seen": "2026-11-05T20:48:07+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2884,7 +2884,7 @@
       "company": "Ford",
       "key": "talentbrew:www.careers.ford.com/en:100453516384",
       "first_seen": "2026-11-05T20:48:07+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3040,7 +3040,7 @@
       "company": "Ford",
       "key": "talentbrew:www.careers.ford.com/en:102314380208",
       "first_seen": "2026-11-05T20:48:07+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3066,7 +3066,7 @@
       "company": "Ford",
       "key": "talentbrew:www.careers.ford.com/en:102309708864",
       "first_seen": "2026-11-05T20:48:07+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3248,7 +3248,7 @@
       "company": "Ford",
       "key": "talentbrew:www.careers.ford.com/en:102261519472",
       "first_seen": "2026-11-05T20:48:07+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3274,7 +3274,7 @@
       "company": "Ford",
       "key": "talentbrew:www.careers.ford.com/en:102261520192",
       "first_seen": "2026-11-06T06:59:11+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3425,7 +3425,7 @@
       "company": "Hitachi",
       "key": "workday:hitachi.wd1/hitachi:R0141167",
       "first_seen": "2026-10-30T07:05:09+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3524,7 +3524,7 @@
       "company": "CHG Healthcare",
       "key": "workday:chghealthcare.wd1/External:JR104551",
       "first_seen": "2026-11-01T05:43:31+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3545,7 +3545,7 @@
       "company": "General Motors",
       "key": "workday:generalmotors.wd5/Careers_GM:JR-202622682",
       "first_seen": "2026-11-06T22:46:00+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3618,7 +3618,7 @@
       "company": "Ford",
       "key": "talentbrew:www.careers.ford.com/en:102040948656",
       "first_seen": "2026-11-05T20:48:07+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3821,7 +3821,7 @@
       "company": "General Motors",
       "key": "workday:generalmotors.wd5/Careers_GM:JR-202622283",
       "first_seen": "2026-11-06T22:46:00+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3842,7 +3842,7 @@
       "company": "General Motors",
       "key": "workday:generalmotors.wd5/Careers_GM:JR-202622202",
       "first_seen": "2026-11-06T22:46:00+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3863,7 +3863,7 @@
       "company": "General Motors",
       "key": "workday:generalmotors.wd5/Careers_GM:JR-202622205",
       "first_seen": "2026-11-06T22:46:00+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3884,7 +3884,7 @@
       "company": "Hitachi",
       "key": "workday:hitachi.wd1/hitachi:R0146458",
       "first_seen": "2026-10-30T07:05:09+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3910,7 +3910,7 @@
       "company": "Ford",
       "key": "talentbrew:www.careers.ford.com/en:101767553744",
       "first_seen": "2026-11-05T20:48:07+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4066,7 +4066,7 @@
       "company": "AutoNation",
       "key": "phenom:careers.autonation.com/us/en:AUMAIHUSJR2026148296EXTERNALENUS",
       "first_seen": "2026-11-02T20:08:55+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4160,7 +4160,7 @@
       "company": "Ford",
       "key": "talentbrew:www.careers.ford.com/en:101671475104",
       "first_seen": "2026-11-05T20:48:07+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4186,7 +4186,7 @@
       "company": "Ford",
       "key": "talentbrew:www.careers.ford.com/en:101677005312",
       "first_seen": "2026-11-05T20:48:07+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4212,7 +4212,7 @@
       "company": "Ford",
       "key": "talentbrew:www.careers.ford.com/en:101662067600",
       "first_seen": "2026-11-05T20:48:07+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4358,7 +4358,7 @@
       "company": "Rivian",
       "key": "jibe:careers.rivian.com:34111",
       "first_seen": "2026-11-04T00:50:31+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4410,7 +4410,7 @@
       "company": "Ford",
       "key": "talentbrew:www.careers.ford.com/en:101594058784",
       "first_seen": "2026-11-05T20:48:07+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4483,7 +4483,7 @@
       "company": "Virgin Galactic",
       "key": "phenom:vgcareers.virgingalactic.com/global/en:VGNVGEUS2255EXTERNALENGLOBAL",
       "first_seen": "2026-10-30T19:12:39+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4582,7 +4582,7 @@
       "company": "Rivian",
       "key": "jibe:careers.rivian.com:34004",
       "first_seen": "2026-11-04T00:50:31+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4660,7 +4660,7 @@
       "company": "Ford",
       "key": "talentbrew:www.careers.ford.com/en:101376351360",
       "first_seen": "2026-11-05T20:48:07+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4681,7 +4681,7 @@
       "company": "Virgin Galactic",
       "key": "phenom:vgcareers.virgingalactic.com/global/en:VGNVGEUS2247EXTERNALENGLOBAL",
       "first_seen": "2026-10-30T19:12:39+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4702,7 +4702,7 @@
       "company": "Virgin Galactic",
       "key": "phenom:vgcareers.virgingalactic.com/global/en:VGNVGEUS2213EXTERNALENGLOBAL",
       "first_seen": "2026-10-30T19:12:39+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4754,7 +4754,7 @@
       "company": "Rivian",
       "key": "jibe:careers.rivian.com:31384",
       "first_seen": "2026-11-04T00:50:31+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4780,7 +4780,7 @@
       "company": "AMN Healthcare",
       "key": "workday:amn.wd1/AMN_Careers:Req23778",
       "first_seen": "2026-11-01T04:24:29+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4801,7 +4801,7 @@
       "company": "Ford",
       "key": "talentbrew:www.careers.ford.com/en:101327857632",
       "first_seen": "2026-11-05T20:48:07+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4853,7 +4853,7 @@
       "company": "Ford",
       "key": "talentbrew:www.careers.ford.com/en:101290417456",
       "first_seen": "2026-11-05T20:48:07+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5009,7 +5009,7 @@
       "company": "Rivian",
       "key": "jibe:careers.rivian.com:33675",
       "first_seen": "2026-11-04T00:50:31+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5061,7 +5061,7 @@
       "company": "General Motors",
       "key": "workday:generalmotors.wd5/Careers_GM:JR-202620799",
       "first_seen": "2026-11-06T22:46:00+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5087,7 +5087,7 @@
       "company": "General Motors",
       "key": "workday:generalmotors.wd5/Careers_GM:JR-202620797",
       "first_seen": "2026-11-06T22:46:00+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5191,7 +5191,7 @@
       "company": "Ford",
       "key": "talentbrew:www.careers.ford.com/en:100963778688",
       "first_seen": "2026-11-05T20:48:07+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5217,7 +5217,7 @@
       "company": "Ford",
       "key": "talentbrew:www.careers.ford.com/en:98847422048",
       "first_seen": "2026-11-05T20:48:07+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5639,7 +5639,7 @@
       "company": "General Motors",
       "key": "workday:generalmotors.wd5/Careers_GM:JR-202610009",
       "first_seen": "2026-11-06T22:46:00+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5660,7 +5660,7 @@
       "company": "AutoNation",
       "key": "phenom:careers.autonation.com/us/en:AUMAIHUSJR2026148772EXTERNALENUS",
       "first_seen": "2026-11-02T20:08:55+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5728,7 +5728,7 @@
       "company": "Hitachi",
       "key": "workday:hitachi.wd1/hitachi:R0140695",
       "first_seen": "2026-10-30T07:05:09+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5749,7 +5749,7 @@
       "company": "Hitachi",
       "key": "workday:hitachi.wd1/hitachi:R0120995",
       "first_seen": "2026-10-30T07:05:09+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5822,7 +5822,7 @@
       "company": "General Motors",
       "key": "workday:generalmotors.wd5/Careers_GM:JR-202618664",
       "first_seen": "2026-11-06T22:46:00+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5864,7 +5864,7 @@
       "company": "AutoNation",
       "key": "phenom:careers.autonation.com/us/en:AUMAIHUSJR2026143646EXTERNALENUS",
       "first_seen": "2026-11-02T20:08:55+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5885,7 +5885,7 @@
       "company": "AutoNation",
       "key": "phenom:careers.autonation.com/us/en:AUMAIHUSJR2026143821EXTERNALENUS",
       "first_seen": "2026-11-02T20:08:55+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5906,7 +5906,7 @@
       "company": "Ford",
       "key": "talentbrew:www.careers.ford.com/en:99084975648",
       "first_seen": "2026-11-05T20:48:07+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5927,7 +5927,7 @@
       "company": "General Motors",
       "key": "workday:generalmotors.wd5/Careers_GM:JR-202617063",
       "first_seen": "2026-11-06T22:46:00+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5995,7 +5995,7 @@
       "company": "Jackson Healthcare",
       "key": "workday:jacksonhealthcare.wd1/careers-jacksonhealthcare:JR109106",
       "first_seen": "2026-11-01T05:44:35+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -6094,7 +6094,7 @@
       "company": "Yelp",
       "key": "phenom:www.yelp.careers/us/en:YELPUS14009EXTERNALENUS",
       "first_seen": "2026-11-01T05:32:04+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -6292,7 +6292,7 @@
       "company": "Hitachi",
       "key": "workday:hitachi.wd1/hitachi:R0105015",
       "first_seen": "2026-10-30T07:05:09+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -6464,7 +6464,7 @@
       "company": "Hitachi",
       "key": "workday:hitachi.wd1/hitachi:R0040237",
       "first_seen": "2026-10-30T07:05:09+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -6511,7 +6511,7 @@
       "company": "Hitachi",
       "key": "workday:hitachi.wd1/hitachi:R0008293",
       "first_seen": "2026-10-30T07:05:09+00:00",
-      "last_seen": "2026-11-07T13:41:39+00:00",
+      "last_seen": "2026-11-08T00:10:35+00:00",
       "status": "open",
       "closed_at": null
     },
