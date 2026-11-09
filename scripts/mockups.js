@@ -1,18 +1,20 @@
-// Renders the dashboard with each theme in themes/ and saves screenshots to shots/.
+// Field Notes theme + three dashboard-style top sections, screenshotted with live data.
 const { chromium } = require('playwright');
 const fs = require('fs');
 (async () => {
   const b = await chromium.launch();
-  fs.mkdirSync('shots', { recursive: true });
-  const themes = [null, ...fs.readdirSync('themes').filter(f => f.endsWith('.css')).sort()];
-  for (const t of themes) {
-    for (const [vw, vh, tag] of [[1440, 1000, 'desktop'], [390, 844, 'phone']]) {
+  fs.rmSync('shots', { recursive: true, force: true }); fs.mkdirSync('shots', { recursive: true });
+  const css = fs.readFileSync('themes/field-notes.css', 'utf8') + fs.readFileSync('mock/top.css', 'utf8');
+  const js = fs.readFileSync('mock/top.js', 'utf8');
+  for (const v of ['a', 'b', 'c']) {
+    for (const [vw, vh, tag, clip] of [[1440, 1000, 'desktop', 640], [390, 844, 'phone', 0]]) {
       const pg = await b.newPage({ viewport: { width: vw, height: vh }, deviceScaleFactor: 2, colorScheme: 'light' });
       await pg.goto('http://localhost:8000/index.html', { waitUntil: 'networkidle' });
-      if (t) await pg.addStyleTag({ content: fs.readFileSync('themes/' + t, 'utf8') });
-      await pg.evaluate(() => document.fonts.ready);
-      await pg.waitForTimeout(1200);
-      await pg.screenshot({ path: `shots/${t ? t.replace('.css', '') : '0-current'}-${tag}.png` });
+      await pg.waitForFunction(() => document.querySelector('#tNew') && document.querySelector('#tNew').textContent !== '–');
+      await pg.addStyleTag({ content: css }); await pg.addScriptTag({ content: js });
+      await pg.evaluate(v => window.__buildTop(v), v);
+      await pg.evaluate(() => document.fonts.ready); await pg.waitForTimeout(1000);
+      await pg.screenshot({ path: `shots/top-${v}-${tag}.png`, ...(clip ? { clip: { x: 0, y: 0, width: vw, height: clip } } : { fullPage: false }) });
       await pg.close();
     }
   }
