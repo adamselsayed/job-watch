@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T20:01:43.703Z",
+  "updated_at": "2026-11-09T20:01:45.730Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1650,6 +1650,7 @@
     ],
     "tertiary": [
       "Waabi",
+      "LawnStarter",
       "Virgin Galactic",
       "Cognition",
       "General Motors",
@@ -1689,12 +1690,11 @@
       "Komodo Health",
       "Thumbtack",
       "Life360",
-      "Intuit",
-      "LawnStarter"
+      "Intuit"
     ],
     "collapsed": [
       "out"
     ],
-    "at": "2026-11-09T20:01:42.194Z"
+    "at": "2026-11-09T20:01:44.223Z"
   }
 }
