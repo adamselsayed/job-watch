@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T04:25:20.721Z",
+  "updated_at": "2026-11-09T04:25:23.881Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -512,8 +512,8 @@
       "company": "ServiceNow"
     },
     "smartrecruiters:ServiceNow:744000156543661": {
-      "status": "open",
-      "at": "2026-11-02T19:43:05.993Z",
+      "status": "archived",
+      "at": "2026-11-09T04:25:21.158Z",
       "title": "Senior Staff Inbound Product Manager",
       "company": "ServiceNow"
     },
@@ -572,8 +572,8 @@
       "company": "ServiceNow"
     },
     "smartrecruiters:ServiceNow:744000150714661": {
-      "status": "open",
-      "at": "2026-11-02T19:43:05.993Z",
+      "status": "archived",
+      "at": "2026-11-09T04:25:22.366Z",
       "title": "Senior Inbound Product Manager, CRM Voice AI ",
       "company": "ServiceNow"
     },
