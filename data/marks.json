@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T05:59:22.748Z",
+  "updated_at": "2026-11-09T05:59:45.413Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1593,6 +1593,7 @@
       "Housecall Pro"
     ],
     "general": [
+      "FieldAI",
       "Toast",
       "Curri",
       "Komodo Health",
@@ -1600,13 +1601,12 @@
       "Life360",
       "NVIDIA",
       "AutoNation",
-      "FieldAI",
       "Fleetio",
       "Intuit"
     ],
     "collapsed": [
       "out"
     ],
-    "at": "2026-11-09T05:59:21.240Z"
+    "at": "2026-11-09T05:59:43.904Z"
   }
 }
