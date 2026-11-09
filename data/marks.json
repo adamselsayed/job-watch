@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T04:55:28.126Z",
+  "updated_at": "2026-11-09T04:56:42.567Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1439,6 +1439,12 @@
       "status": "archived",
       "at": "2026-11-09T04:55:26.612Z",
       "title": "SoC Product Architect, Memory Ecosystem",
+      "company": "NVIDIA"
+    },
+    "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2024199": {
+      "status": "archived",
+      "at": "2026-11-09T04:56:41.054Z",
+      "title": "Senior Product Manager, Kubernetes Accelerated Runtime",
       "company": "NVIDIA"
     }
   },
