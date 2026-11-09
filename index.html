@@ -656,7 +656,7 @@
     if (/\b(on-?site|in[- ]office|in the office)\b/.test(b) && /\b(days? (a|per) week|5 days)\b/.test(b)) return ['onsite', 'low'];
     return ['unknown', 'none'];
   }
-  const SAL_RE = /\$\s?(\d{2,3}(?:,\d{3})+|\d{2,3}(?:\.\d)?\s?[kK])\s*(?:-|–|—|to)\s*\$?\s?(\d{2,3}(?:,\d{3})+|\d{2,3}(?:\.\d)?\s?[kK])/g;
+  const SAL_RE = /\$\s?(\d{2,3}(?:,\d{3})+|\d{2,3}(?:\.\d)?\s?[kK])(?:\.\d{2})?\s*(?:USD\s*)?(?:-|–|—|to)\s*\$?\s?(\d{2,3}(?:,\d{3})+|\d{2,3}(?:\.\d)?\s?[kK])/g;
   const money = s => { s = s.replace(/[,\s]/g, ''); return /[kK]$/.test(s) ? Math.round(parseFloat(s) * 1000) : parseInt(s, 10); };
   const SAL_USD_RE = /(?:USD\s*\$?\s*)?(\d{2,3},\d{3})\s*(?:USD)?\s*(?:-|–|—|to)\s*\$?\s*(\d{2,3},\d{3})\s*USD\b/g;
   function salaryFromText(t) {
