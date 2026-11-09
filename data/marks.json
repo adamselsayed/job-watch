@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T04:43:19.179Z",
+  "updated_at": "2026-11-09T04:43:25.981Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1331,6 +1331,12 @@
       "status": "archived",
       "at": "2026-11-09T04:43:17.662Z",
       "title": "Staff Product Manager, Mobile Growth, TurboTax",
+      "company": "Intuit"
+    },
+    "talentbrew:jobs.intuit.com:102948086896": {
+      "status": "archived",
+      "at": "2026-11-09T04:43:24.463Z",
+      "title": "Senior Staff Product Manager, Agentic Growth, TurboTax",
       "company": "Intuit"
     }
   },
