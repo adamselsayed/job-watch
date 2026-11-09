@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T05:26:39.515Z",
+  "updated_at": "2026-11-09T05:58:09.492Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1512,6 +1512,12 @@
       "at": "2026-11-09T04:59:13.071Z",
       "title": "Sr. Manager, Product & Merchandising",
       "company": "Virgin Galactic"
+    },
+    "workday:hitachi.wd1/hitachi:R0120995": {
+      "status": "archived",
+      "at": "2026-11-09T05:58:07.980Z",
+      "title": "Product Manager, North America - Remote",
+      "company": "Hitachi"
     }
   },
   "groups": {
