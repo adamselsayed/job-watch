@@ -1,0 +1,314 @@
+{
+ "source": "v3",
+ "count": 16,
+ "first_items": [
+  {
+   "id": 6255138,
+   "shortcode": "62C5668045",
+   "title": "Senior Recruiter (Remote)",
+   "remote": true,
+   "location": {
+    "city": "cebu",
+    "country": "Philippines",
+    "countryCode": "PH",
+    "region": null
+   },
+   "locations": [
+    {
+     "city": "cebu",
+     "country": "Philippines",
+     "countryCode": "PH",
+     "hidden": false,
+     "region": null
+    },
+    {
+     "city": "",
+     "country": "Philippines",
+     "countryCode": "PH",
+     "hidden": false,
+     "region": "Metro Manila"
+    },
+    {
+     "city": "",
+     "country": "Philippines",
+     "countryCode": "PH",
+     "hidden": false,
+     "region": null
+    },
+    {
+     "city": "",
+     "country": "Philippines",
+     "countryCode": "PH",
+     "hidden": false,
+     "region": "Davao Region"
+    },
+    {
+     "city": "Iloilo",
+     "country": "Philippines",
+     "countryCode": "PH",
+     "hidden": false,
+     "region": "Iloilo"
+    },
+    {
+     "city": "Angeles City",
+     "country": "Philippines",
+     "countryCode": "PH",
+     "hidden": false,
+     "region": "Central Luzon (Region III)"
+    }
+   ],
+   "state": "published",
+   "isInternal": false,
+   "code": null,
+   "published": "2026-11-09T00:00:00.000Z",
+   "type": "full",
+   "language": "en",
+   "department": [
+    "Human Resources"
+   ],
+   "accountUid": "09bbd214-f8c8-4bad-b808-2f408e560f04",
+   "approvalStatus": "approved",
+   "workplace": "remote"
+  },
+  {
+   "id": 6240135,
+   "shortcode": "C92FFCE79B",
+   "title": "Lead Product Data Analyst",
+   "remote": true,
+   "location": {
+    "city": "",
+    "country": "Mexico",
+    "countryCode": "MX",
+    "region": null
+   },
+   "locations": [
+    {
+     "city": "",
+     "country": "Mexico",
+     "countryCode": "MX",
+     "hidden": false,
+     "region": null
+    },
+    {
+     "city": "",
+     "country": "Peru",
+     "countryCode": "PE",
+     "hidden": false,
+     "region": null
+    },
+    {
+     "city": "",
+     "country": "Colombia",
+     "countryCode": "CO",
+     "hidden": false,
+     "region": null
+    },
+    {
+     "city": "",
+     "country": "Uruguay",
+     "countryCode": "UY",
+     "hidden": false,
+     "region": null
+    },
+    {
+     "city": "Mexico City",
+     "country": "Mexico",
+     "countryCode": "MX",
+     "hidden": false,
+     "region": "Mexico City"
+    },
+    {
+     "city": "Bogotá",
+     "country": "Colombia",
+     "countryCode": "CO",
+     "hidden": false,
+     "region": "Bogota"
+    }
+   ],
+   "state": "published",
+   "isInternal": false,
+   "code": "",
+   "published": "2026-11-02T00:00:00.000Z",
+   "type": "full",
+   "language": "en",
+   "department": [
+    "Analytics"
+   ],
+   "accountUid": "09bbd214-f8c8-4bad-b808-2f408e560f04",
+   "approvalStatus": "approved",
+   "workplace": "remote"
+  }
+ ],
+ "first_detail": {
+  "id": 6240135,
+  "shortcode": "C92FFCE79B",
+  "title": "Lead Product Data Analyst",
+  "remote": true,
+  "location": {
+   "city": "",
+   "country": "Mexico",
+   "countryCode": "MX",
+   "region": null
+  },
+  "locations": [
+   {
+    "city": "",
+    "country": "Mexico",
+    "countryCode": "MX",
+    "hidden": false,
+    "region": null
+   },
+   {
+    "city": "",
+    "country": "Peru",
+    "countryCode": "PE",
+    "hidden": false,
+    "region": null
+   },
+   {
+    "city": "",
+    "country": "Colombia",
+    "countryCode": "CO",
+    "hidden": false,
+    "region": null
+   },
+   {
+    "city": "",
+    "country": "Uruguay",
+    "countryCode": "UY",
+    "hidden": false,
+    "region": null
+   },
+   {
+    "city": "Mexico City",
+    "country": "Mexico",
+    "countryCode": "MX",
+    "hidden": false,
+    "region": "Mexico City"
+   },
+   {
+    "city": "Bogotá",
+    "country": "Colombia",
+    "countryCode": "CO",
+    "hidden": false,
+    "region": "Bogota"
+   }
+  ],
+  "state": "published",
+  "isInternal": false,
+  "code": "",
+  "published": "2026-11-02T00:00:00.000Z",
+  "type": "full",
+  "language": "en",
+  "department": [
+   "Analytics"
+  ],
+  "accountUid": "09bbd214-f8c8-4bad-b808-2f408e560f04",
+  "approvalStatus": "approved",
+  "workplace": "remote",
+  "salary_from": 75000,
+  "salary_to": 100000,
+  "salary_currency_iso_code": "USD",
+  "salary_frequency": "year",
+  "description": "<p><strong>About LawnStarter</strong></p><p>LawnStarter is the nation's leading on-demand marketplace for lawn care and outdoor services, with over $150M in annual bookings and two consecutive years of profitability. We're expanding beyond lawn care to become the one-stop shop for all home services,",
+  "requirements": "<p><strong>The Role</strong></p><p>As a Lead Product Data Analyst, you'll directly impact our results through insights and reports. You'll work closely with product managers, researchers, and other business stakeholders, helping with prioritization, assessments, and business recommendations. Alongsi",
+  "benefits": "<ul><ul><li><strong>Base salary:</strong>&nbsp;$75,000–$100,000 USD annually.</li><li><strong>AI tooling provided:</strong>&nbsp;The Claude routines already running pieces of our experimentation process are yours to extend, not a side project you have to justify.</li><li><strong>Fully remote:</stron"
+ },
+ "kept_rows": [
+  {
+   "job_id": "C92FFCE79B",
+   "req_id": null,
+   "title": "Lead Product Data Analyst",
+   "location": "Remote - Mexico",
+   "location_detail": "Peru; Colombia; Uruguay; Mexico City, Mexico City, Mexico; Bogotá, Bogota, Colombia",
+   "department": "Analytics",
+   "published_at": "2026-11-02T00:00:00.000Z",
+   "updated_at": null,
+   "url": "https://apply.workable.com/lawnstarter/j/C92FFCE79B/",
+   "salary": {
+    "min": 75000,
+    "max": 100000,
+    "currency": "USD",
+    "source": "description"
+   },
+   "_meta_text": "workplacetype: remote type: full remote",
+   "_content_head": " About LawnStarter \n LawnStarter is the nation's leading on-demand marketplace for lawn care and outdoor services, with over $150M in annual bookings and two consecutive years of profitability. We're expanding beyond lawn care to become the one-stop shop for all home services, and we're investing in"
+  },
+  {
+   "job_id": "E2F6F93F45",
+   "req_id": null,
+   "title": "Lead Product Data Analyst",
+   "location": "Remote - Brazil",
+   "location_detail": "São Paulo, State of São Paulo, Brazil; Belo Horizonte, State of Minas Gerais, Brazil; Rio de Janeiro, Rio de Janeiro, Brazil; Curitiba, Paraná, Brazil; Florianópolis, Santa Catarina, Brazil",
+   "department": "Analytics",
+   "published_at": "2026-11-02T00:00:00.000Z",
+   "updated_at": null,
+   "url": "https://apply.workable.com/lawnstarter/j/E2F6F93F45/",
+   "salary": {
+    "min": 75000,
+    "max": 100000,
+    "currency": "USD",
+    "source": "description"
+   },
+   "_meta_text": "workplacetype: remote type: full remote",
+   "_content_head": " About LawnStarter \n LawnStarter is the nation's leading on-demand marketplace for lawn care and outdoor services, with over $150M in annual bookings and two consecutive years of profitability. We're expanding beyond lawn care to become the one-stop shop for all home services, and we're investing in"
+  },
+  {
+   "job_id": "3E8B7F71A9",
+   "req_id": null,
+   "title": "Lead Product Manager, AI Agents",
+   "location": "Remote - United States",
+   "location_detail": "San Francisco, California, United States; New York, New York, United States; Seattle, Washington, United States; Austin, Texas, United States; Chicago, Illinois, United States",
+   "department": "Product",
+   "published_at": "2026-10-30T00:00:00.000Z",
+   "updated_at": null,
+   "url": "https://apply.workable.com/lawnstarter/j/3E8B7F71A9/",
+   "salary": {
+    "min": 170000,
+    "max": 225000,
+    "currency": "USD",
+    "source": "description"
+   },
+   "_meta_text": "workplacetype: remote type: full remote",
+   "_content_head": " About LawnStarter \n LawnStarter is the nation's leading on-demand marketplace for lawn care and outdoor services, with over $750M in bookings. We're expanding beyond lawn care to become the one-stop shop for home services: three brands (LawnStarter, Lawn Love, Home Gnome), one shared platform.\n Abo"
+  },
+  {
+   "job_id": "94D7C0414D",
+   "req_id": null,
+   "title": "Lead Product Manager, New Customer Experience",
+   "location": "Remote - United States",
+   "location_detail": "San Francisco, California, United States; New York, New York, United States; Seattle, Washington, United States; Austin, Texas, United States; Chicago, Illinois, United States",
+   "department": "Product",
+   "published_at": "2026-10-28T00:00:00.000Z",
+   "updated_at": null,
+   "url": "https://apply.workable.com/lawnstarter/j/94D7C0414D/",
+   "salary": {
+    "min": 170000,
+    "max": 210000,
+    "currency": "USD",
+    "source": "description"
+   },
+   "_meta_text": "workplacetype: remote type: full remote",
+   "_content_head": " About LawnStarter \n LawnStarter is the nation's leading on-demand marketplace for lawn care and outdoor services, with over $750M in bookings. We're expanding beyond lawn care to become the one-stop shop for home services: three brands (LawnStarter, Lawn Love, Home Gnome), one shared platform.\n Abo"
+  },
+  {
+   "job_id": "5E91AF24D5",
+   "req_id": null,
+   "title": "Lead Product Manager, Consumer Experience",
+   "location": "Remote - United States",
+   "location_detail": "San Francisco, California, United States; New York, New York, United States; Seattle, Washington, United States; Austin, Texas, United States; Chicago, Illinois, United States",
+   "department": "Product",
+   "published_at": "2026-10-27T00:00:00.000Z",
+   "updated_at": null,
+   "url": "https://apply.workable.com/lawnstarter/j/5E91AF24D5/",
+   "salary": {
+    "min": 180000,
+    "max": 210000,
+    "currency": "USD",
+    "source": "description"
+   },
+   "_meta_text": "workplacetype: remote type: full remote",
+   "_content_head": " About LawnStarter \n LawnStarter is the nation's leading on-demand marketplace for lawn care and outdoor services, with over $750M in bookings. We're expanding beyond lawn care to become the one-stop shop for home services: three brands (LawnStarter, Lawn Love, Home Gnome), one shared platform.\n Abo"
+  }
+ ]
+}

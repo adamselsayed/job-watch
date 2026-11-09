@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T19:57:40+00:00",
+  "generated_at": "2026-11-09T19:58:45+00:00",
   "criteria": {
     "title_keywords": [
       "product"
@@ -486,6 +486,17 @@
       "error": null,
       "total_jobs": 87,
       "matched": 2
+    },
+    {
+      "name": "LawnStarter",
+      "ats": "workable",
+      "board": "lawnstarter",
+      "url": "https://apply.workable.com/lawnstarter/",
+      "fetched_at": "2026-11-09T19:58:45+00:00",
+      "status": "ok",
+      "error": null,
+      "total_jobs": 16,
+      "matched": 3
     }
   ],
   "jobs": [
@@ -2785,6 +2796,32 @@
       "closed_at": null
     },
     {
+      "job_id": "3E8B7F71A9",
+      "req_id": null,
+      "title": "Lead Product Manager, AI Agents",
+      "location": "Remote - United States",
+      "location_detail": "San Francisco, California, United States; New York, New York, United States; Seattle, Washington, United States; Austin, Texas, United States; Chicago, Illinois, United States",
+      "department": "Product",
+      "published_at": "2026-10-30T00:00:00.000Z",
+      "updated_at": null,
+      "url": "https://apply.workable.com/lawnstarter/j/3E8B7F71A9/",
+      "salary": {
+        "min": 170000,
+        "max": 225000,
+        "currency": "USD",
+        "source": "description"
+      },
+      "us": true,
+      "remote": "remote",
+      "remote_confidence": "high",
+      "company": "LawnStarter",
+      "key": "workable:lawnstarter:3E8B7F71A9",
+      "first_seen": "2026-11-09T19:58:45+00:00",
+      "last_seen": "2026-11-09T19:58:45+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
       "job_id": "744000158615099",
       "req_id": "JB0075141",
       "title": "Senior Staff Inbound Product Manager - AI Search",
@@ -2917,6 +2954,32 @@
       "key": "workday:generalmotors.wd5/Careers_GM:JR-202623223",
       "first_seen": "2026-11-06T22:46:00+00:00",
       "last_seen": "2026-11-09T18:30:25+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "94D7C0414D",
+      "req_id": null,
+      "title": "Lead Product Manager, New Customer Experience",
+      "location": "Remote - United States",
+      "location_detail": "San Francisco, California, United States; New York, New York, United States; Seattle, Washington, United States; Austin, Texas, United States; Chicago, Illinois, United States",
+      "department": "Product",
+      "published_at": "2026-10-28T00:00:00.000Z",
+      "updated_at": null,
+      "url": "https://apply.workable.com/lawnstarter/j/94D7C0414D/",
+      "salary": {
+        "min": 170000,
+        "max": 210000,
+        "currency": "USD",
+        "source": "description"
+      },
+      "us": true,
+      "remote": "remote",
+      "remote_confidence": "high",
+      "company": "LawnStarter",
+      "key": "workable:lawnstarter:94D7C0414D",
+      "first_seen": "2026-11-09T19:58:45+00:00",
+      "last_seen": "2026-11-09T19:58:45+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3172,6 +3235,32 @@
       "key": "talentbrew:jobs.intuit.com:102516305200",
       "first_seen": "2026-11-08T20:03:30+00:00",
       "last_seen": "2026-11-09T18:30:25+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "5E91AF24D5",
+      "req_id": null,
+      "title": "Lead Product Manager, Consumer Experience",
+      "location": "Remote - United States",
+      "location_detail": "San Francisco, California, United States; New York, New York, United States; Seattle, Washington, United States; Austin, Texas, United States; Chicago, Illinois, United States",
+      "department": "Product",
+      "published_at": "2026-10-27T00:00:00.000Z",
+      "updated_at": null,
+      "url": "https://apply.workable.com/lawnstarter/j/5E91AF24D5/",
+      "salary": {
+        "min": 180000,
+        "max": 210000,
+        "currency": "USD",
+        "source": "description"
+      },
+      "us": true,
+      "remote": "remote",
+      "remote_confidence": "high",
+      "company": "LawnStarter",
+      "key": "workable:lawnstarter:5E91AF24D5",
+      "first_seen": "2026-11-09T19:58:45+00:00",
+      "last_seen": "2026-11-09T19:58:45+00:00",
       "status": "open",
       "closed_at": null
     },
