@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T06:15:46.195Z",
+  "updated_at": "2026-11-09T06:16:37.673Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1571,6 +1571,12 @@
       "status": "archived",
       "at": "2026-11-09T06:15:43.737Z",
       "title": "Staff New Product Operation Manager",
+      "company": "Rivian & VW Group Technologies"
+    },
+    "ashby:rivianvw.tech:d452c804-4a81-4482-b977-bf535cc48c35": {
+      "status": "archived",
+      "at": "2026-11-09T06:16:36.162Z",
+      "title": "Staff Product Manager - Entertainment",
       "company": "Rivian & VW Group Technologies"
     }
   },
