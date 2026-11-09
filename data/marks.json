@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T06:01:42.919Z",
+  "updated_at": "2026-11-09T06:01:56.737Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1604,9 +1604,7 @@
       "Ford",
       "Intuit"
     ],
-    "collapsed": [
-      "out"
-    ],
-    "at": "2026-11-09T06:01:41.411Z"
+    "collapsed": [],
+    "at": "2026-11-09T06:01:55.228Z"
   }
 }
