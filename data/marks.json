@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T05:59:50.954Z",
+  "updated_at": "2026-11-09T05:59:58.192Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1600,13 +1600,13 @@
       "Komodo Health",
       "Thumbtack",
       "Life360",
-      "NVIDIA",
       "AutoNation",
-      "Intuit"
+      "Intuit",
+      "NVIDIA"
     ],
     "collapsed": [
       "out"
     ],
-    "at": "2026-11-09T05:59:49.445Z"
+    "at": "2026-11-09T05:59:56.686Z"
   }
 }
