@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T04:58:48.200Z",
+  "updated_at": "2026-11-09T04:58:51.724Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1510,7 +1510,6 @@
       "Ford",
       "General Motors",
       "CWX",
-      "Hertz",
       "Oro Mobility",
       "AMN Healthcare",
       "Smartsheet",
@@ -1518,6 +1517,7 @@
     ],
     "out": [
       "EVgo",
+      "Hertz",
       "Rivian",
       "DoorDash",
       "Angi",
@@ -1532,6 +1532,6 @@
       "Housecall Pro"
     ],
     "collapsed": [],
-    "at": "2026-11-09T04:58:46.688Z"
+    "at": "2026-11-09T04:58:50.214Z"
   }
 }
