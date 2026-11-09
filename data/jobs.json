@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T18:30:25+00:00",
+  "generated_at": "2026-11-09T19:57:40+00:00",
   "criteria": {
     "title_keywords": [
       "product"
@@ -475,6 +475,17 @@
       "error": null,
       "total_jobs": 195,
       "matched": 9
+    },
+    {
+      "name": "Waabi",
+      "ats": "lever",
+      "board": "waabi",
+      "url": "https://jobs.lever.co/waabi",
+      "fetched_at": "2026-11-09T19:57:40+00:00",
+      "status": "ok",
+      "error": null,
+      "total_jobs": 87,
+      "matched": 2
     }
   ],
   "jobs": [
@@ -4571,6 +4582,27 @@
       "closed_at": null
     },
     {
+      "job_id": "74ff3e1c-821c-4c31-aada-54f4170b5b2e",
+      "req_id": null,
+      "title": "Lead Product Manager, Hardware Platform",
+      "location": "San Francisco, CA",
+      "location_detail": "",
+      "department": "Product & Technical Program Mgmt / Product",
+      "published_at": "2026-10-08T20:55:22.056000+00:00",
+      "updated_at": null,
+      "url": "https://jobs.lever.co/waabi/74ff3e1c-821c-4c31-aada-54f4170b5b2e",
+      "salary": null,
+      "us": true,
+      "remote": "hybrid",
+      "remote_confidence": "medium",
+      "company": "Waabi",
+      "key": "lever:waabi:74ff3e1c-821c-4c31-aada-54f4170b5b2e",
+      "first_seen": "2026-11-09T19:57:40+00:00",
+      "last_seen": "2026-11-09T19:57:40+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
       "job_id": "3743990015994966",
       "req_id": "P13270",
       "title": "Senior Product Manager - CareBenefits ",
@@ -7891,6 +7923,27 @@
       "key": "ashby:cognition:60ac2393-2727-4c88-953b-013e7bb418f8",
       "first_seen": "2026-11-01T04:08:28+00:00",
       "last_seen": "2026-11-09T14:08:43+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "7b8669d5-c11e-49a3-8cfd-492484999d6d",
+      "req_id": null,
+      "title": "Lead Product Manager, Autonomy Capabilities",
+      "location": "Pittsburgh, PA",
+      "location_detail": "",
+      "department": "Product & Technical Program Mgmt / Product",
+      "published_at": "2026-04-08T17:03:42.483000+00:00",
+      "updated_at": null,
+      "url": "https://jobs.lever.co/waabi/7b8669d5-c11e-49a3-8cfd-492484999d6d",
+      "salary": null,
+      "us": true,
+      "remote": "hybrid",
+      "remote_confidence": "medium",
+      "company": "Waabi",
+      "key": "lever:waabi:7b8669d5-c11e-49a3-8cfd-492484999d6d",
+      "first_seen": "2026-11-09T19:57:40+00:00",
+      "last_seen": "2026-11-09T19:57:40+00:00",
       "status": "open",
       "closed_at": null
     },

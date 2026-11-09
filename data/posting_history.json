@@ -756,6 +756,16 @@
 "first_seen": "2026-11-06",
 "posted": "2026-08-04"
 },
+"lever:waabi:74ff3e1c-821c-4c31-aada-54f4170b5b2e": {
+"company": "Waabi",
+"first_seen": "2026-11-09",
+"posted": "2026-10-08"
+},
+"lever:waabi:7b8669d5-c11e-49a3-8cfd-492484999d6d": {
+"company": "Waabi",
+"first_seen": "2026-11-09",
+"posted": "2026-04-08"
+},
 "phenom:careers.autonation.com/us/en:AUMAIHUSJR2026143646EXTERNALENUS": {
 "company": "AutoNation",
 "first_seen": "2026-11-02",
@@ -2062,5 +2072,5 @@
 "posted": "2026-11-02"
 }
 },
-"updated_at": "2026-11-09T18:35:41+00:00"
+"updated_at": "2026-11-09T19:57:42+00:00"
 }
