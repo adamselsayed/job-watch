@@ -201,8 +201,11 @@
   .b-src { font-weight: 500; color: var(--faint); background: transparent; border-color: var(--border); }
 
   .note { font-size: 13px; color: var(--muted); margin-top: 20px; }
-  #sync.on { border-color: var(--new); color: var(--new); }
+  #sync.on { background: var(--accent); border-color: var(--accent); color: var(--bg); }
   #sync.err { border-color: var(--err); color: var(--err); }
+  header button.icon.busy svg { animation: spin 1s linear infinite; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  header button.icon[disabled] { opacity: .7; }
   dialog { border: 1px solid var(--border); border-radius: 12px; background: var(--surface); color: var(--text); max-width: 560px; padding: 20px 22px; }
   dialog::backdrop { background: rgba(0,0,0,.35); }
   dialog h3 { margin: 0 0 8px; font-size: 17px; }
@@ -364,8 +367,8 @@
       </ul>
     </span>
     <button id="themeBtn" class="icon" aria-label="Switch to dark mode" title="Switch to dark mode"></button>
-    <button id="sync" title="Sync Applied/Archive to the GitHub repo">Sync: off</button>
-    <button id="pullAll">Pull all now</button>
+    <button id="sync" class="icon" aria-label="Sync: off" title="Sync: off"></button>
+    <button id="pullAll" class="icon" aria-label="Pull all now" title="Pull all now"></button>
   </header>
 
   <dialog id="pullDlg" aria-labelledby="pullTitle">
@@ -519,7 +522,16 @@
   const api = (path, opts = {}) => fetch(`https://api.github.com/repos/${REPO}/${path}`, { ...opts, headers: { Accept: 'application/vnd.github+json', Authorization: `Bearer ${token}`, 'X-GitHub-Api-Version': '2022-11-28', ...(opts.headers || {}) } });
   const b64 = str => btoa(unescape(encodeURIComponent(str)));
   const unb64 = str => decodeURIComponent(escape(atob(str.replace(/\n/g, ''))));
-  function syncStatus(state, text) { const b = $('#sync'); b.className = state; b.textContent = text; }
+  const SYNC_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 0 1-15.5 6.2M3 12a9 9 0 0 1 15.5-6.2"/><path d="M21 4v5h-5M3 20v-5h5"/></svg>';
+  function syncStatus(state, text) {
+    const b = $('#sync');
+    b.className = 'icon ' + state + (/…$/.test(text) ? ' busy' : '');
+    b.innerHTML = SYNC_ICON;
+    const t = state === 'on' ? 'Synced ✓ · Applied/Archive marks are saved to the GitHub repo'
+            : state === 'err' ? 'Sync error · click to check the token'
+            : text === 'Sync: off' ? 'Sync: off · click to set up syncing to the GitHub repo' : text;
+    b.title = b.ariaLabel = t;
+  }
 
   function mergeMarks(remote) {
     let changed = false;
@@ -566,6 +578,7 @@
   function scheduleSync(delay = 1500) { if (!token) return; clearTimeout(syncTimer); syncTimer = setTimeout(pushMarks, delay); }
 
   function wireSync() {
+  if (!$('#sync').classList.contains('on')) syncStatus('', 'Sync: off');
   $('#sync').addEventListener('click', () => { $('#tokenInput').value = ''; $('#tokenRemove').hidden = !token; $('#syncDlg').showModal(); });
   $('#tokenCancel').addEventListener('click', () => $('#syncDlg').close());
   $('#tokenRemove').addEventListener('click', () => { token = null; try { localStorage.removeItem(TOKEN_KEY); } catch (e) {} syncStatus('', 'Sync: off'); $('#syncDlg').close(); toast('Token removed. Marks stay in this browser only.'); });
@@ -1327,6 +1340,9 @@
     return r.json();
   }
 
+  const PULL_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>';
+  const pullLabel = (text, busy) => { const b = $('#pullAll'); b.innerHTML = PULL_ICON; b.title = b.ariaLabel = text; b.classList.toggle('busy', !!busy); };
+  pullLabel('Pull all now');
   $('#pullAll').addEventListener('click', async e => {
     const btn = e.currentTarget;            // currentTarget is null after the first await, so keep a reference
     if (pullRun) { pullDlg.showModal(); return; }   // already running: just show progress again
@@ -1341,7 +1357,7 @@
     const sum = () => {
       $('#pullSum').textContent = `${done} of ${total} boards` + (newTotal ? ` · ${newTotal} new` : '') + (failed ? ` · ${failed} failed` : '');
       $('#pullOverall').style.width = (done / total * 100) + '%';
-      btn.textContent = done < total ? `Pulling ${done}/${total}…` : 'Pull all now';
+      if (done < total) pullLabel(`Pulling ${done}/${total}… (click to see progress)`, true); else pullLabel('Pull all now');
     };
     const finish = (li, r) => {
       done++;
@@ -1411,7 +1427,7 @@
       await Promise.all([worker(), worker(), worker(), viaGitHub()]);
       $('#pullTitle').textContent = 'Pull finished';
       if (!pullDlg.open) toast(`Pull finished: ${newTotal ? newTotal + ' new role' + (newTotal > 1 ? 's' : '') : 'nothing new'} across ${total} boards` + (failed ? `, ${failed} failed` : '') + '.');
-    } finally { pullRun = null; btn.textContent = 'Pull all now'; btn.disabled = false; render(); }
+    } finally { pullRun = null; pullLabel('Pull all now'); btn.disabled = false; render(); }
   });
 
   fetch(DATA_URL + '?t=' + Date.now()).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
