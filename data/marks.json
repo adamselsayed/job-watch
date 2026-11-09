@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T04:21:18.126Z",
+  "updated_at": "2026-11-09T04:21:59.707Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1206,6 +1206,12 @@
       "at": "2026-11-08T07:16:05.004Z",
       "title": "Product Support Representative",
       "company": "Hitachi"
+    },
+    "workday:generalmotors.wd5/Careers_GM:JR-202602596": {
+      "status": "archived",
+      "at": "2026-11-09T04:21:58.193Z",
+      "title": "Technical Product Operations Manager",
+      "company": "General Motors"
     }
   },
   "groups": {
