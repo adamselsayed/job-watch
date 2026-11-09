@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T05:59:45.413Z",
+  "updated_at": "2026-11-09T05:59:50.954Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1594,6 +1594,7 @@
     ],
     "general": [
       "FieldAI",
+      "Fleetio",
       "Toast",
       "Curri",
       "Komodo Health",
@@ -1601,12 +1602,11 @@
       "Life360",
       "NVIDIA",
       "AutoNation",
-      "Fleetio",
       "Intuit"
     ],
     "collapsed": [
       "out"
     ],
-    "at": "2026-11-09T05:59:43.904Z"
+    "at": "2026-11-09T05:59:49.445Z"
   }
 }
