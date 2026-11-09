@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T04:59:31.161Z",
+  "updated_at": "2026-11-09T04:59:37.720Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1530,6 +1530,7 @@
       "CWX",
       "AMN Healthcare",
       "Smartsheet",
+      "GlobalLogic",
       "Hitachi"
     ],
     "out": [
@@ -1550,6 +1551,6 @@
       "Housecall Pro"
     ],
     "collapsed": [],
-    "at": "2026-11-09T04:59:29.653Z"
+    "at": "2026-11-09T04:59:36.211Z"
   }
 }
