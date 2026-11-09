@@ -238,3 +238,8 @@
   board: jobs.intuit.com
   url: https://www.intuit.com/careers/#Open-Roles
   exclude: analyst, scientist, security
+
+- name: Scout Motors
+  ats: greenhouse
+  board: scoutmotors
+  url: https://job-boards.greenhouse.io/scoutmotors
