@@ -782,7 +782,52 @@
       url: j.url || `https://ats.rippling.com/${c.board}/jobs/${j.uuid || j.id}`, salary: null, _meta: '', _content: '',
     }));
   }
-  const LIVE = { greenhouse: liveGreenhouse, lever: liveLever, ashby: liveAshby, smartrecruiters: liveSmartrecruiters, rippling: liveRippling };
+  async function liveWorkable(c, prog = () => {}) {
+    const acct = c.board, base = `https://apply.workable.com/api`;
+    let items = [], src = 'v3';
+    try {
+      let body = { query: '', location: [], department: [], worktype: [], remote: [] };
+      for (let i = 0; i < 50; i++) {
+        const r = await fetchT(`${base}/v3/accounts/${acct}/jobs`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
+        if (!r.ok) throw new Error(`HTTP ${r.status}`);
+        const pg = await r.json(); const res = pg.results || []; items = items.concat(res);
+        if (!pg.nextPage || !res.length) break; body = { token: pg.nextPage };
+      }
+    } catch (e) {               // v3 list unavailable from the browser: fall back to the embeddable widget feed
+      src = 'widget';
+      const r = await fetchT(`${base}/v1/widget/accounts/${acct}?details=true`); if (!r.ok) throw new Error(`HTTP ${r.status}`);
+      items = (await r.json()).jobs || [];
+    }
+    const locName = l => [l.city, l.region, l.country].filter(Boolean).join(', ');
+    const rows = items.map(j => {
+      let loc, extra, remote, published, dept, wp;
+      if (src === 'v3') {
+        const names = (j.locations || (j.location ? [j.location] : [])).map(locName).filter(Boolean);
+        loc = names[0] || ''; extra = names.slice(1).join('; '); wp = j.workplace || '';
+        remote = !!j.remote || wp === 'remote'; published = j.published || j.created;
+        dept = Array.isArray(j.department) ? j.department.join(', ') : (j.department || '');
+      } else {
+        loc = [j.city, j.state, j.country].filter(Boolean).join(', ');
+        extra = (j.locations || []).slice(1).map(locName).filter(Boolean).join('; ');
+        remote = !!j.telecommuting; wp = remote ? 'remote' : ''; published = j.published_on || j.created_at; dept = j.department || '';
+      }
+      if (remote && !/remote/i.test(loc)) loc = loc ? `Remote - ${loc}` : 'Remote';
+      const sc = j.shortcode || j.id;
+      return { job_id: String(sc), req_id: j.code || null, title: j.title || '', location: loc, location_detail: extra, department: dept,
+        published_at: published, updated_at: null, url: j.url || `https://apply.workable.com/${acct}/j/${sc}/`, salary: null,
+        _meta: `workplacetype: ${wp}` + (remote ? ' remote' : ''), _content: stripHtml(j.description || '') };
+    });
+    const want = rows.filter(j => titleMatches(j.title)); let d = 0; prog(0, want.length);
+    await Promise.all(want.map(async j => {
+      try {
+        const r = await fetchT(`${base}/v2/accounts/${acct}/jobs/${j.job_id}`);
+        if (r.ok) { const x = await r.json(); j._content = stripHtml([x.description, x.requirements, x.benefits].filter(Boolean).join(' ')) || j._content; }
+      } catch (e) { /* keep list data */ }
+      j.salary = salaryFromText(j._content); prog(++d, want.length);
+    }));
+    return rows;
+  }
+  const LIVE = { greenhouse: liveGreenhouse, lever: liveLever, ashby: liveAshby, smartrecruiters: liveSmartrecruiters, rippling: liveRippling, workable: liveWorkable };
 
   function applyCriteria(raw, c) {
     const out = [];
