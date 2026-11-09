@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T04:58:05.923Z",
+  "updated_at": "2026-11-09T04:58:35.938Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1531,9 +1531,7 @@
       "Nextdoor",
       "Housecall Pro"
     ],
-    "collapsed": [
-      "out"
-    ],
-    "at": "2026-11-09T04:21:16.615Z"
+    "collapsed": [],
+    "at": "2026-11-09T04:58:34.426Z"
   }
 }
