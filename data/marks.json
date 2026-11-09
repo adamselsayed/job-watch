@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T04:59:01.326Z",
+  "updated_at": "2026-11-09T04:59:04.975Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1499,6 +1499,12 @@
       "status": "archived",
       "at": "2026-11-09T04:58:59.815Z",
       "title": "IT Developer III, Spaceline Product Development & Production",
+      "company": "Virgin Galactic"
+    },
+    "phenom:vgcareers.virgingalactic.com/global/en:VGNVGEUS2213EXTERNALENGLOBAL": {
+      "status": "archived",
+      "at": "2026-11-09T04:59:03.463Z",
+      "title": "Business Systems Analyst III - Spaceline Product Development & Production",
       "company": "Virgin Galactic"
     }
   },
