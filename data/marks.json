@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T04:25:07.870Z",
+  "updated_at": "2026-11-09T04:25:11.545Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -554,8 +554,8 @@
       "company": "ServiceNow"
     },
     "smartrecruiters:ServiceNow:744000150777598": {
-      "status": "open",
-      "at": "2026-11-02T19:43:05.993Z",
+      "status": "archived",
+      "at": "2026-11-09T04:25:10.029Z",
       "title": "Sr Staff Inbound Product Manager",
       "company": "ServiceNow"
     },
