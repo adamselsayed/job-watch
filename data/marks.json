@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T04:24:53.378Z",
+  "updated_at": "2026-11-09T04:25:07.870Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -464,8 +464,8 @@
       "company": "ServiceNow"
     },
     "smartrecruiters:ServiceNow:744000158364690": {
-      "status": "open",
-      "at": "2026-11-02T19:43:05.993Z",
+      "status": "archived",
+      "at": "2026-11-09T04:25:06.356Z",
       "title": "Sr. Staff Product Manager, AI-Native IT Service Management ",
       "company": "ServiceNow"
     },
