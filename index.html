@@ -119,6 +119,13 @@
   th.w-sel, td.sel { width: 30px; padding-right: 0; padding-left: 10px; }
   td.sel input, th.w-sel input { margin: 0; vertical-align: middle; cursor: pointer; }
   tr.selected td { background: var(--accent-soft); }
+  /* hover: tint the whole row and mark its left edge, so the Archive/Applied buttons clearly belong to it */
+  @media (hover: hover) {
+    tbody tr:hover td { background: color-mix(in srgb, var(--accent) 11%, var(--surface)); }
+    tbody tr:hover td:first-child { box-shadow: inset 3px 0 0 var(--accent); }
+    tbody tr:hover td.title a { color: var(--accent); }
+    tr.selected:hover td { background: color-mix(in srgb, var(--accent) 16%, var(--surface)); }
+  }
   tr.dragging-row td { opacity: .5; }
   .tabs button.drop-ok { outline: 2px dashed var(--accent); outline-offset: -2px; }
   .tabs button.drop-over { background: var(--accent); color: #fff; }
