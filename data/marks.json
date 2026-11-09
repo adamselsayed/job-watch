@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T04:23:03.529Z",
+  "updated_at": "2026-11-09T04:23:06.050Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1235,6 +1235,12 @@
       "status": "archived",
       "at": "2026-11-09T04:23:02.017Z",
       "title": "Staff Product Manager - Customer  Authentication",
+      "company": "General Motors"
+    },
+    "workday:generalmotors.wd5/Careers_GM:JR-202620799": {
+      "status": "archived",
+      "at": "2026-11-09T04:23:04.243Z",
+      "title": "Senior Product Manager - Synthetic Data",
       "company": "General Motors"
     }
   },
