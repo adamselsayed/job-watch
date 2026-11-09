@@ -254,3 +254,8 @@
   ats: workable
   board: lawnstarter
   url: https://apply.workable.com/lawnstarter/
+
+- name: Cisco
+  ats: phenom
+  board: careers.cisco.com/global/en
+  url: https://careers.cisco.com/global/en/search-results
