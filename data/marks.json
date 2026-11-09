@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T05:58:35.903Z",
+  "updated_at": "2026-11-09T05:58:53.003Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1535,6 +1535,12 @@
       "status": "archived",
       "at": "2026-11-09T05:58:34.393Z",
       "title": "Product Manager, Global, Oil-Flooded Compressors",
+      "company": "Hitachi"
+    },
+    "workday:hitachi.wd1/hitachi:R0040237": {
+      "status": "archived",
+      "at": "2026-11-09T05:58:51.492Z",
+      "title": "HVDC Market Product Manager – North America",
       "company": "Hitachi"
     }
   },
