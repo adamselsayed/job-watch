@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T05:58:17.151Z",
+  "updated_at": "2026-11-09T05:58:35.903Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1523,6 +1523,18 @@
       "status": "archived",
       "at": "2026-11-09T05:58:15.642Z",
       "title": "Product Manager - Manufacturing, North America - Remote",
+      "company": "Hitachi"
+    },
+    "workday:hitachi.wd1/hitachi:R0143453": {
+      "status": "archived",
+      "at": "2026-11-09T05:58:32.929Z",
+      "title": "Senior Service Product Specialist – AIS and GIS",
+      "company": "Hitachi"
+    },
+    "workday:hitachi.wd1/hitachi:R0141167": {
+      "status": "archived",
+      "at": "2026-11-09T05:58:34.393Z",
+      "title": "Product Manager, Global, Oil-Flooded Compressors",
       "company": "Hitachi"
     }
   },
