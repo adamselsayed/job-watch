@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T19:24:06.019Z",
+  "updated_at": "2026-11-09T19:24:11.101Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1690,7 +1690,9 @@
       "Life360",
       "Intuit"
     ],
-    "collapsed": [],
-    "at": "2026-11-09T19:24:04.508Z"
+    "collapsed": [
+      "tertiary"
+    ],
+    "at": "2026-11-09T19:24:09.590Z"
   }
 }
