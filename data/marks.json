@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T16:58:53.966Z",
+  "updated_at": "2026-11-09T16:58:59.041Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1601,6 +1601,12 @@
       "status": "archived",
       "at": "2026-11-09T16:58:51.983Z",
       "title": "Senior Specialist, Product Management – E/E Architecture, Features & Requirements Management",
+      "company": "Scout Motors"
+    },
+    "greenhouse:scoutmotors:5274285007": {
+      "status": "archived",
+      "at": "2026-11-09T16:58:56.828Z",
+      "title": "Senior Specialist in Product Management - Color, Material & Finish (CMF)",
       "company": "Scout Motors"
     }
   },
