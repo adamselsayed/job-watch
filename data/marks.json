@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T04:54:39.065Z",
+  "updated_at": "2026-11-09T04:55:10.683Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1416,6 +1416,12 @@
       "at": "2026-11-09T04:54:37.550Z",
       "title": "Senior Staff Product Manager, Enterprise Finance (EPM)",
       "company": "Intuit"
+    },
+    "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2021069": {
+      "status": "archived",
+      "at": "2026-11-09T04:55:09.167Z",
+      "title": "Senior Product Manager, AI Physics",
+      "company": "NVIDIA"
     }
   },
   "groups": {
