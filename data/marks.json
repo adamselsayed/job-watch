@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T06:11:13.717Z",
+  "updated_at": "2026-11-09T06:15:18.066Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1560,6 +1560,12 @@
       "at": "2026-11-09T06:11:12.206Z",
       "title": "Staff Autonomy Product Manager",
       "company": "Rivian"
+    },
+    "ashby:rivianvw.tech:139da227-1906-48c0-81e1-19ddb5d2bad4": {
+      "status": "archived",
+      "at": "2026-11-09T06:15:16.556Z",
+      "title": "Director - Product Security",
+      "company": "Rivian & VW Group Technologies"
     }
   },
   "groups": {
