@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T04:22:25.308Z",
+  "updated_at": "2026-11-09T04:22:46.139Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1217,6 +1217,12 @@
       "status": "archived",
       "at": "2026-11-09T04:22:23.782Z",
       "title": "Staff Product Manager – In-Vehicle Privacy & Authentication",
+      "company": "General Motors"
+    },
+    "workday:generalmotors.wd5/Careers_GM:JR-202618664": {
+      "status": "archived",
+      "at": "2026-11-09T04:22:44.626Z",
+      "title": "Staff Product Manager – AV Features",
       "company": "General Motors"
     }
   },
