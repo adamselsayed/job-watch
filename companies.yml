@@ -243,3 +243,8 @@
   ats: greenhouse
   board: scoutmotors
   url: https://job-boards.greenhouse.io/scoutmotors
+
+- name: Waabi
+  ats: lever
+  board: waabi
+  url: https://jobs.lever.co/waabi
