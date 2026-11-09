@@ -1312,8 +1312,45 @@ def main(only=None):
         json.dump(out, f, indent=2, ensure_ascii=False)
         f.write("\n")
     append_changes(changes)
+    record_posting_days(jobs)
     log(f"wrote {DATA_FILE}: {sum(1 for j in jobs if j['status']=='open')} open, "
         f"{sum(1 for j in jobs if j['status']=='closed')} recently closed, {len(changes)} changes")
+
+
+HISTORY_FILE = os.path.join(ROOT, "data", "posting_history.json")
+
+
+def record_posting_days(jobs):
+    """Permanent log of every in-scope posting ever seen (jobs.json drops closed roles after
+    KEEP_CLOSED_DAYS), so the dashboard's day-of-week chart keeps growing. One entry per job
+    key: company and the date the company posted it, as a Pacific-time calendar date."""
+    from zoneinfo import ZoneInfo
+    pacific = ZoneInfo("America/Los_Angeles")
+    try:
+        with open(HISTORY_FILE, encoding="utf-8") as f:
+            hist = json.load(f)
+    except (FileNotFoundError, ValueError):
+        hist = {"note": "Every product role the sweep has seen, with the date the company posted it. Never pruned.", "postings": {}}
+    added = 0
+    for j in jobs:
+        key, pub = j.get("key"), j.get("published_at")
+        if not key or not pub or key in hist["postings"] or not title_matches(j.get("title", "")):
+            continue
+        if re.search(r"T\d\d:\d\d", pub) and "T00:00:00" not in pub:
+            try:
+                day = datetime.fromisoformat(pub.replace("Z", "+00:00")).astimezone(pacific).date().isoformat()
+            except ValueError:
+                day = pub[:10]
+        else:
+            day = pub[:10]                  # date-only boards: take the calendar date as given
+        hist["postings"][key] = {"company": j.get("company"), "posted": day, "first_seen": (j.get("first_seen") or "")[:10]}
+        added += 1
+    hist["updated_at"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
+    with open(HISTORY_FILE, "w", encoding="utf-8") as f:
+        json.dump(hist, f, indent=0, ensure_ascii=False, sort_keys=True)
+        f.write("\n")
+    log(f"posting history: {len(hist['postings'])} postings ({added} added)")
+
 
 
 if __name__ == "__main__":

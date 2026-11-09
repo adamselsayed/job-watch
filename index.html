@@ -275,6 +275,16 @@
   .brief-wrap .axis { display: flex; justify-content: space-between; font-size: 11px; color: var(--faint); margin-top: 4px; }
   .brief-wrap .foot { margin: 8px 0 0; font-size: 12.5px; color: var(--muted); }
   .brief-wrap .foot b { color: var(--text); }
+  .brief-wrap .charts { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .brief-wrap .dow { display: flex; align-items: stretch; gap: 6px; height: 98px; margin-top: 10px; }
+  .brief-wrap .dow .col { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; min-width: 0; }
+  .brief-wrap .dow .col i { width: 100%; background: var(--spark); border-radius: 3px 3px 0 0; }
+  .brief-wrap .dow .col.top i { background: var(--accent); }
+  .brief-wrap .dow .n { font-size: 11px; color: var(--muted); font-variant-numeric: tabular-nums; margin-bottom: 3px; }
+  .brief-wrap .dow .col.top .n { color: var(--text); font-weight: 600; }
+  .brief-wrap .dow .d { font-size: 11px; color: var(--faint); margin-top: 4px; }
+  .brief-wrap .dow .col.top .d { color: var(--text); font-weight: 600; }
+  .brief-wrap .spark { height: 98px !important; }
   .brief-wrap .pair { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
   .brief-wrap .mini { padding: 14px 16px; }
   .brief-wrap .mini .big { font: 500 28px/1 var(--serif); color: var(--text); }
@@ -283,6 +293,7 @@
   .brief-wrap .boards .err { color: var(--err); }
   @media (max-width: 900px) {
     .brief-wrap { grid-template-columns: 1fr; }
+    .brief-wrap .charts { grid-template-columns: 1fr; }
     .brief .roles li { grid-template-columns: 1fr; gap: 2px; }
     .brief h2 { font-size: 25px; }
   }
@@ -334,12 +345,19 @@
       <button class="link" id="bAll" hidden></button>
     </article>
     <div class="side">
-      <article class="card">
-        <h3>Posted per day, last two weeks</h3>
-        <div class="spark" id="bSpark"></div>
-        <div class="axis"><span id="bFrom"></span><span>Today</span></div>
-        <p class="foot" id="bTrend"></p>
-      </article>
+      <div class="charts">
+        <article class="card">
+          <h3>Posted per day, last two weeks</h3>
+          <div class="spark" id="bSpark"></div>
+          <div class="axis"><span id="bFrom"></span><span>Today</span></div>
+          <p class="foot" id="bTrend"></p>
+        </article>
+        <article class="card">
+          <h3>Postings by day of week</h3>
+          <div class="dow" id="bDow"></div>
+          <p class="foot" id="bDowNote">Loading…</p>
+        </article>
+      </div>
       <div class="pair">
         <article class="card mini"><div class="big" id="tOpen">–</div><p>Not yet triaged</p></article>
         <article class="card mini"><div class="big" id="tApplied">–</div><p>Applied, still open</p></article>
@@ -956,6 +974,35 @@
     const errs = data.companies.filter(c => c.status === 'error');
     $('#bBoards').innerHTML = `${data.companies.length} companies watched` + (errs.length ? ` · <span class="err" title="${escapeHtml(errs.map(c => c.name).join(', '))}">${errs.length} board${errs.length > 1 ? 's' : ''} failing to fetch</span>` : '');
   }
+  // ------------------------------------------------------ postings by weekday --
+  // data/posting_history.json is a permanent log the sweep adds to (closed roles stay in it), so this keeps growing.
+  let history = null;
+  function loadHistory() {
+    fetch('data/posting_history.json?t=' + Date.now()).then(r => r.ok ? r.json() : null).then(h => { history = h; renderDow(); }).catch(() => {});
+  }
+  const DOW = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
+  const DOW_LONG = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+  function renderDow() {
+    const el = $('#bDow'); if (!el) return;
+    if (!history) { $('#bDowNote').textContent = 'No posting history yet. It fills in after the next sweep.'; return; }
+    const rows = Object.values(history.postings || {});
+    // Some boards re-stamp many roles with one date when they refresh (e.g. NVIDIA on Oct 30).
+    // A company with 8+ roles on the same date is treated as a refresh, not real posting days.
+    const per = {}; rows.forEach(r => { const k = r.company + '|' + r.posted; per[k] = (per[k] || 0) + 1; });
+    const real = rows.filter(r => per[r.company + '|' + r.posted] < 8);
+    const skipped = rows.length - real.length;
+    const counts = Array(7).fill(0);
+    real.forEach(r => { const [y, m, d] = r.posted.split('-').map(Number); counts[(new Date(Date.UTC(y, m - 1, d)).getUTCDay() + 6) % 7]++; });
+    const total = counts.reduce((a, b) => a + b, 0), max = Math.max(1, ...counts), top = counts.indexOf(Math.max(...counts));
+    el.innerHTML = counts.map((n, i) => `<div class="col${i === top ? ' top' : ''}" title="${DOW_LONG[i]}: ${n} posting${n === 1 ? '' : 's'} (${total ? Math.round(n / total * 100) : 0}%)">
+      <span class="n">${n}</span><i style="height:${Math.max(2, Math.round(n / max * 62))}px"></i><span class="d">${DOW[i]}</span></div>`).join('');
+    const since = rows.map(r => r.first_seen).filter(Boolean).sort()[0];
+    $('#bDowNote').innerHTML = total
+      ? `Most land on <b>${DOW_LONG[top]}</b> (${Math.round(counts[top] / total * 100)}%) · ${total} postings tracked${since ? ` since ${fmtDate(since + 'T12:00:00')}` : ''}` +
+        (skipped ? ` <span class="sub" title="${skipped} roles shared a single date with 8+ others from the same company, which usually means the board re-stamped them on a refresh rather than posted them that day.">· ${skipped} bulk-dated left out</span>` : '')
+      : 'No dated postings yet.';
+  }
+
   $('#bAll').addEventListener('click', () => { document.querySelector('.chip[data-f="new"]').click(); document.querySelector('.layout').scrollIntoView({ behavior: 'smooth' }); });
 
   function render() {
@@ -1238,7 +1285,7 @@
   });
 
   fetch(DATA_URL + '?t=' + Date.now()).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
-    .then(d => { data = d; render(); })
+    .then(d => { data = d; render(); loadHistory(); })
     .then(() => token ? pullMarks().catch(e => { syncStatus('err', 'Sync error'); toast(`Sync failed: ${e.message}`); }) : fetch('data/marks.json?t=' + Date.now()).then(r => r.ok ? r.json() : null).then(d => { if (d && (mergeMarks(d.marks) | mergeGroups(d.groups || d.primary))) { saveMarks(); render(); } }).catch(() => {}))
     .catch(() => { $('#generated').textContent = 'No sweep data yet — run the GitHub Action (or scripts/fetch_jobs.py) to create data/jobs.json.'; render(); });
 })();
