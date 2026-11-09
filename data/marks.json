@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T06:17:18.553Z",
+  "updated_at": "2026-11-09T06:17:47.434Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1589,6 +1589,12 @@
       "status": "archived",
       "at": "2026-11-09T06:17:17.040Z",
       "title": "Manager, Technical Program Management - Product & Platforms",
+      "company": "DoorDash"
+    },
+    "greenhouse:doordashusa:8243349": {
+      "status": "archived",
+      "at": "2026-11-09T06:17:45.923Z",
+      "title": "Associate Manager Product Operations, Autonomy Commercialization - DoorDash Dot",
       "company": "DoorDash"
     }
   },
