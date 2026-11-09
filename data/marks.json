@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T20:04:52.439Z",
+  "updated_at": "2026-11-09T20:04:55.557Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1650,7 +1650,6 @@
     ],
     "tertiary": [
       "Waabi",
-      "LawnStarter",
       "Virgin Galactic",
       "Cognition",
       "General Motors",
@@ -1662,6 +1661,7 @@
       "NVIDIA"
     ],
     "out": [
+      "LawnStarter",
       "EVgo",
       "Hertz",
       "Oro Mobility",
@@ -1693,6 +1693,6 @@
       "Intuit"
     ],
     "collapsed": [],
-    "at": "2026-11-09T20:04:50.930Z"
+    "at": "2026-11-09T20:04:54.049Z"
   }
 }
