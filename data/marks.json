@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T04:35:21.956Z",
+  "updated_at": "2026-11-09T04:35:32.149Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1289,6 +1289,18 @@
       "status": "archived",
       "at": "2026-11-09T04:35:20.438Z",
       "title": "Principal Product Manager, Credit Karma Tax",
+      "company": "Intuit"
+    },
+    "talentbrew:jobs.intuit.com:97617057552": {
+      "status": "archived",
+      "at": "2026-11-09T04:35:29.250Z",
+      "title": "Senior Product Manager - QuickBooks Capital Marketplace",
+      "company": "Intuit"
+    },
+    "talentbrew:jobs.intuit.com:102948086848": {
+      "status": "archived",
+      "at": "2026-11-09T04:35:30.633Z",
+      "title": "Senior Product Manager - QuickBooks Workforce Solutions Mid Market",
       "company": "Intuit"
     }
   },
