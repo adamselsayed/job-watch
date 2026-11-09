@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T04:44:05.133Z",
+  "updated_at": "2026-11-09T04:44:09.597Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1343,6 +1343,18 @@
       "status": "archived",
       "at": "2026-11-09T04:44:03.617Z",
       "title": "Senior Staff Product Manager, Assisted Tax Growth",
+      "company": "Intuit"
+    },
+    "talentbrew:jobs.intuit.com:96477128608": {
+      "status": "archived",
+      "at": "2026-11-09T04:44:07.454Z",
+      "title": "Senior Staff Product Manager, Partner Payouts & Incentives Platform",
+      "company": "Intuit"
+    },
+    "talentbrew:jobs.intuit.com:100807241040": {
+      "status": "archived",
+      "at": "2026-11-09T04:44:08.081Z",
+      "title": "Senior Staff Product Manager, QuickBooks Accounting Agent",
       "company": "Intuit"
     }
   },
