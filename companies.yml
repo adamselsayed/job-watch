@@ -187,6 +187,11 @@
   exclude: guide, advisor, specialist   # showroom / retail "Product Guide" roles
   url: https://careers.rivian.com/careers-home/jobs
 
+- name: Rivian & VW Group Technologies
+  ats: ashby
+  board: rivianvw.tech
+  url: https://jobs.ashbyhq.com/rivianvw.tech
+
 - name: Ford
   ats: talentbrew
   board: www.careers.ford.com/en
