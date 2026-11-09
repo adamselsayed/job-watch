@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T03:21:34+00:00",
+  "generated_at": "2026-11-09T06:13:16+00:00",
   "criteria": {
     "title_keywords": [
       "product"
@@ -352,6 +352,17 @@
       "error": null,
       "total_jobs": 522,
       "matched": 4
+    },
+    {
+      "name": "Rivian & VW Group Technologies",
+      "ats": "ashby",
+      "board": "rivianvw.tech",
+      "url": "https://jobs.ashbyhq.com/rivianvw.tech",
+      "fetched_at": "2026-11-09T06:13:16+00:00",
+      "status": "ok",
+      "error": null,
+      "total_jobs": 171,
+      "matched": 3
     },
     {
       "name": "Ford",
@@ -3866,6 +3877,32 @@
       "closed_at": null
     },
     {
+      "job_id": "d452c804-4a81-4482-b977-bf535cc48c35",
+      "req_id": null,
+      "title": "Staff Product Manager - Entertainment",
+      "location": "Palo Alto, California",
+      "location_detail": "",
+      "department": "Technology and Innovation / Infotainment and Connectivity",
+      "published_at": "2026-10-19T22:49:14.076+00:00",
+      "updated_at": null,
+      "url": "https://jobs.ashbyhq.com/rivianvw.tech/d452c804-4a81-4482-b977-bf535cc48c35",
+      "salary": {
+        "min": 167400,
+        "max": 221870,
+        "currency": "USD",
+        "source": "posting"
+      },
+      "us": true,
+      "remote": "hybrid",
+      "remote_confidence": "medium",
+      "company": "Rivian & VW Group Technologies",
+      "key": "ashby:rivianvw.tech:d452c804-4a81-4482-b977-bf535cc48c35",
+      "first_seen": "2026-11-09T06:13:16+00:00",
+      "last_seen": "2026-11-09T06:13:16+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
       "job_id": "744000156431640",
       "req_id": "JB0076131",
       "title": "Senior Director Product Analytics",
@@ -4800,6 +4837,32 @@
       "key": "smartrecruiters:ServiceNow:744000153739678",
       "first_seen": "2026-10-30T05:47:56+00:00",
       "last_seen": "2026-11-08T13:40:43+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "79ea5ecc-1e2b-4fd8-8f55-817b87204fe0",
+      "req_id": null,
+      "title": "Staff New Product Operation Manager",
+      "location": "Palo Alto, California",
+      "location_detail": "",
+      "department": "Technology and Innovation / Electronic Design",
+      "published_at": "2026-10-05T23:56:48.195+00:00",
+      "updated_at": null,
+      "url": "https://jobs.ashbyhq.com/rivianvw.tech/79ea5ecc-1e2b-4fd8-8f55-817b87204fe0",
+      "salary": {
+        "min": 167400,
+        "max": 230250,
+        "currency": "USD",
+        "source": "posting"
+      },
+      "us": true,
+      "remote": "hybrid",
+      "remote_confidence": "medium",
+      "company": "Rivian & VW Group Technologies",
+      "key": "ashby:rivianvw.tech:79ea5ecc-1e2b-4fd8-8f55-817b87204fe0",
+      "first_seen": "2026-11-09T06:13:16+00:00",
+      "last_seen": "2026-11-09T06:13:16+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -7540,6 +7603,32 @@
       "key": "ashby:angi:b272e53a-7acd-4ab3-bc62-f37edf8582c7",
       "first_seen": "2026-11-01T05:27:02+00:00",
       "last_seen": "2026-11-08T13:40:43+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "139da227-1906-48c0-81e1-19ddb5d2bad4",
+      "req_id": null,
+      "title": "Director - Product Security",
+      "location": "Palo Alto, California",
+      "location_detail": "",
+      "department": "Technology and Innovation / Product Integrity",
+      "published_at": "2026-05-27T20:37:46.351+00:00",
+      "updated_at": null,
+      "url": "https://jobs.ashbyhq.com/rivianvw.tech/139da227-1906-48c0-81e1-19ddb5d2bad4",
+      "salary": {
+        "min": 240700,
+        "max": 395350,
+        "currency": "USD",
+        "source": "posting"
+      },
+      "us": true,
+      "remote": "onsite",
+      "remote_confidence": "medium",
+      "company": "Rivian & VW Group Technologies",
+      "key": "ashby:rivianvw.tech:139da227-1906-48c0-81e1-19ddb5d2bad4",
+      "first_seen": "2026-11-09T06:13:16+00:00",
+      "last_seen": "2026-11-09T06:13:16+00:00",
       "status": "open",
       "closed_at": null
     },

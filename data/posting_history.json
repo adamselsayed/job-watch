@@ -31,6 +31,21 @@
 "first_seen": "2026-11-05",
 "posted": "2026-10-06"
 },
+"ashby:rivianvw.tech:139da227-1906-48c0-81e1-19ddb5d2bad4": {
+"company": "Rivian & VW Group Technologies",
+"first_seen": "2026-11-09",
+"posted": "2026-05-27"
+},
+"ashby:rivianvw.tech:79ea5ecc-1e2b-4fd8-8f55-817b87204fe0": {
+"company": "Rivian & VW Group Technologies",
+"first_seen": "2026-11-09",
+"posted": "2026-10-05"
+},
+"ashby:rivianvw.tech:d452c804-4a81-4482-b977-bf535cc48c35": {
+"company": "Rivian & VW Group Technologies",
+"first_seen": "2026-11-09",
+"posted": "2026-10-19"
+},
 "ashby:serverobotics:2cc4efc4-d08f-4019-a474-71d06c62e72e": {
 "company": "Serve Robotics",
 "first_seen": "2026-11-01",
@@ -1997,5 +2012,5 @@
 "posted": "2026-11-02"
 }
 },
-"updated_at": "2026-11-09T03:21:34+00:00"
+"updated_at": "2026-11-09T06:13:16+00:00"
 }
