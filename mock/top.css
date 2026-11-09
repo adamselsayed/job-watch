@@ -1,6 +1,6 @@
 /* Dashboard-style top section for the Field Notes theme (mockup) */
 .dash { --g-primary: #2f6046; --g-secondary: #7fa38a; --g-tertiary: #c3d3c6; --g-out: #d9c9a4; --g-un: #2f6046; --g-ap: #b7791f; --g-ar: #c9d3c7; margin-bottom: 26px; }
-.dash .card { background: var(--surface); border-radius: 16px; padding: 18px 20px; }
+.dash .card, .dash.card { background: var(--surface); border-radius: 16px; padding: 18px 20px; }
 .dash h3 { margin: 0 0 8px; font: 500 13px/1.3 "Instrument Sans", sans-serif; color: var(--muted); }
 .dash .big { font: 500 38px/1 "Fraunces", serif; color: var(--text); letter-spacing: -.01em; display: flex; align-items: baseline; gap: 10px; }
 .dash .big small { font: 400 13px/1.3 "Instrument Sans", sans-serif; color: var(--muted); letter-spacing: 0; }

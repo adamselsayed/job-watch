@@ -3,7 +3,9 @@ window.__buildTop = async (variant) => {
   const [d, m] = await Promise.all([fetch('data/jobs.json').then(r => r.json()), fetch('data/marks.json').then(r => r.json()).catch(() => ({ marks: {}, groups: {} }))]);
   const marks = m.marks || {}, g = m.groups || {};
   const grp = n => (g.primary || []).includes(n) ? 'primary' : (g.tertiary || []).includes(n) ? 'tertiary' : (g.out || []).includes(n) ? 'out' : 'secondary';
-  const open = d.jobs.filter(j => j.status === 'open');
+  // same rules as the table: US roles with "product" in the title, minus the excluded words
+  const EX = /\b(design|designer|marketing|engineers?|engineering|interns?|internships?)\b/i;
+  const open = d.jobs.filter(j => j.status === 'open' && j.us !== false && /\bproduct\b/i.test(j.title) && !EX.test(j.title));
   const status = j => (marks[j.key] || {}).status;
   const untriaged = open.filter(j => !status(j));
   const applied = open.filter(j => status(j) === 'applied');
