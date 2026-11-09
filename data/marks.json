@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T04:56:42.567Z",
+  "updated_at": "2026-11-09T04:56:48.609Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1445,6 +1445,12 @@
       "status": "archived",
       "at": "2026-11-09T04:56:41.054Z",
       "title": "Senior Product Manager, Kubernetes Accelerated Runtime",
+      "company": "NVIDIA"
+    },
+    "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2020111": {
+      "status": "archived",
+      "at": "2026-11-09T04:56:47.096Z",
+      "title": "Senior Product Manager - Omniverse Rendering",
       "company": "NVIDIA"
     }
   },
