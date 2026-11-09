@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T06:15:18.066Z",
+  "updated_at": "2026-11-09T06:15:46.195Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1565,6 +1565,12 @@
       "status": "archived",
       "at": "2026-11-09T06:15:16.556Z",
       "title": "Director - Product Security",
+      "company": "Rivian & VW Group Technologies"
+    },
+    "ashby:rivianvw.tech:79ea5ecc-1e2b-4fd8-8f55-817b87204fe0": {
+      "status": "archived",
+      "at": "2026-11-09T06:15:43.737Z",
+      "title": "Staff New Product Operation Manager",
       "company": "Rivian & VW Group Technologies"
     }
   },
