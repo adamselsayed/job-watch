@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T04:44:28.146Z",
+  "updated_at": "2026-11-09T04:44:54.749Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1397,6 +1397,12 @@
       "status": "archived",
       "at": "2026-11-09T04:44:26.633Z",
       "title": "Staff Product Manager, Financial Data",
+      "company": "Intuit"
+    },
+    "talentbrew:jobs.intuit.com:102296004416": {
+      "status": "archived",
+      "at": "2026-11-09T04:44:53.233Z",
+      "title": "Principal Product Manager, QB Capital",
       "company": "Intuit"
     }
   },
