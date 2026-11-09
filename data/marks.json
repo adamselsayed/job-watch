@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T04:56:53.799Z",
+  "updated_at": "2026-11-09T04:57:28.554Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1463,6 +1463,12 @@
       "status": "archived",
       "at": "2026-11-09T04:56:52.287Z",
       "title": "Product Program Manager",
+      "company": "NVIDIA"
+    },
+    "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2027072": {
+      "status": "archived",
+      "at": "2026-11-09T04:57:27.041Z",
+      "title": "Director, Product Management - Nemotron",
       "company": "NVIDIA"
     }
   },
