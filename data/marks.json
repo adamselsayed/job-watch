@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T04:23:28.069Z",
+  "updated_at": "2026-11-09T04:23:45.335Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1265,6 +1265,18 @@
       "status": "archived",
       "at": "2026-11-09T04:23:26.559Z",
       "title": "Research Manager - Vehicle Software Products, Core & Occupant",
+      "company": "General Motors"
+    },
+    "workday:generalmotors.wd5/Careers_GM:JR-202622205": {
+      "status": "archived",
+      "at": "2026-11-09T04:23:43.109Z",
+      "title": "Product Manager",
+      "company": "General Motors"
+    },
+    "workday:generalmotors.wd5/Careers_GM:JR-202622283": {
+      "status": "archived",
+      "at": "2026-11-09T04:23:43.826Z",
+      "title": "Product Manager",
       "company": "General Motors"
     }
   },
