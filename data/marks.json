@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T06:01:34.524Z",
+  "updated_at": "2026-11-09T06:01:42.919Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1567,7 +1567,6 @@
     "tertiary": [
       "Virgin Galactic",
       "Cognition",
-      "Ford",
       "General Motors",
       "CWX",
       "AMN Healthcare",
@@ -1602,11 +1601,12 @@
       "Thumbtack",
       "Life360",
       "AutoNation",
+      "Ford",
       "Intuit"
     ],
     "collapsed": [
       "out"
     ],
-    "at": "2026-11-09T06:01:33.015Z"
+    "at": "2026-11-09T06:01:41.411Z"
   }
 }
