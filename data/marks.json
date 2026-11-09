@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T06:00:11.762Z",
+  "updated_at": "2026-11-09T06:00:24.774Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1574,7 +1574,8 @@
       "Smartsheet",
       "Hitachi",
       "GlobalLogic",
-      "NVIDIA"
+      "NVIDIA",
+      "Intuit"
     ],
     "out": [
       "EVgo",
@@ -1601,12 +1602,11 @@
       "Komodo Health",
       "Thumbtack",
       "Life360",
-      "AutoNation",
-      "Intuit"
+      "AutoNation"
     ],
     "collapsed": [
       "out"
     ],
-    "at": "2026-11-09T06:00:10.253Z"
+    "at": "2026-11-09T06:00:23.267Z"
   }
 }
