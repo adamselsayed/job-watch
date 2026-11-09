@@ -915,10 +915,11 @@ def fetch_oracle(company):
 
 def fetch_talentbrew(company):
     """Radancy / TalentBrew career sites (URLs like https://<host>/<lang>/search-jobs), e.g. careers.ford.com.
-    board = "<host>/<lang>", e.g. "www.careers.ford.com/en".  The search page has a JSON endpoint that
+    board = "<host>/<lang>", e.g. "www.careers.ford.com/en", or just "<host>" when the site has no language segment.  The search page has a JSON endpoint that
     returns the result list as HTML; each job page carries schema.org JobPosting data for the details."""
-    host, lang = company["board"].split("/", 1)
+    host, _, lang = company["board"].partition("/")      # lang is optional: jobs.intuit.com has no /en/ segment
     base = f"https://{host}"
+    root = f"{base}/{lang}" if lang else base
     hdr = {"User-Agent": _BROWSER_UA, "X-Requested-With": "XMLHttpRequest", "Accept": "application/json, text/javascript, */*"}
     seen, rows, first, page, pages = set(), [], None, 1, 1
     while page <= min(pages, 30):
@@ -928,7 +929,7 @@ def fetch_talentbrew(company):
                                     "FacetType": 0, "SearchResultsModuleName": "Search Results",
                                     "SearchFiltersModuleName": "Search Filters", "SortCriteria": 0, "SortDirection": 0,
                                     "SearchType": 5, "ResultsType": 0})
-        d = fetch_json(f"{base}/{lang}/search-jobs/results?{q}", timeout=45, headers=hdr)
+        d = fetch_json(f"{root}/search-jobs/results?{q}", timeout=45, headers=hdr)
         h = d.get("results") or ""
         if first is None:
             first = {"keys": list(d.keys()), "html_head": h[:1500]}
