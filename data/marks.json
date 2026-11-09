@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T04:23:14.963Z",
+  "updated_at": "2026-11-09T04:23:28.069Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1253,6 +1253,18 @@
       "status": "archived",
       "at": "2026-11-09T04:23:12.859Z",
       "title": "Senior Product Manager - Data Mining and Search",
+      "company": "General Motors"
+    },
+    "workday:generalmotors.wd5/Careers_GM:JR-202622682": {
+      "status": "archived",
+      "at": "2026-11-09T04:23:25.926Z",
+      "title": "Senior Product Manager",
+      "company": "General Motors"
+    },
+    "workday:generalmotors.wd5/Careers_GM:JR-202623273": {
+      "status": "archived",
+      "at": "2026-11-09T04:23:26.559Z",
+      "title": "Research Manager - Vehicle Software Products, Core & Occupant",
       "company": "General Motors"
     }
   },
