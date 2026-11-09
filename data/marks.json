@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T04:25:34.635Z",
+  "updated_at": "2026-11-09T04:25:36.999Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -386,8 +386,8 @@
       "company": "ServiceNow"
     },
     "smartrecruiters:ServiceNow:744000156842184": {
-      "status": "open",
-      "at": "2026-11-02T19:43:12.901Z",
+      "status": "archived",
+      "at": "2026-11-09T04:25:35.487Z",
       "title": "Director, Regional Product Management",
       "company": "ServiceNow"
     },
