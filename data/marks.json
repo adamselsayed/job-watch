@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T06:17:10.758Z",
+  "updated_at": "2026-11-09T06:17:18.553Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1583,6 +1583,12 @@
       "status": "archived",
       "at": "2026-11-09T06:17:09.246Z",
       "title": "Senior Product Manager, Trust & Safety, Integrity and Fraud",
+      "company": "DoorDash"
+    },
+    "greenhouse:doordashusa:8311047": {
+      "status": "archived",
+      "at": "2026-11-09T06:17:17.040Z",
+      "title": "Manager, Technical Program Management - Product & Platforms",
       "company": "DoorDash"
     }
   },
