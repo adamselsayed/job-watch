@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T02:49:15+00:00",
+  "generated_at": "2026-11-09T03:21:34+00:00",
   "criteria": {
     "title_keywords": [
       "product"
@@ -369,7 +369,7 @@
       "ats": "ashby",
       "board": "curri",
       "url": "https://www.curri.com/careers",
-      "fetched_at": "2026-11-08T13:40:43+00:00",
+      "fetched_at": "2026-11-09T03:21:34+00:00",
       "status": "ok",
       "error": null,
       "total_jobs": 25,
@@ -3861,7 +3861,7 @@
       "company": "Curri",
       "key": "ashby:curri:76070c78-1a0b-47d1-b9c4-4ec6a82846f9",
       "first_seen": "2026-11-05T23:08:41+00:00",
-      "last_seen": "2026-11-08T13:40:43+00:00",
+      "last_seen": "2026-11-09T03:21:34+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4752,7 +4752,7 @@
       "company": "Curri",
       "key": "ashby:curri:dbabd019-e0e7-46d1-a1d8-554f3fec2232",
       "first_seen": "2026-11-05T23:08:41+00:00",
-      "last_seen": "2026-11-08T13:40:43+00:00",
+      "last_seen": "2026-11-09T03:21:34+00:00",
       "status": "open",
       "closed_at": null
     },
