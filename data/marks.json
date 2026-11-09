@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T04:25:23.881Z",
+  "updated_at": "2026-11-09T04:25:27.992Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -296,8 +296,8 @@
       "company": "ServiceNow"
     },
     "smartrecruiters:ServiceNow:744000156431640": {
-      "status": "open",
-      "at": "2026-11-02T19:43:12.901Z",
+      "status": "archived",
+      "at": "2026-11-09T04:25:26.479Z",
       "title": "Senior Director Product Analytics",
       "company": "ServiceNow"
     },
@@ -422,8 +422,8 @@
       "company": "ServiceNow"
     },
     "smartrecruiters:ServiceNow:744000153034225": {
-      "status": "open",
-      "at": "2026-11-02T19:43:12.901Z",
+      "status": "archived",
+      "at": "2026-11-09T04:25:25.454Z",
       "title": "Senior Director, Product  Unified Security and Exposure Management ",
       "company": "ServiceNow"
     },
