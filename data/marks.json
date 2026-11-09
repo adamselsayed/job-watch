@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T04:23:12.629Z",
+  "updated_at": "2026-11-09T04:23:14.963Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1247,6 +1247,12 @@
       "status": "archived",
       "at": "2026-11-09T04:23:11.118Z",
       "title": "Senior Product Manager - Simulation Evaluation Applications",
+      "company": "General Motors"
+    },
+    "workday:generalmotors.wd5/Careers_GM:JR-202620797": {
+      "status": "archived",
+      "at": "2026-11-09T04:23:12.859Z",
+      "title": "Senior Product Manager - Data Mining and Search",
       "company": "General Motors"
     }
   },
