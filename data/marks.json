@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T19:20:04.541Z",
+  "updated_at": "2026-11-09T19:20:09.206Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1680,6 +1680,7 @@
       "FieldAI",
       "Fleetio",
       "Ford",
+      "Scout Motors",
       "Toast",
       "Curri",
       "Komodo Health",
@@ -1687,10 +1688,9 @@
       "Life360",
       "AutoNation",
       "Intuit",
-      "Rivian & VW Group Technologies",
-      "Scout Motors"
+      "Rivian & VW Group Technologies"
     ],
     "collapsed": [],
-    "at": "2026-11-09T19:20:03.031Z"
+    "at": "2026-11-09T19:20:07.698Z"
   }
 }
