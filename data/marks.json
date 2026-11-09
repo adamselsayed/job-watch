@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T04:35:35.050Z",
+  "updated_at": "2026-11-09T04:35:39.082Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1307,6 +1307,24 @@
       "status": "archived",
       "at": "2026-11-09T04:35:33.533Z",
       "title": "Senior Staff Product Manager - Credit Karma Tax",
+      "company": "Intuit"
+    },
+    "talentbrew:jobs.intuit.com:94774645552": {
+      "status": "archived",
+      "at": "2026-11-09T04:35:35.766Z",
+      "title": "Senior Staff Product Manager - QuickBooks Capital",
+      "company": "Intuit"
+    },
+    "talentbrew:jobs.intuit.com:100183029504": {
+      "status": "archived",
+      "at": "2026-11-09T04:35:36.842Z",
+      "title": "Senior Staff Product Manager - Quickbooks Shared Experiences",
+      "company": "Intuit"
+    },
+    "talentbrew:jobs.intuit.com:102926585280": {
+      "status": "archived",
+      "at": "2026-11-09T04:35:37.567Z",
+      "title": "Senior Staff Product Manager - TurboTax Finish and File",
       "company": "Intuit"
     }
   },
