@@ -1145,9 +1145,85 @@ def fetch_jibe(company):
     return out
 
 
+def fetch_workable(company):
+    """Workable career pages (https://apply.workable.com/<token>/) via Workable's public jobs API,
+    falling back to the older widget endpoint if the v3 list call fails."""
+    acct = company["board"]
+    items, source = [], "v3"
+    try:
+        body, seen = {"query": "", "location": [], "department": [], "worktype": [], "remote": []}, 0
+        while True:
+            data = fetch_json_post(f"https://apply.workable.com/api/v3/accounts/{acct}/jobs", body)
+            page = data.get("results") or []
+            items += page
+            nxt = data.get("nextPage")
+            seen += 1
+            if not nxt or not page or seen > 50:
+                break
+            body = {"token": nxt}
+    except Exception as e:          # noqa: BLE001
+        log(f"[{company['name']}] v3 list failed ({e}); trying widget API")
+        source = "widget"
+        data = wd_get(f"https://apply.workable.com/api/v1/widget/accounts/{acct}?details=true")
+        items = data.get("jobs") or []
+    out, first_detail = [], None
+    for j in items:
+        title = j.get("title") or ""
+        sc = j.get("shortcode") or j.get("id")
+        if source == "v3":
+            locs = j.get("locations") or ([j["location"]] if isinstance(j.get("location"), dict) else [])
+            names = [", ".join(x for x in (l.get("city"), l.get("region"), l.get("country")) if x) for l in locs if isinstance(l, dict)]
+            names = [n for n in names if n]
+            loc, extra = (names[0] if names else ""), "; ".join(names[1:])
+            workplace = j.get("workplace") or ""
+            remote = bool(j.get("remote")) or workplace == "remote"
+            published = j.get("published") or j.get("created")
+            dept = j.get("department")
+            dept = ", ".join(dept) if isinstance(dept, list) else (dept or "")
+            jtype = j.get("type") or ""
+        else:
+            loc = ", ".join(x for x in (j.get("city"), j.get("state"), j.get("country")) if x)
+            extra = "; ".join(", ".join(x for x in (l.get("city"), l.get("region"), l.get("country")) if x)
+                              for l in (j.get("locations") or [])[1:] if isinstance(l, dict))
+            remote = bool(j.get("telecommuting"))
+            workplace = "remote" if remote else ""
+            published = j.get("published_on") or j.get("created_at")
+            dept = j.get("department") or ""
+            jtype = j.get("employment_type") or ""
+        if remote and "remote" not in loc.lower():
+            loc = f"Remote - {loc}" if loc else "Remote"
+        url = j.get("url") or j.get("shortlink") or f"https://apply.workable.com/{acct}/j/{sc}/"
+        content, salary = strip_html(j.get("description") or ""), None
+        if title_matches(title):
+            try:
+                d = wd_get(f"https://apply.workable.com/api/v2/accounts/{acct}/jobs/{sc}")
+                if first_detail is None and isinstance(d, dict):
+                    first_detail = {k: (str(v)[:300] if isinstance(v, str) else v) for k, v in d.items()}
+                if isinstance(d, dict):
+                    content = strip_html(" ".join(str(d.get(k) or "") for k in ("description", "requirements", "benefits"))) or content
+                    published = d.get("published") or published
+                    sal = d.get("salary") if isinstance(d.get("salary"), dict) else {}
+                    lo, hi = sal.get("salary_from") or sal.get("min"), sal.get("salary_to") or sal.get("max")
+                    if lo and hi:
+                        salary = {"min": int(float(lo)), "max": int(float(hi)), "currency": sal.get("salary_currency") or sal.get("currency") or "USD", "source": "posting"}
+            except Exception as e:          # noqa: BLE001
+                log(f"[{company['name']}] detail fetch failed for {sc}: {e}")
+            if salary is None:
+                salary = salary_from_text(content)
+        out.append({
+            "job_id": str(sc), "req_id": j.get("code") or None, "title": title, "location": loc,
+            "location_detail": extra, "department": dept, "published_at": published, "updated_at": None,
+            "url": url, "salary": salary, "_meta_text": f"workplacetype: {workplace} type: {jtype}" + (" remote" if remote else ""),
+            "_content": content,
+        })
+    debug_dump(company, {"source": source, "count": len(items), "first_items": items[:2], "first_detail": first_detail,
+                         "kept_rows": [{k: v for k, v in r.items() if k != "_content"} | {"_content_head": r["_content"][:300]} for r in out if title_matches(r["title"])]})
+    return out
+
+
 ADAPTERS = {"greenhouse": fetch_greenhouse, "lever": fetch_lever, "ashby": fetch_ashby,
             "smartrecruiters": fetch_smartrecruiters, "workday": fetch_workday, "phenom": fetch_phenom,
-            "jobvite": fetch_jobvite, "rippling": fetch_rippling, "bamboohr": fetch_bamboohr, "jibe": fetch_jibe, "oracle": fetch_oracle, "talentbrew": fetch_talentbrew, "paradox": fetch_paradox, "globallogic": fetch_globallogic, "unknown": fetch_unknown}
+            "jobvite": fetch_jobvite, "rippling": fetch_rippling, "bamboohr": fetch_bamboohr, "jibe": fetch_jibe, "oracle": fetch_oracle, "talentbrew": fetch_talentbrew, "paradox": fetch_paradox, "globallogic": fetch_globallogic, "workable": fetch_workable, "unknown": fetch_unknown}
 
 
 # --------------------------------------------------------------- filtering --
