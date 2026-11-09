@@ -227,7 +227,7 @@
   }
 
   /* ---------------------------------------------------------------- Field Notes -- */
-  .wrap { max-width: 1400px; padding-top: 36px; }
+  .wrap { max-width: max(1400px, calc(50vw + 700px)); padding-top: 36px; }   /* side margins are half what a fixed 1400px leaves */
   .layout { grid-template-columns: 200px minmax(0, 1fr); gap: 26px; }
   nav.side { background: transparent; border: 0; padding: 0; box-shadow: none; }
   nav.side .nh, nav.side .nh.tog { font: 600 15px/1.2 var(--serif); text-transform: none; letter-spacing: 0; color: var(--text); padding: 18px 10px 6px; }
