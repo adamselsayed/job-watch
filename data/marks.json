@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T17:00:41.034Z",
+  "updated_at": "2026-11-09T17:01:18.751Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1625,6 +1625,12 @@
       "status": "archived",
       "at": "2026-11-09T17:00:39.019Z",
       "title": "Staff Technical Product Manager - Workshop Operations",
+      "company": "Scout Motors"
+    },
+    "greenhouse:scoutmotors:5046782007": {
+      "status": "archived",
+      "at": "2026-11-09T17:01:17.240Z",
+      "title": "Senior Specialist, Product Management",
       "company": "Scout Motors"
     }
   },
