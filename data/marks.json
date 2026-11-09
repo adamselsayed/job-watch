@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T20:05:00.183Z",
+  "updated_at": "2026-11-09T20:05:11.176Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1660,6 +1660,7 @@
       "NVIDIA"
     ],
     "out": [
+      "Curri",
       "LawnStarter",
       "Waabi",
       "EVgo",
@@ -1686,13 +1687,12 @@
       "Toast",
       "AutoNation",
       "Rivian & VW Group Technologies",
-      "Curri",
       "Komodo Health",
       "Thumbtack",
       "Life360",
       "Intuit"
     ],
     "collapsed": [],
-    "at": "2026-11-09T20:04:58.673Z"
+    "at": "2026-11-09T20:05:09.667Z"
   }
 }
