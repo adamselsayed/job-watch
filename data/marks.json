@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T04:57:28.554Z",
+  "updated_at": "2026-11-09T04:57:42.976Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1469,6 +1469,18 @@
       "status": "archived",
       "at": "2026-11-09T04:57:27.041Z",
       "title": "Director, Product Management - Nemotron",
+      "company": "NVIDIA"
+    },
+    "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2026946": {
+      "status": "archived",
+      "at": "2026-11-09T04:57:40.846Z",
+      "title": "Principal Product Manager - DSX and DGXC Storage",
+      "company": "NVIDIA"
+    },
+    "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2024647": {
+      "status": "archived",
+      "at": "2026-11-09T04:57:41.465Z",
+      "title": "Principal Product Manager - Laptop GPU and SoC",
       "company": "NVIDIA"
     }
   },
