@@ -4,31 +4,36 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Job Watch</title>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%232563eb'/%3E%3Ccircle cx='16' cy='16' r='5' fill='white'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Instrument+Sans:wght@400;500;600&display=swap">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%232f6046'/%3E%3Ccircle cx='16' cy='16' r='5' fill='white'/%3E%3C/svg%3E">
 <style>
+  /* Field Notes: sage paper, moss ink, ochre for what's new */
   :root {
-    --bg: #f6f7f9; --surface: #ffffff; --surface-2: #f0f2f5; --border: #e3e6ea;
-    --text: #15181d; --muted: #5f6b7a; --faint: #8a94a3;
-    --accent: #2563eb; --accent-soft: #e8efff;
-    --new: #15803d; --new-soft: #e6f6ec;
-    --warn: #b45309; --warn-soft: #fff3df;
-    --closed: #9aa3ae; --err: #b91c1c; --err-soft: #fdecec;
-    --radius: 10px; --shadow: 0 1px 2px rgba(0,0,0,.05);
+    --bg: #e9eee8; --surface: #f8faf6; --surface-2: #eef2ec; --border: #d3dbd1;
+    --text: #1d2a23; --muted: #55655b; --faint: #85928a;
+    --accent: #2f6046; --accent-soft: #dde9e0;
+    --new: #8a5a12; --new-soft: #f4e3c3; --hot: #f4e9d2; --hot-line: #e4d3ae;
+    --warn: #a35a0f; --warn-soft: #fbe9d0;
+    --closed: #9aa59d; --err: #b3261e; --err-soft: #f8e3e0;
+    --spark: #c9d6cc; --g-primary: #2f6046; --g-secondary: #7fa38a; --g-tertiary: #c3d3c6; --g-out: #d9c9a4;
+    --radius: 14px; --shadow: none;
+    --serif: "Fraunces", Georgia, serif;
   }
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
-      --bg: #0f1216; --surface: #171b21; --surface-2: #1f242c; --border: #2a3039;
-      --text: #e8ebef; --muted: #a2abb7; --faint: #6f7987;
-      --accent: #60a5fa; --accent-soft: #1b2a45;
-      --new: #4ade80; --new-soft: #14301f;
-      --warn: #fbbf24; --warn-soft: #3a2a0d;
-      --closed: #5b6470; --err: #f87171; --err-soft: #3a1818;
-      --shadow: none;
+      --bg: #131915; --surface: #1b231e; --surface-2: #222c26; --border: #2e3a33;
+      --text: #e4ebe5; --muted: #a3b0a7; --faint: #728078;
+      --accent: #84c39c; --accent-soft: #233a2c;
+      --new: #e6b566; --new-soft: #3b2f18; --hot: #2a2619; --hot-line: #3f3722;
+      --warn: #f0b45a; --warn-soft: #3a2c12;
+      --closed: #5d6a62; --err: #f28b82; --err-soft: #3a1c1a;
+      --spark: #34433a; --g-primary: #84c39c; --g-secondary: #4f7a5f; --g-tertiary: #34503f; --g-out: #8a7a52;
     }
   }
   * { box-sizing: border-box; }
   html, body { margin: 0; background: var(--bg); color: var(--text);
-    font: 15px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, sans-serif; }
+    font: 15px/1.5 "Instrument Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
   a { color: inherit; }
   .wrap { max-width: 1380px; margin: 0 auto; padding: 24px 16px 64px; }
   .layout { display: grid; grid-template-columns: 196px minmax(0, 1fr); gap: 18px; align-items: start; }
@@ -220,6 +225,68 @@
     table { table-layout: auto; }
     tbody tr:first-child { border-top: 0; }
   }
+
+  /* ---------------------------------------------------------------- Field Notes -- */
+  .wrap { max-width: 1400px; padding-top: 36px; }
+  .layout { grid-template-columns: 200px minmax(0, 1fr); gap: 26px; }
+  nav.side { background: transparent; border: 0; padding: 0; box-shadow: none; }
+  nav.side .nh, nav.side .nh.tog { font: 600 15px/1.2 var(--serif); text-transform: none; letter-spacing: 0; color: var(--text); padding: 18px 10px 6px; }
+  nav.side .nh.tog .gc { font-family: "Instrument Sans", sans-serif; }
+  nav.side button { border-radius: 999px; font-size: 14px; }
+  nav.side button.on { background: var(--accent); color: var(--bg); }
+  nav.side button.on .cnt, nav.side button.on .star { color: var(--bg); opacity: .85; }
+  nav.side hr { display: none; }
+  header { margin-bottom: 26px; }
+  header h1 { font: 600 34px/1 var(--serif); letter-spacing: -.01em; }
+  .company { border: 0; background: var(--surface); margin-bottom: 22px; }
+  .company .head { background: transparent; border-bottom: 1px solid var(--border); padding: 18px 20px 12px; }
+  .company .head h2 { font: 600 24px/1.1 var(--serif); letter-spacing: -.01em; }
+  thead th { text-transform: none; letter-spacing: 0; font-size: 12.5px; color: var(--faint); font-weight: 500; }
+  th, td { padding: 9px 10px; font-size: 13.5px; }
+  th.w-loc { width: 15%; } th.w-ids { width: 96px; } th.w-acts { width: 180px; }
+  th.w-co { width: 124px; } td.co { overflow: hidden; text-overflow: ellipsis; max-width: 0; }
+  td.title a { font-weight: 500; color: var(--text); }
+  td.title a:hover { color: var(--accent); }
+  .badge { font-weight: 500; padding: 2px 8px; }
+  button, .chip, .controls input[type=search], .controls select { border-radius: 999px; }
+  button.primary { color: var(--bg); }
+  dialog { border-radius: 16px; }
+
+  /* ------------------------------------------------------------- morning brief -- */
+  .brief-wrap { display: grid; grid-template-columns: 1.4fr 1fr; gap: 14px; margin-bottom: 26px; }
+  .brief-wrap .card { background: var(--surface); border-radius: 16px; padding: 18px 20px; }
+  .brief-wrap h3 { margin: 0 0 8px; font: 500 13px/1.3 "Instrument Sans", sans-serif; color: var(--muted); }
+  .brief { padding: 24px 26px !important; }
+  .brief .date { margin: 0; color: var(--muted); font-size: 13px; }
+  .brief h2 { font: 500 30px/1.15 var(--serif); margin: 6px 0 12px; letter-spacing: -.01em; }
+  .brief .roles { list-style: none; margin: 0; padding: 0; }
+  .brief .roles li { display: grid; grid-template-columns: 9em minmax(0, 1fr) auto; gap: 12px; padding: 10px 0; border-top: 1px solid var(--border); font-size: 14.5px; align-items: baseline; }
+  .brief .roles li.cap { display: block; color: var(--faint); font-size: 12.5px; padding: 0 0 6px; border: 0; }
+  .brief .roles .co { color: var(--muted); font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .brief .roles a { color: var(--text); font-weight: 500; text-decoration: none; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .brief .roles a:hover { color: var(--accent); text-decoration: underline; }
+  .brief .roles .pay { color: var(--muted); font-size: 13px; font-variant-numeric: tabular-nums; }
+  .brief .link { margin-top: 10px; border: 0; background: none; padding: 0; color: var(--accent); font-weight: 600; font-size: 13.5px; }
+  .brief .link:hover { text-decoration: underline; }
+  .brief-wrap .side { display: grid; gap: 14px; align-content: start; }
+  .brief-wrap .spark { display: flex; align-items: flex-end; gap: 3px; height: 78px; margin-top: 14px; }
+  .brief-wrap .spark i { flex: 1; background: var(--spark); border-radius: 3px 3px 0 0; }
+  .brief-wrap .spark i.wk { background: var(--accent); }
+  .brief-wrap .axis { display: flex; justify-content: space-between; font-size: 11px; color: var(--faint); margin-top: 4px; }
+  .brief-wrap .foot { margin: 8px 0 0; font-size: 12.5px; color: var(--muted); }
+  .brief-wrap .foot b { color: var(--text); }
+  .brief-wrap .pair { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  .brief-wrap .mini { padding: 14px 16px; }
+  .brief-wrap .mini .big { font: 500 28px/1 var(--serif); color: var(--text); }
+  .brief-wrap .mini p { margin: 6px 0 0; font-size: 12.5px; color: var(--muted); }
+  .brief-wrap .boards { margin: 0 4px; font-size: 12.5px; color: var(--faint); }
+  .brief-wrap .boards .err { color: var(--err); }
+  @media (max-width: 900px) {
+    .brief-wrap { grid-template-columns: 1fr; }
+    .brief .roles li { grid-template-columns: 1fr; gap: 2px; }
+    .brief h2 { font-size: 25px; }
+  }
+  @media (max-width: 520px) { .brief-wrap .pair { grid-template-columns: 1fr 1fr; } .brief-wrap .pair .mini:last-child { grid-column: 1 / -1; } }
 </style>
 </head>
 <body>
@@ -259,14 +326,28 @@
     </form>
   </dialog>
 
-  <div class="tiles">
-    <div class="tile new"><div class="n" id="tNew">–</div><div class="l">New since your last visit</div></div>
-    <div class="tile"><div class="n" id="tWeek">–</div><div class="l">Posted in last 7 days</div></div>
-    <div class="tile"><div class="n" id="tOpen">–</div><div class="l">Open, not yet triaged</div></div>
-    <div class="tile"><div class="n" id="tApplied">–</div><div class="l">Applied (still open)</div></div>
-    <div class="tile"><div class="n" id="tCompanies">–</div><div class="l">Companies watched</div></div>
-    <div class="tile err" id="tErrWrap" hidden><div class="n" id="tErr">–</div><div class="l">Boards failing to fetch</div></div>
-  </div>
+  <section class="brief-wrap">
+    <article class="card brief">
+      <p class="date" id="bDate"></p>
+      <h2 id="bHead">Loading…</h2>
+      <ul class="roles" id="bRoles"></ul>
+      <button class="link" id="bAll" hidden></button>
+    </article>
+    <div class="side">
+      <article class="card">
+        <h3>Posted per day, last two weeks</h3>
+        <div class="spark" id="bSpark"></div>
+        <div class="axis"><span id="bFrom"></span><span>Today</span></div>
+        <p class="foot" id="bTrend"></p>
+      </article>
+      <div class="pair">
+        <article class="card mini"><div class="big" id="tOpen">–</div><p>Not yet triaged</p></article>
+        <article class="card mini"><div class="big" id="tApplied">–</div><p>Applied, still open</p></article>
+        <article class="card mini"><div class="big" id="bPay">–</div><p>Typical pay midpoint</p></article>
+      </div>
+      <p class="boards" id="bBoards"></p>
+    </div>
+  </section>
 
   <div class="layout">
   <nav class="side" id="side"></nav>
@@ -841,17 +922,47 @@
 
   const EMPTY = { open: 'Nothing here — everything is filed under Applied or Archive, or nothing matches the filter.', applied: 'Nothing filed as applied yet. Use ✓ Applied on a role once you have applied.', archived: 'Nothing archived. Use Archive on roles that are not of interest.' };
 
+  // ------------------------------------------------------------ morning brief --
+  const kUSD = v => '$' + (v >= 1e6 ? (v / 1e6).toFixed(1) + 'M' : Math.round(v / 1000) + 'K');
+  const annual = s => s && s.max > 1000 ? s : null;      // hourly ranges don't belong in a pay midpoint
+  function renderBrief(open) {
+    const untriaged = open.filter(j => markOf(j) === 'open');
+    const fresh = untriaged.filter(isNew).sort((a, b) => new Date(b.first_seen) - new Date(a.first_seen) || new Date(b.published_at || 0) - new Date(a.published_at || 0));
+    const list = fresh.length ? fresh : [...untriaged].sort((a, b) => new Date(b.published_at || b.first_seen) - new Date(a.published_at || a.first_seen));
+    $('#bDate').textContent = new Date().toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' });
+    $('#bHead').textContent = fresh.length ? `${fresh.length} new role${fresh.length > 1 ? 's' : ''} since your last visit` : 'Nothing new since your last visit';
+    $('#bRoles').innerHTML = (fresh.length ? '' : '<li class="cap">Most recent open roles</li>') + list.slice(0, 5).map(j => {
+      const s = annual(j.salary);
+      return `<li><span class="co">${escapeHtml(j.company)}</span><a href="${escapeHtml(j.url)}" target="_blank" rel="noopener">${escapeHtml(j.title)}</a><span class="pay">${s ? kUSD(s.min) + '–' + kUSD(s.max) : ''}</span></li>`;
+    }).join('');
+    const more = $('#bAll');
+    more.hidden = fresh.length <= 5;
+    more.textContent = `Show all ${fresh.length} new roles`;
+
+    // postings per day for the last 14 days (all open roles in scope, triaged or not)
+    const day = 864e5, t0 = new Date(); t0.setHours(0, 0, 0, 0);
+    const days = [...Array(14)].map((_, i) => { const s = +t0 - (13 - i) * day; return { s, n: open.filter(j => { const t = +new Date(j.published_at || j.first_seen); return t >= s && t < s + day; }).length }; });
+    const max = Math.max(1, ...days.map(x => x.n));
+    $('#bSpark').innerHTML = days.map((x, i) => `<i class="${i >= 7 ? 'wk' : ''}" style="height:${Math.max(3, x.n / max * 100)}%" title="${fmtDate(new Date(x.s).toISOString())}: ${x.n} posted"></i>`).join('');
+    $('#bFrom').textContent = fmtDate(new Date(days[0].s).toISOString());
+    const wk = days.slice(7).reduce((a, x) => a + x.n, 0), prev = days.slice(0, 7).reduce((a, x) => a + x.n, 0), dlt = wk - prev;
+    $('#bTrend').innerHTML = `<b>${wk}</b> this week · ` + (dlt === 0 ? 'same as the week before' : `${Math.abs(dlt)} ${dlt > 0 ? 'more' : 'fewer'} than the week before`);
+
+    $('#tOpen').textContent = untriaged.length;
+    $('#tApplied').textContent = open.filter(j => markOf(j) === 'applied').length;
+    const mids = untriaged.map(j => annual(j.salary)).filter(Boolean).map(s => (s.min + s.max) / 2).sort((a, b) => a - b);
+    $('#bPay').textContent = mids.length ? kUSD(mids[Math.floor(mids.length / 2)]) : '—';
+    $('#bPay').title = mids.length ? `Median midpoint of the ${mids.length} untriaged roles that list annual pay` : '';
+    const errs = data.companies.filter(c => c.status === 'error');
+    $('#bBoards').innerHTML = `${data.companies.length} companies watched` + (errs.length ? ` · <span class="err" title="${escapeHtml(errs.map(c => c.name).join(', '))}">${errs.length} board${errs.length > 1 ? 's' : ''} failing to fetch</span>` : '');
+  }
+  $('#bAll').addEventListener('click', () => { document.querySelector('.chip[data-f="new"]').click(); document.querySelector('.layout').scrollIntoView({ behavior: 'smooth' }); });
+
   function render() {
     const jobs = allJobs();
     const open = jobs.filter(j => j.status === 'open');
     const untriaged = open.filter(j => markOf(j) === 'open');
-    $('#tNew').textContent = untriaged.filter(isNew).length;
-    $('#tWeek').textContent = untriaged.filter(isWeek).length;
-    $('#tOpen').textContent = untriaged.length;
-    $('#tApplied').textContent = open.filter(j => markOf(j) === 'applied').length;
-    $('#tCompanies').textContent = data.companies.length;
-    const errs = data.companies.filter(c => c.status === 'error');
-    $('#tErrWrap').hidden = !errs.length; $('#tErr').textContent = errs.length;
+    renderBrief(open.filter(j => titleMatches(j.title)));
     $('#generated').textContent = data.generated_at
       ? `Last sweep ${fmtDate(data.generated_at)} at ${fmtTime(data.generated_at)} (${ago(data.generated_at)})${lastVisit ? ` · showing new since your last visit ${ago(lastVisit)}` : ''}`
       : 'No sweep data yet — run the GitHub Action or scripts/fetch_jobs.py';
