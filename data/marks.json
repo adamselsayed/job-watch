@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T04:25:27.992Z",
+  "updated_at": "2026-11-09T04:25:34.635Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -566,8 +566,8 @@
       "company": "ServiceNow"
     },
     "smartrecruiters:ServiceNow:744000150715459": {
-      "status": "open",
-      "at": "2026-11-02T19:43:05.993Z",
+      "status": "archived",
+      "at": "2026-11-09T04:25:33.125Z",
       "title": "Principal Inbound Product Manager, CRM Voice AI ",
       "company": "ServiceNow"
     },
@@ -596,8 +596,8 @@
       "company": "ServiceNow"
     },
     "smartrecruiters:ServiceNow:744000149933604": {
-      "status": "open",
-      "at": "2026-11-02T19:43:05.993Z",
+      "status": "archived",
+      "at": "2026-11-09T04:25:31.837Z",
       "title": "Principal Outbound Product Security Manager",
       "company": "ServiceNow"
     },
