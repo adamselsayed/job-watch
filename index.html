@@ -74,7 +74,11 @@
   nav.side .nh.tog.over { background: var(--accent-soft); outline: 1px dashed var(--accent); color: var(--accent); }
   nav.side .grp.collapsed { display: none; }
   nav.side button[draggable=true] { cursor: grab; }
-  nav.side button.dragging { opacity: .4; }
+  nav.side button.dragging { opacity: .35; }
+  nav.side .grp { position: relative; }
+  nav.side .grp.over { outline: none !important; background: transparent !important; }
+  nav.side .drop-line { position: absolute; left: 4px; right: 4px; height: 3px; margin-top: -1px; border-radius: 3px; background: var(--accent); pointer-events: none; z-index: 2; }
+  nav.side .drop-line::before { content: ""; position: absolute; left: -4px; top: -3px; width: 9px; height: 9px; border-radius: 50%; background: var(--accent); }
   nav.side button .star { font-size: 13px; color: var(--faint); opacity: 0; padding: 0 2px; }
   nav.side button:hover .star { opacity: 1; }
   nav.side button .star:hover { color: var(--accent); }
@@ -547,12 +551,14 @@
   // collapsed = group keys folded shut in the sidebar; saved and synced with the groups.
   let groups = { primary: [], tertiary: [], out: [], collapsed: [], at: '' };
   const normGroups = g => g && Array.isArray(g.names) ? { primary: g.names, tertiary: [], out: [], collapsed: [], at: g.at || '' }
-    : (g && (g.primary || g.out || g.tertiary || g.collapsed)) ? { primary: g.primary || [], tertiary: g.tertiary || [], out: g.out || [], collapsed: g.collapsed || [], at: g.at || '' } : null;
+    : (g && (g.primary || g.out || g.tertiary || g.collapsed)) ? { primary: g.primary || [], tertiary: g.tertiary || [], out: g.out || [], general: g.general || [], collapsed: g.collapsed || [], at: g.at || '' } : null;
   try { groups = normGroups(JSON.parse(localStorage.getItem('jobwatch.groups') || 'null')) || normGroups(JSON.parse(localStorage.getItem('jobwatch.primary') || 'null')) || groups; } catch (e) {}
   const saveGroups = () => { try { localStorage.setItem('jobwatch.groups', JSON.stringify(groups)); } catch (e) {} };
-  function setGroups(primary, tertiary, out) {
+  // general = the order you've dragged Secondary into (new companies still land at the end of Secondary)
+  function setGroups(primary, tertiary, out, general = groups.general || []) {
     const p = [...new Set(primary)], t = [...new Set(tertiary)].filter(n => !p.includes(n)), o = [...new Set(out)].filter(n => !p.includes(n) && !t.includes(n));
-    groups = { primary: p, tertiary: t, out: o, collapsed: groups.collapsed || [], at: new Date().toISOString() }; saveGroups(); render(); scheduleSync();
+    const g = [...new Set(general)].filter(n => !p.includes(n) && !t.includes(n) && !o.includes(n));
+    groups = { primary: p, tertiary: t, out: o, general: g, collapsed: groups.collapsed || [], at: new Date().toISOString() }; saveGroups(); render(); scheduleSync();
   }
   function toggleCollapsed(key) {
     const c = new Set(groups.collapsed || []); c.has(key) ? c.delete(key) : c.add(key);
@@ -1111,7 +1117,9 @@
     const prim = groups.primary.filter(n => known.has(n));
     const ter = groups.tertiary.filter(n => known.has(n) && !prim.includes(n));
     const out = groups.out.filter(n => known.has(n) && !prim.includes(n) && !ter.includes(n));
-    const gen = data.companies.map(c => c.name).filter(n => !prim.includes(n) && !ter.includes(n) && !out.includes(n));
+    const genOrder = groups.general || [];
+    const gen = data.companies.map(c => c.name).filter(n => !prim.includes(n) && !ter.includes(n) && !out.includes(n))
+      .map((n, i) => [n, genOrder.includes(n) ? genOrder.indexOf(n) : 1e6 + i]).sort((a, b) => a[1] - b[1]).map(x => x[0]);
     const grpOf = n => prim.includes(n) ? 'primary' : ter.includes(n) ? 'tertiary' : out.includes(n) ? 'out' : 'general';
     // symbol cycles Primary -> Secondary -> Tertiary -> Out of Network -> Primary (tap fallback for touch screens)
     const NEXT = { primary: 'general', general: 'tertiary', tertiary: 'out', out: 'primary' };
@@ -1143,10 +1151,10 @@
     }));
     // star = tap/click fallback for touch screens
     const moveTo = (n, grp, beforeName) => {
-      const lists = { primary: prim.filter(x => x !== n), tertiary: ter.filter(x => x !== n), out: out.filter(x => x !== n) };
+      const lists = { primary: prim.filter(x => x !== n), tertiary: ter.filter(x => x !== n), out: out.filter(x => x !== n), general: gen.filter(x => x !== n) };
       const L = lists[grp];
       if (L) { const i = beforeName ? L.indexOf(beforeName) : -1; L.splice(i < 0 ? L.length : i, 0, n); }
-      setGroups(lists.primary, lists.tertiary, lists.out);
+      setGroups(lists.primary, lists.tertiary, lists.out, lists.general);
     };
     side.querySelectorAll('.star').forEach(st => st.addEventListener('click', e => { e.stopPropagation(); const n = e.currentTarget.dataset.star;
       moveTo(n, NEXT[grpOf(n)]); }));
@@ -1155,16 +1163,31 @@
     side.querySelectorAll('.grp button').forEach(b => {
       b.draggable = true;
       b.addEventListener('dragstart', e => { dragName = b.dataset.name; b.classList.add('dragging'); e.dataTransfer.effectAllowed = 'move'; e.dataTransfer.setData('text/plain', dragName); });
-      b.addEventListener('dragend', () => { b.classList.remove('dragging'); side.querySelectorAll('.grp').forEach(g => g.classList.remove('over')); });
+      b.addEventListener('dragend', () => { b.classList.remove('dragging'); clearDrop(); });
     });
+    // While dragging, a line shows exactly where the company will land: above the item whose
+    // midpoint is below the cursor, or at the end of the group.
+    const line = document.createElement('div'); line.className = 'drop-line';
+    const clearDrop = () => { line.remove(); side.querySelectorAll('.grp').forEach(g => { g.classList.remove('over'); delete g.dataset.before; }); };
     side.querySelectorAll('.grp').forEach(g => {
-      g.addEventListener('dragover', e => { e.preventDefault(); e.dataTransfer.dropEffect = 'move'; g.classList.add('over'); });
-      g.addEventListener('dragleave', e => { if (!g.contains(e.relatedTarget)) g.classList.remove('over'); });
+      g.addEventListener('dragover', e => {
+        e.preventDefault(); e.dataTransfer.dropEffect = 'move';
+        side.querySelectorAll('.grp.over').forEach(x => x !== g && x.classList.remove('over'));
+        g.classList.add('over');
+        const items = [...g.querySelectorAll('button[data-name]')].filter(b => b.dataset.name !== dragName);
+        const before = items.find(b => { const r = b.getBoundingClientRect(); return e.clientY < r.top + r.height / 2; });
+        g.dataset.before = before ? before.dataset.name : '';
+        const last = items[items.length - 1];
+        const y = before ? before.offsetTop - 2 : last ? last.offsetTop + last.offsetHeight + 1 : 6;
+        line.style.top = y + 'px';
+        if (line.parentNode !== g) g.append(line);
+      });
+      g.addEventListener('dragleave', e => { if (!g.contains(e.relatedTarget)) { g.classList.remove('over'); if (line.parentNode === g) line.remove(); } });
       g.addEventListener('drop', e => {
-        e.preventDefault(); g.classList.remove('over');
-        const n = dragName || e.dataTransfer.getData('text/plain'); if (!n) return;
-        const after = e.target.closest('button');                     // drop onto an item = insert before it
-        moveTo(n, g.dataset.grp, after && after.dataset.name !== n ? after.dataset.name : null);
+        e.preventDefault();
+        const n = dragName || e.dataTransfer.getData('text/plain'), before = g.dataset.before || null;
+        clearDrop(); if (!n) return;
+        moveTo(n, g.dataset.grp, before);
       });
     });
   }
