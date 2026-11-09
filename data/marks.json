@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T04:25:15.722Z",
+  "updated_at": "2026-11-09T04:25:18.294Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -548,8 +548,8 @@
       "company": "ServiceNow"
     },
     "smartrecruiters:ServiceNow:744000151391394": {
-      "status": "open",
-      "at": "2026-11-02T19:43:05.993Z",
+      "status": "archived",
+      "at": "2026-11-09T04:25:16.781Z",
       "title": "Senior Staff Inbound Product Manager - AI Search",
       "company": "ServiceNow"
     },
