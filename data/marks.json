@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T05:00:40.804Z",
+  "updated_at": "2026-11-09T05:05:29.434Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1530,8 +1530,8 @@
       "CWX",
       "AMN Healthcare",
       "Smartsheet",
-      "GlobalLogic",
-      "Hitachi"
+      "Hitachi",
+      "GlobalLogic"
     ],
     "out": [
       "EVgo",
@@ -1550,9 +1550,21 @@
       "Nextdoor",
       "Housecall Pro"
     ],
+    "general": [
+      "Toast",
+      "Komodo Health",
+      "Thumbtack",
+      "Life360",
+      "NVIDIA",
+      "AutoNation",
+      "Curri",
+      "FieldAI",
+      "Fleetio",
+      "Intuit"
+    ],
     "collapsed": [
       "out"
     ],
-    "at": "2026-11-09T05:00:39.296Z"
+    "at": "2026-11-09T05:05:27.922Z"
   }
 }
