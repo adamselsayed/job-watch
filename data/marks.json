@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T04:22:47.780Z",
+  "updated_at": "2026-11-09T04:23:03.529Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1229,6 +1229,12 @@
       "status": "archived",
       "at": "2026-11-09T04:22:46.269Z",
       "title": "Staff Product Manager - ML Training Workflow",
+      "company": "General Motors"
+    },
+    "workday:generalmotors.wd5/Careers_GM:JR-202623223": {
+      "status": "archived",
+      "at": "2026-11-09T04:23:02.017Z",
+      "title": "Staff Product Manager - Customer  Authentication",
       "company": "General Motors"
     }
   },
