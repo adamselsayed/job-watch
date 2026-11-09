@@ -1,0 +1,1349 @@
+{
+ "first_page": {
+  "keys": [
+   "refineSearch"
+  ],
+  "rs_keys": [
+   "status",
+   "hits",
+   "totalHits",
+   "data",
+   "eid"
+  ],
+  "data_keys": [
+   "jobs",
+   "aggregations",
+   "SEARCH_CONFIG",
+   "suggestions",
+   "ui_skills_selection"
+  ],
+  "totalHits": 1457,
+  "sample": [
+   {
+    "ml_skills": [
+     "c programming",
+     "c++ programming",
+     "windows system programming",
+     "systems programming",
+     "multi-threaded application development",
+     "multi-process application development",
+     "windows apis",
+     "file i/o",
+     "winsock",
+     "networking concepts",
+     "debugging",
+     "software architecture",
+     "system-level software development",
+     "api hooking",
+     "code review",
+     "performance optimization",
+     "cross-platform development",
+     "endpoint security",
+     "cybersecurity",
+     "security monitoring",
+     "troubleshooting",
+     "collaboration",
+     "technical design"
+    ],
+    "type": "Full time",
+    "descriptionTeaser": "Become part of our team as a Senior Software Engineer, focusing on developing and enhancing runtime security features for Windows-based endpoint agents. Collaborate with senior engineers to design and implement system-level security and monitoring solutions. Ideal for experienced software developers with strong systems programming skills and a background in Windows platform APIs.",
+    "state": "California",
+    "siteType": "external",
+    "RemoteType": "Remote",
+    "multi_category": [
+     "Product and Engineering"
+    ],
+    "reqId": "2023799",
+    "city": "San Jose",
+    "latitude": "37.33939",
+    "multi_location": [
+     "San Jose, California, United States of America",
+     "Birmingham, Alabama, United States of America",
+     "Juneau, Alaska, United States of America",
+     "Phoenix, Arizona, United States of America",
+     "Little Rock, Arkansas, United States of America",
+     "San Jose, California, United States of America",
+     "Denver, Colorado, United States of America",
+     "Hartford, Connecticut, United States of America",
+     "Dover, Delaware, United States of America",
+     "Miami, Florida, United States of America",
+     "Atlanta, Georgia, United States of America",
+     "Honolulu, Hawaii, United States of America",
+     "Boise, Idaho, United States of America",
+     "Chicago, Illinois, United States of America",
+     "Indianapolis, Indiana, United States of America",
+     "West Des Moines, Iowa, United States of America",
+     "Topeka, Kansas, United States of America",
+     "Frankfort, Kentucky, United States of America",
+     "Baton Rouge, Louisiana, United States of America",
+     "Augusta, Maine, United States of America",
+     "Annapolis Junction, Maryland, United States of America",
+     "Boston, Massachusetts, United States of America",
+     "Ann Arbor, Michigan, United States of America",
+     "Minneapolis, Minnesota, United States of America",
+     "Jackson, Mississippi, United States of America",
+     "Clayton, Missouri, United States of America",
+     "Helena, Montana, United States of America",
+     "Lincoln, Nebraska, United States of America",
+     "Reno, Nevada, United States of America",
+     "Concord, New Hampshire, United States of America",
+     "Trenton, New Jersey, United States of America",
+     "Santa Fe, New Mexico, United States of America",
+     "New York, New York, United States of America",
+     "Research Triangle Park, North Carolina, United States of America",
+     "Bismark, North Dakota, United States of America",
+     "Richfield, Ohio, United States of America",
+     "Oklahoma City, Oklahoma, United States of America",
+     "Portland, Oregon, United States of America",
+     "Philadelphia, Pennsylvania, United States of America",
+     "Providence, Rhode Island, United States of America",
+     "Columbia, South Carolina, United States of America",
+     "Pierre, South Dakota, United States of America",
+     "Nashville, Tennessee, United States of America",
+     "Austin, Texas, United States of America",
+     "Salt Lake City, Utah, United States of America",
+     "Montpelier, Vermont, United States of America",
+     "Herndon, Virginia, United States of America",
+     "Olympus, Washington, United States of America",
+     "Charleston, West Virginia, United States of America",
+     "Appleton, Wisconsin, United States of America",
+     "Cheyenne, Wyoming, United States of America"
+    ],
+    "address": "., San Jose, CA 95134, United States of America",
+    "applyUrl": "https://cisco.wd5.myworkdayjobs.com/Cisco_Careers/job/San-Jose-California-US/Senior-Software-Engineer--Remote-_2023799/apply",
+    "ml_job_parser": {
+     "descriptionTeaser": "Become part of our team as a Senior Software Engineer, focusing on developing and enhancing runtime security features for Windows-based endpoint agents. Collaborate with senior engineers to design and implement system-level security and monitoring solutions. Ideal for experienced software developers with strong systems programming skills and a background in Windows platform APIs.",
+     "descriptionTeaser_ats": "The application window is expected to close on .  11/29/2026This is a fully remote role and can be based anywhere in the United States.Meet the TeamIsovalent, now part of Cisco, is the company founded b",
+     "descriptionTeaser_keyword": "The application window is expected to close on: 11/29/2026. This is a fully remote role and can be based anywhere in the United States. Meet the Team. Isovalent, now part of Cisco, is the company foun...",
+     "descriptionTeaser_first200": "The application window is expected to close on: 11/29/2026. This is a fully remote role and can be based anywhere in the United States. Meet the Team. Isovalent, now part of Cisco, is the company f..."
+    },
+    "externalApply": false,
+    "cityState": "San Jose, California",
+    "country": "United States of America",
+    "visibilityType": "External",
+    "longitude": "-121.89496",
+    "jobId": "2023799",
+    "locale": "en_GLOBAL",
+    "title": "Senior Software Engineer (Remote)",
+    "jobSeqNo": "CISCISGLOBAL2023799EXTERNALENGLOBAL",
+    "postedDate": "2026-09-24T00:00:00.000+0000",
+    "dateCreated": "2026-09-01T08:47:31.910+0000",
+    "cityStateCountry": "San Jose, California, United States of America",
+    "department": "Supervisory Organization 0007900 (Alessandro Boch)",
+    "jobVisibility": [
+     "external",
+     "internal"
+    ],
+    "location": "San Jose, California, United States of America",
+    "category": "Product and Engineering",
+    "isMultiLocation": true,
+    "multi_location_array": [
+     {
+      "latlong": {
+       "lon": -121.89496,
+       "lat": 37.33939
+      },
+      "location": "San Jose, California, United States of America"
+     },
+     {
+      "latlong": {
+       "lon": -86.80249,
+       "lat": 33.52066
+      },
+      "location": "Birmingham, Alabama, United States of America"
+     },
+     {
+      "latlong": {
+       "lon": -134.41972,
+       "lat": 58.30194
+      },
+      "location": "Juneau, Alaska, United States of America"
+     },
+     {
+      "latlong": {
+       "lon": -112.07404,
+       "lat": 33.44838
+      },
+      "location": "Phoenix, Arizona, United States of America"
+     },
+     {
+      "latlong": {
+       "lon": -92.28959,
+       "lat": 34.74648
+      },
+      "location": "Little Rock, Arkansas, United States of America"
+     },
+     {
+      "latlong": {
+       "lon": -121.89496,
+       "lat": 37.33939
+      },
+      "location": "San Jose, California, United States of America"
+     },
+     {
+      "latlong": {
+       "lon": -104.9847,
+       "lat": 39.73915
+      },
+      "location": "Denver, Colorado, United States of America"
+     },
+     {
+      "latlong": {
+       "lon": -72.68509,
+       "lat": 41.76371
+      },
+      "location": "Hartford, Connecticut, United States of America"
+     },
+     {
+      "latlong": {
+       "lon": -75.52437,
+       "lat": 39.15817
+      },
+      "location": "Dover, Delaware, United States of America"
+     },
+     {
+      "latlong": {
+       "lon": -80.19366,
+       "lat": 25.77427
+      },
+      "location": "Miami, Florida, United States of America"
+     },
+     {
+      "latlong": {
+       "lon": -84.38798,
+       "lat": 33.749
+      },
+      "location": "Atlanta, Georgia, United States of America"
+     },
+     {
+      "latlong": {
+       "lon": -157.85833,
+       "lat": 21.30694
+      },
+      "location": "Honolulu, Hawaii, United States of America"
+     },
+     {
+      "latlong": {
+       "lon": -116.27373,
+       "lat": 43.60489
+      },
+      "location": "Boise, Idaho, United States of America"
+     },
+     {
+      "latlong": {
+       "lon": -87.65005,
+       "lat": 41.85003
+      },
+      "location": "Chicago, Illinois, United States of America"
+     },
+     {
+      "latlong": {
+       "lon": -86.15804,
+       "lat": 39.76838
+      },
+      "location": "Indianapolis, Indiana, United States of America"
+     },
+     {
+      "latlong": {
+       "lon": -93.71133,
+       "lat": 41.57721
+      },
+      "location": "West Des Moines, Iowa, United States of America"
+     },
+     {
+      "latlong": {
+       "lon": -95.67804,
+       "lat": 39.04833
+      },
+      "location": "Topeka, Kansas, United States of America"
+     },
+     {
+      "latlong": {
+       "lon": -84.87328,
+       "lat": 38.20091
+      },
+      "location": "Frankfort, Kentucky, United States of America"
+     },
+     {
+      "latlong": {
+       "lon": -91.18747,
+       "lat": 30.44332
+      },
+      "location": "Baton Rouge, Louisiana, United States of America"
+     },
+     {
+      "latlong": {
+       "lon": -69.77949,
+       "lat": 44.31062
+      },
+      "location": "Augusta, Maine, United States of America"
+     },
+     {
+      "latlong": {
+       "lon": -76.78757,
+       "lat": 39.12287
+      },
+      "location": "Annapolis Junction, Maryland, United States of America"
+     },
+     {
+      "latlong": {
+       "lon": -71.05977,
+       "lat": 42.35843
+      },
+      "location": "Boston, Massachusetts, United States of America"
+     },
+     {
+      "latlong": {
+       "lon": -83.74088,
+       "lat": 42.27756
+      },
+      "location": "Ann Arbor, Michigan, United States of America"
+     },
+     {
+      "latlong": {
+       "lon": -93.26384,
+       "lat": 44.97997
+      },
+      "location": "Minneapolis, Minnesota, United States of America"
+     },
+     {
+      "latlong": {
+       "lon": -90.18481,
+       "lat": 32.29876
+      },
+      "location": "Jackson, Mississippi, United States of America"
+     },
+     {
+      "latlong": {
+       "lon": -90.32373,
+       "lat": 38.64255
+      },
+      "location": "Clayton, Missouri, United States of America"
+     },
+     {
+      "latlong": {
+       "lon": -112.03611,
+       "lat": 46.59271
+      },
+      "location": "Helena, Montana, United States of America"
+     },
+     {
+      "latlong": {
+       "lon": -96.66696,
+       "lat": 40.8
+      },
+      "location": "Lincoln, Nebraska, United States of America"
+     },
+     {
+      "latlong": {
+       "lon": -119.8138,
+       "lat": 39.52963
+      },
+      "location": "Reno, Nevada, United States of America"
+     },
+     {
+      "latlong": {
+       "lon": -71.53757,
+       "lat": 43.20814
+      },
+      "location": "Concord, New Hampshire, United States of America"
+     },
+     {
+      "latlong": {
+       "lon": -74.74294,
+       "lat": 40.21705
+      },
+      "location": "Trenton, New Jersey, United States of America"
+     },
+     {
+      "latlong": {
+       "lon": -105.9378,
+       "lat": 35.68698
+      },
+      "location": "Santa Fe, New Mexico, United States of America"
+     },
+     {
+      "latlong": {
+       "lon": -74.00597,
+       "lat": 40.71427
+      },
+      "location": "New York, New York, United States of America"
+     },
+     {
+      "latlong": {
+       "lon": -78.86029,
+       "lat": 35.89709
+      },
+      "location": "Research Triangle Park, North Carolina, United States of America"
+     },
+     {
+      "latlong": {
+       "lon": -100.78374,
+       "lat": 46.80833
+      },
+      "location": "Bismark, North Dakota, United States of America"
+     },
+     {
+      "latlong": {
+       "lon": -81.63818,
+       "lat": 41.23978
+      },
+      "location": "Richfield, Ohio, United States of America"
+     },
+     {
+      "latlong": {
+       "lon": -97.51643,
+       "lat": 35.46756
+      },
+      "location": "Oklahoma City, Oklahoma, United States of America"
+     },
+     {
+      "latlong": {
+       "lon": -122.67621,
+       "lat": 45.52345
+      },
+      "location": "Portland, Oregon, United States of America"
+     },
+     {
+      "latlong": {
+       "lon": -75.16362,
+       "lat": 39.95238
+      },
+      "location": "Philadelphia, Pennsylvania, United States of America"
+     },
+     {
+      "latlong": {
+       "lon": -71.41283,
+       "lat": 41.82399
+      },
+      "location": "Providence, Rhode Island, United States of America"
+     },
+     {
+      "latlong": {
+       "lon": -81.03481,
+       "lat": 34.00071
+      },
+      "location": "Columbia, South Carolina, United States of America"
+     },
+     {
+      "latlong": {
+       "lon": -100.35097,
+       "lat": 44.36832
+      },
+      "location": "Pierre, South Dakota, United States of America"
+     },
+     {
+      "latlong": {
+       "lon": -86.78444,
+       "lat": 36.16589
+      },
+      "location": "Nashville, Tennessee, United States of America"
+     },
+     {
+      "latlong": {
+       "lon": -97.74306,
+       "lat": 30.26715
+      },
+      "location": "Austin, Texas, United States of America"
+     },
+     {
+      "latlong": {
+       "lon": -111.89105,
+       "lat": 40.76078
+      },
+      "location": "Salt Lake City, Utah, United States of America"
+     },
+     {
+      "latlong": {
+       "lon": -72.57539,
+       "lat": 44.26006
+      },
+      "location": "Montpelier, Vermont, United States of America"
+     },
+     {
+      "latlong": {
+       "lon": -77.3861,
+       "lat": 38.96955
+      },
+      "location": "Herndon, Virginia, United States of America"
+     },
+     {
+      "latlong": {
+       "lon": -122.90931,
+       "lat": 47.00732
+      },
+      "location": "Olympus, Washington, United States of America"
+     },
+     {
+      "latlong": {
+       "lon": -81.63262,
+       "lat": 38.34982
+      },
+      "location": "Charleston, West Virginia, United States of America"
+     },
+     {
+      "latlong": {
+       "lon": -88.41538,
+       "lat": 44.26193
+      },
+      "location": "Appleton, Wisconsin, United States of America"
+     },
+     {
+      "latlong": {
+       "lon": -104.82025,
+       "lat": 41.13998
+      },
+      "location": "Cheyenne, Wyoming, United States of America"
+     }
+    ],
+    "isMultiCategory": true,
+    "multi_category_array": [
+     {
+      "category": "Product and Engineering"
+     }
+    ],
+    "badge": ""
+   },
+   {
+    "type": "Full time",
+    "descriptionTeaser": "Become part of our team as a Site Reliability Engineering Technical Leader, driving the migration of globally distributed Kubernetes clusters to a data-center-based platform. Lead feasibility assessments, technical planning, and phased migration, supporting production operations and contributing to Kubernetes reliability initiatives. Ideal for experienced engineers with strong leadership in large-scale distributed systems.",
+    "state": "California",
+    "siteType": "external",
+    "RemoteType": "Remote",
+    "multi_category": [
+     "Product and Engineering"
+    ],
+    "reqId": "2025037",
+    "city": "San Francisco",
+    "latitude": "37.77493",
+    "multi_location": [
+     "San Francisco, California, United States of America",
+     "Austin, Texas, United States of America",
+     "Chicago, Illinois, United States of America",
+     "Research Triangle Park, North Carolina, United States of America",
+     "Seattle, Washington, United States of America"
+    ],
+    "address": "., San Francisco, CA 94158, United States of America",
+    "applyUrl": "https://cisco.wd5.myworkdayjobs.com/Cisco_Careers/job/San-Francisco-California-US/Site-Reliability-Engineering-Technical-Leader_2025037-1/apply",
+    "externalApply": false,
+    "cityState": "San Francisco, California",
+    "country": "United States of America",
+    "visibilityType": "External",
+    "longitude": "-122.41942",
+    "jobId": "2025037",
+    "locale": "en_GLOBAL",
+    "title": "Technical Leader, SRE/Go development",
+    "jobSeqNo": "CISCISGLOBAL2025037EXTERNALENGLOBAL",
+    "postedDate": "2026-10-15T00:00:00.000+0000",
+    "dateCreated": "2026-09-08T17:45:56.618+0000",
+    "cityStateCountry": "San Francisco, California, United States of America",
+    "department": "Meraki SRE5 (Harpreet Nain)",
+    "jobVisibility": [
+     "external",
+     "internal"
+    ],
+    "location": "San Francisco, California, United States of America",
+    "category": "Product and Engineering",
+    "ml_skills": [
+     "kubernetes",
+     "site reliability engineering",
+     "aws",
+     "go",
+     "linux",
+     "networking",
+     "incident response",
+     "production operations",
+     "performance analysis",
+     "observability",
+     "automation",
+     "docker",
+     "kustomize",
+     "gitlab ci/cd",
+     "ingress",
+     "load balancing",
+     "service discovery",
+     "traffic management",
+     "grpc",
+     "protocol buffers",
+     "mutual tls",
+     "pki",
+     "vpn",
+     "tunneling",
+     "network security",
+     "opentelemetry",
+     "prometheus",
+     "datadog"
+    ],
+    "ml_job_parser": {
+     "descriptionTeaser": "Become part of our team as a Site Reliability Engineering Technical Leader, driving the migration of globally distributed Kubernetes clusters to a data-center-based platform. Lead feasibility assessments, technical planning, and phased migration, supporting production operations and contributing to Kubernetes reliability initiatives. Ideal for experienced engineers with strong leadership in large-scale distributed systems.",
+     "descriptionTeaser_first200": "Meet The Team. Cloud Network Platform Engineering builds and operates the cloud platforms that provide secure, reliable, and scalable connectivity for Cisco products and customers. Within the organ...",
+     "descriptionTeaser_keyword": "Meet The Team. Cloud Network Platform Engineering builds and operates the cloud platforms that provide secure, reliable, and scalable connectivity for Cisco products and customers. Within the organiza...",
+     "descriptionTeaser_ats": "The application window is expected to close on: 11/19/2026Meet The TeamCloud Network Platform Engineering builds and operates the cloud platforms that provide secure, reliable, and scalable connectivi"
+    },
+    "isMultiLocation": true,
+    "multi_location_array": [
+     {
+      "latlong": {
+       "lon": -122.41942,
+       "lat": 37.77493
+      },
+      "location": "San Francisco, California, United States of America"
+     },
+     {
+      "latlong": {
+       "lon": -97.74306,
+       "lat": 30.26715
+      },
+      "location": "Austin, Texas, United States of America"
+     },
+     {
+      "latlong": {
+       "lon": -87.65005,
+       "lat": 41.85003
+      },
+      "location": "Chicago, Illinois, United States of America"
+     },
+     {
+      "latlong": {
+       "lon": -78.86029,
+       "lat": 35.89709
+      },
+      "location": "Research Triangle Park, North Carolina, United States of America"
+     },
+     {
+      "latlong": {
+       "lon": -122.33207,
+       "lat": 47.60621
+      },
+      "location": "Seattle, Washington, United States of America"
+     }
+    ],
+    "isMultiCategory": true,
+    "multi_category_array": [
+     {
+      "category": "Product and Engineering"
+     }
+    ],
+    "badge": ""
+   }
+  ]
+ },
+ "scanned": 1457,
+ "kept": 51,
+ "kept_rows": [
+  {
+   "job_id": "CISCISGLOBAL2029645EXTERNALENGLOBAL",
+   "req_id": "2029645",
+   "title": "Director, Associate General Counsel: Product Legal",
+   "location": "Research Triangle Park, North Carolina, United States of America",
+   "location_detail": "Research Triangle Park, North Carolina, United States of America; Atlanta, Georgia, United States of America; Austin, Texas, United States of America; Boston, Massachusetts, United States of America; Chicago, Illinois, United States of America; Seattle, Washington, United States of America; Washington, District of Columbia, United States of America",
+   "department": "Legal",
+   "published_at": "2026-10-29T00:00:00.000+0000",
+   "updated_at": null,
+   "url": "https://careers.cisco.com/global/en/job/CISCISGLOBAL2029645EXTERNALENGLOBAL/Director-Associate-General-Counsel-Product-Legal",
+   "salary": null,
+   "_meta_text": "type: Full time workplace: ",
+   "_content_head": "The application window is expected to close on: 11/19/2026 Members of the Legal organization at select locations will generally be expected to follow a hybrid work model, which includes two days of in-office attendance each week, with limited exceptions. \n \n\n\n Meet the Team\n\n Cisco Legal’s Product Legal organization provides strategic, business-focused counsel across Cisco’s product development an"
+  },
+  {
+   "job_id": "CISCISGLOBAL2026341EXTERNALENGLOBAL",
+   "req_id": "2026341",
+   "title": "Intake Product Manager, Cisco Validated",
+   "location": "Research Triangle Park, North Carolina, United States of America",
+   "location_detail": "Research Triangle Park, North Carolina, United States of America; Atlanta, Georgia, United States of America; San Jose, California, United States of America",
+   "department": "Marketing and Communications",
+   "published_at": "2026-11-02T00:00:00.000+0000",
+   "updated_at": null,
+   "url": "https://careers.cisco.com/global/en/job/CISCISGLOBAL2026341EXTERNALENGLOBAL/Intake-Product-Manager-Cisco-Validated",
+   "salary": null,
+   "_meta_text": "type: Full time workplace: ",
+   "_content_head": "The application window is expected to close on: 11/12/2026 Preferred candidates should be located in Raleigh, NC or Atlanta, CA or San Jose, CA. \n\nMeet the Team\n Join Cisco Validated, the team responsible for turning Cisco's integrated technology strategy into field-credible, evidence-backed proof. Cisco Validated has long helped customers, partners, and field teams deploy with confidence through "
+  },
+  {
+   "job_id": "CISCISGLOBAL2029509EXTERNALENGLOBAL",
+   "req_id": "2029509",
+   "title": "Product Manager, Collaboration Endpoints",
+   "location": "Research Triangle Park, North Carolina, United States of America",
+   "location_detail": "Research Triangle Park, North Carolina, United States of America",
+   "department": "Product and Engineering",
+   "published_at": "2026-11-03T00:00:00.000+0000",
+   "updated_at": null,
+   "url": "https://careers.cisco.com/global/en/job/CISCISGLOBAL2029509EXTERNALENGLOBAL/Product-Manager-Collaboration-Endpoints",
+   "salary": null,
+   "_meta_text": "type: Full time workplace: ",
+   "_content_head": "The application window is expected to close on: 11/30/2026 Meet the Team \n Our Collaboration Endpoints team is at the heart of Cisco’s vision, designing and managing the hardware and software that powers the modern workplace. You will collaborate with an international team of Collaboration Product Managers, Go-To-Market team, TMEs, engineers, Cisco sales teams, Cisco partners, and Cisco customers "
+  },
+  {
+   "job_id": "CISCISGLOBAL2026192EXTERNALENGLOBAL",
+   "req_id": "2026192",
+   "title": "Technical Product Manager",
+   "location": "Research Triangle Park, North Carolina, United States of America",
+   "location_detail": "Research Triangle Park, North Carolina, United States of America; San Jose, California, United States of America",
+   "department": "Product and Engineering",
+   "published_at": "2026-11-06T00:00:00.000+0000",
+   "updated_at": null,
+   "url": "https://careers.cisco.com/global/en/job/CISCISGLOBAL2026192EXTERNALENGLOBAL/Technical-Product-Manager",
+   "salary": null,
+   "_meta_text": "type: Full time workplace: ",
+   "_content_head": "The application window is expected to close on: 11/29/2026 Meet the Team\n\n The Enterprise AI & Analytics team is dedicated to defining and advancing AI product capabilities that integrate trusted data, intelligent analytics, and agentic experiences to drive measurable business outcomes. This cross-functional team collaborates closely with engineering, AI/ML, data science, UX, and business stakehol"
+  },
+  {
+   "job_id": "CISCISGLOBAL2027608EXTERNALENGLOBAL",
+   "req_id": "2027608",
+   "title": "Technical Product Manager - Support / TAC",
+   "location": "San Jose, California, United States of America",
+   "location_detail": "San Jose, California, United States of America; Research Triangle Park, North Carolina, United States of America",
+   "department": "Product and Engineering",
+   "published_at": "2026-11-06T00:00:00.000+0000",
+   "updated_at": null,
+   "url": "https://careers.cisco.com/global/en/job/CISCISGLOBAL2027608EXTERNALENGLOBAL/Technical-Product-Manager-Support-TAC",
+   "salary": null,
+   "_meta_text": "type: Full time workplace: ",
+   "_content_head": "The application window is expected to close on: 11/29/2026 MEET THE TEAM \n The Cisco CX Technical AI Product Management team drives the transformation of Support and TAC into an AI-native operation, where autonomous agents optimize workflows with minimal human intervention. This team plays a critical role in Cisco's broader AI-powered Customer Experience strategy, enhancing support efficiency and "
+  },
+  {
+   "job_id": "CISCISGLOBAL2027633EXTERNALENGLOBAL",
+   "req_id": "2027633",
+   "title": "Technical Product Manager - Ecosystem Integrations",
+   "location": "San Jose, California, United States of America",
+   "location_detail": "San Jose, California, United States of America; Research Triangle Park, North Carolina, United States of America",
+   "department": "Product and Engineering",
+   "published_at": "2026-10-24T00:00:00.000+0000",
+   "updated_at": null,
+   "url": "https://careers.cisco.com/global/en/job/CISCISGLOBAL2027633EXTERNALENGLOBAL/Technical-Product-Manager-Ecosystem-Integrations",
+   "salary": null,
+   "_meta_text": "type: Full time workplace: ",
+   "_content_head": " Job Description: Technical Product Manager\n Location: Research Triangle Park (RTP), NC or San Jose, CA\n\n Role Overview \n Technical Product Manager focused on network ecosystem integrations with Cisco IQ. This role will work with customers, partners, and internal stakeholders to identify integration use cases, prioritize based on customer and partner value, and develop proof of concept demos using"
+  },
+  {
+   "job_id": "CISCISGLOBAL2027604EXTERNALENGLOBAL",
+   "req_id": "2027604",
+   "title": "Technical Product Manager - AI Native Professional Services",
+   "location": "San Jose, California, United States of America",
+   "location_detail": "San Jose, California, United States of America; Research Triangle Park, North Carolina, United States of America",
+   "department": "Product and Engineering",
+   "published_at": "2026-11-06T00:00:00.000+0000",
+   "updated_at": null,
+   "url": "https://careers.cisco.com/global/en/job/CISCISGLOBAL2027604EXTERNALENGLOBAL/Technical-Product-Manager-AI-Native-Professional-Services",
+   "salary": null,
+   "_meta_text": "type: Full time workplace: ",
+   "_content_head": "The application window is expected to close on: 11/29/2026 MEET THE TEAM \n Our team drives Cisco CX's transformation to AI-native delivery, focusing on Professional Services modernization. We operate as a collaborative group of experts in networking, infrastructure, and AI-driven automation, working together to accelerate customer outcomes. With a dynamic and innovative culture, the team blends te"
+  },
+  {
+   "job_id": "CISCISGLOBAL2028687EXTERNALENGLOBAL",
+   "req_id": "2028687",
+   "title": "Product Line Manager, Coherent Optical Transceivers",
+   "location": "Holmdel, New Jersey, United States of America",
+   "location_detail": "Holmdel, New Jersey, United States of America; Maynard, Massachusetts, United States of America",
+   "department": "Product and Engineering",
+   "published_at": "2026-10-20T00:00:00.000+0000",
+   "updated_at": null,
+   "url": "https://careers.cisco.com/global/en/job/CISCISGLOBAL2028687EXTERNALENGLOBAL/Product-Line-Manager-Coherent-Optical-Transceivers",
+   "salary": null,
+   "_meta_text": "type: Full time workplace: ",
+   "_content_head": "The application window is expected to close on: 11/29/2026 Meet the Team \n\n Acacia (part of Cisco’s Transceiver Modules Group) is the global market leader and pioneer in high-speed coherent optical interconnects and PAM4 digital signal processor (DSP) technologies. Our innovative pluggable optical solutions power the world’s largest cloud hyperscalers, telecommunication service providers, and AI d"
+  },
+  {
+   "job_id": "CISCISGLOBAL2019462EXTERNALENGLOBAL",
+   "req_id": "2019462",
+   "title": "Product Management Leader, Client Optics - Acacia",
+   "location": "Holmdel, New Jersey, United States of America",
+   "location_detail": "Holmdel, New Jersey, United States of America; Maynard, Massachusetts, United States of America; San Jose, California, United States of America",
+   "department": "Marketing and Communications",
+   "published_at": "2026-10-30T00:00:00.000+0000",
+   "updated_at": null,
+   "url": "https://careers.cisco.com/global/en/job/CISCISGLOBAL2019462EXTERNALENGLOBAL/Product-Management-Leader-Client-Optics-Acacia",
+   "salary": null,
+   "_meta_text": "type: Full time workplace: ",
+   "_content_head": "The application window is expected to close on: 11/30/2026 This position requires candidates to be based in Holmdel, NJ or Maynard, MA or San Jose, CA.\n \n Meet the team\n Acacia, now a part of Cisco, is a global leader in the design and manufacture of high-speed coherent optical interconnect products. We are the architects behind the technology that transforms how data centers, cloud providers, and"
+  },
+  {
+   "job_id": "CISCISGLOBAL2027999EXTERNALENGLOBAL",
+   "req_id": "2027999",
+   "title": "Product Lifecycle Supply Chain Project Manager",
+   "location": "Austin, Texas, United States of America",
+   "location_detail": "Austin, Texas, United States of America; San Jose, California, United States of America",
+   "department": "Other",
+   "published_at": "2026-11-05T00:00:00.000+0000",
+   "updated_at": null,
+   "url": "https://careers.cisco.com/global/en/job/CISCISGLOBAL2027999EXTERNALENGLOBAL/Product-Lifecycle-Supply-Chain-Project-Manager",
+   "salary": null,
+   "_meta_text": "type: Full time workplace: ",
+   "_content_head": "The application window is expected to close on: 11/30/2026 Meet the team:\n \n\n\n The Data Center Networking Team is a highly visible group dedicated to driving excellence in hardware programs. You will work closely with key hardware engineers within the Business Unit, as well as external suppliers, Global Strategic Management (GSM), and Supply Chain Finance. This collaborative environment is essenti"
+  },
+  {
+   "job_id": "CISCISGLOBAL2027733EXTERNALENGLOBAL",
+   "req_id": "2027733",
+   "title": "Product Lifecycle New Product Project Manager",
+   "location": "San Jose, California, United States of America",
+   "location_detail": "San Jose, California, United States of America; Austin, Texas, United States of America",
+   "department": "Supply Chain and Manufacturing Ops",
+   "published_at": "2026-10-21T00:00:00.000+0000",
+   "updated_at": null,
+   "url": "https://careers.cisco.com/global/en/job/CISCISGLOBAL2027733EXTERNALENGLOBAL/Product-Lifecycle-New-Product-Project-Manager",
+   "salary": null,
+   "_meta_text": "type: Full time workplace: ",
+   "_content_head": "The application window is expected to close on: 01/19/2027 Meet the Team \n  \n The Supply Chain organization is responsible for overseeing the entire lifecycle of products from introduction through end-of-life. We ensure product cost targets, quality standards, and supply chain readiness are met while driving continuous improvement and risk mitigation. You will join a dynamic, cross-functional team"
+  },
+  {
+   "job_id": "CISCISGLOBAL2027891EXTERNALENGLOBAL",
+   "req_id": "2027891",
+   "title": "Sr Staff Product Manager, Agent Resilience Platform",
+   "location": "San Jose, California, United States of America",
+   "location_detail": "San Jose, California, United States of America; San Francisco, California, United States of America; Seattle, Washington, United States of America",
+   "department": "Product and Engineering",
+   "published_at": "2026-11-03T00:00:00.000+0000",
+   "updated_at": null,
+   "url": "https://careers.cisco.com/global/en/job/CISCISGLOBAL2027891EXTERNALENGLOBAL/Sr-Staff-Product-Manager-Agent-Resilience-Platform",
+   "salary": null,
+   "_meta_text": "type: Full time workplace: ",
+   "_content_head": "The application window is expected to close on: 11/12/2026 Meet the Team\n The Splunk Agent Resilience team is building the foundation for trustworthy Generative AI, helping enterprises evaluate, secure, and scale AI applications with confidence. Sitting at the intersection of AI research, platform engineering, and product innovation, the team’s work directly shapes how some of the world’s largest "
+  },
+  {
+   "job_id": "CISCISGLOBAL2028004EXTERNALENGLOBAL",
+   "req_id": "2028004",
+   "title": "Product Manager",
+   "location": "San Francisco, California, United States of America",
+   "location_detail": "San Francisco, California, United States of America; Milpitas, California, United States of America; San Jose, California, United States of America",
+   "department": "Product and Engineering",
+   "published_at": "2026-10-28T00:00:00.000+0000",
+   "updated_at": null,
+   "url": "https://careers.cisco.com/global/en/job/CISCISGLOBAL2028004EXTERNALENGLOBAL/Product-Manager",
+   "salary": null,
+   "_meta_text": "type: Full time workplace: ",
+   "_content_head": "The application window is expected to close on: 11/30/2026 Meet the Team\n Our Product Management team serves as the engine for delivering scalable, API-first platform capabilities that empower our most significant enterprise customers. As a high-energy, customer-centric Product Manager, you will act as a champion for these partners, uncovering critical usage patterns and translating sophisticated "
+  },
+  {
+   "job_id": "CISCISGLOBAL2019900EXTERNALENGLOBAL",
+   "req_id": "2019900",
+   "title": "Principal Product Manager - Network Operating System Strategy & Routing Innovation",
+   "location": "Milpitas, California, United States of America",
+   "location_detail": "Milpitas, California, United States of America",
+   "department": "Product and Engineering",
+   "published_at": "2026-11-04T00:00:00.000+0000",
+   "updated_at": null,
+   "url": "https://careers.cisco.com/global/en/job/CISCISGLOBAL2019900EXTERNALENGLOBAL/Principal-Product-Manager-Network-Operating-System-Strategy-Routing-Innovation",
+   "salary": null,
+   "_meta_text": "type: Full time workplace: ",
+   "_content_head": "The application window is expected to close on: 12/17/2026 Meet the Team \n \n The Provider Connectivity Software and Architectures product management team drives the routing software, automation portfolio and network architectures strategy and roadmap for Cisco’s service provider, cloud, and large-scale infrastructure customers.\n \n Our mission is to lead the market towards autonomous networking wit"
+  },
+  {
+   "job_id": "CISCISGLOBAL2026633EXTERNALENGLOBAL",
+   "req_id": "2026633",
+   "title": "Senior Product Manager - AI Safety and Security (Hybrid)",
+   "location": "San Jose, California, United States of America",
+   "location_detail": "San Jose, California, United States of America; Milpitas, California, United States of America; San Francisco, California, United States of America",
+   "department": "Product and Engineering",
+   "published_at": "2026-10-23T00:00:00.000+0000",
+   "updated_at": null,
+   "url": "https://careers.cisco.com/global/en/job/CISCISGLOBAL2026633EXTERNALENGLOBAL/Senior-Product-Manager-AI-Safety-and-Security-Hybrid",
+   "salary": null,
+   "_meta_text": "type: Full time workplace: ",
+   "_content_head": "The application window is expected to close on: 11/26/2026 This role requires to be onsite on our San Jose office in a hybrid model. \n\n Meet the Team \n Designs, develops, and manages activities for a specific product or group of products or services from product definition and planning through production, release, and end of life. Serves as the central resource with design, process, engineering, t"
+  },
+  {
+   "job_id": "CISCISGLOBAL2028944EXTERNALENGLOBAL",
+   "req_id": "2028944",
+   "title": "Principal Product Manager -  AI Defense (Hyrbid)",
+   "location": "Milpitas, California, United States of America",
+   "location_detail": "Milpitas, California, United States of America; San Francisco, California, United States of America; San Jose, California, United States of America; San Mateo, California, United States of America; Santa Clara, California, United States of America",
+   "department": "Product and Engineering",
+   "published_at": "2026-11-06T00:00:00.000+0000",
+   "updated_at": null,
+   "url": "https://careers.cisco.com/global/en/job/CISCISGLOBAL2028944EXTERNALENGLOBAL/Principal-Product-Manager-AI-Defense-Hyrbid",
+   "salary": null,
+   "_meta_text": "type: Full time workplace: ",
+   "_content_head": "The application window is expected to close on: 12/10/2026 This role is based in San Jose and requires to report into the office in a hybrid model. \n\n Meet the Team \n Cisco’s AI Software & Platform Group builds enterprise AI platforms and developer tooling, integrating our networking, security, and observability portfolio with modern AI to power autonomous systems. We improve reinforcement learnin"
+  },
+  {
+   "job_id": "CISCISGLOBAL2027580EXTERNALENGLOBAL",
+   "req_id": "2027580",
+   "title": "Product Manager - Cisco Wireless (Hybrid)",
+   "location": "Milpitas, California, United States of America",
+   "location_detail": "Milpitas, California, United States of America; San Francisco, California, United States of America",
+   "department": "Product and Engineering",
+   "published_at": "2026-11-02T00:00:00.000+0000",
+   "updated_at": null,
+   "url": "https://careers.cisco.com/global/en/job/CISCISGLOBAL2027580EXTERNALENGLOBAL/Product-Manager-Cisco-Wireless-Hybrid",
+   "salary": null,
+   "_meta_text": "type: Full time workplace: ",
+   "_content_head": "The application window is expected to close on: 11/26/2026 This role requires being onsite in our San Jose office in a hybrid model. \n\n Meet the Team \n The Cisco Wireless Core RF & Networking PM team is responsible for driving the software strategy for technologies that makes the wireless network work. The charter ranges from RF technologies and networking to IoT solutions and location application"
+  },
+  {
+   "job_id": "CISCISGLOBAL2027076EXTERNALENGLOBAL",
+   "req_id": "2027076",
+   "title": "Leader, Business Product Management",
+   "location": "San Jose, California, United States of America",
+   "location_detail": "San Jose, California, United States of America",
+   "department": "Product and Engineering",
+   "published_at": "2026-10-06T00:00:00.000+0000",
+   "updated_at": null,
+   "url": "https://careers.cisco.com/global/en/job/CISCISGLOBAL2027076EXTERNALENGLOBAL/Leader-Business-Product-Management",
+   "salary": null,
+   "_meta_text": "type: Full time workplace: ",
+   "_content_head": "The application window is expected to close on: 12/28/2026 MEET THE TEAM \n Cisco is growing its agentic capabilities, delivering Cloud Control platform, and leading with AI security, AI powered capabilities and products, and a growing portfolio, along with acquisitions in agentic observability and orchestration. The pace of innovation demands a new way of bringing products to market. The routes to"
+  },
+  {
+   "job_id": "CISCISGLOBAL2028341EXTERNALENGLOBAL",
+   "req_id": "2028341",
+   "title": "Director, Business Product Management",
+   "location": "San Jose, California, United States of America",
+   "location_detail": "San Jose, California, United States of America",
+   "department": "Product and Engineering",
+   "published_at": "2026-10-14T00:00:00.000+0000",
+   "updated_at": null,
+   "url": "https://careers.cisco.com/global/en/job/CISCISGLOBAL2028341EXTERNALENGLOBAL/Director-Business-Product-Management",
+   "salary": null,
+   "_meta_text": "type: Full time workplace: ",
+   "_content_head": "The application window is expected to close on: 11/19/2026 Meet the Team \n The Buying Program Growth and Acceleration team is at the forefront of transforming how Cisco delivers value to customers, partners, and sales teams. This dynamic group designs best-in-class buying programs that drive recurring revenue growth and streamline customer experiences.\n As a critical force behind Cisco's growth st"
+  },
+  {
+   "job_id": "CISCISGLOBAL2023943EXTERNALENGLOBAL",
+   "req_id": "2023943",
+   "title": "New Product Project Manager",
+   "location": "San Jose, California, United States of America",
+   "location_detail": "San Jose, California, United States of America",
+   "department": "Supply Chain and Manufacturing Ops",
+   "published_at": "2026-10-19T00:00:00.000+0000",
+   "updated_at": null,
+   "url": "https://careers.cisco.com/global/en/job/CISCISGLOBAL2023943EXTERNALENGLOBAL/New-Product-Project-Manager",
+   "salary": null,
+   "_meta_text": "type: Full time workplace: ",
+   "_content_head": "The application window is expected to close on: 11/19/2026 Meet the Team \n We are the Cisco Silicon One™ team, and we are redefining networking silicon architecture to power the future of the internet. We believe that transformative innovation begins with an open, collaborative culture where fresh ideas, mutual trust, and shared curiosity thrive!\n We work in close partnership across Engineering, Q"
+  },
+  {
+   "job_id": "CISCISGLOBAL2015048EXTERNALENGLOBAL",
+   "req_id": "2015048",
+   "title": "Director, Product Management",
+   "location": "San Francisco, California, United States of America",
+   "location_detail": "San Francisco, California, United States of America; Redwood City, California, United States of America; San Jose, California, United States of America; Santa Clara, California, United States of America",
+   "department": "Product and Engineering",
+   "published_at": "2026-10-21T00:00:00.000+0000",
+   "updated_at": null,
+   "url": "https://careers.cisco.com/global/en/job/CISCISGLOBAL2015048EXTERNALENGLOBAL/Director-Product-Management",
+   "salary": null,
+   "_meta_text": "type: Full time workplace: ",
+   "_content_head": "The application window is expected to close on: 11/22/2026 Meet the Team \n Outshift is Cisco’s incubation engine, dedicated to exploring ambitious, innovative ideas and experimenting with technologies that shape the future. Our team is a diverse, distributed group of experts passionate about the \"zero to one\" journey—taking groundbreaking technology like Quantum and AI from research to enterprise-"
+  },
+  {
+   "job_id": "CISCISGLOBAL2028149EXTERNALENGLOBAL",
+   "req_id": "2028149",
+   "title": "Outbound Product Manager",
+   "location": "San Jose, California, United States of America",
+   "location_detail": "San Jose, California, United States of America",
+   "department": "Product and Engineering",
+   "published_at": "2026-10-26T00:00:00.000+0000",
+   "updated_at": null,
+   "url": "https://careers.cisco.com/global/en/job/CISCISGLOBAL2028149EXTERNALENGLOBAL/Outbound-Product-Manager",
+   "salary": null,
+   "_meta_text": "type: Full time workplace: ",
+   "_content_head": "The application window is expected to close on: 11/30/2026 This role is remote within the US. \n\n Meet the team \n As an Outbound Product Manager supporting Velocity Segment, Distributors, and 2T Partners, you will engage distributor leaders and their sales, technical, and commercial teams, together with 2T resellers, valuable resellers, managed service providers, and systems integrators served thro"
+  },
+  {
+   "job_id": "CISCISGLOBAL2028730EXTERNALENGLOBAL",
+   "req_id": "2028730",
+   "title": "Product Lifecycle Supply Chain Program Manager",
+   "location": "San Jose, California, United States of America",
+   "location_detail": "San Jose, California, United States of America",
+   "department": "Other",
+   "published_at": "2026-10-29T00:00:00.000+0000",
+   "updated_at": null,
+   "url": "https://careers.cisco.com/global/en/job/CISCISGLOBAL2028730EXTERNALENGLOBAL/Product-Lifecycle-Supply-Chain-Program-Manager",
+   "salary": null,
+   "_meta_text": "type: Full time workplace: ",
+   "_content_head": "The application window is expected to close on: 11/29/2026 This position will be a hybrid role based in our San Jose, CA office.\n\n Meet the team \n\n The Energy Networking System Team is new and highly visible group dedicated to driving innovative energy management and power distribution solutions developed to improve sustainability, efficiency, and reliability in data centers, smart buildings, and "
+  },
+  {
+   "job_id": "CISCISGLOBAL2028032EXTERNALENGLOBAL",
+   "req_id": "2028032",
+   "title": "Senior Director, Product Management - Splunk Observability",
+   "location": "San Jose, California, United States of America",
+   "location_detail": "San Jose, California, United States of America",
+   "department": "Product and Engineering",
+   "published_at": "2026-11-02T00:00:00.000+0000",
+   "updated_at": null,
+   "url": "https://careers.cisco.com/global/en/job/CISCISGLOBAL2028032EXTERNALENGLOBAL/Senior-Director-Product-Management-Splunk-Observability",
+   "salary": null,
+   "_meta_text": "type: Full time workplace: ",
+   "_content_head": "The application window is expected to close on: 11/29/2026 Meet the Team \n Splunk Observability empowers engineering and operations teams to bridge the gap between complex digital architectures and actionable insights. As our Senior Director of Product Management for AI SRE, you will work closely with the VP of Product to shape the vision, strategy, and execution for a critical product pillar. You"
+  },
+  {
+   "job_id": "CISCISGLOBAL2026324EXTERNALENGLOBAL",
+   "req_id": "2026324",
+   "title": "Principal Product Management",
+   "location": "San Jose, California, United States of America",
+   "location_detail": "San Jose, California, United States of America; San Francisco, California, United States of America",
+   "department": "Product and Engineering",
+   "published_at": "2026-10-29T00:00:00.000+0000",
+   "updated_at": null,
+   "url": "https://careers.cisco.com/global/en/job/CISCISGLOBAL2026324EXTERNALENGLOBAL/Principal-Product-Management",
+   "salary": null,
+   "_meta_text": "type: Full time workplace: ",
+   "_content_head": "The application window is expected to close on: 11/12/2026 Meet the Team\n Splunk Enterprise Security is an 11-time Gartner Magic Quadrant Leader in SIEM, and it sits at the center of Cisco's security strategy. Our team is Cisco's core security product team, responsible for the Splunk Enterprise Security editions that SOCs rely on every day. \n Our next chapter is changing what it costs to run a SIE"
+  },
+  {
+   "job_id": "CISCISGLOBAL2026133EXTERNALENGLOBAL",
+   "req_id": "2026133",
+   "title": "Principal Hardware Systems Architect - ASIC (Silicon One) Ecosystem Integration & Product Strategy (Hybrid)",
+   "location": "San Jose, California, United States of America",
+   "location_detail": "San Jose, California, United States of America",
+   "department": "Product and Engineering",
+   "published_at": "2026-10-30T00:00:00.000+0000",
+   "updated_at": null,
+   "url": "https://careers.cisco.com/global/en/job/CISCISGLOBAL2026133EXTERNALENGLOBAL/Principal-Hardware-Systems-Architect-ASIC-Silicon-One-Ecosystem-Integration-Product-Strategy-Hybrid",
+   "salary": null,
+   "_meta_text": "type: Full time workplace: ",
+   "_content_head": "The application window is expected to close on: 01/28/2027 This role involves a hybrid work model, with a flexible in-office schedule that requires commuting to the San Jose, CA office.\n\n Meet the team \n Cisco Silicon One (#CiscoSiliconOne) is a business organization with a long track record of building complex and high-performance Silicon ASICs. Our silicon devices drive the world’s most complex "
+  },
+  {
+   "job_id": "CISCISGLOBAL2020429EXTERNALENGLOBAL",
+   "req_id": "2020429",
+   "title": "Senior Product Growth & Strategy Manager",
+   "location": "San Jose, California, United States of America",
+   "location_detail": "San Jose, California, United States of America",
+   "department": "Marketing and Communications",
+   "published_at": "2026-10-19T00:00:00.000+0000",
+   "updated_at": null,
+   "url": "https://careers.cisco.com/global/en/job/CISCISGLOBAL2020429EXTERNALENGLOBAL/Senior-Product-Growth-Strategy-Manager",
+   "salary": null,
+   "_meta_text": "type: Full time workplace: ",
+   "_content_head": " ***We are looking for candidates local to the Bay Area, CA as this is a hybrid role requiring 3 days in the office per week*** \n \n\nMeet the Team\n Cisco’s Data Center Networking team is redefining infrastructure for the AI era through an end-to-end portfolio that powers modern enterprise and cloud environments. The team drives innovation across Nexus One, Isovalent cloud-native networking, Cisco M"
+  },
+  {
+   "job_id": "CISCISGLOBAL2028724EXTERNALENGLOBAL",
+   "req_id": "2028724",
+   "title": "Senior Product Manager - Product Insights and Growth (Hybrid)",
+   "location": "San Jose, California, United States of America",
+   "location_detail": "San Jose, California, United States of America",
+   "department": "Product and Engineering",
+   "published_at": "2026-11-02T00:00:00.000+0000",
+   "updated_at": null,
+   "url": "https://careers.cisco.com/global/en/job/CISCISGLOBAL2028724EXTERNALENGLOBAL/Senior-Product-Manager-Product-Insights-and-Growth-Hybrid",
+   "salary": null,
+   "_meta_text": "type: Full time workplace: ",
+   "_content_head": "The application window is expected to close on: 12/03/2026 This role requires being onsite in our San Jose office in a hybrid model. \n\n Meet the Team \n Cisco Cloud Control brings networking, security, observability, compute, and collaboration together in one AI-native management experience. The platform serves customers with complex environments and many ways to get value from the Cisco products t"
+  },
+  {
+   "job_id": "CISCISGLOBAL2026294EXTERNALENGLOBAL",
+   "req_id": "2026294",
+   "title": "Executive Assistant: VP, Customer Experience Product Management (Hybrid)",
+   "location": "San Jose, California, United States of America",
+   "location_detail": "San Jose, California, United States of America",
+   "department": "Business Operations",
+   "published_at": "2026-10-23T00:00:00.000+0000",
+   "updated_at": null,
+   "url": "https://careers.cisco.com/global/en/job/CISCISGLOBAL2026294EXTERNALENGLOBAL/Executive-Assistant-VP-Customer-Experience-Product-Management-Hybrid",
+   "salary": null,
+   "_meta_text": "type: Full time workplace: ",
+   "_content_head": "The application window is expected to close on: 11/22/2026 Location: Hybrid model with 3 days on site in San Jose, CA office\n\nMeet the Team \n\n We are seeking a highly proactive, organized, and independent Executive Assistant to provide complex administrative and strategic support to a Vice President in CX Product Management.  This role requires a professional who can expertly manage a busy calenda"
+  },
+  {
+   "job_id": "CISCISGLOBAL2024864EXTERNALENGLOBAL",
+   "req_id": "2024864",
+   "title": "Sr Product Manager - Solutions",
+   "location": "San Jose, California, United States of America",
+   "location_detail": "San Jose, California, United States of America",
+   "department": "Product and Engineering",
+   "published_at": "2026-11-09T00:00:00.000+0000",
+   "updated_at": null,
+   "url": "https://careers.cisco.com/global/en/job/CISCISGLOBAL2024864EXTERNALENGLOBAL/Sr-Product-Manager-Solutions",
+   "salary": null,
+   "_meta_text": "type: Full time workplace: ",
+   "_content_head": "The application window is expected to close on: 12/17/2026 Meet the team \n Manage activities for a specific product or group of services from product definition and planning through production, release, and end of life. Serve as the central resource collaborating with design, process, manufacturing, test, quality, and marketing teams as products move to production and distribution. Oversee involve"
+  },
+  {
+   "job_id": "CISCISGLOBAL2016926EXTERNALENGLOBAL",
+   "req_id": "2016926",
+   "title": "Product Lifecycle Supply Chain Program Manager",
+   "location": "San Jose, California, United States of America",
+   "location_detail": "San Jose, California, United States of America; Shenzhen, Guangdong, China",
+   "department": "Other",
+   "published_at": "2026-07-06T00:00:00.000+0000",
+   "updated_at": null,
+   "url": "https://careers.cisco.com/global/en/job/CISCISGLOBAL2016926EXTERNALENGLOBAL/Product-Lifecycle-Supply-Chain-Program-Manager",
+   "salary": null,
+   "_meta_text": "type: Full time workplace: ",
+   "_content_head": "The application window is expected to close on: 07/06/2026 Job posting may be removed earlier if the position is filled or if a sufficient number of applications are received . \n \n Meet the team:\n The Data Center Networking Team is a highly visible group dedicated to driving excellence in hardware programs. You will work closely with key hardware engineers within the Business Unit, as well as exte"
+  },
+  {
+   "job_id": "CISCISGLOBAL2028398EXTERNALENGLOBAL",
+   "req_id": "2028398",
+   "title": "Director, Product Management",
+   "location": "San Jose, California, United States of America",
+   "location_detail": "San Jose, California, United States of America",
+   "department": "Product and Engineering",
+   "published_at": "2026-11-09T00:00:00.000+0000",
+   "updated_at": null,
+   "url": "https://careers.cisco.com/global/en/job/CISCISGLOBAL2028398EXTERNALENGLOBAL/Director-Product-Management",
+   "salary": null,
+   "_meta_text": "type: Full time workplace: ",
+   "_content_head": "The application window is expected to close on: 11/29/2026 Meet the Team \n\n\n At Cisco and Splunk, we are uniting market-leading networking, security, and observability capabilities to deliver unprecedented visibility, resilience, and operational excellence across the entire digital footprint. Within our product organization, the Engineering Excellence and Operations team focuses on establishing be"
+  },
+  {
+   "job_id": "CISCISGLOBAL2026478EXTERNALENGLOBAL",
+   "req_id": "2026478",
+   "title": "Product Readiness Manager",
+   "location": "San Jose, California, United States of America",
+   "location_detail": "San Jose, California, United States of America",
+   "department": "Business Development and Strategy",
+   "published_at": "2026-11-09T00:00:00.000+0000",
+   "updated_at": null,
+   "url": "https://careers.cisco.com/global/en/job/CISCISGLOBAL2026478EXTERNALENGLOBAL/Product-Readiness-Manager",
+   "salary": null,
+   "_meta_text": "type: Full time workplace: ",
+   "_content_head": "The application window is expected to close on: 11/10/2026 Meet the Team\n The Product Readiness Management team partners closely with Product Management and cross-functional organizations to translate product strategy into actionable priorities and ensure products and software releases are ready for market. The team brings together stakeholders across Product, Sales Enablement, Partner Enablement,"
+  },
+  {
+   "job_id": "CISCISGLOBAL2030652EXTERNALENGLOBAL",
+   "req_id": "2030652",
+   "title": "Director of Product, AI Platform - Network Platform and Assurance (Hybrid)",
+   "location": "San Francisco, California, United States of America",
+   "location_detail": "San Francisco, California, United States of America",
+   "department": "Product and Engineering",
+   "published_at": "2026-11-05T00:00:00.000+0000",
+   "updated_at": null,
+   "url": "https://careers.cisco.com/global/en/job/CISCISGLOBAL2030652EXTERNALENGLOBAL/Director-of-Product-AI-Platform-Network-Platform-and-Assurance-Hybrid",
+   "salary": null,
+   "_meta_text": "type: Full time workplace: ",
+   "_content_head": "The application window is expected to close on: 12/05/2026 This role follows a hybrid work model, with in-office attendance two days a week in the San Francisco office. \n\n Meet the Team\n At Cisco Networking Platform and Assurance (ThousandEyes), we have a unique advantage. By tapping into the broad ecosystem and the totality of networking data at our fingertips, we can provide our customers with t"
+  },
+  {
+   "job_id": "CISCISGLOBAL2026836EXTERNALENGLOBAL",
+   "req_id": "2026836",
+   "title": "Product Specialist/Manager, Early in Career - Norway",
+   "location": "Lysaker, Norway",
+   "location_detail": "Lysaker, Norway",
+   "department": "Product and Engineering",
+   "published_at": "2026-10-02T00:00:00.000+0000",
+   "updated_at": null,
+   "url": "https://careers.cisco.com/global/en/job/CISCISGLOBAL2026836EXTERNALENGLOBAL/Product-Specialist-Manager-Early-in-Career-Norway",
+   "salary": null,
+   "_meta_text": "type: Full time workplace: ",
+   "_content_head": " Please note this posting is to advertise potential job opportunities. This exact role may not be open today but could open in the near future. When you apply, a Cisco representative may contact you directly if a relevant position opens.\n \n \n Location:  Lysaker - Oslo, Norway  \n Work approach: Hybrid, minimum 3 days per week in the office \n Start Date: August 2027 \n\n\nMeet the Team \n  \n\n Our Cisco "
+  },
+  {
+   "job_id": "CISCISGLOBAL2026981EXTERNALENGLOBAL",
+   "req_id": "2026981",
+   "title": "Product Lifecycle New Product Project Manager",
+   "location": "Bangalore, India",
+   "location_detail": "Bangalore, India",
+   "department": "Supply Chain and Manufacturing Ops",
+   "published_at": "2026-10-13T00:00:00.000+0000",
+   "updated_at": null,
+   "url": "https://careers.cisco.com/global/en/job/CISCISGLOBAL2026981EXTERNALENGLOBAL/Product-Lifecycle-New-Product-Project-Manager",
+   "salary": null,
+   "_meta_text": "type: Full time workplace: ",
+   "_content_head": " Meet the Team   \n Our team is a dynamic and collaborative group united by a shared passion for innovation and a commitment to excellence. We foster a culture of open communication, mutual respect, and continuous learning, where every voice is valued and encouraged to contribute. Our mission is Think Really Big, Play to Win, Drive Durable Growth. What truly makes us an exciting place to work is ou"
+  },
+  {
+   "job_id": "CISCISGLOBAL2026762EXTERNALENGLOBAL",
+   "req_id": "2026762",
+   "title": "Product Lifecycle New Product Program Manager",
+   "location": "Bangalore, India",
+   "location_detail": "Bangalore, India",
+   "department": "Supply Chain and Manufacturing Ops",
+   "published_at": "2026-10-13T00:00:00.000+0000",
+   "updated_at": null,
+   "url": "https://careers.cisco.com/global/en/job/CISCISGLOBAL2026762EXTERNALENGLOBAL/Product-Lifecycle-New-Product-Program-Manager",
+   "salary": null,
+   "_meta_text": "type: Full time workplace: ",
+   "_content_head": " Meet the Team   \n Our team is a dynamic and collaborative group united by a shared passion for innovation and a commitment to excellence. We foster a culture of open communication, mutual respect, and continuous learning, where every voice is valued and encouraged to contribute. Our mission is T hink Really Big, Play to Win, Drive Durable Growth. What truly makes us an exciting place to work is o"
+  },
+  {
+   "job_id": "CISCISGLOBAL2027002EXTERNALENGLOBAL",
+   "req_id": "2027002",
+   "title": "Leader, Product Operations- Supply Chain",
+   "location": "Bangalore, India",
+   "location_detail": "Bangalore, India",
+   "department": "Other",
+   "published_at": "2026-10-13T00:00:00.000+0000",
+   "updated_at": null,
+   "url": "https://careers.cisco.com/global/en/job/CISCISGLOBAL2027002EXTERNALENGLOBAL/Leader-Product-Operations-Supply-Chain",
+   "salary": null,
+   "_meta_text": "type: Full time workplace: ",
+   "_content_head": " Meet the Team   \n Our team is a dynamic and collaborative group united by a shared passion for innovation and a commitment to excellence. We foster a culture of open communication, mutual respect, and continuous learning, where every voice is valued and encouraged to contribute. Our mission is Think Really Big, Play to Win, Drive Durable Growth. What truly makes us an exciting place to work is ou"
+  },
+  {
+   "job_id": "CISCISGLOBAL2011285EXTERNALENGLOBAL",
+   "req_id": "2011285",
+   "title": "Product Lifecycle Supply Chain Project Manager (Optic Product)",
+   "location": "Bangkok, Thailand",
+   "location_detail": "Bangkok, Thailand",
+   "department": "Other",
+   "published_at": "2026-10-12T00:00:00.000+0000",
+   "updated_at": null,
+   "url": "https://careers.cisco.com/global/en/job/CISCISGLOBAL2011285EXTERNALENGLOBAL/Product-Lifecycle-Supply-Chain-Project-Manager-Optic-Product",
+   "salary": null,
+   "_meta_text": "type: Full time workplace: ",
+   "_content_head": " Meet the Team \n \n Lead and program manage the development and release to manufacturing of creative silicon photonics products. The NPPM is responsible for handling the product lifecycle from pre-concept commit to FCS. You will partner with Optics BUs, PLM, and Engineering and will lead a cross functional team from Cisco Optics Operations to deliver optical transceiver modules. You will be account"
+  },
+  {
+   "job_id": "CISCISGLOBAL2022912EXTERNALENGLOBAL",
+   "req_id": "2022912",
+   "title": "Product Lifecycle Supply Chain Project Manager",
+   "location": "Bangalore, India",
+   "location_detail": "Bangalore, India",
+   "department": "Other",
+   "published_at": "2026-10-15T00:00:00.000+0000",
+   "updated_at": null,
+   "url": "https://careers.cisco.com/global/en/job/CISCISGLOBAL2022912EXTERNALENGLOBAL/Product-Lifecycle-Supply-Chain-Project-Manager",
+   "salary": null,
+   "_meta_text": "type: Full time workplace: ",
+   "_content_head": " Meet the Team \n\n The Compute Product Operations team sits at the critical intersection of hardware innovation and global manufacturing, driving seamless New Product Introductions (NPI) across our compute portfolio. We are responsible for translating complex product engineering designs into scalable, cost-effective, and resilient supply chain operations. Our collaborative team brings together tech"
+  },
+  {
+   "job_id": "CISCISGLOBAL2026993EXTERNALENGLOBAL",
+   "req_id": "2026993",
+   "title": "Product Lifecycle New Product Project Manager",
+   "location": "Taipei, New Taipei, Taiwan",
+   "location_detail": "Taipei, New Taipei, Taiwan",
+   "department": "Supply Chain and Manufacturing Ops",
+   "published_at": "2026-10-14T00:00:00.000+0000",
+   "updated_at": null,
+   "url": "https://careers.cisco.com/global/en/job/CISCISGLOBAL2026993EXTERNALENGLOBAL/Product-Lifecycle-New-Product-Project-Manager",
+   "salary": null,
+   "_meta_text": "type: Full time workplace: ",
+   "_content_head": " Meet the Team   \n Our team is a dynamic and collaborative group united by a shared passion for innovation and a commitment to excellence. We foster a culture of open communication, mutual respect, and continuous learning, where every voice is valued and encouraged to contribute. Our mission is Think Really Big, Play to Win, Drive Durable Growth. What truly makes us an exciting place to work is ou"
+  },
+  {
+   "job_id": "CISCISGLOBAL2026995EXTERNALENGLOBAL",
+   "req_id": "2026995",
+   "title": "Product Lifecycle Supply Chain Project Manager",
+   "location": "Taipei, New Taipei, Taiwan",
+   "location_detail": "Taipei, New Taipei, Taiwan",
+   "department": "Other",
+   "published_at": "2026-10-14T00:00:00.000+0000",
+   "updated_at": null,
+   "url": "https://careers.cisco.com/global/en/job/CISCISGLOBAL2026995EXTERNALENGLOBAL/Product-Lifecycle-Supply-Chain-Project-Manager",
+   "salary": null,
+   "_meta_text": "type: Full time workplace: ",
+   "_content_head": " Meet the Team  \n Our team is a dynamic and collaborative group united by a shared passion for innovation and a commitment to excellence. We foster a culture of open communication, mutual respect, and continuous learning, where every voice is valued and encouraged to contribute. Our mission is Think Really Big, Play to Win, Drive Durable Growth. What truly makes us an exciting place to work is our"
+  },
+  {
+   "job_id": "CISCISGLOBAL2026994EXTERNALENGLOBAL",
+   "req_id": "2026994",
+   "title": "Product Lifecycle Project Manager",
+   "location": "Taipei, New Taipei, Taiwan",
+   "location_detail": "Taipei, New Taipei, Taiwan",
+   "department": "Supply Chain and Manufacturing Ops",
+   "published_at": "2026-10-14T00:00:00.000+0000",
+   "updated_at": null,
+   "url": "https://careers.cisco.com/global/en/job/CISCISGLOBAL2026994EXTERNALENGLOBAL/Product-Lifecycle-Project-Manager",
+   "salary": null,
+   "_meta_text": "type: Full time workplace: ",
+   "_content_head": " Meet the Team   \n The Product Operations team plays a critical role in delivering Cisco’s next-generation hardware products on a scale. Working at the intersection of engineering, supply chain, and manufacturing, the team ensures seamless product lifecycle execution—from new product introduction to high-volume production and customer delivery. With a strong focus on reliability, efficiency, and o"
+  },
+  {
+   "job_id": "CISCISGLOBAL2028128EXTERNALENGLOBAL",
+   "req_id": "2028128",
+   "title": "Leader, Product Operations",
+   "location": "Taipei, New Taipei, Taiwan",
+   "location_detail": "Taipei, New Taipei, Taiwan",
+   "department": "Other",
+   "published_at": "2026-10-15T00:00:00.000+0000",
+   "updated_at": null,
+   "url": "https://careers.cisco.com/global/en/job/CISCISGLOBAL2028128EXTERNALENGLOBAL/Leader-Product-Operations",
+   "salary": null,
+   "_meta_text": "type: Full time workplace: ",
+   "_content_head": " Meet the Team   \n Our team is a dynamic and collaborative group united by a shared passion for innovation and a commitment to excellence. We foster a culture of open communication, mutual respect, and continuous learning, where every voice is valued and encouraged to contribute. Our mission is Think Really Big, Play to Win, Drive Durable Growth. What truly makes us an exciting place to work is ou"
+  },
+  {
+   "job_id": "CISCISGLOBAL2023906EXTERNALENGLOBAL",
+   "req_id": "2023906",
+   "title": "ASIC Product Planner",
+   "location": "Taipei, New Taipei, Taiwan",
+   "location_detail": "Taipei, New Taipei, Taiwan",
+   "department": "Supply Chain and Manufacturing Ops",
+   "published_at": "2026-09-17T00:00:00.000+0000",
+   "updated_at": null,
+   "url": "https://careers.cisco.com/global/en/job/CISCISGLOBAL2023906EXTERNALENGLOBAL/ASIC-Product-Planner",
+   "salary": null,
+   "_meta_text": "type: Full time workplace: ",
+   "_content_head": " \n Meet the Team  \n We're Cisco Silicon One™—the heart of Cisco's Silicon Operations organization and the engine behind our next-generation networking devices. Our Supply Planning team operates like a start-up inside a global technology leader, and we're proud of it: Cisco has ranked in the Gartner Global Supply Chain Top 25 for nearly a decade, most recently landing at #4 in 2026. We lead with si"
+  },
+  {
+   "job_id": "CISCISGLOBAL2028067EXTERNALENGLOBAL",
+   "req_id": "2028067",
+   "title": "Product Lifecycle Supply Chain Project Manager",
+   "location": "Bangalore, India",
+   "location_detail": "Bangalore, India",
+   "department": "Other",
+   "published_at": "2026-10-22T00:00:00.000+0000",
+   "updated_at": null,
+   "url": "https://careers.cisco.com/global/en/job/CISCISGLOBAL2028067EXTERNALENGLOBAL/Product-Lifecycle-Supply-Chain-Project-Manager",
+   "salary": null,
+   "_meta_text": "type: Full time workplace: ",
+   "_content_head": "The application window is expected to close on: 11/21/2026&#xa;&#xa;Job posting may be removed earlier if the position is filled or if a sufficient number of applications are received.&#xa; Meet the Team  \n\n The Supply Chain Program Manager is responsible for Supply Chain Readiness: Ensuring that the supply chain is ready when products move into production, Process Management: Managing a range of "
+  },
+  {
+   "job_id": "CISCISGLOBAL2025450EXTERNALENGLOBAL",
+   "req_id": "2025450",
+   "title": "Supply Chain Product FP&A Analyst",
+   "location": "Bangalore, India",
+   "location_detail": "Bangalore, India",
+   "department": "Finance",
+   "published_at": "2026-11-01T00:00:00.000+0000",
+   "updated_at": null,
+   "url": "https://careers.cisco.com/global/en/job/CISCISGLOBAL2025450EXTERNALENGLOBAL/Supply-Chain-Product-FP-A-Analyst",
+   "salary": null,
+   "_meta_text": "type: Full time workplace: ",
+   "_content_head": " Meet the Team \n You will be joining the Global Supply Chain Finance organization, specifically the Product FP&A team, where you will be a key team member driving Product Gross Margin attainment and improvement. You will also own Product Margin analysis and forecasting for various business entities. \n\n Our team is a dynamic group of motivated and high-performing finance professionals, recognized f"
+  },
+  {
+   "job_id": "CISCISGLOBAL2026983EXTERNALENGLOBAL",
+   "req_id": "2026983",
+   "title": "Product Lifecycle Project Manager (5-8 Years)",
+   "location": "Bangalore, India",
+   "location_detail": "Bangalore, India",
+   "department": "Supply Chain and Manufacturing Ops",
+   "published_at": "2026-11-06T00:00:00.000+0000",
+   "updated_at": null,
+   "url": "https://careers.cisco.com/global/en/job/CISCISGLOBAL2026983EXTERNALENGLOBAL/Product-Lifecycle-Project-Manager-5-8-Years",
+   "salary": null,
+   "_meta_text": "type: Full time workplace: ",
+   "_content_head": " Meet the Team   \n The Product Operations team plays a critical role in delivering Cisco’s next-generation hardware products on a scale. Working at the intersection of engineering, supply chain, and manufacturing, the team ensures seamless product lifecycle execution—from new product introduction to high-volume production and customer delivery. With a strong focus on reliability, efficiency, and o"
+  },
+  {
+   "job_id": "CISCISGLOBAL2026980EXTERNALENGLOBAL",
+   "req_id": "2026980",
+   "title": "Product Lifecycle Supply Chain Project Manager(5-8 Years)",
+   "location": "Bangalore, India",
+   "location_detail": "Bangalore, India",
+   "department": "Other",
+   "published_at": "2026-11-06T00:00:00.000+0000",
+   "updated_at": null,
+   "url": "https://careers.cisco.com/global/en/job/CISCISGLOBAL2026980EXTERNALENGLOBAL/Product-Lifecycle-Supply-Chain-Project-Manager-5-8-Years",
+   "salary": null,
+   "_meta_text": "type: Full time workplace: ",
+   "_content_head": " Meet the Team  \n\n Our team is a dynamic and collaborative group united by a shared passion for innovation and a commitment to excellence. We foster a culture of open communication, mutual respect, and continuous learning, where every voice is valued and encouraged to contribute. Our mission is Think Really Big, Play to Win, Drive Durable Growth. What truly makes us an exciting place to work is ou"
+  },
+  {
+   "job_id": "CISCISGLOBAL2026985EXTERNALENGLOBAL",
+   "req_id": "2026985",
+   "title": "Product Lifecycle Program Manager(12-18 Years)",
+   "location": "Bangalore, India",
+   "location_detail": "Bangalore, India",
+   "department": "Supply Chain and Manufacturing Ops",
+   "published_at": "2026-11-06T00:00:00.000+0000",
+   "updated_at": null,
+   "url": "https://careers.cisco.com/global/en/job/CISCISGLOBAL2026985EXTERNALENGLOBAL/Product-Lifecycle-Program-Manager-12-18-Years",
+   "salary": null,
+   "_meta_text": "type: Full time workplace: ",
+   "_content_head": " Meet the Team   \n\n The Product Operations team plays a critical role in delivering Cisco’s next-generation hardware products on a scale. Working at the intersection of engineering, supply chain, and manufacturing, the team ensures seamless product lifecycle execution—from new product introduction to high-volume production and customer delivery. With a strong focus on reliability, efficiency, and "
+  },
+  {
+   "job_id": "CISCISGLOBAL2026979EXTERNALENGLOBAL",
+   "req_id": "2026979",
+   "title": "Product Lifecycle Supply Chain Project Manager (9-15 Years)",
+   "location": "Bangalore, India",
+   "location_detail": "Bangalore, India",
+   "department": "Other",
+   "published_at": "2026-11-09T00:00:00.000+0000",
+   "updated_at": null,
+   "url": "https://careers.cisco.com/global/en/job/CISCISGLOBAL2026979EXTERNALENGLOBAL/Product-Lifecycle-Supply-Chain-Project-Manager-9-15-Years",
+   "salary": null,
+   "_meta_text": "type: Full time workplace: ",
+   "_content_head": " Meet the Team \n \n Our team is a dynamic and collaborative group united by a shared passion for innovation and a commitment to excellence. We foster a culture of open communication, mutual respect, and continuous learning, where every voice is valued and encouraged to contribute. Our mission is Think Really Big, Play to Win, Drive Durable Growth. What truly makes us an exciting place to work is ou"
+  }
+ ]
+}
