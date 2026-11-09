@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T17:01:18.751Z",
+  "updated_at": "2026-11-09T17:02:21.302Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1632,6 +1632,12 @@
       "at": "2026-11-09T17:01:17.240Z",
       "title": "Senior Specialist, Product Management",
       "company": "Scout Motors"
+    },
+    "smartrecruiters:Experian:744000160623078": {
+      "status": "archived",
+      "at": "2026-11-09T17:02:19.791Z",
+      "title": "Product Manager, Eligibility & Coverage",
+      "company": "Experian"
     }
   },
   "groups": {
