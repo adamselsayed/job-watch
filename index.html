@@ -8,7 +8,9 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Instrument+Sans:wght@400;500;600&display=swap">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%232f6046'/%3E%3Ccircle cx='16' cy='16' r='5' fill='white'/%3E%3C/svg%3E">
 <script>try { const t = localStorage.getItem('jobwatch.theme'); if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
-  if (localStorage.getItem('jobwatch.privacy') === 'on') document.documentElement.classList.add('privacy'); } catch (e) {}</script>
+  const pv = localStorage.getItem('jobwatch.privacy');
+  if (pv === 'on' || pv === 'all') document.documentElement.classList.add('privacy');
+  else if (pv === 'pay') document.documentElement.classList.add('privacy-pay'); } catch (e) {}</script>
 <style>
   /* Field Notes: sage paper, moss ink, ochre for what's new */
   :root {
@@ -281,13 +283,25 @@
   header button.icon svg { width: 18px; height: 18px; }
   header button.icon[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--bg); }
 
-  /* Privacy mode: blur company names and pay everywhere, for showing the dashboard to someone.
+  /* Privacy modes, for showing the dashboard to someone:
+       html.privacy      — blur company names AND pay (demos)
+       html.privacy-pay  — blur pay only (sharing with friends)
      pointer-events: none also stops hover tooltips from revealing the hidden text. */
-  html.privacy :is(nav.side button:not([data-name="*"]) .nm, td.co, .company .head h2:not(.all), td.sal > span, .brief .roles .co, .brief .roles .pay, #bPay, #pullDlg li .nm, #bBoards .err) {
+  html.privacy :is(nav.side button:not([data-name="*"]) .nm, td.co, .company .head h2:not(.all), .brief .roles .co, #pullDlg li .nm, #bBoards .err),
+  :is(html.privacy, html.privacy-pay) :is(td.sal > span, .brief .roles .pay, #bPay) {
     filter: blur(6px); user-select: none; pointer-events: none;
   }
   html.privacy .company .head h2:not(.all) { filter: blur(9px); }
   html.privacy .company .head a[href] { pointer-events: none; opacity: .4; }
+  .pv-wrap { position: relative; align-self: center; display: inline-grid; }
+  .pv-menu { position: absolute; top: calc(100% + 6px); right: 0; z-index: 40; min-width: 230px; margin: 0; padding: 6px; list-style: none;
+    background: var(--surface); border: 1px solid var(--border); border-radius: 14px; box-shadow: 0 10px 30px rgba(0,0,0,.14); }
+  .pv-menu[hidden] { display: none; }
+  .pv-menu button { display: flex; width: 100%; align-items: center; gap: 10px; text-align: left; padding: 8px 10px; border: 0; border-radius: 9px; background: none; color: var(--text); font: inherit; font-size: 13.5px; }
+  .pv-menu button:hover { background: var(--surface-2); }
+  .pv-menu button i { width: 14px; height: 14px; border-radius: 50%; border: 1.5px solid var(--border); flex: none; }
+  .pv-menu button[aria-checked="true"] i { border-color: var(--accent); background: radial-gradient(circle, var(--accent) 45%, transparent 48%); }
+  .pv-menu button small { display: block; color: var(--muted); font-size: 12px; }
   .brief-wrap { display: grid; grid-template-columns: 1.4fr 1fr; gap: 14px; margin-bottom: 26px; }
   .brief-wrap .card { background: var(--surface); border-radius: 16px; padding: 18px 20px; }
   .brief-wrap h3 { margin: 0 0 8px; font: 500 13px/1.3 "Instrument Sans", sans-serif; color: var(--muted); }
@@ -341,7 +355,14 @@
     <h1>Job Watch</h1>
     <span class="sub" id="generated">Loading…</span>
     <span class="spacer"></span>
-    <button id="privacyBtn" class="icon" aria-pressed="false" aria-label="Hide company names and pay" title="Hide company names and pay"></button>
+    <span class="pv-wrap">
+      <button id="privacyBtn" class="icon" aria-pressed="false" aria-haspopup="menu" aria-expanded="false" aria-label="Privacy mode" title="Privacy mode"></button>
+      <ul id="pvMenu" class="pv-menu" role="menu" hidden>
+        <li><button role="menuitemradio" data-mode="off"><i></i><span>Show everything</span></button></li>
+        <li><button role="menuitemradio" data-mode="pay"><i></i><span>Hide pay only<small>Company names stay visible — for sharing with friends</small></span></button></li>
+        <li><button role="menuitemradio" data-mode="all"><i></i><span>Hide company names and pay<small>For demos</small></span></button></li>
+      </ul>
+    </span>
     <button id="themeBtn" class="icon" aria-label="Switch to dark mode" title="Switch to dark mode"></button>
     <button id="sync" title="Sync Applied/Archive to the GitHub repo">Sync: off</button>
     <button id="pullAll">Pull all now</button>
@@ -1055,17 +1076,36 @@
   }
   const EYE = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>';
   const EYE_OFF = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10.6 5.1A10.7 10.7 0 0 1 12 5c6.4 0 10 7 10 7a17.6 17.6 0 0 1-2.4 3.3M6.6 6.6C3.8 8.4 2 12 2 12s3.6 7 10 7a9.6 9.6 0 0 0 5.4-1.6M9.9 9.9a3 3 0 0 0 4.2 4.2M3 3l18 18"/></svg>';
-  function paintPrivacyBtn() {
-    const on = document.documentElement.classList.contains('privacy'), b = $('#privacyBtn');
-    b.innerHTML = on ? EYE_OFF : EYE;
-    b.setAttribute('aria-pressed', on);
-    b.title = b.ariaLabel = on ? 'Show company names and pay' : 'Hide company names and pay';
+  const PV_LABEL = { off: 'Privacy mode: off', pay: 'Privacy mode: pay hidden', all: 'Privacy mode: company names and pay hidden' };
+  function privacyMode() {
+    const c = document.documentElement.classList;
+    return c.contains('privacy') ? 'all' : c.contains('privacy-pay') ? 'pay' : 'off';
   }
-  $('#privacyBtn').addEventListener('click', () => {
-    const on = document.documentElement.classList.toggle('privacy');
-    try { localStorage.setItem('jobwatch.privacy', on ? 'on' : 'off'); } catch (e) {}
+  function setPrivacyMode(m) {
+    const c = document.documentElement.classList;
+    c.toggle('privacy', m === 'all'); c.toggle('privacy-pay', m === 'pay');
+    try { localStorage.setItem('jobwatch.privacy', m); } catch (e) {}
     paintPrivacyBtn();
+  }
+  function paintPrivacyBtn() {
+    const m = privacyMode(), b = $('#privacyBtn');
+    b.innerHTML = m === 'off' ? EYE : EYE_OFF;
+    b.setAttribute('aria-pressed', m !== 'off');
+    b.title = b.ariaLabel = PV_LABEL[m];
+    document.querySelectorAll('#pvMenu [data-mode]').forEach(x => x.setAttribute('aria-checked', x.dataset.mode === m));
+  }
+  function togglePvMenu(open) {
+    const menu = $('#pvMenu'), b = $('#privacyBtn');
+    const show = open ?? menu.hidden;
+    menu.hidden = !show; b.setAttribute('aria-expanded', show);
+  }
+  $('#privacyBtn').addEventListener('click', e => { e.stopPropagation(); togglePvMenu(); });
+  $('#pvMenu').addEventListener('click', e => {
+    const x = e.target.closest('[data-mode]'); if (!x) return;
+    setPrivacyMode(x.dataset.mode); togglePvMenu(false);
   });
+  document.addEventListener('click', e => { if (!e.target.closest('.pv-wrap')) togglePvMenu(false); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') togglePvMenu(false); });
   paintPrivacyBtn();
   $('#themeBtn').addEventListener('click', () => {
     const t = isDark() ? 'light' : 'dark';

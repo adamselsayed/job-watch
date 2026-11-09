@@ -54,3 +54,9 @@ while its listing ID exists; a repost under a new ID shows up as new again.
 The dashboard's **Pull now** button reads the company's live job board directly from your browser
 and shows anything the morning sweep hasn't recorded yet with a *live* badge. It doesn't write to
 the repo; the next sweep will record those roles permanently.
+
+## Privacy mode
+
+The eye button in the header opens a small menu with three choices: **Show everything**, **Hide pay only**
+(salary figures blurred, company names visible — for sharing with friends) and **Hide company names and pay**
+(for demos). Blurred text can't be hovered, selected or clicked through. Each browser remembers the choice.
