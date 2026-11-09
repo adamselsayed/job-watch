@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T04:25:11.545Z",
+  "updated_at": "2026-11-09T04:25:15.722Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -488,14 +488,14 @@
       "company": "ServiceNow"
     },
     "smartrecruiters:ServiceNow:744000157549524": {
-      "status": "open",
-      "at": "2026-11-02T19:43:05.993Z",
+      "status": "archived",
+      "at": "2026-11-09T04:25:14.208Z",
       "title": "Senior Staff Inbound Product Manager, AI/Super Intelligence Control Tower - End to End Experience",
       "company": "ServiceNow"
     },
     "smartrecruiters:ServiceNow:744000156856599": {
-      "status": "open",
-      "at": "2026-11-02T19:43:05.993Z",
+      "status": "archived",
+      "at": "2026-11-09T04:25:12.716Z",
       "title": "Senior Staff Outbound Product Manager - GTM / Data & Analytics",
       "company": "ServiceNow"
     },
