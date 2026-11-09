@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T04:25:41.261Z",
+  "updated_at": "2026-11-09T04:35:21.956Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1284,6 +1284,12 @@
       "at": "2026-11-09T04:24:51.863Z",
       "title": "Senior Director, Product Creative Direction",
       "company": "ServiceNow"
+    },
+    "talentbrew:jobs.intuit.com:101456093760": {
+      "status": "archived",
+      "at": "2026-11-09T04:35:20.438Z",
+      "title": "Principal Product Manager, Credit Karma Tax",
+      "company": "Intuit"
     }
   },
   "groups": {
