@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T20:05:11.176Z",
+  "updated_at": "2026-11-09T23:26:35.703Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1638,6 +1638,12 @@
       "at": "2026-11-09T17:02:19.791Z",
       "title": "Product Manager, Eligibility & Coverage",
       "company": "Experian"
+    },
+    "lever:field-ai:ba73b59a-fb3c-4871-a90d-c2642a41e409": {
+      "status": "archived",
+      "at": "2026-11-09T23:26:33.969Z",
+      "title": "Senior Product Manager, Security & Urban Operations",
+      "company": "FieldAI"
     }
   },
   "groups": {
