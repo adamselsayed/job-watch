@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T06:17:47.434Z",
+  "updated_at": "2026-11-09T16:58:53.966Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1596,6 +1596,12 @@
       "at": "2026-11-09T06:17:45.923Z",
       "title": "Associate Manager Product Operations, Autonomy Commercialization - DoorDash Dot",
       "company": "DoorDash"
+    },
+    "greenhouse:scoutmotors:5275559007": {
+      "status": "archived",
+      "at": "2026-11-09T16:58:51.983Z",
+      "title": "Senior Specialist, Product Management – E/E Architecture, Features & Requirements Management",
+      "company": "Scout Motors"
     }
   },
   "groups": {
