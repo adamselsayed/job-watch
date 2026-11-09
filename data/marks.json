@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T04:55:10.683Z",
+  "updated_at": "2026-11-09T04:55:24.769Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1421,6 +1421,18 @@
       "status": "archived",
       "at": "2026-11-09T04:55:09.167Z",
       "title": "Senior Product Manager, AI Physics",
+      "company": "NVIDIA"
+    },
+    "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2014827": {
+      "status": "archived",
+      "at": "2026-11-09T04:55:22.096Z",
+      "title": "Software Program Manager, New Product Introduction",
+      "company": "NVIDIA"
+    },
+    "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2024902": {
+      "status": "archived",
+      "at": "2026-11-09T04:55:23.254Z",
+      "title": "Software Program Manager, New Product Introduction",
       "company": "NVIDIA"
     }
   },
