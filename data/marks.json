@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T05:58:53.003Z",
+  "updated_at": "2026-11-09T05:59:09.949Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1541,6 +1541,18 @@
       "status": "archived",
       "at": "2026-11-09T05:58:51.492Z",
       "title": "HVDC Market Product Manager – North America",
+      "company": "Hitachi"
+    },
+    "workday:hitachi.wd1/hitachi:R0146458": {
+      "status": "archived",
+      "at": "2026-11-09T05:59:06.933Z",
+      "title": "Global Product Specialist Automation-Digital Power Conversion Solutions",
+      "company": "Hitachi"
+    },
+    "workday:hitachi.wd1/hitachi:R0105015": {
+      "status": "archived",
+      "at": "2026-11-09T05:59:08.438Z",
+      "title": "Global Product Specialist - Dry type transformers (mainstream)",
       "company": "Hitachi"
     }
   },
