@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T04:54:36.896Z",
+  "updated_at": "2026-11-09T04:54:39.065Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1409,6 +1409,12 @@
       "status": "archived",
       "at": "2026-11-09T04:54:35.380Z",
       "title": "Senior Staff Product Manager, Done-For-You Payroll Workflows",
+      "company": "Intuit"
+    },
+    "talentbrew:jobs.intuit.com:99691119152": {
+      "status": "archived",
+      "at": "2026-11-09T04:54:37.550Z",
+      "title": "Senior Staff Product Manager, Enterprise Finance (EPM)",
       "company": "Intuit"
     }
   },
