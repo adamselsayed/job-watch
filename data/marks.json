@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T19:23:17.666Z",
+  "updated_at": "2026-11-10T19:23:56.477Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1662,6 +1662,12 @@
       "at": "2026-11-10T18:42:40.532Z",
       "title": "Product Security Architect (Remote US)",
       "company": "Hitachi"
+    },
+    "smartrecruiters:Experian:744000160746568": {
+      "status": "archived",
+      "at": "2026-11-10T19:23:54.969Z",
+      "title": "Vice President, Product Management",
+      "company": "Experian"
     }
   },
   "groups": {
