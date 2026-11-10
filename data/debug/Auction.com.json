@@ -1,169 +1,145 @@
 {
  "endpoint_probe": [
   {
+   "label": "page",
    "m": "GET",
    "u": "https://jobs.dayforcehcm.com/en-US/auction/CANDIDATEPORTAL",
    "code": 200,
-   "server": "cloudflare",
    "len": 463700,
-   "head": "<!DOCTYPE html><html lang=\"en-US\"><head><meta charSet=\"utf-8\" data-next-head=\"\"/><meta name=\"viewport\" content=\"width=device-width\" data-next-head=\"\"/><title data-next-head=\"\">Job Board | Dayforce Jobs</title><meta property=\"og:title\" content=\"Job Board | Dayforce Jobs\" data-next-head=\"\"/><meta name=\"twitter:title\" content=\"Job Board | Dayforce Jobs\" data-next-head=\"\"/><meta name=\"description\" content=\"Find your next adventure\" data-next-head=\"\"/><meta property=\"og:description\" content=\"Find your next adventure\" data-next-head=\"\"/><meta name=\"twitter:description\" content=\"Find your next adventure\" data-next-head=\"\"/><link rel=\"preload\" href=\"/_next/static/media/df0a9ae256c0569c-s.p.woff2\" as=\"font\" type=\"font/woff2\" crossorigin=\"anonymous\" data-next-font=\"size-adjust\"/><link rel=\"preload\" href=\"/_next/static/media/8e9860b6e62d6359-s.p.woff2\" as=\"font\" type=\"font/woff2\" crossorigin=\"anonymous\" data-next-font=\"size-adjust\"/><link rel=\"preload\" href=\"/_next/static/media/e4af272ccee01ff0-s.p.woff2\" as=\"font\" type=\"font/woff2\" crossorigin=\"anonymous\" data-next-font=\"size-adjust\"/><link rel=\"preload\" href=\"/_next/static/css/cdf5c5fd3488a751.css\" as=\"style\"/><link rel=\"stylesheet\" href=\"/",
-   "next_data": "{\"props\":{\"pageProps\":{\"_nextI18Next\":{\"initialI18nStore\":{\"en-US\":{\"common\":{\"accept\":\"Accept\",\"account-migration-error\":\"Something went wrong. Your account wasn't migrated. Refresh your browser and try again.\",\"account-migration-error-with-requestid\":\"Something went wrong. Your account wasn't migrated. Refresh your browser and try again. If this issue keeps repeating, please click the Report Issue button to let your administrator know. \\u003cerrorCode\\u003eError Code: {{requestId}}\\u003c/errorCode\\u003e\",\"add-saved-jobs-failed-notification-title\":\"The job wasn't saved. Try again later.\",\"add-saved-jobs-success-notification-title\":\"Added to your saved jobs.\",\"add-to-saved-jobs\":\"Add to Saved Jobs\",\"advanced-search\":\"Advanced search\",\"all-departments\":\"All departments\",\"all-pay-classes\":\"All pay classes\",\"all-pay-types\":\"All pay types\",\"all-posted-within\":\"Any time frame\",\"all-travel-requirements\":\"All travel requirements\",\"already-applied\":\"Already Applied\",\"always-enabled\":\"Always enabled\",\"anonymous-session-expired-error\":\"The file couldn’t be downloaded. Try again. If you still can’t download it, upload the file again. The new file will replace the existing file.\",\"apply\":\"Apply\",\"apply-with\":\"Apply with\",\"apply-with-seek\":\"Apply with Seek\",\"aria-apply-button\":\"Apply for {{jobTitle}}\",\"aria-apply-button-applied\":\"Already Applied for {{jobTitle}}\",\"aria-cancel-section\":\"Cancel {{sectionName}} changes\",\"aria-home-link\":\"Home\",\"aria-read-more\":\"Read more about {{jobTitle}}\",\"aria-save-job\":\"Save {{jobTitle}}\",\"aria-saved-job\":\"{{jobTitle}} is saved\",\"aria-update-section\":\"Update {{sectionName}}\",\"at-least-one-session\":\"At least one session\",\"back\":\"Back\",\"back-to-top\":\"Back to top\",\"cancel\":\"Cancel\",\"category\":\"Category\",\"ce\":{\"assistant\":{\"applyBannerTitle\":\"Applying to {{jobTitle}}\",\"applyCta\":\"Continue to application\",\"applyJobUnavailable\":\"This job is no longer accepting applications.\",\"applyOptionsBody\":\"Sign in to apply with your profile, or continue as a guest and the assistant will ask for your details.\",\"applyOptionsSignedInBody\":\"You're signed in, so the assistant can fill in your application from your profile.\",\"applyOptionsStart\":\"Start application\",\"applyOptionsTitle\":\"Apply in this chat\",\"applyPromptBody\":\"I can help you apply for {{jobTitle}} right here in this chat. Want to apply?\",\"applyPromptMessage\":\"I'd like to apply for this job here in the chat.\",\"applyPromptYes\":\"Yes, apply in chat\",\"applySessionContinueInChat\":\"We couldn't save this to your application right now. Send a message in the chat to continue.\",\"applySessionExpired\":\"Your application session has expired. Start a new conversation to apply again.\",\"attach\":\"Attach a file\",\"attachHint\":\"Shared with the assistant\",\"documentKindResume\":\"Resume\",\"documentKindOther\":\"Other document\",\"documentsTitle\":\"Documents available in this chat\",\"documentUploading\":\"Uploading {{fileName}}...\",\"documentRetained\":\"Available in this chat\",\"documentParseFailed\":\"Uploaded, but could not read this resume for a fit check.\",\"documentNotReadable\":\"Attachment saved; its contents are not available for a fit check.\",\"documentInvalid\":\"Unsupported document or size. Resumes must be under 4 MB; other documents under 20 MB.\",\"documentUploadError\":\"This document could not be uploaded. Check its format and size, then try again.\",\"documentRestoreError\":\"Some chat documents could not be restored. Please upload them again.\",\"documentStorageError\":\"Your documents are available now, but could not be saved for a page reload.\",\"removeDocument\":\"Remove {{fileName}} from this chat\",\"documentReuseApply\":\"Would you like to use a resume from this chat for your application to {{jobTitle}}?\",\"documentReuseFit\":\"Would you like to use a resume from this chat to check your fit for {{jobTitle}}?\",\"documentReuseConfirm\":\"Use this resume\",\"documentReuseDecline\":\"No, use another option\",\"documentReuseReplace\":\"This will replace the resume currently selected for this application.\",\"documentReuseExpire",
-   "api_refs": [],
-   "pageprops": "{\"session\": {\"data\": {\"user\": {}}, \"status\": \"unauthenticated\"}, \"dehydratedState\": {\"mutations\": [], \"queries\": [{\"state\": {\"data\": {\"legalBaseUrl\": \"https://dfonlinehelp.dayforcehcm.com/Global/Legal/English\", \"jobBoardCode\": \"candidateportal\", \"clientNamespace\": \"auction\", \"cultureCode\": \"en-US\", \"id\": null, \"clientId\": 56685, \"jobBoardId\": 1, \"showGoogleMaps\": true, \"candidateConversionType\": 1, \"candidateConversionTracking\": null, \"accessibilityStatementType\": 1, \"defaultAccessibilityStatement\": null, \"header\": {\"jobBoardHeaderConfigId\": 1, \"headerLinks\": [{\"pageLinkName\": \"Careers\", \"link\": \"#\", \"sortOrder\": 1}]}, \"footer\": null, \"linkToAccessibilityStatement\": null, \"privacyPolicy\": null, \"smallLogo\": {\"imageId\": 2, \"imageName\": \"100x100\", \"description\": \"100x100\", \"url\": \"https://us261.dayforcehcm.com/CandidatePortal/en-US/auction/Go?item=35c0b697-f4cc-494c-9339-6812dde77e27\"}, \"largeLogo\": {\"imageId\": 1, \"imageName\": \"1000 x 200\", \"description\": \"1000 x 200\", \"url\": \"https://us261.dayforcehcm.com/CandidatePortal/en-US/auction/Go?item=1cea619d-6753-461b-a0b9-22b7b6dc3605\"}, \"jobPostingBanner\": {\"imageId\": 1, \"imageName\": \"1000 x 200\", \"description\": \"1000 x 200\", \"url\": \"https://us261.dayforcehcm.com/CandidatePortal/en-US/auction/Go?item=1cea619d-6753-461b-a0b9-22b7b6dc3605\"}, \"jobBoardTheme\": {\"themeId\": 2, \"primaryColour\": \"#5b6770\", \"secondaryColour\": \"#57c1e8\", \"accentColour\": \"#4e9d2d\", \"lightColour\": \"#dddddd\", \"successColour\": \"#00c63c\", \"attentionColour\": \"#ffd652\", \"alertColour\": \"#ff5500\", \"errorColour\": \"#eb0000\", \"grayScaleColour\": \"#393839\", \"grayScale100Colour\": \"#4d4d4f\", \"grayScale200Colour\": \"#747679\", \"grayScale300Colour\": \"#bcbec0\", \"grayScale400Colour\": \"#e2e3e4\", \"grayScale500Colour\": \"#f1f1f2\", \"grayScale600Colour\": \"#ffffff\"}, \"enableSavedJobs\": true, \"enableSavedSearches\": true, \"enableRecommendedJobs\": true, \"enableAppliedJobs\": true, \"enableDraftApplications\": false, \"enablePrivacyPolicy\": false, \"enableApplyWithPhoneNumber\": false, \"enableApplyWithoutAccount\": true, \"enableViewPreviousApplications\": false, \"enabledAdvancedSearchFields\": [4], \"privacyPolicyBaseUrl\": \"https://dfonlinehelp.dayforcehcm.com\", \"candidatePortalBaseUrl\": \"https://us261.dayforcehcm.com/CandidatePortal/\", \"isoCultureCodes\": [\"en-US\", \"fr-CA\", \"es-MX\"], \"isShareButtonVisible\": true, \"jobApplicationShareStatement\": {\"en-US\": \"Become a Part of our Growing Team!\", \"es-MX\": \"Become a Part of our Growing Team!\", \"fr-CA\": \"Become a Part of our Growing Team!\"}, \"footerDisclaimer\": \"If you no longer want to receive email alerts for this saved search, click the unsubscribe link above. To manage your other job alert subscriptions for this site, log in to your account and go to the Job Alerts tab.\", \"enableLoginWithFacebook\": false, \"isDeleteEnabled\": false, \"enabledAppliedJobsStatuses\": [1, 2, 3, 4, 5, 6], \"clientCorrespondanceEmailAddress\": \"hrcare@auction.com\", \"clientPreferredTimezoneId\": null, \"hasActiveSMSProvider\": false, \"enableApplyWithSeek\": false, \"seekAdvertiserId\": null, \"enableSeek\": false, \"candidateCorrespondenceClientName\": \"Auction.com\", \"isLinkedInEnabled\": false, \"linkedInContext\": null, \"allowInternalCandidateAssessments\": true, \"enableCandidateProfileVisibilityToggle\": false, \"isDisabled\": false}, \"dataUpdateCount\": 1, \"dataUpdatedAt\": 1794345204916, \"error\": null, \"errorUpdateCount\": 0, \"errorUpdatedAt\": 0, \"fetchFailureCount\": 0, \"fetchMeta\": null, \"isFetching\": false, \"isInvalidated\": false, \"isPaused\": false, \"status\": \"success\"}, \"queryKey\": [\"site-info\", {\"clientNamespace\": \"auction\", \"careerSiteXRefCode\": \"CANDIDATEPORTAL\", \"language\": \"en-US\", \"jobPostingId\": null}], \"queryHash\": \"[\\\"site-info\\\",{\\\"careerSiteXRefCode\\\":\\\"CANDIDATEPORTAL\\\",\\\"clientNamespace\\\":\\\"auction\\\",\\\"jobPostingId\\\":null,\\\"language\\\":\\\"en-US\\\"}]\"}]}}",
-   "nd_other": {
-    "page": "/[clientNamespace]/[careerSiteXRefCode]",
-    "query": {
-     "clientNamespace": "auction",
-     "careerSiteXRefCode": "CANDIDATEPORTAL"
-    },
-    "buildId": "d-LEjKsJfn0fYB8-dU_ZP",
-    "runtimeConfig": {
-     "BASE_URL": "https://jobs.dayforcehcm.com",
-     "GOOGLE_API_KEY": "AIzaSyAz98sXQm5CwukxWR0GdPiBXSuKrUZX_UQ",
-     "RECAPTCHA_SITE_KEY": "6LefHBYnAAAAADeXPZsiYH6oWbixfkQ2Te8pkJt7",
-     "LAUNCH_DARKLY_CLIENTSIDE_ID": "62a0a637cc384b1581554ac5",
-     "LAUNCH_DARKLY_PROXY_URL": "",
-     "USE_SSR": "true",
-     "DFID_URL": "https://dfid.dayforcehcm.com",
-     "SEEK_CLIENT_ID": "CeridianATS",
-     "SEEK_REDIRECT_URI": "https%3A%2F%2Fjobs.dayforcehcm.com%2Fapi%2Floadseekdata",
-     "PENDO_URL": "https://static.dayforcehcm.com/libraries/pendo/2.193.0/pendo.js",
-     "PENDO_API_KEY": "3bc0079a-4cf3-4a98-68f7-8e69f89eb9ff",
-     "SEEK_APPLY_REDIRECT_URI": "https://jobs.dayforcehcm.com",
-     "ADMIN_SERVICE_URL": "https://ha-adminservice.dayforcehcm.com"
-    },
-    "isFallback": false,
-    "isExperimentalCompile": false,
-    "gssp": true,
-    "appGip": true,
-    "locale": "en-US",
-    "locales": [
-     "en-US",
-     "bg-BG",
-     "cs-CZ",
-     "da-DK",
-     "de-DE",
-     "el-GR",
-     "en-AU",
-     "en-CA",
-     "en-GB",
-     "en-IE",
-     "en-NZ",
-     "en-SG",
-     "es-419",
-     "es-AR",
-     "es-CL",
-     "es-CO",
-     "es-CR",
-     "es-ES",
-     "es-MX",
-     "es-PA",
-     "et-EE",
-     "fi-FI",
-     "fil-PH",
-     "fr-CA",
-     "fr-FR",
-     "hi-IN",
-     "hr-HR",
-     "hu-HU",
-     "id-ID",
-     "it-IT",
-     "ja-JP",
-     "ko-KR",
-     "lt-LT",
-     "lv-LV",
-     "ms-MY",
-     "nb-NO",
-     "nl-NL",
-     "pl-PL",
-     "pt-BR",
-     "pt-PT",
-     "ro-RO",
-     "ru-RU",
-     "sk-SK",
-     "sv-SE",
-     "th-TH",
-     "tr-TR",
-     "vi-VN",
-     "zh-CN",
-     "zh-Hans-SG",
-     "zh-Hans",
-     "zh-Hant",
-     "zh-SG"
-    ],
-    "defaultLocale": "en-US",
-    "scriptLoader": []
-   },
-   "jobTitle_count": 22,
-   "js_hits": [
-    "main-c89895880af2c2f6.js: utf-8\",a=\"application/json; charset=utf-8\",o=\"nxtP\",i=\"nxtI\",l=\"x-matched-path\",s=\"x-prerender-revalidate\",u=\"x-prerender-revalidate-if-generated\",c=\".prefetch.rsc\",f=\".segments\",d=\".segment.rsc\",p=\".rsc\",h=\".action\",_=\".json\",m=\".meta\",g=\".body\",E=\"x-next-cache-tags\",y=\"x-next-revalidated-tags\",P=\"x-next-revalidate-tag-token\",b=\"next-resume\",v=128,R=256,O=1024,S=\"_N_T_\",T=31536e3,A=0xfffffffe,j=\"middleware\",x=`(?:src/)?${j}`,C=\"instrumentation\",w=\"private-next-pages\",I=\"private-dot-next\",M=\"private-next-root-dir\",N=\"private-next-app-dir\",L=\"private-next-rsc-mod-ref-proxy\",D=\"private-next-rsc-action-validate\",U=\"private",
-    "_app-9e792888e604e575.js: isResponse(e)||Z.isReadableStream(e))return e;if(e&&Z.isString(e)&&(r&&!n||a)){let r=t&&t.silentJSONParsing;try{return JSON.parse(e,eB(this,\"parseReviver\"))}catch(e){if(!r&&a){if(\"SyntaxError\"===e.name)throw eh.from(e,eh.ERR_BAD_RESPONSE,this,null,eB(this,\"response\"));throw e}}}return e}],timeout:0,xsrfCookieName:\"XSRF-TOKEN\",xsrfHeaderName:\"X-XSRF-TOKEN\",maxContentLength:-1,maxBodyLength:-1,env:{FormData:eR.classes.FormData,Blob:eR.classes.Blob},validateStatus:function(e){return e>=200&&e<300},headers:{common:{Accept:\"application/json, text/plain, */*\",\"Content-Type\":void 0}}};function eq(e,t){le",
-    "_app-9e792888e604e575.js: .isReadableStream(e))return e;if(e&&Z.isString(e)&&(r&&!n||a)){let r=t&&t.silentJSONParsing;try{return JSON.parse(e,eB(this,\"parseReviver\"))}catch(e){if(!r&&a){if(\"SyntaxError\"===e.name)throw eh.from(e,eh.ERR_BAD_RESPONSE,this,null,eB(this,\"response\"));throw e}}}return e}],timeout:0,xsrfCookieName:\"XSRF-TOKEN\",xsrfHeaderName:\"X-XSRF-TOKEN\",maxContentLength:-1,maxBodyLength:-1,env:{FormData:eR.classes.FormData,Blob:eR.classes.Blob},validateStatus:function(e){return e>=200&&e<300},headers:{common:{Accept:\"application/json, text/plain, */*\",\"Content-Type\":void 0}}};function eq(e,t){let r=this||eV,n=t",
-    "_app-9e792888e604e575.js: tream(e))return e;if(e&&Z.isString(e)&&(r&&!n||a)){let r=t&&t.silentJSONParsing;try{return JSON.parse(e,eB(this,\"parseReviver\"))}catch(e){if(!r&&a){if(\"SyntaxError\"===e.name)throw eh.from(e,eh.ERR_BAD_RESPONSE,this,null,eB(this,\"response\"));throw e}}}return e}],timeout:0,xsrfCookieName:\"XSRF-TOKEN\",xsrfHeaderName:\"X-XSRF-TOKEN\",maxContentLength:-1,maxBodyLength:-1,env:{FormData:eR.classes.FormData,Blob:eR.classes.Blob},validateStatus:function(e){return e>=200&&e<300},headers:{common:{Accept:\"application/json, text/plain, */*\",\"Content-Type\":void 0}}};function eq(e,t){let r=this||eV,n=t||r,a=ed.fro",
-    "_app-9e792888e604e575.js: e;if(e&&Z.isString(e)&&(r&&!n||a)){let r=t&&t.silentJSONParsing;try{return JSON.parse(e,eB(this,\"parseReviver\"))}catch(e){if(!r&&a){if(\"SyntaxError\"===e.name)throw eh.from(e,eh.ERR_BAD_RESPONSE,this,null,eB(this,\"response\"));throw e}}}return e}],timeout:0,xsrfCookieName:\"XSRF-TOKEN\",xsrfHeaderName:\"X-XSRF-TOKEN\",maxContentLength:-1,maxBodyLength:-1,env:{FormData:eR.classes.FormData,Blob:eR.classes.Blob},validateStatus:function(e){return e>=200&&e<300},headers:{common:{Accept:\"application/json, text/plain, */*\",\"Content-Type\":void 0}}};function eq(e,t){let r=this||eV,n=t||r,a=ed.from(n.headers),o=n.data;re",
-    "_app-9e792888e604e575.js: r):void 0}Object.defineProperty(n,\"hasOwnProperty\",{__proto__:null,value:Object.prototype.hasOwnProperty,enumerable:!1,writable:!0,configurable:!0});let u={url:i,method:i,data:i,baseURL:l,transformRequest:l,transformResponse:l,paramsSerializer:l,timeout:l,timeoutErrorMessage:l,withCredentials:l,withXSRFToken:l,adapter:l,responseType:l,xsrfCookieName:l,xsrfHeaderName:l,onUploadProgress:l,onDownloadProgress:l,decompress:l,maxContentLength:l,maxBodyLength:l,beforeRedirect:l,transport:l,httpAgent:l,httpsAgent:l,cancelToken:l,socketPath:l,allowedSocketPaths:l,responseEncoding:l,validateStatus:s,headers",
-    "_app-9e792888e604e575.js: sOwnProperty\",{__proto__:null,value:Object.prototype.hasOwnProperty,enumerable:!1,writable:!0,configurable:!0});let u={url:i,method:i,data:i,baseURL:l,transformRequest:l,transformResponse:l,paramsSerializer:l,timeout:l,timeoutErrorMessage:l,withCredentials:l,withXSRFToken:l,adapter:l,responseType:l,xsrfCookieName:l,xsrfHeaderName:l,onUploadProgress:l,onDownloadProgress:l,decompress:l,maxContentLength:l,maxBodyLength:l,beforeRedirect:l,transport:l,httpAgent:l,httpsAgent:l,cancelToken:l,socketPath:l,allowedSocketPaths:l,responseEncoding:l,validateStatus:s,headers:(e,t,r)=>o(e7(e),e7(t),r,!0)};return",
-    "_app-9e792888e604e575.js: proto__:null,value:Object.prototype.hasOwnProperty,enumerable:!1,writable:!0,configurable:!0});let u={url:i,method:i,data:i,baseURL:l,transformRequest:l,transformResponse:l,paramsSerializer:l,timeout:l,timeoutErrorMessage:l,withCredentials:l,withXSRFToken:l,adapter:l,responseType:l,xsrfCookieName:l,xsrfHeaderName:l,onUploadProgress:l,onDownloadProgress:l,decompress:l,maxContentLength:l,maxBodyLength:l,beforeRedirect:l,transport:l,httpAgent:l,httpsAgent:l,cancelToken:l,socketPath:l,allowedSocketPaths:l,responseEncoding:l,validateStatus:s,headers:(e,t,r)=>o(e7(e),e7(t),r,!0)};return Z.forEach((r={..",
-    "_app-9e792888e604e575.js: &Z.hasOwnProp(a,r))return a[r]}(\"validateStatusUndefinedResolves\")&&(Z.hasOwnProp(e,\"validateStatus\")?n.validateStatus=a(void 0,e.validateStatus):delete n.validateStatus),n}let tt=[\"content-type\",\"content-length\"],tr=function(e){let t=te({},e),r=e=>Z.hasOwnProp(t,e)?t[e]:void 0,n=r(\"data\"),a=r(\"withXSRFToken\"),o=r(\"xsrfHeaderName\"),i=r(\"xsrfCookieName\"),l=r(\"headers\"),s=r(\"auth\"),u=r(\"baseURL\"),c=r(\"allowAbsoluteUrls\"),d=r(\"url\");if(t.headers=l=ed.from(l),t.url=ej(e4(u,d,c,t),r(\"params\"),r(\"paramsSerializer\")),s){let t=Z.getSafeProp(s,\"username\")||\"\",r=Z.getSafeProp(s,\"password\")||\"\";try{l.set(\"Au",
-    "_app-9e792888e604e575.js: ))return a[r]}(\"validateStatusUndefinedResolves\")&&(Z.hasOwnProp(e,\"validateStatus\")?n.validateStatus=a(void 0,e.validateStatus):delete n.validateStatus),n}let tt=[\"content-type\",\"content-length\"],tr=function(e){let t=te({},e),r=e=>Z.hasOwnProp(t,e)?t[e]:void 0,n=r(\"data\"),a=r(\"withXSRFToken\"),o=r(\"xsrfHeaderName\"),i=r(\"xsrfCookieName\"),l=r(\"headers\"),s=r(\"auth\"),u=r(\"baseURL\"),c=r(\"allowAbsoluteUrls\"),d=r(\"url\");if(t.headers=l=ed.from(l),t.url=ej(e4(u,d,c,t),r(\"params\"),r(\"paramsSerializer\")),s){let t=Z.getSafeProp(s,\"username\")||\"\",r=Z.getSafeProp(s,\"password\")||\"\";try{l.set(\"Authorization\",\"Bas",
-    "_app-9e792888e604e575.js: teStatusUndefinedResolves\")&&(Z.hasOwnProp(e,\"validateStatus\")?n.validateStatus=a(void 0,e.validateStatus):delete n.validateStatus),n}let tt=[\"content-type\",\"content-length\"],tr=function(e){let t=te({},e),r=e=>Z.hasOwnProp(t,e)?t[e]:void 0,n=r(\"data\"),a=r(\"withXSRFToken\"),o=r(\"xsrfHeaderName\"),i=r(\"xsrfCookieName\"),l=r(\"headers\"),s=r(\"auth\"),u=r(\"baseURL\"),c=r(\"allowAbsoluteUrls\"),d=r(\"url\");if(t.headers=l=ed.from(l),t.url=ej(e4(u,d,c,t),r(\"params\"),r(\"paramsSerializer\")),s){let t=Z.getSafeProp(s,\"username\")||\"\",r=Z.getSafeProp(s,\"password\")||\"\";try{l.set(\"Authorization\",\"Basic \"+btoa(t+\":\"+(r?enc",
-    "_app-9e792888e604e575.js: aramsSerializer={serialize:o}:tA.assertOptions(o,{encode:tT.function,serialize:tT.function},!0)),void 0!==t.allowAbsoluteUrls||(void 0!==this.defaults.allowAbsoluteUrls?t.allowAbsoluteUrls=this.defaults.allowAbsoluteUrls:t.allowAbsoluteUrls=!0),tA.assertOptions(t,{baseUrl:tT.spelling(\"baseURL\"),withXsrfToken:tT.spelling(\"withXSRFToken\")},!0),t.method=(Z.getSafeProp(t,\"method\")||Z.getSafeProp(this.defaults,\"method\")||\"get\").toLowerCase();let l=i&&Z.merge(i.common,i[t.method]);i&&Z.forEach(eU.concat(\"common\"),e=>{delete i[e]}),t.headers=ed.concat(l,i);let s=[],u=!0;this.interceptors.request.forEach(",
-    "_app-9e792888e604e575.js: o}:tA.assertOptions(o,{encode:tT.function,serialize:tT.function},!0)),void 0!==t.allowAbsoluteUrls||(void 0!==this.defaults.allowAbsoluteUrls?t.allowAbsoluteUrls=this.defaults.allowAbsoluteUrls:t.allowAbsoluteUrls=!0),tA.assertOptions(t,{baseUrl:tT.spelling(\"baseURL\"),withXsrfToken:tT.spelling(\"withXSRFToken\")},!0),t.method=(Z.getSafeProp(t,\"method\")||Z.getSafeProp(this.defaults,\"method\")||\"get\").toLowerCase();let l=i&&Z.merge(i.common,i[t.method]);i&&Z.forEach(eU.concat(\"common\"),e=>{delete i[e]}),t.headers=ed.concat(l,i);let s=[],u=!0;this.interceptors.request.forEach(function(e){if(\"function\"==",
-    "5605-88b30208dd20c6e3.js: .trackEvent({name:\"JobAssistantStreamFailed\"},t)}catch{}})({reason:e,chatId:a,...t,elapsedMs:s-r,msSinceLastData:s-l.lastActivityAt()})};let c={...i,onChatId:e=>{a=e,i.onChatId(e)},onError:e=>{o(\"server_error\"),i.onError(e)}},d={guard:l,handlers:i};t.current=d;try{l.armTimeout();let e=await (0,g.getCsrfToken)().catch(()=>void 0);if(l.isFinished())return;let t=await fetch(\"/api/agent/chat\",{method:\"POST\",headers:{\"Content-Type\":\"application/json\",...e?{\"X-CSRF-TOKEN\":e}:{}},body:JSON.stringify(s),signal:n.signal});if(l.isFinished())return;if(!t.ok||!t.body){l.finish(),o(\"http_error\",{status:t.statu"
+   "head": "<!DOCTYPE html><html lang=\"en-US\"><head><meta charSet=\"utf-8\" data-next-head=\"\"/><meta name=\"viewport\" content=\"width=device-width\" data-next-head=\"\"/><title data-next-head=\"\">Job Board | Dayforce Jobs</title><meta property=\"og:title\" content=\"Job Board | Dayforce Jobs\" data-next-head=\"\"/><meta name=\"twitter:title\" content=\"Job Board | Dayforce Jobs\" data-next-head=\"\"/><meta name=\"description\" content=\"Find your next adventure\" data-next-head=\"\"/><meta property=\"og:description\" content=\"Find your next adventure\" data-next-head=\"\"/><meta name=\"twitter:description\" content=\"Find your next adventure\" data-next-head=\"\"/><link rel=\"preload\" href=\"/_next/static/media/df0a9ae256c0569c-s.p.woff2\" as=\"font\" type=\"font/woff2\" crossorigin=\"anonymous\" data-next-font=\"size-adjust\"/><link rel=\"preload\" href=\"/_next/static/media/8e9860b6e62d6359-s.p.woff2\" as=\"font\" type=\"font/woff2\" crossorigin=\"anonymous\" data-next-font=\"size-adjust\"/><link rel=\"preload\" href=\"/_next/static/media/e4af272ccee01ff0-s.p.woff2\" as=\"font\" type=\"font/woff2\" crossorigin=\"anonymous\" data-next-font=\"size-adjust\"/><link rel=\"preload\" href=\"/_next/static/css/cdf5c5fd3488a751.css\" as=\"style\"/><link rel=\"stylesheet\" href=\"/_next/static/css/cdf5c5fd3488a751.css\" data-n-g=\"\"/><link rel=\"preload\" href=\"/_next/static/css/f736e73cbf8a9c32.css\" as=\"style\"/><link rel=\"stylesheet\" href=\"/_next/static/css/f736e73cbf8a9c32.css\" data-n-p=\"\"/><noscript data-n-css=\"\"></noscript><script defer=\"\" nomodule=\"\" src=\"/_next/static/chunk",
+   "set_cookie": [
+    "Set-Cookie",
+    "set-cookie"
    ],
-   "scripts": [
-    "/_next/static/chunks/polyfills-42372ed130431b0a.js",
-    "/_next/static/chunks/webpack-1f61b32aceac5130.js",
-    "/_next/static/chunks/framework-8013ab5f5ba95180.js",
-    "/_next/static/chunks/main-c89895880af2c2f6.js",
-    "/_next/static/chunks/pages/_app-9e792888e604e575.js",
-    "/_next/static/chunks/338d3fbc-777e70e2978e39b0.js",
-    "/_next/static/chunks/5754-f6f7df23ec1ce973.js",
-    "/_next/static/chunks/870-e97fc92bc32bbf70.js",
-    "/_next/static/chunks/3067-76c023b019f58fe2.js",
-    "/_next/static/chunks/4014-9011a6d21e146d03.js",
-    "/_next/static/chunks/8824-bfa29421b242994f.js",
-    "/_next/static/chunks/6576-f71a34de89cd0f0e.js",
-    "/_next/static/chunks/3829-8f783151d62508f0.js",
-    "/_next/static/chunks/5605-88b30208dd20c6e3.js",
-    "/_next/static/chunks/2122-acbd179a791ae583.js",
-    "/_next/static/chunks/6446-4de753ed8dd3cb7b.js",
-    "/_next/static/chunks/1911-a459c3128a1a3dfc.js",
-    "/_next/static/chunks/pages/%5BclientNamespace%5D/%5BcareerSiteXRefCode%5D-19ab5fef14b9c00e.js",
-    "/_next/static/d-LEjKsJfn0fYB8-dU_ZP/_buildManifest.js",
-    "/_next/static/d-LEjKsJfn0fYB8-dU_ZP/_ssgManifest.js",
-    "https://maps.googleapis.com/maps/api/js?key=AIzaSyAz98sXQm5CwukxWR0GdPiBXSuKrUZX_UQ"
+   "cookies": [
+    "__Host-next-auth.csrf-token",
+    "__Secure-next-auth.callback-url",
+    "__cf_bm"
    ]
   },
   {
+   "label": "next-auth csrf",
+   "m": "GET",
+   "u": "https://jobs.dayforcehcm.com/api/auth/csrf",
+   "code": 200,
+   "len": 80,
+   "head": "{\"csrfToken\":\"9f13ba48106365186964e120f18c82a4e9f3b7efe2b06132154550ec0f530e84\"}",
+   "set_cookie": [],
+   "cookies": [
+    "__Host-next-auth.csrf-token",
+    "__Secure-next-auth.callback-url",
+    "__cf_bm"
+   ]
+  },
+  {
+   "label": "search+xsrf",
    "m": "POST",
    "u": "https://jobs.dayforcehcm.com/api/geo/auction/jobposting/search",
    "code": 403,
-   "server": "cloudflare",
    "len": 9,
    "head": "Forbidden",
-   "api_refs": [],
-   "scripts": []
+   "set_cookie": [],
+   "cookies": [
+    "__Host-next-auth.csrf-token",
+    "__Secure-next-auth.callback-url",
+    "__cf_bm"
+   ]
   },
   {
+   "label": "search+csrf2",
    "m": "POST",
-   "u": "https://jobs.dayforcehcm.com/api/jobposting/search",
+   "u": "https://jobs.dayforcehcm.com/api/geo/auction/jobposting/search",
    "code": 403,
-   "server": "cloudflare",
    "len": 9,
    "head": "Forbidden",
-   "api_refs": [],
-   "scripts": []
+   "set_cookie": [],
+   "cookies": [
+    "__Host-next-auth.csrf-token",
+    "__Secure-next-auth.callback-url",
+    "__cf_bm"
+   ]
   },
   {
+   "label": "board sitemap",
    "m": "GET",
-   "u": "https://jobs.dayforcehcm.com/api/geo/auction/jobposting/search?jobBoardCode=CANDIDATEPORTAL&cultureCode=en-US",
-   "code": 405,
-   "server": "cloudflare",
-   "len": 148,
-   "head": "{\"type\":\"https://httpstatuses.io/405\",\"title\":\"Method Not Allowed\",\"status\":405,\"traceId\":\"00-390765d7b6a9fdc0219f255cd1187a8c-04c65d6f328a209e-00\"}",
-   "api_refs": [],
-   "scripts": []
+   "u": "https://jobs.dayforcehcm.com/en-US/auction/CANDIDATEPORTAL/sitemap.xml",
+   "code": 404,
+   "len": 283771,
+   "head": "<!DOCTYPE html><html lang=\"en-US\"><head><meta charSet=\"utf-8\" data-next-head=\"\"/><meta name=\"viewport\" content=\"width=device-width\" data-next-head=\"\"/><title data-next-head=\"\">Page Not Found | Dayforce Jobs</title><meta property=\"og:title\" content=\"Page Not Found | Dayforce Jobs\" data-next-head=\"\"/><meta name=\"twitter:title\" content=\"Page Not Found | Dayforce Jobs\" data-next-head=\"\"/><meta name=\"description\" content=\"The page you&#x27;re looking for could not be found\" data-next-head=\"\"/><meta property=\"og:description\" content=\"The page you&#x27;re looking for could not be found\" data-next-head=\"\"/><meta name=\"twitter:description\" content=\"The page you&#x27;re looking for could not be found\" data-next-head=\"\"/><link rel=\"preload\" href=\"/_next/static/media/df0a9ae256c0569c-s.p.woff2\" as=\"font\" type=\"font/woff2\" crossorigin=\"anonymous\" data-next-font=\"size-adjust\"/><link rel=\"preload\" href=\"/_next/static/media/8e9860b6e62d6359-s.p.woff2\" as=\"font\" type=\"font/woff2\" crossorigin=\"anonymous\" data-next-font=\"size-adjust\"/><link rel=\"preload\" href=\"/_next/static/media/e4af272ccee01ff0-s.p.woff2\" as=\"font\" type=\"font/woff2\" crossorigin=\"anonymous\" data-next-font=\"size-adjust\"/><link rel=\"preload\" href=\"/_next/static/css/cdf5c5fd3488a751.css\" as=\"style\"/><link rel=\"stylesheet\" href=\"/_next/static/css/cdf5c5fd3488a751.css\" data-n-g=\"\"/><noscript data-n-css=\"\"></noscript><script defer=\"\" nomodule=\"\" src=\"/_next/static/chunks/polyfills-42372ed130431b0a.js\"></script><script src=\"/_next/st",
+   "set_cookie": [],
+   "cookies": [
+    "__Host-next-auth.csrf-token",
+    "__Secure-next-auth.callback-url",
+    "__cf_bm"
+   ]
+  },
+  {
+   "label": "root sitemap",
+   "m": "GET",
+   "u": "https://jobs.dayforcehcm.com/sitemap.xml",
+   "code": 404,
+   "len": 283771,
+   "head": "<!DOCTYPE html><html lang=\"en-US\"><head><meta charSet=\"utf-8\" data-next-head=\"\"/><meta name=\"viewport\" content=\"width=device-width\" data-next-head=\"\"/><title data-next-head=\"\">Page Not Found | Dayforce Jobs</title><meta property=\"og:title\" content=\"Page Not Found | Dayforce Jobs\" data-next-head=\"\"/><meta name=\"twitter:title\" content=\"Page Not Found | Dayforce Jobs\" data-next-head=\"\"/><meta name=\"description\" content=\"The page you&#x27;re looking for could not be found\" data-next-head=\"\"/><meta property=\"og:description\" content=\"The page you&#x27;re looking for could not be found\" data-next-head=\"\"/><meta name=\"twitter:description\" content=\"The page you&#x27;re looking for could not be found\" data-next-head=\"\"/><link rel=\"preload\" href=\"/_next/static/media/df0a9ae256c0569c-s.p.woff2\" as=\"font\" type=\"font/woff2\" crossorigin=\"anonymous\" data-next-font=\"size-adjust\"/><link rel=\"preload\" href=\"/_next/static/media/8e9860b6e62d6359-s.p.woff2\" as=\"font\" type=\"font/woff2\" crossorigin=\"anonymous\" data-next-font=\"size-adjust\"/><link rel=\"preload\" href=\"/_next/static/media/e4af272ccee01ff0-s.p.woff2\" as=\"font\" type=\"font/woff2\" crossorigin=\"anonymous\" data-next-font=\"size-adjust\"/><link rel=\"preload\" href=\"/_next/static/css/cdf5c5fd3488a751.css\" as=\"style\"/><link rel=\"stylesheet\" href=\"/_next/static/css/cdf5c5fd3488a751.css\" data-n-g=\"\"/><noscript data-n-css=\"\"></noscript><script defer=\"\" nomodule=\"\" src=\"/_next/static/chunks/polyfills-42372ed130431b0a.js\"></script><script src=\"/_next/st",
+   "set_cookie": [],
+   "cookies": [
+    "__Host-next-auth.csrf-token",
+    "__Secure-next-auth.callback-url",
+    "__cf_bm"
+   ]
+  },
+  {
+   "label": "robots",
+   "m": "GET",
+   "u": "https://jobs.dayforcehcm.com/robots.txt",
+   "code": 200,
+   "len": 1248,
+   "head": "# As a condition of accessing this website, you agree to abide by the following\n# content signals:\n\n# (a)  If a content-signal = yes, you may collect content for the corresponding\n#      use.\n# (b)  If a content-signal = no, you may not collect content for the\n#      corresponding use.\n# (c)  If the website operator does not include a content signal for a\n#      corresponding use, the website operator neither grants nor restricts\n#      permission via content signal with respect to the corresponding use.\n\n# The content signals and their meanings are:\n\n# search:   building a search index and providing search results (e.g., returning\n#           hyperlinks and short excerpts from your website's contents). Search does not\n#           include providing AI-generated search summaries.\n# ai-input: inputting content into one or more AI models (e.g., retrieval\n#           augmented generation, grounding, or other real-time taking of content for\n#           generative AI search answers).\n# ai-train: training or fine-tuning AI models.\n\n# ANY RESTRICTIONS EXPRESSED VIA CONTENT SIGNALS ARE EXPRESS RESERVATIONS OF\n# RIGHTS UNDER ARTICLE 4 OF THE EUROPEAN UNION DIRECTIVE 2019/790 ON COPYRIGHT\n# AND RELATED RIGHTS IN THE DIGITAL SINGLE MARKET.\n",
+   "set_cookie": [],
+   "cookies": [
+    "__Host-next-auth.csrf-token",
+    "__Secure-next-auth.callback-url",
+    "__cf_bm"
+   ]
+  },
+  {
+   "label": "legacy portal",
+   "m": "GET",
+   "u": "https://us261.dayforcehcm.com/CandidatePortal/en-US/auction",
+   "code": 200,
+   "len": 463700,
+   "head": "<!DOCTYPE html><html lang=\"en-US\"><head><meta charSet=\"utf-8\" data-next-head=\"\"/><meta name=\"viewport\" content=\"width=device-width\" data-next-head=\"\"/><title data-next-head=\"\">Job Board | Dayforce Jobs</title><meta property=\"og:title\" content=\"Job Board | Dayforce Jobs\" data-next-head=\"\"/><meta name=\"twitter:title\" content=\"Job Board | Dayforce Jobs\" data-next-head=\"\"/><meta name=\"description\" content=\"Find your next adventure\" data-next-head=\"\"/><meta property=\"og:description\" content=\"Find your next adventure\" data-next-head=\"\"/><meta name=\"twitter:description\" content=\"Find your next adventure\" data-next-head=\"\"/><link rel=\"preload\" href=\"/_next/static/media/df0a9ae256c0569c-s.p.woff2\" as=\"font\" type=\"font/woff2\" crossorigin=\"anonymous\" data-next-font=\"size-adjust\"/><link rel=\"preload\" href=\"/_next/static/media/8e9860b6e62d6359-s.p.woff2\" as=\"font\" type=\"font/woff2\" crossorigin=\"anonymous\" data-next-font=\"size-adjust\"/><link rel=\"preload\" href=\"/_next/static/media/e4af272ccee01ff0-s.p.woff2\" as=\"font\" type=\"font/woff2\" crossorigin=\"anonymous\" data-next-font=\"size-adjust\"/><link rel=\"preload\" href=\"/_next/static/css/cdf5c5fd3488a751.css\" as=\"style\"/><link rel=\"stylesheet\" href=\"/_next/static/css/cdf5c5fd3488a751.css\" data-n-g=\"\"/><link rel=\"preload\" href=\"/_next/static/css/f736e73cbf8a9c32.css\" as=\"style\"/><link rel=\"stylesheet\" href=\"/_next/static/css/f736e73cbf8a9c32.css\" data-n-p=\"\"/><noscript data-n-css=\"\"></noscript><script defer=\"\" nomodule=\"\" src=\"/_next/static/chunk",
+   "set_cookie": [],
+   "cookies": [
+    "__Host-next-auth.csrf-token",
+    "__Secure-next-auth.callback-url",
+    "__cf_bm",
+    "ADRUM_BTa",
+    "SameSite",
+    "ADRUM_BT1",
+    "ADRUM_BTg",
+    "ADRUM_BTn"
+   ]
+  },
+  {
+   "label": "legacy search",
+   "m": "GET",
+   "u": "https://us261.dayforcehcm.com/CandidatePortal/en-US/auction/Posting/Search",
+   "code": 404,
+   "len": 2680,
+   "head": "﻿<!DOCTYPE html>\r\n<html>\r\n    <head>\r\n        <meta http-equiv=\"Cache-Control\" content=\"no-cache, no-store, must-revalidate\" />\r\n        <meta http-equiv=\"Pragma\" content=\"no-cache\" />\r\n        <meta http-equiv=\"Expires\" content=\"0\" />\r\n        <title>404</title>\r\n        <link rel=\"shortcut icon\" href=\"~/Content/Common/images/favicon.ico\" />\r\n        <link href='//fonts.googleapis.com/css?family=Open+Sans:400,800' rel='stylesheet' type='text/css'>\r\n        <style type=\"text/css\">\r\n            body {\r\n                font-family: 'Open Sans',sans-serif;\r\n            }\r\n\r\n            .error-page {\r\n                padding:20px;\r\n                margin:20px 0 0 0;\r\n            }\r\n\r\n            .error-page h1 {\r\n                font-size: 100px;\r\n                font-weight:900;\r\n                text-align: center;\r\n                color: #2958AD;\r\n                margin:0;\r\n            }\r\n\r\n            .error-page h2 {\r\n                font-size: 20px;\r\n                font-weight: normal;\r\n                color: #315eb9;\r\n                text-align:center;\r\n                margin:0 0 20px 0;\r\n            }\r\n\r\n            .error-page .details {\r\n                font-size: 12px;\r\n                text-align:center;\r\n            }\r\n        </style>\r\n    </head>\r\n    <body>\r\n        <div class=\"error-page\">\r\n            <h1>404</h1>\r\n            <h2>Page Not Found</h2>\r\n            <div class=\"details\">We could not find the webpage you are looking for. The page may no longer be ava",
+   "set_cookie": [
+    "Set-Cookie"
+   ],
+   "cookies": [
+    "__Host-next-auth.csrf-token",
+    "__Secure-next-auth.callback-url",
+    "__cf_bm",
+    "ADRUM_BTa",
+    "SameSite",
+    "ADRUM_BT1",
+    "ADRUM_BTg",
+    "ADRUM_BTn"
+   ]
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-10T21:13:24+00:00",
+  "generated_at": "2026-11-10T21:14:23+00:00",
   "criteria": {
     "title_keywords": [
       "product"
@@ -514,7 +514,7 @@
       "ats": "dayforce",
       "board": "auction/CANDIDATEPORTAL",
       "url": "https://jobs.dayforcehcm.com/en-US/auction/CANDIDATEPORTAL",
-      "fetched_at": "2026-11-10T21:13:24+00:00",
+      "fetched_at": "2026-11-10T21:14:23+00:00",
       "status": "error",
       "error": "HTTP Error 403: Forbidden"
     }
