@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T20:26:08.167Z",
+  "updated_at": "2026-11-10T20:26:12.932Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1733,6 +1733,12 @@
       "status": "archived",
       "at": "2026-11-10T20:26:06.651Z",
       "title": "Product Line Manager, Coherent Optical Transceivers",
+      "company": "Cisco"
+    },
+    "phenom:careers.cisco.com/global/en:CISCISGLOBAL2016926EXTERNALENGLOBAL": {
+      "status": "archived",
+      "at": "2026-11-10T20:26:11.417Z",
+      "title": "Product Lifecycle Supply Chain Program Manager",
       "company": "Cisco"
     }
   },
