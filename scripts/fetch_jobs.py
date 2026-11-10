@@ -1221,9 +1221,79 @@ def fetch_workable(company):
     return out
 
 
+def fetch_dayforce(company):
+    """Dayforce candidate portals (https://jobs.dayforcehcm.com/<culture>/<namespace>/<board>).
+    board = "<namespace>/<board>", e.g. "auction/CANDIDATEPORTAL"."""
+    ns, jb = company["board"].split("/", 1)
+    culture = company.get("culture") or "en-US"
+    site = f"https://jobs.dayforcehcm.com/{culture}/{ns}/{jb}"
+    items, probe, start = [], {}, 0
+    for _ in range(100):
+        body = {"clientNamespace": ns, "jobBoardCode": jb, "cultureCode": culture, "distanceUnit": 0, "paginationStart": start}
+        data = fetch_json_post(f"https://jobs.dayforcehcm.com/api/geo/{ns}/jobposting/search", body)
+        page = data.get("jobPostings") or data.get("jobs") or data.get("results") or []
+        if not probe:
+            probe = {"keys": list(data.keys()), "sample": page[:2]}
+        items += page
+        total = int(data.get("maxCount") or data.get("totalCount") or data.get("total") or 0)
+        start += len(page)
+        if not page or start >= total:
+            break
+    def first(*vals):
+        return next((v for v in vals if v), None)
+    out, first_detail = [], None
+    for j in items:
+        title = first(j.get("jobTitle"), j.get("title")) or ""
+        jid = str(first(j.get("jobPostingId"), j.get("jobReqId"), j.get("id")))
+        locs = j.get("postingLocations") or j.get("locations") or []
+        names = []
+        for l in locs if isinstance(locs, list) else []:
+            if isinstance(l, dict):
+                n = first(l.get("formattedAddress"), ", ".join(x for x in (l.get("cityName"), l.get("stateCode"), l.get("isoCountryCode")) if x))
+                if n and n not in names:
+                    names.append(n)
+        loc, extra = (names[0] if names else ""), "; ".join(names[1:])
+        remote = bool(j.get("hasVirtualLocation") or j.get("isVirtual") or j.get("isRemote"))
+        if remote:
+            loc = f"Remote - {loc}" if loc else "Remote"
+        url = f"{site}/jobs/{jid}"
+        content = strip_html(first(j.get("jobPostingContent"), j.get("description"), j.get("jobDescription")) or "")
+        if title_matches(title) and not content:
+            try:
+                html = wd_get(url, as_json=False)
+                m = re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', html, re.S)
+                if m:
+                    nd = json.loads(m.group(1))
+                    blob = json.dumps(nd)
+                    if first_detail is None:
+                        first_detail = blob[:1500]
+                    pp = (nd.get("props") or {}).get("pageProps") or {}
+                    jp = pp.get("jobPosting") or pp.get("jobData") or pp.get("posting") or {}
+                    content = strip_html(" ".join(str(jp.get(k) or "") for k in ("jobPostingContent", "description", "jobDescription", "jobPostingContentHtml")))
+                    if not content:
+                        content = strip_html(" ".join(re.findall(r'"(?:jobPostingContent|description)"\s*:\s*"((?:[^"\\]|\\.)*)"', m.group(1)))[:20000].encode().decode("unicode_escape", "ignore"))
+                else:
+                    content = strip_html(html)[:20000]
+                    if first_detail is None:
+                        first_detail = content[:1500]
+            except Exception as e:          # noqa: BLE001
+                log(f"[{company['name']}] detail fetch failed for {jid}: {e}")
+        out.append({
+            "job_id": jid, "req_id": str(j["jobReqId"]) if j.get("jobReqId") else None, "title": title, "location": loc,
+            "location_detail": extra, "department": first(j.get("departmentName"), j.get("orgUnitName")) or "",
+            "published_at": first(j.get("postingStartTimestampUTC"), j.get("postingStartDate"), j.get("datePosted")),
+            "updated_at": None, "url": url, "salary": salary_from_text(content) if content else None,
+            "_meta_text": ("remote " if remote else "") + " ".join(f"{k}: {v}" for k, v in j.items() if isinstance(v, str) and "work" in k.lower()),
+            "_content": content,
+        })
+    debug_dump(company, {"probe": probe, "count": len(items), "first_detail": first_detail,
+                         "kept_rows": [{k: v for k, v in r.items() if k != "_content"} | {"_content_head": r["_content"][:400]} for r in out if title_matches(r["title"])]})
+    return out
+
+
 ADAPTERS = {"greenhouse": fetch_greenhouse, "lever": fetch_lever, "ashby": fetch_ashby,
             "smartrecruiters": fetch_smartrecruiters, "workday": fetch_workday, "phenom": fetch_phenom,
-            "jobvite": fetch_jobvite, "rippling": fetch_rippling, "bamboohr": fetch_bamboohr, "jibe": fetch_jibe, "oracle": fetch_oracle, "talentbrew": fetch_talentbrew, "paradox": fetch_paradox, "globallogic": fetch_globallogic, "workable": fetch_workable, "unknown": fetch_unknown}
+            "jobvite": fetch_jobvite, "rippling": fetch_rippling, "bamboohr": fetch_bamboohr, "jibe": fetch_jibe, "oracle": fetch_oracle, "talentbrew": fetch_talentbrew, "paradox": fetch_paradox, "globallogic": fetch_globallogic, "workable": fetch_workable, "dayforce": fetch_dayforce, "unknown": fetch_unknown}
 
 
 # --------------------------------------------------------------- filtering --
