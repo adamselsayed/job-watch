@@ -1250,6 +1250,28 @@ def _dayforce_probe(ns, jb, culture):
             mm = re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', txt, re.S)
             info["next_data"] = mm.group(1)[:4000] if mm else None
         info["api_refs"] = sorted(set(re.findall(r'["\'](/api/[^"\']{3,120})["\']', txt)))[:40]
+        if "__NEXT_DATA__" in txt:
+            try:
+                nd = json.loads(re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', txt, re.S).group(1))
+                pp = dict((nd.get("props") or {}).get("pageProps") or {}); pp.pop("_nextI18Next", None)
+                info["pageprops"] = json.dumps(pp)[:6000]
+                info["nd_other"] = {k: v for k, v in nd.items() if k != "props"}
+            except Exception as e:      # noqa: BLE001
+                info["pageprops"] = f"err {e}"
+            info["jobTitle_count"] = txt.count("jobTitle")
+            chunks = re.findall(r'<script[^>]+src="(/_next/static/[^"]+)"', txt)
+            hits = []
+            for c in chunks:
+                try:
+                    with opener.open(urllib.request.Request("https://jobs.dayforcehcm.com" + c, headers={"User-Agent": UA}), timeout=30) as r2:
+                        js = r2.read().decode("utf-8", "replace")
+                    for mm in re.finditer(r"jobposting/search|csrf|xsrf|RequestVerification|x-[a-z-]*token", js, re.I):
+                        hits.append(c.split("/")[-1] + ": " + js[max(0, mm.start() - 300): mm.end() + 300])
+                        if len(hits) > 12:
+                            break
+                except Exception as e:  # noqa: BLE001
+                    hits.append(f"{c}: {e}")
+            info["js_hits"] = hits
         info["scripts"] = re.findall(r'<script[^>]+src="([^"]+)"', txt)[:30]
         res.append(info)
     return res
