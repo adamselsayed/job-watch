@@ -1,0 +1,67 @@
+{
+ "endpoint_probe": [
+  {
+   "m": "GET",
+   "u": "https://jobs.dayforcehcm.com/en-US/auction/CANDIDATEPORTAL",
+   "code": 200,
+   "server": "cloudflare",
+   "len": 463700,
+   "head": "<!DOCTYPE html><html lang=\"en-US\"><head><meta charSet=\"utf-8\" data-next-head=\"\"/><meta name=\"viewport\" content=\"width=device-width\" data-next-head=\"\"/><title data-next-head=\"\">Job Board | Dayforce Jobs</title><meta property=\"og:title\" content=\"Job Board | Dayforce Jobs\" data-next-head=\"\"/><meta name=\"twitter:title\" content=\"Job Board | Dayforce Jobs\" data-next-head=\"\"/><meta name=\"description\" content=\"Find your next adventure\" data-next-head=\"\"/><meta property=\"og:description\" content=\"Find your next adventure\" data-next-head=\"\"/><meta name=\"twitter:description\" content=\"Find your next adventure\" data-next-head=\"\"/><link rel=\"preload\" href=\"/_next/static/media/df0a9ae256c0569c-s.p.woff2\" as=\"font\" type=\"font/woff2\" crossorigin=\"anonymous\" data-next-font=\"size-adjust\"/><link rel=\"preload\" href=\"/_next/static/media/8e9860b6e62d6359-s.p.woff2\" as=\"font\" type=\"font/woff2\" crossorigin=\"anonymous\" data-next-font=\"size-adjust\"/><link rel=\"preload\" href=\"/_next/static/media/e4af272ccee01ff0-s.p.woff2\" as=\"font\" type=\"font/woff2\" crossorigin=\"anonymous\" data-next-font=\"size-adjust\"/><link rel=\"preload\" href=\"/_next/static/css/cdf5c5fd3488a751.css\" as=\"style\"/><link rel=\"stylesheet\" href=\"/",
+   "next_data": "{\"props\":{\"pageProps\":{\"_nextI18Next\":{\"initialI18nStore\":{\"en-US\":{\"common\":{\"accept\":\"Accept\",\"account-migration-error\":\"Something went wrong. Your account wasn't migrated. Refresh your browser and try again.\",\"account-migration-error-with-requestid\":\"Something went wrong. Your account wasn't migrated. Refresh your browser and try again. If this issue keeps repeating, please click the Report Issue button to let your administrator know. \\u003cerrorCode\\u003eError Code: {{requestId}}\\u003c/errorCode\\u003e\",\"add-saved-jobs-failed-notification-title\":\"The job wasn't saved. Try again later.\",\"add-saved-jobs-success-notification-title\":\"Added to your saved jobs.\",\"add-to-saved-jobs\":\"Add to Saved Jobs\",\"advanced-search\":\"Advanced search\",\"all-departments\":\"All departments\",\"all-pay-classes\":\"All pay classes\",\"all-pay-types\":\"All pay types\",\"all-posted-within\":\"Any time frame\",\"all-travel-requirements\":\"All travel requirements\",\"already-applied\":\"Already Applied\",\"always-enabled\":\"Always enabled\",\"anonymous-session-expired-error\":\"The file couldn’t be downloaded. Try again. If you still can’t download it, upload the file again. The new file will replace the existing file.\",\"apply\":\"Apply\",\"apply-with\":\"Apply with\",\"apply-with-seek\":\"Apply with Seek\",\"aria-apply-button\":\"Apply for {{jobTitle}}\",\"aria-apply-button-applied\":\"Already Applied for {{jobTitle}}\",\"aria-cancel-section\":\"Cancel {{sectionName}} changes\",\"aria-home-link\":\"Home\",\"aria-read-more\":\"Read more about {{jobTitle}}\",\"aria-save-job\":\"Save {{jobTitle}}\",\"aria-saved-job\":\"{{jobTitle}} is saved\",\"aria-update-section\":\"Update {{sectionName}}\",\"at-least-one-session\":\"At least one session\",\"back\":\"Back\",\"back-to-top\":\"Back to top\",\"cancel\":\"Cancel\",\"category\":\"Category\",\"ce\":{\"assistant\":{\"applyBannerTitle\":\"Applying to {{jobTitle}}\",\"applyCta\":\"Continue to application\",\"applyJobUnavailable\":\"This job is no longer accepting applications.\",\"applyOptionsBody\":\"Sign in to apply with your profile, or continue as a guest and the assistant will ask for your details.\",\"applyOptionsSignedInBody\":\"You're signed in, so the assistant can fill in your application from your profile.\",\"applyOptionsStart\":\"Start application\",\"applyOptionsTitle\":\"Apply in this chat\",\"applyPromptBody\":\"I can help you apply for {{jobTitle}} right here in this chat. Want to apply?\",\"applyPromptMessage\":\"I'd like to apply for this job here in the chat.\",\"applyPromptYes\":\"Yes, apply in chat\",\"applySessionContinueInChat\":\"We couldn't save this to your application right now. Send a message in the chat to continue.\",\"applySessionExpired\":\"Your application session has expired. Start a new conversation to apply again.\",\"attach\":\"Attach a file\",\"attachHint\":\"Shared with the assistant\",\"documentKindResume\":\"Resume\",\"documentKindOther\":\"Other document\",\"documentsTitle\":\"Documents available in this chat\",\"documentUploading\":\"Uploading {{fileName}}...\",\"documentRetained\":\"Available in this chat\",\"documentParseFailed\":\"Uploaded, but could not read this resume for a fit check.\",\"documentNotReadable\":\"Attachment saved; its contents are not available for a fit check.\",\"documentInvalid\":\"Unsupported document or size. Resumes must be under 4 MB; other documents under 20 MB.\",\"documentUploadError\":\"This document could not be uploaded. Check its format and size, then try again.\",\"documentRestoreError\":\"Some chat documents could not be restored. Please upload them again.\",\"documentStorageError\":\"Your documents are available now, but could not be saved for a page reload.\",\"removeDocument\":\"Remove {{fileName}} from this chat\",\"documentReuseApply\":\"Would you like to use a resume from this chat for your application to {{jobTitle}}?\",\"documentReuseFit\":\"Would you like to use a resume from this chat to check your fit for {{jobTitle}}?\",\"documentReuseConfirm\":\"Use this resume\",\"documentReuseDecline\":\"No, use another option\",\"documentReuseReplace\":\"This will replace the resume currently selected for this application.\",\"documentReuseExpire",
+   "api_refs": [],
+   "scripts": [
+    "/_next/static/chunks/polyfills-42372ed130431b0a.js",
+    "/_next/static/chunks/webpack-1f61b32aceac5130.js",
+    "/_next/static/chunks/framework-8013ab5f5ba95180.js",
+    "/_next/static/chunks/main-c89895880af2c2f6.js",
+    "/_next/static/chunks/pages/_app-9e792888e604e575.js",
+    "/_next/static/chunks/338d3fbc-777e70e2978e39b0.js",
+    "/_next/static/chunks/5754-f6f7df23ec1ce973.js",
+    "/_next/static/chunks/870-e97fc92bc32bbf70.js",
+    "/_next/static/chunks/3067-76c023b019f58fe2.js",
+    "/_next/static/chunks/4014-9011a6d21e146d03.js",
+    "/_next/static/chunks/8824-bfa29421b242994f.js",
+    "/_next/static/chunks/6576-f71a34de89cd0f0e.js",
+    "/_next/static/chunks/3829-8f783151d62508f0.js",
+    "/_next/static/chunks/5605-88b30208dd20c6e3.js",
+    "/_next/static/chunks/2122-acbd179a791ae583.js",
+    "/_next/static/chunks/6446-4de753ed8dd3cb7b.js",
+    "/_next/static/chunks/1911-a459c3128a1a3dfc.js",
+    "/_next/static/chunks/pages/%5BclientNamespace%5D/%5BcareerSiteXRefCode%5D-19ab5fef14b9c00e.js",
+    "/_next/static/d-LEjKsJfn0fYB8-dU_ZP/_buildManifest.js",
+    "/_next/static/d-LEjKsJfn0fYB8-dU_ZP/_ssgManifest.js",
+    "https://maps.googleapis.com/maps/api/js?key=AIzaSyAz98sXQm5CwukxWR0GdPiBXSuKrUZX_UQ"
+   ]
+  },
+  {
+   "m": "POST",
+   "u": "https://jobs.dayforcehcm.com/api/geo/auction/jobposting/search",
+   "code": 403,
+   "server": "cloudflare",
+   "len": 9,
+   "head": "Forbidden",
+   "api_refs": [],
+   "scripts": []
+  },
+  {
+   "m": "POST",
+   "u": "https://jobs.dayforcehcm.com/api/jobposting/search",
+   "code": 403,
+   "server": "cloudflare",
+   "len": 9,
+   "head": "Forbidden",
+   "api_refs": [],
+   "scripts": []
+  },
+  {
+   "m": "GET",
+   "u": "https://jobs.dayforcehcm.com/api/geo/auction/jobposting/search?jobBoardCode=CANDIDATEPORTAL&cultureCode=en-US",
+   "code": 405,
+   "server": "cloudflare",
+   "len": 148,
+   "head": "{\"type\":\"https://httpstatuses.io/405\",\"title\":\"Method Not Allowed\",\"status\":405,\"traceId\":\"00-019fe29b0ddc382c8dca73038d44721a-4203c93196f256ab-00\"}",
+   "api_refs": [],
+   "scripts": []
+  }
+ ]
+}
