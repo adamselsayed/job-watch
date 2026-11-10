@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-10T22:13:37+00:00",
+  "generated_at": "2026-11-10T23:01:45+00:00",
   "criteria": {
     "title_keywords": [
       "product"
@@ -481,7 +481,7 @@
       "ats": "lever",
       "board": "waabi",
       "url": "https://jobs.lever.co/waabi",
-      "fetched_at": "2026-11-10T22:08:16+00:00",
+      "fetched_at": "2026-11-10T23:01:45+00:00",
       "status": "ok",
       "error": null,
       "total_jobs": 86,
@@ -508,15 +508,6 @@
       "error": null,
       "total_jobs": 1440,
       "matched": 34
-    },
-    {
-      "name": "FedEx",
-      "ats": "paradox",
-      "board": "careers.fedex.com",
-      "url": "https://careers.fedex.com/jobs",
-      "fetched_at": "2026-11-10T22:13:37+00:00",
-      "status": "error",
-      "error": "HTTP Error 403: Forbidden"
     }
   ],
   "jobs": [
@@ -5669,7 +5660,7 @@
       "company": "Waabi",
       "key": "lever:waabi:74ff3e1c-821c-4c31-aada-54f4170b5b2e",
       "first_seen": "2026-11-09T19:57:40+00:00",
-      "last_seen": "2026-11-10T22:08:16+00:00",
+      "last_seen": "2026-11-10T23:01:45+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -8955,7 +8946,7 @@
       "company": "Waabi",
       "key": "lever:waabi:7b8669d5-c11e-49a3-8cfd-492484999d6d",
       "first_seen": "2026-11-09T19:57:40+00:00",
-      "last_seen": "2026-11-10T22:08:16+00:00",
+      "last_seen": "2026-11-10T23:01:45+00:00",
       "status": "open",
       "closed_at": null
     },
