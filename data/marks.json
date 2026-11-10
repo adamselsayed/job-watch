@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T20:33:09.076Z",
+  "updated_at": "2026-11-10T20:33:58.085Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1793,6 +1793,12 @@
       "status": "archived",
       "at": "2026-11-10T20:33:07.562Z",
       "title": "Product Manager, Collaboration Endpoints",
+      "company": "Cisco"
+    },
+    "phenom:careers.cisco.com/global/en:CISCISGLOBAL2027580EXTERNALENGLOBAL": {
+      "status": "archived",
+      "at": "2026-11-10T20:33:55.908Z",
+      "title": "Product Manager - Cisco Wireless (Hybrid)",
       "company": "Cisco"
     }
   },
