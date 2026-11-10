@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T20:45:52.231Z",
+  "updated_at": "2026-11-10T20:46:15.046Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1889,6 +1889,12 @@
       "status": "archived",
       "at": "2026-11-10T20:45:50.718Z",
       "title": "Sr. Staff IVI Product Strategy Lead",
+      "company": "Ford"
+    },
+    "talentbrew:www.careers.ford.com/en:101327857632": {
+      "status": "archived",
+      "at": "2026-11-10T20:46:13.534Z",
+      "title": "Director of Product Management, Electrification",
       "company": "Ford"
     }
   },
