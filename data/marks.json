@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T19:23:56.477Z",
+  "updated_at": "2026-11-10T19:28:35.321Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1668,6 +1668,12 @@
       "at": "2026-11-10T19:23:54.969Z",
       "title": "Vice President, Product Management",
       "company": "Experian"
+    },
+    "smartrecruiters:ServiceNow:744000160675410": {
+      "status": "archived",
+      "at": "2026-11-10T19:28:33.807Z",
+      "title": "Senior Product Specialist, Engage Central ",
+      "company": "ServiceNow"
     }
   },
   "groups": {
