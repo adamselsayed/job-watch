@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T20:25:20.567Z",
+  "updated_at": "2026-11-10T20:25:27.589Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1686,6 +1686,12 @@
       "at": "2026-11-10T20:25:08.710Z",
       "title": "Go-to-Market Product Manager",
       "company": "NVIDIA"
+    },
+    "phenom:careers.cisco.com/global/en:CISCISGLOBAL2027608EXTERNALENGLOBAL": {
+      "status": "archived",
+      "at": "2026-11-10T20:25:26.072Z",
+      "title": "Technical Product Manager - Support / TAC",
+      "company": "Cisco"
     }
   },
   "groups": {
