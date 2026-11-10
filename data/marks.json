@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T18:42:15.814Z",
+  "updated_at": "2026-11-10T18:42:26.803Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1665,7 +1665,8 @@
       "Experian",
       "ServiceNow",
       "Motive",
-      "FieldAI"
+      "FieldAI",
+      "Cisco"
     ],
     "tertiary": [
       "Virgin Galactic",
@@ -1708,10 +1709,9 @@
       "Komodo Health",
       "Thumbtack",
       "Life360",
-      "Intuit",
-      "Cisco"
+      "Intuit"
     ],
     "collapsed": [],
-    "at": "2026-11-10T18:42:14.304Z"
+    "at": "2026-11-10T18:42:25.294Z"
   }
 }
