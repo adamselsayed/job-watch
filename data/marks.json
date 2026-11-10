@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T20:29:50.125Z",
+  "updated_at": "2026-11-10T20:30:00.426Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1751,6 +1751,12 @@
       "status": "archived",
       "at": "2026-11-10T20:29:47.608Z",
       "title": "Sr Product Manager - Solutions",
+      "company": "Cisco"
+    },
+    "phenom:careers.cisco.com/global/en:CISCISGLOBAL2028398EXTERNALENGLOBAL": {
+      "status": "archived",
+      "at": "2026-11-10T20:29:58.913Z",
+      "title": "Director, Product Management",
       "company": "Cisco"
     }
   },
