@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T20:46:38.926Z",
+  "updated_at": "2026-11-10T20:49:13.117Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1895,6 +1895,12 @@
       "status": "open",
       "at": "2026-11-10T20:46:37.415Z",
       "title": "Director of Product Management, Electrification",
+      "company": "Ford"
+    },
+    "talentbrew:www.careers.ford.com/en:101594058784": {
+      "status": "archived",
+      "at": "2026-11-10T20:49:11.096Z",
+      "title": "Senior Manager, Product Management – Go-to-Market, Accessory Ecosystem",
       "company": "Ford"
     }
   },
