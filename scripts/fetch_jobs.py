@@ -1221,6 +1221,40 @@ def fetch_workable(company):
     return out
 
 
+def _dayforce_probe(ns, jb, culture):
+    """Debug-only: try candidate endpoints and record status + body head."""
+    UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36"
+    site = f"https://jobs.dayforcehcm.com/{culture}/{ns}/{jb}"
+    body = json.dumps({"clientNamespace": ns, "jobBoardCode": jb, "cultureCode": culture, "distanceUnit": 0, "paginationStart": 0}).encode()
+    tries = [
+        ("GET", site, None, {"Accept": "text/html"}),
+        ("POST", f"https://jobs.dayforcehcm.com/api/geo/{ns}/jobposting/search", body, {"Content-Type": "application/json", "Origin": "https://jobs.dayforcehcm.com", "Referer": site}),
+        ("POST", f"https://jobs.dayforcehcm.com/api/jobposting/search", body, {"Content-Type": "application/json", "Origin": "https://jobs.dayforcehcm.com", "Referer": site}),
+        ("GET", f"https://jobs.dayforcehcm.com/api/geo/{ns}/jobposting/search?jobBoardCode={jb}&cultureCode={culture}", None, {"Referer": site}),
+    ]
+    res = []
+    opener = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(http.cookiejar.CookieJar()))
+    for m, u, b, h in tries:
+        try:
+            req = urllib.request.Request(u, data=b, method=m, headers={"User-Agent": UA, "Accept": "application/json, text/plain, */*", "Accept-Language": "en-US,en;q=0.9", **h})
+            with opener.open(req, timeout=30) as r:
+                txt = r.read().decode("utf-8", "replace")
+                hdr = dict(r.headers)
+                code = r.status
+        except urllib.error.HTTPError as e:
+            txt, hdr, code = e.read().decode("utf-8", "replace"), dict(e.headers), e.code
+        except Exception as e:          # noqa: BLE001
+            txt, hdr, code = str(e), {}, None
+        info = {"m": m, "u": u, "code": code, "server": hdr.get("Server") or hdr.get("server"), "len": len(txt), "head": txt[:1200]}
+        if "__NEXT_DATA__" in txt:
+            mm = re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', txt, re.S)
+            info["next_data"] = mm.group(1)[:4000] if mm else None
+        info["api_refs"] = sorted(set(re.findall(r'["\'](/api/[^"\']{3,120})["\']', txt)))[:40]
+        info["scripts"] = re.findall(r'<script[^>]+src="([^"]+)"', txt)[:30]
+        res.append(info)
+    return res
+
+
 def fetch_dayforce(company):
     """Dayforce candidate portals (https://jobs.dayforcehcm.com/<culture>/<namespace>/<board>).
     board = "<namespace>/<board>", e.g. "auction/CANDIDATEPORTAL"."""
@@ -1228,6 +1262,8 @@ def fetch_dayforce(company):
     culture = company.get("culture") or "en-US"
     site = f"https://jobs.dayforcehcm.com/{culture}/{ns}/{jb}"
     items, probe, start = [], {}, 0
+    if DEBUG:
+        debug_dump(company, {"endpoint_probe": _dayforce_probe(ns, jb, culture)})
     for _ in range(100):
         body = {"clientNamespace": ns, "jobBoardCode": jb, "cultureCode": culture, "distanceUnit": 0, "paginationStart": start}
         data = fetch_json_post(f"https://jobs.dayforcehcm.com/api/geo/{ns}/jobposting/search", body)
