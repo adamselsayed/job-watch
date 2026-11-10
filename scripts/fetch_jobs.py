@@ -1237,7 +1237,7 @@ def _dayforce_probe(ns, jb, culture):
             txt, code, hdr = e.read().decode("utf-8", "replace"), e.code, dict(e.headers)
         except Exception as e:          # noqa: BLE001
             txt, code, hdr = str(e), None, {}
-        res.append({"label": label, "m": m, "u": u, "code": code, "len": len(txt), "head": txt[:1500],
+        res.append({"label": label, "m": m, "u": u, "code": code, "len": len(txt), "head": txt[:1500] if "robots" not in label else txt[:6000],
                     "set_cookie": [k for k in hdr if k.lower() == "set-cookie"], "cookies": [c.name for c in jar]})
         return txt
     go("GET", site, h={"Accept": "text/html"}, label="page")
