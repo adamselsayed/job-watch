@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T20:41:12.753Z",
+  "updated_at": "2026-11-10T20:44:30.543Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1872,6 +1872,12 @@
       "at": "2026-11-10T20:41:11.239Z",
       "title": "Director, Business Product Management",
       "company": "Cisco"
+    },
+    "talentbrew:www.careers.ford.com/en:99084975648": {
+      "status": "archived",
+      "at": "2026-11-10T20:44:29.030Z",
+      "title": "Product Development Analyst",
+      "company": "Ford"
     }
   },
   "groups": {
