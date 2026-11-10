@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T20:05:47.574Z",
+  "updated_at": "2026-11-10T20:06:46.198Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -530,8 +530,8 @@
       "company": "ServiceNow"
     },
     "smartrecruiters:ServiceNow:744000155296769": {
-      "status": "open",
-      "at": "2026-11-02T19:43:05.993Z",
+      "status": "archived",
+      "at": "2026-11-10T20:06:44.685Z",
       "title": "Senior Staff Technical Product Manager, Conversational AI",
       "company": "ServiceNow"
     },
