@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T20:30:00.426Z",
+  "updated_at": "2026-11-10T20:30:21.038Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1757,6 +1757,12 @@
       "status": "archived",
       "at": "2026-11-10T20:29:58.913Z",
       "title": "Director, Product Management",
+      "company": "Cisco"
+    },
+    "phenom:careers.cisco.com/global/en:CISCISGLOBAL2026478EXTERNALENGLOBAL": {
+      "status": "archived",
+      "at": "2026-11-10T20:30:19.525Z",
+      "title": "Product Readiness Manager",
       "company": "Cisco"
     }
   },
