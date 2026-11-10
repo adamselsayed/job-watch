@@ -260,8 +260,3 @@
   ats: phenom
   board: careers.cisco.com/global/en
   url: https://careers.cisco.com/global/en/search-results
-
-- name: Auction.com
-  ats: unknown   # Dayforce: its job search API blocks automated access, so this is a link-only entry
-  board: auction/CANDIDATEPORTAL
-  url: https://jobs.dayforcehcm.com/en-US/auction/CANDIDATEPORTAL
