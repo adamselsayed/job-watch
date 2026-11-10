@@ -261,7 +261,3 @@
   board: careers.cisco.com/global/en
   url: https://careers.cisco.com/global/en/search-results
 
-- name: FedEx
-  ats: paradox
-  board: careers.fedex.com
-  url: https://careers.fedex.com/jobs
