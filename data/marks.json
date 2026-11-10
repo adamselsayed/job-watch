@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T18:42:42.043Z",
+  "updated_at": "2026-11-10T18:42:59.524Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1686,6 +1686,7 @@
       "NVIDIA"
     ],
     "out": [
+      "Serve Robotics",
       "Curri",
       "LawnStarter",
       "Waabi",
@@ -1695,7 +1696,6 @@
       "Rivian",
       "DoorDash",
       "Angi",
-      "Serve Robotics",
       "Yelp",
       "Care.com",
       "Aya Healthcare",
@@ -1718,6 +1718,6 @@
       "Intuit"
     ],
     "collapsed": [],
-    "at": "2026-11-10T18:42:25.294Z"
+    "at": "2026-11-10T18:42:58.015Z"
   }
 }
