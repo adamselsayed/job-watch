@@ -23,7 +23,7 @@
    "u": "https://jobs.dayforcehcm.com/api/auth/csrf",
    "code": 200,
    "len": 80,
-   "head": "{\"csrfToken\":\"9f13ba48106365186964e120f18c82a4e9f3b7efe2b06132154550ec0f530e84\"}",
+   "head": "{\"csrfToken\":\"d5c71bbe0818a2f67e9cf34237ccdd39b08628c0938c4c9501633f70b2ed0040\"}",
    "set_cookie": [],
    "cookies": [
     "__Host-next-auth.csrf-token",
@@ -112,12 +112,7 @@
    "cookies": [
     "__Host-next-auth.csrf-token",
     "__Secure-next-auth.callback-url",
-    "__cf_bm",
-    "ADRUM_BTa",
-    "SameSite",
-    "ADRUM_BT1",
-    "ADRUM_BTg",
-    "ADRUM_BTn"
+    "__cf_bm"
    ]
   },
   {
@@ -134,6 +129,11 @@
     "__Host-next-auth.csrf-token",
     "__Secure-next-auth.callback-url",
     "__cf_bm",
+    "ADRUM_BTa",
+    "SameSite",
+    "ADRUM_BT1",
+    "ADRUM_BTg",
+    "ADRUM_BTn",
     "ADRUM_BTa",
     "SameSite",
     "ADRUM_BT1",
