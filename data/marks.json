@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T20:21:52.514Z",
+  "updated_at": "2026-11-10T20:23:33.518Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1691,7 +1691,8 @@
       "FieldAI",
       "Cisco",
       "Samsara",
-      "Ford"
+      "Ford",
+      "NVIDIA"
     ],
     "tertiary": [
       "Virgin Galactic",
@@ -1701,8 +1702,7 @@
       "AMN Healthcare",
       "Smartsheet",
       "Hitachi",
-      "GlobalLogic",
-      "NVIDIA"
+      "GlobalLogic"
     ],
     "out": [
       "Serve Robotics",
@@ -1736,6 +1736,6 @@
       "Intuit"
     ],
     "collapsed": [],
-    "at": "2026-11-10T20:21:51.002Z"
+    "at": "2026-11-10T20:23:32.004Z"
   }
 }
