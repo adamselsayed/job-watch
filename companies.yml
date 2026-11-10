@@ -1,7 +1,7 @@
 # Companies to watch. One block per company.
 #
 #   name:  how the company appears on the dashboard
-#   ats:   greenhouse | lever | ashby | smartrecruiters | workday | phenom | jobvite | rippling | bamboohr | workable | dayforce | jibe | oracle | talentbrew   (the job-board system the company uses)
+#   ats:   greenhouse | lever | ashby | smartrecruiters | workday | phenom | jobvite | rippling | bamboohr | workable | jibe | oracle | talentbrew   (the job-board system the company uses)
 #   board: the company's board token (the slug in its job-board URL)
 #   url:   the public careers page (for reference / linking)
 #   country: US   (optional) treat locations with no country stated (e.g. "Remote") as US for this company
@@ -21,7 +21,7 @@
 #   Rippling:   ats.rippling.com/<token>/jobs  ->  board: <token>
 #   BambooHR:   <token>.bamboohr.com/careers  ->  board: <token>
 #   Workable:   apply.workable.com/<token>/  ->  board: <token>
-#   Dayforce:   jobs.dayforcehcm.com/en-US/<namespace>/<board>  ->  board: <namespace>/<board>   (e.g. auction/CANDIDATEPORTAL)
+#   Dayforce:   not supported -- jobs.dayforcehcm.com's search API blocks non-browser clients; use ats: unknown
 #   Jibe/iCIMS: <host>/careers-home/jobs  ->  board: <host>   (e.g. careers.rivian.com)
 #   Oracle Recruiting: <host>/en/sites/<site>/...  ->  board: <host>/<site>   (must be Oracle's own fa-*.oraclecloud.com host)
 #               optional  link: job URL template with {id}, for companies that front Oracle with their own domain
@@ -262,6 +262,6 @@
   url: https://careers.cisco.com/global/en/search-results
 
 - name: Auction.com
-  ats: dayforce
+  ats: unknown   # Dayforce: its job search API blocks automated access, so this is a link-only entry
   board: auction/CANDIDATEPORTAL
   url: https://jobs.dayforcehcm.com/en-US/auction/CANDIDATEPORTAL
