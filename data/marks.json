@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T20:06:46.198Z",
+  "updated_at": "2026-11-10T20:21:52.514Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1690,7 +1690,8 @@
       "Motive",
       "FieldAI",
       "Cisco",
-      "Samsara"
+      "Samsara",
+      "Ford"
     ],
     "tertiary": [
       "Virgin Galactic",
@@ -1725,7 +1726,6 @@
     ],
     "general": [
       "Fleetio",
-      "Ford",
       "Scout Motors",
       "Toast",
       "AutoNation",
@@ -1736,6 +1736,6 @@
       "Intuit"
     ],
     "collapsed": [],
-    "at": "2026-11-10T19:23:16.158Z"
+    "at": "2026-11-10T20:21:51.002Z"
   }
 }
