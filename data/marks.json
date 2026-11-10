@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T20:25:57.633Z",
+  "updated_at": "2026-11-10T20:26:02.824Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1721,6 +1721,12 @@
       "status": "archived",
       "at": "2026-11-10T20:25:56.117Z",
       "title": "Director, Associate General Counsel: Product Legal",
+      "company": "Cisco"
+    },
+    "phenom:careers.cisco.com/global/en:CISCISGLOBAL2026633EXTERNALENGLOBAL": {
+      "status": "archived",
+      "at": "2026-11-10T20:26:01.309Z",
+      "title": "Senior Product Manager - AI Safety and Security (Hybrid)",
       "company": "Cisco"
     }
   },
