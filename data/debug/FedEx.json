@@ -1,0 +1,28 @@
+{
+ "scripts": [
+  "https://web.cmp.usercentrics.eu/ui/loader.js",
+  "https://www.googletagmanager.com/gtag/js?id=AW-871749997",
+  "https://optimize-pixel.jobadx.com/v2/pixel.js",
+  "/vendor.js",
+  "/app.js?ver=1",
+  "https://cdn.sites.fedex.paradox.ai/fedex-prod-careersites/dded915ad8/vendors.bundle.js",
+  "https://cdn.sites.fedex.paradox.ai/fedex-prod-careersites/dded915ad8/main.bundle.js",
+  "https://cdn.sites.fedex.paradox.ai/fedex-prod-careersites/dded915ad8/jobs-filter.bundle.js",
+  "https://cdn.sites.fedex.paradox.ai/fedex-prod-careersites/dded915ad8/search-box.bundle.js",
+  "https://cdn.sites.fedex.paradox.ai/fedex-prod-careersites/dded915ad8/jobs-current-searches.bundle.js",
+  "https://cdn.sites.fedex.paradox.ai/fedex-prod-careersites/dded915ad8/jobs-current-location.bundle.js",
+  "https://cdn.sites.fedex.paradox.ai/fedex-prod-careersites/dded915ad8/jobs-list-header.bundle.js",
+  "https://cdn.sites.fedex.paradox.ai/fedex-prod-careersites/dded915ad8/jobs-radius.bundle.js",
+  "https://cdn.sites.fedex.paradox.ai/fedex-prod-careersites/dded915ad8/jobs-sort-by.bundle.js",
+  "https://cdn.sites.fedex.paradox.ai/fedex-prod-careersites/dded915ad8/jobs-list-only.bundle.js",
+  "https://cdn.sites.fedex.paradox.ai/fedex-prod-careersites/dded915ad8/jobs-pagination.bundle.js",
+  "https://cdn.sites.fedex.paradox.ai/fedex-prod-careersites/dded915ad8/jobs-commute-time-modal.bundle.js"
+ ],
+ "iframes": [
+  "https://www.googletagmanager.com/ns.html?id=GTM-T97VP2MZ"
+ ],
+ "ats_mentions": [],
+ "data_attrs": [],
+ "fetch_calls": [],
+ "head": "<!DOCTYPE html>\n\t<html lang=\"en\" class=\"\">\t \n    <head>\n    \n     <meta charset=\"utf-8\">\n <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n\n\n\n\n<script>\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){ dataLayer.push(arguments); }\n  gtag('consent', 'default', {\n    ad_storage: 'denied',\n    ad_user_data: 'denied',\n    ad_personalization: 'denied',\n    analytics_storage: 'denied',\n    functionality_storage: 'denied',\n    personalization_storage: 'denied',\n    security_storage: 'granted',\n    wait_for_update: 500\n  });\n</script>\n\n\n<script id=\"usercentrics-cmp\" src=\"https://web.cmp.usercentrics.eu/ui/loader.js\" data-ruleset-id=\"0eKHfbqB2NSPPg\" data-language=\"en\" async></script>\n\n\n<script>\n(function () {\n  // Usercentrics service name (exactly as in the rule"
+}
