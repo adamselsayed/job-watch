@@ -1225,55 +1225,35 @@ def _dayforce_probe(ns, jb, culture):
     """Debug-only: try candidate endpoints and record status + body head."""
     UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36"
     site = f"https://jobs.dayforcehcm.com/{culture}/{ns}/{jb}"
-    body = json.dumps({"clientNamespace": ns, "jobBoardCode": jb, "cultureCode": culture, "distanceUnit": 0, "paginationStart": 0}).encode()
-    tries = [
-        ("GET", site, None, {"Accept": "text/html"}),
-        ("POST", f"https://jobs.dayforcehcm.com/api/geo/{ns}/jobposting/search", body, {"Content-Type": "application/json", "Origin": "https://jobs.dayforcehcm.com", "Referer": site}),
-        ("POST", f"https://jobs.dayforcehcm.com/api/jobposting/search", body, {"Content-Type": "application/json", "Origin": "https://jobs.dayforcehcm.com", "Referer": site}),
-        ("GET", f"https://jobs.dayforcehcm.com/api/geo/{ns}/jobposting/search?jobBoardCode={jb}&cultureCode={culture}", None, {"Referer": site}),
-    ]
+    jar = http.cookiejar.CookieJar()
+    opener = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(jar))
     res = []
-    opener = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(http.cookiejar.CookieJar()))
-    for m, u, b, h in tries:
+    def go(m, u, b=None, h=None, label=""):
         try:
-            req = urllib.request.Request(u, data=b, method=m, headers={"User-Agent": UA, "Accept": "application/json, text/plain, */*", "Accept-Language": "en-US,en;q=0.9", **h})
+            req = urllib.request.Request(u, data=b, method=m, headers={"User-Agent": UA, "Accept": "application/json, text/plain, */*", "Accept-Language": "en-US,en;q=0.9", **(h or {})})
             with opener.open(req, timeout=30) as r:
-                txt = r.read().decode("utf-8", "replace")
-                hdr = dict(r.headers)
-                code = r.status
+                txt, code, hdr = r.read().decode("utf-8", "replace"), r.status, dict(r.headers)
         except urllib.error.HTTPError as e:
-            txt, hdr, code = e.read().decode("utf-8", "replace"), dict(e.headers), e.code
+            txt, code, hdr = e.read().decode("utf-8", "replace"), e.code, dict(e.headers)
         except Exception as e:          # noqa: BLE001
-            txt, hdr, code = str(e), {}, None
-        info = {"m": m, "u": u, "code": code, "server": hdr.get("Server") or hdr.get("server"), "len": len(txt), "head": txt[:1200]}
-        if "__NEXT_DATA__" in txt:
-            mm = re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', txt, re.S)
-            info["next_data"] = mm.group(1)[:4000] if mm else None
-        info["api_refs"] = sorted(set(re.findall(r'["\'](/api/[^"\']{3,120})["\']', txt)))[:40]
-        if "__NEXT_DATA__" in txt:
-            try:
-                nd = json.loads(re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', txt, re.S).group(1))
-                pp = dict((nd.get("props") or {}).get("pageProps") or {}); pp.pop("_nextI18Next", None)
-                info["pageprops"] = json.dumps(pp)[:6000]
-                info["nd_other"] = {k: v for k, v in nd.items() if k != "props"}
-            except Exception as e:      # noqa: BLE001
-                info["pageprops"] = f"err {e}"
-            info["jobTitle_count"] = txt.count("jobTitle")
-            chunks = re.findall(r'<script[^>]+src="(/_next/static/[^"]+)"', txt)
-            hits = []
-            for c in chunks:
-                try:
-                    with opener.open(urllib.request.Request("https://jobs.dayforcehcm.com" + c, headers={"User-Agent": UA}), timeout=30) as r2:
-                        js = r2.read().decode("utf-8", "replace")
-                    for mm in re.finditer(r"jobposting/search|csrf|xsrf|RequestVerification|x-[a-z-]*token", js, re.I):
-                        hits.append(c.split("/")[-1] + ": " + js[max(0, mm.start() - 300): mm.end() + 300])
-                        if len(hits) > 12:
-                            break
-                except Exception as e:  # noqa: BLE001
-                    hits.append(f"{c}: {e}")
-            info["js_hits"] = hits
-        info["scripts"] = re.findall(r'<script[^>]+src="([^"]+)"', txt)[:30]
-        res.append(info)
+            txt, code, hdr = str(e), None, {}
+        res.append({"label": label, "m": m, "u": u, "code": code, "len": len(txt), "head": txt[:1500],
+                    "set_cookie": [k for k in hdr if k.lower() == "set-cookie"], "cookies": [c.name for c in jar]})
+        return txt
+    go("GET", site, h={"Accept": "text/html"}, label="page")
+    xsrf = next((c.value for c in jar if c.name.upper() in ("XSRF-TOKEN", "CSRF-TOKEN")), None)
+    body = json.dumps({"clientNamespace": ns, "jobBoardCode": jb, "cultureCode": culture, "distanceUnit": 0, "paginationStart": 0}).encode()
+    base_h = {"Content-Type": "application/json", "Origin": "https://jobs.dayforcehcm.com", "Referer": site}
+    go("GET", f"https://jobs.dayforcehcm.com/api/auth/csrf", label="next-auth csrf")
+    xsrf2 = next((c.value for c in jar if "csrf" in c.name.lower()), None)
+    go("POST", f"https://jobs.dayforcehcm.com/api/geo/{ns}/jobposting/search", body, {**base_h, **({"X-XSRF-TOKEN": urllib.parse.unquote(xsrf)} if xsrf else {})}, "search+xsrf")
+    if xsrf2:
+        go("POST", f"https://jobs.dayforcehcm.com/api/geo/{ns}/jobposting/search", body, {**base_h, "X-XSRF-TOKEN": urllib.parse.unquote(xsrf2), "X-CSRF-TOKEN": urllib.parse.unquote(xsrf2)}, "search+csrf2")
+    go("GET", f"https://jobs.dayforcehcm.com/{culture}/{ns}/{jb}/sitemap.xml", label="board sitemap")
+    go("GET", f"https://jobs.dayforcehcm.com/sitemap.xml", label="root sitemap")
+    go("GET", f"https://jobs.dayforcehcm.com/robots.txt", label="robots")
+    go("GET", f"https://us261.dayforcehcm.com/CandidatePortal/{culture}/{ns}", h={"Accept": "text/html"}, label="legacy portal")
+    go("GET", f"https://us261.dayforcehcm.com/CandidatePortal/{culture}/{ns}/Posting/Search", h={"Accept": "text/html"}, label="legacy search")
     return res
 
 
