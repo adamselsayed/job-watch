@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T20:25:51.804Z",
+  "updated_at": "2026-11-10T20:25:57.633Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1715,6 +1715,12 @@
       "status": "archived",
       "at": "2026-11-10T20:25:50.288Z",
       "title": "Senior Director, Product Management - Splunk Observability",
+      "company": "Cisco"
+    },
+    "phenom:careers.cisco.com/global/en:CISCISGLOBAL2029645EXTERNALENGLOBAL": {
+      "status": "archived",
+      "at": "2026-11-10T20:25:56.117Z",
+      "title": "Director, Associate General Counsel: Product Legal",
       "company": "Cisco"
     }
   },
