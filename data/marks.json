@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T20:23:47.995Z",
+  "updated_at": "2026-11-10T20:25:10.224Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1680,6 +1680,12 @@
       "at": "2026-11-10T20:05:46.060Z",
       "title": "Staff Inbound Product Manager - ServiceNow University",
       "company": "ServiceNow"
+    },
+    "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2022366": {
+      "status": "archived",
+      "at": "2026-11-10T20:25:08.710Z",
+      "title": "Go-to-Market Product Manager",
+      "company": "NVIDIA"
     }
   },
   "groups": {
