@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-10T22:08:16+00:00",
+  "generated_at": "2026-11-10T22:12:21+00:00",
   "criteria": {
     "title_keywords": [
       "product"
@@ -508,6 +508,15 @@
       "error": null,
       "total_jobs": 1440,
       "matched": 34
+    },
+    {
+      "name": "FedEx",
+      "ats": "jibe",
+      "board": "careers.fedex.com",
+      "url": "https://careers.fedex.com/jobs",
+      "fetched_at": "2026-11-10T22:12:21+00:00",
+      "status": "error",
+      "error": "HTTP Error 403: Forbidden"
     }
   ],
   "jobs": [
