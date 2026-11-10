@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-10T21:15:08+00:00",
+  "generated_at": "2026-11-10T21:16:05+00:00",
   "criteria": {
     "title_keywords": [
       "product"
@@ -511,12 +511,14 @@
     },
     {
       "name": "Auction.com",
-      "ats": "dayforce",
+      "ats": "unknown",
       "board": "auction/CANDIDATEPORTAL",
       "url": "https://jobs.dayforcehcm.com/en-US/auction/CANDIDATEPORTAL",
-      "fetched_at": "2026-11-10T21:15:08+00:00",
-      "status": "error",
-      "error": "HTTP Error 403: Forbidden"
+      "fetched_at": "2026-11-10T21:16:05+00:00",
+      "status": "ok",
+      "error": null,
+      "total_jobs": 0,
+      "matched": 0
     }
   ],
   "jobs": [
