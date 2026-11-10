@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T20:30:21.038Z",
+  "updated_at": "2026-11-10T20:31:21.135Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1763,6 +1763,12 @@
       "status": "archived",
       "at": "2026-11-10T20:30:19.525Z",
       "title": "Product Readiness Manager",
+      "company": "Cisco"
+    },
+    "phenom:careers.cisco.com/global/en:CISCISGLOBAL2026192EXTERNALENGLOBAL": {
+      "status": "archived",
+      "at": "2026-11-10T20:31:19.620Z",
+      "title": "Technical Product Manager",
       "company": "Cisco"
     }
   },
