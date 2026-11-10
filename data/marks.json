@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T20:52:57.425Z",
+  "updated_at": "2026-11-10T23:51:59.561Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1919,6 +1919,12 @@
       "status": "archived",
       "at": "2026-11-10T20:52:55.913Z",
       "title": "Group Product Manager, Integrations / Customization",
+      "company": "Ford"
+    },
+    "talentbrew:www.careers.ford.com/en:103096147920": {
+      "status": "applied",
+      "at": "2026-11-10T23:51:58.050Z",
+      "title": "Senior Product Manager, Mobile Apps – Vehicle Productivity and Electrification Experiences",
       "company": "Ford"
     }
   },
