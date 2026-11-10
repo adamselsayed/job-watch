@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T18:42:59.524Z",
+  "updated_at": "2026-11-10T19:23:17.666Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1666,13 +1666,13 @@
   },
   "groups": {
     "primary": [
-      "Samsara",
       "ChargePoint",
       "Experian",
       "ServiceNow",
       "Motive",
       "FieldAI",
-      "Cisco"
+      "Cisco",
+      "Samsara"
     ],
     "tertiary": [
       "Virgin Galactic",
@@ -1718,6 +1718,6 @@
       "Intuit"
     ],
     "collapsed": [],
-    "at": "2026-11-10T18:42:58.015Z"
+    "at": "2026-11-10T19:23:16.158Z"
   }
 }
