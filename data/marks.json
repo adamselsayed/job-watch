@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T20:32:04.227Z",
+  "updated_at": "2026-11-10T20:32:24.127Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1775,6 +1775,12 @@
       "status": "archived",
       "at": "2026-11-10T20:32:02.712Z",
       "title": "Intake Product Manager, Cisco Validated",
+      "company": "Cisco"
+    },
+    "phenom:careers.cisco.com/global/en:CISCISGLOBAL2027604EXTERNALENGLOBAL": {
+      "status": "archived",
+      "at": "2026-11-10T20:32:21.633Z",
+      "title": "Technical Product Manager - AI Native Professional Services",
       "company": "Cisco"
     }
   },
