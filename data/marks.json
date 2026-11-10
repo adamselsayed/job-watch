@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T20:26:12.932Z",
+  "updated_at": "2026-11-10T20:29:23.073Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1739,6 +1739,12 @@
       "status": "archived",
       "at": "2026-11-10T20:26:11.417Z",
       "title": "Product Lifecycle Supply Chain Program Manager",
+      "company": "Cisco"
+    },
+    "phenom:careers.cisco.com/global/en:CISCISGLOBAL2028804EXTERNALENGLOBAL": {
+      "status": "archived",
+      "at": "2026-11-10T20:29:21.558Z",
+      "title": "Leader, Business Product Management",
       "company": "Cisco"
     }
   },
