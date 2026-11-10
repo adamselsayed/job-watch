@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T20:38:31.009Z",
+  "updated_at": "2026-11-10T20:41:12.753Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1865,6 +1865,12 @@
       "status": "archived",
       "at": "2026-11-10T20:38:29.498Z",
       "title": "Outbound Product Manager",
+      "company": "Cisco"
+    },
+    "phenom:careers.cisco.com/global/en:CISCISGLOBAL2028341EXTERNALENGLOBAL": {
+      "status": "archived",
+      "at": "2026-11-10T20:41:11.239Z",
+      "title": "Director, Business Product Management",
       "company": "Cisco"
     }
   },
