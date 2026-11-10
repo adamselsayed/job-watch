@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T20:36:06.622Z",
+  "updated_at": "2026-11-10T20:36:09.075Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1829,6 +1829,12 @@
       "status": "archived",
       "at": "2026-11-10T20:36:05.108Z",
       "title": "Technical Product Manager - Ecosystem Integrations",
+      "company": "Cisco"
+    },
+    "phenom:careers.cisco.com/global/en:CISCISGLOBAL2026294EXTERNALENGLOBAL": {
+      "status": "archived",
+      "at": "2026-11-10T20:36:07.265Z",
+      "title": "Executive Assistant: VP, Customer Experience Product Management (Hybrid)",
       "company": "Cisco"
     }
   },
