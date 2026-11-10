@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T18:42:26.803Z",
+  "updated_at": "2026-11-10T18:42:42.043Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1656,6 +1656,12 @@
       "at": "2026-11-10T18:42:02.379Z",
       "title": "Senior Technical Product Manager – AI Agents",
       "company": "NVIDIA"
+    },
+    "workday:hitachi.wd1/hitachi:R0150460": {
+      "status": "archived",
+      "at": "2026-11-10T18:42:40.532Z",
+      "title": "Product Security Architect (Remote US)",
+      "company": "Hitachi"
     }
   },
   "groups": {
