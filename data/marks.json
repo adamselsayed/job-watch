@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-11T00:17:42.160Z",
+  "updated_at": "2026-11-11T00:32:57.591Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1982,19 +1982,19 @@
       "Housecall Pro"
     ],
     "general": [
-      "Samsara",
       "NVIDIA",
       "Fleetio",
       "Scout Motors",
       "Toast",
       "AutoNation",
       "Rivian & VW Group Technologies",
+      "Samsara",
       "Komodo Health",
       "Thumbtack",
       "Life360",
       "Intuit"
     ],
     "collapsed": [],
-    "at": "2026-11-11T00:17:19.473Z"
+    "at": "2026-11-11T00:32:56.081Z"
   }
 }
