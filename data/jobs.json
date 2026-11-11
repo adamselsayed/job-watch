@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T14:04:16+00:00",
+  "generated_at": "2026-11-11T21:39:49+00:00",
   "criteria": {
     "title_keywords": [
       "product"
@@ -574,6 +574,17 @@
       "error": null,
       "total_jobs": 16,
       "matched": 1
+    },
+    {
+      "name": "Platform Science",
+      "ats": "unknown",
+      "board": "platformscience",
+      "url": "https://www.platformscience.com/jobs",
+      "fetched_at": "2026-11-11T21:39:49+00:00",
+      "status": "ok",
+      "error": null,
+      "total_jobs": 0,
+      "matched": 0
     }
   ],
   "jobs": [
