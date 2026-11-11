@@ -279,6 +279,6 @@
   url: https://www.jobs-ups.com/us/en/search-results
 
 - name: Onfleet
-  ats: unknown
-  board: onfleet
-  url: https://onfleet.com/careers
+  ats: rippling
+  board: onfleet-careers
+  url: https://onfleet.com/careers#positions_section
