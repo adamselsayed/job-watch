@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T00:56:55+00:00",
+  "generated_at": "2026-11-11T00:57:25+00:00",
   "criteria": {
     "title_keywords": [
       "product"
@@ -536,17 +536,38 @@
     },
     {
       "name": "Onfleet",
-      "ats": "unknown",
-      "board": "onfleet",
-      "url": "https://onfleet.com/careers",
-      "fetched_at": "2026-11-11T00:56:55+00:00",
+      "ats": "rippling",
+      "board": "onfleet-careers",
+      "url": "https://onfleet.com/careers#positions_section",
+      "fetched_at": "2026-11-11T00:57:25+00:00",
       "status": "ok",
       "error": null,
-      "total_jobs": 0,
-      "matched": 0
+      "total_jobs": 15,
+      "matched": 1
     }
   ],
   "jobs": [
+    {
+      "job_id": "513fa756-ad35-413f-991d-01e77d54416e",
+      "req_id": null,
+      "title": "Vice President of Product",
+      "location": "Remote (United States)",
+      "location_detail": "",
+      "department": "",
+      "published_at": null,
+      "updated_at": null,
+      "url": "https://ats.rippling.com/onfleet-careers/jobs/513fa756-ad35-413f-991d-01e77d54416e",
+      "salary": null,
+      "us": true,
+      "remote": "remote",
+      "remote_confidence": "high",
+      "company": "Onfleet",
+      "key": "rippling:onfleet-careers:513fa756-ad35-413f-991d-01e77d54416e",
+      "first_seen": "2026-11-11T00:57:25+00:00",
+      "last_seen": "2026-11-11T00:57:25+00:00",
+      "status": "open",
+      "closed_at": null
+    },
     {
       "job_id": "103096147920",
       "req_id": null,
