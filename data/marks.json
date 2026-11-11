@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-11T06:19:26.550Z",
+  "updated_at": "2026-11-11T06:19:49.235Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1938,6 +1938,12 @@
       "at": "2026-11-11T00:17:40.653Z",
       "title": "AI Manager, Product Management (Flex)",
       "company": "UPS"
+    },
+    "talentbrew:jobs.bd.com/en:100712519552": {
+      "status": "archived",
+      "at": "2026-11-11T06:19:47.723Z",
+      "title": "Chemist, Product Development",
+      "company": "BD"
     }
   },
   "groups": {
