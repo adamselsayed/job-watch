@@ -272,3 +272,8 @@
   ats: manual   # Paradox: its job search blocks automated access
   board: fedex
   url: https://careers.fedex.com/jobs?keyword=product
+
+- name: UPS
+  ats: phenom
+  board: www.jobs-ups.com/us/en
+  url: https://www.jobs-ups.com/us/en/search-results
