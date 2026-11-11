@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T05:15:25+00:00",
+  "generated_at": "2026-11-11T06:47:21+00:00",
   "criteria": {
     "title_keywords": [
       "product"
@@ -555,6 +555,17 @@
       "error": null,
       "total_jobs": 1106,
       "matched": 14
+    },
+    {
+      "name": "Honor",
+      "ats": "unknown",
+      "board": "honor",
+      "url": "https://www.honorcare.com/honor-careers/#joblist",
+      "fetched_at": "2026-11-11T06:47:21+00:00",
+      "status": "ok",
+      "error": null,
+      "total_jobs": 0,
+      "matched": 0
     }
   ],
   "jobs": [
