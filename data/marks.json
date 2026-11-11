@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-11T20:50:26.309Z",
+  "updated_at": "2026-11-11T20:50:35.641Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2015,6 +2015,12 @@
       "status": "archived",
       "at": "2026-11-11T20:50:24.796Z",
       "title": "Senior Product Manager - CareBenefits ",
+      "company": "Care.com"
+    },
+    "smartrecruiters:Carecom1:3743990015902166": {
+      "status": "archived",
+      "at": "2026-11-11T20:50:33.329Z",
+      "title": "Product Manager, Benefits Strategy - Core Care Delivery",
       "company": "Care.com"
     }
   },
