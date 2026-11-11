@@ -282,3 +282,8 @@
   ats: rippling
   board: onfleet-careers
   url: https://onfleet.com/careers#positions_section
+
+- name: BD
+  ats: talentbrew
+  board: jobs.bd.com/en
+  url: https://jobs.bd.com/en/search-jobs
