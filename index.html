@@ -1211,7 +1211,9 @@
       const openCount = mine.filter(j => j.status === 'open').length;
       const el = document.createElement('section');
       el.className = 'company';
-      const meta = c.status === 'error'
+      const meta = c.ats === 'manual'
+        ? `<span class="meta">Manual pull only: this board blocks automated access, so check it on the careers page</span>`
+        : c.status === 'error'
         ? `<span class="meta err" title="${escapeHtml(c.error || '')}">⚠ fetch failed in last sweep</span>`
         : c.status === 'ok' ? `<span class="meta">${openCount} matching of ${c.total_jobs} open roles</span>` : `<span class="meta">${escapeHtml(c.status || '')}</span>`;
       el.innerHTML = `<div class="head">
@@ -1219,11 +1221,11 @@
           ${liveAt[c.name] ? `<span class="meta">· live-checked ${ago(liveAt[c.name])}</span>` : ''}
           <span class="spacer"></span>
           ${c.url ? `<a href="${escapeHtml(c.url)}" target="_blank" rel="noopener">careers page ↗</a>` : ''}
-          <button class="pull">Pull now</button>
+          ${c.ats === 'manual' ? '' : '<button class="pull">Pull now</button>'}
         </div>
         ${bulkBar(rows)}${rows.length ? `<table>${THEAD()}<tbody>${rows.map(row).join('')}</tbody></table>`
                       : `<div class="empty">${sec === 'open' && !openCount ? 'No open roles with “product” in the title in the US right now.' : EMPTY[sec]}</div>`}`;
-      el.querySelector('.pull').addEventListener('click', e => pullNow(c, e.currentTarget));
+      if (el.querySelector('.pull')) el.querySelector('.pull').addEventListener('click', e => pullNow(c, e.currentTarget));
       wire(el, rows); wireResize(el);
       container.appendChild(el);
     }
@@ -1236,12 +1238,13 @@
       const open = cnt(list), nw = open.filter(isNew).length;
       return `<button class="${selected === name ? 'on' : ''}" data-name="${escapeHtml(name)}"><span class="nm">${escapeHtml(label)}</span>${nw ? `<span class="nb" title="new since your last visit">${nw}</span>` : ''}${extra}<span class="cnt" title="open, not yet triaged">${open.length}</span></button>`;
     };
-    const known = new Set(data.companies.map(c => c.name));
+    const manual = data.companies.filter(c => c.ats === 'manual').map(c => c.name);
+    const known = new Set(data.companies.filter(c => c.ats !== 'manual').map(c => c.name));
     const prim = groups.primary.filter(n => known.has(n));
     const ter = groups.tertiary.filter(n => known.has(n) && !prim.includes(n));
     const out = groups.out.filter(n => known.has(n) && !prim.includes(n) && !ter.includes(n));
     const genOrder = groups.general || [];
-    const gen = data.companies.map(c => c.name).filter(n => !prim.includes(n) && !ter.includes(n) && !out.includes(n))
+    const gen = data.companies.filter(c => c.ats !== 'manual').map(c => c.name).filter(n => !prim.includes(n) && !ter.includes(n) && !out.includes(n))
       .map((n, i) => [n, genOrder.includes(n) ? genOrder.indexOf(n) : 1e6 + i]).sort((a, b) => a[1] - b[1]).map(x => x[0]);
     const grpOf = n => prim.includes(n) ? 'primary' : ter.includes(n) ? 'tertiary' : out.includes(n) ? 'out' : 'general';
     // symbol cycles Primary -> Secondary -> Tertiary -> Out of Network -> Primary (tap fallback for touch screens)
@@ -1251,6 +1254,11 @@
       return item(n, n, jobs.filter(j => j.company === n), (c.status === 'error' ? '<span class="er" title="fetch failed in last sweep">⚠</span>' : '') +
         `<span class="star" data-star="${escapeHtml(n)}" title="${tip}">${glyph}</span>`); };
     const isCol = k => (groups.collapsed || []).includes(k);
+    // Manual Pulls Only: boards that block automated reads. Fixed group (not draggable), links out to the careers page.
+    const mSection = () => { const col = isCol('manual');
+      return `<button type="button" class="nh tog" data-tog="manual" aria-expanded="${!col}" title="These boards block automated access, so check them yourself">` +
+        `<span class="car">▾</span>Manual Pulls Only<span class="gc">${col ? `<span>${manual.length}</span>` : ''}</span></button>` +
+        `<div class="grp manual${col ? ' collapsed' : ''}" data-mgrp="manual">${manual.map(n => `<button class="${selected === n ? 'on' : ''}" data-name="${escapeHtml(n)}"><span class="nm">${escapeHtml(n)}</span><span class="cnt" title="check manually">↗</span></button>`).join('')}</div>`; };
     const section = (key, label, names, tip = '') => {
       const open = names.flatMap(n => cnt(jobs.filter(j => j.company === n))), nw = open.filter(isNew).length, col = isCol(key);
       return `<button type="button" class="nh tog" data-tog="${key}" aria-expanded="${!col}"${tip ? ` title="${tip}"` : ''}>` +
@@ -1259,9 +1267,11 @@
     };
     side.innerHTML = `<div class="nh">Companies</div>` + item('*', 'All companies', jobs) + `<hr>` +
       section('primary', 'Primary', prim) + section('general', 'Secondary', gen) + section('tertiary', 'Tertiary', ter) +
-      section('out', 'Out of Network', out, 'Companies where you have no contact who can refer you');
+      section('out', 'Out of Network', out, 'Companies where you have no contact who can refer you') +
+      (manual.length ? mSection() : '');
     side.querySelectorAll('.tog').forEach(t => {
       t.addEventListener('click', () => toggleCollapsed(t.dataset.tog));
+      if (t.dataset.tog === 'manual') return;
       // a heading is also a drop target, so companies can be dragged into a collapsed group
       t.addEventListener('dragover', e => { e.preventDefault(); t.classList.add('over'); });
       t.addEventListener('dragleave', () => t.classList.remove('over'));
@@ -1283,7 +1293,7 @@
       moveTo(n, NEXT[grpOf(n)]); }));
     // drag & drop between the two groups (and reorder inside Primary)
     let dragName = null;
-    side.querySelectorAll('.grp button').forEach(b => {
+    side.querySelectorAll('.grp:not(.manual) button').forEach(b => {
       b.draggable = true;
       b.addEventListener('dragstart', e => { dragName = b.dataset.name; b.classList.add('dragging'); e.dataTransfer.effectAllowed = 'move'; e.dataTransfer.setData('text/plain', dragName); });
       b.addEventListener('dragend', () => { b.classList.remove('dragging'); clearDrop(); });
@@ -1292,7 +1302,7 @@
     // midpoint is below the cursor, or at the end of the group.
     const line = document.createElement('div'); line.className = 'drop-line';
     const clearDrop = () => { line.remove(); side.querySelectorAll('.grp').forEach(g => { g.classList.remove('over'); delete g.dataset.before; }); };
-    side.querySelectorAll('.grp').forEach(g => {
+    side.querySelectorAll('.grp:not(.manual)').forEach(g => {
       g.addEventListener('dragover', e => {
         e.preventDefault(); e.dataTransfer.dropEffect = 'move';
         side.querySelectorAll('.grp.over').forEach(x => x !== g && x.classList.remove('over'));
@@ -1391,7 +1401,7 @@
   $('#pullAll').addEventListener('click', async e => {
     const btn = e.currentTarget;            // currentTarget is null after the first await, so keep a reference
     if (pullRun) { pullDlg.showModal(); return; }   // already running: just show progress again
-    const companies = [...data.companies].sort((a, b) => a.name.localeCompare(b.name));
+    const companies = data.companies.filter(c => c.ats !== 'manual').sort((a, b) => a.name.localeCompare(b.name));
     const browser = companies.filter(c => LIVE[c.ats]);
     const server = companies.filter(c => !LIVE[c.ats]);
     const list = $('#pullList'); list.innerHTML = '';
