@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T06:47:21+00:00",
+  "generated_at": "2026-11-11T06:47:55+00:00",
   "criteria": {
     "title_keywords": [
       "product"
@@ -558,14 +558,14 @@
     },
     {
       "name": "Honor",
-      "ats": "unknown",
+      "ats": "greenhouse",
       "board": "honor",
       "url": "https://www.honorcare.com/honor-careers/#joblist",
-      "fetched_at": "2026-11-11T06:47:21+00:00",
+      "fetched_at": "2026-11-11T06:47:55+00:00",
       "status": "ok",
       "error": null,
-      "total_jobs": 0,
-      "matched": 0
+      "total_jobs": 16,
+      "matched": 1
     }
   ],
   "jobs": [
@@ -587,6 +587,32 @@
       "key": "rippling:onfleet-careers:513fa756-ad35-413f-991d-01e77d54416e",
       "first_seen": "2026-11-11T00:57:25+00:00",
       "last_seen": "2026-11-11T00:57:25+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "8935840002",
+      "req_id": "1320",
+      "title": "Director, Product Management",
+      "location": "Remote Position",
+      "location_detail": "Remote Position",
+      "department": "Product Management",
+      "published_at": "2026-11-09T19:45:07-05:00",
+      "updated_at": "2026-11-09T19:45:07-05:00",
+      "url": "https://boards.greenhouse.io/honor/jobs/8935840002?gh_jid=8935840002",
+      "salary": {
+        "min": 229500,
+        "max": 255000,
+        "currency": "USD",
+        "source": "posting"
+      },
+      "us": null,
+      "remote": "remote",
+      "remote_confidence": "high",
+      "company": "Honor",
+      "key": "greenhouse:honor:8935840002",
+      "first_seen": "2026-11-11T06:47:55+00:00",
+      "last_seen": "2026-11-11T06:47:55+00:00",
       "status": "open",
       "closed_at": null
     },
