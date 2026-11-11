@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T00:02:31+00:00",
+  "generated_at": "2026-11-11T00:05:55+00:00",
   "criteria": {
     "title_keywords": [
       "product"
@@ -522,6 +522,17 @@
       "board": "fedex",
       "url": "https://careers.fedex.com/jobs?keyword=product",
       "status": "never fetched"
+    },
+    {
+      "name": "UPS",
+      "ats": "phenom",
+      "board": "www.jobs-ups.com/us/en",
+      "url": "https://www.jobs-ups.com/us/en/search-results",
+      "fetched_at": "2026-11-11T00:05:55+00:00",
+      "status": "ok",
+      "error": null,
+      "total_jobs": 2784,
+      "matched": 1
     }
   ],
   "jobs": [
@@ -1866,6 +1877,27 @@
       "key": "phenom:careers.cisco.com/global/en:CISCISGLOBAL2027891EXTERNALENGLOBAL",
       "first_seen": "2026-11-09T23:53:19+00:00",
       "last_seen": "2026-11-10T14:00:01+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "UPBUPSGLOBALR26031872EXTERNALENUS",
+      "req_id": "R26031872",
+      "title": "AI Manager, Product Management (Flex)",
+      "location": "ALPHARETTA, Georgia, United States of America",
+      "location_detail": "12380 MORRIS ROAD, ALPHARETTA, GA 30005, United States of America; 1400 N. HURSTBOURNE PARKWAY, LOUISVILLE, KY 40223, United States of America; 2311 York Road, Timonium, Baltimore, MD 21093, United States of America; 340 MACARTHUR BLVD, MAHWAH, NJ 07430, United States of America",
+      "department": "Information Technology",
+      "published_at": "2026-11-03T00:00:00.000+0000",
+      "updated_at": null,
+      "url": "https://www.jobs-ups.com/us/en/job/UPBUPSGLOBALR26031872EXTERNALENUS/AI-Manager-Product-Management-Flex",
+      "salary": null,
+      "us": true,
+      "remote": "hybrid",
+      "remote_confidence": "low",
+      "company": "UPS",
+      "key": "phenom:www.jobs-ups.com/us/en:UPBUPSGLOBALR26031872EXTERNALENUS",
+      "first_seen": "2026-11-11T00:05:55+00:00",
+      "last_seen": "2026-11-11T00:05:55+00:00",
       "status": "open",
       "closed_at": null
     },

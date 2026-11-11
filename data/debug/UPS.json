@@ -1,0 +1,184 @@
+{
+ "first_page": {
+  "keys": [
+   "refineSearch"
+  ],
+  "rs_keys": [
+   "status",
+   "hits",
+   "totalHits",
+   "data",
+   "eid"
+  ],
+  "data_keys": [
+   "jobs",
+   "aggregations",
+   "SEARCH_CONFIG",
+   "suggestions",
+   "ui_skills_selection"
+  ],
+  "totalHits": 2784,
+  "sample": [
+   {
+    "ml_skills": [
+     "package delivery",
+     "physical stamina",
+     "package handling",
+     "outdoor work",
+     "customer interaction",
+     "flexibility",
+     "safety compliance",
+     "time management"
+    ],
+    "type": "Part time",
+    "descriptionTeaser": "Ride Along with a Driver as a Seasonal Driver Helper. Looking for a physically active seasonal opportunity in your community? As a Driver Helper, you'll team up with a UPS package delivery driver to h...",
+    "state": "Virginia",
+    "siteType": "external",
+    "reqId": "e787df00-88c5-4d80-92a3-14f354a3a125",
+    "city": "Sterling",
+    "latitude": "39.05011",
+    "multi_location": [
+     "Sterling, VA, 20165, US"
+    ],
+    "address": "Sterling, VA, 20165, US",
+    "openingPayRate": "$21.00/hour",
+    "applyUrl": "https://us-2.fountain.com/apply/ups/opening/us-dulles-vadul-upperville-50933-seasonal-helper-o335-day-monday-friday-some-saturdays-seasonal-9-00-20-00-external-child",
+    "ml_job_parser": {
+     "descriptionTeaser": "Take on the role of Driver Helper and support package delivery by working outdoors with a UPS driver. Assist with delivering packages to homes and businesses, ensuring timely and safe transport. Ideal for individuals who are physically active, flexible with scheduling, and available to work weekends and holidays as needed.",
+     "descriptionTeaser_first200": "Ride Along with a Driver as a Seasonal Driver Helper . Looking for a physically active seasonal opportunity in your community? As a Driver Helper, you'll team up with a UPS package delivery driver ...",
+     "descriptionTeaser_keyword": "Ride Along with a Driver as a Seasonal Driver Helper. Looking for a physically active seasonal opportunity in your community? As a Driver Helper, you'll team up with a UPS package delivery driver to h...",
+     "descriptionTeaser_ats": "Ride Along with a Driver as a Seasonal Driver Helper Looking for a physically active seasonal opportunity in your community? As a Driver Helper, you'll team up with a UPS package delivery driver to he"
+    },
+    "externalApply": true,
+    "cityState": "Sterling, Virginia",
+    "country": "United States of America",
+    "visibilityType": "External",
+    "longitude": "-77.40082",
+    "jobId": "e787df00-88c5-4d80-92a3-14f354a3a125",
+    "locale": "en_US",
+    "title": "Driver Helper",
+    "jobSeqNo": "UPBUPSGLOBALE787DF0088C54D8092A314F354A3A125EXTERNALENUS",
+    "postedDate": "2026-11-09T16:52:38.000+0000",
+    "dateCreated": "2025-10-16T20:48:19.059+0000",
+    "cityStateCountry": "Sterling, Virginia, United States of America",
+    "employmentType": "Temporary",
+    "jobVisibility": [
+     "external",
+     "internal"
+    ],
+    "location": "Sterling, VA, 20165, US",
+    "category": "Operations",
+    "multi_category": [
+     "Operations"
+    ],
+    "bonus": "",
+    "isMultiLocation": true,
+    "multi_location_array": [
+     {
+      "latlong": {
+       "lon": -77.4286,
+       "lat": 39.00622
+      },
+      "location": "Sterling, VA, 20165, US"
+     }
+    ],
+    "isMultiCategory": false,
+    "multi_category_array": [
+     {
+      "category": "Operations"
+     }
+    ],
+    "badge": ""
+   },
+   {
+    "ml_skills": [
+     "package delivery",
+     "physical stamina",
+     "package handling",
+     "outdoor work",
+     "customer interaction",
+     "flexibility",
+     "safety compliance",
+     "time management"
+    ],
+    "type": "Part time",
+    "descriptionTeaser": "Ride Along with a Driver as a Seasonal Driver Helper. Looking for a physically active seasonal opportunity in your community? As a Driver Helper, you'll team up with a UPS package delivery driver to h...",
+    "state": "Virginia",
+    "siteType": "external",
+    "reqId": "c5ea898d-b22a-40d2-b6c7-0369b889d635",
+    "city": "Sterling",
+    "latitude": "39.00622",
+    "multi_location": [
+     "Sterling, VA, 20164, US"
+    ],
+    "address": "Sterling, VA, 20164, US",
+    "openingPayRate": "$21.00/hour",
+    "applyUrl": "https://us-2.fountain.com/apply/ups/opening/us-dulles-vadul-sterling-20164-50933-seasonal-helper-o335-day-monday-friday-some-saturdays-seasonal-9-00-20-00-external-child",
+    "ml_job_parser": {
+     "descriptionTeaser": "Take on the role of Driver Helper and support package delivery by working outdoors with a UPS driver. Assist with delivering packages to homes and businesses, ensuring timely and safe transport. Ideal for individuals who are physically active, flexible with scheduling, and available to work weekends and holidays as needed.",
+     "descriptionTeaser_first200": "Ride Along with a Driver as a Seasonal Driver Helper . Looking for a physically active seasonal opportunity in your community? As a Driver Helper, you'll team up with a UPS package delivery driver ...",
+     "descriptionTeaser_keyword": "Ride Along with a Driver as a Seasonal Driver Helper. Looking for a physically active seasonal opportunity in your community? As a Driver Helper, you'll team up with a UPS package delivery driver to h...",
+     "descriptionTeaser_ats": "Ride Along with a Driver as a Seasonal Driver Helper Looking for a physically active seasonal opportunity in your community? As a Driver Helper, you'll team up with a UPS package delivery driver to he"
+    },
+    "externalApply": true,
+    "cityState": "Sterling, Virginia",
+    "country": "United States of America",
+    "visibilityType": "External",
+    "longitude": "-77.4286",
+    "jobId": "c5ea898d-b22a-40d2-b6c7-0369b889d635",
+    "locale": "en_US",
+    "title": "Driver Helper",
+    "jobSeqNo": "UPBUPSGLOBALC5EA898DB22A40D2B6C70369B889D635EXTERNALENUS",
+    "postedDate": "2026-11-04T20:42:15.000+0000",
+    "dateCreated": "2025-10-16T20:48:17.490+0000",
+    "cityStateCountry": "Sterling, Virginia, United States of America",
+    "employmentType": "Temporary",
+    "jobVisibility": [
+     "external",
+     "internal"
+    ],
+    "location": "Sterling, VA, 20164, US",
+    "category": "Operations",
+    "multi_category": [
+     "Operations"
+    ],
+    "bonus": "",
+    "isMultiLocation": true,
+    "multi_location_array": [
+     {
+      "latlong": {
+       "lon": -77.4286,
+       "lat": 39.00622
+      },
+      "location": "Sterling, VA, 20164, US"
+     }
+    ],
+    "isMultiCategory": false,
+    "multi_category_array": [
+     {
+      "category": "Operations"
+     }
+    ],
+    "badge": ""
+   }
+  ]
+ },
+ "scanned": 2784,
+ "kept": 1,
+ "kept_rows": [
+  {
+   "job_id": "UPBUPSGLOBALR26031872EXTERNALENUS",
+   "req_id": "R26031872",
+   "title": "AI Manager, Product Management (Flex)",
+   "location": "ALPHARETTA, Georgia, United States of America",
+   "location_detail": "12380 MORRIS ROAD, ALPHARETTA, GA 30005, United States of America; 1400 N. HURSTBOURNE PARKWAY, LOUISVILLE, KY 40223, United States of America; 2311 York Road, Timonium, Baltimore, MD 21093, United States of America; 340 MACARTHUR BLVD, MAHWAH, NJ 07430, United States of America",
+   "department": "Information Technology",
+   "published_at": "2026-11-03T00:00:00.000+0000",
+   "updated_at": null,
+   "url": "https://www.jobs-ups.com/us/en/job/UPBUPSGLOBALR26031872EXTERNALENUS/AI-Manager-Product-Management-Flex",
+   "salary": null,
+   "_meta_text": "type: Full time workplace: ",
+   "_content_head": " Before you apply to a job, select your language preference from the options available at the top right of this page. \n \n \n Explore your next opportunity at a Fortune Global 500 organization. Envision innovative possibilities, experience our rewarding culture, and work with talented teams that help you become better every day. We know what it takes to lead UPS into tomorrow—people with a unique co"
+  }
+ ]
+}
