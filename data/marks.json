@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-11T00:32:57.591Z",
+  "updated_at": "2026-11-11T00:40:40.046Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -518,8 +518,8 @@
       "company": "ServiceNow"
     },
     "smartrecruiters:ServiceNow:744000156426199": {
-      "status": "archived",
-      "at": "2026-11-10T19:29:49.081Z",
+      "status": "open",
+      "at": "2026-11-11T00:40:38.533Z",
       "title": "Principal  Product Success Manager",
       "company": "ServiceNow"
     },
