@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T00:05:55+00:00",
+  "generated_at": "2026-11-11T00:56:55+00:00",
   "criteria": {
     "title_keywords": [
       "product"
@@ -533,6 +533,17 @@
       "error": null,
       "total_jobs": 2784,
       "matched": 1
+    },
+    {
+      "name": "Onfleet",
+      "ats": "unknown",
+      "board": "onfleet",
+      "url": "https://onfleet.com/careers",
+      "fetched_at": "2026-11-11T00:56:55+00:00",
+      "status": "ok",
+      "error": null,
+      "total_jobs": 0,
+      "matched": 0
     }
   ],
   "jobs": [
