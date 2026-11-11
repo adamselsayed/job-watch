@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-11T20:21:28.024Z",
+  "updated_at": "2026-11-11T20:50:06.194Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2004,6 +2004,12 @@
       "at": "2026-11-11T20:21:26.512Z",
       "title": "VP, Product, Growth Experimentation",
       "company": "Life360"
+    },
+    "smartrecruiters:Carecom1:3743990016767541": {
+      "status": "archived",
+      "at": "2026-11-11T20:50:04.679Z",
+      "title": "Head of Product & Technology Business Operations",
+      "company": "Care.com"
     }
   },
   "groups": {
