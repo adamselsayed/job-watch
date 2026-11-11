@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T23:53:22.290Z",
+  "updated_at": "2026-11-11T00:04:25.114Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1926,6 +1926,12 @@
       "at": "2026-11-10T23:51:58.050Z",
       "title": "Senior Product Manager, Mobile Apps – Vehicle Productivity and Electrification Experiences",
       "company": "Ford"
+    },
+    "lever:field-ai:8a953c26-d093-4fa2-88ea-9a5e810b2ef3": {
+      "status": "applied",
+      "at": "2026-11-11T00:04:23.608Z",
+      "title": "Senior Product Manager, Core Platform (Customer Portal & Data Delivery)",
+      "company": "FieldAI"
     }
   },
   "groups": {
