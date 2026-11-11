@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-11T21:46:32.224Z",
+  "updated_at": "2026-11-11T23:00:59.718Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2033,7 +2033,8 @@
       "FieldAI",
       "Cisco",
       "Ford",
-      "BD"
+      "BD",
+      "AutoNation"
     ],
     "tertiary": [
       "Virgin Galactic",
@@ -2072,7 +2073,6 @@
       "Curri",
       "Scout Motors",
       "Toast",
-      "AutoNation",
       "Rivian & VW Group Technologies",
       "Samsara",
       "Komodo Health",
@@ -2083,6 +2083,6 @@
       "Honor"
     ],
     "collapsed": [],
-    "at": "2026-11-11T21:46:30.718Z"
+    "at": "2026-11-11T23:00:58.206Z"
   }
 }
