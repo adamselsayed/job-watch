@@ -277,3 +277,8 @@
   ats: phenom
   board: www.jobs-ups.com/us/en
   url: https://www.jobs-ups.com/us/en/search-results
+
+- name: Onfleet
+  ats: unknown
+  board: onfleet
+  url: https://onfleet.com/careers
