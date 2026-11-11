@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-11T19:20:49.851Z",
+  "updated_at": "2026-11-11T20:21:28.024Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1998,6 +1998,12 @@
       "at": "2026-11-11T19:20:48.342Z",
       "title": "Principal  Product Success Manager",
       "company": "ServiceNow"
+    },
+    "greenhouse:life360:8937031002": {
+      "status": "archived",
+      "at": "2026-11-11T20:21:26.512Z",
+      "title": "VP, Product, Growth Experimentation",
+      "company": "Life360"
     }
   },
   "groups": {
