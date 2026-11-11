@@ -146,6 +146,11 @@
 "first_seen": "2026-11-02",
 "posted": "2026-10-22"
 },
+"greenhouse:doordashusa:8360552": {
+"company": "DoorDash",
+"first_seen": "2026-11-11",
+"posted": "2026-11-10"
+},
 "greenhouse:fleetio:5241221007": {
 "company": "Fleetio",
 "first_seen": "2026-11-07",
@@ -240,6 +245,11 @@
 "company": "Life360",
 "first_seen": "2026-10-30",
 "posted": "2026-10-16"
+},
+"greenhouse:life360:8937031002": {
+"company": "Life360",
+"first_seen": "2026-11-11",
+"posted": "2026-11-10"
 },
 "greenhouse:nextdoor:8142001": {
 "company": "Nextdoor",
@@ -971,6 +981,11 @@
 "first_seen": "2026-11-09",
 "posted": "2026-10-29"
 },
+"phenom:careers.cisco.com/global/en:CISCISGLOBAL2029791EXTERNALENGLOBAL": {
+"company": "Cisco",
+"first_seen": "2026-11-11",
+"posted": "2026-11-10"
+},
 "phenom:careers.cisco.com/global/en:CISCISGLOBAL2030652EXTERNALENGLOBAL": {
 "company": "Cisco",
 "first_seen": "2026-11-09",
@@ -1020,6 +1035,11 @@
 "company": "Care.com",
 "first_seen": "2026-11-01",
 "posted": "2026-10-08"
+},
+"smartrecruiters:Carecom1:3743990016767541": {
+"company": "Care.com",
+"first_seen": "2026-11-11",
+"posted": "2026-11-10"
 },
 "smartrecruiters:Experian:744000149963169": {
 "company": "Experian",
@@ -1436,6 +1456,26 @@
 "first_seen": "2026-11-10",
 "posted": "2026-11-09"
 },
+"smartrecruiters:ServiceNow:744000160948209": {
+"company": "ServiceNow",
+"first_seen": "2026-11-11",
+"posted": "2026-11-10"
+},
+"smartrecruiters:ServiceNow:744000160973139": {
+"company": "ServiceNow",
+"first_seen": "2026-11-11",
+"posted": "2026-11-10"
+},
+"smartrecruiters:ServiceNow:744000160976854": {
+"company": "ServiceNow",
+"first_seen": "2026-11-11",
+"posted": "2026-11-10"
+},
+"smartrecruiters:ServiceNow:744000160977689": {
+"company": "ServiceNow",
+"first_seen": "2026-11-11",
+"posted": "2026-11-10"
+},
 "talentbrew:jobs.bd.com/en:100012215696": {
 "company": "BD",
 "first_seen": "2026-11-11",
@@ -1676,6 +1716,31 @@
 "first_seen": "2026-11-08",
 "posted": "2026-11-06"
 },
+"talentbrew:jobs.intuit.com:103117897440": {
+"company": "Intuit",
+"first_seen": "2026-11-11",
+"posted": "2026-11-10"
+},
+"talentbrew:jobs.intuit.com:103124203376": {
+"company": "Intuit",
+"first_seen": "2026-11-11",
+"posted": "2026-10-15"
+},
+"talentbrew:jobs.intuit.com:103124203408": {
+"company": "Intuit",
+"first_seen": "2026-11-11",
+"posted": "2026-11-10"
+},
+"talentbrew:jobs.intuit.com:103124203456": {
+"company": "Intuit",
+"first_seen": "2026-11-11",
+"posted": "2026-11-10"
+},
+"talentbrew:jobs.intuit.com:103124203472": {
+"company": "Intuit",
+"first_seen": "2026-11-11",
+"posted": "2026-11-10"
+},
 "talentbrew:jobs.intuit.com:92055106736": {
 "company": "Intuit",
 "first_seen": "2026-11-08",
@@ -1811,6 +1876,11 @@
 "first_seen": "2026-11-05",
 "posted": "2026-10-28"
 },
+"talentbrew:www.careers.ford.com/en:101747571904": {
+"company": "Ford",
+"first_seen": "2026-11-11",
+"posted": "2026-11-10"
+},
 "talentbrew:www.careers.ford.com/en:101767553744": {
 "company": "Ford",
 "first_seen": "2026-11-05",
@@ -1915,6 +1985,16 @@
 "company": "LawnStarter",
 "first_seen": "2026-11-09",
 "posted": "2026-10-27"
+},
+"workable:lawnstarter:616D4AFE7B": {
+"company": "LawnStarter",
+"first_seen": "2026-11-11",
+"posted": "2026-11-10"
+},
+"workable:lawnstarter:7B1DB704B7": {
+"company": "LawnStarter",
+"first_seen": "2026-11-11",
+"posted": "2026-11-10"
 },
 "workable:lawnstarter:94D7C0414D": {
 "company": "LawnStarter",
@@ -2390,7 +2470,12 @@
 "company": "NVIDIA",
 "first_seen": "2026-11-10",
 "posted": "2026-11-09"
+},
+"workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2029905": {
+"company": "NVIDIA",
+"first_seen": "2026-11-11",
+"posted": "2026-11-11"
 }
 },
-"updated_at": "2026-11-11T06:47:55+00:00"
+"updated_at": "2026-11-11T14:11:19+00:00"
 }
