@@ -287,3 +287,8 @@
   ats: talentbrew
   board: jobs.bd.com/en
   url: https://jobs.bd.com/en/search-jobs
+
+- name: Honor
+  ats: unknown
+  board: honor
+  url: https://www.honorcare.com/honor-careers/#joblist
