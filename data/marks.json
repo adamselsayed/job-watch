@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-11T06:23:20.744Z",
+  "updated_at": "2026-11-11T19:19:08.607Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1986,6 +1986,12 @@
       "at": "2026-11-11T06:23:18.704Z",
       "title": "Associate Director, R&D - New Product Development",
       "company": "BD"
+    },
+    "smartrecruiters:ServiceNow:744000160973139": {
+      "status": "archived",
+      "at": "2026-11-11T19:19:07.097Z",
+      "title": "Principal  Product Success Manager",
+      "company": "ServiceNow"
     }
   },
   "groups": {
