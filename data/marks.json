@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-11T00:43:10.859Z",
+  "updated_at": "2026-11-11T00:49:34.910Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1962,7 +1962,6 @@
     ],
     "out": [
       "Serve Robotics",
-      "Curri",
       "LawnStarter",
       "Waabi",
       "UPS",
@@ -1984,6 +1983,7 @@
     "general": [
       "NVIDIA",
       "Fleetio",
+      "Curri",
       "Scout Motors",
       "Toast",
       "AutoNation",
@@ -1995,6 +1995,6 @@
       "Intuit"
     ],
     "collapsed": [],
-    "at": "2026-11-11T00:32:56.081Z"
+    "at": "2026-11-11T00:49:33.401Z"
   }
 }
