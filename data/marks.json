@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-11T00:42:42.192Z",
+  "updated_at": "2026-11-11T00:43:10.859Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -1676,8 +1676,8 @@
       "company": "ServiceNow"
     },
     "smartrecruiters:ServiceNow:744000160740103": {
-      "status": "open",
-      "at": "2026-11-11T00:42:40.679Z",
+      "status": "archived",
+      "at": "2026-11-11T00:43:09.346Z",
       "title": "Staff Inbound Product Manager - ServiceNow University",
       "company": "ServiceNow"
     },
