@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-11T20:50:06.194Z",
+  "updated_at": "2026-11-11T20:50:26.309Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2009,6 +2009,12 @@
       "status": "archived",
       "at": "2026-11-11T20:50:04.679Z",
       "title": "Head of Product & Technology Business Operations",
+      "company": "Care.com"
+    },
+    "smartrecruiters:Carecom1:3743990015994966": {
+      "status": "archived",
+      "at": "2026-11-11T20:50:24.796Z",
+      "title": "Senior Product Manager - CareBenefits ",
       "company": "Care.com"
     }
   },
