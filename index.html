@@ -517,7 +517,7 @@
   const REPO = (() => { const m = location.hostname.match(/^([^.]+)\.github\.io$/); const seg = location.pathname.split('/').filter(Boolean)[0]; return m && seg ? `${m[1]}/${seg}` : 'adamselsayed/job-watch'; })();
   const MARKS_PATH = 'data/marks.json';
   const TOKEN_KEY = 'jobwatch.token';
-  let token = null, marksSha = null, syncTimer = null, syncing = false;
+  let token = null, marksSha = null, syncTimer = null, syncing = false, syncPending = false;
   try { token = localStorage.getItem(TOKEN_KEY); } catch (e) {}
   const api = (path, opts = {}) => fetch(`https://api.github.com/repos/${REPO}/${path}`, { ...opts, headers: { Accept: 'application/vnd.github+json', Authorization: `Bearer ${token}`, 'X-GitHub-Api-Version': '2022-11-28', ...(opts.headers || {}) } });
   const b64 = str => btoa(unescape(encodeURIComponent(str)));
@@ -558,8 +558,9 @@
     if (localNewer) scheduleSync(0);
   }
   async function pushMarks(retry = true) {
-    if (!token || syncing) return;
-    syncing = true; syncStatus('', 'Syncing…');
+    if (!token) return;
+    if (syncing) { syncPending = true; return; }   // a save is in flight: send again as soon as it finishes
+    syncing = true; syncPending = false; syncStatus('', 'Syncing…');
     try {
       const body = { message: `Update applied/archive marks (${new Date().toISOString().slice(0, 16).replace('T', ' ')} UTC)`, content: b64(JSON.stringify({ updated_at: new Date().toISOString(), marks, groups }, null, 2) + '\n'), branch: 'main' };
       if (marksSha) body.sha = marksSha;
@@ -570,12 +571,22 @@
       if (r.status === 401 || r.status === 403) throw new Error('token rejected (check it has Contents: read & write on this repo)');
       if (!r.ok) throw new Error(`GitHub ${r.status}`);
       marksSha = (await r.json()).content.sha;
-      syncStatus('on', 'Synced ✓');
+      syncStatus(syncPending ? '' : 'on', syncPending ? 'Syncing…' : 'Synced ✓');
     } catch (e) {
       syncStatus('err', 'Sync error'); toast(`Sync failed: ${e.message}. Your marks are still saved in this browser.`);
-    } finally { syncing = false; }
+    } finally {
+      syncing = false;
+      if (syncPending) { syncPending = false; scheduleSync(0); }   // changes made while the last save was uploading
+    }
   }
-  function scheduleSync(delay = 1500) { if (!token) return; clearTimeout(syncTimer); syncTimer = setTimeout(pushMarks, delay); }
+  // Another device may have filed roles since this page loaded: re-pull when the tab comes back into view,
+  // and push anything unsent when it is hidden.
+  document.addEventListener('visibilitychange', () => {
+    if (!token) return;
+    if (document.visibilityState === 'visible') pullMarks().catch(() => {});
+    else if (syncTimer || syncPending) { clearTimeout(syncTimer); pushMarks(); }
+  });
+  function scheduleSync(delay = 1500) { if (!token) return; clearTimeout(syncTimer); syncTimer = setTimeout(() => { syncTimer = null; pushMarks(); }, delay); }
 
   function wireSync() {
   if (!$('#sync').classList.contains('on')) syncStatus('', 'Sync: off');
