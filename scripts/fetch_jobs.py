@@ -1255,7 +1255,10 @@ def fetch_avature(company):
             opts = re.findall(r'<option[^>]*value="([^"]*)"[^>]*>([^<]*)<', m.group(2))
             lab = re.search(r'<label[^>]*for="[^"]*"[^>]*>([^<]*)<', h[max(0, m.start() - 600): m.start()])
             sel[m.group(1)] = {"label": lab.group(1).strip() if lab else "", "n": len(opts),
-                               "us": [o for o in opts if "United States" in o[1] or o[1].strip() in ("USA", "US")][:3], "sample": opts[:4]}
+                               "us": [o for o in opts if "United States" in o[1] or o[1].strip() in ("USA", "US")][:3], "sample": opts[:4],
+                               "raw": re.sub(r"\s+", " ", m.group(0))[:600]}
+        pv["country_ctx"] = re.sub(r"\s+", " ", h[h.find('42386'): h.find('42386') + 3000]) if '42386' in h else ""
+        pv["json_us"] = [re.sub(r"\s+", " ", h[max(0, x.start() - 300): x.start() + 100]) for x in re.finditer(r'United States', h)][:4]
         pv["selects"] = sel
         company["_paging"] = pv
     while pages < 200:
