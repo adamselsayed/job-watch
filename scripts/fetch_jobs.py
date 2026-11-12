@@ -1250,7 +1250,13 @@ def fetch_avature(company):
         i = h.find("United States")
         pv["us_ctx"] = [h[max(0, m.start() - 700): m.start() + 200] for m in re.finditer(r"United States", h)][:3]
         pv["filter_inputs"] = sorted(set(re.findall(r'<input[^>]+name="([^"]+)"[^>]*>', h)))[:40]
-        pv["selects"] = re.findall(r'<select[^>]+name="([^"]+)"', h)[:20]
+        sel = {}
+        for m in re.finditer(r'<select[^>]+name="([^"]+)"[^>]*>(.*?)</select>', h, re.S):
+            opts = re.findall(r'<option[^>]*value="([^"]*)"[^>]*>([^<]*)<', m.group(2))
+            lab = re.search(r'<label[^>]*for="[^"]*"[^>]*>([^<]*)<', h[max(0, m.start() - 600): m.start()])
+            sel[m.group(1)] = {"label": lab.group(1).strip() if lab else "", "n": len(opts),
+                               "us": [o for o in opts if "United States" in o[1] or o[1].strip() in ("USA", "US")][:3], "sample": opts[:4]}
+        pv["selects"] = sel
         company["_paging"] = pv
     while pages < 200:
         h = get(f"{root}/SearchJobs/?{urllib.parse.urlencode({'search': company.get('keyword') or 'product', 'jobOffset': offset})}")
