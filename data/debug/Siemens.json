@@ -1,0 +1,24 @@
+{
+ "scripts": [
+  "/portal/144/common-dependencies/vendor/templatesfeatures/externalcookies/assets/core-externalcookies.js?v=1793801627",
+  "/ASSET/portal/jquery/jquerycore/3.7.1/jquery.min.js?version=10.86.119-stable",
+  "/ASSET/portal/jquery/UI/1.13.2/jquery-ui.min.js?version=10.86.119-stable",
+  "/ASSET/portal/pjquery/pjQueryDeclaration.js?version=10.86.119-stable",
+  "/portalpacks/web/js/head/head.BwpZF1pZ.iife.js",
+  "/portalpacks/web/js/body.BQF-M2tW.js",
+  "https://w3.siemens.com/ote/ote_config.js",
+  "https://w3.siemens.com/ote/global/ote.js",
+  "https://assets.adobedtm.com/5dfc7d97c6fb/febff9103b9b/launch-a45a09a9ed18.min.js",
+  "https://templates-static-assets.avacdn.net/jsLibrary/24.4/core.min.js",
+  "/portal/144/js/specifics.js?v=1793801627",
+  "/portalpacks/web/js/session-popup.ClKdfUOG.js",
+  "/ASSET/wizard/portal/jquery/plugin/select2/select2.full.min.js?version=10.86.119-stable",
+  "/ASSET/wizard/portal/jquery/plugin/select2/select2_locale_en.js?version=10.86.119-stable",
+  "/portalpacks/web/js/wizard-legacy.DclTsb0w.js"
+ ],
+ "iframes": [],
+ "ats_mentions": [],
+ "data_attrs": [],
+ "fetch_calls": [],
+ "head": "\n\n        \n    \n    \n    \n    \n    \n    \n    \n                \n                                        \n                \n    \n    \n                \n                \n            \n                        \n        \n        \n                    \n        \n    <!DOCTYPE html>\n\n    <html lang=\"en-US\" xml:lang=\"en-US\" xmlns=\"http://www.w3.org/1999/xhtml\" menu-type=\"visible\" menu-toggleSide=\"right\" menu-panelFrom=\"right\" menu-panelEffect=\"over\">\n        <head><meta name=\"csp-nonce-style\" content=\"c9396b5073c815faa0db85c6d17160005bd938415a532bcbea4852f20bc0c15b\"/><meta name=\"csp-nonce-script\" content=\"c9396b5073c815faa0db85c6d17160005bd938415a532bcbea4852f20bc0c15b\"/><meta name=\"avature.wizard.registrars\" content=\"[{&quot;wizardId&quot;:987,&quot;settings&quot;:{&quot;isInternationalizationEnabled&q"
+}

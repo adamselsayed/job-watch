@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T02:18:35+00:00",
+  "generated_at": "2026-11-12T07:28:09+00:00",
   "criteria": {
     "title_keywords": [
       "product"
@@ -584,6 +584,17 @@
       "status": "ok",
       "error": null,
       "total_jobs": 26,
+      "matched": 0
+    },
+    {
+      "name": "Siemens",
+      "ats": "unknown",
+      "board": "jobs.siemens.com/en_US/externaljobs",
+      "url": "https://jobs.siemens.com/en_US/externaljobs",
+      "fetched_at": "2026-11-12T07:28:09+00:00",
+      "status": "ok",
+      "error": null,
+      "total_jobs": 0,
       "matched": 0
     }
   ],
