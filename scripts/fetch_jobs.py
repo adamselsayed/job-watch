@@ -1221,9 +1221,33 @@ def fetch_workable(company):
     return out
 
 
+def fetch_avature(company):
+    """Avature career sites (e.g. https://jobs.siemens.com/en_US/externaljobs).
+    board = "<host>/<locale>/<portal>".  The search page is server-rendered HTML; we page through a "product" keyword search."""
+    root = "https://" + company["board"].strip("/")
+    hdr = {"User-Agent": _BROWSER_UA, "Accept": "text/html,application/xhtml+xml"}
+    probe = {}
+    q = urllib.parse.urlencode({"search": "product", "jobRecordsPerPage": 50, "jobOffset": 0})
+    html = wd_get(f"{root}/SearchJobs/?{q}", as_json=False)
+    probe["search_len"] = len(html)
+    probe["links"] = sorted(set(re.findall(r'href="([^"]*JobDetail[^"]*)"', html)))[:8]
+    i = html.find("JobDetail")
+    probe["around_first"] = html[max(0, i - 2500): i + 2500] if i >= 0 else html[:3000]
+    probe["counts"] = re.findall(r'.{60}(?:results|jobs found|of \d+).{60}', html)[:5]
+    if probe["links"]:
+        u = probe["links"][0]
+        u = u if u.startswith("http") else "https://" + company["board"].split("/")[0] + u
+        d = wd_get(u, as_json=False)
+        probe["detail_ld"] = re.findall(r'<script type="application/ld\+json">(.*?)</script>', d, re.S)[:2]
+        j = d.find("article")
+        probe["detail_text"] = strip_html(d)[:3000]
+    debug_dump(company, {"probe": probe})
+    return []
+
+
 ADAPTERS = {"greenhouse": fetch_greenhouse, "lever": fetch_lever, "ashby": fetch_ashby,
             "smartrecruiters": fetch_smartrecruiters, "workday": fetch_workday, "phenom": fetch_phenom,
-            "jobvite": fetch_jobvite, "rippling": fetch_rippling, "bamboohr": fetch_bamboohr, "jibe": fetch_jibe, "oracle": fetch_oracle, "talentbrew": fetch_talentbrew, "paradox": fetch_paradox, "globallogic": fetch_globallogic, "workable": fetch_workable, "unknown": fetch_unknown, "manual": lambda company: []}
+            "jobvite": fetch_jobvite, "rippling": fetch_rippling, "bamboohr": fetch_bamboohr, "jibe": fetch_jibe, "oracle": fetch_oracle, "talentbrew": fetch_talentbrew, "paradox": fetch_paradox, "globallogic": fetch_globallogic, "workable": fetch_workable, "avature": fetch_avature, "unknown": fetch_unknown, "manual": lambda company: []}
 
 
 # --------------------------------------------------------------- filtering --
