@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T16:25:54.058Z",
+  "updated_at": "2026-11-12T16:25:57.467Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2045,6 +2045,18 @@
       "status": "archived",
       "at": "2026-11-12T16:25:52.540Z",
       "title": "Product Manager – Fire/Life Safety Systems",
+      "company": "Siemens"
+    },
+    "avature:jobs.siemens.com/en_US/externaljobs:525490": {
+      "status": "archived",
+      "at": "2026-11-12T16:25:54.859Z",
+      "title": "Senior Technical Product Manager – Deployment & Platform Experience",
+      "company": "Siemens"
+    },
+    "avature:jobs.siemens.com/en_US/externaljobs:519745": {
+      "status": "archived",
+      "at": "2026-11-12T16:25:55.951Z",
+      "title": "Software Developer for NLP Solutions - Product Localization",
       "company": "Siemens"
     }
   },
