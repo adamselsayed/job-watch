@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T07:54:27+00:00",
+  "generated_at": "2026-11-12T08:17:08+00:00",
   "criteria": {
     "title_keywords": [
       "product"
@@ -608,6 +608,17 @@
       "error": null,
       "total_jobs": 890,
       "matched": 12
+    },
+    {
+      "name": "Siemens Software",
+      "ats": "unknown",
+      "board": "jobs.sw.siemens.com",
+      "url": "https://jobs.sw.siemens.com/jobs/",
+      "fetched_at": "2026-11-12T08:17:08+00:00",
+      "status": "ok",
+      "error": null,
+      "total_jobs": 0,
+      "matched": 0
     }
   ],
   "jobs": [
