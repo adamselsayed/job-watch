@@ -1314,29 +1314,9 @@ def fetch_avature(company):
     return rows
 
 
-def fetch_probe(company):
-    """TEMP: list US product-titled jobs on the DirectEmployers site behind jobs.sw.siemens.com."""
-    found, page, total = {}, 1, None
-    while page <= 120:
-        u = f"https://prod-search-api.jobsyn.org/api/v1/solr/search?q=product&location=United+States&page={page}"
-        req = urllib.request.Request(u, headers={"User-Agent": _BROWSER_UA, "Accept": "application/json", "x-origin": company["board"],
-                                                 "Origin": f"https://{company['board']}", "Referer": f"https://{company['board']}/jobs/"})
-        with _WD_OPENER.open(req, timeout=60) as r:
-            d = json.loads(r.read().decode("utf-8", "replace"))
-        total = d.get("pagination", {}).get("total")
-        for j in d.get("jobs") or []:
-            if j.get("country_short_exact") == "USA" and title_matches(j.get("title_exact") or ""):
-                found.setdefault(str(j.get("reqid")), {"title": j.get("title_exact"), "locs": []})["locs"].append(j.get("location_exact"))
-        if not d.get("pagination", {}).get("has_more_pages"):
-            break
-        page += 1
-    debug_dump(company, {"total": total, "pages": page, "found": found})
-    return []
-
-
 ADAPTERS = {"greenhouse": fetch_greenhouse, "lever": fetch_lever, "ashby": fetch_ashby,
             "smartrecruiters": fetch_smartrecruiters, "workday": fetch_workday, "phenom": fetch_phenom,
-            "jobvite": fetch_jobvite, "rippling": fetch_rippling, "bamboohr": fetch_bamboohr, "jibe": fetch_jibe, "oracle": fetch_oracle, "talentbrew": fetch_talentbrew, "paradox": fetch_paradox, "globallogic": fetch_globallogic, "workable": fetch_workable, "probe": fetch_probe, "avature": fetch_avature, "unknown": fetch_unknown, "manual": lambda company: []}
+            "jobvite": fetch_jobvite, "rippling": fetch_rippling, "bamboohr": fetch_bamboohr, "jibe": fetch_jibe, "oracle": fetch_oracle, "talentbrew": fetch_talentbrew, "paradox": fetch_paradox, "globallogic": fetch_globallogic, "workable": fetch_workable, "avature": fetch_avature, "unknown": fetch_unknown, "manual": lambda company: []}
 
 
 # --------------------------------------------------------------- filtering --
