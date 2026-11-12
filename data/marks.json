@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T16:25:57.467Z",
+  "updated_at": "2026-11-12T16:26:23.215Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2057,6 +2057,12 @@
       "status": "archived",
       "at": "2026-11-12T16:25:55.951Z",
       "title": "Software Developer for NLP Solutions - Product Localization",
+      "company": "Siemens"
+    },
+    "avature:jobs.siemens.com/en_US/externaljobs:526869": {
+      "status": "archived",
+      "at": "2026-11-12T16:26:21.699Z",
+      "title": "Principal Product Manager - RTL-to-GDS Digital Implementation",
       "company": "Siemens"
     }
   },
