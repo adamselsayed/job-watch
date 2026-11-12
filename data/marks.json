@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T06:14:17.557Z",
+  "updated_at": "2026-11-12T16:25:07.400Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2028,6 +2028,12 @@
       "at": "2026-11-12T06:14:16.046Z",
       "title": "Senior Technical Product Manager, Robotics AI Strategy & Operations",
       "company": "General Motors"
+    },
+    "avature:jobs.siemens.com/en_US/externaljobs:527296": {
+      "status": "archived",
+      "at": "2026-11-12T16:25:05.881Z",
+      "title": "Procurement Project Manager, Electrical Products",
+      "company": "Siemens"
     }
   },
   "groups": {
