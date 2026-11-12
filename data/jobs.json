@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T07:37:40+00:00",
+  "generated_at": "2026-11-12T07:53:11+00:00",
   "criteria": {
     "title_keywords": [
       "product"
@@ -597,6 +597,17 @@
       "error": null,
       "total_jobs": 466,
       "matched": 30
+    },
+    {
+      "name": "Siemens Healthineers",
+      "ats": "phenom",
+      "board": "careers.siemens-healthineers.com/global/en",
+      "url": "https://careers.siemens-healthineers.com/global/en/search-results",
+      "fetched_at": "2026-11-12T07:53:11+00:00",
+      "status": "ok",
+      "error": null,
+      "total_jobs": 890,
+      "matched": 13
     }
   ],
   "jobs": [
@@ -1934,6 +1945,32 @@
       "closed_at": null
     },
     {
+      "job_id": "SHDSHWUSR31982EXTERNALENGLOBAL",
+      "req_id": "R-31982",
+      "title": "Product Sales Executive, MR - Piedmont region",
+      "location": "Charlotte, North Carolina, United States of America",
+      "location_detail": "Charlotte, North Carolina, United States of America",
+      "department": "Sales",
+      "published_at": "2026-11-10T00:00:00.000+0000",
+      "updated_at": null,
+      "url": "https://careers.siemens-healthineers.com/global/en/job/SHDSHWUSR31982EXTERNALENGLOBAL/Product-Sales-Executive-MR-Piedmont-region",
+      "salary": {
+        "min": 67200,
+        "max": 92400,
+        "currency": "USD",
+        "source": "description"
+      },
+      "us": true,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Siemens Healthineers",
+      "key": "phenom:careers.siemens-healthineers.com/global/en:SHDSHWUSR31982EXTERNALENGLOBAL",
+      "first_seen": "2026-11-12T07:53:11+00:00",
+      "last_seen": "2026-11-12T07:53:11+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
       "job_id": "744000160746568",
       "req_id": "REF33457P",
       "title": "Vice President, Product Management",
@@ -2915,6 +2952,32 @@
       "key": "phenom:careers.cisco.com/global/en:CISCISGLOBAL2019900EXTERNALENGLOBAL",
       "first_seen": "2026-11-09T23:53:19+00:00",
       "last_seen": "2026-11-12T02:18:35+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "SHDSHWUSR31745EXTERNALENGLOBAL",
+      "req_id": "R-31745",
+      "title": "Senior Product Manager",
+      "location": "Alpharetta, Georgia, United States of America",
+      "location_detail": "Alpharetta, Georgia, United States of America; Fort Lauderdale, Florida, United States of America; Atlanta, Georgia, United States of America; Las Vegas, Nevada, United States of America; San Antonio, Texas, United States of America",
+      "department": "Product Management, Portfolio & Innovation",
+      "published_at": "2026-11-04T00:00:00.000+0000",
+      "updated_at": null,
+      "url": "https://careers.siemens-healthineers.com/global/en/job/SHDSHWUSR31745EXTERNALENGLOBAL/Senior-Product-Manager",
+      "salary": {
+        "min": 177780,
+        "max": 244442,
+        "currency": "USD",
+        "source": "description"
+      },
+      "us": true,
+      "remote": "remote",
+      "remote_confidence": "medium",
+      "company": "Siemens Healthineers",
+      "key": "phenom:careers.siemens-healthineers.com/global/en:SHDSHWUSR31745EXTERNALENGLOBAL",
+      "first_seen": "2026-11-12T07:53:11+00:00",
+      "last_seen": "2026-11-12T07:53:11+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4834,6 +4897,32 @@
       "closed_at": null
     },
     {
+      "job_id": "SHDSHWUSR31592EXTERNALENGLOBAL",
+      "req_id": "R-31592",
+      "title": "Product Sales Executive, Digital and Automation – Minnesota/Wisconsin",
+      "location": "Minneapolis, Minnesota, United States of America",
+      "location_detail": "Minneapolis, Minnesota, United States of America",
+      "department": "Sales",
+      "published_at": "2026-10-28T00:00:00.000+0000",
+      "updated_at": null,
+      "url": "https://careers.siemens-healthineers.com/global/en/job/SHDSHWUSR31592EXTERNALENGLOBAL/Product-Sales-Executive-Digital-and-Automation-Minnesota-Wisconsin",
+      "salary": {
+        "min": 67200,
+        "max": 92400,
+        "currency": "USD",
+        "source": "description"
+      },
+      "us": true,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Siemens Healthineers",
+      "key": "phenom:careers.siemens-healthineers.com/global/en:SHDSHWUSR31592EXTERNALENGLOBAL",
+      "first_seen": "2026-11-12T07:53:11+00:00",
+      "last_seen": "2026-11-12T07:53:11+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
       "job_id": "744000158162749",
       "req_id": "JB0076284",
       "title": "Director, Product Management - Security and Risk Partnerships",
@@ -5999,6 +6088,32 @@
       "closed_at": null
     },
     {
+      "job_id": "SHDSHWUSR31557EXTERNALENGLOBAL",
+      "req_id": "R-31557",
+      "title": "Product Sales Executive, Molecular Imaging, St. Louis Region",
+      "location": "Kansas City, Missouri, United States of America",
+      "location_detail": "Kansas City, Missouri, United States of America; Lexington, Kentucky, United States of America",
+      "department": "Sales",
+      "published_at": "2026-10-20T00:00:00.000+0000",
+      "updated_at": null,
+      "url": "https://careers.siemens-healthineers.com/global/en/job/SHDSHWUSR31557EXTERNALENGLOBAL/Product-Sales-Executive-Molecular-Imaging-St-Louis-Region",
+      "salary": {
+        "min": 67200,
+        "max": 92400,
+        "currency": "USD",
+        "source": "description"
+      },
+      "us": true,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Siemens Healthineers",
+      "key": "phenom:careers.siemens-healthineers.com/global/en:SHDSHWUSR31557EXTERNALENGLOBAL",
+      "first_seen": "2026-11-12T07:53:11+00:00",
+      "last_seen": "2026-11-12T07:53:11+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
       "job_id": "76070c78-1a0b-47d1-b9c4-4ec6a82846f9",
       "req_id": null,
       "title": "Senior Product Manager, Marketplace Supply ",
@@ -6171,6 +6286,32 @@
       "closed_at": null
     },
     {
+      "job_id": "SHDSHWUSR28999EXTERNALENGLOBAL",
+      "req_id": "R-28999",
+      "title": "Head of New Product Introduction Project Management Office-Palo Alto, CA",
+      "location": "Palo Alto, California, United States of America",
+      "location_detail": "Palo Alto, California, United States of America",
+      "department": "Project Management",
+      "published_at": "2026-10-19T00:00:00.000+0000",
+      "updated_at": null,
+      "url": "https://careers.siemens-healthineers.com/global/en/job/SHDSHWUSR28999EXTERNALENGLOBAL/Head-of-New-Product-Introduction-Project-Management-Office-Palo-Alto-CA",
+      "salary": {
+        "min": 192600,
+        "max": 264825,
+        "currency": "USD",
+        "source": "description"
+      },
+      "us": true,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Siemens Healthineers",
+      "key": "phenom:careers.siemens-healthineers.com/global/en:SHDSHWUSR28999EXTERNALENGLOBAL",
+      "first_seen": "2026-11-12T07:53:11+00:00",
+      "last_seen": "2026-11-12T07:53:11+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
       "job_id": "102119697696",
       "req_id": null,
       "title": "Staff Product Manager - QuickBooks Capital Marketplace",
@@ -6287,6 +6428,32 @@
       "key": "talentbrew:jobs.bd.com/en:102041057616",
       "first_seen": "2026-11-11T05:15:25+00:00",
       "last_seen": "2026-11-12T02:18:35+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "SHDSHWUSR31505EXTERNALENGLOBAL",
+      "req_id": "R-31505",
+      "title": "Director of Product Management, Endovascular Robotics",
+      "location": "Newton, Massachusetts, United States of America",
+      "location_detail": "Newton, Massachusetts, United States of America",
+      "department": "Product Management, Portfolio & Innovation",
+      "published_at": "2026-10-16T00:00:00.000+0000",
+      "updated_at": null,
+      "url": "https://careers.siemens-healthineers.com/global/en/job/SHDSHWUSR31505EXTERNALENGLOBAL/Director-of-Product-Management-Endovascular-Robotics",
+      "salary": {
+        "min": 190810,
+        "max": 262361,
+        "currency": "USD",
+        "source": "description"
+      },
+      "us": true,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Siemens Healthineers",
+      "key": "phenom:careers.siemens-healthineers.com/global/en:SHDSHWUSR31505EXTERNALENGLOBAL",
+      "first_seen": "2026-11-12T07:53:11+00:00",
+      "last_seen": "2026-11-12T07:53:11+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -6958,6 +7125,27 @@
       "closed_at": null
     },
     {
+      "job_id": "SHDSHWUSP100628EXTERNALENGLOBAL",
+      "req_id": "P-100628",
+      "title": "Senior UX Researcher for Healthcare/MedTech products (m/f/d) - Hybrid - Bratislava/Žilina",
+      "location": "Bratislava, Bratislava Region, Slovakia",
+      "location_detail": "Bratislava, Slovakia; Žilina, Slovakia",
+      "department": "Experience Design",
+      "published_at": "2026-10-07T00:00:00.000+0000",
+      "updated_at": null,
+      "url": "https://careers.siemens-healthineers.com/global/en/job/SHDSHWUSP100628EXTERNALENGLOBAL/Senior-UX-Researcher-for-Healthcare-MedTech-products-m-f-d-Hybrid-Bratislava-ilina",
+      "salary": null,
+      "us": null,
+      "remote": "hybrid",
+      "remote_confidence": "high",
+      "company": "Siemens Healthineers",
+      "key": "phenom:careers.siemens-healthineers.com/global/en:SHDSHWUSP100628EXTERNALENGLOBAL",
+      "first_seen": "2026-11-12T07:53:11+00:00",
+      "last_seen": "2026-11-12T07:53:11+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
       "job_id": "dbabd019-e0e7-46d1-a1d8-554f3fec2232",
       "req_id": null,
       "title": "VP of Product ",
@@ -7032,6 +7220,58 @@
       "key": "phenom:careers.cisco.com/global/en:CISCISGLOBAL2027076EXTERNALENGLOBAL",
       "first_seen": "2026-11-09T23:53:19+00:00",
       "last_seen": "2026-11-12T02:18:35+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "SHDSHWUSR31317EXTERNALENGLOBAL",
+      "req_id": "R-31317",
+      "title": "Field Product Manager - Eastern U.S. (Territory-Based Role)",
+      "location": "Tarrytown, New York, United States of America",
+      "location_detail": "Tarrytown, New York, United States of America; Washington, District of Columbia, United States of America; Newark, Delaware, United States of America; Orlando, Florida, United States of America; Atlanta, Georgia, United States of America; Walpole, Massachusetts, United States of America; Portsmouth, New Hampshire, United States of America; Princeton, New Jersey, United States of America; Malvern, Pennsylvania, United States of America; Pittsburgh, Pennsylvania, United States of America; Knoxville, Tennessee, United States of America",
+      "department": "Other",
+      "published_at": "2026-10-06T00:00:00.000+0000",
+      "updated_at": null,
+      "url": "https://careers.siemens-healthineers.com/global/en/job/SHDSHWUSR31317EXTERNALENGLOBAL/Field-Product-Manager-Eastern-U-S-Territory-Based-Role",
+      "salary": {
+        "min": 116000,
+        "max": 159500,
+        "currency": "USD",
+        "source": "description"
+      },
+      "us": true,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Siemens Healthineers",
+      "key": "phenom:careers.siemens-healthineers.com/global/en:SHDSHWUSR31317EXTERNALENGLOBAL",
+      "first_seen": "2026-11-12T07:53:11+00:00",
+      "last_seen": "2026-11-12T07:53:11+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "SHDSHWUSR31029EXTERNALENGLOBAL",
+      "req_id": "R-31029",
+      "title": "Product Compliance Specialist",
+      "location": "Palo Alto, California, United States of America",
+      "location_detail": "Palo Alto, California, United States of America",
+      "department": "Legal & Compliance",
+      "published_at": "2026-10-06T00:00:00.000+0000",
+      "updated_at": null,
+      "url": "https://careers.siemens-healthineers.com/global/en/job/SHDSHWUSR31029EXTERNALENGLOBAL/Product-Compliance-Specialist",
+      "salary": {
+        "min": 139180,
+        "max": 191378,
+        "currency": "USD",
+        "source": "description"
+      },
+      "us": true,
+      "remote": "hybrid",
+      "remote_confidence": "low",
+      "company": "Siemens Healthineers",
+      "key": "phenom:careers.siemens-healthineers.com/global/en:SHDSHWUSR31029EXTERNALENGLOBAL",
+      "first_seen": "2026-11-12T07:53:11+00:00",
+      "last_seen": "2026-11-12T07:53:11+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -8769,6 +9009,32 @@
       "closed_at": null
     },
     {
+      "job_id": "SHDSHWUSR30227EXTERNALENGLOBAL",
+      "req_id": "R-30227",
+      "title": "Product Sales Executive, Digital and Automation -New York State Region",
+      "location": "New York City, New York, United States of America",
+      "location_detail": "New York City, New York, United States of America",
+      "department": "Sales",
+      "published_at": "2026-09-09T00:00:00.000+0000",
+      "updated_at": null,
+      "url": "https://careers.siemens-healthineers.com/global/en/job/SHDSHWUSR30227EXTERNALENGLOBAL/Product-Sales-Executive-Digital-and-Automation-New-York-State-Region",
+      "salary": {
+        "min": 67200,
+        "max": 92400,
+        "currency": "USD",
+        "source": "description"
+      },
+      "us": true,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Siemens Healthineers",
+      "key": "phenom:careers.siemens-healthineers.com/global/en:SHDSHWUSR30227EXTERNALENGLOBAL",
+      "first_seen": "2026-11-12T07:53:11+00:00",
+      "last_seen": "2026-11-12T07:53:11+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
       "job_id": "100183029472",
       "req_id": null,
       "title": "Principal Product Manager, BI Platform",
@@ -9452,6 +9718,32 @@
       "closed_at": null
     },
     {
+      "job_id": "SHDSHWUSR29879EXTERNALENGLOBAL",
+      "req_id": "R-29879",
+      "title": "Solution architect for product ontology and digital twins",
+      "location": "Malvern, Pennsylvania, United States of America",
+      "location_detail": "Malvern, Pennsylvania, United States of America",
+      "department": "Information Technology",
+      "published_at": "2026-08-07T00:00:00.000+0000",
+      "updated_at": null,
+      "url": "https://careers.siemens-healthineers.com/global/en/job/SHDSHWUSR29879EXTERNALENGLOBAL/Solution-architect-for-product-ontology-and-digital-twins",
+      "salary": {
+        "min": 131910,
+        "max": 181379,
+        "currency": "USD",
+        "source": "description"
+      },
+      "us": true,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Siemens Healthineers",
+      "key": "phenom:careers.siemens-healthineers.com/global/en:SHDSHWUSR29879EXTERNALENGLOBAL",
+      "first_seen": "2026-11-12T07:53:11+00:00",
+      "last_seen": "2026-11-12T07:53:11+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
       "job_id": "8a953c26-d093-4fa2-88ea-9a5e810b2ef3",
       "req_id": null,
       "title": "Senior Product Manager, Core Platform (Customer Portal & Data Delivery)",
@@ -9677,6 +9969,32 @@
       "key": "greenhouse:ayahealthcare:8055580",
       "first_seen": "2026-11-01T05:42:36+00:00",
       "last_seen": "2026-11-11T14:04:16+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "SHDSHWUSR29554EXTERNALENGLOBAL",
+      "req_id": "R-29554",
+      "title": "Product Sales Executive, Angiography - Northern CA",
+      "location": "Berkeley, California, United States of America",
+      "location_detail": "Berkeley, California, United States of America; Culver City, California, United States of America; Mountain View, California, United States of America; Palo Alto, California, United States of America; San Jose, California, United States of America",
+      "department": "Sales",
+      "published_at": "2026-07-08T00:00:00.000+0000",
+      "updated_at": null,
+      "url": "https://careers.siemens-healthineers.com/global/en/job/SHDSHWUSR29554EXTERNALENGLOBAL/Product-Sales-Executive-Angiography-Northern-CA",
+      "salary": {
+        "min": 67200,
+        "max": 100800,
+        "currency": "USD",
+        "source": "description"
+      },
+      "us": true,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Siemens Healthineers",
+      "key": "phenom:careers.siemens-healthineers.com/global/en:SHDSHWUSR29554EXTERNALENGLOBAL",
+      "first_seen": "2026-11-12T07:53:11+00:00",
+      "last_seen": "2026-11-12T07:53:11+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -9984,6 +10302,32 @@
       "key": "talentbrew:jobs.intuit.com:96482379856",
       "first_seen": "2026-11-08T20:03:30+00:00",
       "last_seen": "2026-11-12T02:18:35+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "SHDSHWUSR28128EXTERNALENGLOBAL",
+      "req_id": "R-28128",
+      "title": "Product Sales Executive, SE Texas, X-Ray Products RF",
+      "location": "San Antonio, Texas, United States of America",
+      "location_detail": "San Antonio, Texas, United States of America",
+      "department": "Sales",
+      "published_at": "2026-04-28T00:00:00.000+0000",
+      "updated_at": null,
+      "url": "https://careers.siemens-healthineers.com/global/en/job/SHDSHWUSR28128EXTERNALENGLOBAL/Product-Sales-Executive-SE-Texas-X-Ray-Products-RF",
+      "salary": {
+        "min": 67200,
+        "max": 92400,
+        "currency": "USD",
+        "source": "description"
+      },
+      "us": true,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "Siemens Healthineers",
+      "key": "phenom:careers.siemens-healthineers.com/global/en:SHDSHWUSR28128EXTERNALENGLOBAL",
+      "first_seen": "2026-11-12T07:53:11+00:00",
+      "last_seen": "2026-11-12T07:53:11+00:00",
       "status": "open",
       "closed_at": null
     },
