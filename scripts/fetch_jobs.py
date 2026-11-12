@@ -1315,32 +1315,22 @@ def fetch_avature(company):
 
 
 def fetch_probe(company):
-    """TEMP: query DirectEmployers search API behind jobs.sw.siemens.com."""
-    out = {}
-    for path in ["/api/v1/solr/search?q=product&page=1&num_items=50", "/api/v1/solr/search?q=product+manager&location=United+States&page=1&num_items=50"]:
-        u = "https://prod-search-api.jobsyn.org" + path
-        try:
-            req = urllib.request.Request(u, headers={"User-Agent": _BROWSER_UA, "Accept": "application/json", "x-origin": company["board"],
-                                                     "Origin": f"https://{company['board']}", "Referer": f"https://{company['board']}/jobs/"})
-            with _WD_OPENER.open(req, timeout=60) as r:
-                code, txt = r.status, r.read().decode("utf-8", "replace")
-        except urllib.error.HTTPError as e:
-            code, txt = e.code, e.read().decode("utf-8", "replace")
-        except Exception as e:      # noqa: BLE001
-            code, txt = None, str(e)
-        info = {"code": code, "head": txt[:600]}
-        try:
-            d = json.loads(txt)
-            info["keys"] = list(d.keys())
-            jobs = d.get("jobs") or d.get("results") or []
-            info["total"] = d.get("pagination", {}) or d.get("total")
-            info["n"] = len(jobs)
-            info["sample_keys"] = list(jobs[0].keys()) if jobs else []
-            info["sample"] = [{k: j.get(k) for k in j if any(x in k for x in ("title", "location", "city", "country", "guid", "reqid", "apply", "url", "link", "company"))} for j in jobs[:6]]
-        except Exception as e:      # noqa: BLE001
-            info["parse_err"] = str(e)
-        out[path] = info
-    debug_dump(company, out)
+    """TEMP: list US product-titled jobs on the DirectEmployers site behind jobs.sw.siemens.com."""
+    found, page, total = {}, 1, None
+    while page <= 120:
+        u = f"https://prod-search-api.jobsyn.org/api/v1/solr/search?q=product&location=United+States&page={page}"
+        req = urllib.request.Request(u, headers={"User-Agent": _BROWSER_UA, "Accept": "application/json", "x-origin": company["board"],
+                                                 "Origin": f"https://{company['board']}", "Referer": f"https://{company['board']}/jobs/"})
+        with _WD_OPENER.open(req, timeout=60) as r:
+            d = json.loads(r.read().decode("utf-8", "replace"))
+        total = d.get("pagination", {}).get("total")
+        for j in d.get("jobs") or []:
+            if j.get("country_short_exact") == "USA" and title_matches(j.get("title_exact") or ""):
+                found.setdefault(str(j.get("reqid")), {"title": j.get("title_exact"), "locs": []})["locs"].append(j.get("location_exact"))
+        if not d.get("pagination", {}).get("has_more_pages"):
+            break
+        page += 1
+    debug_dump(company, {"total": total, "pages": page, "found": found})
     return []
 
 
