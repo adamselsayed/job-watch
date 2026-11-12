@@ -1222,26 +1222,24 @@ def fetch_workable(company):
 
 
 def fetch_avature(company):
-    """Avature career sites (e.g. https://jobs.siemens.com/en_US/externaljobs).
-    board = "<host>/<locale>/<portal>".  The search page is server-rendered HTML; we page through a "product" keyword search."""
+    """Avature career sites (e.g. https://jobs.siemens.com/en_US/externaljobs).  PROBE."""
     root = "https://" + company["board"].strip("/")
-    hdr = {"User-Agent": _BROWSER_UA, "Accept": "text/html,application/xhtml+xml"}
-    probe = {}
-    q = urllib.parse.urlencode({"search": "product", "jobRecordsPerPage": 50, "jobOffset": 0})
-    html = wd_get(f"{root}/SearchJobs/?{q}", as_json=False)
-    probe["search_len"] = len(html)
-    probe["links"] = sorted(set(re.findall(r'href="([^"]*JobDetail[^"]*)"', html)))[:8]
-    i = html.find("JobDetail")
-    probe["around_first"] = html[max(0, i - 2500): i + 2500] if i >= 0 else html[:3000]
-    probe["counts"] = re.findall(r'.{60}(?:results|jobs found|of \d+).{60}', html)[:5]
-    if probe["links"]:
-        u = probe["links"][0]
-        u = u if u.startswith("http") else "https://" + company["board"].split("/")[0] + u
-        d = wd_get(u, as_json=False)
-        probe["detail_ld"] = re.findall(r'<script type="application/ld\+json">(.*?)</script>', d, re.S)[:2]
-        j = d.find("article")
-        probe["detail_text"] = strip_html(d)[:3000]
-    debug_dump(company, {"probe": probe})
+    res = []
+    for u in [root, f"{root}/SearchJobs", f"{root}/SearchJobs/", f"{root}/SearchJobs/?search=product",
+              f"{root}/SearchJobs/?keyword=product", f"{root}/SearchJobs/feed/", f"https://{company['board'].split('/')[0]}/robots.txt"]:
+        try:
+            req = urllib.request.Request(u, headers=_WD_HEADERS)
+            with _WD_OPENER.open(req, timeout=40) as r:
+                code, txt = r.status, r.read().decode("utf-8", "replace")
+        except urllib.error.HTTPError as e:
+            code, txt = e.code, e.read().decode("utf-8", "replace")
+        except Exception as e:          # noqa: BLE001
+            code, txt = None, str(e)
+        i = txt.find("JobDetail")
+        res.append({"u": u, "code": code, "len": len(txt), "jobdetail_count": txt.count("JobDetail"),
+                    "links": sorted(set(re.findall(r'href="([^"]*JobDetail[^"]*)"', txt)))[:5],
+                    "around": txt[max(0, i - 1500): i + 1500] if i >= 0 else "", "head": txt[:400] if "robots" not in u else txt[:3000]})
+    debug_dump(company, {"probe": res})
     return []
 
 
