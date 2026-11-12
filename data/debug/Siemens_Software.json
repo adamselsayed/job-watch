@@ -1,440 +1,87 @@
 {
- "/api/v1/solr/search?q=product&page=1&num_items=50": {
-  "code": 200,
-  "head": "{\"featured_jobs\":[],\"filters\":{\"businessStructures\":[{\"display\":\"Product lifecycle management (PLM)\",\"link\":\"/business-structure/product-lifecycle-management-plm/jobs\",\"value\":330},{\"display\":\"Electronic Design Automation (EDA)\",\"link\":\"/business-structure/electronic-design-automation-eda/jobs\",\"value\":183},{\"display\":\"Software as a service (SaaS)\",\"link\":\"/business-structure/software-as-a-service-saas/jobs\",\"value\":107},{\"display\":\"Low Code Mendix\",\"link\":\"/business-structure/low-code-mendix/jobs\",\"value\":64},{\"display\":\"Simulation\",\"link\":\"/business-structure/simulation/jobs\",\"value\":40}],\"c",
-  "keys": [
-   "featured_jobs",
-   "filters",
-   "jobs",
-   "meta",
-   "pagination"
-  ],
-  "total": {
-   "has_more_pages": true,
-   "offset": 0,
-   "page": 1,
-   "page_size": 10,
-   "total": 678,
-   "total_pages": 68
+ "total": 259,
+ "pages": 26,
+ "found": {
+  "521344": {
+   "title": "Product Architect",
+   "locs": [
+    "Livonia, MI"
+   ]
   },
-  "n": 10,
-  "sample_keys": [
-   "GeoLocation",
-   "_version_",
-   "all_locations",
-   "buid",
-   "city_exact",
-   "city_slab_exact",
-   "company_buid_slab",
-   "company_buid_slab_exact",
-   "company_exact",
-   "company_member",
-   "company_slab_exact",
-   "country_ac",
-   "country_exact",
-   "country_short_exact",
-   "country_slab_exact",
-   "date_added",
-   "date_new",
-   "date_updated",
-   "description",
-   "django_ct",
-   "django_id",
-   "federal_contractor",
-   "guid",
-   "id",
-   "is_posted",
-   "job_category",
-   "lat_long_buid_slab_exact",
-   "location_exact",
-   "network",
-   "on_sites",
-   "onet_exact",
-   "other",
-   "reqid",
-   "salted_date",
-   "score",
-   "title_exact",
-   "title_slab_exact",
-   "title_slug"
-  ],
-  "sample": [
-   {
-    "all_locations": [
-     "Hsinchu",
-     "Hsinchu, ",
-     "Taiwan"
-    ],
-    "city_exact": "Hsinchu",
-    "city_slab_exact": "hsinchu/none/twn/jobs::Hsinchu, TWN",
-    "company_buid_slab": "Siemens::38591",
-    "company_buid_slab_exact": "Siemens::38591",
-    "company_exact": "Siemens",
-    "company_member": true,
-    "company_slab_exact": "siemens/careers::Siemens",
-    "country_ac": "Taiwan",
-    "country_exact": "Taiwan",
-    "country_short_exact": "TWN",
-    "country_slab_exact": "twn/jobs::Taiwan",
-    "guid": "585B34A8B4684DDDA1FC19AC61D2F95C",
-    "location_exact": "Hsinchu, TWN",
-    "reqid": "526094",
-    "title_exact": "Product Engineer",
-    "title_slab_exact": "product-engineer/jobs-in::Product Engineer",
-    "title_slug": "product-engineer"
-   },
-   {
-    "all_locations": [
-     "45040",
-     "Mason",
-     "Ohio",
-     "OH",
-     "Mason, Ohio",
-     "United States"
-    ],
-    "city_exact": "Mason",
-    "city_slab_exact": "mason/ohio/usa/jobs::Mason, OH",
-    "company_buid_slab": "Siemens::38591",
-    "company_buid_slab_exact": "Siemens::38591",
-    "company_exact": "Siemens",
-    "company_member": true,
-    "company_slab_exact": "siemens/careers::Siemens",
-    "country_ac": "United States",
-    "country_exact": "United States",
-    "country_short_exact": "USA",
-    "country_slab_exact": "usa/jobs::United States",
-    "guid": "3AC519D881264631BBCCAAEF95160515",
-    "location_exact": "Mason, OH",
-    "reqid": "528199",
-    "title_exact": "Product Engineer",
-    "title_slab_exact": "product-engineer/jobs-in::Product Engineer",
-    "title_slug": "product-engineer"
-   },
-   {
-    "all_locations": [
-     "Cairo",
-     "Cairo, ",
-     "Egypt"
-    ],
-    "city_exact": "Cairo",
-    "city_slab_exact": "cairo/none/egy/jobs::Cairo, EGY",
-    "company_buid_slab": "Siemens::38591",
-    "company_buid_slab_exact": "Siemens::38591",
-    "company_exact": "Siemens",
-    "company_member": true,
-    "company_slab_exact": "siemens/careers::Siemens",
-    "country_ac": "Egypt",
-    "country_exact": "Egypt",
-    "country_short_exact": "EGY",
-    "country_slab_exact": "egy/jobs::Egypt",
-    "guid": "B199E9EE75BA415FB3237E4DDB7F0288",
-    "location_exact": "Cairo, EGY",
-    "reqid": "528513",
-    "title_exact": "Product Engineer",
-    "title_slab_exact": "product-engineer/jobs-in::Product Engineer",
-    "title_slug": "product-engineer"
-   },
-   {
-    "all_locations": [
-     "New Cairo",
-     "New Cairo, ",
-     "Egypt"
-    ],
-    "city_exact": "New Cairo",
-    "city_slab_exact": "new-cairo/none/egy/jobs::New Cairo, EGY",
-    "company_buid_slab": "Siemens::38591",
-    "company_buid_slab_exact": "Siemens::38591",
-    "company_exact": "Siemens",
-    "company_member": true,
-    "company_slab_exact": "siemens/careers::Siemens",
-    "country_ac": "Egypt",
-    "country_exact": "Egypt",
-    "country_short_exact": "EGY",
-    "country_slab_exact": "egy/jobs::Egypt",
-    "guid": "FB38C02C10E643B09176A0831A3F2F6F",
-    "location_exact": "New Cairo, EGY",
-    "reqid": "527409",
-    "title_exact": "Product Engineer",
-    "title_slab_exact": "product-engineer/jobs-in::Product Engineer",
-    "title_slug": "product-engineer"
-   },
-   {
-    "all_locations": [
-     "48151",
-     "Livonia",
-     "Michigan",
-     "MI",
-     "Livonia, Michigan",
-     "United States"
-    ],
-    "city_exact": "Livonia",
-    "city_slab_exact": "livonia/michigan/usa/jobs::Livonia, MI",
-    "company_buid_slab": "Siemens::38591",
-    "company_buid_slab_exact": "Siemens::38591",
-    "company_exact": "Siemens",
-    "company_member": true,
-    "company_slab_exact": "siemens/careers::Siemens",
-    "country_ac": "United States",
-    "country_exact": "United States",
-    "country_short_exact": "USA",
-    "country_slab_exact": "usa/jobs::United States",
-    "guid": "251B1108D48C43C1830A7A077192130C",
-    "location_exact": "Livonia, MI",
-    "reqid": "521344",
-    "title_exact": "Product Architect",
-    "title_slab_exact": "product-architect/jobs-in::Product Architect",
-    "title_slug": "product-architect"
-   },
-   {
-    "all_locations": [
-     "New Cairo",
-     "New Cairo, ",
-     "Egypt"
-    ],
-    "city_exact": "New Cairo",
-    "city_slab_exact": "new-cairo/none/egy/jobs::New Cairo, EGY",
-    "company_buid_slab": "Siemens::38591",
-    "company_buid_slab_exact": "Siemens::38591",
-    "company_exact": "Siemens",
-    "company_member": true,
-    "company_slab_exact": "siemens/careers::Siemens",
-    "country_ac": "Egypt",
-    "country_exact": "Egypt",
-    "country_short_exact": "EGY",
-    "country_slab_exact": "egy/jobs::Egypt",
-    "guid": "05C8C24EAC7B48CF95243C351C67B67B",
-    "location_exact": "New Cairo, EGY",
-    "reqid": "509746",
-    "title_exact": "Product Engineer",
-    "title_slab_exact": "product-engineer/jobs-in::Product Engineer",
-    "title_slug": "product-engineer"
-   }
-  ]
- },
- "/api/v1/solr/search?q=product+manager&location=United+States&page=1&num_items=50": {
-  "code": 200,
-  "head": "{\"featured_jobs\":[],\"filters\":{\"businessStructures\":[{\"display\":\"Product lifecycle management (PLM)\",\"link\":\"/business-structure/product-lifecycle-management-plm/jobs\",\"value\":111},{\"display\":\"Electronic Design Automation (EDA)\",\"link\":\"/business-structure/electronic-design-automation-eda/jobs\",\"value\":67},{\"display\":\"Software as a service (SaaS)\",\"link\":\"/business-structure/software-as-a-service-saas/jobs\",\"value\":32},{\"display\":\"Low Code Mendix\",\"link\":\"/business-structure/low-code-mendix/jobs\",\"value\":23},{\"display\":\"Simulation\",\"link\":\"/business-structure/simulation/jobs\",\"value\":2}],\"coun",
-  "keys": [
-   "featured_jobs",
-   "filters",
-   "jobs",
-   "meta",
-   "pagination"
-  ],
-  "total": {
-   "has_more_pages": true,
-   "offset": 0,
-   "page": 1,
-   "page_size": 10,
-   "total": 211,
-   "total_pages": 22
+  "520855": {
+   "title": "Product Architect",
+   "locs": [
+    "Troy, MI"
+   ]
   },
-  "n": 10,
-  "sample_keys": [
-   "GeoLocation",
-   "_version_",
-   "all_locations",
-   "buid",
-   "city_exact",
-   "city_slab_exact",
-   "company_buid_slab",
-   "company_buid_slab_exact",
-   "company_exact",
-   "company_member",
-   "company_slab_exact",
-   "country_ac",
-   "country_exact",
-   "country_short_exact",
-   "country_slab_exact",
-   "date_added",
-   "date_new",
-   "date_updated",
-   "description",
-   "django_ct",
-   "django_id",
-   "federal_contractor",
-   "guid",
-   "id",
-   "is_posted",
-   "job_category",
-   "lat_long_buid_slab_exact",
-   "location_exact",
-   "network",
-   "on_sites",
-   "onet_exact",
-   "other",
-   "reqid",
-   "salted_date",
-   "score",
-   "state_short",
-   "state_short_exact",
-   "title_exact",
-   "title_slab_exact",
-   "title_slug"
-  ],
-  "sample": [
-   {
-    "all_locations": [
-     "78374",
-     "Portland",
-     "Texas",
-     "TX",
-     "Portland, Texas",
-     "United States"
-    ],
-    "city_exact": "Portland",
-    "city_slab_exact": "portland/texas/usa/jobs::Portland, TX",
-    "company_buid_slab": "Siemens::38591",
-    "company_buid_slab_exact": "Siemens::38591",
-    "company_exact": "Siemens",
-    "company_member": true,
-    "company_slab_exact": "siemens/careers::Siemens",
-    "country_ac": "United States",
-    "country_exact": "United States",
-    "country_short_exact": "USA",
-    "country_slab_exact": "usa/jobs::United States",
-    "guid": "022B3FBB117C4B5096649C78998AA7D5",
-    "location_exact": "Portland, TX",
-    "reqid": "511545",
-    "title_exact": "Product Marketing Manager 3D IC",
-    "title_slab_exact": "product-marketing-manager-3d-ic/jobs-in::Product Marketing Manager 3D IC",
-    "title_slug": "product-marketing-manager-3d-ic"
-   },
-   {
-    "all_locations": [
-     "75219",
-     "Dallas",
-     "Texas",
-     "TX",
-     "Dallas, Texas",
-     "United States"
-    ],
-    "city_exact": "Dallas",
-    "city_slab_exact": "dallas/texas/usa/jobs::Dallas, TX",
-    "company_buid_slab": "Siemens::38591",
-    "company_buid_slab_exact": "Siemens::38591",
-    "company_exact": "Siemens",
-    "company_member": true,
-    "company_slab_exact": "siemens/careers::Siemens",
-    "country_ac": "United States",
-    "country_exact": "United States",
-    "country_short_exact": "USA",
-    "country_slab_exact": "usa/jobs::United States",
-    "guid": "B809F48027EA479390A58687DAD53746",
-    "location_exact": "Dallas, TX",
-    "reqid": "511545",
-    "title_exact": "Product Marketing Manager 3D IC",
-    "title_slab_exact": "product-marketing-manager-3d-ic/jobs-in::Product Marketing Manager 3D IC",
-    "title_slug": "product-marketing-manager-3d-ic"
-   },
-   {
-    "all_locations": [
-     "33313",
-     "Fort Lauderdale",
-     "Florida",
-     "FL",
-     "Fort Lauderdale, Florida",
-     "United States"
-    ],
-    "city_exact": "Fort Lauderdale",
-    "city_slab_exact": "fort-lauderdale/florida/usa/jobs::Fort Lauderdale, FL",
-    "company_buid_slab": "Siemens::38591",
-    "company_buid_slab_exact": "Siemens::38591",
-    "company_exact": "Siemens",
-    "company_member": true,
-    "company_slab_exact": "siemens/careers::Siemens",
-    "country_ac": "United States",
-    "country_exact": "United States",
-    "country_short_exact": "USA",
-    "country_slab_exact": "usa/jobs::United States",
-    "guid": "BE854C459A664A19AAB0980DE75B0545",
-    "location_exact": "Fort Lauderdale, FL",
-    "reqid": "511545",
-    "title_exact": "Product Marketing Manager 3D IC",
-    "title_slab_exact": "product-marketing-manager-3d-ic/jobs-in::Product Marketing Manager 3D IC",
-    "title_slug": "product-marketing-manager-3d-ic"
-   },
-   {
-    "all_locations": [
-     "75570",
-     "Boston",
-     "Texas",
-     "TX",
-     "Boston, Texas",
-     "United States"
-    ],
-    "city_exact": "Boston",
-    "city_slab_exact": "boston/texas/usa/jobs::Boston, TX",
-    "company_buid_slab": "Siemens::38591",
-    "company_buid_slab_exact": "Siemens::38591",
-    "company_exact": "Siemens",
-    "company_member": true,
-    "company_slab_exact": "siemens/careers::Siemens",
-    "country_ac": "United States",
-    "country_exact": "United States",
-    "country_short_exact": "USA",
-    "country_slab_exact": "usa/jobs::United States",
-    "guid": "2FD174776CF84E0B96B58A7B1FE526F2",
-    "location_exact": "Boston, TX",
-    "reqid": "511545",
-    "title_exact": "Product Marketing Manager 3D IC",
-    "title_slab_exact": "product-marketing-manager-3d-ic/jobs-in::Product Marketing Manager 3D IC",
-    "title_slug": "product-marketing-manager-3d-ic"
-   },
-   {
-    "all_locations": [
-     "78703",
-     "Austin",
-     "Texas",
-     "TX",
-     "Austin, Texas",
-     "United States"
-    ],
-    "city_exact": "Austin",
-    "city_slab_exact": "austin/texas/usa/jobs::Austin, TX",
-    "company_buid_slab": "Siemens::38591",
-    "company_buid_slab_exact": "Siemens::38591",
-    "company_exact": "Siemens",
-    "company_member": true,
-    "company_slab_exact": "siemens/careers::Siemens",
-    "country_ac": "United States",
-    "country_exact": "United States",
-    "country_short_exact": "USA",
-    "country_slab_exact": "usa/jobs::United States",
-    "guid": "7EF08D71071D465894791B15336BCF08",
-    "location_exact": "Austin, TX",
-    "reqid": "511545",
-    "title_exact": "Product Marketing Manager 3D IC",
-    "title_slab_exact": "product-marketing-manager-3d-ic/jobs-in::Product Marketing Manager 3D IC",
-    "title_slug": "product-marketing-manager-3d-ic"
-   },
-   {
-    "all_locations": [
-     "48007",
-     "Troy",
-     "Michigan",
-     "MI",
-     "Troy, Michigan",
-     "United States"
-    ],
-    "city_exact": "Troy",
-    "city_slab_exact": "troy/michigan/usa/jobs::Troy, MI",
-    "company_buid_slab": "Siemens::38591",
-    "company_buid_slab_exact": "Siemens::38591",
-    "company_exact": "Siemens",
-    "company_member": true,
-    "company_slab_exact": "siemens/careers::Siemens",
-    "country_ac": "United States",
-    "country_exact": "United States",
-    "country_short_exact": "USA",
-    "country_slab_exact": "usa/jobs::United States",
-    "guid": "74E7F1A0332F42C29536E693CD7F395E",
-    "location_exact": "Troy, MI",
-    "reqid": "520257",
-    "title_exact": "Technical Product Manager - HPCWorks Integrations",
-    "title_slab_exact": "technical-product-manager-hpcworks-integrations/jobs-in::Technical Product Manager - HPCWorks Integrations",
-    "title_slug": "technical-product-manager-hpcworks-integrations"
-   }
-  ]
+  "516009": {
+   "title": "Product Manager HPCWorks Tools",
+   "locs": [
+    "Troy, MI"
+   ]
+  },
+  "526186": {
+   "title": "Associate Product Manager - Monarch",
+   "locs": [
+    "Plano, TX"
+   ]
+  },
+  "520257": {
+   "title": "Technical Product Manager - HPCWorks Integrations",
+   "locs": [
+    "Troy, MI"
+   ]
+  },
+  "516241": {
+   "title": "Senior Leader: Simulation Product Technical Documentation",
+   "locs": [
+    "Troy, MI"
+   ]
+  },
+  "478235": {
+   "title": "Global Program Leader - PLM Products/Cloud",
+   "locs": [
+    "Costa Mesa, CA"
+   ]
+  },
+  "519745": {
+   "title": "Software Developer for NLP Solutions - Product Localization",
+   "locs": [
+    "Livonia, MI",
+    "Mason, OH"
+   ]
+  },
+  "526869": {
+   "title": "Principal Product Manager - RTL-to-GDS Digital Implementation",
+   "locs": [
+    "San Diego, CA",
+    "Santa Clara, CA",
+    "Wilsonville, OR",
+    "Austin, TX"
+   ]
+  },
+  "487448": {
+   "title": "Senior Product Manager - Data & AI Services",
+   "locs": [
+    "Seattle, WA",
+    "Bellevue, WA",
+    "Charlotte, NC"
+   ]
+  },
+  "525490": {
+   "title": "Senior Technical Product Manager – Deployment & Platform Experience",
+   "locs": [
+    "Houston, TX",
+    "Shoreview, MN",
+    "Chicago, IL",
+    "Marlborough, MA",
+    "Boston, MA",
+    "Boulder, CO",
+    "Livonia, MI",
+    "Plano, TX",
+    "Troy, MI",
+    "Wilsonville, OR"
+   ]
+  }
  }
 }
