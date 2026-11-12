@@ -1222,24 +1222,28 @@ def fetch_workable(company):
 
 
 def fetch_avature(company):
-    """Avature career sites (e.g. https://jobs.siemens.com/en_US/externaljobs).  PROBE."""
+    """Avature career sites (e.g. https://jobs.siemens.com/en_US/externaljobs).  PROBE 2."""
     root = "https://" + company["board"].strip("/")
-    res = []
-    for u in [root, f"{root}/SearchJobs", f"{root}/SearchJobs/", f"{root}/SearchJobs/?search=product",
-              f"{root}/SearchJobs/?keyword=product", f"{root}/SearchJobs/feed/", f"https://{company['board'].split('/')[0]}/robots.txt"]:
-        try:
-            req = urllib.request.Request(u, headers=_WD_HEADERS)
-            with _WD_OPENER.open(req, timeout=40) as r:
-                code, txt = r.status, r.read().decode("utf-8", "replace")
-        except urllib.error.HTTPError as e:
-            code, txt = e.code, e.read().decode("utf-8", "replace")
-        except Exception as e:          # noqa: BLE001
-            code, txt = None, str(e)
-        i = txt.find("JobDetail")
-        res.append({"u": u, "code": code, "len": len(txt), "jobdetail_count": txt.count("JobDetail"),
-                    "links": sorted(set(re.findall(r'href="([^"]*JobDetail[^"]*)"', txt)))[:5],
-                    "around": txt[max(0, i - 1500): i + 1500] if i >= 0 else "", "head": txt[:400] if "robots" not in u else txt[:3000]})
-    debug_dump(company, {"probe": res})
+    def get(u):
+        req = urllib.request.Request(u, headers=_WD_HEADERS)
+        with _WD_OPENER.open(req, timeout=40) as r:
+            return r.read().decode("utf-8", "replace")
+    out = {}
+    h = get(f"{root}/SearchJobs/?search=product&jobRecordsPerPage=50&jobOffset=0")
+    links = [m for m in re.finditer(r'href="(https?://[^"]*/JobDetail/[^"]+)"', h)]
+    out["n_links"] = len(links)
+    out["first_tile"] = h[links[0].start() - 2000: links[0].start() + 2500] if links else ""
+    out["count_txt"] = re.findall(r'[^<>]{0,80}\b\d[\d,]*\s+(?:results|jobs|Jobs|Results)[^<>]{0,40}', h)[:6]
+    out["pager"] = re.findall(r'href="[^"]*jobOffset=\d+[^"]*"', h)[:6]
+    out["feed"] = get(f"{root}/SearchJobs/feed/?search=product")[:3000]
+    if links:
+        d = get(links[0].group(1))
+        out["detail_url"] = links[0].group(1)
+        out["detail_ld"] = re.findall(r'<script type="application/ld\+json">(.*?)</script>', d, re.S)[:2]
+        i = d.find("article__content")
+        out["detail_html"] = d[i - 200: i + 5000] if i >= 0 else ""
+        out["detail_text"] = strip_html(d)[:4000]
+    debug_dump(company, {"probe": out})
     return []
 
 
