@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T16:31:50.748Z",
+  "updated_at": "2026-11-12T16:32:11.650Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2129,6 +2129,12 @@
       "status": "archived",
       "at": "2026-11-12T16:31:49.232Z",
       "title": "Senior Product Manager",
+      "company": "Siemens"
+    },
+    "avature:jobs.siemens.com/en_US/externaljobs:526689": {
+      "status": "archived",
+      "at": "2026-11-12T16:32:10.136Z",
+      "title": "Principal Product Manager",
       "company": "Siemens"
     }
   },
