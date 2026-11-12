@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T16:35:23.727Z",
+  "updated_at": "2026-11-12T16:35:45.822Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2171,6 +2171,12 @@
       "status": "archived",
       "at": "2026-11-12T16:35:22.213Z",
       "title": "Senior Leader: Simulation Product Technical Documentation",
+      "company": "Siemens"
+    },
+    "avature:jobs.siemens.com/en_US/externaljobs:478235": {
+      "status": "archived",
+      "at": "2026-11-12T16:35:44.309Z",
+      "title": "Global Program Leader - PLM Products/Cloud",
       "company": "Siemens"
     }
   },
