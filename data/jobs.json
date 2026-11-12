@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T07:28:54+00:00",
+  "generated_at": "2026-11-12T07:29:49+00:00",
   "criteria": {
     "title_keywords": [
       "product"
@@ -591,9 +591,11 @@
       "ats": "avature",
       "board": "jobs.siemens.com/en_US/externaljobs",
       "url": "https://jobs.siemens.com/en_US/externaljobs",
-      "fetched_at": "2026-11-12T07:28:54+00:00",
-      "status": "error",
-      "error": "HTTP Error 520: <none>"
+      "fetched_at": "2026-11-12T07:29:49+00:00",
+      "status": "ok",
+      "error": null,
+      "total_jobs": 0,
+      "matched": 0
     }
   ],
   "jobs": [
