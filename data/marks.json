@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T16:26:40.872Z",
+  "updated_at": "2026-11-12T16:26:46.767Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2093,6 +2093,24 @@
       "status": "archived",
       "at": "2026-11-12T16:26:39.355Z",
       "title": "CPQ Product Manager",
+      "company": "Siemens"
+    },
+    "avature:jobs.siemens.com/en_US/externaljobs:528889": {
+      "status": "archived",
+      "at": "2026-11-12T16:26:42.863Z",
+      "title": "Product Configuration Technician",
+      "company": "Siemens"
+    },
+    "avature:jobs.siemens.com/en_US/externaljobs:521344": {
+      "status": "archived",
+      "at": "2026-11-12T16:26:44.246Z",
+      "title": "Product Architect",
+      "company": "Siemens"
+    },
+    "avature:jobs.siemens.com/en_US/externaljobs:520855": {
+      "status": "archived",
+      "at": "2026-11-12T16:26:45.251Z",
+      "title": "Product Architect",
       "company": "Siemens"
     }
   },
