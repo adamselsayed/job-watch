@@ -173,6 +173,22 @@ NON_US_MARKERS = {
 }
 
 
+# Every non-US country name: a location whose last part is one of these is not US.
+WORLD_COUNTRIES = {c.lower() for c in """Afghanistan,Albania,Algeria,Andorra,Angola,Argentina,Armenia,Australia,Austria,Azerbaijan,Bahamas,Bahrain,
+Bangladesh,Barbados,Belarus,Belgium,Belize,Benin,Bhutan,Bolivia,Bosnia and Herzegovina,Botswana,Brazil,Brunei,Bulgaria,Burkina Faso,
+Burundi,Cambodia,Cameroon,Canada,Cape Verde,Chad,Chile,China,Colombia,Congo,Costa Rica,Croatia,Cuba,Cyprus,Czechia,Czech Republic,
+Denmark,Djibouti,Dominican Republic,Ecuador,Egypt,El Salvador,Estonia,Eswatini,Ethiopia,Fiji,Finland,France,Gabon,Gambia,Georgia (country),
+Germany,Ghana,Greece,Guatemala,Guinea,Guyana,Haiti,Honduras,Hong Kong,Hungary,Iceland,India,Indonesia,Iran,Iraq,Ireland,Israel,Italy,
+Ivory Coast,Côte d'Ivoire,Jamaica,Japan,Jordan,Kazakhstan,Kenya,Korea,Republic of Korea,South Korea,Kosovo,Kuwait,Kyrgyzstan,Laos,Latvia,
+Lebanon,Lesotho,Liberia,Libya,Liechtenstein,Lithuania,Luxembourg,Macau,Macao,Madagascar,Malawi,Malaysia,Maldives,Mali,Malta,Mauritius,
+Mexico,Moldova,Monaco,Mongolia,Montenegro,Morocco,Mozambique,Myanmar,Namibia,Nepal,Netherlands,New Zealand,Nicaragua,Niger,Nigeria,
+North Macedonia,Norway,Oman,Pakistan,Panama,Papua New Guinea,Paraguay,Peru,Philippines,Poland,Portugal,Qatar,Romania,Russia,
+Russian Federation,Rwanda,Saudi Arabia,Senegal,Serbia,Singapore,Slovakia,Slovenia,South Africa,Spain,Sri Lanka,Sudan,Suriname,Sweden,
+Switzerland,Syria,Taiwan,Tajikistan,Tanzania,Thailand,Togo,Trinidad and Tobago,Tunisia,Turkey,Türkiye,Turkmenistan,Uganda,Ukraine,
+United Arab Emirates,United Kingdom,Great Britain,England,Scotland,Wales,Northern Ireland,Uruguay,Uzbekistan,Venezuela,Vietnam,Viet Nam,
+Yemen,Zambia,Zimbabwe""".replace("\n", "").split(",")}
+
+
 def _tokens(s):
     return [t.strip() for t in re.split(r"[,;\-/|()]+|\s{2,}", s) if t.strip()]
 
@@ -185,6 +201,9 @@ def classify_us(location_text):
     if re.search(r"(^|[\s\-,(])us([\s\-,)]|$)", low):            # "Remote - US", "US Remote"
         return True
     if any(re.search(r"\b" + re.escape(m) + r"\b", low) for m in NON_US_MARKERS):
+        return False
+    last = re.split(r"[,;|]", low)[-1].strip()
+    if last not in US_STATES and (last in WORLD_COUNTRIES or any(re.search(r"\b" + re.escape(c) + r"\b", last) for c in WORLD_COUNTRIES if len(c) > 5)):
         return False
     toks = [t.lower() for t in _tokens(location_text)]
     if any(t in US_STATES or t in US_CITIES for t in toks):
