@@ -200,6 +200,8 @@ def classify_us(location_text):
         return True
     if re.search(r"(^|[\s\-,(])us([\s\-,)]|$)", low):            # "Remote - US", "US Remote"
         return True
+    if any(t.strip().lower() in US_STATES for t in re.split(r"[,;|]", low)):   # "Albuquerque, New Mexico" before the "mexico" marker
+        return True
     if any(re.search(r"\b" + re.escape(m) + r"\b", low) for m in NON_US_MARKERS):
         return False
     last = re.split(r"[,;|]", low)[-1].strip()
