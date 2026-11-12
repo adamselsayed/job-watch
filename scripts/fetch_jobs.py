@@ -1314,9 +1314,39 @@ def fetch_avature(company):
     return rows
 
 
+def fetch_probe(company):
+    """TEMP: inspect a custom careers site."""
+    def get(u):
+        req = urllib.request.Request(u, headers=_WD_HEADERS)
+        with _WD_OPENER.open(req, timeout=60) as r:
+            return r.status, r.read().decode("utf-8", "replace")
+    out = {}
+    code, h = get(company["url"])
+    out["code"], out["len"] = code, len(h)
+    out["jobdetail"] = sorted(set(re.findall(r'https?://jobs\.siemens\.com[^"\'\s<>]*', h)))[:10]
+    out["job_links"] = sorted(set(re.findall(r'href="(/jobs/[^"]+)"', h)))[:15]
+    out["n_job_links"] = len(set(re.findall(r'href="(/jobs/[^"]+)"', h)))
+    nd = re.search(r'<script[^>]*id="__NUXT_DATA__"[^>]*>(.*?)</script>', h, re.S)
+    out["nuxt_len"] = len(nd.group(1)) if nd else 0
+    out["nuxt_head"] = nd.group(1)[:2500] if nd else ""
+    out["api_like"] = sorted(set(re.findall(r'["\'](https?://[^"\']*(?:api|avature|siemens)[^"\']{0,120})["\']', h)))[:25]
+    try:
+        js = get("https://" + company["board"] + re.search(r'"#entry":"([^"]+)"', h).group(1))[1]
+        out["js_api"] = sorted(set(re.findall(r'["\'`](https?://[^"\'`]{5,150}|/api/[^"\'`]{2,100})["\'`]', js)))[:40]
+    except Exception as e:      # noqa: BLE001
+        out["js_err"] = str(e)
+    try:
+        c2, j2 = get(f"https://{company['board']}/jobs/?search=product")
+        out["search_links"] = sorted(set(re.findall(r'href="(/jobs/[^"]+)"', j2)))[:10]
+    except Exception as e:      # noqa: BLE001
+        out["search_err"] = str(e)
+    debug_dump(company, out)
+    return []
+
+
 ADAPTERS = {"greenhouse": fetch_greenhouse, "lever": fetch_lever, "ashby": fetch_ashby,
             "smartrecruiters": fetch_smartrecruiters, "workday": fetch_workday, "phenom": fetch_phenom,
-            "jobvite": fetch_jobvite, "rippling": fetch_rippling, "bamboohr": fetch_bamboohr, "jibe": fetch_jibe, "oracle": fetch_oracle, "talentbrew": fetch_talentbrew, "paradox": fetch_paradox, "globallogic": fetch_globallogic, "workable": fetch_workable, "avature": fetch_avature, "unknown": fetch_unknown, "manual": lambda company: []}
+            "jobvite": fetch_jobvite, "rippling": fetch_rippling, "bamboohr": fetch_bamboohr, "jibe": fetch_jibe, "oracle": fetch_oracle, "talentbrew": fetch_talentbrew, "paradox": fetch_paradox, "globallogic": fetch_globallogic, "workable": fetch_workable, "probe": fetch_probe, "avature": fetch_avature, "unknown": fetch_unknown, "manual": lambda company: []}
 
 
 # --------------------------------------------------------------- filtering --
