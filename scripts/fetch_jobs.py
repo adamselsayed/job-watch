@@ -1342,9 +1342,7 @@ def fetch_probe(company):
             js = get(base + u)[1]
             for m in re.findall(r'["\'`]\./([A-Za-z0-9_\-]+\.js)["\'`]', js):
                 todo.append("/_nuxt/" + m)
-            for m in re.finditer(r'(https?://[a-z0-9.\-]+(?:/[^"\'`\s]{0,80})?|/api/[^"\'`\s]{2,80}|fetch\(|\$fetch\()', js):
-                if re.search(r"w3\.org|google|gstatic|maps", m.group(0)):
-                    continue
+            for m in re.finditer(r'jobsyn|solr/search|search-api|apiUrl|baseURL|x-origin', js, re.I):
                 hits.append(u.split("/")[-1] + ": " + js[max(0, m.start() - 120): m.end() + 160])
         out["n_chunks"] = len(done)
         out["js_hits"] = hits[:40]
