@@ -1240,6 +1240,15 @@ def fetch_avature(company):
         return _retry(go)
     span = lambda cls, t: (lambda m: html.unescape(m.group(1)).strip() if m else "")(re.search(rf'class="list-item-{cls}">([^<]*)<', t))
     rows, seen, offset, pages = [], set(), 0, 0
+    if DEBUG:
+        pv = {}
+        for qs in ["search=product", "search=product&jobOffset=6", "search=product&jobOffset=12", "search=product&jobRecordsPerPage=6&jobOffset=6",
+                   "search=product&jobRecordsPerPage=50", "search=product&folderOffset=6", "search=product&page=2"]:
+            h = get(f"{root}/SearchJobs/?{qs}")
+            ids = re.findall(r'list-item-jobId">Job ID: (\d+)', h)
+            pager = sorted(set(re.findall(r'href="([^"]*SearchJobs[^"]*(?:Offset|page)[^"]*)"', h)))
+            pv[qs] = {"ids": ids, "pager": [p for p in pager if "/en_US/" in p][:6], "total": re.findall(r'[^<>]{0,60}(?:\d[\d,]*\s*(?:results|Results|jobs|Jobs|of))[^<>]{0,60}', h)[:4]}
+        company["_paging"] = pv
     while pages < 200:
         h = get(f"{root}/SearchJobs/?{urllib.parse.urlencode({'search': company.get('keyword') or 'product', 'jobOffset': offset})}")
         tiles = re.split(r'<article class="article article--result', h)[1:]
@@ -1278,7 +1287,7 @@ def fetch_avature(company):
                 first = r["_content"][:1500]
         except Exception as e:          # noqa: BLE001
             log(f"[{company['name']}] detail fetch failed for {r['job_id']}: {e}")
-    debug_dump(company, {"pages": pages, "rows": len(rows), "first_detail": first,
+    debug_dump(company, {"paging": company.pop("_paging", None), "pages": pages, "rows": len(rows), "first_detail": first,
                          "kept": [{k: v for k, v in r.items() if k != "_content"} for r in rows if title_matches(r["title"])][:60]})
     return rows
 
