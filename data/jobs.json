@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T07:53:11+00:00",
+  "generated_at": "2026-11-12T07:54:27+00:00",
   "criteria": {
     "title_keywords": [
       "product"
@@ -603,11 +603,11 @@
       "ats": "phenom",
       "board": "careers.siemens-healthineers.com/global/en",
       "url": "https://careers.siemens-healthineers.com/global/en/search-results",
-      "fetched_at": "2026-11-12T07:53:11+00:00",
+      "fetched_at": "2026-11-12T07:54:27+00:00",
       "status": "ok",
       "error": null,
       "total_jobs": 890,
-      "matched": 13
+      "matched": 12
     }
   ],
   "jobs": [
@@ -1966,7 +1966,7 @@
       "company": "Siemens Healthineers",
       "key": "phenom:careers.siemens-healthineers.com/global/en:SHDSHWUSR31982EXTERNALENGLOBAL",
       "first_seen": "2026-11-12T07:53:11+00:00",
-      "last_seen": "2026-11-12T07:53:11+00:00",
+      "last_seen": "2026-11-12T07:54:27+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2977,7 +2977,7 @@
       "company": "Siemens Healthineers",
       "key": "phenom:careers.siemens-healthineers.com/global/en:SHDSHWUSR31745EXTERNALENGLOBAL",
       "first_seen": "2026-11-12T07:53:11+00:00",
-      "last_seen": "2026-11-12T07:53:11+00:00",
+      "last_seen": "2026-11-12T07:54:27+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4918,7 +4918,7 @@
       "company": "Siemens Healthineers",
       "key": "phenom:careers.siemens-healthineers.com/global/en:SHDSHWUSR31592EXTERNALENGLOBAL",
       "first_seen": "2026-11-12T07:53:11+00:00",
-      "last_seen": "2026-11-12T07:53:11+00:00",
+      "last_seen": "2026-11-12T07:54:27+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -6109,7 +6109,7 @@
       "company": "Siemens Healthineers",
       "key": "phenom:careers.siemens-healthineers.com/global/en:SHDSHWUSR31557EXTERNALENGLOBAL",
       "first_seen": "2026-11-12T07:53:11+00:00",
-      "last_seen": "2026-11-12T07:53:11+00:00",
+      "last_seen": "2026-11-12T07:54:27+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -6307,7 +6307,7 @@
       "company": "Siemens Healthineers",
       "key": "phenom:careers.siemens-healthineers.com/global/en:SHDSHWUSR28999EXTERNALENGLOBAL",
       "first_seen": "2026-11-12T07:53:11+00:00",
-      "last_seen": "2026-11-12T07:53:11+00:00",
+      "last_seen": "2026-11-12T07:54:27+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -6453,7 +6453,7 @@
       "company": "Siemens Healthineers",
       "key": "phenom:careers.siemens-healthineers.com/global/en:SHDSHWUSR31505EXTERNALENGLOBAL",
       "first_seen": "2026-11-12T07:53:11+00:00",
-      "last_seen": "2026-11-12T07:53:11+00:00",
+      "last_seen": "2026-11-12T07:54:27+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -7125,27 +7125,6 @@
       "closed_at": null
     },
     {
-      "job_id": "SHDSHWUSP100628EXTERNALENGLOBAL",
-      "req_id": "P-100628",
-      "title": "Senior UX Researcher for Healthcare/MedTech products (m/f/d) - Hybrid - Bratislava/Žilina",
-      "location": "Bratislava, Bratislava Region, Slovakia",
-      "location_detail": "Bratislava, Slovakia; Žilina, Slovakia",
-      "department": "Experience Design",
-      "published_at": "2026-10-07T00:00:00.000+0000",
-      "updated_at": null,
-      "url": "https://careers.siemens-healthineers.com/global/en/job/SHDSHWUSP100628EXTERNALENGLOBAL/Senior-UX-Researcher-for-Healthcare-MedTech-products-m-f-d-Hybrid-Bratislava-ilina",
-      "salary": null,
-      "us": null,
-      "remote": "hybrid",
-      "remote_confidence": "high",
-      "company": "Siemens Healthineers",
-      "key": "phenom:careers.siemens-healthineers.com/global/en:SHDSHWUSP100628EXTERNALENGLOBAL",
-      "first_seen": "2026-11-12T07:53:11+00:00",
-      "last_seen": "2026-11-12T07:53:11+00:00",
-      "status": "open",
-      "closed_at": null
-    },
-    {
       "job_id": "dbabd019-e0e7-46d1-a1d8-554f3fec2232",
       "req_id": null,
       "title": "VP of Product ",
@@ -7245,7 +7224,7 @@
       "company": "Siemens Healthineers",
       "key": "phenom:careers.siemens-healthineers.com/global/en:SHDSHWUSR31317EXTERNALENGLOBAL",
       "first_seen": "2026-11-12T07:53:11+00:00",
-      "last_seen": "2026-11-12T07:53:11+00:00",
+      "last_seen": "2026-11-12T07:54:27+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -7271,7 +7250,7 @@
       "company": "Siemens Healthineers",
       "key": "phenom:careers.siemens-healthineers.com/global/en:SHDSHWUSR31029EXTERNALENGLOBAL",
       "first_seen": "2026-11-12T07:53:11+00:00",
-      "last_seen": "2026-11-12T07:53:11+00:00",
+      "last_seen": "2026-11-12T07:54:27+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -9030,7 +9009,7 @@
       "company": "Siemens Healthineers",
       "key": "phenom:careers.siemens-healthineers.com/global/en:SHDSHWUSR30227EXTERNALENGLOBAL",
       "first_seen": "2026-11-12T07:53:11+00:00",
-      "last_seen": "2026-11-12T07:53:11+00:00",
+      "last_seen": "2026-11-12T07:54:27+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -9739,7 +9718,7 @@
       "company": "Siemens Healthineers",
       "key": "phenom:careers.siemens-healthineers.com/global/en:SHDSHWUSR29879EXTERNALENGLOBAL",
       "first_seen": "2026-11-12T07:53:11+00:00",
-      "last_seen": "2026-11-12T07:53:11+00:00",
+      "last_seen": "2026-11-12T07:54:27+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -9994,7 +9973,7 @@
       "company": "Siemens Healthineers",
       "key": "phenom:careers.siemens-healthineers.com/global/en:SHDSHWUSR29554EXTERNALENGLOBAL",
       "first_seen": "2026-11-12T07:53:11+00:00",
-      "last_seen": "2026-11-12T07:53:11+00:00",
+      "last_seen": "2026-11-12T07:54:27+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -10327,7 +10306,7 @@
       "company": "Siemens Healthineers",
       "key": "phenom:careers.siemens-healthineers.com/global/en:SHDSHWUSR28128EXTERNALENGLOBAL",
       "first_seen": "2026-11-12T07:53:11+00:00",
-      "last_seen": "2026-11-12T07:53:11+00:00",
+      "last_seen": "2026-11-12T07:54:27+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -12757,6 +12736,27 @@
       "last_seen": "2026-10-30T05:17:36+00:00",
       "status": "closed",
       "closed_at": "2026-10-30T05:23:57+00:00"
+    },
+    {
+      "job_id": "SHDSHWUSP100628EXTERNALENGLOBAL",
+      "req_id": "P-100628",
+      "title": "Senior UX Researcher for Healthcare/MedTech products (m/f/d) - Hybrid - Bratislava/Žilina",
+      "location": "Bratislava, Bratislava Region, Slovakia",
+      "location_detail": "Bratislava, Slovakia; Žilina, Slovakia",
+      "department": "Experience Design",
+      "published_at": "2026-10-07T00:00:00.000+0000",
+      "updated_at": null,
+      "url": "https://careers.siemens-healthineers.com/global/en/job/SHDSHWUSP100628EXTERNALENGLOBAL/Senior-UX-Researcher-for-Healthcare-MedTech-products-m-f-d-Hybrid-Bratislava-ilina",
+      "salary": null,
+      "us": null,
+      "remote": "hybrid",
+      "remote_confidence": "high",
+      "company": "Siemens Healthineers",
+      "key": "phenom:careers.siemens-healthineers.com/global/en:SHDSHWUSP100628EXTERNALENGLOBAL",
+      "first_seen": "2026-11-12T07:53:11+00:00",
+      "last_seen": "2026-11-12T07:53:11+00:00",
+      "status": "closed",
+      "closed_at": "2026-11-12T07:54:27+00:00"
     },
     {
       "job_id": "744000153862999",
