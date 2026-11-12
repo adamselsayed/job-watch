@@ -297,3 +297,8 @@
   ats: greenhouse
   board: platformscience
   url: https://www.platformscience.com/jobs
+
+- name: Siemens
+  ats: unknown
+  board: jobs.siemens.com/en_US/externaljobs
+  url: https://jobs.siemens.com/en_US/externaljobs
