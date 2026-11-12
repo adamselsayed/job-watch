@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T21:40:49+00:00",
+  "generated_at": "2026-11-12T02:18:35+00:00",
   "criteria": {
     "title_keywords": [
       "product"
@@ -125,7 +125,7 @@
       "scan": "all",
       "facets": "locationCountry=bc33aa3152ec42d4995f4791a106ed09",
       "url": "https://careers.hitachi.com/jobs",
-      "fetched_at": "2026-11-11T14:04:16+00:00",
+      "fetched_at": "2026-11-12T02:18:35+00:00",
       "status": "ok",
       "error": null,
       "total_jobs": 9,
@@ -147,7 +147,7 @@
       "ats": "phenom",
       "board": "vgcareers.virgingalactic.com/global/en",
       "url": "https://vgcareers.virgingalactic.com/global/en/",
-      "fetched_at": "2026-11-11T14:04:16+00:00",
+      "fetched_at": "2026-11-12T02:18:35+00:00",
       "status": "ok",
       "error": null,
       "total_jobs": 76,
@@ -169,7 +169,7 @@
       "ats": "workday",
       "board": "amn.wd1/AMN_Careers",
       "url": "https://www.amncareers.com/careers/",
-      "fetched_at": "2026-11-11T14:04:16+00:00",
+      "fetched_at": "2026-11-12T02:18:35+00:00",
       "status": "ok",
       "error": null,
       "total_jobs": 1,
@@ -202,7 +202,7 @@
       "ats": "workday",
       "board": "nvidia.wd5/NVIDIAExternalCareerSite",
       "url": "https://jobs.nvidia.com/careers",
-      "fetched_at": "2026-11-11T14:04:16+00:00",
+      "fetched_at": "2026-11-12T02:18:35+00:00",
       "status": "ok",
       "error": null,
       "total_jobs": 53,
@@ -269,10 +269,10 @@
       "ats": "phenom",
       "board": "www.yelp.careers/us/en",
       "url": "https://www.yelp.careers/us/en/search-results",
-      "fetched_at": "2026-11-11T14:04:16+00:00",
+      "fetched_at": "2026-11-12T02:18:35+00:00",
       "status": "ok",
       "error": null,
-      "total_jobs": 27,
+      "total_jobs": 28,
       "matched": 1
     },
     {
@@ -291,18 +291,18 @@
       "ats": "workday",
       "board": "chghealthcare.wd1/External",
       "url": "https://chghealthcare.wd1.myworkdayjobs.com/External",
-      "fetched_at": "2026-11-11T14:04:16+00:00",
+      "fetched_at": "2026-11-12T02:18:35+00:00",
       "status": "ok",
       "error": null,
-      "total_jobs": 3,
-      "matched": 3
+      "total_jobs": 4,
+      "matched": 4
     },
     {
       "name": "Jackson Healthcare",
       "ats": "workday",
       "board": "jacksonhealthcare.wd1/careers-jacksonhealthcare",
       "url": "https://jacksonhealthcare.com/careers/search-apply/",
-      "fetched_at": "2026-11-11T14:04:16+00:00",
+      "fetched_at": "2026-11-12T02:18:35+00:00",
       "status": "ok",
       "error": null,
       "total_jobs": 1,
@@ -324,18 +324,18 @@
       "ats": "phenom",
       "board": "careers.autonation.com/us/en",
       "url": "https://careers.autonation.com/us/en/search-results",
-      "fetched_at": "2026-11-11T14:04:16+00:00",
+      "fetched_at": "2026-11-12T02:18:35+00:00",
       "status": "ok",
       "error": null,
-      "total_jobs": 728,
-      "matched": 5
+      "total_jobs": 621,
+      "matched": 3
     },
     {
       "name": "CWX",
       "ats": "bamboohr",
       "board": "cwx",
       "url": "https://cwx.ai/careers#roles",
-      "fetched_at": "2026-11-11T14:04:16+00:00",
+      "fetched_at": "2026-11-12T02:18:35+00:00",
       "status": "ok",
       "error": null,
       "total_jobs": 2,
@@ -347,10 +347,10 @@
       "board": "careers.rivian.com",
       "exclude": "guide, advisor, specialist",
       "url": "https://careers.rivian.com/careers-home/jobs",
-      "fetched_at": "2026-11-11T14:04:16+00:00",
+      "fetched_at": "2026-11-12T02:18:35+00:00",
       "status": "ok",
       "error": null,
-      "total_jobs": 525,
+      "total_jobs": 524,
       "matched": 4
     },
     {
@@ -369,11 +369,11 @@
       "ats": "talentbrew",
       "board": "www.careers.ford.com/en",
       "url": "https://www.careers.ford.com/en/search-jobs",
-      "fetched_at": "2026-11-11T14:04:16+00:00",
+      "fetched_at": "2026-11-12T02:18:35+00:00",
       "status": "ok",
       "error": null,
-      "total_jobs": 685,
-      "matched": 27
+      "total_jobs": 678,
+      "matched": 25
     },
     {
       "name": "Curri",
@@ -402,11 +402,11 @@
       "ats": "workday",
       "board": "generalmotors.wd5/Careers_GM",
       "url": "https://search-careers.gm.com/en/jobs/",
-      "fetched_at": "2026-11-11T14:04:16+00:00",
+      "fetched_at": "2026-11-12T02:18:35+00:00",
       "status": "ok",
       "error": null,
-      "total_jobs": 16,
-      "matched": 11
+      "total_jobs": 17,
+      "matched": 12
     },
     {
       "name": "Fleetio",
@@ -425,7 +425,7 @@
       "board": "fa-evlf-saasfaprod1.fa.ocs.oraclecloud.com/CX_1",
       "link": "https://jobs.hertzcareers.com/#en/sites/CX_1/job/{id}",
       "url": "https://jobs.hertzcareers.com/#en/sites/CX_1/jobs",
-      "fetched_at": "2026-11-11T14:04:16+00:00",
+      "fetched_at": "2026-11-12T02:18:35+00:00",
       "status": "ok",
       "error": null,
       "total_jobs": 171,
@@ -436,7 +436,7 @@
       "ats": "oracle",
       "board": "fa-evlf-saasfaprod1.fa.ocs.oraclecloud.com/CX_2001",
       "url": "https://fa-evlf-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_2001/jobs",
-      "fetched_at": "2026-11-11T14:04:16+00:00",
+      "fetched_at": "2026-11-12T02:18:35+00:00",
       "status": "ok",
       "error": null,
       "total_jobs": 0,
@@ -447,7 +447,7 @@
       "ats": "globallogic",
       "board": "globallogic.com",
       "url": "https://www.globallogic.com/career-search-page/",
-      "fetched_at": "2026-11-11T14:04:16+00:00",
+      "fetched_at": "2026-11-12T02:18:35+00:00",
       "status": "ok",
       "error": null,
       "total_jobs": 17,
@@ -459,10 +459,10 @@
       "board": "jobs.intuit.com",
       "url": "https://www.intuit.com/careers/#Open-Roles",
       "exclude": "analyst, scientist, security",
-      "fetched_at": "2026-11-11T14:04:16+00:00",
+      "fetched_at": "2026-11-12T02:18:35+00:00",
       "status": "ok",
       "error": null,
-      "total_jobs": 472,
+      "total_jobs": 478,
       "matched": 55
     },
     {
@@ -503,10 +503,10 @@
       "ats": "phenom",
       "board": "careers.cisco.com/global/en",
       "url": "https://careers.cisco.com/global/en/search-results",
-      "fetched_at": "2026-11-11T14:04:16+00:00",
+      "fetched_at": "2026-11-12T02:18:35+00:00",
       "status": "ok",
       "error": null,
-      "total_jobs": 1458,
+      "total_jobs": 1456,
       "matched": 33
     },
     {
@@ -536,10 +536,10 @@
       "ats": "phenom",
       "board": "www.jobs-ups.com/us/en",
       "url": "https://www.jobs-ups.com/us/en/search-results",
-      "fetched_at": "2026-11-11T14:04:16+00:00",
+      "fetched_at": "2026-11-12T02:18:35+00:00",
       "status": "ok",
       "error": null,
-      "total_jobs": 2656,
+      "total_jobs": 4678,
       "matched": 1
     },
     {
@@ -558,10 +558,10 @@
       "ats": "talentbrew",
       "board": "jobs.bd.com/en",
       "url": "https://jobs.bd.com/en/search-jobs",
-      "fetched_at": "2026-11-11T14:04:16+00:00",
+      "fetched_at": "2026-11-12T02:18:35+00:00",
       "status": "ok",
       "error": null,
-      "total_jobs": 1108,
+      "total_jobs": 1112,
       "matched": 14
     },
     {
@@ -631,7 +631,49 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2029905",
       "first_seen": "2026-11-11T14:04:16+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "JR104553",
+      "req_id": "JR104553",
+      "title": "Technical Product Manager",
+      "location": "Salt Lake City, UT; Remote, United States of America",
+      "location_detail": "",
+      "department": "CHG Management, Inc.",
+      "published_at": "2026-11-11",
+      "updated_at": null,
+      "url": "https://chghealthcare.wd1.myworkdayjobs.com/External/job/Salt-Lake-City-UT/Technical-Product-Manager_JR104553-1",
+      "salary": null,
+      "us": true,
+      "remote": "remote",
+      "remote_confidence": "high",
+      "company": "CHG Healthcare",
+      "key": "workday:chghealthcare.wd1/External:JR104553",
+      "first_seen": "2026-11-12T02:18:35+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "JR-202624062",
+      "req_id": "JR-202624062",
+      "title": "Senior Technical Product Manager, Robotics AI Strategy & Operations",
+      "location": "Warren, Michigan, United States of America",
+      "location_detail": "",
+      "department": "General Motors LLC",
+      "published_at": "2026-11-11",
+      "updated_at": null,
+      "url": "https://generalmotors.wd5.myworkdayjobs.com/Careers_GM/job/Warren-Michigan-United-States-of-America/Senior-Technical-Product-Manager--Robotics-AI-Strategy---Operations_JR-202624062",
+      "salary": null,
+      "us": true,
+      "remote": "onsite",
+      "remote_confidence": "medium",
+      "company": "General Motors",
+      "key": "workday:generalmotors.wd5/Careers_GM:JR-202624062",
+      "first_seen": "2026-11-12T02:18:35+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -839,32 +881,6 @@
       "closed_at": null
     },
     {
-      "job_id": "103096147920",
-      "req_id": null,
-      "title": "Senior Product Manager, Mobile Apps – Vehicle Productivity and Electrification Experiences",
-      "location": "Remote",
-      "location_detail": "United States",
-      "department": "",
-      "published_at": "2026-11-10",
-      "updated_at": null,
-      "url": "https://www.careers.ford.com/en/job/united-states/senior-product-manager-mobile-apps-vehicle-productivity-and-electrification-experiences/48560/103096147920",
-      "salary": {
-        "min": 115500,
-        "max": 200000,
-        "currency": "USD",
-        "source": "description"
-      },
-      "us": true,
-      "remote": "remote",
-      "remote_confidence": "high",
-      "company": "Ford",
-      "key": "talentbrew:www.careers.ford.com/en:103096147920",
-      "first_seen": "2026-11-10T14:00:01+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
-      "status": "open",
-      "closed_at": null
-    },
-    {
       "job_id": "CISCISGLOBAL2028804EXTERNALENGLOBAL",
       "req_id": "2028804",
       "title": "Leader, Business Product Management",
@@ -886,7 +902,7 @@
       "company": "Cisco",
       "key": "phenom:careers.cisco.com/global/en:CISCISGLOBAL2028804EXTERNALENGLOBAL",
       "first_seen": "2026-11-10T14:00:01+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -912,7 +928,7 @@
       "company": "BD",
       "key": "talentbrew:jobs.bd.com/en:100419356960",
       "first_seen": "2026-11-11T05:15:25+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -938,7 +954,7 @@
       "company": "Cisco",
       "key": "phenom:careers.cisco.com/global/en:CISCISGLOBAL2028004EXTERNALENGLOBAL",
       "first_seen": "2026-11-09T23:53:19+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -964,7 +980,7 @@
       "company": "Ford",
       "key": "talentbrew:www.careers.ford.com/en:101747571904",
       "first_seen": "2026-11-11T14:04:16+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -990,7 +1006,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:103117897440",
       "first_seen": "2026-11-11T14:04:16+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1016,7 +1032,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:103124203408",
       "first_seen": "2026-11-11T14:04:16+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1042,7 +1058,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:103124203456",
       "first_seen": "2026-11-11T14:04:16+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1068,7 +1084,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:103124203472",
       "first_seen": "2026-11-11T14:04:16+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1146,7 +1162,7 @@
       "company": "Cisco",
       "key": "phenom:careers.cisco.com/global/en:CISCISGLOBAL2029791EXTERNALENGLOBAL",
       "first_seen": "2026-11-11T14:04:16+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1282,7 +1298,7 @@
       "company": "Cisco",
       "key": "phenom:careers.cisco.com/global/en:CISCISGLOBAL2024864EXTERNALENGLOBAL",
       "first_seen": "2026-11-09T23:53:19+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1308,7 +1324,7 @@
       "company": "Cisco",
       "key": "phenom:careers.cisco.com/global/en:CISCISGLOBAL2028398EXTERNALENGLOBAL",
       "first_seen": "2026-11-09T23:53:19+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1329,7 +1345,7 @@
       "company": "Hitachi",
       "key": "workday:hitachi.wd1/hitachi:R0146458",
       "first_seen": "2026-10-30T07:05:09+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1355,7 +1371,7 @@
       "company": "Hitachi",
       "key": "workday:hitachi.wd1/hitachi:R0150460",
       "first_seen": "2026-11-10T14:00:01+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1381,7 +1397,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2029425",
       "first_seen": "2026-11-10T14:00:01+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1407,7 +1423,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2029674",
       "first_seen": "2026-11-10T14:00:01+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1433,7 +1449,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2029528",
       "first_seen": "2026-11-10T14:00:01+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1459,7 +1475,7 @@
       "company": "Ford",
       "key": "talentbrew:www.careers.ford.com/en:103091194112",
       "first_seen": "2026-11-10T14:00:01+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1579,7 +1595,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2027147",
       "first_seen": "2026-11-06T19:38:39+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1605,7 +1621,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:102941609696",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1631,7 +1647,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:102948086912",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1657,7 +1673,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:102948086896",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1683,7 +1699,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:102948086848",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1709,7 +1725,7 @@
       "company": "Cisco",
       "key": "phenom:careers.cisco.com/global/en:CISCISGLOBAL2026192EXTERNALENGLOBAL",
       "first_seen": "2026-11-09T23:53:19+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1735,7 +1751,7 @@
       "company": "Cisco",
       "key": "phenom:careers.cisco.com/global/en:CISCISGLOBAL2027608EXTERNALENGLOBAL",
       "first_seen": "2026-11-09T23:53:19+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1761,7 +1777,7 @@
       "company": "Cisco",
       "key": "phenom:careers.cisco.com/global/en:CISCISGLOBAL2027604EXTERNALENGLOBAL",
       "first_seen": "2026-11-09T23:53:19+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1787,7 +1803,7 @@
       "company": "Cisco",
       "key": "phenom:careers.cisco.com/global/en:CISCISGLOBAL2028944EXTERNALENGLOBAL",
       "first_seen": "2026-11-09T23:53:19+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1886,28 +1902,7 @@
       "company": "Ford",
       "key": "talentbrew:www.careers.ford.com/en:102876255248",
       "first_seen": "2026-11-05T20:48:07+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
-      "status": "open",
-      "closed_at": null
-    },
-    {
-      "job_id": "AUMAIHUSJR2026151862EXTERNALENUS",
-      "req_id": "JR2026151862",
-      "title": "BMW Product Specialist -  BMW Roseville $21/hr",
-      "location": "Roseville, California, United States of America",
-      "location_detail": "Roseville, California, United States of America",
-      "department": "Operations",
-      "published_at": "2026-11-05T00:00:00.000+0000",
-      "updated_at": null,
-      "url": "https://careers.autonation.com/us/en/job/AUMAIHUSJR2026151862EXTERNALENUS/BMW-Product-Specialist-BMW-Roseville-21-hr",
-      "salary": null,
-      "us": true,
-      "remote": "unknown",
-      "remote_confidence": "none",
-      "company": "AutoNation",
-      "key": "phenom:careers.autonation.com/us/en:AUMAIHUSJR2026151862EXTERNALENUS",
-      "first_seen": "2026-11-05T20:59:02+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1933,7 +1928,7 @@
       "company": "Ford",
       "key": "talentbrew:www.careers.ford.com/en:102920099568",
       "first_seen": "2026-11-06T06:59:11+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1959,7 +1954,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:102918028672",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -1985,7 +1980,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:102926585280",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2011,7 +2006,7 @@
       "company": "Cisco",
       "key": "phenom:careers.cisco.com/global/en:CISCISGLOBAL2027999EXTERNALENGLOBAL",
       "first_seen": "2026-11-09T23:53:19+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2037,7 +2032,7 @@
       "company": "Cisco",
       "key": "phenom:careers.cisco.com/global/en:CISCISGLOBAL2030652EXTERNALENGLOBAL",
       "first_seen": "2026-11-09T23:53:19+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2058,7 +2053,7 @@
       "company": "BD",
       "key": "talentbrew:jobs.bd.com/en:100712519552",
       "first_seen": "2026-11-11T05:15:25+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2126,7 +2121,7 @@
       "company": "CHG Healthcare",
       "key": "workday:chghealthcare.wd1/External:JR104638",
       "first_seen": "2026-11-05T14:07:58+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2152,7 +2147,7 @@
       "company": "Cisco",
       "key": "phenom:careers.cisco.com/global/en:CISCISGLOBAL2019900EXTERNALENGLOBAL",
       "first_seen": "2026-11-09T23:53:19+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2230,7 +2225,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2028926",
       "first_seen": "2026-11-03T14:00:15+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2256,7 +2251,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2019756",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2277,7 +2272,7 @@
       "company": "CHG Healthcare",
       "key": "workday:chghealthcare.wd1/External:JR104622",
       "first_seen": "2026-11-04T13:59:00+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2303,7 +2298,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:102821460976",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2329,7 +2324,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:102821460928",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2355,7 +2350,7 @@
       "company": "Cisco",
       "key": "phenom:careers.cisco.com/global/en:CISCISGLOBAL2029509EXTERNALENGLOBAL",
       "first_seen": "2026-11-09T23:53:19+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2381,7 +2376,7 @@
       "company": "Cisco",
       "key": "phenom:careers.cisco.com/global/en:CISCISGLOBAL2027891EXTERNALENGLOBAL",
       "first_seen": "2026-11-09T23:53:19+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2402,7 +2397,7 @@
       "company": "UPS",
       "key": "phenom:www.jobs-ups.com/us/en:UPBUPSGLOBALR26031872EXTERNALENUS",
       "first_seen": "2026-11-11T00:05:55+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2428,7 +2423,7 @@
       "company": "BD",
       "key": "talentbrew:jobs.bd.com/en:102822320720",
       "first_seen": "2026-11-11T05:15:25+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2449,7 +2444,7 @@
       "company": "BD",
       "key": "talentbrew:jobs.bd.com/en:102816296976",
       "first_seen": "2026-11-11T05:15:25+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2548,7 +2543,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2029162",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2574,7 +2569,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:102778301376",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2600,7 +2595,7 @@
       "company": "Cisco",
       "key": "phenom:careers.cisco.com/global/en:CISCISGLOBAL2027580EXTERNALENGLOBAL",
       "first_seen": "2026-11-09T23:53:19+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2626,7 +2621,7 @@
       "company": "Cisco",
       "key": "phenom:careers.cisco.com/global/en:CISCISGLOBAL2028032EXTERNALENGLOBAL",
       "first_seen": "2026-11-09T23:53:19+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2652,7 +2647,7 @@
       "company": "Cisco",
       "key": "phenom:careers.cisco.com/global/en:CISCISGLOBAL2028724EXTERNALENGLOBAL",
       "first_seen": "2026-11-09T23:53:19+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2704,7 +2699,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2017653",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2730,7 +2725,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2025501",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2756,7 +2751,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2014812",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2782,7 +2777,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2020401",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2808,7 +2803,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2026487",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2834,7 +2829,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2027072",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2860,7 +2855,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2028509",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2886,7 +2881,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2020111",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2912,7 +2907,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2024923",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2938,7 +2933,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2025321",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2964,7 +2959,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2026358",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -2990,7 +2985,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2027080",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3016,7 +3011,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2027838",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3042,7 +3037,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2008001",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3068,7 +3063,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2011865",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3094,7 +3089,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2016992",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3120,7 +3115,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2020922",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3146,7 +3141,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2021455",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3172,7 +3167,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2022876",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3198,7 +3193,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2023471",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3224,7 +3219,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2024199",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3250,7 +3245,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2024647",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3276,7 +3271,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2026204",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3302,7 +3297,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2026946",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3328,7 +3323,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2025794",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3354,7 +3349,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2027361",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3380,7 +3375,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2001089",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3406,7 +3401,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2020110",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3432,7 +3427,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2022611",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3458,7 +3453,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2024902",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3484,7 +3479,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2025433",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3510,7 +3505,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2026141",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3536,7 +3531,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2027360",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3562,7 +3557,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2016350",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3588,7 +3583,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2016860",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3614,7 +3609,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2019242",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3640,7 +3635,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2023964",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3666,7 +3661,7 @@
       "company": "NVIDIA",
       "key": "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2027355",
       "first_seen": "2026-11-01T04:40:34+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3692,7 +3687,7 @@
       "company": "Ford",
       "key": "talentbrew:www.careers.ford.com/en:102653138368",
       "first_seen": "2026-11-05T20:48:07+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3718,7 +3713,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:102649903136",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3770,7 +3765,7 @@
       "company": "Cisco",
       "key": "phenom:careers.cisco.com/global/en:CISCISGLOBAL2019462EXTERNALENGLOBAL",
       "first_seen": "2026-11-09T23:53:19+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3796,7 +3791,7 @@
       "company": "Cisco",
       "key": "phenom:careers.cisco.com/global/en:CISCISGLOBAL2026133EXTERNALENGLOBAL",
       "first_seen": "2026-11-09T23:53:19+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3838,7 +3833,7 @@
       "company": "General Motors",
       "key": "workday:generalmotors.wd5/Careers_GM:JR-202602596",
       "first_seen": "2026-11-06T22:46:00+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3864,7 +3859,7 @@
       "company": "Cisco",
       "key": "phenom:careers.cisco.com/global/en:CISCISGLOBAL2029645EXTERNALENGLOBAL",
       "first_seen": "2026-11-09T23:53:19+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3890,7 +3885,7 @@
       "company": "Cisco",
       "key": "phenom:careers.cisco.com/global/en:CISCISGLOBAL2028730EXTERNALENGLOBAL",
       "first_seen": "2026-11-09T23:53:19+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3916,7 +3911,7 @@
       "company": "Cisco",
       "key": "phenom:careers.cisco.com/global/en:CISCISGLOBAL2026324EXTERNALENGLOBAL",
       "first_seen": "2026-11-09T23:53:19+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3942,7 +3937,7 @@
       "company": "BD",
       "key": "talentbrew:jobs.bd.com/en:102622440832",
       "first_seen": "2026-11-11T05:15:25+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -3994,7 +3989,7 @@
       "company": "Ford",
       "key": "talentbrew:www.careers.ford.com/en:101714132832",
       "first_seen": "2026-11-05T20:48:07+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4015,7 +4010,7 @@
       "company": "General Motors",
       "key": "workday:generalmotors.wd5/Careers_GM:JR-202623223",
       "first_seen": "2026-11-06T22:46:00+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4067,7 +4062,7 @@
       "company": "BD",
       "key": "talentbrew:jobs.bd.com/en:100678413472",
       "first_seen": "2026-11-11T05:15:25+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4249,7 +4244,7 @@
       "company": "Ford",
       "key": "talentbrew:www.careers.ford.com/en:102529946176",
       "first_seen": "2026-11-05T20:48:07+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4275,7 +4270,7 @@
       "company": "Ford",
       "key": "talentbrew:www.careers.ford.com/en:102524325840",
       "first_seen": "2026-11-05T20:48:07+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4301,7 +4296,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:102516305200",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4379,7 +4374,7 @@
       "company": "Ford",
       "key": "talentbrew:www.careers.ford.com/en:102463064784",
       "first_seen": "2026-11-05T20:48:07+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4405,7 +4400,7 @@
       "company": "Cisco",
       "key": "phenom:careers.cisco.com/global/en:CISCISGLOBAL2028149EXTERNALENGLOBAL",
       "first_seen": "2026-11-09T23:53:19+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4431,7 +4426,7 @@
       "company": "Ford",
       "key": "talentbrew:www.careers.ford.com/en:100453516384",
       "first_seen": "2026-11-05T20:48:07+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4457,7 +4452,7 @@
       "company": "Cisco",
       "key": "phenom:careers.cisco.com/global/en:CISCISGLOBAL2027633EXTERNALENGLOBAL",
       "first_seen": "2026-11-09T23:53:19+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4587,7 +4582,7 @@
       "company": "Cisco",
       "key": "phenom:careers.cisco.com/global/en:CISCISGLOBAL2026633EXTERNALENGLOBAL",
       "first_seen": "2026-11-09T23:53:19+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4613,7 +4608,7 @@
       "company": "Cisco",
       "key": "phenom:careers.cisco.com/global/en:CISCISGLOBAL2026294EXTERNALENGLOBAL",
       "first_seen": "2026-11-09T23:53:19+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4644,32 +4639,6 @@
       "closed_at": null
     },
     {
-      "job_id": "102314380208",
-      "req_id": null,
-      "title": "Product Manager - Global Uptime, Digital Product",
-      "location": "Dearborn, MI, United States",
-      "location_detail": "Dearborn, MI",
-      "department": "",
-      "published_at": "2026-10-22",
-      "updated_at": null,
-      "url": "https://www.careers.ford.com/en/job/dearborn/product-manager-global-uptime-digital-product/48560/102314380208",
-      "salary": {
-        "min": 99100,
-        "max": 149000,
-        "currency": "USD",
-        "source": "description"
-      },
-      "us": true,
-      "remote": "hybrid",
-      "remote_confidence": "medium",
-      "company": "Ford",
-      "key": "talentbrew:www.careers.ford.com/en:102314380208",
-      "first_seen": "2026-11-05T20:48:07+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
-      "status": "open",
-      "closed_at": null
-    },
-    {
       "job_id": "102309708864",
       "req_id": null,
       "title": "Group Product Manager, Integrations / Customization",
@@ -4691,7 +4660,7 @@
       "company": "Ford",
       "key": "talentbrew:www.careers.ford.com/en:102309708864",
       "first_seen": "2026-11-05T20:48:07+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4717,7 +4686,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:102296004416",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4951,7 +4920,7 @@
       "company": "Ford",
       "key": "talentbrew:www.careers.ford.com/en:102261519472",
       "first_seen": "2026-11-05T20:48:07+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4977,7 +4946,7 @@
       "company": "Ford",
       "key": "talentbrew:www.careers.ford.com/en:102261520192",
       "first_seen": "2026-11-06T06:59:11+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5003,7 +4972,7 @@
       "company": "Cisco",
       "key": "phenom:careers.cisco.com/global/en:CISCISGLOBAL2027733EXTERNALENGLOBAL",
       "first_seen": "2026-11-09T23:53:19+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5029,7 +4998,7 @@
       "company": "Cisco",
       "key": "phenom:careers.cisco.com/global/en:CISCISGLOBAL2015048EXTERNALENGLOBAL",
       "first_seen": "2026-11-09T23:53:19+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5154,7 +5123,7 @@
       "company": "Hitachi",
       "key": "workday:hitachi.wd1/hitachi:R0141167",
       "first_seen": "2026-10-30T07:05:09+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5180,7 +5149,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:102211454096",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5206,7 +5175,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:102211454144",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5232,7 +5201,7 @@
       "company": "Cisco",
       "key": "phenom:careers.cisco.com/global/en:CISCISGLOBAL2028687EXTERNALENGLOBAL",
       "first_seen": "2026-11-09T23:53:19+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5258,7 +5227,7 @@
       "company": "BD",
       "key": "talentbrew:jobs.bd.com/en:100012215696",
       "first_seen": "2026-11-11T05:15:25+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5357,7 +5326,7 @@
       "company": "CHG Healthcare",
       "key": "workday:chghealthcare.wd1/External:JR104551",
       "first_seen": "2026-11-01T05:43:31+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5378,7 +5347,7 @@
       "company": "General Motors",
       "key": "workday:generalmotors.wd5/Careers_GM:JR-202622682",
       "first_seen": "2026-11-06T22:46:00+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5404,7 +5373,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:102181804640",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5430,7 +5399,7 @@
       "company": "Cisco",
       "key": "phenom:careers.cisco.com/global/en:CISCISGLOBAL2023943EXTERNALENGLOBAL",
       "first_seen": "2026-11-09T23:53:19+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5456,7 +5425,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:102119697696",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5529,7 +5498,7 @@
       "company": "Ford",
       "key": "talentbrew:www.careers.ford.com/en:102040948656",
       "first_seen": "2026-11-05T20:48:07+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5550,7 +5519,7 @@
       "company": "BD",
       "key": "talentbrew:jobs.bd.com/en:102041057616",
       "first_seen": "2026-11-11T05:15:25+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5628,7 +5597,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:103124203376",
       "first_seen": "2026-11-11T14:04:16+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5680,7 +5649,7 @@
       "company": "Cisco",
       "key": "phenom:careers.cisco.com/global/en:CISCISGLOBAL2028341EXTERNALENGLOBAL",
       "first_seen": "2026-11-09T23:53:19+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5706,7 +5675,7 @@
       "company": "BD",
       "key": "talentbrew:jobs.bd.com/en:101955694992",
       "first_seen": "2026-11-11T05:15:25+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5779,7 +5748,7 @@
       "company": "General Motors",
       "key": "workday:generalmotors.wd5/Careers_GM:JR-202622283",
       "first_seen": "2026-11-06T22:46:00+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5800,7 +5769,7 @@
       "company": "General Motors",
       "key": "workday:generalmotors.wd5/Careers_GM:JR-202622202",
       "first_seen": "2026-11-06T22:46:00+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5821,7 +5790,7 @@
       "company": "General Motors",
       "key": "workday:generalmotors.wd5/Careers_GM:JR-202622205",
       "first_seen": "2026-11-06T22:46:00+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5847,7 +5816,7 @@
       "company": "Ford",
       "key": "talentbrew:www.careers.ford.com/en:101767553744",
       "first_seen": "2026-11-05T20:48:07+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5899,7 +5868,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:101748803264",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5925,7 +5894,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:101748803232",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -6076,7 +6045,7 @@
       "company": "AutoNation",
       "key": "phenom:careers.autonation.com/us/en:AUMAIHUSJR2026148296EXTERNALENUS",
       "first_seen": "2026-11-02T20:08:55+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -6144,7 +6113,7 @@
       "company": "Ford",
       "key": "talentbrew:www.careers.ford.com/en:101671475104",
       "first_seen": "2026-11-05T20:48:07+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -6170,7 +6139,7 @@
       "company": "Ford",
       "key": "talentbrew:www.careers.ford.com/en:101677005312",
       "first_seen": "2026-11-05T20:48:07+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -6196,7 +6165,7 @@
       "company": "Ford",
       "key": "talentbrew:www.careers.ford.com/en:101662067600",
       "first_seen": "2026-11-05T20:48:07+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -6217,7 +6186,7 @@
       "company": "BD",
       "key": "talentbrew:jobs.bd.com/en:97521822000",
       "first_seen": "2026-11-11T05:15:25+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -6295,7 +6264,7 @@
       "company": "Cisco",
       "key": "phenom:careers.cisco.com/global/en:CISCISGLOBAL2027076EXTERNALENGLOBAL",
       "first_seen": "2026-11-09T23:53:19+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -6380,7 +6349,7 @@
       "location_detail": "",
       "department": "Information Technology",
       "published_at": "2026-10-05T17:55:00+0000",
-      "updated_at": "2026-10-08T23:47:36+0000",
+      "updated_at": "2026-11-12T00:14:36+0000",
       "url": "https://careers.rivian.com/careers-home/jobs/34111?lang=en-us",
       "salary": {
         "min": 111000,
@@ -6394,7 +6363,7 @@
       "company": "Rivian",
       "key": "jibe:careers.rivian.com:34111",
       "first_seen": "2026-11-04T00:50:31+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -6446,7 +6415,7 @@
       "company": "Ford",
       "key": "talentbrew:www.careers.ford.com/en:101594058784",
       "first_seen": "2026-11-05T20:48:07+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -6472,7 +6441,7 @@
       "company": "BD",
       "key": "talentbrew:jobs.bd.com/en:101596083584",
       "first_seen": "2026-11-11T05:15:25+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -6550,7 +6519,7 @@
       "company": "Virgin Galactic",
       "key": "phenom:vgcareers.virgingalactic.com/global/en:VGNVGEUS2255EXTERNALENGLOBAL",
       "first_seen": "2026-10-30T19:12:39+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -6576,7 +6545,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:101456093760",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -6614,7 +6583,7 @@
       "location_detail": "",
       "department": "Information Technology",
       "published_at": "2026-09-30T16:44:00+0000",
-      "updated_at": "2026-10-08T23:47:20+0000",
+      "updated_at": "2026-11-12T00:14:30+0000",
       "url": "https://careers.rivian.com/careers-home/jobs/34004?lang=en-us",
       "salary": {
         "min": 111000,
@@ -6628,7 +6597,7 @@
       "company": "Rivian",
       "key": "jibe:careers.rivian.com:34004",
       "first_seen": "2026-11-04T00:50:31+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -6706,7 +6675,7 @@
       "company": "Ford",
       "key": "talentbrew:www.careers.ford.com/en:101376351360",
       "first_seen": "2026-11-05T20:48:07+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -6732,7 +6701,7 @@
       "company": "Virgin Galactic",
       "key": "phenom:vgcareers.virgingalactic.com/global/en:VGNVGEUS2247EXTERNALENGLOBAL",
       "first_seen": "2026-10-30T19:12:39+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -6758,7 +6727,7 @@
       "company": "Virgin Galactic",
       "key": "phenom:vgcareers.virgingalactic.com/global/en:VGNVGEUS2213EXTERNALENGLOBAL",
       "first_seen": "2026-10-30T19:12:39+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -6796,7 +6765,7 @@
       "location_detail": "",
       "department": "Autonomous Driving",
       "published_at": "2026-09-29T19:00:00+0000",
-      "updated_at": "2026-10-07T23:45:35+0000",
+      "updated_at": "2026-11-12T00:12:51+0000",
       "url": "https://careers.rivian.com/careers-home/jobs/31384?lang=en-us",
       "salary": {
         "min": 206500,
@@ -6810,7 +6779,7 @@
       "company": "Rivian",
       "key": "jibe:careers.rivian.com:31384",
       "first_seen": "2026-11-04T00:50:31+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -6836,7 +6805,7 @@
       "company": "AMN Healthcare",
       "key": "workday:amn.wd1/AMN_Careers:Req23778",
       "first_seen": "2026-11-01T04:24:29+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -6857,7 +6826,7 @@
       "company": "Ford",
       "key": "talentbrew:www.careers.ford.com/en:101327857632",
       "first_seen": "2026-11-05T20:48:07+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -6909,7 +6878,7 @@
       "company": "Ford",
       "key": "talentbrew:www.careers.ford.com/en:101290417456",
       "first_seen": "2026-11-05T20:48:07+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -7013,7 +6982,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:101107221232",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -7103,7 +7072,7 @@
       "location_detail": "",
       "department": "Information Technology",
       "published_at": "2026-09-22T21:42:00+0000",
-      "updated_at": "2026-10-08T23:46:41+0000",
+      "updated_at": "2026-11-12T00:14:07+0000",
       "url": "https://careers.rivian.com/careers-home/jobs/33675?lang=en-us",
       "salary": {
         "min": 132100,
@@ -7117,7 +7086,7 @@
       "company": "Rivian",
       "key": "jibe:careers.rivian.com:33675",
       "first_seen": "2026-11-04T00:50:31+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -7169,7 +7138,7 @@
       "company": "General Motors",
       "key": "workday:generalmotors.wd5/Careers_GM:JR-202620799",
       "first_seen": "2026-11-06T22:46:00+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -7195,7 +7164,7 @@
       "company": "General Motors",
       "key": "workday:generalmotors.wd5/Careers_GM:JR-202620797",
       "first_seen": "2026-11-06T22:46:00+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -7221,7 +7190,7 @@
       "company": "BD",
       "key": "talentbrew:jobs.bd.com/en:100995522000",
       "first_seen": "2026-11-11T05:15:25+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -7325,7 +7294,7 @@
       "company": "Ford",
       "key": "talentbrew:www.careers.ford.com/en:100963778688",
       "first_seen": "2026-11-05T20:48:07+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -7351,7 +7320,7 @@
       "company": "Ford",
       "key": "talentbrew:www.careers.ford.com/en:98847422048",
       "first_seen": "2026-11-05T20:48:07+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -7372,7 +7341,7 @@
       "company": "Hitachi",
       "key": "workday:hitachi.wd1/hitachi:R0143453",
       "first_seen": "2026-11-08T00:54:47+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -7398,7 +7367,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:100963419344",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -7424,7 +7393,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:100807241040",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -7669,7 +7638,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:100674391472",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -7695,7 +7664,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:100674391408",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -7721,7 +7690,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:100674391328",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -7799,7 +7768,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:100595831952",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -7924,7 +7893,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:101143613440",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -7976,7 +7945,7 @@
       "company": "General Motors",
       "key": "workday:generalmotors.wd5/Careers_GM:JR-202610009",
       "first_seen": "2026-11-06T22:46:00+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -8002,7 +7971,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:100450676992",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -8028,28 +7997,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:100412450320",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
-      "status": "open",
-      "closed_at": null
-    },
-    {
-      "job_id": "AUMAIHUSJR2026148772EXTERNALENUS",
-      "req_id": "JR2026148772",
-      "title": "BMW Product Specialist-Laurel BMW of Westmont",
-      "location": "Westmont, Illinois, United States of America",
-      "location_detail": "Westmont, Illinois, United States of America",
-      "department": "Operations",
-      "published_at": "2026-09-08T00:00:00.000+0000",
-      "updated_at": null,
-      "url": "https://careers.autonation.com/us/en/job/AUMAIHUSJR2026148772EXTERNALENUS/BMW-Product-Specialist-Laurel-BMW-of-Westmont",
-      "salary": null,
-      "us": true,
-      "remote": "unknown",
-      "remote_confidence": "none",
-      "company": "AutoNation",
-      "key": "phenom:careers.autonation.com/us/en:AUMAIHUSJR2026148772EXTERNALENUS",
-      "first_seen": "2026-11-02T20:08:55+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -8075,7 +8023,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:100183029472",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -8101,7 +8049,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:100183029504",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -8174,7 +8122,7 @@
       "company": "Hitachi",
       "key": "workday:hitachi.wd1/hitachi:R0140695",
       "first_seen": "2026-10-30T07:05:09+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -8195,7 +8143,7 @@
       "company": "Hitachi",
       "key": "workday:hitachi.wd1/hitachi:R0120995",
       "first_seen": "2026-10-30T07:05:09+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -8221,7 +8169,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:100138148208",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -8247,7 +8195,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:100076767424",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -8273,7 +8221,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:100089160352",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -8325,7 +8273,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:99985094368",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -8351,7 +8299,7 @@
       "company": "BD",
       "key": "talentbrew:jobs.bd.com/en:99855918272",
       "first_seen": "2026-11-11T05:15:25+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -8398,7 +8346,7 @@
       "company": "General Motors",
       "key": "workday:generalmotors.wd5/Careers_GM:JR-202618664",
       "first_seen": "2026-11-06T22:46:00+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -8424,7 +8372,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:99677351552",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -8450,7 +8398,7 @@
       "company": "BD",
       "key": "talentbrew:jobs.bd.com/en:99684131408",
       "first_seen": "2026-11-11T05:15:25+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -8476,7 +8424,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:99544281088",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -8502,7 +8450,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:99493492384",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -8528,7 +8476,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:99691119152",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -8570,7 +8518,7 @@
       "company": "AutoNation",
       "key": "phenom:careers.autonation.com/us/en:AUMAIHUSJR2026143646EXTERNALENUS",
       "first_seen": "2026-11-02T20:08:55+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -8591,7 +8539,7 @@
       "company": "AutoNation",
       "key": "phenom:careers.autonation.com/us/en:AUMAIHUSJR2026143821EXTERNALENUS",
       "first_seen": "2026-11-02T20:08:55+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -8612,7 +8560,7 @@
       "company": "Ford",
       "key": "talentbrew:www.careers.ford.com/en:99084975648",
       "first_seen": "2026-11-05T20:48:07+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -8633,7 +8581,7 @@
       "company": "General Motors",
       "key": "workday:generalmotors.wd5/Careers_GM:JR-202617063",
       "first_seen": "2026-11-06T22:46:00+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -8659,7 +8607,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:99048102816",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -8732,7 +8680,7 @@
       "company": "Jackson Healthcare",
       "key": "workday:jacksonhealthcare.wd1/careers-jacksonhealthcare:JR109106",
       "first_seen": "2026-11-01T05:44:35+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -8831,7 +8779,7 @@
       "company": "Yelp",
       "key": "phenom:www.yelp.careers/us/en:YELPUS14009EXTERNALENUS",
       "first_seen": "2026-11-01T05:32:04+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -8857,7 +8805,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:98472064704",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -8883,7 +8831,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:98440066752",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -8909,7 +8857,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:97850406528",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -8935,7 +8883,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:97850406544",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -8987,7 +8935,7 @@
       "company": "Cisco",
       "key": "phenom:careers.cisco.com/global/en:CISCISGLOBAL2016926EXTERNALENGLOBAL",
       "first_seen": "2026-11-09T23:53:19+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -9013,7 +8961,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:97617057552",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -9039,7 +8987,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:96477128608",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -9117,7 +9065,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:95852079168",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -9242,7 +9190,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:94774645552",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -9268,7 +9216,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:96482379856",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -9289,7 +9237,7 @@
       "company": "Hitachi",
       "key": "workday:hitachi.wd1/hitachi:R0105015",
       "first_seen": "2026-10-30T07:05:09+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -9409,7 +9357,7 @@
       "company": "Intuit",
       "key": "talentbrew:jobs.intuit.com:92055106736",
       "first_seen": "2026-11-08T20:03:30+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -9534,7 +9482,7 @@
       "company": "Hitachi",
       "key": "workday:hitachi.wd1/hitachi:R0040237",
       "first_seen": "2026-10-30T07:05:09+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -9581,9 +9529,35 @@
       "company": "Hitachi",
       "key": "workday:hitachi.wd1/hitachi:R0008293",
       "first_seen": "2026-10-30T07:05:09+00:00",
-      "last_seen": "2026-11-11T14:04:16+00:00",
+      "last_seen": "2026-11-12T02:18:35+00:00",
       "status": "open",
       "closed_at": null
+    },
+    {
+      "job_id": "103096147920",
+      "req_id": null,
+      "title": "Senior Product Manager, Mobile Apps – Vehicle Productivity and Electrification Experiences",
+      "location": "Remote",
+      "location_detail": "United States",
+      "department": "",
+      "published_at": "2026-11-10",
+      "updated_at": null,
+      "url": "https://www.careers.ford.com/en/job/united-states/senior-product-manager-mobile-apps-vehicle-productivity-and-electrification-experiences/48560/103096147920",
+      "salary": {
+        "min": 115500,
+        "max": 200000,
+        "currency": "USD",
+        "source": "description"
+      },
+      "us": true,
+      "remote": "remote",
+      "remote_confidence": "high",
+      "company": "Ford",
+      "key": "talentbrew:www.careers.ford.com/en:103096147920",
+      "first_seen": "2026-11-10T14:00:01+00:00",
+      "last_seen": "2026-11-11T14:04:16+00:00",
+      "status": "closed",
+      "closed_at": "2026-11-12T02:18:35+00:00"
     },
     {
       "job_id": "CISCISGLOBAL2026478EXTERNALENGLOBAL",
@@ -9610,6 +9584,27 @@
       "last_seen": "2026-11-10T14:00:01+00:00",
       "status": "closed",
       "closed_at": "2026-11-11T14:04:16+00:00"
+    },
+    {
+      "job_id": "AUMAIHUSJR2026151862EXTERNALENUS",
+      "req_id": "JR2026151862",
+      "title": "BMW Product Specialist -  BMW Roseville $21/hr",
+      "location": "Roseville, California, United States of America",
+      "location_detail": "Roseville, California, United States of America",
+      "department": "Operations",
+      "published_at": "2026-11-05T00:00:00.000+0000",
+      "updated_at": null,
+      "url": "https://careers.autonation.com/us/en/job/AUMAIHUSJR2026151862EXTERNALENUS/BMW-Product-Specialist-BMW-Roseville-21-hr",
+      "salary": null,
+      "us": true,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "AutoNation",
+      "key": "phenom:careers.autonation.com/us/en:AUMAIHUSJR2026151862EXTERNALENUS",
+      "first_seen": "2026-11-05T20:59:02+00:00",
+      "last_seen": "2026-11-11T14:04:16+00:00",
+      "status": "closed",
+      "closed_at": "2026-11-12T02:18:35+00:00"
     },
     {
       "job_id": "JR2021069",
@@ -11006,6 +11001,32 @@
       "closed_at": "2026-11-04T00:53:10+00:00"
     },
     {
+      "job_id": "102314380208",
+      "req_id": null,
+      "title": "Product Manager - Global Uptime, Digital Product",
+      "location": "Dearborn, MI, United States",
+      "location_detail": "Dearborn, MI",
+      "department": "",
+      "published_at": "2026-10-22",
+      "updated_at": null,
+      "url": "https://www.careers.ford.com/en/job/dearborn/product-manager-global-uptime-digital-product/48560/102314380208",
+      "salary": {
+        "min": 99100,
+        "max": 149000,
+        "currency": "USD",
+        "source": "description"
+      },
+      "us": true,
+      "remote": "hybrid",
+      "remote_confidence": "medium",
+      "company": "Ford",
+      "key": "talentbrew:www.careers.ford.com/en:102314380208",
+      "first_seen": "2026-11-05T20:48:07+00:00",
+      "last_seen": "2026-11-11T14:04:16+00:00",
+      "status": "closed",
+      "closed_at": "2026-11-12T02:18:35+00:00"
+    },
+    {
       "job_id": "28666",
       "req_id": "28666",
       "title": "Product Guide III (Part-time) - Dallas Service Center",
@@ -12167,6 +12188,27 @@
       "last_seen": "2026-11-04T00:50:31+00:00",
       "status": "closed",
       "closed_at": "2026-11-04T00:53:10+00:00"
+    },
+    {
+      "job_id": "AUMAIHUSJR2026148772EXTERNALENUS",
+      "req_id": "JR2026148772",
+      "title": "BMW Product Specialist-Laurel BMW of Westmont",
+      "location": "Westmont, Illinois, United States of America",
+      "location_detail": "Westmont, Illinois, United States of America",
+      "department": "Operations",
+      "published_at": "2026-09-08T00:00:00.000+0000",
+      "updated_at": null,
+      "url": "https://careers.autonation.com/us/en/job/AUMAIHUSJR2026148772EXTERNALENUS/BMW-Product-Specialist-Laurel-BMW-of-Westmont",
+      "salary": null,
+      "us": true,
+      "remote": "unknown",
+      "remote_confidence": "none",
+      "company": "AutoNation",
+      "key": "phenom:careers.autonation.com/us/en:AUMAIHUSJR2026148772EXTERNALENUS",
+      "first_seen": "2026-11-02T20:08:55+00:00",
+      "last_seen": "2026-11-11T14:04:16+00:00",
+      "status": "closed",
+      "closed_at": "2026-11-12T02:18:35+00:00"
     },
     {
       "job_id": "245a9552-23a1-439e-83c5-fd840961dcec",
