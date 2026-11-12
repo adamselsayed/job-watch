@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T16:34:59.482Z",
+  "updated_at": "2026-11-12T16:35:02.486Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2159,6 +2159,12 @@
       "status": "archived",
       "at": "2026-11-12T16:34:57.968Z",
       "title": "Product Education & Adoption Lead",
+      "company": "Siemens"
+    },
+    "avature:jobs.siemens.com/en_US/externaljobs:521268": {
+      "status": "archived",
+      "at": "2026-11-12T16:35:00.310Z",
+      "title": "Senior Product Manager - Internal AI",
       "company": "Siemens"
     }
   },
