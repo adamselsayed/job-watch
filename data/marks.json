@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-11T23:00:59.718Z",
+  "updated_at": "2026-11-12T06:14:17.557Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2022,6 +2022,12 @@
       "at": "2026-11-11T20:50:33.329Z",
       "title": "Product Manager, Benefits Strategy - Core Care Delivery",
       "company": "Care.com"
+    },
+    "workday:generalmotors.wd5/Careers_GM:JR-202624062": {
+      "status": "archived",
+      "at": "2026-11-12T06:14:16.046Z",
+      "title": "Senior Technical Product Manager, Robotics AI Strategy & Operations",
+      "company": "General Motors"
     }
   },
   "groups": {
