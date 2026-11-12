@@ -309,3 +309,8 @@
   ats: phenom
   board: careers.siemens-healthineers.com/global/en
   url: https://careers.siemens-healthineers.com/global/en/search-results
+
+- name: Siemens Software
+  ats: unknown
+  board: jobs.sw.siemens.com
+  url: https://jobs.sw.siemens.com/jobs/
