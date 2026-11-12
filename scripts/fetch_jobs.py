@@ -1315,44 +1315,31 @@ def fetch_avature(company):
 
 
 def fetch_probe(company):
-    """TEMP: inspect a custom careers site."""
-    def get(u):
-        req = urllib.request.Request(u, headers=_WD_HEADERS)
-        with _WD_OPENER.open(req, timeout=60) as r:
-            return r.status, r.read().decode("utf-8", "replace")
+    """TEMP: query DirectEmployers search API behind jobs.sw.siemens.com."""
     out = {}
-    code, h = get(company["url"])
-    out["code"], out["len"] = code, len(h)
-    out["jobdetail"] = sorted(set(re.findall(r'https?://jobs\.siemens\.com[^"\'\s<>]*', h)))[:10]
-    out["job_links"] = sorted(set(re.findall(r'href="(/jobs/[^"]+)"', h)))[:15]
-    out["n_job_links"] = len(set(re.findall(r'href="(/jobs/[^"]+)"', h)))
-    nd = re.search(r'<script[^>]*id="__NUXT_DATA__"[^>]*>(.*?)</script>', h, re.S)
-    out["nuxt_len"] = len(nd.group(1)) if nd else 0
-    out["nuxt_head"] = nd.group(1)[:2500] if nd else ""
-    out["api_like"] = sorted(set(re.findall(r'["\'](https?://[^"\']*(?:api|avature|siemens)[^"\']{0,120})["\']', h)))[:25]
-    try:
-        base = "https://" + company["board"]
-        entry = re.search(r'"#entry":"([^"]+)"', h).group(1)
-        todo, done, hits = [entry], set(), []
-        while todo and len(done) < 40:
-            u = todo.pop(0)
-            if u in done:
-                continue
-            done.add(u)
-            js = get(base + u)[1]
-            for m in re.findall(r'["\'`]\./([A-Za-z0-9_\-]+\.js)["\'`]', js):
-                todo.append("/_nuxt/" + m)
-            for m in re.finditer(r'jobsyn|solr/search|search-api|apiUrl|baseURL|x-origin', js, re.I):
-                hits.append(u.split("/")[-1] + ": " + js[max(0, m.start() - 120): m.end() + 160])
-        out["n_chunks"] = len(done)
-        out["js_hits"] = hits[:40]
-    except Exception as e:      # noqa: BLE001
-        out["js_err"] = str(e)
-    try:
-        c2, j2 = get(f"https://{company['board']}/jobs/?search=product")
-        out["search_links"] = sorted(set(re.findall(r'href="(/jobs/[^"]+)"', j2)))[:10]
-    except Exception as e:      # noqa: BLE001
-        out["search_err"] = str(e)
+    for path in ["/api/v1/solr/search?q=product&page=1&num_items=50", "/api/v1/solr/search?q=product+manager&location=United+States&page=1&num_items=50"]:
+        u = "https://prod-search-api.jobsyn.org" + path
+        try:
+            req = urllib.request.Request(u, headers={"User-Agent": _BROWSER_UA, "Accept": "application/json", "x-origin": company["board"],
+                                                     "Origin": f"https://{company['board']}", "Referer": f"https://{company['board']}/jobs/"})
+            with _WD_OPENER.open(req, timeout=60) as r:
+                code, txt = r.status, r.read().decode("utf-8", "replace")
+        except urllib.error.HTTPError as e:
+            code, txt = e.code, e.read().decode("utf-8", "replace")
+        except Exception as e:      # noqa: BLE001
+            code, txt = None, str(e)
+        info = {"code": code, "head": txt[:600]}
+        try:
+            d = json.loads(txt)
+            info["keys"] = list(d.keys())
+            jobs = d.get("jobs") or d.get("results") or []
+            info["total"] = d.get("pagination", {}) or d.get("total")
+            info["n"] = len(jobs)
+            info["sample_keys"] = list(jobs[0].keys()) if jobs else []
+            info["sample"] = [{k: j.get(k) for k in j if any(x in k for x in ("title", "location", "city", "country", "guid", "reqid", "apply", "url", "link", "company"))} for j in jobs[:6]]
+        except Exception as e:      # noqa: BLE001
+            info["parse_err"] = str(e)
+        out[path] = info
     debug_dump(company, out)
     return []
 
