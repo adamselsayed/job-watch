@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T16:25:13.392Z",
+  "updated_at": "2026-11-12T16:25:54.058Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2039,6 +2039,12 @@
       "status": "archived",
       "at": "2026-11-12T16:25:11.872Z",
       "title": "Head of Finance - Siemens Electrical Products / Data Center Skeleton Technologies",
+      "company": "Siemens"
+    },
+    "avature:jobs.siemens.com/en_US/externaljobs:525719": {
+      "status": "archived",
+      "at": "2026-11-12T16:25:52.540Z",
+      "title": "Product Manager – Fire/Life Safety Systems",
       "company": "Siemens"
     }
   },
