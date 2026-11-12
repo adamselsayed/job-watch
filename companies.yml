@@ -303,3 +303,4 @@
   ats: avature
   board: jobs.siemens.com/en_US/externaljobs
   url: https://jobs.siemens.com/en_US/externaljobs
+  keyword: product United States   # Avature ANDs search words and matches location, so this keeps it to US postings

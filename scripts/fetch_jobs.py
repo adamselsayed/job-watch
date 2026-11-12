@@ -1229,8 +1229,9 @@ def _avature_text(html):
 
 def fetch_avature(company):
     """Avature career sites (e.g. https://jobs.siemens.com/en_US/externaljobs).
-    board = "<host>/<locale>/<portal>".  The search page is server-rendered HTML (12 results per page); we page
-    through a "product" keyword search, then open each matching US posting for its description."""
+    board = "<host>/<locale>/<portal>".  The search page is server-rendered HTML, 6 results per page (paged with
+    folderOffset).  Avature's keyword search ANDs words and also matches location fields, so `keyword` can narrow
+    it to the US (Siemens: "product United States").  Each matching posting is opened for its description."""
     root = "https://" + company["board"].strip("/")
     def get(u):
         def go():
@@ -1239,27 +1240,13 @@ def fetch_avature(company):
                 return r.read().decode("utf-8", "replace")
         return _retry(go)
     span = lambda cls, t: (lambda m: html.unescape(m.group(1)).strip() if m else "")(re.search(rf'class="list-item-{cls}">([^<]*)<', t))
-    rows, seen, offset, pages = [], set(), 0, 0
-    if DEBUG:
-        pv = {}
-        for q in ["product manager", '"product manager"', "product United States", "product manager United States", "product USA"]:
-            h = get(f"{root}/SearchJobs/?{urllib.parse.urlencode({'search': q})}")
-            tot = [re.sub(r"\s+", " ", t) for t in re.findall(r'\d+\s*-\s*\d+\s*of[^<]*', h)][:1]
-            locs = [span("jobCountry", t) for t in re.split(r'<article class="article article--result', h)[1:]]
-            pv[q] = {"total": tot, "countries": locs}
-        host = company["board"].split("/")[0]
-        try:
-            sm = get(f"https://{host}/externaljobs/sitemap_index.xml")
-            pv["sitemap_index"] = sm[:1500]
-            subs = re.findall(r"<loc>([^<]+)</loc>", sm)
-            if subs:
-                one = get(subs[0])
-                pv["sitemap_first"] = {"url": subs[0], "n_subs": len(subs), "n_locs": one.count("<loc>"), "head": one[:1500]}
-        except Exception as e:      # noqa: BLE001
-            pv["sitemap_err"] = str(e)
-        company["_paging"] = pv
-    while pages < 200:
-        h = get(f"{root}/SearchJobs/?{urllib.parse.urlencode({'search': company.get('keyword') or 'product', 'jobOffset': offset})}")
+    kw = company.get("keyword") or "product"
+    rows, seen, offset, pages, total = [], set(), 0, 0, None
+    while pages < 250:
+        h = get(f"{root}/SearchJobs/?{urllib.parse.urlencode({'search': kw, 'folderOffset': offset})}")
+        if total is None:
+            m = re.search(r"of\s*([\d,]+)\+?\s*results", h)
+            total = int(m.group(1).replace(",", "")) if m else None
         tiles = re.split(r'<article class="article article--result', h)[1:]
         new = 0
         for t in tiles:
@@ -1267,37 +1254,42 @@ def fetch_avature(company):
             if not m:
                 continue
             url, title = html.unescape(m.group(1)), html.unescape(strip_html(m.group(2))).strip()
-            jid = (span("jobId", t).replace("Job ID:", "").strip()) or url.rstrip("/").split("/")[-1]
+            jid = span("jobId", t).replace("Job ID:", "").strip() or url.rstrip("/").split("/")[-1]
             if jid in seen:
                 continue
             seen.add(jid); new += 1
-            city, state, country = span("jobCity", t), span("jobState", t), span("jobCountry", t)
-            rows.append({"job_id": jid, "req_id": jid, "title": title, "location": ", ".join(x for x in (city, state, country) if x),
-                         "location_detail": "", "department": "", "published_at": None, "updated_at": None,
-                         "url": url, "salary": None, "_meta_text": "", "_content": ""})
+            loc = ", ".join(x for x in (span("jobCity", t), span("jobState", t), span("jobCountry", t)) if x)
+            rows.append({"job_id": jid, "req_id": jid, "title": title, "location": loc, "location_detail": "",
+                         "department": "", "published_at": None, "updated_at": None, "url": url, "salary": None,
+                         "_meta_text": "", "_content": ""})
         pages += 1
-        if not tiles or not new:
+        offset += 6
+        if not tiles or not new or (total and offset >= total):
             break
-        offset += len(tiles)
     first = None
     for r in rows:
-        us = re.search(r"United States|\bUSA\b", r["location"]) is not None
-        if not (title_matches(r["title"]) and us):
+        if not title_matches(r["title"]):
+            continue
+        if r["location"] and not re.search(r"United States|\bUSA?\b", r["location"]):
             continue
         try:
             d = get(r["url"])
-            r["_content"] = _avature_text(d)[:30000]
+            body = re.sub(r"<(script|style)\b.*?</\1>", " ", d, flags=re.S | re.I)
+            fields = {strip_html(k).strip().rstrip(":"): strip_html(v).strip()
+                      for k, v in re.findall(r'<span class="article__content__view__field__label[^"]*">(.*?)</span>\s*<span class="article__content__view__field__value[^"]*">(.*?)</span>', body, re.S)}
+            r["_content"] = strip_html(body)[:30000]
+            if not r["location"]:
+                r["location"] = fields.get("Location") or fields.get("Locations") or ("United States" if re.search(r"United States", r["_content"]) else "")
+            wm = fields.get("Work mode") or ""
+            r["_meta_text"] = f"workplacetype: {wm}" + (" remote" if re.search(r"remote", wm, re.I) else "")
+            r["published_at"] = fields.get("Posted") or fields.get("Posting date") or None
             r["salary"] = salary_from_text(r["_content"])
-            if re.search(r"\bremote\b", r["_content"][:3000], re.I):
-                r["_meta_text"] = "remote"
-            if re.search(r"\bhybrid\b", r["_content"][:3000], re.I):
-                r["_meta_text"] += " workplacetype: hybrid"
             if first is None:
-                first = r["_content"][:1500]
+                first = {"fields": fields, "text": r["_content"][:800]}
         except Exception as e:          # noqa: BLE001
             log(f"[{company['name']}] detail fetch failed for {r['job_id']}: {e}")
-    debug_dump(company, {"paging": company.pop("_paging", None), "pages": pages, "rows": len(rows), "first_detail": first,
-                         "kept": [{k: v for k, v in r.items() if k != "_content"} for r in rows if title_matches(r["title"])][:60]})
+    debug_dump(company, {"total": total, "pages": pages, "rows": len(rows), "first_detail": first,
+                         "kept": [{k: v for k, v in r.items() if k != "_content"} for r in rows if title_matches(r["title"])][:80]})
     return rows
 
 
