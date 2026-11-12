@@ -1,109 +1,76 @@
 {
  "paging": {
-  "search=product&folderRecordsPerPage=100": {
-   "n": 6,
-   "first": [
-    "528014",
-    "526619",
-    "498023"
-   ],
+  "product manager": {
    "total": [
-    "1 - 6 of 999+ results "
+    "1 - 6 of 528 results "
+   ],
+   "countries": [
+    "Taiwan, Province of China",
+    "India",
+    "Italy",
+    "",
+    "",
+    ""
    ]
   },
-  "search=product&folderRecordsPerPage=100&folderOffset=100": {
-   "n": 6,
-   "first": [
-    "527687",
-    "528391",
-    "528587"
-   ],
+  "\"product manager\"": {
    "total": [
-    "101 - 106 of 999+ results "
+    "1 - 6 of 34 results "
+   ],
+   "countries": [
+    "Taiwan, Province of China",
+    "Italy",
+    "",
+    "",
+    "",
+    "United States of America"
    ]
   },
-  "us_ctx": [],
-  "filter_inputs": [
-   "42387_hidden",
-   "42388_hidden",
-   "folderSort",
-   "folderSortDirection",
-   "listFilterMode",
-   "search"
-  ],
-  "country_ctx": "42386&quot;,&quot;registrars&quot;:[{&quot;type&quot;:&quot;ValuesDatasource&quot;,&quot;name&quot;:&quot;DatasetSingleColumnFieldOptionsDatasource&quot;,&quot;settings&quot;:{&quot;datasetFilters&quot;:[{&quot;datasetSpecIdFilter&quot;:&quot;sA0adCMjOEKdwAAqiS2BPBjiHO4QUALP03xQnIb62f8ijyMkm\\/vElO49&quot;,&quot;operator&quot;:&quot;!=&quot;,&quot;schemaFieldNumberFilter&quot;:&quot;cGm41hCi4i3LlpfjERelwQdUi4LpZWZFzLTKH9f7QUbXy9HZXABWAg==&quot;,&quot;value&quot;:255284129,&quot;type&quot;:&quot;fixed&quot;}],&quot;optionFormatComponents&quot;:[{&quot;type&quot;:&quot;field&quot;,&quot;order&quot;:0,&quot;fieldNumberOrText&quot;:&quot;QN53nQMln24j0HHcGIZDlqCqNvIAN9ztXg9jzeKdyrO0l501uM9gDQk=&quot;}],&quot;schemaFieldIdToUseForIndirectFiltering&quot;:&quot;QUET1Ifb8Of2oRkOXZAW2B5Arzx941+crvZ6yMau2LtwkKZ\\/1kRUCOqJ9k8=&quot;,&quot;datasetSchemaSpecId&quot;:&quot;H0yWtT1JIk9dZZSTZTmMXpihcrOl\\/vFTt2u7Wn6CiX0fORXaqwXUYKqL&quot;,&quot;datasetSchemaFieldId&quot;:&quot;ZiN9sLVlNeBgGMxDPJlYdDSdvPCmtPtvVFrsTyow\\/vny+p9tw2NK3IkCata0&quot;,&quot;savedOptionsIds&quot;:[],&quot;ignoreFilterIfNoValueIsSelected&quot;:false,&quot;portalUrlPath&quot;:&quot;\\/en_US\\/externaljobs&quot;}},{&quot;type&quot;:&quot;Field&quot;,&quot;name&quot;:&quot;AutocompleteMultipleSelectField&quot;,&quot;settings&quot;:{&quot;dropdownCssClass&quot;:&quot;bigdrop&quot;,&quot;placeholderText&quot;:&quot;Select an option&quot;,&quot;minimumInputLength&quot;:0,&quot;ajaxDelayMs&quot;:1000,&quot;visibleOptionsLimit&quot;:3,&quot;optionIdsToSearchLimit&quot;:100,&quot;dictionary&quot;:{&quot;optionSelectedNotice&quot;:&quot;{option} selected&quot;,&quot;clearValue&quot;:&quot;Press enter or backspace to remove this option&quot;,&quot;removeOption&quot;:&quot;Press Backspace to remove this value&quot;,&quot;removeOptionButton&quot;:&quot;Remove {option}&quot;,&quot;removeAllOptions&quot;:&quot;Remove all options&quot;,&quot;searchResults&quot;:&quot;new search results&quot;,&quot;navigationAdvice&quot;:&quot;Press the up and down arrow keys to navigate the list&quot;,&quot;totalResults&quot;:&quot;total results&quot;,&quot;totalResult&quot;:&quot;total result&quot;,&quot;optionRemoved&quot;:&quot;{option} removed&quot;,&quot;allOptionsRemoved&quot;:&quot;All options removed&quot;,&quot;enterTextToSearch&quot;:&quot;Enter text to search&quot;,&quot;firstFocusInstruction&quot;:&quot;Type to search, or press Enter to open the list of values.&quot;,&quot;optionsSelectedFocusInstruction&quot;:&quot;{n} options selected: {choices}. Type to search, or press Enter to open the list of values. Press Backspace to remove all options.&quot;,&quot;expandedStateInstruction&quot;:&quot;{n} options available. Use the up and down keys to navigate. Press Enter to select an option, or press Escape to exit the list.&quot;,&quot;optionFocusSelected&quot;:&quot;{option}, selected, {n} of {d}.&quot;,&quot;optionFocusNotSelected&quot;:&quot;{option}, not selected, {n} of {d}.&quot;},&quot;label&quot;:&quot;Country&qu",
-  "json_us": [],
-  "selects": {
-   "42386[]": {
-    "label": "Country",
-    "n": 0,
-    "us": [],
-    "sample": [],
-    "raw": "<select name=\"42386[]\" tabindex=\"0\" class=\"search_param--country CheckBoxListFormField AutoCompleteField AutocompleteSelectFieldChildHtmlElement\" id=\"42386\" multiple=\"1\"></select>"
-   },
-   "42387[]": {
-    "label": "State/Province/County",
-    "n": 0,
-    "us": [],
-    "sample": [],
-    "raw": "<select name=\"42387[]\" tabindex=\"0\" class=\"search_param--state CheckBoxListFormField AutoCompleteField AutocompleteSelectFieldChildHtmlElement\" id=\"42387\" multiple=\"1\"></select>"
-   },
-   "42388[]": {
-    "label": "City",
-    "n": 0,
-    "us": [],
-    "sample": [],
-    "raw": "<select name=\"42388[]\" tabindex=\"0\" class=\"search_param--city CheckBoxListFormField AutoCompleteField AutocompleteSelectFieldChildHtmlElement\" id=\"42388\" multiple=\"1\"></select>"
-   },
-   "42389[]": {
-    "label": "Field of work",
-    "n": 0,
-    "us": [],
-    "sample": [],
-    "raw": "<select name=\"42389[]\" tabindex=\"0\" class=\" CheckBoxListFormField AutoCompleteField AutocompleteSelectFieldChildHtmlElement\" id=\"42389\" multiple=\"1\"></select>"
-   },
-   "42390[]": {
-    "label": "Experience Level",
-    "n": 0,
-    "us": [],
-    "sample": [],
-    "raw": "<select name=\"42390[]\" tabindex=\"0\" class=\" CheckBoxListFormField AutoCompleteField AutocompleteSelectFieldChildHtmlElement\" id=\"42390\" multiple=\"1\"></select>"
-   },
-   "43471[]": {
-    "label": "Job type",
-    "n": 0,
-    "us": [],
-    "sample": [],
-    "raw": "<select name=\"43471[]\" tabindex=\"0\" class=\" CheckBoxListFormField AutoCompleteField AutocompleteSelectFieldChildHtmlElement\" id=\"43471\" multiple=\"1\"></select>"
-   },
-   "42392[]": {
-    "label": "Work mode",
-    "n": 0,
-    "us": [],
-    "sample": [],
-    "raw": "<select name=\"42392[]\" tabindex=\"0\" class=\" CheckBoxListFormField AutoCompleteField AutocompleteSelectFieldChildHtmlElement\" id=\"42392\" multiple=\"1\"></select>"
-   },
-   "42393[]": {
-    "label": "Employment type",
-    "n": 0,
-    "us": [],
-    "sample": [],
-    "raw": "<select name=\"42393[]\" tabindex=\"0\" class=\" CheckBoxListFormField AutoCompleteField AutocompleteSelectFieldChildHtmlElement\" id=\"42393\" multiple=\"1\"></select>"
-   },
-   "42394": {
-    "label": "Organization",
-    "n": 0,
-    "us": [],
-    "sample": [],
-    "raw": "<select name=\"42394\" tabindex=\"0\" class=\" SelectFormField AutoCompleteField SelectFormField AutoCompleteField AutocompleteSelectFieldChildHtmlElement\" id=\"42394\" multiple><option></option></select>"
-   },
-   "42395": {
-    "label": "Business Unit",
-    "n": 0,
-    "us": [],
-    "sample": [],
-    "raw": "<select name=\"42395\" tabindex=\"0\" class=\"WizardFieldHidden SelectFormField AutoCompleteField SelectFormField AutoCompleteField AutocompleteSelectFieldChildHtmlElement\" id=\"42395\" multiple><option></option></select>"
-   }
+  "product United States": {
+   "total": [
+    "1 - 6 of 466 results "
+   ],
+   "countries": [
+    "United States of America",
+    "United States of America",
+    "United States of America",
+    "United States of America",
+    "",
+    ""
+   ]
+  },
+  "product manager United States": {
+   "total": [
+    "1 - 6 of 137 results "
+   ],
+   "countries": [
+    "",
+    "",
+    "",
+    "United States of America",
+    "",
+    "United States of America"
+   ]
+  },
+  "product USA": {
+   "total": [
+    "1 - 6 of 98 results "
+   ],
+   "countries": [
+    "Egypt",
+    "UNITED KINGDOM OF GREAT BRITAIN AND NORTHERN IRELAND",
+    "",
+    "India",
+    "India",
+    "India"
+   ]
+  },
+  "sitemap_index": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<sitemapindex xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n<sitemap><loc>https://jobs.siemens.com/en_US/externaljobs/sitemap.xml</loc></sitemap><sitemap><loc>https://jobs.siemens.com/es_ES/externaljobs/sitemap.xml</loc></sitemap><sitemap><loc>https://jobs.siemens.com/de_DE/externaljobs/sitemap.xml</loc></sitemap><sitemap><loc>https://jobs.siemens.com/fr_FR/externaljobs/sitemap.xml</loc></sitemap><sitemap><loc>https://jobs.siemens.com/nl_NL/externaljobs/sitemap.xml</loc></sitemap><sitemap><loc>https://jobs.siemens.com/ja_JP/externaljobs/sitemap.xml</loc></sitemap><sitemap><loc>https://jobs.siemens.com/zh_CN/externaljobs/sitemap.xml</loc></sitemap><sitemap><loc>https://jobs.siemens.com/zh_TW/externaljobs/sitemap.xml</loc></sitemap><sitemap><loc>https://jobs.siemens.com/cs_CZ/externaljobs/sitemap.xml</loc></sitemap><sitemap><loc>https://jobs.siemens.com/pt_PT/externaljobs/sitemap.xml</loc></sitemap>\n</sitemapindex>",
+  "sitemap_first": {
+   "url": "https://jobs.siemens.com/en_US/externaljobs/sitemap.xml",
+   "n_subs": 10,
+   "n_locs": 58,
+   "head": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\"\n        xmlns:image=\"http://www.sitemaps.org/schemas/sitemap-image/1.1\"\n        xmlns:video=\"http://www.sitemaps.org/schemas/sitemap-video/1.1\"\n        xmlns:xhtml=\"http://www.w3.org/1999/xhtml\">\n    <url><loc>https://jobs.siemens.com/en_US/externaljobs/AIRecommendations</loc><lastmod>2026-11-04</lastmod><xhtml:link rel=\"alternate\" href=\"https://jobs.siemens.com/en_US/externaljobs/AIRecommendations\" hreflang=\"x-default\"/><xhtml:link rel=\"alternate\" href=\"https://jobs.siemens.com/en_US/externaljobs/AIRecommendations\" hreflang=\"en-US\"/><xhtml:link rel=\"alternate\" href=\"https://jobs.siemens.com/es_ES/externaljobs/AIRecommendations\" hreflang=\"es-ES\"/><xhtml:link rel=\"alternate\" href=\"https://jobs.siemens.com/de_DE/externaljobs/AIRecommendations\" hreflang=\"de-DE\"/><xhtml:link rel=\"alternate\" href=\"https://jobs.siemens.com/fr_FR/externaljobs/AIRecommendations\" hreflang=\"fr-FR\"/><xhtml:link rel=\"alternate\" href=\"https://jobs.siemens.com/nl_NL/externaljobs/AIRecommendations\" hreflang=\"nl-NL\"/><xhtml:link rel=\"alternate\" href=\"https://jobs.siemens.com/ja_JP/externaljobs/AIRecommendations\" hreflang=\"ja-JP\"/><xhtml:link rel=\"alternate\" href=\"https://jobs.siemens.com/zh_CN/externaljobs/AIRecommendations\" hreflang=\"zh-CN\"/><xhtml:link rel=\"alternate\" href=\"https://jobs.siemens.com/zh_TW/externaljobs/AIRecommendations\" hreflang=\"zh-TW\"/><xhtml:link rel=\"alternate\" href=\"https://jobs.siemens.c"
   }
  },
  "pages": 2,
