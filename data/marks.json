@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T16:35:02.486Z",
+  "updated_at": "2026-11-12T16:35:23.727Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2165,6 +2165,12 @@
       "status": "archived",
       "at": "2026-11-12T16:35:00.310Z",
       "title": "Senior Product Manager - Internal AI",
+      "company": "Siemens"
+    },
+    "avature:jobs.siemens.com/en_US/externaljobs:516241": {
+      "status": "archived",
+      "at": "2026-11-12T16:35:22.213Z",
+      "title": "Senior Leader: Simulation Product Technical Documentation",
       "company": "Siemens"
     }
   },
