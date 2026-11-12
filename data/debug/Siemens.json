@@ -1,4 +1,131 @@
 {
+ "paging": {
+  "search=product": {
+   "ids": [
+    "526619",
+    "498023",
+    "521661",
+    "525305",
+    "521601",
+    "518940"
+   ],
+   "pager": [
+    "https://jobs.siemens.com/en_US/externaljobs/SearchJobs/product?folderRecordsPerPage=6&amp;folderOffset=6"
+   ],
+   "total": [
+    "\n                1 - 6\n                                    of 999+                \n                 results\n            ",
+    "\n                1 - 6\n                                    of 999+                \n                 results\n            "
+   ]
+  },
+  "search=product&jobOffset=6": {
+   "ids": [
+    "526619",
+    "498023",
+    "521661",
+    "525305",
+    "521601",
+    "518940"
+   ],
+   "pager": [
+    "https://jobs.siemens.com/en_US/externaljobs/SearchJobs/?search=product&amp;jobOffset=6",
+    "https://jobs.siemens.com/en_US/externaljobs/SearchJobs/product?folderRecordsPerPage=6&amp;folderOffset=6"
+   ],
+   "total": [
+    "\n                1 - 6\n                                    of 999+                \n                 results\n            ",
+    "\n                1 - 6\n                                    of 999+                \n                 results\n            "
+   ]
+  },
+  "search=product&jobOffset=12": {
+   "ids": [
+    "526619",
+    "498023",
+    "521661",
+    "525305",
+    "521601",
+    "518940"
+   ],
+   "pager": [
+    "https://jobs.siemens.com/en_US/externaljobs/SearchJobs/?search=product&amp;jobOffset=12",
+    "https://jobs.siemens.com/en_US/externaljobs/SearchJobs/product?folderRecordsPerPage=6&amp;folderOffset=6"
+   ],
+   "total": [
+    "\n                1 - 6\n                                    of 999+                \n                 results\n            ",
+    "\n                1 - 6\n                                    of 999+                \n                 results\n            "
+   ]
+  },
+  "search=product&jobRecordsPerPage=6&jobOffset=6": {
+   "ids": [
+    "526619",
+    "498023",
+    "521661",
+    "525305",
+    "521601",
+    "518940"
+   ],
+   "pager": [
+    "https://jobs.siemens.com/en_US/externaljobs/SearchJobs/?search=product&amp;jobRecordsPerPage=6&amp;jobOffset=6",
+    "https://jobs.siemens.com/en_US/externaljobs/SearchJobs/product?folderRecordsPerPage=6&amp;folderOffset=6"
+   ],
+   "total": [
+    "\n                1 - 6\n                                    of 999+                \n                 results\n            ",
+    "\n                1 - 6\n                                    of 999+                \n                 results\n            "
+   ]
+  },
+  "search=product&jobRecordsPerPage=50": {
+   "ids": [
+    "526619",
+    "498023",
+    "521661",
+    "525305",
+    "521601",
+    "518940"
+   ],
+   "pager": [
+    "https://jobs.siemens.com/en_US/externaljobs/SearchJobs/product?folderRecordsPerPage=6&amp;folderOffset=6"
+   ],
+   "total": [
+    "\n                1 - 6\n                                    of 999+                \n                 results\n            ",
+    "\n                1 - 6\n                                    of 999+                \n                 results\n            "
+   ]
+  },
+  "search=product&folderOffset=6": {
+   "ids": [
+    "524731",
+    "499502",
+    "521344",
+    "521880",
+    "519085",
+    "523210"
+   ],
+   "pager": [
+    "https://jobs.siemens.com/en_US/externaljobs/SearchJobs/?search=product&amp;folderOffset=6",
+    "https://jobs.siemens.com/en_US/externaljobs/SearchJobs/product?folderRecordsPerPage=6&amp;folderOffset=0",
+    "https://jobs.siemens.com/en_US/externaljobs/SearchJobs/product?folderRecordsPerPage=6&amp;folderOffset=12"
+   ],
+   "total": [
+    "\n                7 - 12\n                                    of 999+                \n                 results\n            ",
+    "\n                7 - 12\n                                    of 999+                \n                 results\n            "
+   ]
+  },
+  "search=product&page=2": {
+   "ids": [
+    "526619",
+    "498023",
+    "521661",
+    "525305",
+    "521601",
+    "518940"
+   ],
+   "pager": [
+    "https://jobs.siemens.com/en_US/externaljobs/SearchJobs/?search=product&amp;page=2",
+    "https://jobs.siemens.com/en_US/externaljobs/SearchJobs/product?folderRecordsPerPage=6&amp;folderOffset=6"
+   ],
+   "total": [
+    "\n                1 - 6\n                                    of 999+                \n                 results\n            ",
+    "\n                1 - 6\n                                    of 999+                \n                 results\n            "
+   ]
+  }
+ },
  "pages": 2,
  "rows": 6,
  "first_detail": null,
