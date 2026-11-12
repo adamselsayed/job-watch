@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T16:26:33.805Z",
+  "updated_at": "2026-11-12T16:26:36.629Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2081,6 +2081,12 @@
       "status": "archived",
       "at": "2026-11-12T16:26:32.288Z",
       "title": "Head Fire Safety Product Portfolio Americas",
+      "company": "Siemens"
+    },
+    "avature:jobs.siemens.com/en_US/externaljobs:487448": {
+      "status": "archived",
+      "at": "2026-11-12T16:26:35.113Z",
+      "title": "Senior Product Manager - Data & AI Services",
       "company": "Siemens"
     }
   },
