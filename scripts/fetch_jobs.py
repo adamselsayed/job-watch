@@ -1221,30 +1221,66 @@ def fetch_workable(company):
     return out
 
 
+def _avature_text(html):
+    html = re.sub(r"<(script|style)\b.*?</\1>", " ", html, flags=re.S | re.I)
+    m = re.search(r'<main\b.*?</main>', html, re.S | re.I)
+    return strip_html(m.group(0) if m else html)
+
+
 def fetch_avature(company):
-    """Avature career sites (e.g. https://jobs.siemens.com/en_US/externaljobs).  PROBE 2."""
+    """Avature career sites (e.g. https://jobs.siemens.com/en_US/externaljobs).
+    board = "<host>/<locale>/<portal>".  The search page is server-rendered HTML (12 results per page); we page
+    through a "product" keyword search, then open each matching US posting for its description."""
     root = "https://" + company["board"].strip("/")
     def get(u):
-        req = urllib.request.Request(u, headers=_WD_HEADERS)
-        with _WD_OPENER.open(req, timeout=40) as r:
-            return r.read().decode("utf-8", "replace")
-    out = {}
-    h = get(f"{root}/SearchJobs/?search=product&jobRecordsPerPage=50&jobOffset=0")
-    links = [m for m in re.finditer(r'href="(https?://[^"]*/JobDetail/[^"]+)"', h)]
-    out["n_links"] = len(links)
-    out["first_tile"] = h[links[0].start() - 2000: links[0].start() + 2500] if links else ""
-    out["count_txt"] = re.findall(r'[^<>]{0,80}\b\d[\d,]*\s+(?:results|jobs|Jobs|Results)[^<>]{0,40}', h)[:6]
-    out["pager"] = re.findall(r'href="[^"]*jobOffset=\d+[^"]*"', h)[:6]
-    out["feed"] = get(f"{root}/SearchJobs/feed/?search=product")[:3000]
-    if links:
-        d = get(links[0].group(1))
-        out["detail_url"] = links[0].group(1)
-        out["detail_ld"] = re.findall(r'<script type="application/ld\+json">(.*?)</script>', d, re.S)[:2]
-        i = d.find("article__content")
-        out["detail_html"] = d[i - 200: i + 5000] if i >= 0 else ""
-        out["detail_text"] = strip_html(d)[:4000]
-    debug_dump(company, {"probe": out})
-    return []
+        def go():
+            req = urllib.request.Request(u, headers=_WD_HEADERS)
+            with _WD_OPENER.open(req, timeout=60) as r:
+                return r.read().decode("utf-8", "replace")
+        return _retry(go)
+    span = lambda cls, t: (lambda m: html.unescape(m.group(1)).strip() if m else "")(re.search(rf'class="list-item-{cls}">([^<]*)<', t))
+    rows, seen, offset, pages = [], set(), 0, 0
+    while pages < 200:
+        h = get(f"{root}/SearchJobs/?{urllib.parse.urlencode({'search': company.get('keyword') or 'product', 'jobOffset': offset})}")
+        tiles = re.split(r'<article class="article article--result', h)[1:]
+        new = 0
+        for t in tiles:
+            m = re.search(r'<a class="link" href="([^"]+/JobDetail/[^"]+)"[^>]*>\s*(.*?)\s*</a>', t, re.S)
+            if not m:
+                continue
+            url, title = html.unescape(m.group(1)), html.unescape(strip_html(m.group(2))).strip()
+            jid = (span("jobId", t).replace("Job ID:", "").strip()) or url.rstrip("/").split("/")[-1]
+            if jid in seen:
+                continue
+            seen.add(jid); new += 1
+            city, state, country = span("jobCity", t), span("jobState", t), span("jobCountry", t)
+            rows.append({"job_id": jid, "req_id": jid, "title": title, "location": ", ".join(x for x in (city, state, country) if x),
+                         "location_detail": "", "department": "", "published_at": None, "updated_at": None,
+                         "url": url, "salary": None, "_meta_text": "", "_content": ""})
+        pages += 1
+        if not tiles or not new:
+            break
+        offset += len(tiles)
+    first = None
+    for r in rows:
+        us = re.search(r"United States|\bUSA\b", r["location"]) is not None
+        if not (title_matches(r["title"]) and us):
+            continue
+        try:
+            d = get(r["url"])
+            r["_content"] = _avature_text(d)[:30000]
+            r["salary"] = salary_from_text(r["_content"])
+            if re.search(r"\bremote\b", r["_content"][:3000], re.I):
+                r["_meta_text"] = "remote"
+            if re.search(r"\bhybrid\b", r["_content"][:3000], re.I):
+                r["_meta_text"] += " workplacetype: hybrid"
+            if first is None:
+                first = r["_content"][:1500]
+        except Exception as e:          # noqa: BLE001
+            log(f"[{company['name']}] detail fetch failed for {r['job_id']}: {e}")
+    debug_dump(company, {"pages": pages, "rows": len(rows), "first_detail": first,
+                         "kept": [{k: v for k, v in r.items() if k != "_content"} for r in rows if title_matches(r["title"])][:60]})
+    return rows
 
 
 ADAPTERS = {"greenhouse": fetch_greenhouse, "lever": fetch_lever, "ashby": fetch_ashby,

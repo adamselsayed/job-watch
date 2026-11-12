@@ -1,7 +1,7 @@
 # Companies to watch. One block per company.
 #
 #   name:  how the company appears on the dashboard
-#   ats:   greenhouse | lever | ashby | smartrecruiters | workday | phenom | jobvite | rippling | bamboohr | workable | manual | jibe | oracle | talentbrew   (the job-board system the company uses)
+#   ats:   greenhouse | lever | ashby | smartrecruiters | workday | phenom | jobvite | rippling | bamboohr | workable | avature | manual | jibe | oracle | talentbrew   (the job-board system the company uses)
 #   board: the company's board token (the slug in its job-board URL)
 #   url:   the public careers page (for reference / linking)
 #   country: US   (optional) treat locations with no country stated (e.g. "Remote") as US for this company
@@ -21,6 +21,7 @@
 #   Rippling:   ats.rippling.com/<token>/jobs  ->  board: <token>
 #   BambooHR:   <token>.bamboohr.com/careers  ->  board: <token>
 #   Workable:   apply.workable.com/<token>/  ->  board: <token>
+#   Avature:    <host>/<locale>/<portal>/SearchJobs  ->  board: <host>/<locale>/<portal>   (e.g. jobs.siemens.com/en_US/externaljobs)
 #   manual:     boards that block automated reads (Dayforce, FedEx's Paradox site). Not fetched; listed under
 #               "Manual Pulls Only" in the sidebar with a link to the careers page.
 #   Jibe/iCIMS: <host>/careers-home/jobs  ->  board: <host>   (e.g. careers.rivian.com)
