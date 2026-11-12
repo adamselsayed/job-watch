@@ -31,18 +31,68 @@
    "listFilterMode",
    "search"
   ],
-  "selects": [
-   "42386[]",
-   "42387[]",
-   "42388[]",
-   "42389[]",
-   "42390[]",
-   "43471[]",
-   "42392[]",
-   "42393[]",
-   "42394",
-   "42395"
-  ]
+  "selects": {
+   "42386[]": {
+    "label": "Country",
+    "n": 0,
+    "us": [],
+    "sample": []
+   },
+   "42387[]": {
+    "label": "State/Province/County",
+    "n": 0,
+    "us": [],
+    "sample": []
+   },
+   "42388[]": {
+    "label": "City",
+    "n": 0,
+    "us": [],
+    "sample": []
+   },
+   "42389[]": {
+    "label": "Field of work",
+    "n": 0,
+    "us": [],
+    "sample": []
+   },
+   "42390[]": {
+    "label": "Experience Level",
+    "n": 0,
+    "us": [],
+    "sample": []
+   },
+   "43471[]": {
+    "label": "Job type",
+    "n": 0,
+    "us": [],
+    "sample": []
+   },
+   "42392[]": {
+    "label": "Work mode",
+    "n": 0,
+    "us": [],
+    "sample": []
+   },
+   "42393[]": {
+    "label": "Employment type",
+    "n": 0,
+    "us": [],
+    "sample": []
+   },
+   "42394": {
+    "label": "Organization",
+    "n": 0,
+    "us": [],
+    "sample": []
+   },
+   "42395": {
+    "label": "Business Unit",
+    "n": 0,
+    "us": [],
+    "sample": []
+   }
+  }
  },
  "pages": 2,
  "rows": 6,
