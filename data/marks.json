@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T16:26:36.629Z",
+  "updated_at": "2026-11-12T16:26:40.872Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2087,6 +2087,12 @@
       "status": "archived",
       "at": "2026-11-12T16:26:35.113Z",
       "title": "Senior Product Manager - Data & AI Services",
+      "company": "Siemens"
+    },
+    "avature:jobs.siemens.com/en_US/externaljobs:524904": {
+      "status": "archived",
+      "at": "2026-11-12T16:26:39.355Z",
+      "title": "CPQ Product Manager",
       "company": "Siemens"
     }
   },
