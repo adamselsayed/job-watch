@@ -1242,24 +1242,21 @@ def fetch_avature(company):
     rows, seen, offset, pages = [], set(), 0, 0
     if DEBUG:
         pv = {}
-        for qs in ["search=product&folderRecordsPerPage=100", "search=product&folderRecordsPerPage=100&folderOffset=100"]:
-            h = get(f"{root}/SearchJobs/?{qs}")
-            ids = re.findall(r'list-item-jobId">Job ID: (\d+)', h)
-            pv[qs] = {"n": len(ids), "first": ids[:3], "total": [re.sub(r"\s+", " ", t) for t in re.findall(r'\d+\s*-\s*\d+\s*of[^<]*', h)][:1]}
-        h = get(f"{root}/SearchJobs/?search=product")
-        i = h.find("United States")
-        pv["us_ctx"] = [h[max(0, m.start() - 700): m.start() + 200] for m in re.finditer(r"United States", h)][:3]
-        pv["filter_inputs"] = sorted(set(re.findall(r'<input[^>]+name="([^"]+)"[^>]*>', h)))[:40]
-        sel = {}
-        for m in re.finditer(r'<select[^>]+name="([^"]+)"[^>]*>(.*?)</select>', h, re.S):
-            opts = re.findall(r'<option[^>]*value="([^"]*)"[^>]*>([^<]*)<', m.group(2))
-            lab = re.search(r'<label[^>]*for="[^"]*"[^>]*>([^<]*)<', h[max(0, m.start() - 600): m.start()])
-            sel[m.group(1)] = {"label": lab.group(1).strip() if lab else "", "n": len(opts),
-                               "us": [o for o in opts if "United States" in o[1] or o[1].strip() in ("USA", "US")][:3], "sample": opts[:4],
-                               "raw": re.sub(r"\s+", " ", m.group(0))[:600]}
-        pv["country_ctx"] = re.sub(r"\s+", " ", h[h.find('42386'): h.find('42386') + 3000]) if '42386' in h else ""
-        pv["json_us"] = [re.sub(r"\s+", " ", h[max(0, x.start() - 300): x.start() + 100]) for x in re.finditer(r'United States', h)][:4]
-        pv["selects"] = sel
+        for q in ["product manager", '"product manager"', "product United States", "product manager United States", "product USA"]:
+            h = get(f"{root}/SearchJobs/?{urllib.parse.urlencode({'search': q})}")
+            tot = [re.sub(r"\s+", " ", t) for t in re.findall(r'\d+\s*-\s*\d+\s*of[^<]*', h)][:1]
+            locs = [span("jobCountry", t) for t in re.split(r'<article class="article article--result', h)[1:]]
+            pv[q] = {"total": tot, "countries": locs}
+        host = company["board"].split("/")[0]
+        try:
+            sm = get(f"https://{host}/externaljobs/sitemap_index.xml")
+            pv["sitemap_index"] = sm[:1500]
+            subs = re.findall(r"<loc>([^<]+)</loc>", sm)
+            if subs:
+                one = get(subs[0])
+                pv["sitemap_first"] = {"url": subs[0], "n_subs": len(subs), "n_locs": one.count("<loc>"), "head": one[:1500]}
+        except Exception as e:      # noqa: BLE001
+            pv["sitemap_err"] = str(e)
         company["_paging"] = pv
     while pages < 200:
         h = get(f"{root}/SearchJobs/?{urllib.parse.urlencode({'search': company.get('keyword') or 'product', 'jobOffset': offset})}")
