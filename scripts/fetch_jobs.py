@@ -1242,12 +1242,15 @@ def fetch_avature(company):
     rows, seen, offset, pages = [], set(), 0, 0
     if DEBUG:
         pv = {}
-        for qs in ["search=product", "search=product&jobOffset=6", "search=product&jobOffset=12", "search=product&jobRecordsPerPage=6&jobOffset=6",
-                   "search=product&jobRecordsPerPage=50", "search=product&folderOffset=6", "search=product&page=2"]:
+        for qs in ["search=product&folderRecordsPerPage=100", "search=product&folderRecordsPerPage=100&folderOffset=100"]:
             h = get(f"{root}/SearchJobs/?{qs}")
             ids = re.findall(r'list-item-jobId">Job ID: (\d+)', h)
-            pager = sorted(set(re.findall(r'href="([^"]*SearchJobs[^"]*(?:Offset|page)[^"]*)"', h)))
-            pv[qs] = {"ids": ids, "pager": [p for p in pager if "/en_US/" in p][:6], "total": re.findall(r'[^<>]{0,60}(?:\d[\d,]*\s*(?:results|Results|jobs|Jobs|of))[^<>]{0,60}', h)[:4]}
+            pv[qs] = {"n": len(ids), "first": ids[:3], "total": [re.sub(r"\s+", " ", t) for t in re.findall(r'\d+\s*-\s*\d+\s*of[^<]*', h)][:1]}
+        h = get(f"{root}/SearchJobs/?search=product")
+        i = h.find("United States")
+        pv["us_ctx"] = [h[max(0, m.start() - 700): m.start() + 200] for m in re.finditer(r"United States", h)][:3]
+        pv["filter_inputs"] = sorted(set(re.findall(r'<input[^>]+name="([^"]+)"[^>]*>', h)))[:40]
+        pv["selects"] = re.findall(r'<select[^>]+name="([^"]+)"', h)[:20]
         company["_paging"] = pv
     while pages < 200:
         h = get(f"{root}/SearchJobs/?{urllib.parse.urlencode({'search': company.get('keyword') or 'product', 'jobOffset': offset})}")
