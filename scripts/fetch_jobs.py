@@ -1331,8 +1331,23 @@ def fetch_probe(company):
     out["nuxt_head"] = nd.group(1)[:2500] if nd else ""
     out["api_like"] = sorted(set(re.findall(r'["\'](https?://[^"\']*(?:api|avature|siemens)[^"\']{0,120})["\']', h)))[:25]
     try:
-        js = get("https://" + company["board"] + re.search(r'"#entry":"([^"]+)"', h).group(1))[1]
-        out["js_api"] = sorted(set(re.findall(r'["\'`](https?://[^"\'`]{5,150}|/api/[^"\'`]{2,100})["\'`]', js)))[:40]
+        base = "https://" + company["board"]
+        entry = re.search(r'"#entry":"([^"]+)"', h).group(1)
+        todo, done, hits = [entry], set(), []
+        while todo and len(done) < 40:
+            u = todo.pop(0)
+            if u in done:
+                continue
+            done.add(u)
+            js = get(base + u)[1]
+            for m in re.findall(r'["\'`]\./([A-Za-z0-9_\-]+\.js)["\'`]', js):
+                todo.append("/_nuxt/" + m)
+            for m in re.finditer(r'(https?://[a-z0-9.\-]+(?:/[^"\'`\s]{0,80})?|/api/[^"\'`\s]{2,80}|fetch\(|\$fetch\()', js):
+                if re.search(r"w3\.org|google|gstatic|maps", m.group(0)):
+                    continue
+                hits.append(u.split("/")[-1] + ": " + js[max(0, m.start() - 120): m.end() + 160])
+        out["n_chunks"] = len(done)
+        out["js_hits"] = hits[:40]
     except Exception as e:      # noqa: BLE001
         out["js_err"] = str(e)
     try:
