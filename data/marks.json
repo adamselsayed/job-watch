@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13T01:23:39.715Z",
+  "updated_at": "2026-11-13T14:34:02.684Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2189,6 +2189,12 @@
       "status": "applied",
       "at": "2026-11-13T01:23:38.197Z",
       "title": "Product Strategy Sr Manager ",
+      "company": "ServiceNow"
+    },
+    "smartrecruiters:ServiceNow:744000161414165": {
+      "status": "archived",
+      "at": "2026-11-13T14:34:01.157Z",
+      "title": "Staff Technical Product Manager - Quote to Cash",
       "company": "ServiceNow"
     }
   },
