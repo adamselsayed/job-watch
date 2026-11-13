@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13T15:39:12.506Z",
+  "updated_at": "2026-11-13T15:39:31.793Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2207,6 +2207,12 @@
       "status": "archived",
       "at": "2026-11-13T15:39:10.976Z",
       "title": "Software Platforms Product Manager Cloud Hybrid California",
+      "company": "Cisco"
+    },
+    "phenom:careers.cisco.com/global/en:CISCISGLOBAL2029497EXTERNALENGLOBAL": {
+      "status": "archived",
+      "at": "2026-11-13T15:39:30.264Z",
+      "title": "Senior Staff Product Manager -  Identity Aware Networking | Non-Human Identities    (hybrid)",
       "company": "Cisco"
     }
   },
