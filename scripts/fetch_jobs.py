@@ -993,8 +993,6 @@ def fetch_talentbrew(company):
                     except ValueError: continue
                     jp = next((x for x in (jp if isinstance(jp, list) else [jp]) if isinstance(x, dict) and x.get("@type") == "JobPosting"), None)
                     if not jp: continue
-                    if DEBUG and "ho-chi-minh" in r["url"]:
-                        company.setdefault("_ld", []).append({"jobLocation": jp.get("jobLocation"), "applicantLocationRequirements": jp.get("applicantLocationRequirements")})
                     content = strip_html(jp.get("description") or "")
                     posted = jp.get("datePosted") or posted
                     meta = f"workplace: {jp.get('jobLocationType') or ''} {jp.get('employmentType') or ''}"
@@ -1022,7 +1020,6 @@ def fetch_talentbrew(company):
             "_meta_text": meta, "_content": content,
         })
     debug_dump(company, {"first_page": first, "pages": pages, "scanned": len(rows),
-                         "ld": company.pop("_ld", None),
                          "kept_rows": [{k: v for k, v in o.items() if k != "_content"} for o in out if title_matches(o["title"])][:10]})
     return out
 
