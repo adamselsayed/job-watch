@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13T15:40:44.728Z",
+  "updated_at": "2026-11-13T15:40:51.395Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2225,6 +2225,12 @@
       "status": "archived",
       "at": "2026-11-13T15:40:43.199Z",
       "title": "Group Product Manager - Rewards",
+      "company": "Ford"
+    },
+    "talentbrew:www.careers.ford.com/en:103216526272": {
+      "status": "archived",
+      "at": "2026-11-13T15:40:49.876Z",
+      "title": "Specialist, Product Line Performance - Lincoln",
       "company": "Ford"
     }
   },
