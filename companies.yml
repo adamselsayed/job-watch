@@ -237,12 +237,6 @@
   board: globallogic.com
   url: https://www.globallogic.com/career-search-page/
 
-- name: Intuit
-  ats: talentbrew
-  board: jobs.intuit.com
-  url: https://www.intuit.com/careers/#Open-Roles
-  exclude: analyst, scientist, security
-
 - name: Scout Motors
   ats: greenhouse
   board: scoutmotors
