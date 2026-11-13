@@ -1,0 +1,178 @@
+{
+ "first_page": {
+  "keys": [
+   "filters",
+   "results",
+   "hasJobs",
+   "hasContent"
+  ],
+  "html_head": "\n\n\r\n\r\n\r\n\r\n<section id=\"search-results\" data-keywords=\"product\" data-location=\"\" data-distance=\"50\" data-latitude=\"\" data-longitude=\"\" data-show-radius=\"False\" data-total-results=\"1159\" data-total-job-results=\"1109\" data-total-pages=\"12\" data-current-page=\"1\" data-records-per-page=\"100\" data-active-facet-id=\"0\" data-custom-facet-name=\"\" data-facet-term=\"\" data-facet-type=\"0\" data-search-results-module-name=\"Search Results\" data-sort-criteria=\"0\" data-sort-direction=\"0\" data-search-type=\"5\" data-ajax-url=\"/en/search-jobs/results\" data-ajax-post-url=\"/en/search-jobs/resultspost\" data-server-error-message=\"There was an error retrieving your results. Please refresh and try again.\" data-keyword-type=\"\" data-location-type=\"\" data-location-path=\"\" data-organization-ids=\"\" data-selector-name=\"searchresults\" data-refined-keywords=\"[]\" data-postal-code=\"\" data-save-jobs=\"false\" data-results-type=\"0\" data-total-content-results=\"50\" data-use-noindex=\"true\">\r\n    <h1 class=\"js-replace offscreen-text hidden-text\">Results for product</h1>\r\n    \r\n    <h2 class=\"results-counter\">1159 results</h2>\r\n    \r\n        <section id=\"search-results-list\">\r\n                  <ul class=\"search-results-list-wrapper\">\r\n    \r\n\r\n            <li class=\"search-results-list-item\">\r\n\r\n                <a href=\"/en/job/sumter/production-associate/159/103087057424\" data-job-id=\"103087057424\" class=\"job-link\">\r\n                    <h2>Production Associate</h2>\r\n                            <span class=\"job-location\">S"
+ },
+ "pages": 12,
+ "scanned": 1107,
+ "ld": [
+  {
+   "jobLocation": [
+    {
+     "@type": "Place",
+     "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "District 1",
+      "addressRegion": "Hồ Chí Minh",
+      "addressCountry": "Vietnam",
+      "streetAddress": "",
+      "postalCode": ""
+     }
+    }
+   ],
+   "applicantLocationRequirements": null
+  }
+ ],
+ "kept_rows": [
+  {
+   "job_id": "101683413072",
+   "req_id": null,
+   "title": "Product Manager",
+   "location": "Macquarie Park, New South Wales, Australia",
+   "location_detail": "Macquarie Park, New South Wales",
+   "department": "",
+   "published_at": "2026-10-08",
+   "updated_at": null,
+   "url": "https://jobs.bd.com/en/job/macquarie-park/product-manager/159/101683413072",
+   "salary": null,
+   "_meta_text": "workplace:  "
+  },
+  {
+   "job_id": "102041057616",
+   "req_id": null,
+   "title": "Innovation Product Manager",
+   "location": "Tempe, Arizona, United States of America",
+   "location_detail": "Tempe, AZ",
+   "department": "",
+   "published_at": "2026-10-16",
+   "updated_at": null,
+   "url": "https://jobs.bd.com/en/job/tempe/innovation-product-manager/159/102041057616",
+   "salary": null,
+   "_meta_text": "workplace:  "
+  },
+  {
+   "job_id": "99096728176",
+   "req_id": null,
+   "title": "Associate Product Manager",
+   "location": "Taipei, Taipei City, Taiwan",
+   "location_detail": "Taipei, Taiwan",
+   "department": "",
+   "published_at": "2026-08-12",
+   "updated_at": null,
+   "url": "https://jobs.bd.com/en/job/taipei/associate-product-manager/159/99096728176",
+   "salary": null,
+   "_meta_text": "workplace:  "
+  },
+  {
+   "job_id": "100712519552",
+   "req_id": null,
+   "title": "Chemist, Product Development",
+   "location": "Columbus, Nebraska, United States of America",
+   "location_detail": "Columbus, NE",
+   "department": "",
+   "published_at": "2026-11-05",
+   "updated_at": null,
+   "url": "https://jobs.bd.com/en/job/columbus/chemist-product-development/159/100712519552",
+   "salary": null,
+   "_meta_text": "workplace:  "
+  },
+  {
+   "job_id": "101903950688",
+   "req_id": null,
+   "title": "Senior Product Manager, Ambulatory",
+   "location": "Limerick, Limerick, Ireland",
+   "location_detail": "Limerick, Munster",
+   "department": "",
+   "published_at": "2026-10-13",
+   "updated_at": null,
+   "url": "https://jobs.bd.com/en/job/limerick/senior-product-manager-ambulatory/159/101903950688",
+   "salary": null,
+   "_meta_text": "workplace:  "
+  },
+  {
+   "job_id": "99684131408",
+   "req_id": null,
+   "title": "Specialist, Product Technical Support",
+   "location": "Irvine, California, United States of America",
+   "location_detail": "Irvine, CA",
+   "department": "",
+   "published_at": "2026-08-24",
+   "updated_at": null,
+   "url": "https://jobs.bd.com/en/job/irvine/specialist-product-technical-support/159/99684131408",
+   "salary": {
+    "min": 73400,
+    "max": 117400,
+    "currency": "USD",
+    "source": "description"
+   },
+   "_meta_text": "workplace:  "
+  },
+  {
+   "job_id": "100419356960",
+   "req_id": null,
+   "title": "Program Manager, Product Development",
+   "location": "Franklin Lakes, New Jersey, United States of America",
+   "location_detail": "Franklin Lakes, NJ",
+   "department": "",
+   "published_at": "2026-11-10",
+   "updated_at": null,
+   "url": "https://jobs.bd.com/en/job/franklin-lakes/program-manager-product-development/159/100419356960",
+   "salary": {
+    "min": 135500,
+    "max": 216800,
+    "currency": "USD",
+    "source": "description"
+   },
+   "_meta_text": "workplace:  "
+  },
+  {
+   "job_id": "99344636704",
+   "req_id": null,
+   "title": "Product Manager MDS PIVC",
+   "location": "Mississauga, Ontario, Canada",
+   "location_detail": "Mississauga, Ontario",
+   "department": "",
+   "published_at": "2026-08-17",
+   "updated_at": null,
+   "url": "https://jobs.bd.com/en/job/mississauga/product-manager-mds-pivc/159/99344636704",
+   "salary": null,
+   "_meta_text": "workplace:  "
+  },
+  {
+   "job_id": "99855918272",
+   "req_id": null,
+   "title": "Manager, Technical Product Integration",
+   "location": "Irvine, CA",
+   "location_detail": "",
+   "department": "",
+   "published_at": "2026-08-28T00:00:00+00:00",
+   "updated_at": null,
+   "url": "https://jobs.bd.com/en/job/irvine/manager-technical-product-integration/159/99855918272",
+   "salary": null,
+   "_meta_text": ""
+  },
+  {
+   "job_id": "101955694992",
+   "req_id": null,
+   "title": "Associate Product Manager, Peripheral Intervention",
+   "location": "Vernon Hills, Illinois, United States of America; Tempe, Arizona, United States",
+   "location_detail": "Multiple Locations",
+   "department": "",
+   "published_at": "2026-10-14",
+   "updated_at": null,
+   "url": "https://jobs.bd.com/en/job/vernon-hills/associate-product-manager-peripheral-intervention/159/101955694992",
+   "salary": {
+    "min": 83100,
+    "max": 133000,
+    "currency": "USD",
+    "source": "description"
+   },
+   "_meta_text": "workplace:  "
+  }
+ ]
+}
