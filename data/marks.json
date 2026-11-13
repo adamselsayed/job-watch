@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13T15:38:09.380Z",
+  "updated_at": "2026-11-13T15:39:12.506Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2202,6 +2202,12 @@
       "at": "2026-11-13T15:38:07.857Z",
       "title": "Principal Product Success Manager -  HRSD",
       "company": "ServiceNow"
+    },
+    "phenom:careers.cisco.com/global/en:CISCISGLOBAL2030278EXTERNALENGLOBAL": {
+      "status": "archived",
+      "at": "2026-11-13T15:39:10.976Z",
+      "title": "Software Platforms Product Manager Cloud Hybrid California",
+      "company": "Cisco"
     }
   },
   "groups": {
