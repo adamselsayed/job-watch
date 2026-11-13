@@ -130,6 +130,7 @@ def strip_html(s):
 # ------------------------------------------------------ classification -----
 
 US_STATES = {
+    "puerto rico","guam","us virgin islands","washington dc","washington d.c.",
     "alabama","alaska","arizona","arkansas","california","colorado","connecticut","delaware",
     "florida","georgia","hawaii","idaho","illinois","indiana","iowa","kansas","kentucky",
     "louisiana","maine","maryland","massachusetts","michigan","minnesota","mississippi",
@@ -214,6 +215,11 @@ def classify_us(location_text):
         return True
     if re.search(r"\bremote\b", low) and not toks[1:]:
         return None                                              # bare "Remote" -- can't tell
+    # "City, Region" with no US state, state code or country anywhere (e.g. "Ho Chi Minh City, Ho Chi Minh"):
+    # US postings name their state, so this is a foreign location whose country was left off.
+    parts = [x.strip() for x in re.split(r"[,;|]", low) if x.strip()]
+    if len(parts) >= 2 and not re.search(r"remote|hybrid|multiple|various|anywhere|virtual|nationwide", low):
+        return False
     return None
 
 
