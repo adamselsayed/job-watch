@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13T15:40:51.395Z",
+  "updated_at": "2026-11-13T15:41:09.309Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2232,6 +2232,12 @@
       "at": "2026-11-13T15:40:49.876Z",
       "title": "Specialist, Product Line Performance - Lincoln",
       "company": "Ford"
+    },
+    "talentbrew:jobs.intuit.com:103221003216": {
+      "status": "archived",
+      "at": "2026-11-13T15:41:07.784Z",
+      "title": "Senior Staff Product Manager, Enterprise Data Platform",
+      "company": "Intuit"
     }
   },
   "groups": {
