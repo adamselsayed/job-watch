@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13T15:39:31.793Z",
+  "updated_at": "2026-11-13T15:40:20.019Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2214,6 +2214,12 @@
       "at": "2026-11-13T15:39:30.264Z",
       "title": "Senior Staff Product Manager -  Identity Aware Networking | Non-Human Identities    (hybrid)",
       "company": "Cisco"
+    },
+    "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2029673": {
+      "status": "archived",
+      "at": "2026-11-13T15:40:18.490Z",
+      "title": "Principal Product Manager - NVIDIA Data Services",
+      "company": "NVIDIA"
     }
   },
   "groups": {
