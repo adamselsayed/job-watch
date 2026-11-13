@@ -971,6 +971,11 @@
 "first_seen": "2026-11-09",
 "posted": "2026-11-06"
 },
+"phenom:careers.cisco.com/global/en:CISCISGLOBAL2029497EXTERNALENGLOBAL": {
+"company": "Cisco",
+"first_seen": "2026-11-13",
+"posted": "2026-11-13"
+},
 "phenom:careers.cisco.com/global/en:CISCISGLOBAL2029509EXTERNALENGLOBAL": {
 "company": "Cisco",
 "first_seen": "2026-11-09",
@@ -985,6 +990,11 @@
 "company": "Cisco",
 "first_seen": "2026-11-11",
 "posted": "2026-11-10"
+},
+"phenom:careers.cisco.com/global/en:CISCISGLOBAL2030278EXTERNALENGLOBAL": {
+"company": "Cisco",
+"first_seen": "2026-11-13",
+"posted": "2026-11-13"
 },
 "phenom:careers.cisco.com/global/en:CISCISGLOBAL2030652EXTERNALENGLOBAL": {
 "company": "Cisco",
@@ -1541,6 +1551,16 @@
 "first_seen": "2026-11-11",
 "posted": "2026-11-10"
 },
+"smartrecruiters:ServiceNow:744000161375112": {
+"company": "ServiceNow",
+"first_seen": "2026-11-13",
+"posted": "2026-11-12"
+},
+"smartrecruiters:ServiceNow:744000161414165": {
+"company": "ServiceNow",
+"first_seen": "2026-11-13",
+"posted": "2026-11-12"
+},
 "talentbrew:jobs.bd.com/en:100012215696": {
 "company": "BD",
 "first_seen": "2026-11-11",
@@ -1806,6 +1826,11 @@
 "first_seen": "2026-11-11",
 "posted": "2026-11-10"
 },
+"talentbrew:jobs.intuit.com:103221003216": {
+"company": "Intuit",
+"first_seen": "2026-11-13",
+"posted": "2026-11-12"
+},
 "talentbrew:jobs.intuit.com:92055106736": {
 "company": "Intuit",
 "first_seen": "2026-11-08",
@@ -2031,6 +2056,16 @@
 "first_seen": "2026-11-10",
 "posted": "2026-11-10"
 },
+"talentbrew:www.careers.ford.com/en:103207574960": {
+"company": "Ford",
+"first_seen": "2026-11-13",
+"posted": "2026-11-12"
+},
+"talentbrew:www.careers.ford.com/en:103216526272": {
+"company": "Ford",
+"first_seen": "2026-11-13",
+"posted": "2026-11-12"
+},
 "talentbrew:www.careers.ford.com/en:98847422048": {
 "company": "Ford",
 "first_seen": "2026-11-05",
@@ -2220,6 +2255,11 @@
 "company": "Hitachi",
 "first_seen": "2026-11-10",
 "posted": "2026-11-09"
+},
+"workday:hitachi.wd1/hitachi:R0151327": {
+"company": "Hitachi",
+"first_seen": "2026-11-13",
+"posted": "2026-11-12"
 },
 "workday:jacksonhealthcare.wd1/careers-jacksonhealthcare:JR109106": {
 "company": "Jackson Healthcare",
@@ -2551,6 +2591,11 @@
 "first_seen": "2026-11-10",
 "posted": "2026-11-09"
 },
+"workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2029673": {
+"company": "NVIDIA",
+"first_seen": "2026-11-13",
+"posted": "2026-11-12"
+},
 "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2029674": {
 "company": "NVIDIA",
 "first_seen": "2026-11-10",
@@ -2562,5 +2607,5 @@
 "posted": "2026-11-11"
 }
 },
-"updated_at": "2026-11-12T14:20:04+00:00"
+"updated_at": "2026-11-13T14:13:10+00:00"
 }
