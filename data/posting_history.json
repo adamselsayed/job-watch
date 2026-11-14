@@ -181,6 +181,11 @@
 "first_seen": "2026-10-29",
 "posted": "2026-10-26"
 },
+"greenhouse:gomotive:8933687002": {
+"company": "Motive",
+"first_seen": "2026-11-14",
+"posted": "2026-11-13"
+},
 "greenhouse:honor:8935840002": {
 "company": "Honor",
 "first_seen": "2026-11-11",
@@ -475,6 +480,11 @@
 "company": "Toast",
 "first_seen": "2026-11-10",
 "posted": "2026-11-09"
+},
+"greenhouse:toast:8383535": {
+"company": "Toast",
+"first_seen": "2026-11-14",
+"posted": "2026-11-13"
 },
 "jibe:careers.rivian.com:28666": {
 "company": "Rivian",
@@ -2612,5 +2622,5 @@
 "posted": "2026-11-11"
 }
 },
-"updated_at": "2026-11-13T20:29:27+00:00"
+"updated_at": "2026-11-14T13:51:20+00:00"
 }
