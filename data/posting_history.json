@@ -2606,6 +2606,11 @@
 "first_seen": "2026-11-10",
 "posted": "2026-11-09"
 },
+"workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2029623": {
+"company": "NVIDIA",
+"first_seen": "2026-11-15",
+"posted": "2026-11-14"
+},
 "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2029673": {
 "company": "NVIDIA",
 "first_seen": "2026-11-13",
@@ -2622,5 +2627,5 @@
 "posted": "2026-11-11"
 }
 },
-"updated_at": "2026-11-14T13:51:20+00:00"
+"updated_at": "2026-11-15T13:53:41+00:00"
 }
