@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13T15:41:09.309Z",
+  "updated_at": "2026-11-15T03:41:12.018Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2238,6 +2238,12 @@
       "at": "2026-11-13T15:41:07.784Z",
       "title": "Senior Staff Product Manager, Enterprise Data Platform",
       "company": "Intuit"
+    },
+    "greenhouse:gomotive:8933687002": {
+      "status": "archived",
+      "at": "2026-11-15T03:41:10.461Z",
+      "title": "Senior Product Manager - Data Partnerships",
+      "company": "Motive"
     }
   },
   "groups": {
