@@ -1104,9 +1104,10 @@
 
     $('#tOpen').textContent = untriaged.length;
     $('#tApplied').textContent = open.filter(j => markOf(j) === 'applied').length;
-    const mids = untriaged.map(j => annual(j.salary)).filter(Boolean).map(s => (s.min + s.max) / 2).sort((a, b) => a - b);
+    // every role still on a board that isn't archived (open + applied)
+    const mids = open.filter(j => markOf(j) !== 'archived').map(j => annual(j.salary)).filter(Boolean).map(s => (s.min + s.max) / 2).sort((a, b) => a - b);
     $('#bPay').textContent = mids.length ? kUSD(mids[Math.floor(mids.length / 2)]) : '—';
-    $('#bPay').title = mids.length ? `Median midpoint of the ${mids.length} untriaged roles that list annual pay` : '';
+    $('#bPay').title = mids.length ? `Median midpoint of the ${mids.length} open and applied roles that list annual pay (archived and closed roles excluded)` : '';
     const errs = data.companies.filter(c => c.status === 'error');
     $('#bBoards').innerHTML = `${data.companies.length} companies watched` + (errs.length ? ` · <span class="err" title="${escapeHtml(errs.map(c => c.name).join(', '))}">${errs.length} board${errs.length > 1 ? 's' : ''} failing to fetch</span>` : '');
   }
