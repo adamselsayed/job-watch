@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-16T18:35:05.827Z",
+  "updated_at": "2026-11-16T18:35:15.826Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2249,6 +2249,12 @@
       "status": "archived",
       "at": "2026-11-16T18:35:04.314Z",
       "title": "Product Manager - Cisco Partner Experience Platform (Remote)",
+      "company": "Cisco"
+    },
+    "phenom:careers.cisco.com/global/en:CISCISGLOBAL2029359EXTERNALENGLOBAL": {
+      "status": "archived",
+      "at": "2026-11-16T18:35:14.314Z",
+      "title": "Data Analyst, Product Adoption & Insights",
       "company": "Cisco"
     }
   },
