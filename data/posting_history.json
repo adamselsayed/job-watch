@@ -981,6 +981,11 @@
 "first_seen": "2026-11-09",
 "posted": "2026-11-06"
 },
+"phenom:careers.cisco.com/global/en:CISCISGLOBAL2029359EXTERNALENGLOBAL": {
+"company": "Cisco",
+"first_seen": "2026-11-16",
+"posted": "2026-11-16"
+},
 "phenom:careers.cisco.com/global/en:CISCISGLOBAL2029497EXTERNALENGLOBAL": {
 "company": "Cisco",
 "first_seen": "2026-11-13",
@@ -1010,6 +1015,11 @@
 "company": "Cisco",
 "first_seen": "2026-11-09",
 "posted": "2026-11-05"
+},
+"phenom:careers.cisco.com/global/en:CISCISGLOBAL2030797EXTERNALENGLOBAL": {
+"company": "Cisco",
+"first_seen": "2026-11-16",
+"posted": "2026-11-16"
 },
 "phenom:careers.siemens-healthineers.com/global/en:SHDSHWUSP100628EXTERNALENGLOBAL": {
 "company": "Siemens Healthineers",
@@ -2081,6 +2091,16 @@
 "first_seen": "2026-11-13",
 "posted": "2026-11-12"
 },
+"talentbrew:www.careers.ford.com/en:103351962768": {
+"company": "Ford",
+"first_seen": "2026-11-16",
+"posted": "2026-11-15"
+},
+"talentbrew:www.careers.ford.com/en:103351963616": {
+"company": "Ford",
+"first_seen": "2026-11-16",
+"posted": "2026-11-15"
+},
 "talentbrew:www.careers.ford.com/en:98847422048": {
 "company": "Ford",
 "first_seen": "2026-11-05",
@@ -2627,5 +2647,5 @@
 "posted": "2026-11-11"
 }
 },
-"updated_at": "2026-11-15T13:53:41+00:00"
+"updated_at": "2026-11-16T15:57:44+00:00"
 }
