@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-16T19:08:14.053Z",
+  "updated_at": "2026-11-16T21:18:56.991Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2268,6 +2268,12 @@
       "at": "2026-11-16T19:08:12.952Z",
       "title": "Senior Product Manager",
       "company": "General Motors"
+    },
+    "greenhouse:toast:8306069": {
+      "status": "archived",
+      "at": "2026-11-16T21:18:55.476Z",
+      "title": "Director Of Product, Onboarding, Hardware & Supply Chain",
+      "company": "Toast"
     }
   },
   "groups": {
