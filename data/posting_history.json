@@ -1586,6 +1586,16 @@
 "first_seen": "2026-11-13",
 "posted": "2026-11-12"
 },
+"smartrecruiters:ServiceNow:744000161885234": {
+"company": "ServiceNow",
+"first_seen": "2026-11-17",
+"posted": "2026-11-16"
+},
+"smartrecruiters:ServiceNow:744000161905202": {
+"company": "ServiceNow",
+"first_seen": "2026-11-17",
+"posted": "2026-11-16"
+},
 "talentbrew:jobs.bd.com/en:100012215696": {
 "company": "BD",
 "first_seen": "2026-11-11",
@@ -2121,10 +2131,20 @@
 "first_seen": "2026-11-05",
 "posted": "2026-08-11"
 },
+"workable:lawnstarter:2C5975F13F": {
+"company": "LawnStarter",
+"first_seen": "2026-11-17",
+"posted": "2026-11-16"
+},
 "workable:lawnstarter:3E8B7F71A9": {
 "company": "LawnStarter",
 "first_seen": "2026-11-09",
 "posted": "2026-10-30"
+},
+"workable:lawnstarter:53FE014BF5": {
+"company": "LawnStarter",
+"first_seen": "2026-11-17",
+"posted": "2026-11-16"
 },
 "workable:lawnstarter:5E91AF24D5": {
 "company": "LawnStarter",
@@ -2141,6 +2161,11 @@
 "first_seen": "2026-11-12",
 "posted": "2026-11-11"
 },
+"workable:lawnstarter:6D68D26F59": {
+"company": "LawnStarter",
+"first_seen": "2026-11-17",
+"posted": "2026-11-16"
+},
 "workable:lawnstarter:7B1DB704B7": {
 "company": "LawnStarter",
 "first_seen": "2026-11-11",
@@ -2150,6 +2175,11 @@
 "company": "LawnStarter",
 "first_seen": "2026-11-09",
 "posted": "2026-10-28"
+},
+"workable:lawnstarter:B4A7D23738": {
+"company": "LawnStarter",
+"first_seen": "2026-11-17",
+"posted": "2026-11-16"
 },
 "workable:lawnstarter:E45D99B6D8": {
 "company": "LawnStarter",
@@ -2672,5 +2702,5 @@
 "posted": "2026-11-11"
 }
 },
-"updated_at": "2026-11-17T01:55:27+00:00"
+"updated_at": "2026-11-17T14:17:34+00:00"
 }
