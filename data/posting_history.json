@@ -776,6 +776,11 @@
 "first_seen": "2026-11-04",
 "posted": "2026-10-30"
 },
+"jibe:careers.rivian.com:36264": {
+"company": "Rivian",
+"first_seen": "2026-11-17",
+"posted": "2026-11-16"
+},
 "lever:field-ai:8a953c26-d093-4fa2-88ea-9a5e810b2ef3": {
 "company": "FieldAI",
 "first_seen": "2026-11-06",
@@ -2101,6 +2106,11 @@
 "first_seen": "2026-11-16",
 "posted": "2026-11-15"
 },
+"talentbrew:www.careers.ford.com/en:103399337232": {
+"company": "Ford",
+"first_seen": "2026-11-17",
+"posted": "2026-11-16"
+},
 "talentbrew:www.careers.ford.com/en:98847422048": {
 "company": "Ford",
 "first_seen": "2026-11-05",
@@ -2290,6 +2300,16 @@
 "company": "Hitachi",
 "first_seen": "2026-10-30",
 "posted": "2026-10-16"
+},
+"workday:hitachi.wd1/hitachi:R0150412": {
+"company": "Hitachi",
+"first_seen": "2026-11-17",
+"posted": "2026-11-16"
+},
+"workday:hitachi.wd1/hitachi:R0150413": {
+"company": "Hitachi",
+"first_seen": "2026-11-17",
+"posted": "2026-11-16"
 },
 "workday:hitachi.wd1/hitachi:R0150460": {
 "company": "Hitachi",
@@ -2652,5 +2672,5 @@
 "posted": "2026-11-11"
 }
 },
-"updated_at": "2026-11-16T19:04:08+00:00"
+"updated_at": "2026-11-17T01:55:27+00:00"
 }
