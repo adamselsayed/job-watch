@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-17T18:47:53.646Z",
+  "updated_at": "2026-11-17T18:47:55.804Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2320,6 +2320,12 @@
     "workable:lawnstarter:2C5975F13F": {
       "status": "archived",
       "at": "2026-11-17T18:47:52.132Z",
+      "title": "Lead Product Manager, New Customer Experience",
+      "company": "LawnStarter"
+    },
+    "workable:lawnstarter:B4A7D23738": {
+      "status": "archived",
+      "at": "2026-11-17T18:47:54.290Z",
       "title": "Lead Product Manager, New Customer Experience",
       "company": "LawnStarter"
     }
