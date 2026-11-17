@@ -1026,6 +1026,11 @@
 "first_seen": "2026-11-16",
 "posted": "2026-11-16"
 },
+"phenom:careers.cisco.com/global/en:CISCISGLOBAL2031557EXTERNALENGLOBAL": {
+"company": "Cisco",
+"first_seen": "2026-11-17",
+"posted": "2026-11-17"
+},
 "phenom:careers.siemens-healthineers.com/global/en:SHDSHWUSP100628EXTERNALENGLOBAL": {
 "company": "Siemens Healthineers",
 "first_seen": "2026-11-12",
@@ -1065,6 +1070,11 @@
 "company": "Siemens Healthineers",
 "first_seen": "2026-11-12",
 "posted": "2026-10-06"
+},
+"phenom:careers.siemens-healthineers.com/global/en:SHDSHWUSR31359EXTERNALENGLOBAL": {
+"company": "Siemens Healthineers",
+"first_seen": "2026-11-17",
+"posted": "2026-11-17"
 },
 "phenom:careers.siemens-healthineers.com/global/en:SHDSHWUSR31505EXTERNALENGLOBAL": {
 "company": "Siemens Healthineers",
@@ -2281,6 +2291,11 @@
 "first_seen": "2026-11-12",
 "posted": "2026-11-11"
 },
+"workday:generalmotors.wd5/Careers_GM:JR-202624083": {
+"company": "General Motors",
+"first_seen": "2026-11-17",
+"posted": "2026-11-17"
+},
 "workday:generalmotors.wd5/Careers_GM:JR-202624288": {
 "company": "General Motors",
 "first_seen": "2026-11-16",
@@ -2702,5 +2717,5 @@
 "posted": "2026-11-11"
 }
 },
-"updated_at": "2026-11-17T14:17:34+00:00"
+"updated_at": "2026-11-17T19:14:01+00:00"
 }
