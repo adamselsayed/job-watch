@@ -1096,6 +1096,11 @@
 "first_seen": "2026-11-12",
 "posted": "2026-11-04"
 },
+"phenom:careers.siemens-healthineers.com/global/en:SHDSHWUSR31808EXTERNALENGLOBAL": {
+"company": "Siemens Healthineers",
+"first_seen": "2026-11-17",
+"posted": "2026-11-17"
+},
 "phenom:careers.siemens-healthineers.com/global/en:SHDSHWUSR31982EXTERNALENGLOBAL": {
 "company": "Siemens Healthineers",
 "first_seen": "2026-11-12",
@@ -2131,6 +2136,11 @@
 "first_seen": "2026-11-17",
 "posted": "2026-11-16"
 },
+"talentbrew:www.careers.ford.com/en:103442725472": {
+"company": "Ford",
+"first_seen": "2026-11-17",
+"posted": "2026-11-17"
+},
 "talentbrew:www.careers.ford.com/en:98847422048": {
 "company": "Ford",
 "first_seen": "2026-11-05",
@@ -2717,5 +2727,5 @@
 "posted": "2026-11-11"
 }
 },
-"updated_at": "2026-11-17T19:14:01+00:00"
+"updated_at": "2026-11-17T23:00:43+00:00"
 }
