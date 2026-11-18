@@ -1696,6 +1696,16 @@
 "first_seen": "2026-11-18",
 "posted": "2026-11-17"
 },
+"talentbrew:jobs.bd.com/en:103475334816": {
+"company": "BD",
+"first_seen": "2026-11-18",
+"posted": "2026-11-18"
+},
+"talentbrew:jobs.bd.com/en:103475334912": {
+"company": "BD",
+"first_seen": "2026-11-18",
+"posted": "2026-11-18"
+},
 "talentbrew:jobs.bd.com/en:97521822000": {
 "company": "BD",
 "first_seen": "2026-11-11",
@@ -2165,6 +2175,11 @@
 "company": "Ford",
 "first_seen": "2026-11-17",
 "posted": "2026-11-17"
+},
+"talentbrew:www.careers.ford.com/en:103467874112": {
+"company": "Ford",
+"first_seen": "2026-11-18",
+"posted": "2026-11-18"
 },
 "talentbrew:www.careers.ford.com/en:98847422048": {
 "company": "Ford",
@@ -2757,5 +2772,5 @@
 "posted": "2026-11-11"
 }
 },
-"updated_at": "2026-11-18T14:23:13+00:00"
+"updated_at": "2026-11-18T19:20:09+00:00"
 }
