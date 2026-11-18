@@ -536,6 +536,11 @@
 "first_seen": "2026-11-04",
 "posted": "2026-06-18"
 },
+"jibe:careers.rivian.com:29591": {
+"company": "Rivian",
+"first_seen": "2026-11-18",
+"posted": "2026-11-18"
+},
 "jibe:careers.rivian.com:30162": {
 "company": "Rivian",
 "first_seen": "2026-11-04",
@@ -1031,6 +1036,11 @@
 "first_seen": "2026-11-16",
 "posted": "2026-11-16"
 },
+"phenom:careers.cisco.com/global/en:CISCISGLOBAL2030934EXTERNALENGLOBAL": {
+"company": "Cisco",
+"first_seen": "2026-11-18",
+"posted": "2026-11-18"
+},
 "phenom:careers.cisco.com/global/en:CISCISGLOBAL2031557EXTERNALENGLOBAL": {
 "company": "Cisco",
 "first_seen": "2026-11-17",
@@ -1100,6 +1110,11 @@
 "company": "Siemens Healthineers",
 "first_seen": "2026-11-12",
 "posted": "2026-11-04"
+},
+"phenom:careers.siemens-healthineers.com/global/en:SHDSHWUSR31804EXTERNALENGLOBAL": {
+"company": "Siemens Healthineers",
+"first_seen": "2026-11-18",
+"posted": "2026-11-18"
 },
 "phenom:careers.siemens-healthineers.com/global/en:SHDSHWUSR31808EXTERNALENGLOBAL": {
 "company": "Siemens Healthineers",
@@ -2770,7 +2785,12 @@
 "company": "NVIDIA",
 "first_seen": "2026-11-11",
 "posted": "2026-11-11"
+},
+"workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2030133": {
+"company": "NVIDIA",
+"first_seen": "2026-11-18",
+"posted": "2026-11-18"
 }
 },
-"updated_at": "2026-11-18T19:20:09+00:00"
+"updated_at": "2026-11-18T20:56:25+00:00"
 }
