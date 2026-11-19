@@ -1121,6 +1121,11 @@
 "first_seen": "2026-11-17",
 "posted": "2026-11-17"
 },
+"phenom:careers.siemens-healthineers.com/global/en:SHDSHWUSR31944EXTERNALENGLOBAL": {
+"company": "Siemens Healthineers",
+"first_seen": "2026-11-19",
+"posted": "2026-11-18"
+},
 "phenom:careers.siemens-healthineers.com/global/en:SHDSHWUSR31982EXTERNALENGLOBAL": {
 "company": "Siemens Healthineers",
 "first_seen": "2026-11-12",
@@ -2386,6 +2391,11 @@
 "first_seen": "2026-10-30",
 "posted": "2026-09-03"
 },
+"workday:hitachi.wd1/hitachi:R0138071": {
+"company": "Hitachi",
+"first_seen": "2026-11-19",
+"posted": "2026-11-18"
+},
 "workday:hitachi.wd1/hitachi:R0140695": {
 "company": "Hitachi",
 "first_seen": "2026-10-30",
@@ -2792,5 +2802,5 @@
 "posted": "2026-11-18"
 }
 },
-"updated_at": "2026-11-18T20:56:25+00:00"
+"updated_at": "2026-11-19T06:46:10+00:00"
 }
