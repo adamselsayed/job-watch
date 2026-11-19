@@ -186,6 +186,11 @@
 "first_seen": "2026-11-14",
 "posted": "2026-11-13"
 },
+"greenhouse:gomotive:8940630002": {
+"company": "Motive",
+"first_seen": "2026-11-19",
+"posted": "2026-11-18"
+},
 "greenhouse:honor:8935840002": {
 "company": "Honor",
 "first_seen": "2026-11-11",
@@ -360,6 +365,11 @@
 "company": "Samsara",
 "first_seen": "2026-10-29",
 "posted": "2026-10-26"
+},
+"greenhouse:samsara:8331168": {
+"company": "Samsara",
+"first_seen": "2026-11-19",
+"posted": "2026-11-17"
 },
 "greenhouse:samsara:8359984": {
 "company": "Samsara",
@@ -1651,6 +1661,16 @@
 "first_seen": "2026-11-18",
 "posted": "2026-11-17"
 },
+"smartrecruiters:ServiceNow:744000162408099": {
+"company": "ServiceNow",
+"first_seen": "2026-11-19",
+"posted": "2026-11-18"
+},
+"smartrecruiters:ServiceNow:744000162408999": {
+"company": "ServiceNow",
+"first_seen": "2026-11-19",
+"posted": "2026-11-18"
+},
 "talentbrew:jobs.bd.com/en:100012215696": {
 "company": "BD",
 "first_seen": "2026-11-11",
@@ -2446,6 +2466,11 @@
 "first_seen": "2026-11-01",
 "posted": "2026-08-07"
 },
+"workday:jacksonhealthcare.wd1/careers-jacksonhealthcare:JR109516": {
+"company": "Jackson Healthcare",
+"first_seen": "2026-11-19",
+"posted": "2026-11-19"
+},
 "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR1996264": {
 "company": "NVIDIA",
 "first_seen": "2026-11-01",
@@ -2800,7 +2825,12 @@
 "company": "NVIDIA",
 "first_seen": "2026-11-18",
 "posted": "2026-11-18"
+},
+"workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2030140": {
+"company": "NVIDIA",
+"first_seen": "2026-11-19",
+"posted": "2026-11-19"
 }
 },
-"updated_at": "2026-11-19T06:46:10+00:00"
+"updated_at": "2026-11-19T14:25:41+00:00"
 }
