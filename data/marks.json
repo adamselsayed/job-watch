@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-19T18:08:05.990Z",
+  "updated_at": "2026-11-19T18:08:07.657Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2345,6 +2345,12 @@
       "status": "archived",
       "at": "2026-11-19T18:08:04.477Z",
       "title": "Product Sales Executive, Angiography - Arizona",
+      "company": "Siemens Healthineers"
+    },
+    "phenom:careers.siemens-healthineers.com/global/en:SHDSHWUSR31804EXTERNALENGLOBAL": {
+      "status": "archived",
+      "at": "2026-11-19T18:08:06.144Z",
+      "title": "Product Manager-Brachytherapy-Remote",
       "company": "Siemens Healthineers"
     }
   },
