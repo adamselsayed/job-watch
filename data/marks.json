@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-19T18:08:07.657Z",
+  "updated_at": "2026-11-19T18:08:12.459Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2351,6 +2351,30 @@
       "status": "archived",
       "at": "2026-11-19T18:08:06.144Z",
       "title": "Product Manager-Brachytherapy-Remote",
+      "company": "Siemens Healthineers"
+    },
+    "phenom:careers.siemens-healthineers.com/global/en:SHDSHWUSR31359EXTERNALENGLOBAL": {
+      "status": "archived",
+      "at": "2026-11-19T18:08:09.534Z",
+      "title": "Product Sales Executive, CT - Houston or San Antonio, TX",
+      "company": "Siemens Healthineers"
+    },
+    "phenom:careers.siemens-healthineers.com/global/en:SHDSHWUSR31808EXTERNALENGLOBAL": {
+      "status": "archived",
+      "at": "2026-11-19T18:08:09.950Z",
+      "title": "Product Manager, TrueBeam Platform-Remote",
+      "company": "Siemens Healthineers"
+    },
+    "phenom:careers.siemens-healthineers.com/global/en:SHDSHWUSR31982EXTERNALENGLOBAL": {
+      "status": "archived",
+      "at": "2026-11-19T18:08:10.629Z",
+      "title": "Product Sales Executive, MR - Piedmont region",
+      "company": "Siemens Healthineers"
+    },
+    "phenom:careers.siemens-healthineers.com/global/en:SHDSHWUSR31592EXTERNALENGLOBAL": {
+      "status": "archived",
+      "at": "2026-11-19T18:08:10.947Z",
+      "title": "Product Sales Executive, Digital and Automation – Minnesota/Wisconsin",
       "company": "Siemens Healthineers"
     }
   },
