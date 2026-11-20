@@ -501,6 +501,11 @@
 "first_seen": "2026-11-14",
 "posted": "2026-11-13"
 },
+"greenhouse:toast:8402925": {
+"company": "Toast",
+"first_seen": "2026-11-20",
+"posted": "2026-11-19"
+},
 "jibe:careers.rivian.com:28666": {
 "company": "Rivian",
 "first_seen": "2026-11-04",
@@ -2840,7 +2845,12 @@
 "company": "NVIDIA",
 "first_seen": "2026-11-19",
 "posted": "2026-11-19"
+},
+"workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2030157": {
+"company": "NVIDIA",
+"first_seen": "2026-11-20",
+"posted": "2026-11-20"
 }
 },
-"updated_at": "2026-11-20T07:36:20+00:00"
+"updated_at": "2026-11-20T14:20:12+00:00"
 }
