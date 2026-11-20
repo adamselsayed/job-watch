@@ -826,6 +826,11 @@
 "first_seen": "2026-11-09",
 "posted": "2026-04-08"
 },
+"oracle:fa-evlf-saasfaprod1.fa.ocs.oraclecloud.com/CX_1:44608": {
+"company": "Hertz",
+"first_seen": "2026-11-20",
+"posted": "2026-11-20"
+},
 "phenom:careers.autonation.com/us/en:AUMAIHUSJR2026143646EXTERNALENUS": {
 "company": "AutoNation",
 "first_seen": "2026-11-02",
@@ -1755,6 +1760,11 @@
 "company": "BD",
 "first_seen": "2026-11-18",
 "posted": "2026-11-18"
+},
+"talentbrew:jobs.bd.com/en:103567025056": {
+"company": "BD",
+"first_seen": "2026-11-20",
+"posted": "2026-11-20"
 },
 "talentbrew:jobs.bd.com/en:97521822000": {
 "company": "BD",
@@ -2852,5 +2862,5 @@
 "posted": "2026-11-20"
 }
 },
-"updated_at": "2026-11-20T14:20:12+00:00"
+"updated_at": "2026-11-20T20:34:53+00:00"
 }
