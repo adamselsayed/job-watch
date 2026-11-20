@@ -11,6 +11,27 @@
   const pv = localStorage.getItem('jobwatch.privacy');
   if (pv === 'on' || pv === 'all') document.documentElement.classList.add('privacy');
   else if (pv === 'pay') document.documentElement.classList.add('privacy-pay'); } catch (e) {}</script>
+<script>
+  /* Phones: landscape only, showing the same layout as desktop. A phone held sideways is ~850px wide, which
+     would trip the narrow-screen rules below, so the page is laid out 1400px wide and scaled to fit instead
+     (pinch to zoom still works). Held upright, a "rotate your phone" card covers the page. */
+  (function () {
+    var DESKTOP_W = 1400;
+    try { if (!matchMedia('(pointer: coarse)').matches || Math.min(screen.width, screen.height) > 500) return; } catch (e) { return; }
+    var vp = document.querySelector('meta[name=viewport]'), root = document.documentElement, mq = matchMedia('(orientation: portrait)');
+    root.classList.add('phone');
+    function apply() {
+      var portrait = mq.matches;
+      if (root.classList.contains('portrait') === portrait && vp.dataset.set) return;
+      vp.dataset.set = '1';
+      root.classList.toggle('portrait', portrait);
+      vp.content = portrait ? 'width=device-width, initial-scale=1' : 'width=' + DESKTOP_W;
+    }
+    apply();
+    if (mq.addEventListener) mq.addEventListener('change', apply); else mq.addListener(apply);
+    addEventListener('orientationchange', function () { setTimeout(apply, 60); });
+  })();
+</script>
 <style>
   /* Field Notes: sage paper, moss ink, ochre for what's new */
   :root {
@@ -350,9 +371,27 @@
     .brief h2 { font-size: 25px; }
   }
   @media (max-width: 520px) { .brief-wrap .pair { grid-template-columns: 1fr 1fr; } .brief-wrap .pair .mini:last-child { grid-column: 1 / -1; } }
+
+  /* ------------------------------------------------- phones: landscape only -- */
+  html.phone { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+  #rotate { display: none; }
+  html.phone.portrait, html.phone.portrait body { height: 100%; overflow: hidden; }
+  html.phone.portrait .wrap { display: none; }
+  html.phone.portrait #rotate { position: fixed; inset: 0; z-index: 1000; display: grid; place-content: center; justify-items: center; gap: 14px;
+    padding: 32px; text-align: center; background: var(--bg); }
+  #rotate svg { width: 76px; height: 76px; color: var(--accent); animation: tilt 2.6s ease-in-out infinite; }
+  #rotate h2 { margin: 6px 0 0; font: 600 28px/1.1 var(--serif); letter-spacing: -.01em; }
+  #rotate p { margin: 0; max-width: 17em; color: var(--muted); font-size: 15px; }
+  @keyframes tilt { 0%, 25% { transform: rotate(0); } 55%, 85% { transform: rotate(-90deg); } 100% { transform: rotate(0); } }
+  @media (prefers-reduced-motion: reduce) { #rotate svg { animation: none; transform: rotate(-90deg); } }
 </style>
 </head>
 <body>
+<div id="rotate" role="status">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2.2"/><path d="M10.5 18.5h3"/></svg>
+  <h2>Turn your phone sideways</h2>
+  <p>Job Watch shows the full desktop layout on phones, in landscape only.</p>
+</div>
 <div class="wrap">
   <header>
     <h1>Job Watch</h1>
