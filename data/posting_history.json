@@ -1161,6 +1161,11 @@
 "first_seen": "2026-11-11",
 "posted": "2026-11-03"
 },
+"phenom:www.jobs-ups.com/us/en:UPBUPSGLOBALR26034745EXTERNALENUS": {
+"company": "UPS",
+"first_seen": "2026-11-20",
+"posted": "2026-11-19"
+},
 "phenom:www.yelp.careers/us/en:YELPUS14002EXTERNALENUS": {
 "company": "Yelp",
 "first_seen": "2026-11-01",
@@ -2837,5 +2842,5 @@
 "posted": "2026-11-19"
 }
 },
-"updated_at": "2026-11-19T18:13:02+00:00"
+"updated_at": "2026-11-20T07:36:20+00:00"
 }
