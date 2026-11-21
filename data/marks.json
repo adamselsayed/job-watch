@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-21T06:53:19.428Z",
+  "updated_at": "2026-11-21T06:53:30.267Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2566,6 +2566,20 @@
       "url": "https://www.jobs-ups.com/us/en/job/UPBUPSGLOBALR26034745EXTERNALENUS/Lead-Product-Manager-Flex",
       "location": "ALPHARETTA, Georgia, United States of America",
       "work": "hybrid",
+      "min": null,
+      "max": null,
+      "bonusPct": null,
+      "equity": null,
+      "vestYears": 4
+    },
+    "oracle:fa-evlf-saasfaprod1.fa.ocs.oraclecloud.com/CX_1:44608": {
+      "at": "2026-11-21T06:53:28.752Z",
+      "added": "2026-11-21T06:53:28.752000",
+      "title": "VP Product Management -Consumer Experience",
+      "company": "Hertz",
+      "url": "https://jobs.hertzcareers.com/#en/sites/CX_1/job/44608",
+      "location": "United States",
+      "work": "",
       "min": null,
       "max": null,
       "bonusPct": null,
