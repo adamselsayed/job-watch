@@ -13,10 +13,10 @@
   else if (pv === 'pay') document.documentElement.classList.add('privacy-pay'); } catch (e) {}</script>
 <script>
   /* Phones: landscape only, showing the same layout as desktop. A phone held sideways is ~850px wide, which
-     would trip the narrow-screen rules below, so the page is laid out 1400px wide and scaled to fit instead
+     would trip the narrow-screen rules below, so the page is laid out 1480px wide and scaled to fit instead
      (pinch to zoom still works). Held upright, a "rotate your phone" card covers the page. */
   (function () {
-    var DESKTOP_W = 1400;
+    var DESKTOP_W = 1480;
     try { if (!matchMedia('(pointer: coarse)').matches || Math.min(screen.width, screen.height) > 500) return; } catch (e) { return; }
     var vp = document.querySelector('meta[name=viewport]'), root = document.documentElement, mq = matchMedia('(orientation: portrait)');
     root.classList.add('phone');
@@ -155,6 +155,8 @@
   .act { border: 1px solid var(--border); background: transparent; color: var(--muted); border-radius: 6px; padding: 1px 7px; font-size: 11.5px; line-height: 1.5; }
   .act:hover { color: var(--accent); border-color: var(--accent); }
   .act.applied:hover { color: var(--new); border-color: var(--new); }
+  .act.cmp.on { background: var(--accent); border-color: var(--accent); color: var(--bg); }
+  .act.cmp.on:hover { color: var(--bg); opacity: .85; }
   td.acts { white-space: nowrap; }
   th.w-sel, td.sel { width: 30px; padding-right: 0; padding-left: 10px; }
   td.sel input, th.w-sel input { margin: 0; vertical-align: middle; cursor: pointer; }
@@ -173,7 +175,7 @@
   .bulk b { color: var(--accent); }
   .bulk .act { background: var(--surface); }
   td.acts .sub { margin-right: 6px; }
-  th.w-acts { width: 205px; }
+  th.w-acts { width: 290px; }
   .note button.link { border: 0; background: none; color: var(--accent); padding: 0; font-size: inherit; text-decoration: underline; }
   .company .head .meta { color: var(--muted); font-size: 13px; }
   .company .head .meta.err { color: var(--err); }
@@ -293,7 +295,7 @@
   .company .head h2 { font: 600 24px/1.1 var(--serif); letter-spacing: -.01em; }
   thead th { text-transform: none; letter-spacing: 0; font-size: 12.5px; color: var(--faint); font-weight: 500; }
   th, td { padding: 9px 10px; font-size: 13.5px; }
-  th.w-loc { width: 15%; } th.w-ids { width: 96px; } th.w-acts { width: 180px; }
+  th.w-loc { width: 15%; } th.w-ids { width: 96px; } th.w-acts { width: 322px; } th.w-acts.open { width: 226px; }   /* Open rows carry no "applied Nov 20" note */
   th.w-co { width: 124px; } td.co { overflow: hidden; text-overflow: ellipsis; max-width: 0; }
   td.title a { font-weight: 500; color: var(--text); }
   td.title a:hover { color: var(--accent); }
@@ -568,7 +570,7 @@
     Edit <code>companies.yml</code> in the repo to add companies.
     <br><strong>Primary / Secondary / Tertiary / Out of Network</strong>: drag companies between the sidebar groups (or tap the ★ ☆ ◇ ○ symbol to cycle). New companies start in Secondary; Out of Network is for companies where you have no one to refer you. The grouping is saved with your Applied/Archive marks.
     <br><strong>Bulk moves</strong>: tick the checkboxes (or the header box for all shown), then use the bar that appears or drag the checked rows onto the Open / Applied / Archive tab.
-    <br><strong>Compare</strong>: tick up to 10 roles and choose “Add to compare”, then open <strong>Compare</strong> (top right; the bubble shows how many roles are saved) to line up salary, bonus, equity and total pay. The list is saved with your Applied/Archive marks.
+    <br><strong>Compare</strong>: use the <strong>Compare</strong> button at the right of any role (next to Applied / Archive) to add or remove it, up to 10, then open <strong>Compare</strong> (top right; the bubble shows how many roles are saved) to line up salary, bonus, equity and total pay. The list is saved with your Applied/Archive marks.
     <br><strong>Applied / Archive</strong> are saved in this browser and, with <strong>Sync</strong> turned on (top right), to <code>data/marks.json</code> in the repo so they follow you across devices. A role you've filed stays filed; if the company reposts it under a new listing ID it shows up as new again.
     <button class="link" id="exportMarks">Export</button> · <button class="link" id="importMarks">Import</button> your Applied/Archive list to move it to another browser.<input type="file" id="importFile" accept="application/json" hidden>
   </p>
@@ -641,9 +643,14 @@
       room--; added++;
     }
     const left = list.length - added - dup;
-    selected_.clear(); saveCompare(); render(); scheduleSync();
-    toast(left > 0 ? `Compare holds ${CMP_MAX} roles — added ${added}, ${left} left out. Remove some on the Compare page first.`
+    saveCompare(); render(); scheduleSync();
+    toast(left > 0 && list.length === 1 ? `Compare is full (${CMP_MAX} roles). Remove one first.` : left > 0 ? `Compare holds ${CMP_MAX} roles — added ${added}, ${left} left out. Remove some on the Compare page first.`
         : added ? `${added} role${added > 1 ? 's' : ''} added to compare${dup ? ` (${dup} already there)` : ''}.` : 'Already on your compare list.');
+  }
+  function toggleCompare(j) {
+    if (!compare[j.key] || compare[j.key].removed) return addToCompare([j]);
+    compare[j.key] = { removed: true, at: new Date().toISOString() };
+    saveCompare(); render(); scheduleSync(); toast('Removed from compare.');
   }
   const SECTION_LABEL = { open: 'Open', applied: 'Applied', archived: 'Archive' };
 
@@ -1117,7 +1124,7 @@
     'title':       (a, b) => a.title.localeCompare(b.title),
   };
   const sortRows = rows => rows.slice().sort((a, b) => (a.status === 'closed') - (b.status === 'closed') || SORTS[sortKey](a, b));
-  const THEAD = () => `<thead><tr><th class="w-sel"><input type="checkbox" class="selall" title="Select all shown"></th>${flat ? '<th class="w-co">Company</th>' : ''}<th class="w-role"${roleW ? ` style="width:${roleW}px"` : ''}>Role<span class="rz" title="Drag to widen the Role column · double-click to fit the longest title"></span></th><th class="w-loc">Location</th><th class="w-work">Work</th><th class="w-posted">Posted</th><th class="w-sal">Salary</th><th class="w-ids">IDs</th><th class="w-acts"></th></tr></thead>`;
+  const THEAD = (sec) => `<thead><tr><th class="w-sel"><input type="checkbox" class="selall" title="Select all shown"></th>${flat ? '<th class="w-co">Company</th>' : ''}<th class="w-role"${roleW ? ` style="width:${roleW}px"` : ''}>Role<span class="rz" title="Drag to widen the Role column · double-click to fit the longest title"></span></th><th class="w-loc">Location</th><th class="w-work">Work</th><th class="w-posted">Posted</th><th class="w-sal">Salary</th><th class="w-ids">IDs</th><th class="w-acts${sec === 'open' ? ' open' : ''}"></th></tr></thead>`;
 
   function row(j) {
     const pub = j.published_at;
@@ -1154,9 +1161,11 @@
     const m = marks[j.key];
     const when = m && m.at ? `<span class="sub" title="${escapeHtml(new Date(m.at).toLocaleString('en-US'))}">${m.status === 'applied' ? 'applied' : 'archived'} ${fmtDate(m.at)}</span>` : '';
     const btn = (st, label, cls = '') => `<button class="act ${cls}" data-key="${escapeHtml(j.key)}" data-mark="${st}">${label}</button>`;
-    if (!m || m.status === 'open') return btn('applied', '✓ Applied', 'applied') + ' ' + btn('archived', 'Archive');
-    if (m.status === 'applied') return when + btn('open', 'Restore') + ' ' + btn('archived', 'Archive');
-    return when + btn('open', 'Restore') + ' ' + btn('applied', '✓ Applied', 'applied');
+    const inCmp = compare[j.key] && !compare[j.key].removed;
+    const cmp = ` <button class="act cmp${inCmp ? ' on' : ''}" data-key="${escapeHtml(j.key)}" data-cmp aria-pressed="${!!inCmp}" title="${inCmp ? 'On your compare list. Click to remove it' : 'Add this role to the compare table'}">${inCmp ? '✓ Compare' : 'Compare'}</button>`;
+    if (!m || m.status === 'open') return btn('applied', '✓ Applied', 'applied') + ' ' + btn('archived', 'Archive') + cmp;
+    if (m.status === 'applied') return when + btn('open', 'Restore') + ' ' + btn('archived', 'Archive') + cmp;
+    return when + btn('open', 'Restore') + ' ' + btn('applied', '✓ Applied', 'applied') + cmp;
   }
 
   function tabsHtml(name, list) {
@@ -1175,7 +1184,6 @@
     return `<div class="bulk"><b>${chosen.length} selected</b> · move to:
       ${cur !== 'applied' ? btn('applied', '✓ Applied', 'applied') : ''} ${cur !== 'archived' ? btn('archived', 'Archive') : ''} ${cur !== 'open' ? btn('open', 'Open (restore)') : ''}
       <span class="sub">or drag the checked rows onto the Open / Applied / Archive tab</span>
-      <button class="act bulk-cmp" title="Add the checked roles to the comparison table (up to ${CMP_MAX})">⇄ Add to compare</button>
       <button class="act bulk-clear">Clear selection</button></div>`;
   }
   function wire(el, rows = []) {
@@ -1190,7 +1198,6 @@
     if (all) { all.checked = rows.length > 0 && rows.every(j => selected_.has(j.key));
       all.addEventListener('change', e => { for (const j of rows) e.currentTarget.checked ? selected_.add(j.key) : selected_.delete(j.key); render(); }); }
     el.querySelectorAll('.bulk-act').forEach(b => b.addEventListener('click', e => setMarks(chosen(), e.currentTarget.dataset.mark)));
-    el.querySelectorAll('.bulk-cmp').forEach(b => b.addEventListener('click', () => addToCompare(chosen())));
     el.querySelectorAll('.bulk-clear').forEach(b => b.addEventListener('click', () => { selected_.clear(); render(); }));
     // --- drag rows (the checked set, or just the dragged row) onto a section tab
     el.querySelectorAll('tbody tr[draggable]').forEach(tr => {
@@ -1208,7 +1215,8 @@
       b.addEventListener('drop', e => { if (!b.classList.contains('drop-ok')) return; e.preventDefault(); const list = chosen(); if (list.length) setMarks(list, b.dataset.s); });
     });
     el.querySelectorAll('.act').forEach(b => b.addEventListener('click', e => {
-      const j = allJobs().find(x => x.key === e.currentTarget.dataset.key); if (j && e.currentTarget.dataset.mark) setMark(j, e.currentTarget.dataset.mark);
+      const t = e.currentTarget, j = allJobs().find(x => x.key === t.dataset.key); if (!j) return;
+      if ('cmp' in t.dataset) toggleCompare(j); else if (t.dataset.mark) setMark(j, t.dataset.mark);
     }));
   }
   const allJobs = () => data.jobs.concat(...Object.values(liveExtra));
@@ -1370,7 +1378,7 @@
     $('#cmpClear').hidden = !list.length;
     const val = n => n == null ? '' : Math.round(n).toLocaleString('en-US');
     const body = $('#cmpBody');
-    if (!list.length) { body.innerHTML = '<div class="empty">Nothing to compare yet. On the dashboard, tick the checkbox next to up to 10 roles, then choose “⇄ Add to compare” in the bar that appears.</div>'; return; }
+    if (!list.length) { body.innerHTML = '<div class="empty">Nothing to compare yet. On the dashboard, use the Compare button at the right of a role, next to Applied / Archive. You can add up to 10.</div>'; return; }
     body.innerHTML = `<table><thead><tr><th class="grip"></th><th>Company</th><th>Role</th><th>Remote</th><th class="num">Starting salary</th><th class="num">50% of range<br>(midpoint)</th><th class="num">High-end salary</th><th class="num">Bonus %<br>and amount</th><th class="num">Equity grant<br>and vesting years</th><th class="num">Total comp,<br>annual</th><th></th></tr></thead><tbody>${
       list.map(([k, it]) => {
         const j = jobs.find(x => x.key === k), gone = !j || j.status === 'closed';
@@ -1459,7 +1467,7 @@
       const el = document.createElement('section');
       el.className = 'company';
       el.innerHTML = `<div class="head"><h2 class="all">All companies</h2>${tabsHtml('*', jobs)}<span class="meta">${rows.length} shown</span><span class="spacer"></span></div>
-        ${bulkBar(rows)}${rows.length ? `<table>${THEAD()}<tbody>${rows.map(row).join('')}</tbody></table>` : `<div class="empty">${EMPTY[sec]}</div>`}`;
+        ${bulkBar(rows)}${rows.length ? `<table>${THEAD(sec)}<tbody>${rows.map(row).join('')}</tbody></table>` : `<div class="empty">${EMPTY[sec]}</div>`}`;
       wire(el, rows); wireResize(el);
       container.appendChild(el);
       return;
@@ -1485,7 +1493,7 @@
           ${c.url ? `<a href="${escapeHtml(c.url)}" target="_blank" rel="noopener">careers page ↗</a>` : ''}
           ${c.ats === 'manual' ? '' : '<button class="pull">Pull now</button>'}
         </div>
-        ${bulkBar(rows)}${rows.length ? `<table>${THEAD()}<tbody>${rows.map(row).join('')}</tbody></table>`
+        ${bulkBar(rows)}${rows.length ? `<table>${THEAD(sec)}<tbody>${rows.map(row).join('')}</tbody></table>`
                       : `<div class="empty">${sec === 'open' && !openCount ? 'No open roles with “product” in the title in the US right now.' : EMPTY[sec]}</div>`}`;
       if (el.querySelector('.pull')) el.querySelector('.pull').addEventListener('click', e => pullNow(c, e.currentTarget));
       wire(el, rows); wireResize(el);
