@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-21T02:24:28.856Z",
+  "updated_at": "2026-11-21T02:24:51.395Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2534,6 +2534,20 @@
       "work": "",
       "min": 160800,
       "max": 257200,
+      "bonusPct": null,
+      "equity": null,
+      "vestYears": 4
+    },
+    "phenom:careers.autonation.com/us/en:AUMAIHUSJR2026143821EXTERNALENUS": {
+      "at": "2026-11-21T02:24:49.875Z",
+      "added": "2026-11-21T02:24:49.875000",
+      "title": "Director, Product",
+      "company": "AutoNation",
+      "url": "https://careers.autonation.com/us/en/job/AUMAIHUSJR2026143821EXTERNALENUS/Director-Product",
+      "location": "Remote-CA, California, United States of America",
+      "work": "remote",
+      "min": null,
+      "max": null,
       "bonusPct": null,
       "equity": null,
       "vestYears": 4
