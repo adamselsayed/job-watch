@@ -13,10 +13,10 @@
   else if (pv === 'pay') document.documentElement.classList.add('privacy-pay'); } catch (e) {}</script>
 <script>
   /* Phones: landscape only, showing the same layout as desktop. A phone held sideways is ~850px wide, which
-     would trip the narrow-screen rules below, so the page is laid out 1480px wide and scaled to fit instead
+     would trip the narrow-screen rules below, so the page is laid out 1400px wide and scaled to fit instead
      (pinch to zoom still works). Held upright, a "rotate your phone" card covers the page. */
   (function () {
-    var DESKTOP_W = 1480;
+    var DESKTOP_W = 1400;
     try { if (!matchMedia('(pointer: coarse)').matches || Math.min(screen.width, screen.height) > 500) return; } catch (e) { return; }
     var vp = document.querySelector('meta[name=viewport]'), root = document.documentElement, mq = matchMedia('(orientation: portrait)');
     root.classList.add('phone');
@@ -155,6 +155,7 @@
   .act { border: 1px solid var(--border); background: transparent; color: var(--muted); border-radius: 6px; padding: 1px 7px; font-size: 11.5px; line-height: 1.5; }
   .act:hover { color: var(--accent); border-color: var(--accent); }
   .act.applied:hover { color: var(--new); border-color: var(--new); }
+  .act.cmp { padding: 1px 6px; vertical-align: top; } .act.cmp svg { display: block; margin: 2px 0; }
   .act.cmp.on { background: var(--accent); border-color: var(--accent); color: var(--bg); }
   .act.cmp.on:hover { color: var(--bg); opacity: .85; }
   td.acts { white-space: nowrap; }
@@ -295,7 +296,7 @@
   .company .head h2 { font: 600 24px/1.1 var(--serif); letter-spacing: -.01em; }
   thead th { text-transform: none; letter-spacing: 0; font-size: 12.5px; color: var(--faint); font-weight: 500; }
   th, td { padding: 9px 10px; font-size: 13.5px; }
-  th.w-loc { width: 15%; } th.w-ids { width: 96px; } th.w-acts { width: 322px; } th.w-acts.open { width: 226px; }   /* Open rows carry no "applied Nov 20" note */
+  th.w-loc { width: 15%; } th.w-ids { width: 96px; } th.w-acts { width: 284px; } th.w-acts.open { width: 188px; }   /* Open rows carry no "applied Nov 20" note */
   th.w-co { width: 124px; } td.co { overflow: hidden; text-overflow: ellipsis; max-width: 0; }
   td.title a { font-weight: 500; color: var(--text); }
   td.title a:hover { color: var(--accent); }
@@ -447,7 +448,7 @@
     <h1>Job Watch</h1>
     <span class="sub" id="generated">Loading…</span>
     <span class="spacer"></span>
-    <button id="cmpOpen" class="icon cmp" aria-pressed="false" aria-label="Compare roles" title="Compare roles"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="4.5" width="7" height="15" rx="1.6"/><rect x="13.5" y="4.5" width="7" height="15" rx="1.6"/><path d="M6 9h2M6 12.5h2M16 9h2M16 12.5h2"/></svg><b>0</b></button>
+    <button id="cmpOpen" class="icon cmp" aria-pressed="false" aria-label="Compare roles" title="Compare roles"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="9.3" r="3.1" fill="currentColor" stroke="none"/><circle cx="18" cy="6.7" r="3.1" fill="currentColor" stroke="none"/><path d="M2.8 14.6 21.2 10.6"/><path d="M12 13.4 8.4 21h7.2z" fill="currentColor"/></svg><b>0</b></button>
     <span class="pv-wrap">
       <button id="privacyBtn" class="icon" aria-pressed="false" aria-haspopup="menu" aria-expanded="false" aria-label="Privacy mode" title="Privacy mode"></button>
       <ul id="pvMenu" class="pv-menu" role="menu" hidden>
@@ -570,7 +571,7 @@
     Edit <code>companies.yml</code> in the repo to add companies.
     <br><strong>Primary / Secondary / Tertiary / Out of Network</strong>: drag companies between the sidebar groups (or tap the ★ ☆ ◇ ○ symbol to cycle). New companies start in Secondary; Out of Network is for companies where you have no one to refer you. The grouping is saved with your Applied/Archive marks.
     <br><strong>Bulk moves</strong>: tick the checkboxes (or the header box for all shown), then use the bar that appears or drag the checked rows onto the Open / Applied / Archive tab.
-    <br><strong>Compare</strong>: use the <strong>Compare</strong> button at the right of any role (next to Applied / Archive) to add or remove it, up to 10, then open <strong>Compare</strong> (top right; the bubble shows how many roles are saved) to line up salary, bonus, equity and total pay. The list is saved with your Applied/Archive marks.
+    <br><strong>Compare</strong>: use the balance-scale button at the right of any role (next to Applied / Archive) to add or remove it, up to 10, then open <strong>Compare</strong> (top right; the bubble shows how many roles are saved) to line up salary, bonus, equity and total pay. The list is saved with your Applied/Archive marks.
     <br><strong>Applied / Archive</strong> are saved in this browser and, with <strong>Sync</strong> turned on (top right), to <code>data/marks.json</code> in the repo so they follow you across devices. A role you've filed stays filed; if the company reposts it under a new listing ID it shows up as new again.
     <button class="link" id="exportMarks">Export</button> · <button class="link" id="importMarks">Import</button> your Applied/Archive list to move it to another browser.<input type="file" id="importFile" accept="application/json" hidden>
   </p>
@@ -1157,12 +1158,13 @@
     </tr>`;
   }
 
+  const CMP_ICON = '<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="9.3" r="3.1" fill="currentColor" stroke="none"/><circle cx="18" cy="6.7" r="3.1" fill="currentColor" stroke="none"/><path d="M2.8 14.6 21.2 10.6"/><path d="M12 13.4 8.4 21h7.2z" fill="currentColor"/></svg>';
   function actions(j) {
     const m = marks[j.key];
     const when = m && m.at ? `<span class="sub" title="${escapeHtml(new Date(m.at).toLocaleString('en-US'))}">${m.status === 'applied' ? 'applied' : 'archived'} ${fmtDate(m.at)}</span>` : '';
     const btn = (st, label, cls = '') => `<button class="act ${cls}" data-key="${escapeHtml(j.key)}" data-mark="${st}">${label}</button>`;
-    const inCmp = compare[j.key] && !compare[j.key].removed;
-    const cmp = ` <button class="act cmp${inCmp ? ' on' : ''}" data-key="${escapeHtml(j.key)}" data-cmp aria-pressed="${!!inCmp}" title="${inCmp ? 'On your compare list. Click to remove it' : 'Add this role to the compare table'}">${inCmp ? '✓ Compare' : 'Compare'}</button>`;
+    const inCmp = compare[j.key] && !compare[j.key].removed;   // same balance symbol as the header's Compare button
+    const cmp = ` <button class="act cmp${inCmp ? ' on' : ''}" data-key="${escapeHtml(j.key)}" data-cmp aria-pressed="${!!inCmp}" aria-label="${inCmp ? 'Remove from compare' : 'Add to compare'}" title="${inCmp ? 'On your compare list. Click to remove it' : 'Add this role to the compare table'}">${CMP_ICON}</button>`;
     if (!m || m.status === 'open') return btn('applied', '✓ Applied', 'applied') + ' ' + btn('archived', 'Archive') + cmp;
     if (m.status === 'applied') return when + btn('open', 'Restore') + ' ' + btn('archived', 'Archive') + cmp;
     return when + btn('open', 'Restore') + ' ' + btn('applied', '✓ Applied', 'applied') + cmp;
@@ -1378,7 +1380,7 @@
     $('#cmpClear').hidden = !list.length;
     const val = n => n == null ? '' : Math.round(n).toLocaleString('en-US');
     const body = $('#cmpBody');
-    if (!list.length) { body.innerHTML = '<div class="empty">Nothing to compare yet. On the dashboard, use the Compare button at the right of a role, next to Applied / Archive. You can add up to 10.</div>'; return; }
+    if (!list.length) { body.innerHTML = '<div class="empty">Nothing to compare yet. On the dashboard, use the balance-scale button at the right of a role, next to Applied / Archive. You can add up to 10.</div>'; return; }
     body.innerHTML = `<table><thead><tr><th class="grip"></th><th>Company</th><th>Role</th><th>Remote</th><th class="num">Starting salary</th><th class="num">50% of range<br>(midpoint)</th><th class="num">High-end salary</th><th class="num">Bonus %<br>and amount</th><th class="num">Equity grant<br>and vesting years</th><th class="num">Total comp,<br>annual</th><th></th></tr></thead><tbody>${
       list.map(([k, it]) => {
         const j = jobs.find(x => x.key === k), gone = !j || j.status === 'closed';
