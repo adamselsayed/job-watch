@@ -856,6 +856,11 @@
 "first_seen": "2026-11-05",
 "posted": "2026-11-05"
 },
+"phenom:careers.autonation.com/us/en:AUMAIHUSJR2026152655EXTERNALENUS": {
+"company": "AutoNation",
+"first_seen": "2026-11-21",
+"posted": "2026-11-20"
+},
 "phenom:careers.cisco.com/global/en:CISCISGLOBAL2015048EXTERNALENGLOBAL": {
 "company": "Cisco",
 "first_seen": "2026-11-09",
@@ -2246,6 +2251,11 @@
 "first_seen": "2026-11-19",
 "posted": "2026-11-19"
 },
+"talentbrew:www.careers.ford.com/en:103582629840": {
+"company": "Ford",
+"first_seen": "2026-11-21",
+"posted": "2026-11-20"
+},
 "talentbrew:www.careers.ford.com/en:98847422048": {
 "company": "Ford",
 "first_seen": "2026-11-05",
@@ -2862,5 +2872,5 @@
 "posted": "2026-11-20"
 }
 },
-"updated_at": "2026-11-20T20:34:53+00:00"
+"updated_at": "2026-11-21T02:32:09+00:00"
 }
