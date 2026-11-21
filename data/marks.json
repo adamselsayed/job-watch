@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-21T05:17:18.857Z",
+  "updated_at": "2026-11-21T06:53:19.428Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2552,6 +2552,20 @@
       "url": "https://careers.autonation.com/us/en/job/AUMAIHUSJR2026143821EXTERNALENUS/Director-Product",
       "location": "Remote-CA, California, United States of America",
       "work": "remote",
+      "min": null,
+      "max": null,
+      "bonusPct": null,
+      "equity": null,
+      "vestYears": 4
+    },
+    "phenom:www.jobs-ups.com/us/en:UPBUPSGLOBALR26034745EXTERNALENUS": {
+      "at": "2026-11-21T06:53:17.913Z",
+      "added": "2026-11-21T06:53:17.913000",
+      "title": "Lead Product Manager(Flex)",
+      "company": "UPS",
+      "url": "https://www.jobs-ups.com/us/en/job/UPBUPSGLOBALR26034745EXTERNALENUS/Lead-Product-Manager-Flex",
+      "location": "ALPHARETTA, Georgia, United States of America",
+      "work": "hybrid",
       "min": null,
       "max": null,
       "bonusPct": null,
