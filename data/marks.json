@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-21T02:24:18.458Z",
+  "updated_at": "2026-11-21T02:24:28.856Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2520,6 +2520,20 @@
       "work": "remote",
       "min": 178500,
       "max": 241500,
+      "bonusPct": null,
+      "equity": null,
+      "vestYears": 4
+    },
+    "talentbrew:jobs.bd.com/en:103567025056": {
+      "at": "2026-11-21T02:24:27.338Z",
+      "added": "2026-11-21T02:24:27.338000",
+      "title": "Associate Director, Lead Product Manager",
+      "company": "BD",
+      "url": "https://jobs.bd.com/en/job/irvine/associate-director-lead-product-manager/159/103567025056",
+      "location": "Irvine, California, United States of America",
+      "work": "",
+      "min": 160800,
+      "max": 257200,
       "bonusPct": null,
       "equity": null,
       "vestYears": 4
