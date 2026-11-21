@@ -387,8 +387,14 @@
   #compareView table { table-layout: auto; min-width: 1180px; }
   #compareView th, #compareView td { padding: 10px 10px; }
   #compareView th:first-child, #compareView td:first-child { padding-left: 20px; }
-  #compareView thead th { white-space: normal; vertical-align: bottom; line-height: 1.25; }
+  #compareView thead th { white-space: nowrap; vertical-align: bottom; line-height: 1.25; }
   #compareView th.num, #compareView td.num { text-align: right; font-variant-numeric: tabular-nums; }
+  #compareView th.grip, #compareView td.grip { width: 34px; padding-left: 12px !important; padding-right: 0; }
+  #compareView .grip-h { border: 0; background: none; color: var(--faint); padding: 8px 6px; border-radius: 6px; cursor: grab; touch-action: none; line-height: 0; }
+  #compareView .grip-h:hover, #compareView .grip-h:focus-visible { color: var(--accent); background: var(--surface-2); }
+  #compareView tr.moving td { background: var(--accent-soft); }
+  #compareView tr.moving .grip-h { cursor: grabbing; color: var(--accent); }
+  #compareView tbody tr:hover td:first-child { box-shadow: none; }
   #compareView td.co { max-width: 150px; color: var(--text); }
   #compareView td.title { max-width: 250px; width: 22%; }
   #compareView td.title .sub { display: block; overflow: hidden; text-overflow: ellipsis; }
@@ -489,7 +495,7 @@
       <button id="cmpClear" class="danger">Clear all</button>
     </div>
     <div class="card" id="cmpBody"></div>
-    <p class="foot">Salary and remote status are filled in from the posting when it states them; everything is editable. Bonus amount = bonus % × salary.
+    <p class="foot">Salary and remote status are filled in from the posting when it states them; everything is editable. Drag the dots at the left of a row to reorder. Bonus amount = bonus % × salary.
       Equity per year = grant ÷ vesting years. 50% of range = the midpoint between starting and high-end salary. Total = salary + bonus + equity per year, shown from starting salary to high end, with the midpoint figure underneath.</p>
   </section>
 
@@ -612,7 +618,7 @@
   let compare = {};
   try { compare = JSON.parse(localStorage.getItem(CMP_KEY) || '{}') || {}; } catch (e) { compare = {}; }
   const saveCompare = () => { try { localStorage.setItem(CMP_KEY, JSON.stringify(compare)); } catch (e) {} };
-  const cmpList = () => Object.entries(compare).filter(([, v]) => !v.removed).sort((a, b) => (a[1].added || '').localeCompare(b[1].added || ''));
+  const cmpList = () => Object.entries(compare).filter(([, v]) => !v.removed).sort((a, b) => (a[1].pos ?? 1e9) - (b[1].pos ?? 1e9) || (a[1].added || '').localeCompare(b[1].added || ''));   // pos = the order set by dragging
   function mergeCompare(remote) {
     let changed = false;
     for (const [k, v] of Object.entries(remote || {})) {
@@ -624,12 +630,13 @@
   }
   function addToCompare(list) {
     const now = new Date().toISOString();
-    let room = CMP_MAX - cmpList().length, added = 0, dup = 0, i = 0;
+    const cur = cmpList(); cur.forEach(([, v], n) => { v.pos = n; });
+    let room = CMP_MAX - cur.length, added = 0, dup = 0, i = 0, pos = cur.length;
     for (const j of list) {
       if (compare[j.key] && !compare[j.key].removed) { dup++; continue; }
       if (room <= 0) break;
       const sal = j.salary && j.salary.max > 1000 && (!j.salary.currency || j.salary.currency === 'USD') ? j.salary : null;   // annual USD only
-      compare[j.key] = { at: now, added: now.slice(0, -1) + String(i++).padStart(3, '0'), title: j.title, company: j.company, url: j.url, location: j.location || '',
+      compare[j.key] = { at: now, added: now.slice(0, -1) + String(i++).padStart(3, '0'), pos: pos++, title: j.title, company: j.company, url: j.url, location: j.location || '',
         work: ['remote', 'hybrid', 'onsite'].includes(j.remote) ? j.remote : '', min: sal ? sal.min : null, max: sal ? sal.max : null, bonusPct: null, equity: null, vestYears: 4 };
       room--; added++;
     }
@@ -1364,10 +1371,11 @@
     const val = n => n == null ? '' : Math.round(n).toLocaleString('en-US');
     const body = $('#cmpBody');
     if (!list.length) { body.innerHTML = '<div class="empty">Nothing to compare yet. On the dashboard, tick the checkbox next to up to 10 roles, then choose “⇄ Add to compare” in the bar that appears.</div>'; return; }
-    body.innerHTML = `<table><thead><tr><th>Company</th><th>Role</th><th>Remote</th><th class="num">Starting salary</th><th class="num">50% of range<br>(midpoint)</th><th class="num">High-end salary</th><th class="num">Bonus %<br>and amount</th><th class="num">Equity grant<br>and vesting years</th><th class="num">Total comp,<br>annual</th><th></th></tr></thead><tbody>${
+    body.innerHTML = `<table><thead><tr><th class="grip"></th><th>Company</th><th>Role</th><th>Remote</th><th class="num">Starting salary</th><th class="num">50% of range<br>(midpoint)</th><th class="num">High-end salary</th><th class="num">Bonus %<br>and amount</th><th class="num">Equity grant<br>and vesting years</th><th class="num">Total comp,<br>annual</th><th></th></tr></thead><tbody>${
       list.map(([k, it]) => {
         const j = jobs.find(x => x.key === k), gone = !j || j.status === 'closed';
         return `<tr data-key="${escapeHtml(k)}" class="${gone ? 'gone' : ''}">
+          <td class="grip"><button class="grip-h" title="Drag to reorder (or press ↑ / ↓)" aria-label="Reorder ${escapeHtml(it.title)}: drag, or press up or down arrow"><svg viewBox="0 0 12 18" width="10" height="15" fill="currentColor" aria-hidden="true"><circle cx="3" cy="3" r="1.5"/><circle cx="9" cy="3" r="1.5"/><circle cx="3" cy="9" r="1.5"/><circle cx="9" cy="9" r="1.5"/><circle cx="3" cy="15" r="1.5"/><circle cx="9" cy="15" r="1.5"/></svg></button></td>
           <td class="co" title="${escapeHtml(it.company)}">${escapeHtml(it.company)}</td>
           <td class="title" title="${escapeHtml(it.title)}"><span class="t"><a href="${escapeHtml(it.url || '#')}" target="_blank" rel="noopener">${escapeHtml(it.title)}</a>${gone ? '<span class="badge b-closed" title="No longer on the board">closed</span>' : ''}</span><span class="sub">${escapeHtml(it.location || '')}</span></td>
           <td><select data-f="work" aria-label="Remote or not"><option value="">Not stated</option><option value="remote">Remote</option><option value="hybrid">Not remote · hybrid</option><option value="onsite">Not remote · on-site</option></select></td>
@@ -1389,6 +1397,25 @@
         inp.addEventListener('input', () => { it[f] = parse(inp.value); touch(); });
         inp.addEventListener('change', () => { if (f !== 'bonusPct' && f !== 'vestYears') inp.value = val(it[f]); });
         inp.addEventListener('keydown', e => { if (e.key === 'Enter') inp.blur(); });
+      });
+      // reorder: pointer events (mouse and touch alike) move the row live; the new order is saved on release
+      const grip = tr.querySelector('.grip-h'), tbody = tr.parentElement;
+      const saveOrder = () => { const at = new Date().toISOString(); [...tbody.children].forEach((r, n) => { const x = compare[r.dataset.key]; if (x && x.pos !== n) { x.pos = n; x.at = at; } }); saveCompare(); scheduleSync(); };
+      grip.addEventListener('pointerdown', e => {
+        if (e.button) return; e.preventDefault(); grip.setPointerCapture(e.pointerId); tr.classList.add('moving'); let moved = false;
+        // shuffle the neighbours around the dragged row (moving the row itself would drop the pointer capture)
+        const mid = r => { const b = r.getBoundingClientRect(); return b.top + b.height / 2; };
+        const move = ev => {
+          let n; while ((n = tr.nextElementSibling) && ev.clientY > mid(n)) { tbody.insertBefore(n, tr); moved = true; }
+          while ((n = tr.previousElementSibling) && ev.clientY < mid(n)) { tbody.insertBefore(n, tr.nextSibling); moved = true; }
+        };
+        const done = () => { grip.removeEventListener('pointermove', move); grip.removeEventListener('pointerup', done); grip.removeEventListener('pointercancel', done); tr.classList.remove('moving'); if (moved) saveOrder(); };
+        grip.addEventListener('pointermove', move); grip.addEventListener('pointerup', done); grip.addEventListener('pointercancel', done);
+      });
+      grip.addEventListener('keydown', e => {
+        if (e.key !== 'ArrowUp' && e.key !== 'ArrowDown') return; e.preventDefault();
+        const sib = e.key === 'ArrowUp' ? tr.previousElementSibling : tr.nextElementSibling; if (!sib) return;
+        tbody.insertBefore(tr, e.key === 'ArrowUp' ? sib : sib.nextSibling); grip.focus(); saveOrder();
       });
       tr.querySelector('.x').addEventListener('click', () => { compare[k] = { removed: true, at: new Date().toISOString() }; saveCompare(); scheduleSync(); renderCompare(); });
     }
