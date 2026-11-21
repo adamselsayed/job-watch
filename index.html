@@ -381,13 +381,13 @@
   #compareView .top h2 { font: 500 30px/1.15 var(--serif); margin: 0; letter-spacing: -.01em; }
   #compareView .top .sub { font-size: 13.5px; color: var(--muted); }
   #compareView .card { background: var(--surface); border-radius: 16px; overflow-x: auto; }
-  #compareView table { table-layout: auto; min-width: 1080px; }
+  #compareView table { table-layout: auto; min-width: 1180px; }
   #compareView th, #compareView td { padding: 10px 10px; }
   #compareView th:first-child, #compareView td:first-child { padding-left: 20px; }
   #compareView thead th { white-space: normal; vertical-align: bottom; line-height: 1.25; }
   #compareView th.num, #compareView td.num { text-align: right; font-variant-numeric: tabular-nums; }
   #compareView td.co { max-width: 150px; color: var(--text); }
-  #compareView td.title { max-width: 280px; width: 26%; }
+  #compareView td.title { max-width: 250px; width: 22%; }
   #compareView td.title .sub { display: block; overflow: hidden; text-overflow: ellipsis; }
   #compareView input, #compareView select { font: inherit; font-size: 13.5px; padding: 5px 8px; border: 1px solid var(--border); border-radius: 8px; background: var(--surface-2); color: var(--text); font-variant-numeric: tabular-nums; }
   #compareView input { width: 96px; text-align: right; }
@@ -396,6 +396,7 @@
   #compareView input::placeholder { color: var(--faint); }
   #compareView .calc { display: block; margin-top: 3px; font-size: 12px; color: var(--muted); }
   #compareView td.total { font-weight: 600; font-size: 14.5px; }
+  #compareView td.total .calc { font-weight: 400; }
   #compareView tr.best td.total { color: var(--accent); }
   #compareView tr.best td.total::after { content: "highest"; display: block; font: 500 11px/1.4 "Instrument Sans", sans-serif; color: var(--accent); }
   #compareView tr.gone td.title a { text-decoration: line-through; color: var(--closed); }
@@ -403,7 +404,7 @@
   #compareView .x:hover { color: var(--err); }
   #compareView .foot { margin: 12px 4px 0; font-size: 12.5px; color: var(--muted); }
   #compareView .empty { padding: 28px 24px; }
-  :is(html.privacy, html.privacy-pay) #compareView :is(td.num input, td.num .calc, td.total > span) { filter: blur(6px); user-select: none; pointer-events: none; }
+  :is(html.privacy, html.privacy-pay) #compareView :is(td.num input, td.num .calc, td.total > span, td.mid > span) { filter: blur(6px); user-select: none; pointer-events: none; }
   html.privacy #compareView td.title .sub { filter: blur(6px); }
   @media (max-width: 760px) {
     #compareView table { display: table; } #compareView thead { display: table-header-group; } #compareView tbody { display: table-row-group; }
@@ -485,7 +486,7 @@
     </div>
     <div class="card" id="cmpBody"></div>
     <p class="foot">Salary and remote status are filled in from the posting when it states them; everything is editable. Bonus amount = bonus % × salary.
-      Equity per year = grant ÷ vesting years. Total = salary + bonus + equity per year, shown from starting salary to high end.</p>
+      Equity per year = grant ÷ vesting years. 50% of range = the midpoint between starting and high-end salary. Total = salary + bonus + equity per year, shown from starting salary to high end, with the midpoint figure underneath.</p>
   </section>
 
   <section class="brief-wrap">
@@ -1331,7 +1332,8 @@
     const lo = it.min != null ? it.min : it.max, hi = it.max != null ? it.max : it.min;
     const pct = it.bonusPct || 0, eq = it.equity ? it.equity / (it.vestYears > 0 ? it.vestYears : 4) : 0;
     const tot = b => b == null ? (eq ? eq : null) : b * (1 + pct / 100) + eq;
-    return { bonusLo: lo != null && pct ? lo * pct / 100 : null, bonusHi: hi != null && pct ? hi * pct / 100 : null, eq: eq || null, totLo: tot(lo), totHi: tot(hi) };
+    const mid = lo != null && hi != null ? (lo + hi) / 2 : null;
+    return { mid, totMid: mid != null ? tot(mid) : null, bonusLo: lo != null && pct ? lo * pct / 100 : null, bonusHi: hi != null && pct ? hi * pct / 100 : null, eq: eq || null, totLo: tot(lo), totHi: tot(hi) };
   }
   function cmpPaint() {            // refresh the computed cells in place, so typing never loses focus
     const list = cmpList(); let best = null, bestV = 0;
@@ -1340,7 +1342,9 @@
       const it = compare[tr.dataset.key]; if (!it) continue; const c = cmpCalc(it);
       tr.querySelector('.c-bonus').textContent = c.bonusLo == null ? '' : rangeTxt(c.bonusLo, c.bonusHi);
       tr.querySelector('.c-eq').textContent = c.eq == null ? '' : `${fmtMoney(c.eq)} / yr`;
+      tr.querySelector('.mid > span').textContent = c.mid == null ? '—' : fmtMoney(c.mid);
       tr.querySelector('.total > span').textContent = rangeTxt(c.totLo, c.totHi);
+      tr.querySelector('.c-totmid').textContent = c.totMid == null || Math.round(c.totLo) === Math.round(c.totHi) ? '' : `${fmtMoney(c.totMid)} at midpoint`;
       tr.classList.toggle('best', list.length > 1 && tr.dataset.key === best);
     }
   }
@@ -1354,7 +1358,7 @@
     const val = n => n == null ? '' : Math.round(n).toLocaleString('en-US');
     const body = $('#cmpBody');
     if (!list.length) { body.innerHTML = '<div class="empty">Nothing to compare yet. On the dashboard, tick the checkbox next to up to 10 roles, then choose “⇄ Add to compare” in the bar that appears.</div>'; return; }
-    body.innerHTML = `<table><thead><tr><th>Company</th><th>Role</th><th>Remote</th><th class="num">Starting salary</th><th class="num">High-end salary</th><th class="num">Bonus %<br>and amount</th><th class="num">Equity grant<br>and vesting years</th><th class="num">Total comp,<br>annual</th><th></th></tr></thead><tbody>${
+    body.innerHTML = `<table><thead><tr><th>Company</th><th>Role</th><th>Remote</th><th class="num">Starting salary</th><th class="num">High-end salary</th><th class="num">50% of range<br>(midpoint)</th><th class="num">Bonus %<br>and amount</th><th class="num">Equity grant<br>and vesting years</th><th class="num">Total comp,<br>annual</th><th></th></tr></thead><tbody>${
       list.map(([k, it]) => {
         const j = jobs.find(x => x.key === k), gone = !j || j.status === 'closed';
         return `<tr data-key="${escapeHtml(k)}" class="${gone ? 'gone' : ''}">
@@ -1363,9 +1367,10 @@
           <td><select data-f="work" aria-label="Remote or not"><option value="">Not stated</option><option value="remote">Remote</option><option value="hybrid">Not remote · hybrid</option><option value="onsite">Not remote · on-site</option></select></td>
           <td class="num"><input data-f="min" inputmode="decimal" placeholder="$" value="${val(it.min)}" aria-label="Starting salary"></td>
           <td class="num"><input data-f="max" inputmode="decimal" placeholder="$" value="${val(it.max)}" aria-label="High-end salary"></td>
+          <td class="num mid"><span></span></td>
           <td class="num"><input class="pct" data-f="bonusPct" inputmode="decimal" placeholder="%" value="${it.bonusPct ?? ''}" aria-label="Bonus percent"><span class="calc c-bonus"></span></td>
           <td class="num"><input data-f="equity" inputmode="decimal" placeholder="$ grant" value="${val(it.equity)}" aria-label="Equity grant, total"> <input class="yrs" data-f="vestYears" inputmode="decimal" value="${it.vestYears ?? 4}" title="Years the grant vests over" aria-label="Vesting years"><span class="calc c-eq"></span></td>
-          <td class="num total"><span></span></td>
+          <td class="num total"><span></span><span class="calc c-totmid"></span></td>
           <td><button class="x" title="Remove from compare" aria-label="Remove ${escapeHtml(it.title)}">×</button></td>
         </tr>`; }).join('')}</tbody></table>`;
     for (const tr of body.querySelectorAll('tbody tr')) {
