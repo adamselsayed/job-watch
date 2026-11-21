@@ -373,8 +373,11 @@
   @media (max-width: 520px) { .brief-wrap .pair { grid-template-columns: 1fr 1fr; } .brief-wrap .pair .mini:last-child { grid-column: 1 / -1; } }
 
   /* ------------------------------------------------------------ compare view -- */
-  .cmpbtn { border-radius: 999px; padding: 5px 11px; font-size: 13px; } .cmpbtn.on { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); }
-  #cmpOpen b { font-weight: 600; margin-left: 5px; }
+  /* header button; the bubble shows how many roles are saved to the comparison table */
+  header button.icon.cmp { position: relative; }
+  #cmpOpen b { position: absolute; top: -6px; right: -7px; min-width: 19px; height: 19px; padding: 0 5px; border-radius: 999px; display: grid; place-items: center;
+    font: 700 11px/1 "Instrument Sans", sans-serif; font-variant-numeric: tabular-nums; background: var(--surface-2); color: var(--muted); border: 1px solid var(--border); }
+  #cmpOpen.has b { background: var(--new); color: var(--bg); border-color: var(--bg); }
   #compareView[hidden] { display: none; }
   .wrap.comparing :is(.brief-wrap, .layout, .note) { display: none; }
   #compareView .top { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 16px; margin-bottom: 16px; }
@@ -436,6 +439,7 @@
     <h1>Job Watch</h1>
     <span class="sub" id="generated">Loading…</span>
     <span class="spacer"></span>
+    <button id="cmpOpen" class="icon cmp" aria-pressed="false" aria-label="Compare roles" title="Compare roles"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="4.5" width="7" height="15" rx="1.6"/><rect x="13.5" y="4.5" width="7" height="15" rx="1.6"/><path d="M6 9h2M6 12.5h2M16 9h2M16 12.5h2"/></svg><b>0</b></button>
     <span class="pv-wrap">
       <button id="privacyBtn" class="icon" aria-pressed="false" aria-haspopup="menu" aria-expanded="false" aria-label="Privacy mode" title="Privacy mode"></button>
       <ul id="pvMenu" class="pv-menu" role="menu" hidden>
@@ -538,7 +542,6 @@
       <button class="chip gchip" data-g="out">○ Out of Network</button>
     </span>
     <span class="spacer" style="flex:1"></span>
-    <button class="cmpbtn" id="cmpOpen" title="Compare up to 10 roles side by side: tick roles in the table, then “Add to compare”">Compare<b>0</b></button>
     <label>sort <select id="sort">
       <option value="posted-desc">posted · newest first</option>
       <option value="posted-asc">posted · oldest first</option>
@@ -559,7 +562,7 @@
     Edit <code>companies.yml</code> in the repo to add companies.
     <br><strong>Primary / Secondary / Tertiary / Out of Network</strong>: drag companies between the sidebar groups (or tap the ★ ☆ ◇ ○ symbol to cycle). New companies start in Secondary; Out of Network is for companies where you have no one to refer you. The grouping is saved with your Applied/Archive marks.
     <br><strong>Bulk moves</strong>: tick the checkboxes (or the header box for all shown), then use the bar that appears or drag the checked rows onto the Open / Applied / Archive tab.
-    <br><strong>Compare</strong>: tick up to 10 roles and choose “Add to compare”, then open <strong>Compare</strong> (next to sort) to line up salary, bonus, equity and total pay. The list is saved with your Applied/Archive marks.
+    <br><strong>Compare</strong>: tick up to 10 roles and choose “Add to compare”, then open <strong>Compare</strong> (top right; the bubble shows how many roles are saved) to line up salary, bonus, equity and total pay. The list is saved with your Applied/Archive marks.
     <br><strong>Applied / Archive</strong> are saved in this browser and, with <strong>Sync</strong> turned on (top right), to <code>data/marks.json</code> in the repo so they follow you across devices. A role you've filed stays filed; if the company reposts it under a new listing ID it shows up as new again.
     <button class="link" id="exportMarks">Export</button> · <button class="link" id="importMarks">Import</button> your Applied/Archive list to move it to another browser.<input type="file" id="importFile" accept="application/json" hidden>
   </p>
@@ -1350,8 +1353,11 @@
   }
   function renderCompare() {
     const list = cmpList(), jobs = allJobs();
-    $('#cmpOpen').querySelector('b').textContent = list.length;
-    $('#cmpOpen').classList.toggle('on', list.length > 0);
+    const cb = $('#cmpOpen');
+    cb.querySelector('b').textContent = list.length;
+    cb.classList.toggle('has', list.length > 0);
+    cb.title = cb.ariaLabel = `Compare roles: ${list.length} of ${CMP_MAX} saved`;
+    cb.setAttribute('aria-pressed', String(!$('#compareView').hidden));
     if ($('#compareView').hidden) return;
     $('#cmpCount').textContent = `${list.length} of ${CMP_MAX} roles`;
     $('#cmpClear').hidden = !list.length;
@@ -1393,8 +1399,9 @@
     $('#compareView').hidden = !on; document.querySelector('.wrap').classList.toggle('comparing', on);
     renderCompare(); if (on) scrollTo(0, 0);
   }
-  $('#cmpOpen').addEventListener('click', () => { location.hash = 'compare'; });
-  $('#cmpBack').addEventListener('click', () => { window.history.replaceState(null, '', location.pathname + location.search); showCompare(); });
+  const closeCompare = () => { window.history.replaceState(null, '', location.pathname + location.search); showCompare(); };
+  $('#cmpOpen').addEventListener('click', () => { if (location.hash === '#compare') closeCompare(); else location.hash = 'compare'; });
+  $('#cmpBack').addEventListener('click', closeCompare);
   $('#cmpClear').addEventListener('click', () => {
     if (!confirm('Remove every role from the compare list?')) return;
     const at = new Date().toISOString(); for (const [k] of cmpList()) compare[k] = { removed: true, at };
