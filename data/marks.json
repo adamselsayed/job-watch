@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-21T02:23:24.193Z",
+  "updated_at": "2026-11-21T02:24:18.458Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2506,6 +2506,20 @@
       "work": "remote",
       "min": 148900,
       "max": 260600,
+      "bonusPct": null,
+      "equity": null,
+      "vestYears": 4
+    },
+    "greenhouse:chargepoint:8807454002": {
+      "at": "2026-11-21T02:24:16.938Z",
+      "added": "2026-11-21T02:24:16.938000",
+      "title": "Staff Product Manager, Fleet Software",
+      "company": "ChargePoint",
+      "url": "https://www.chargepoint.com/about/opportunities/job/?gh_jid=8807454002",
+      "location": "US-CA-Remote",
+      "work": "remote",
+      "min": 178500,
+      "max": 241500,
       "bonusPct": null,
       "equity": null,
       "vestYears": 4
