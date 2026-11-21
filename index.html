@@ -1358,7 +1358,7 @@
     const val = n => n == null ? '' : Math.round(n).toLocaleString('en-US');
     const body = $('#cmpBody');
     if (!list.length) { body.innerHTML = '<div class="empty">Nothing to compare yet. On the dashboard, tick the checkbox next to up to 10 roles, then choose “⇄ Add to compare” in the bar that appears.</div>'; return; }
-    body.innerHTML = `<table><thead><tr><th>Company</th><th>Role</th><th>Remote</th><th class="num">Starting salary</th><th class="num">High-end salary</th><th class="num">50% of range<br>(midpoint)</th><th class="num">Bonus %<br>and amount</th><th class="num">Equity grant<br>and vesting years</th><th class="num">Total comp,<br>annual</th><th></th></tr></thead><tbody>${
+    body.innerHTML = `<table><thead><tr><th>Company</th><th>Role</th><th>Remote</th><th class="num">Starting salary</th><th class="num">50% of range<br>(midpoint)</th><th class="num">High-end salary</th><th class="num">Bonus %<br>and amount</th><th class="num">Equity grant<br>and vesting years</th><th class="num">Total comp,<br>annual</th><th></th></tr></thead><tbody>${
       list.map(([k, it]) => {
         const j = jobs.find(x => x.key === k), gone = !j || j.status === 'closed';
         return `<tr data-key="${escapeHtml(k)}" class="${gone ? 'gone' : ''}">
@@ -1366,8 +1366,8 @@
           <td class="title" title="${escapeHtml(it.title)}"><span class="t"><a href="${escapeHtml(it.url || '#')}" target="_blank" rel="noopener">${escapeHtml(it.title)}</a>${gone ? '<span class="badge b-closed" title="No longer on the board">closed</span>' : ''}</span><span class="sub">${escapeHtml(it.location || '')}</span></td>
           <td><select data-f="work" aria-label="Remote or not"><option value="">Not stated</option><option value="remote">Remote</option><option value="hybrid">Not remote · hybrid</option><option value="onsite">Not remote · on-site</option></select></td>
           <td class="num"><input data-f="min" inputmode="decimal" placeholder="$" value="${val(it.min)}" aria-label="Starting salary"></td>
-          <td class="num"><input data-f="max" inputmode="decimal" placeholder="$" value="${val(it.max)}" aria-label="High-end salary"></td>
           <td class="num mid"><span></span></td>
+          <td class="num"><input data-f="max" inputmode="decimal" placeholder="$" value="${val(it.max)}" aria-label="High-end salary"></td>
           <td class="num"><input class="pct" data-f="bonusPct" inputmode="decimal" placeholder="%" value="${it.bonusPct ?? ''}" aria-label="Bonus percent"><span class="calc c-bonus"></span></td>
           <td class="num"><input data-f="equity" inputmode="decimal" placeholder="$ grant" value="${val(it.equity)}" aria-label="Equity grant, total"> <input class="yrs" data-f="vestYears" inputmode="decimal" value="${it.vestYears ?? 4}" title="Years the grant vests over" aria-label="Vesting years"><span class="calc c-eq"></span></td>
           <td class="num total"><span></span><span class="calc c-totmid"></span></td>
