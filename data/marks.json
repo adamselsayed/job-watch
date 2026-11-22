@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-22T06:22:39.543Z",
+  "updated_at": "2026-11-22T06:22:53.621Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2442,6 +2442,12 @@
       "at": "2026-11-22T06:22:20.094Z",
       "title": "Director of Product, Safety",
       "company": "Motive"
+    },
+    "avature:jobs.siemens.com/en_US/externaljobs:526692": {
+      "status": "applied",
+      "at": "2026-11-22T06:22:52.106Z",
+      "title": "Senior Principal Product Manager",
+      "company": "Siemens"
     }
   },
   "groups": {
