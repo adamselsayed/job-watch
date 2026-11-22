@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-22T06:23:23.588Z",
+  "updated_at": "2026-11-22T06:26:36.811Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2484,6 +2484,12 @@
       "at": "2026-11-22T06:23:22.077Z",
       "title": "Product Management Leader",
       "company": "Siemens"
+    },
+    "greenhouse:toast:8406202": {
+      "status": "archived",
+      "at": "2026-11-22T06:26:35.425Z",
+      "title": "Product Counsel",
+      "company": "Toast"
     }
   },
   "groups": {
