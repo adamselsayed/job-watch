@@ -390,7 +390,7 @@
   #compareView .top .sub { font-size: 13.5px; color: var(--muted); }
   #compareView .card { background: var(--surface); border-radius: 16px; overflow-x: auto; }
   #compareView table { table-layout: auto; min-width: 1180px; }
-  #compareView th, #compareView td { padding: 8px 10px; }
+  #compareView th, #compareView td { padding: 5px 10px; }
   #compareView th:first-child, #compareView td:first-child { padding-left: 20px; }
   #compareView thead th { white-space: nowrap; vertical-align: bottom; line-height: 1.25; }
   /* rows stretch so the list fills the screen down to the footnote (--cmp-row is set by cmpFit) */
@@ -407,13 +407,14 @@
   #compareView td.co { max-width: 150px; color: var(--text); }
   #compareView td.title { max-width: 0; width: 34%; }   /* takes the slack; long titles ellipsize instead of widening the table */
   #compareView td.title .sub { display: block; overflow: hidden; text-overflow: ellipsis; }
-  #compareView input, #compareView select { font: inherit; font-size: 14.5px; padding: 7px 9px; border: 1px solid var(--border); border-radius: 8px; background: var(--surface-2); color: var(--text); font-variant-numeric: tabular-nums; }
+  #compareView input, #compareView select { font: inherit; font-size: 14.5px; padding: 5px 9px; border: 1px solid var(--border); border-radius: 8px; background: var(--surface-2); color: var(--text); font-variant-numeric: tabular-nums; }
   #compareView input { width: 96px; text-align: right; }
   #compareView select { max-width: 168px; }
   #compareView td:last-child { padding-right: 14px; }
   #compareView input.pct, #compareView input.yrs { width: 52px; }
   #compareView input:focus, #compareView select:focus { outline: 2px solid var(--accent); outline-offset: 0; border-color: var(--accent); }
   #compareView input::placeholder { color: var(--faint); }
+  #compareView input.est { border-style: dashed; border-color: var(--accent); font-style: italic; }   /* auto-filled estimate */
   #compareView .calc { display: block; margin-top: 3px; font-size: 12px; color: var(--muted); }
   #compareView td.total { font-weight: 600; font-size: 15.5px; }
   #compareView td.total .calc { font-weight: 400; }
@@ -423,6 +424,8 @@
   #compareView .x { border: 0; background: none; color: var(--faint); font-size: 18px; line-height: 1; padding: 2px 6px; }
   #compareView .x:hover { color: var(--err); }
   #compareView .foot { margin: 12px 4px 0; font-size: 12.5px; color: var(--muted); }
+  #compareView .foot summary { cursor: pointer; } #compareView .foot p { margin: 6px 0 0; }
+  #compareView .calc { margin-top: 1px; }
   #compareView .empty { padding: 28px 24px; }
   :is(html.privacy, html.privacy-pay) #compareView :is(td.num input, td.num .calc, td.total > span, td.mid > span) { filter: blur(6px); user-select: none; pointer-events: none; }
   html.privacy #compareView td.title .sub { filter: blur(6px); }
@@ -506,8 +509,8 @@
       <button id="cmpClear" class="danger">Clear all</button>
     </div>
     <div class="card" id="cmpBody"></div>
-    <p class="foot">Salary and remote status are filled in from the posting when it states them; everything is editable. Drag the dots at the left of a row to reorder. Bonus amount = bonus % × salary.
-      Equity per year = grant ÷ vesting years. 50% of range = the midpoint between starting and high-end salary. Total = salary + bonus + equity per year, shown from starting salary to high end, with the midpoint figure underneath.</p>
+    <details class="foot"><summary>How these numbers work · dashed boxes are Levels.fyi estimates</summary>
+      <p>Salary and remote status are filled in from the posting when it states them; everything is editable. Dashed boxes are bonus and equity estimates from Levels.fyi, filled in automatically within about an hour of adding a role; type over them any time. Drag the dots at the left of a row to reorder. Bonus amount = bonus % × salary. Equity per year = grant ÷ vesting years. 50% of range = the midpoint between starting and high-end salary. Total = salary + bonus + equity per year, shown from starting salary to high end, with the midpoint figure underneath.</p></details>
   </section>
 
   <section class="brief-wrap">
@@ -1393,6 +1396,8 @@
     body.innerHTML = `<table><thead><tr><th class="grip"></th><th>Company</th><th>Role</th><th>Remote</th><th class="num">Starting salary</th><th class="num">50% of range<br>(midpoint)</th><th class="num">High-end salary</th><th class="num">Bonus %<br>and amount</th><th class="num">Equity grant<br>and vesting years</th><th class="num">Total comp,<br>annual</th><th></th></tr></thead><tbody>${
       list.map(([k, it]) => {
         const j = jobs.find(x => x.key === k), gone = !j || j.status === 'closed';
+        // est: set by the scheduled Levels.fyi lookup for the fields it filled in; a flag clears once that field is edited by hand
+        const est = it.est || {}, estTip = ` title="Estimate: ${escapeHtml(est.note || 'based on Levels.fyi data')}. Type over it any time."`;
         return `<tr data-key="${escapeHtml(k)}" class="${gone ? 'gone' : ''}">
           <td class="grip"><button class="grip-h" title="Drag to reorder (or press ↑ / ↓)" aria-label="Reorder ${escapeHtml(it.title)}: drag, or press up or down arrow"><svg viewBox="0 0 12 18" width="10" height="15" fill="currentColor" aria-hidden="true"><circle cx="3" cy="3" r="1.5"/><circle cx="9" cy="3" r="1.5"/><circle cx="3" cy="9" r="1.5"/><circle cx="9" cy="9" r="1.5"/><circle cx="3" cy="15" r="1.5"/><circle cx="9" cy="15" r="1.5"/></svg></button></td>
           <td class="co" title="${escapeHtml(it.company)}">${escapeHtml(it.company)}</td>
@@ -1401,8 +1406,8 @@
           <td class="num"><input data-f="min" inputmode="decimal" placeholder="$" value="${val(it.min)}" aria-label="Starting salary"></td>
           <td class="num mid"><span></span></td>
           <td class="num"><input data-f="max" inputmode="decimal" placeholder="$" value="${val(it.max)}" aria-label="High-end salary"></td>
-          <td class="num"><input class="pct" data-f="bonusPct" inputmode="decimal" placeholder="%" value="${it.bonusPct ?? ''}" aria-label="Bonus percent"><span class="calc c-bonus"></span></td>
-          <td class="num"><input data-f="equity" inputmode="decimal" placeholder="$ grant" value="${val(it.equity)}" aria-label="Equity grant, total"> <input class="yrs" data-f="vestYears" inputmode="decimal" value="${it.vestYears ?? 4}" title="Years the grant vests over" aria-label="Vesting years"><span class="calc c-eq"></span></td>
+          <td class="num"><input class="pct${est.bonus ? ' est' : ''}" data-f="bonusPct" inputmode="decimal" placeholder="%" value="${it.bonusPct ?? ''}" aria-label="Bonus percent"${est.bonus ? estTip : ''}><span class="calc c-bonus"></span></td>
+          <td class="num"><input class="${est.equity ? 'est' : ''}" data-f="equity" inputmode="decimal" placeholder="$ grant" value="${val(it.equity)}" aria-label="Equity grant, total"${est.equity ? estTip : ''}> <input class="yrs" data-f="vestYears" inputmode="decimal" value="${it.vestYears ?? 4}" title="Years the grant vests over" aria-label="Vesting years"><span class="calc c-eq"></span></td>
           <td class="num total"><span></span><span class="calc c-totmid"></span></td>
           <td><button class="x" title="Remove from compare" aria-label="Remove ${escapeHtml(it.title)}">×</button></td>
         </tr>`; }).join('')}</tbody></table>`;
@@ -1413,7 +1418,11 @@
       tr.querySelector('select').addEventListener('change', e => { it.work = e.target.value; touch(); });
       tr.querySelectorAll('input').forEach(inp => {
         const f = inp.dataset.f, parse = v => f === 'bonusPct' || f === 'vestYears' ? num(v) : dollars(v);
-        inp.addEventListener('input', () => { it[f] = parse(inp.value); touch(); });
+        inp.addEventListener('input', () => {
+          it[f] = parse(inp.value);
+          const ef = f === 'bonusPct' ? 'bonus' : f; if (it.est && it.est[ef]) { it.est[ef] = false; inp.classList.remove('est'); inp.removeAttribute('title'); }
+          touch();
+        });
         inp.addEventListener('change', () => { if (f !== 'bonusPct' && f !== 'vestYears') inp.value = val(it[f]); });
         inp.addEventListener('keydown', e => { if (e.key === 'Enter') inp.blur(); });
       });
