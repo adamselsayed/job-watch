@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-22T05:34:33.442Z",
+  "updated_at": "2026-11-22T05:35:18.095Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2503,7 +2503,7 @@
   },
   "compare": {
     "smartrecruiters:ServiceNow:744000161905202": {
-      "at": "2026-11-22T01:35:29.730Z",
+      "at": "2026-11-22T05:35:16.593Z",
       "added": "2026-11-21T02:23:22.678000",
       "title": "Product Strategy Sr Manager ",
       "company": "ServiceNow",
@@ -2512,7 +2512,7 @@
       "work": "remote",
       "min": 148900,
       "max": 260600,
-      "bonusPct": null,
+      "bonusPct": 20,
       "equity": null,
       "vestYears": 4,
       "pos": 0
