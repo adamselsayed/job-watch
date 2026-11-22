@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-22T06:23:08.582Z",
+  "updated_at": "2026-11-22T06:23:23.588Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2477,6 +2477,12 @@
       "status": "archived",
       "at": "2026-11-22T06:23:07.068Z",
       "title": "Technical Product Manager - Principal",
+      "company": "Siemens"
+    },
+    "avature:jobs.siemens.com/en_US/externaljobs:527859": {
+      "status": "applied",
+      "at": "2026-11-22T06:23:22.077Z",
+      "title": "Product Management Leader",
       "company": "Siemens"
     }
   },
