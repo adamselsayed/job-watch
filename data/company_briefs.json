@@ -1,0 +1,983 @@
+{
+  "updated_at": "2026-11-22T00:00:00Z",
+  "note": "Compiled by Claude from public sources. Grades are Claude's opinion of stability, not financial advice.",
+  "briefs": {
+    "ServiceNow": {
+      "ownership": {
+        "type": "Public",
+        "detail": "NYSE: NOW · Santa Clara, CA"
+      },
+      "fortune": {
+        "rank": "#333",
+        "note": "2026 Fortune 500; fourth straight year on the list"
+      },
+      "revenue": {
+        "value": "$13.28B",
+        "period": "FY2025 (Dec)"
+      },
+      "profit": {
+        "value": "$1.75B",
+        "note": "net income, FY2025"
+      },
+      "employees": {
+        "value": "~30,000",
+        "note": "29,187 at end of 2025; CEO target is flat headcount for 2026"
+      },
+      "revenueMix": [
+        {
+          "label": "Subscription",
+          "pct": 97
+        },
+        {
+          "label": "Professional services & other",
+          "pct": 3
+        }
+      ],
+      "mixNote": "FY2025: $12.9B of $13.3B is subscription.",
+      "roadmap": {
+        "current": [
+          "Agentic AI on the Now Platform: Now Assist, AI Agents and an AI control tower for governing agents",
+          "Integrating Moveworks (closed Dec 2025) and other acquisitions",
+          "Partner models built in (Anthropic Claude, OpenAI); expanding CRM and industry workflows",
+          "Holding headcount flat: cutting some roles while hiring AI skills; $300M of internal AI savings targeted for 2026"
+        ],
+        "future": [
+          "2026: about $15.5B subscription revenue, ahead of its old $15B goal",
+          "2030: more than $30B subscription revenue, with 30% of contract value from AI",
+          "2026 AI contract-value target raised from $1B to $1.5B"
+        ]
+      },
+      "layoffs": [
+        {
+          "date": "Late Oct / Nov 2026",
+          "detail": "Third round of 2026, after Q3 results and a 20%+ share drop; UK, US and India",
+          "size": "Not disclosed"
+        },
+        {
+          "date": "2026 (earlier rounds)",
+          "detail": "Restructuring over several months to shift roles toward AI skills",
+          "size": "Several hundred · low single-digit %"
+        },
+        {
+          "date": "Before 2026",
+          "detail": "No company-wide layoffs found; in 2023 the CFO said it would avoid them",
+          "size": "None"
+        }
+      ],
+      "layoffNote": "Only 2026 events found; $34M severance reserve at Sept 30, 2026.",
+      "competitors": [
+        "Salesforce",
+        "Microsoft",
+        "Atlassian",
+        "Workday",
+        "SAP",
+        "Oracle",
+        "BMC",
+        "Pegasystems",
+        "IBM",
+        "Freshworks"
+      ],
+      "grade": {
+        "letter": "A-",
+        "why": [
+          "Revenue up about 20% a year with $1.75B profit and $5.4B operating cash flow",
+          "97% subscription revenue; used by 85%+ of the Fortune 500",
+          "Marked down for three layoff rounds in 2026 and a share-price slide on fears that AI erodes seat-based software"
+        ]
+      },
+      "sources": [
+        {
+          "title": "ServiceNow Q4 and full-year 2025 results",
+          "url": "https://newsroom.servicenow.com/press-releases/details/2026/ServiceNow-Reports-Fourth-Quarter-and-Full-Year-2025-Financial-Results-Board-of-Directors-Authorizes-Additional-5B-for-Share-Repurchase-Program/default.aspx"
+        },
+        {
+          "title": "Fortune company profile",
+          "url": "https://fortune.com/company/servicenow/worlds-most-admired-companies/"
+        },
+        {
+          "title": "ServiceNow on the 2026 Fortune 500",
+          "url": "https://www.servicenow.com/workflow/news/servicenow-is-fortune-500-company-fourth-year.html"
+        },
+        {
+          "title": "2026 Fortune 500 rank index",
+          "url": "https://benefiters.org/fortune-500/"
+        },
+        {
+          "title": "Layoffs after Q3 2026 (Salesforce Ben)",
+          "url": "https://www.salesforceben.com/servicenow-lays-off-more-staff-after-q3-earnings-fail-to-impress-wall-street/"
+        },
+        {
+          "title": "Several hundred roles cut (People Matters)",
+          "url": "https://www.peoplematters.in/news/strategic-hr/servicenow-cuts-several-hundred-roles-as-ceo-targets-flat-headcount-in-2026-51104"
+        }
+      ],
+      "asOf": "2026-11-21"
+    },
+    "Experian": {
+      "ownership": {
+        "type": "Public",
+        "detail": "London: EXPN (FTSE 100) · Dublin HQ; North America run from Costa Mesa, CA"
+      },
+      "fortune": {
+        "rank": "Not ranked",
+        "note": "UK-listed, so not eligible for the US Fortune 500"
+      },
+      "revenue": {
+        "value": "$8.45B",
+        "period": "FY2026 (Mar)"
+      },
+      "profit": {
+        "value": "$1.95B",
+        "note": "profit before tax; operating profit $2.05B"
+      },
+      "employees": {
+        "value": "~25,100",
+        "note": "global"
+      },
+      "revenueMix": [
+        {
+          "label": "North America",
+          "pct": 67
+        },
+        {
+          "label": "Latin America",
+          "pct": 14
+        },
+        {
+          "label": "UK & Ireland",
+          "pct": 12
+        },
+        {
+          "label": "EMEA & Asia Pacific",
+          "pct": 7
+        }
+      ],
+      "mixNote": "By region. North America revenue was $5.6B.",
+      "roadmap": {
+        "current": [
+          "Ascend platform for credit data, analytics and decisioning",
+          "Cloud migration largely finished in North America and Brazil",
+          "AI products and partnerships: ServiceNow, Experian Agent Trust, apps on ChatGPT and Snapchat",
+          "Consumer side: 215M+ free members and a growing marketplace"
+        ],
+        "future": [
+          "FY2027 guidance: 8-11% total revenue growth, 6-8% organic, further margin expansion",
+          "New and scaling products already near $2B, about a quarter of revenue",
+          "New $1B share buyback through June 2027"
+        ]
+      },
+      "layoffs": [
+        {
+          "date": "Dec 11, 2026 (filed Mar 2026)",
+          "detail": "Costa Mesa, CA WARN notice",
+          "size": "28"
+        },
+        {
+          "date": "May 22, 2026",
+          "detail": "Costa Mesa, CA WARN notices",
+          "size": "38"
+        },
+        {
+          "date": "May 18, 2026",
+          "detail": "Costa Mesa, CA WARN notice",
+          "size": "5"
+        },
+        {
+          "date": "Year to Mar 2025",
+          "detail": "UK business headcount fell from 3,158 to 2,887, mostly development and delivery",
+          "size": "271 · ~9% of UK unit"
+        }
+      ],
+      "layoffNote": "No company-wide layoff announced; these are small, mostly US and UK. Employee reviews mention offshoring.",
+      "competitors": [
+        "Equifax",
+        "TransUnion",
+        "FICO",
+        "LexisNexis Risk Solutions",
+        "Dun & Bradstreet",
+        "Intuit Credit Karma",
+        "Verisk",
+        "Moody's",
+        "S&P Global",
+        "Acxiom"
+      ],
+      "grade": {
+        "letter": "A-",
+        "why": [
+          "Record year: revenue up 12%, pre-tax profit up 26%, all regions growing",
+          "Data franchise with long contracts; all large strategic accounts renewed",
+          "Marked down slightly for steady small US/UK cuts and offshoring, and exposure to lending volumes"
+        ]
+      },
+      "sources": [
+        {
+          "title": "Experian FY26 full-year results",
+          "url": "https://www.experianplc.com/newsroom/press-releases/2026/full-year-results-fy26"
+        },
+        {
+          "title": "FY26 profit summary (Nasdaq/RTT)",
+          "url": "https://www.nasdaq.com/articles/experian-fy26-profit-rises"
+        },
+        {
+          "title": "Regional mix and employees (MarketScreener)",
+          "url": "https://uk.marketscreener.com/quote/stock/EXPERIAN-PLC-9590128/company/"
+        },
+        {
+          "title": "Experian FY26 strategy blog",
+          "url": "https://www.experian.com/blogs/news/2026/05/19/fy26-experian-leading-next-era-of-ai-enabled-growth/"
+        },
+        {
+          "title": "Costa Mesa WARN notices",
+          "url": "https://www.layofftracker.us/layoffs/company/experian/2026"
+        },
+        {
+          "title": "UK headcount (Nottingham Post)",
+          "url": "https://www.magzter.com/nb/stories/newspaper/Nottingham-Post/EXPERIAN-SHEDS-271-JOBS-AS-PROFITS-LEAP-TO-90M"
+        }
+      ],
+      "asOf": "2026-11-21"
+    },
+    "Toast": {
+      "ownership": {
+        "type": "Public",
+        "detail": "NYSE: TOST · Boston, MA"
+      },
+      "fortune": {
+        "rank": "#579",
+        "note": "2026 ranking, so Fortune 1000 rather than top 500"
+      },
+      "revenue": {
+        "value": "~$6.15B",
+        "period": "FY2025 (Dec)"
+      },
+      "profit": {
+        "value": "$342M",
+        "note": "net income, up from $19M in 2024"
+      },
+      "employees": {
+        "value": "~6,500-7,000",
+        "note": "third-party estimates"
+      },
+      "revenueMix": [
+        {
+          "label": "Payments / fintech",
+          "pct": 82
+        },
+        {
+          "label": "Subscription software",
+          "pct": 15
+        },
+        {
+          "label": "Hardware & services",
+          "pct": 3
+        }
+      ],
+      "mixNote": "Approximate, based on recent filings.",
+      "roadmap": {
+        "current": [
+          "Core US restaurants: 164,000 locations after a record 30,000 added in 2025",
+          "Newer markets: international, food and beverage retail, enterprise chains (e.g. MTY Food Group)",
+          "AI features built on its restaurant data",
+          "Profit discipline: adjusted EBITDA margin 34%, tight stock compensation"
+        ],
+        "future": [
+          "Stated ambition to reach $5B and then $10B in recurring run-rate over the next decade (about $2B today)",
+          "2026 guidance: adjusted EBITDA $775-795M, recurring gross profit up 20-22%",
+          "$500M added to the buyback"
+        ]
+      },
+      "layoffs": [
+        {
+          "date": "Feb 15, 2024",
+          "detail": "Restructuring after over-hiring; mostly non-customer-facing roles",
+          "size": "550 · ~10%"
+        },
+        {
+          "date": "Apr 2020",
+          "detail": "Pandemic cuts when restaurants shut",
+          "size": "~1,300 · ~50%"
+        }
+      ],
+      "layoffNote": "Only two events found. The 2020 figure is from reports at the time, not re-verified.",
+      "competitors": [
+        "Square (Block)",
+        "Clover (Fiserv)",
+        "SpotOn",
+        "Lightspeed",
+        "NCR Voyix (Aloha)",
+        "Oracle MICROS",
+        "PAR Technology",
+        "TouchBistro",
+        "Shift4 (SkyTab)",
+        "Olo"
+      ],
+      "grade": {
+        "letter": "B+",
+        "why": [
+          "Swung to solid profit ($342M) with $608M free cash flow and 20%+ growth",
+          "Recurring run-rate above $2B, up 26%",
+          "Marked down for dependence on restaurant health and two deep cuts in its history (2020, 2024)"
+        ]
+      },
+      "sources": [
+        {
+          "title": "Toast Q4 and full-year 2025 results",
+          "url": "https://www.businesswire.com/news/home/20260212058106/en/Toast-Announces-Fourth-Quarter-and-Full-Year-2025-Financial-Results"
+        },
+        {
+          "title": "Toast rankings (TrueUp)",
+          "url": "https://trueup.io/co/toast/rankings"
+        },
+        {
+          "title": "Toast profile (TrueUp)",
+          "url": "https://www.trueup.io/co/toast"
+        },
+        {
+          "title": "2024 layoffs (Restaurant Dive)",
+          "url": "https://www.restaurantdive.com/news/toast-restaurant-pos-software-services-workforce-reduction/707809/"
+        }
+      ],
+      "asOf": "2026-11-21"
+    },
+    "BD": {
+      "ownership": {
+        "type": "Public",
+        "detail": "NYSE: BDX · Becton, Dickinson and Company · Franklin Lakes, NJ"
+      },
+      "fortune": {
+        "rank": "#211",
+        "note": "2026 Fortune 500, based on FY2025 revenue of $21.8B"
+      },
+      "revenue": {
+        "value": "$19.5B",
+        "period": "FY2026 (Sep), continuing operations"
+      },
+      "profit": {
+        "value": "$5.06 / share",
+        "note": "GAAP EPS FY2026; net income was $1.68B in FY2025"
+      },
+      "employees": {
+        "value": "~72,000",
+        "note": "FY2025, before the Feb 2026 life-sciences spin-off; now lower"
+      },
+      "revenueMix": [
+        {
+          "label": "Medical Essentials",
+          "pct": 34
+        },
+        {
+          "label": "Interventional",
+          "pct": 28
+        },
+        {
+          "label": "Connected Care",
+          "pct": 25
+        },
+        {
+          "label": "BioPharma Systems",
+          "pct": 13
+        }
+      ],
+      "mixNote": "Approximate, from the June 2026 quarter. About 61% of revenue is US.",
+      "roadmap": {
+        "current": [
+          "'New BD': a focused medtech company after spinning Biosciences and Diagnostics into Waters (Feb 2026)",
+          "'BD Excellence' productivity program to lift margins",
+          "Growth platforms: Pyxis Pro and Alaris connected medication management, GLP-1 injection pens, peripheral vascular devices",
+          "US government partnership: plans $19B of US investment over several years, $3B of it manufacturing"
+        ],
+        "future": [
+          "FY2027 guidance: adjusted EPS $13.10-13.30",
+          "Investor Day on Dec 10, 2026 should lay out the longer-term plan",
+          "More AI in pharmacy automation and infusion"
+        ]
+      },
+      "layoffs": [
+        {
+          "date": "Sep 2026",
+          "detail": "San Diego, CA (85) and Tempe, AZ (57) WARN notices",
+          "size": "142"
+        },
+        {
+          "date": "Oct 2025",
+          "detail": "Franklin Lakes, NJ (86) and San Diego, CA (66)",
+          "size": "152"
+        },
+        {
+          "date": "Dec 2023",
+          "detail": "California and Vernon Hills, IL",
+          "size": "120"
+        },
+        {
+          "date": "Sep 2023",
+          "detail": "Franklin Lakes, NJ headquarters",
+          "size": "57"
+        },
+        {
+          "date": "Aug 2023",
+          "detail": "Nebraska site",
+          "size": "107"
+        }
+      ],
+      "layoffNote": "Site-level WARN notices; each is well under 1% of the workforce.",
+      "competitors": [
+        "Medtronic",
+        "Baxter",
+        "ICU Medical",
+        "Teleflex",
+        "B. Braun",
+        "Boston Scientific",
+        "Cardinal Health",
+        "Terumo",
+        "Fresenius Kabi",
+        "Omnicell"
+      ],
+      "grade": {
+        "letter": "B+",
+        "why": [
+          "Essential consumables with roughly 80% recurring revenue; free cash flow up 42% to $2.9B",
+          "Steady mid-single-digit growth and FY2027 guidance in line with expectations",
+          "Marked down for a big portfolio reshuffle still settling and regular small site cuts, including San Diego"
+        ]
+      },
+      "sources": [
+        {
+          "title": "BD Q4 and full-year FY2026 results",
+          "url": "https://www.morningstar.com/news/pr-newswire/20261105ny89239/bd-reports-fourth-quarter-and-full-year-fiscal-2026-financial-results"
+        },
+        {
+          "title": "BD Q3 FY2026 results (segments)",
+          "url": "https://news.bd.com/2026-08-06-BD-Reports-Third-Quarter-Fiscal-2026-Financial-Results"
+        },
+        {
+          "title": "Fortune 500 profile",
+          "url": "https://fortune.com/company/becton-dickinson/fortune500/"
+        },
+        {
+          "title": "FY26 summary (Medical Device Network)",
+          "url": "https://www.medicaldevice-network.com/news/bd-reports-fy26-revenues-of-19-bn-after-medtech-prioritisation/?.tsrc=rss"
+        },
+        {
+          "title": "BD WARN notices",
+          "url": "https://www.warntracker.com/layoff/becton-dickinson-and-company-dba-bd-2026-09-01"
+        }
+      ],
+      "asOf": "2026-11-21"
+    },
+    "ChargePoint": {
+      "ownership": {
+        "type": "Public",
+        "detail": "NYSE: CHPT · Campbell, CA"
+      },
+      "fortune": {
+        "rank": "Not ranked",
+        "note": "Revenue far below the Fortune 500/1000 cutoff"
+      },
+      "revenue": {
+        "value": "$411M",
+        "period": "FY2026 (Jan), down 1%"
+      },
+      "profit": {
+        "value": "-$220M",
+        "note": "net loss, improved from -$277M"
+      },
+      "employees": {
+        "value": "~1,300",
+        "note": "about 1,440 before the July 2026 cut"
+      },
+      "revenueMix": [
+        {
+          "label": "Networked charging hardware",
+          "pct": 53
+        },
+        {
+          "label": "Subscriptions",
+          "pct": 39
+        },
+        {
+          "label": "Other",
+          "pct": 8
+        }
+      ],
+      "mixNote": "FY2026: $216.5M hardware, $162.4M subscriptions.",
+      "roadmap": {
+        "current": [
+          "Three-year strategic plan built on the Eaton partnership for hardware and power equipment",
+          "Shift toward software: about 130,000 software-only managed ports, 30% of the network",
+          "New Chief Product and Software Officer leading product and software",
+          "Europe growth (e.g. RAW Charging) and fleet deals (Ford Pro)"
+        ],
+        "future": [
+          "Reach positive adjusted EBITDA; cash burn is falling but losses continue",
+          "Grow subscription revenue (up 13%) as hardware stays soft",
+          "Manage liquidity: $142M cash at Jan 31, 2026"
+        ]
+      },
+      "layoffs": [
+        {
+          "date": "Jul 29, 2026",
+          "detail": "Reorganization",
+          "size": "~145 · ~10%"
+        },
+        {
+          "date": "Sep 4, 2024",
+          "detail": "After missing revenue estimates; mostly sales and marketing",
+          "size": "~250 · 15%"
+        },
+        {
+          "date": "Jan 10, 2024",
+          "detail": "New CEO's reorganization; hardware engineering",
+          "size": "223 · 12%"
+        },
+        {
+          "date": "Sep 2023",
+          "detail": "Restructuring",
+          "size": "168 · 10%"
+        }
+      ],
+      "layoffNote": "Four cuts in three years.",
+      "competitors": [
+        "Tesla Supercharger",
+        "EVgo",
+        "Blink Charging",
+        "Electrify America",
+        "ABB E-mobility",
+        "Shell Recharge",
+        "bp pulse",
+        "Wallbox",
+        "Autel Energy",
+        "Siemens eMobility"
+      ],
+      "grade": {
+        "letter": "D",
+        "why": [
+          "Revenue flat to down for two years and a $220M net loss",
+          "Four layoffs since 2023, the latest in July 2026",
+          "Thin cash ($142M) against ongoing losses; US EV demand has weakened",
+          "Bright spots: subscriptions growing 13% and record gross margin"
+        ]
+      },
+      "sources": [
+        {
+          "title": "ChargePoint Q4 and full-year FY2026 results",
+          "url": "https://investors.chargepoint.com/news/news-details/2026/ChargePoint-Reports-Fourth-Quarter-and-Full-Fiscal-Year-2026-Financial-Results/default.aspx"
+        },
+        {
+          "title": "FY2026 results (SEC 8-K)",
+          "url": "https://www.sec.gov/Archives/edgar/data/1777393/000177739326000004/chpt8-kerfy2026q4exx991.htm"
+        },
+        {
+          "title": "July 2026 reorganization",
+          "url": "https://layoffhedge.com/company/chargepoint"
+        },
+        {
+          "title": "2024 layoffs (FreightWaves)",
+          "url": "https://www.freightwaves.com/news/chargepoints-latest-downsizing-intended-to-help-stop-the-bleeding"
+        },
+        {
+          "title": "Earnings call highlights",
+          "url": "https://finance.yahoo.com/news/chargepoint-q4-earnings-call-highlights-014827016.html"
+        }
+      ],
+      "asOf": "2026-11-21"
+    },
+    "AutoNation": {
+      "ownership": {
+        "type": "Public",
+        "detail": "NYSE: AN · Fort Lauderdale, FL"
+      },
+      "fortune": {
+        "rank": "#166",
+        "note": "2026 Fortune 500"
+      },
+      "revenue": {
+        "value": "$27.6B",
+        "period": "FY2025 (Dec), up 3%"
+      },
+      "profit": {
+        "value": "$649M",
+        "note": "net income; adjusted $770M"
+      },
+      "employees": {
+        "value": "24,800",
+        "note": "end of 2025; 25,100 a year earlier"
+      },
+      "revenueMix": [
+        {
+          "label": "New vehicles",
+          "pct": 49
+        },
+        {
+          "label": "Used vehicles",
+          "pct": 27
+        },
+        {
+          "label": "Parts & service (After-Sales)",
+          "pct": 18
+        },
+        {
+          "label": "Finance & insurance",
+          "pct": 5
+        },
+        {
+          "label": "Other",
+          "pct": 1
+        }
+      ],
+      "mixNote": "Approximate. After-Sales is 18% of revenue but about half of gross profit.",
+      "roadmap": {
+        "current": [
+          "After-Sales (service and parts) at record gross profit, about 51% of the total",
+          "AutoNation Finance, its own lender: $2.9B loan portfolio and rising profit",
+          "Buying dealerships to add density in existing markets (about $600M of revenue added in 2026)",
+          "Heavy buybacks: $620M in 2026 so far, $1.4B still authorized"
+        ],
+        "future": [
+          "Shift earnings toward recurring sources (service, finance) and customer lifetime value",
+          "Keep growing per-share earnings through buybacks and acquisitions",
+          "Navigate softer vehicle demand and falling EV volumes"
+        ]
+      },
+      "layoffs": [
+        {
+          "date": "Q4 2023",
+          "detail": "$6.6M of severance booked; size not disclosed",
+          "size": "Not disclosed"
+        },
+        {
+          "date": "Jun 2020",
+          "detail": "Pandemic: 3,500 of 7,000 furloughed staff cut permanently",
+          "size": "3,500 · ~14%"
+        }
+      ],
+      "layoffNote": "No announced layoffs since 2020; headcount has drifted from 25,300 to 24,800.",
+      "competitors": [
+        "Lithia Motors",
+        "Penske Automotive",
+        "Group 1 Automotive",
+        "Sonic Automotive",
+        "Asbury Automotive",
+        "CarMax",
+        "Carvana",
+        "Hendrick Automotive",
+        "Ken Garff",
+        "Berkshire Hathaway Automotive"
+      ],
+      "grade": {
+        "letter": "B",
+        "why": [
+          "Consistently profitable and cash-generative, with an investment-grade balance sheet",
+          "Service and finance income cushion the car-sales cycle",
+          "Marked down for thin retail margins, cyclical demand (Q3 2026 net income down 25%) and a shrinking headcount"
+        ]
+      },
+      "sources": [
+        {
+          "title": "AutoNation Q4 and full-year 2025 results",
+          "url": "https://www.businesswire.com/news/home/20260205773353/en/AutoNation-Reports-Fourth-Quarter-and-Full-Year-Results"
+        },
+        {
+          "title": "Fortune 500 profile",
+          "url": "https://fortune.com/company/auto-nation/fortune500/"
+        },
+        {
+          "title": "Q3 2026 summary (Quartr)",
+          "url": "https://quartr.com/events/autonation-inc-an-q3-2026_3eyGX8NW"
+        },
+        {
+          "title": "Q2 2026 results",
+          "url": "https://www.businesswire.com/news/home/20260731388352/en/"
+        },
+        {
+          "title": "Headcount and severance from filings",
+          "url": "https://www.stratrix.com/companies/autonation/layoffs"
+        },
+        {
+          "title": "2020 layoffs (Fox Business)",
+          "url": "https://www.foxbusiness.com/markets/autonation-cuts-3500-workers-for-good"
+        }
+      ],
+      "asOf": "2026-11-21"
+    },
+    "Hertz": {
+      "ownership": {
+        "type": "Public",
+        "detail": "Nasdaq: HTZ · Estero, FL · brands: Hertz, Dollar, Thrifty"
+      },
+      "fortune": {
+        "rank": "Fortune 500",
+        "note": "Has a 2026 list profile; exact 2026 rank not confirmed (#417 on the 2024 list)"
+      },
+      "revenue": {
+        "value": "$8.5B",
+        "period": "FY2025 (Dec), down 6%"
+      },
+      "profit": {
+        "value": "-$747M",
+        "note": "net loss, improved from -$2.86B"
+      },
+      "employees": {
+        "value": "~26,000",
+        "note": "end of 2025"
+      },
+      "revenueMix": [
+        {
+          "label": "Americas car rental",
+          "pct": 82
+        },
+        {
+          "label": "International car rental",
+          "pct": 18
+        }
+      ],
+      "mixNote": "Approximate segment split.",
+      "roadmap": {
+        "current": [
+          "'Back to Basics' turnaround: pricing, fleet discipline and cost control",
+          "Fleet refreshed to its youngest in 12 years; depreciation per car sharply lower",
+          "Converting company-run countries to franchises (first deal: Czech Republic and Slovakia)",
+          "Oro Mobility: rideshare-driver rentals and robotaxi depot work for Uber; took $80M of outside investment"
+        ],
+        "future": [
+          "Possible $500M+ of franchise-conversion proceeds in 2027",
+          "Build earnings beyond rental: service, fleet and mobility",
+          "Costs are the weak spot; management cut its outlook in Nov 2026 despite a three-year-high quarter"
+        ]
+      },
+      "layoffs": [
+        {
+          "date": "2021-2026",
+          "detail": "No announced corporate layoffs or WARN notices found; headcount slipped from about 27,000 to 26,000",
+          "size": "~1,000 by attrition"
+        },
+        {
+          "date": "Apr 2020",
+          "detail": "Pandemic cuts across North America, ahead of the May 2020 bankruptcy",
+          "size": "~10,000"
+        },
+        {
+          "date": "Late 2008 - early 2009",
+          "detail": "Global reduction in the financial crisis",
+          "size": "4,000+"
+        },
+        {
+          "date": "Feb 2007",
+          "detail": "Mostly US car rental; management layers removed",
+          "size": "1,350"
+        }
+      ],
+      "layoffNote": "Latest WARN filing on record is 2020.",
+      "competitors": [
+        "Enterprise Mobility",
+        "Avis Budget Group",
+        "Sixt",
+        "Europcar",
+        "Turo",
+        "Zipcar",
+        "Fox Rent A Car",
+        "U-Haul",
+        "Uber",
+        "Lyft"
+      ],
+      "grade": {
+        "letter": "C-",
+        "why": [
+          "Still loss-making: -$747M in 2025, though nine-month 2026 loss narrowed to -$153M",
+          "About $16B of net debt and negative shareholder equity",
+          "Turnaround is showing in revenue and fleet, but costs are high and guidance was cut",
+          "Went through bankruptcy in 2020"
+        ]
+      },
+      "sources": [
+        {
+          "title": "Hertz Q4 and full-year 2025 results",
+          "url": "https://newsroom.hertz.com/press-releases/press-release-details/hertz-transformation-drives-structural-revenue-gains-and-builds-sustainable-momentum/"
+        },
+        {
+          "title": "Fortune company profile",
+          "url": "https://fortune.com/company/hertz-global-holdings"
+        },
+        {
+          "title": "Q3 2026 summary (Quartr)",
+          "url": "https://quartr.com/events/hertz-global-holdings-inc-htz-q3-2026_ofd1zVHa"
+        },
+        {
+          "title": "Q3 2026 outlook analysis",
+          "url": "https://finviz.com/news/417439/hertz-posts-its-best-ebitda-in-three-years-then-slashes-the-outlook-that-mattered-more"
+        },
+        {
+          "title": "Headcount from filings",
+          "url": "https://www.stratrix.com/companies/hertz-global-holdings/layoffs"
+        },
+        {
+          "title": "2020 layoffs (Auto Rental News)",
+          "url": "https://www.autorentalnews.com/news/hertz-commits-to-cutting-10k-employees"
+        }
+      ],
+      "asOf": "2026-11-21"
+    },
+    "FieldAI": {
+      "ownership": {
+        "type": "Private",
+        "detail": "Venture-backed · Irvine, CA · founded 2023"
+      },
+      "fortune": {
+        "rank": "Not ranked",
+        "note": "Private startup"
+      },
+      "revenue": {
+        "value": "Not disclosed",
+        "period": "$135M+ in revenue and customer contracts to date, per one report"
+      },
+      "profit": {
+        "value": "Not disclosed",
+        "note": "early-stage; assume it is investing heavily"
+      },
+      "employees": {
+        "value": "~257",
+        "note": "Oct 2026; about 30 at the end of 2024"
+      },
+      "revenueMix": [],
+      "mixNote": "No breakdown published. Revenue comes from deploying its robot-autonomy software with customers in construction, energy and similar industries.",
+      "roadmap": {
+        "current": [
+          "'Field Foundation Models': AI that lets many kinds of robots work in unmapped, risky sites",
+          "Hardware-agnostic deployments in construction, energy and mining",
+          "Reported to be raising about $700M at roughly a $10B valuation (Oct 2026), up from $2B in Aug 2025"
+        ],
+        "future": [
+          "Scale deployments and headcount with the new funding",
+          "Possibly license its models to robot makers",
+          "Compete with Physical Intelligence (~$11B) and Skild AI (~$14B)"
+        ]
+      },
+      "layoffs": [],
+      "layoffNote": "No layoffs found. Headcount has grown roughly eightfold in two years.",
+      "competitors": [
+        "Physical Intelligence",
+        "Skild AI",
+        "Figure AI",
+        "Boston Dynamics",
+        "Covariant",
+        "Agility Robotics",
+        "Apptronik",
+        "Tesla Optimus",
+        "ANYbotics",
+        "Gecko Robotics"
+      ],
+      "grade": {
+        "letter": "B-",
+        "why": [
+          "Very well funded ($405M raised, more reported) by Bezos Expeditions, Temasek, Nvidia's venture arm and others",
+          "Hiring fast with real customer contracts",
+          "Marked down because it is young and private: no public financials, valuation far ahead of revenue, and physical AI is unproven at scale"
+        ]
+      },
+      "sources": [
+        {
+          "title": "FieldAI research profile (Contrary)",
+          "url": "https://research.contrary.com/company/fieldai"
+        },
+        {
+          "title": "Reported $700M raise (SiliconANGLE)",
+          "url": "https://siliconangle.com/2026/10/02/robotics-ai-developer-fieldai-reportedly-raising-700m-in-funding/"
+        },
+        {
+          "title": "Valuation and contracts report (Benzinga)",
+          "url": "https://www.benzinga.com/node/62150844"
+        },
+        {
+          "title": "$405M raise (TechCrunch)",
+          "url": "https://techcrunch.com/2025/08/20/fieldai-raises-405m-to-build-universal-robot-brains"
+        },
+        {
+          "title": "Funding detail (Sacra)",
+          "url": "https://sacra.com/c/fieldai/"
+        }
+      ],
+      "asOf": "2026-11-21"
+    },
+    "Propel": {
+      "ownership": {
+        "type": "Private",
+        "detail": "Venture-backed · Brooklyn, NY · founded 2014 · maker of the Providers app"
+      },
+      "fortune": {
+        "rank": "Not ranked",
+        "note": "Private startup"
+      },
+      "revenue": {
+        "value": "Not disclosed",
+        "period": "$34M in 2022 per CB Insights; the company says revenue grows 35% a year"
+      },
+      "profit": {
+        "value": "Not disclosed",
+        "note": ""
+      },
+      "employees": {
+        "value": "~100-200",
+        "note": "job-site estimates"
+      },
+      "revenueMix": [],
+      "mixNote": "No breakdown published. Reported sources are partner offers and advertising inside the free app, plus newer benefit products.",
+      "roadmap": {
+        "current": [
+          "Providers app: about 5 million users checking SNAP/EBT balances",
+          "EBT theft blocking and out-of-state transaction controls (Nov 2026 update)",
+          "Medicare plans for low-income users (D-SNP)",
+          "Direct work with state agencies and enterprise partners, which is what this role is for"
+        ],
+        "future": [
+          "Expand from SNAP into more benefit categories",
+          "Grow agency and enterprise revenue beyond in-app offers",
+          "Exposed to federal benefit policy changes"
+        ]
+      },
+      "layoffs": [],
+      "layoffNote": "No layoffs found in my search; coverage of a company this size is thin.",
+      "competitors": [
+        "ebtEDGE (FIS)",
+        "ConnectEBT (Conduent)",
+        "Forage",
+        "Chime",
+        "Cash App",
+        "Dave",
+        "Current",
+        "Ibotta",
+        "Fetch",
+        "mRelief"
+      ],
+      "grade": {
+        "letter": "C+",
+        "why": [
+          "Real product with about 5M users and backing from Andreessen Horowitz and others (about $88M raised)",
+          "Marked down for scale and opacity: small, private, no current financials",
+          "Revenue depends on partners and on SNAP policy, which is politically exposed"
+        ]
+      },
+      "sources": [
+        {
+          "title": "Propel (company) on Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Propel_(company)"
+        },
+        {
+          "title": "Job posting and company description",
+          "url": "https://jobs.ashbyhq.com/propel/8583576c-0768-414f-960d-b85408ff316a"
+        },
+        {
+          "title": "Funding and 2022 revenue (CB Insights)",
+          "url": "https://www.cbinsights.com/company/propel/financials"
+        },
+        {
+          "title": "NPR profile, Nov 2025",
+          "url": "https://www.npr.org/2025/11/04/nx-s1-5587728/snap-shutdown-propel-tech-startup-cash-donations"
+        },
+        {
+          "title": "Company overview (Simplify)",
+          "url": "https://simplify.jobs/c/Propel-APP"
+        }
+      ],
+      "asOf": "2026-11-21"
+    }
+  }
+}

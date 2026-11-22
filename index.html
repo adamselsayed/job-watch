@@ -434,6 +434,48 @@
     #compareView tr { display: table-row; padding: 0; } #compareView td { display: table-cell; padding: 10px; border-top: 1px solid var(--border); white-space: nowrap; }
   }
 
+  /* ------------------------------------------------- company brief overlay -- */
+  #compareView .co-btn { all: unset; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; max-width: 100%; font: inherit; font-weight: 600; color: var(--text); }
+  #compareView .co-btn .nm { overflow: hidden; text-overflow: ellipsis; text-decoration: underline dotted var(--faint); text-underline-offset: 4px; }
+  #compareView .co-btn:hover .nm, #compareView .co-btn:focus-visible .nm { color: var(--accent); text-decoration-color: var(--accent); }
+  #compareView .co-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+  .gr { display: inline-grid; place-items: center; min-width: 26px; height: 20px; padding: 0 5px; border-radius: 6px; font: 700 11.5px/1 "Instrument Sans", sans-serif; color: var(--bg); background: var(--accent); flex: none; }
+  .gr.g-C { background: var(--new); } .gr.g-D, .gr.g-F { background: var(--err); }
+  #brief[hidden] { display: none; }
+  #brief { position: fixed; inset: 0; z-index: 900; overflow: auto; background: var(--bg); padding: 28px max(24px, calc(50vw - 720px)) 28px; }
+  #brief .bh { display: flex; align-items: center; gap: 16px; margin-bottom: 18px; }
+  #brief .bh h2 { font: 500 36px/1.1 var(--serif); margin: 0; letter-spacing: -.01em; }
+  #brief .bh .own { font-size: 13.5px; color: var(--muted); }
+  #brief .bh .pill { font: 600 12px/1 "Instrument Sans", sans-serif; text-transform: uppercase; letter-spacing: .06em; padding: 6px 10px; border-radius: 999px; border: 1px solid var(--border); color: var(--text); }
+  #brief .bh .sp { flex: 1; }
+  #brief .bh .close { border-radius: 999px; padding: 8px 16px; font-size: 14px; }
+  #brief .bg { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr) minmax(0, 1fr); gap: 16px; align-items: start; }
+  #brief .col { display: grid; gap: 16px; }
+  #brief .bc { background: var(--surface); border-radius: 16px; padding: 18px 20px; }
+  #brief h3 { font: 600 12px/1.2 "Instrument Sans", sans-serif; text-transform: uppercase; letter-spacing: .07em; color: var(--muted); margin: 0 0 12px; }
+  #brief dl { margin: 0; display: grid; grid-template-columns: auto 1fr; gap: 12px 16px; }
+  #brief dt { font-size: 13px; color: var(--muted); padding-top: 3px; white-space: nowrap; }
+  #brief dd { margin: 0; } #brief dd b { font: 500 21px/1.15 var(--serif); display: block; } #brief dd span { font-size: 12.5px; color: var(--muted); }
+  #brief .mix { display: grid; gap: 9px; } #brief .mix .row { display: grid; grid-template-columns: 1fr 44px; gap: 4px 10px; font-size: 13.5px; align-items: baseline; }
+  #brief .mix .row i { grid-column: 1 / -1; height: 7px; border-radius: 4px; background: var(--surface-2); overflow: hidden; }
+  #brief .mix .row i u { display: block; height: 100%; background: var(--accent); border-radius: 4px; }
+  #brief .mix .row em { font-style: normal; font-weight: 600; text-align: right; font-variant-numeric: tabular-nums; }
+  #brief .fine { font-size: 12.5px; color: var(--muted); margin: 10px 0 0; }
+  #brief ul { margin: 0; padding-left: 18px; display: grid; gap: 6px; font-size: 14px; line-height: 1.4; }
+  #brief .two { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; } #brief .two h4 { margin: 0 0 8px; font: 600 14px/1.2 "Instrument Sans", sans-serif; color: var(--accent); }
+  #brief table { table-layout: auto; width: 100%; } #brief th, #brief td { padding: 7px 10px 7px 0; font-size: 13.5px; vertical-align: top; white-space: normal; text-align: left; }
+  #brief th { font-weight: 500; color: var(--muted); font-size: 12px; border-bottom: 1px solid var(--border); } #brief td { border-top: 1px solid var(--border); } #brief tr:first-child td { border-top: 0; }
+  #brief td.d { font-weight: 600; width: 24%; } #brief td.n { font-variant-numeric: tabular-nums; font-weight: 600; width: 24%; }
+  #brief tbody tr:hover td { background: none; box-shadow: none; }
+  #brief ol { margin: 0; padding-left: 22px; columns: 2; column-gap: 20px; font-size: 14px; line-height: 1.75; }
+  #brief .grade { display: flex; gap: 16px; align-items: flex-start; }
+  #brief .grade .big { flex: none; width: 68px; height: 68px; border-radius: 16px; display: grid; place-items: center; font: 600 32px/1 var(--serif); color: var(--bg); background: var(--accent); }
+  #brief .grade .big.g-C { background: var(--new); } #brief .grade .big.g-D, #brief .grade .big.g-F { background: var(--err); }
+  #brief .bf { margin-top: 16px; font-size: 12.5px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 4px 14px; }
+  #brief .bf a { color: var(--muted); text-decoration: underline; text-underline-offset: 3px; } #brief .bf a:hover { color: var(--accent); }
+  body.brief-open { overflow: hidden; }
+  @media (max-width: 1100px) { #brief .bg { grid-template-columns: 1fr; } }
+
   /* ------------------------------------------------- phones: landscape only -- */
   html.phone { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
   #rotate { display: none; }
@@ -449,6 +491,7 @@
 </style>
 </head>
 <body>
+<div id="brief" hidden role="dialog" aria-modal="true" aria-labelledby="briefTitle"></div>
 <div id="rotate" role="status">
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2.2"/><path d="M10.5 18.5h3"/></svg>
   <h2>Turn your phone sideways</h2>
@@ -510,7 +553,7 @@
     </div>
     <div class="card" id="cmpBody"></div>
     <details class="foot"><summary>How these numbers work · dashed boxes are Levels.fyi estimates</summary>
-      <p>Salary and remote status are filled in from the posting when it states them; everything is editable. Dashed boxes are bonus and equity estimates from Levels.fyi, filled in by Claude when you ask it to “fill estimates”; type over them any time. Drag the dots at the left of a row to reorder. Bonus amount = bonus % × salary, shown from the salary midpoint to the high end. Equity per year = grant ÷ vesting years. 50% of range = the midpoint between starting and high-end salary. Total = salary + bonus + equity per year, shown from the salary midpoint (the expected floor for an offer) to the high end.</p></details>
+      <p>Salary and remote status are filled in from the posting when it states them; everything is editable. Click a company name for a one-screen company summary (researched by Claude when you ask it to “fill briefs”). Dashed boxes are bonus and equity estimates from Levels.fyi, filled in by Claude when you ask it to “fill estimates”; type over them any time. Drag the dots at the left of a row to reorder. Bonus amount = bonus % × salary, shown from the salary midpoint to the high end. Equity per year = grant ÷ vesting years. 50% of range = the midpoint between starting and high-end salary. Total = salary + bonus + equity per year, shown from the salary midpoint (the expected floor for an offer) to the high end.</p></details>
   </section>
 
   <section class="brief-wrap">
@@ -1356,6 +1399,53 @@
 
   $('#bAll').addEventListener('click', () => { document.querySelector('.chip[data-f="new"]').click(); document.querySelector('.layout').scrollIntoView({ behavior: 'smooth' }); });
 
+  // ---------------------------------------------------- company brief overlay ----
+  // data/company_briefs.json is researched and written by Claude on request ("fill briefs"); the page only displays it.
+  let briefs = {}, briefFrom = null;
+  fetch('data/company_briefs.json?t=' + Date.now()).then(r => r.ok ? r.json() : null).then(d => { if (d && d.briefs) { briefs = d.briefs; renderCompare(); } }).catch(() => {});
+  function closeBrief() {
+    const el = $('#brief'); if (el.hidden) return;
+    el.hidden = true; el.innerHTML = ''; document.body.classList.remove('brief-open');
+    if (briefFrom && briefFrom.isConnected) briefFrom.focus(); briefFrom = null;
+  }
+  function openBrief(name, from) {
+    const b = briefs[name]; if (!b) return;
+    const e = escapeHtml, li = a => (a || []).map(x => `<li>${e(x)}</li>`).join(''), g = e(b.grade.letter[0]);
+    briefFrom = from || null;
+    const el = $('#brief');
+    el.innerHTML = `
+      <div class="bh"><h2 id="briefTitle">${e(name)}</h2><span class="pill">${e(b.ownership.type)}</span><span class="own">${e(b.ownership.detail || '')}</span><span class="sp"></span>
+        <button class="close" aria-label="Close company summary">Close ✕</button></div>
+      <div class="bg">
+        <div class="col">
+          <section class="bc"><h3>At a glance</h3><dl>
+            <dt>Ownership</dt><dd><b>${e(b.ownership.type)}</b><span>${e(b.ownership.detail || '')}</span></dd>
+            <dt>Fortune ranking</dt><dd><b>${e(b.fortune.rank)}</b><span>${e(b.fortune.note || '')}</span></dd>
+            <dt>Annual revenue</dt><dd><b>${e(b.revenue.value)}</b><span>${e(b.revenue.period || '')}</span></dd>
+            <dt>Annual profit</dt><dd><b>${e(b.profit.value)}</b><span>${e(b.profit.note || '')}</span></dd>
+            <dt>Employees</dt><dd><b>${e(b.employees.value)}</b><span>${e(b.employees.note || '')}</span></dd></dl></section>
+          <section class="bc"><h3>Revenue sources</h3>${(b.revenueMix || []).length ? `<div class="mix">${b.revenueMix.map(m => `<div class="row"><span>${e(m.label)}</span><em>${e(m.pct)}%</em><i><u style="width:${Math.max(0, Math.min(100, +m.pct || 0))}%"></u></i></div>`).join('')}</div>` : ''}
+            ${b.mixNote ? `<p class="fine"${(b.revenueMix || []).length ? '' : ' style="margin-top:0;font-size:14px;color:var(--text)"'}>${e(b.mixNote)}</p>` : ''}</section>
+        </div>
+        <div class="col">
+          <section class="bc"><h3>Roadmap focus</h3><div class="two"><div><h4>Now</h4><ul>${li(b.roadmap.current)}</ul></div><div><h4>Next</h4><ul>${li(b.roadmap.future)}</ul></div></div></section>
+          <section class="bc"><h3>Layoffs, most recent first</h3>${(b.layoffs || []).length ? `<table><thead><tr><th>When</th><th>What</th><th>How many</th></tr></thead><tbody>${b.layoffs.map(l => `<tr><td class="d">${e(l.date)}</td><td>${e(l.detail)}</td><td class="n">${e(l.size)}</td></tr>`).join('')}</tbody></table>` : ''}
+            ${b.layoffNote ? `<p class="fine"${(b.layoffs || []).length ? '' : ' style="margin-top:0;font-size:14px;color:var(--text)"'}>${e(b.layoffNote)}</p>` : ''}</section>
+        </div>
+        <div class="col">
+          <section class="bc"><h3>Claude's stability grade</h3><div class="grade"><div class="big g-${g}">${e(b.grade.letter)}</div><ul>${li(b.grade.why)}</ul></div></section>
+          <section class="bc"><h3>Top 10 competitors</h3><ol>${li(b.competitors)}</ol></section>
+        </div>
+      </div>
+      <div class="bf"><span>Researched by Claude from public sources, as of ${e(b.asOf || '')}. The grade is Claude's opinion, not financial advice.</span>
+        <span>Sources: ${(b.sources || []).map(x => `<a href="${e(x.url)}" target="_blank" rel="noopener">${e(x.title)}</a>`).join(' · ')}</span></div>`;
+    el.hidden = false; el.scrollTop = 0; document.body.classList.add('brief-open');
+    el.querySelector('.close').addEventListener('click', closeBrief);
+    el.querySelector('.close').focus();
+  }
+  addEventListener('keydown', ev => { if (ev.key === 'Escape') closeBrief(); });
+  addEventListener('hashchange', closeBrief);
+
   // ------------------------------------------------------------ compare view ----
   const num = v => { v = String(v ?? '').trim().replace(/[$,\s%]/g, ''); if (!v) return null; const k = /k$/i.test(v), m = /m$/i.test(v); const n = parseFloat(v); return isNaN(n) ? null : Math.round(n * (m ? 1e6 : k ? 1000 : 1) * 100) / 100; };
   const dollars = v => { const n = num(v); return n != null && n > 0 && n < 1000 ? n * 1000 : n; };        // "185" in a dollar box means $185K
@@ -1399,7 +1489,9 @@
         const est = it.est || {}, estTip = ` title="Estimate: ${escapeHtml(est.note || 'based on Levels.fyi data')}. Type over it any time."`;
         return `<tr data-key="${escapeHtml(k)}" class="${gone ? 'gone' : ''}">
           <td class="grip"><button class="grip-h" title="Drag to reorder (or press ↑ / ↓)" aria-label="Reorder ${escapeHtml(it.title)}: drag, or press up or down arrow"><svg viewBox="0 0 12 18" width="10" height="15" fill="currentColor" aria-hidden="true"><circle cx="3" cy="3" r="1.5"/><circle cx="9" cy="3" r="1.5"/><circle cx="3" cy="9" r="1.5"/><circle cx="9" cy="9" r="1.5"/><circle cx="3" cy="15" r="1.5"/><circle cx="9" cy="15" r="1.5"/></svg></button></td>
-          <td class="co" title="${escapeHtml(it.company)}">${escapeHtml(it.company)}</td>
+          <td class="co">${briefs[it.company]
+            ? `<button class="co-btn" data-brief="${escapeHtml(it.company)}" title="Open the company summary for ${escapeHtml(it.company)}"><span class="nm">${escapeHtml(it.company)}</span><span class="gr g-${escapeHtml(briefs[it.company].grade.letter[0])}" title="Claude's stability grade">${escapeHtml(briefs[it.company].grade.letter)}</span></button>`
+            : `<span title="No company summary yet. Ask Claude to “fill briefs”.">${escapeHtml(it.company)}</span>`}</td>
           <td class="title" title="${escapeHtml(it.title)}"><span class="t"><a href="${escapeHtml(it.url || '#')}" target="_blank" rel="noopener">${escapeHtml(it.title)}</a>${gone ? '<span class="badge b-closed" title="No longer on the board">closed</span>' : ''}</span><span class="sub">${escapeHtml(it.location || '')}</span></td>
           <td><select data-f="work" aria-label="Remote or not"><option value="">Not stated</option><option value="remote">Remote</option><option value="hybrid">Not remote · hybrid</option><option value="onsite">Not remote · on-site</option></select></td>
           <td class="num"><input data-f="min" inputmode="decimal" placeholder="$" value="${val(it.min)}" aria-label="Starting salary"></td>
@@ -1412,6 +1504,7 @@
         </tr>`; }).join('')}</tbody></table>`;
     for (const tr of body.querySelectorAll('tbody tr')) {
       const k = tr.dataset.key, it = compare[k];
+      const cb = tr.querySelector('.co-btn'); if (cb) cb.addEventListener('click', () => openBrief(cb.dataset.brief, cb));
       tr.querySelector('select').value = it.work || '';
       const touch = () => { it.at = new Date().toISOString(); saveCompare(); scheduleSync(); cmpPaint(); };
       tr.querySelector('select').addEventListener('change', e => { it.work = e.target.value; touch(); });
