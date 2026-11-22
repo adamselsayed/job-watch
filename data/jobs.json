@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T05:20:47+00:00",
+  "generated_at": "2026-11-22T05:38:53+00:00",
   "criteria": {
     "title_keywords": [
       "product"
@@ -57,7 +57,7 @@
       "ats": "smartrecruiters",
       "board": "Experian",
       "url": "https://jobs.experian.com/jobs",
-      "fetched_at": "2026-11-21T13:49:40+00:00",
+      "fetched_at": "2026-11-22T05:38:53+00:00",
       "status": "ok",
       "error": null,
       "total_jobs": 403,
@@ -4521,7 +4521,7 @@
       "company": "Experian",
       "key": "smartrecruiters:Experian:744000160746568",
       "first_seen": "2026-11-10T14:00:01+00:00",
-      "last_seen": "2026-11-21T13:49:40+00:00",
+      "last_seen": "2026-11-22T05:38:53+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4610,7 +4610,7 @@
       "company": "Experian",
       "key": "smartrecruiters:Experian:744000160623078",
       "first_seen": "2026-11-09T14:08:43+00:00",
-      "last_seen": "2026-11-21T13:49:40+00:00",
+      "last_seen": "2026-11-22T05:38:53+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4756,7 +4756,7 @@
       "company": "Experian",
       "key": "smartrecruiters:Experian:744000160276430",
       "first_seen": "2026-11-06T22:48:50+00:00",
-      "last_seen": "2026-11-21T13:49:40+00:00",
+      "last_seen": "2026-11-22T05:38:53+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4777,7 +4777,7 @@
       "company": "Experian",
       "key": "smartrecruiters:Experian:744000160276860",
       "first_seen": "2026-11-06T22:48:50+00:00",
-      "last_seen": "2026-11-21T13:49:40+00:00",
+      "last_seen": "2026-11-22T05:38:53+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -4876,7 +4876,7 @@
       "company": "Experian",
       "key": "smartrecruiters:Experian:744000159947279",
       "first_seen": "2026-11-05T21:07:36+00:00",
-      "last_seen": "2026-11-21T13:49:40+00:00",
+      "last_seen": "2026-11-22T05:38:53+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -5215,7 +5215,7 @@
       "company": "Experian",
       "key": "smartrecruiters:Experian:744000159218319",
       "first_seen": "2026-11-03T14:00:15+00:00",
-      "last_seen": "2026-11-21T13:49:40+00:00",
+      "last_seen": "2026-11-22T05:38:53+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -7430,6 +7430,34 @@
       "last_seen": "2026-11-21T13:49:40+00:00",
       "status": "open",
       "closed_at": null
+    },
+    {
+      "job_id": "744000152972234",
+      "req_id": "REF32669Z",
+      "title": "Director, Product Management (Remote)",
+      "location": "Remote - United States",
+      "location_detail": "",
+      "department": "Product Management",
+      "published_at": "2026-10-01T15:18:14.373Z",
+      "updated_at": null,
+      "url": "https://jobs.experian.com/job/director-product-management-remote-in-united-states-jid-6279",
+      "salary": {
+        "min": 157667,
+        "max": 283801,
+        "currency": "USD",
+        "source": "posting"
+      },
+      "us": true,
+      "remote": "remote",
+      "remote_confidence": "high",
+      "company": "Experian",
+      "key": "smartrecruiters:Experian:744000152972234",
+      "first_seen": "2026-10-30T05:15:36+00:00",
+      "last_seen": "2026-11-09T14:08:43+00:00",
+      "status": "open",
+      "closed_at": null,
+      "pinned": true,
+      "pin_note": "Pinned Nov 21: the hiring manager reached out, but the posting has expired on Experian's site (Experian job 6279)."
     },
     {
       "job_id": "34004",
@@ -12676,27 +12704,6 @@
       "last_seen": "2026-11-04T13:59:00+00:00",
       "status": "closed",
       "closed_at": "2026-11-05T14:07:58+00:00"
-    },
-    {
-      "job_id": "744000152972234",
-      "req_id": "REF32669Z",
-      "title": "Director, Product Management (Remote)",
-      "location": "Remote - United States",
-      "location_detail": "",
-      "department": "Product Management",
-      "published_at": "2026-10-01T15:18:14.373Z",
-      "updated_at": null,
-      "url": "https://jobs.smartrecruiters.com/Experian/744000152972234-director-product-management-remote-",
-      "salary": null,
-      "us": true,
-      "remote": "remote",
-      "remote_confidence": "high",
-      "company": "Experian",
-      "key": "smartrecruiters:Experian:744000152972234",
-      "first_seen": "2026-10-30T05:15:36+00:00",
-      "last_seen": "2026-11-09T14:08:43+00:00",
-      "status": "closed",
-      "closed_at": "2026-11-10T14:00:01+00:00"
     },
     {
       "job_id": "101376351360",
