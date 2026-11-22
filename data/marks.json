@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-21T06:53:30.267Z",
+  "updated_at": "2026-11-22T01:35:31.234Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2503,7 +2503,7 @@
   },
   "compare": {
     "smartrecruiters:ServiceNow:744000161905202": {
-      "at": "2026-11-21T02:23:22.678Z",
+      "at": "2026-11-22T01:35:29.730Z",
       "added": "2026-11-21T02:23:22.678000",
       "title": "Product Strategy Sr Manager ",
       "company": "ServiceNow",
@@ -2514,10 +2514,11 @@
       "max": 260600,
       "bonusPct": null,
       "equity": null,
-      "vestYears": 4
+      "vestYears": 4,
+      "pos": 0
     },
     "greenhouse:chargepoint:8807454002": {
-      "at": "2026-11-21T02:24:16.938Z",
+      "at": "2026-11-22T01:35:29.730Z",
       "added": "2026-11-21T02:24:16.938000",
       "title": "Staff Product Manager, Fleet Software",
       "company": "ChargePoint",
@@ -2528,10 +2529,11 @@
       "max": 241500,
       "bonusPct": null,
       "equity": null,
-      "vestYears": 4
+      "vestYears": 4,
+      "pos": 1
     },
     "talentbrew:jobs.bd.com/en:103567025056": {
-      "at": "2026-11-21T02:24:27.338Z",
+      "at": "2026-11-22T01:35:29.730Z",
       "added": "2026-11-21T02:24:27.338000",
       "title": "Associate Director, Lead Product Manager",
       "company": "BD",
@@ -2542,10 +2544,11 @@
       "max": 257200,
       "bonusPct": null,
       "equity": null,
-      "vestYears": 4
+      "vestYears": 4,
+      "pos": 2
     },
     "phenom:careers.autonation.com/us/en:AUMAIHUSJR2026143821EXTERNALENUS": {
-      "at": "2026-11-21T02:24:49.875Z",
+      "at": "2026-11-22T01:35:29.730Z",
       "added": "2026-11-21T02:24:49.875000",
       "title": "Director, Product",
       "company": "AutoNation",
@@ -2556,10 +2559,11 @@
       "max": null,
       "bonusPct": null,
       "equity": null,
-      "vestYears": 4
+      "vestYears": 4,
+      "pos": 3
     },
     "phenom:www.jobs-ups.com/us/en:UPBUPSGLOBALR26034745EXTERNALENUS": {
-      "at": "2026-11-21T06:53:17.913Z",
+      "at": "2026-11-22T01:35:29.730Z",
       "added": "2026-11-21T06:53:17.913000",
       "title": "Lead Product Manager(Flex)",
       "company": "UPS",
@@ -2570,10 +2574,11 @@
       "max": null,
       "bonusPct": null,
       "equity": null,
-      "vestYears": 4
+      "vestYears": 4,
+      "pos": 4
     },
     "oracle:fa-evlf-saasfaprod1.fa.ocs.oraclecloud.com/CX_1:44608": {
-      "at": "2026-11-21T06:53:28.752Z",
+      "at": "2026-11-22T01:35:29.730Z",
       "added": "2026-11-21T06:53:28.752000",
       "title": "VP Product Management -Consumer Experience",
       "company": "Hertz",
@@ -2584,7 +2589,8 @@
       "max": null,
       "bonusPct": null,
       "equity": null,
-      "vestYears": 4
+      "vestYears": 4,
+      "pos": 5
     }
   }
 }
