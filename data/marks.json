@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-22T05:34:24.207Z",
+  "updated_at": "2026-11-22T05:34:33.442Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2593,7 +2593,7 @@
       "pos": 5
     },
     "greenhouse:toast:8226770": {
-      "at": "2026-11-22T05:34:22.692Z",
+      "at": "2026-11-22T05:34:31.939Z",
       "added": "2026-11-22T05:34:22.692000",
       "pos": 6,
       "title": "Product Lead, New Ventures",
@@ -2603,7 +2603,7 @@
       "work": "remote",
       "min": 190000,
       "max": 304000,
-      "bonusPct": null,
+      "bonusPct": 15,
       "equity": null,
       "vestYears": 4
     }
