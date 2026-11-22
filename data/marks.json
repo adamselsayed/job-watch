@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-22T07:14:09.158Z",
+  "updated_at": "2026-11-22T07:14:11.602Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2733,6 +2733,21 @@
         "note": "guess: private startup, no Levels.fyi PM data (paper equity)",
         "at": "2026-11-22T06:06:54.081Z"
       }
+    },
+    "ashby:propel:8583576c-0768-414f-960d-b85408ff316a": {
+      "at": "2026-11-22T07:14:10.090Z",
+      "added": "2026-11-22T07:14:10.090000",
+      "pos": 8,
+      "title": "Forward Deployed Product Manager",
+      "company": "Propel",
+      "url": "https://jobs.ashbyhq.com/propel/8583576c-0768-414f-960d-b85408ff316a",
+      "location": "USA",
+      "work": "remote",
+      "min": 175000,
+      "max": 210000,
+      "bonusPct": null,
+      "equity": null,
+      "vestYears": 4
     }
   }
 }
