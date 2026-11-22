@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-22T06:22:36.513Z",
+  "updated_at": "2026-11-22T06:22:39.543Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2492,11 +2492,11 @@
       "NVIDIA",
       "Fleetio",
       "Propel",
+      "Samsara",
       "Curri",
       "Scout Motors",
       "Rivian & VW Group Technologies",
       "Ford",
-      "Samsara",
       "Komodo Health",
       "Thumbtack",
       "Life360",
@@ -2505,7 +2505,7 @@
       "Siemens Healthineers"
     ],
     "collapsed": [],
-    "at": "2026-11-22T06:22:35.002Z"
+    "at": "2026-11-22T06:22:38.035Z"
   },
   "compare": {
     "smartrecruiters:ServiceNow:744000161905202": {
