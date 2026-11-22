@@ -510,7 +510,7 @@
     </div>
     <div class="card" id="cmpBody"></div>
     <details class="foot"><summary>How these numbers work · dashed boxes are Levels.fyi estimates</summary>
-      <p>Salary and remote status are filled in from the posting when it states them; everything is editable. Dashed boxes are bonus and equity estimates from Levels.fyi, filled in by Claude when you ask it to “fill estimates”; type over them any time. Drag the dots at the left of a row to reorder. Bonus amount = bonus % × salary. Equity per year = grant ÷ vesting years. 50% of range = the midpoint between starting and high-end salary. Total = salary + bonus + equity per year, shown from the salary midpoint (the expected floor for an offer) to the high end.</p></details>
+      <p>Salary and remote status are filled in from the posting when it states them; everything is editable. Dashed boxes are bonus and equity estimates from Levels.fyi, filled in by Claude when you ask it to “fill estimates”; type over them any time. Drag the dots at the left of a row to reorder. Bonus amount = bonus % × salary, shown from the salary midpoint to the high end. Equity per year = grant ÷ vesting years. 50% of range = the midpoint between starting and high-end salary. Total = salary + bonus + equity per year, shown from the salary midpoint (the expected floor for an offer) to the high end.</p></details>
   </section>
 
   <section class="brief-wrap">
@@ -1365,7 +1365,7 @@
     const pct = it.bonusPct || 0, eq = it.equity ? it.equity / (it.vestYears > 0 ? it.vestYears : 4) : 0;
     const tot = b => b == null ? (eq ? eq : null) : b * (1 + pct / 100) + eq;
     const mid = lo != null && hi != null ? (lo + hi) / 2 : null;
-    return { mid, totMid: mid != null ? tot(mid) : null, bonusLo: lo != null && pct ? lo * pct / 100 : null, bonusHi: hi != null && pct ? hi * pct / 100 : null, eq: eq || null, totLo: tot(mid != null ? mid : lo), totHi: tot(hi) };   // total starts at the salary midpoint: offers are expected to reach at least that
+    return { mid, totMid: mid != null ? tot(mid) : null, bonusLo: (mid != null ? mid : lo) != null && pct ? (mid != null ? mid : lo) * pct / 100 : null, bonusHi: hi != null && pct ? hi * pct / 100 : null, eq: eq || null, totLo: tot(mid != null ? mid : lo), totHi: tot(hi) };   // total starts at the salary midpoint: offers are expected to reach at least that
   }
   function cmpPaint() {            // refresh the computed cells in place, so typing never loses focus
     const list = cmpList(); let best = null, bestV = 0;
