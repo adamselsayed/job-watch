@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-22T05:35:34.877Z",
+  "updated_at": "2026-11-22T05:47:57.369Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2604,6 +2604,21 @@
       "min": 190000,
       "max": 304000,
       "bonusPct": 15,
+      "equity": null,
+      "vestYears": 4
+    },
+    "smartrecruiters:Experian:744000152972234": {
+      "at": "2026-11-22T05:47:55.857Z",
+      "added": "2026-11-22T05:47:55.857000",
+      "pos": 7,
+      "title": "Director, Product Management (Remote)",
+      "company": "Experian",
+      "url": "https://jobs.experian.com/job/director-product-management-remote-in-united-states-jid-6279",
+      "location": "Remote - United States",
+      "work": "remote",
+      "min": 157667,
+      "max": 283801,
+      "bonusPct": null,
       "equity": null,
       "vestYears": 4
     }
