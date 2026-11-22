@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-22T06:22:21.607Z",
+  "updated_at": "2026-11-22T06:22:36.513Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2452,7 +2452,6 @@
       "Motive",
       "FieldAI",
       "Cisco",
-      "Ford",
       "BD",
       "Toast",
       "AutoNation",
@@ -2496,6 +2495,7 @@
       "Curri",
       "Scout Motors",
       "Rivian & VW Group Technologies",
+      "Ford",
       "Samsara",
       "Komodo Health",
       "Thumbtack",
@@ -2505,7 +2505,7 @@
       "Siemens Healthineers"
     ],
     "collapsed": [],
-    "at": "2026-11-22T05:34:01.913Z"
+    "at": "2026-11-22T06:22:35.002Z"
   },
   "compare": {
     "smartrecruiters:ServiceNow:744000161905202": {
