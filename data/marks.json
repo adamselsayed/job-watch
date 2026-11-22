@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-22T05:35:31.348Z",
+  "updated_at": "2026-11-22T05:35:34.877Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2518,7 +2518,7 @@
       "pos": 0
     },
     "greenhouse:chargepoint:8807454002": {
-      "at": "2026-11-22T05:35:29.847Z",
+      "at": "2026-11-22T05:35:33.375Z",
       "added": "2026-11-21T02:24:16.938000",
       "title": "Staff Product Manager, Fleet Software",
       "company": "ChargePoint",
@@ -2530,10 +2530,10 @@
       "bonusPct": 0,
       "equity": null,
       "vestYears": 4,
-      "pos": 1
+      "pos": 6
     },
     "talentbrew:jobs.bd.com/en:103567025056": {
-      "at": "2026-11-22T01:35:29.730Z",
+      "at": "2026-11-22T05:35:33.375Z",
       "added": "2026-11-21T02:24:27.338000",
       "title": "Associate Director, Lead Product Manager",
       "company": "BD",
@@ -2545,10 +2545,10 @@
       "bonusPct": null,
       "equity": null,
       "vestYears": 4,
-      "pos": 2
+      "pos": 1
     },
     "phenom:careers.autonation.com/us/en:AUMAIHUSJR2026143821EXTERNALENUS": {
-      "at": "2026-11-22T01:35:29.730Z",
+      "at": "2026-11-22T05:35:33.375Z",
       "added": "2026-11-21T02:24:49.875000",
       "title": "Director, Product",
       "company": "AutoNation",
@@ -2560,10 +2560,10 @@
       "bonusPct": null,
       "equity": null,
       "vestYears": 4,
-      "pos": 3
+      "pos": 2
     },
     "phenom:www.jobs-ups.com/us/en:UPBUPSGLOBALR26034745EXTERNALENUS": {
-      "at": "2026-11-22T01:35:29.730Z",
+      "at": "2026-11-22T05:35:33.375Z",
       "added": "2026-11-21T06:53:17.913000",
       "title": "Lead Product Manager(Flex)",
       "company": "UPS",
@@ -2575,10 +2575,10 @@
       "bonusPct": null,
       "equity": null,
       "vestYears": 4,
-      "pos": 4
+      "pos": 3
     },
     "oracle:fa-evlf-saasfaprod1.fa.ocs.oraclecloud.com/CX_1:44608": {
-      "at": "2026-11-22T01:35:29.730Z",
+      "at": "2026-11-22T05:35:33.375Z",
       "added": "2026-11-21T06:53:28.752000",
       "title": "VP Product Management -Consumer Experience",
       "company": "Hertz",
@@ -2590,12 +2590,12 @@
       "bonusPct": null,
       "equity": null,
       "vestYears": 4,
-      "pos": 5
+      "pos": 4
     },
     "greenhouse:toast:8226770": {
-      "at": "2026-11-22T05:34:31.939Z",
+      "at": "2026-11-22T05:35:33.375Z",
       "added": "2026-11-22T05:34:22.692000",
-      "pos": 6,
+      "pos": 5,
       "title": "Product Lead, New Ventures",
       "company": "Toast",
       "url": "https://careers.toasttab.com/jobs?gh_jid=8226770",
