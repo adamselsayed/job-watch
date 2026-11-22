@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-22T06:23:04.774Z",
+  "updated_at": "2026-11-22T06:23:08.582Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2471,6 +2471,12 @@
       "status": "archived",
       "at": "2026-11-22T06:23:03.262Z",
       "title": "Inside Sales Account Manager - Electrical Products",
+      "company": "Siemens"
+    },
+    "avature:jobs.siemens.com/en_US/externaljobs:529748": {
+      "status": "archived",
+      "at": "2026-11-22T06:23:07.068Z",
+      "title": "Technical Product Manager - Principal",
       "company": "Siemens"
     }
   },
