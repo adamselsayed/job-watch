@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-22T06:03:15.914Z",
+  "updated_at": "2026-11-22T06:03:23.048Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2518,7 +2518,7 @@
       "pos": 0
     },
     "greenhouse:chargepoint:8807454002": {
-      "at": "2026-11-22T05:50:24.797Z",
+      "at": "2026-11-22T06:03:21.546Z",
       "added": "2026-11-21T02:24:16.938000",
       "title": "Staff Product Manager, Fleet Software",
       "company": "ChargePoint",
@@ -2530,10 +2530,10 @@
       "bonusPct": 0,
       "equity": 80000,
       "vestYears": 4,
-      "pos": 6
+      "pos": 7
     },
     "talentbrew:jobs.bd.com/en:103567025056": {
-      "at": "2026-11-22T05:50:24.797Z",
+      "at": "2026-11-22T06:03:21.546Z",
       "added": "2026-11-21T02:24:27.338000",
       "title": "Associate Director, Lead Product Manager",
       "company": "BD",
@@ -2545,10 +2545,10 @@
       "bonusPct": 15,
       "equity": 80000,
       "vestYears": 4,
-      "pos": 3
+      "pos": 4
     },
     "phenom:careers.autonation.com/us/en:AUMAIHUSJR2026143821EXTERNALENUS": {
-      "at": "2026-11-22T05:50:24.797Z",
+      "at": "2026-11-22T06:03:21.546Z",
       "added": "2026-11-21T02:24:49.875000",
       "title": "Director, Product",
       "company": "AutoNation",
@@ -2560,10 +2560,10 @@
       "bonusPct": 20,
       "equity": 100000,
       "vestYears": 4,
-      "pos": 7
+      "pos": 8
     },
     "phenom:www.jobs-ups.com/us/en:UPBUPSGLOBALR26034745EXTERNALENUS": {
-      "at": "2026-11-22T05:50:24.797Z",
+      "at": "2026-11-22T06:03:21.546Z",
       "added": "2026-11-21T06:53:17.913000",
       "title": "Lead Product Manager(Flex)",
       "company": "UPS",
@@ -2575,10 +2575,10 @@
       "bonusPct": 13,
       "equity": 0,
       "vestYears": 4,
-      "pos": 4
+      "pos": 5
     },
     "oracle:fa-evlf-saasfaprod1.fa.ocs.oraclecloud.com/CX_1:44608": {
-      "at": "2026-11-22T05:50:24.797Z",
+      "at": "2026-11-22T06:03:21.546Z",
       "added": "2026-11-21T06:53:28.752000",
       "title": "VP Product Management -Consumer Experience",
       "company": "Hertz",
@@ -2590,7 +2590,7 @@
       "bonusPct": 30,
       "equity": 400000,
       "vestYears": 4,
-      "pos": 5
+      "pos": 6
     },
     "greenhouse:toast:8226770": {
       "at": "2026-11-22T05:50:24.797Z",
@@ -2623,9 +2623,9 @@
       "vestYears": 4
     },
     "lever:field-ai:8a953c26-d093-4fa2-88ea-9a5e810b2ef3": {
-      "at": "2026-11-22T06:03:14.404Z",
+      "at": "2026-11-22T06:03:21.546Z",
       "added": "2026-11-22T06:03:14.404000",
-      "pos": 8,
+      "pos": 3,
       "title": "Senior Product Manager, Core Platform (Customer Portal & Data Delivery)",
       "company": "FieldAI",
       "url": "https://jobs.lever.co/field-ai/8a953c26-d093-4fa2-88ea-9a5e810b2ef3",
