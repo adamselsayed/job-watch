@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-22T06:31:54.712Z",
+  "updated_at": "2026-11-22T06:36:42.361Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2708,14 +2708,14 @@
       }
     },
     "lever:field-ai:8a953c26-d093-4fa2-88ea-9a5e810b2ef3": {
-      "at": "2026-11-22T06:28:09.312Z",
+      "at": "2026-11-22T06:36:40.859Z",
       "added": "2026-11-22T06:03:14.404000",
       "pos": 3,
       "title": "Senior Product Manager, Core Platform (Customer Portal & Data Delivery)",
       "company": "FieldAI",
       "url": "https://jobs.lever.co/field-ai/8a953c26-d093-4fa2-88ea-9a5e810b2ef3",
       "location": "Irvine, CA",
-      "work": "onsite",
+      "work": "hybrid",
       "min": 180000,
       "max": 250000,
       "bonusPct": 10,
