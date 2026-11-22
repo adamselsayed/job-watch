@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-22T06:06:54.081Z",
+  "updated_at": "2026-11-22T06:10:48.132Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2587,25 +2587,8 @@
       }
     },
     "phenom:www.jobs-ups.com/us/en:UPBUPSGLOBALR26034745EXTERNALENUS": {
-      "at": "2026-11-22T06:05:05.877Z",
-      "added": "2026-11-21T06:53:17.913000",
-      "title": "Lead Product Manager(Flex)",
-      "company": "UPS",
-      "url": "https://www.jobs-ups.com/us/en/job/UPBUPSGLOBALR26034745EXTERNALENUS/Lead-Product-Manager-Flex",
-      "location": "ALPHARETTA, Georgia, United States of America",
-      "work": "hybrid",
-      "min": null,
-      "max": null,
-      "bonusPct": 13,
-      "equity": 0,
-      "vestYears": 4,
-      "pos": 5,
-      "est": {
-        "bonus": true,
-        "equity": true,
-        "note": "Levels.fyi averages at L5 Senior PM, US",
-        "at": "2026-11-22T06:05:05.877Z"
-      }
+      "removed": true,
+      "at": "2026-11-22T06:10:46.629Z"
     },
     "oracle:fa-evlf-saasfaprod1.fa.ocs.oraclecloud.com/CX_1:44608": {
       "at": "2026-11-22T06:05:05.877Z",
