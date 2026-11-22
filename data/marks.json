@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-22T07:15:17.973Z",
+  "updated_at": "2026-11-22T07:29:07.546Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2584,7 +2584,7 @@
       }
     },
     "greenhouse:chargepoint:8807454002": {
-      "at": "2026-11-22T07:14:20.123Z",
+      "at": "2026-11-22T07:29:06.043Z",
       "added": "2026-11-21T02:24:16.938000",
       "title": "Staff Product Manager, Fleet Software",
       "company": "ChargePoint",
@@ -2596,7 +2596,7 @@
       "bonusPct": 0,
       "equity": 80000,
       "vestYears": 4,
-      "pos": 6,
+      "pos": 5,
       "est": {
         "bonus": false,
         "equity": true,
@@ -2605,7 +2605,7 @@
       }
     },
     "talentbrew:jobs.bd.com/en:103567025056": {
-      "at": "2026-11-22T07:14:20.123Z",
+      "at": "2026-11-22T07:29:06.043Z",
       "added": "2026-11-21T02:24:27.338000",
       "title": "Associate Director, Lead Product Manager",
       "company": "BD",
@@ -2617,7 +2617,7 @@
       "bonusPct": 15,
       "equity": 80000,
       "vestYears": 4,
-      "pos": 5,
+      "pos": 4,
       "est": {
         "bonus": true,
         "equity": true,
@@ -2626,7 +2626,7 @@
       }
     },
     "phenom:careers.autonation.com/us/en:AUMAIHUSJR2026143821EXTERNALENUS": {
-      "at": "2026-11-22T07:14:20.123Z",
+      "at": "2026-11-22T07:29:06.043Z",
       "added": "2026-11-21T02:24:49.875000",
       "title": "Director, Product",
       "company": "AutoNation",
@@ -2638,7 +2638,7 @@
       "bonusPct": 20,
       "equity": 100000,
       "vestYears": 4,
-      "pos": 7,
+      "pos": 6,
       "est": {
         "bonus": true,
         "equity": true,
@@ -2714,9 +2714,9 @@
       }
     },
     "lever:field-ai:8a953c26-d093-4fa2-88ea-9a5e810b2ef3": {
-      "at": "2026-11-22T07:14:20.123Z",
+      "at": "2026-11-22T07:29:06.043Z",
       "added": "2026-11-22T06:03:14.404000",
-      "pos": 4,
+      "pos": 3,
       "title": "Senior Product Manager, Core Platform (Customer Portal & Data Delivery)",
       "company": "FieldAI",
       "url": "https://jobs.lever.co/field-ai/8a953c26-d093-4fa2-88ea-9a5e810b2ef3",
@@ -2735,9 +2735,9 @@
       }
     },
     "ashby:propel:8583576c-0768-414f-960d-b85408ff316a": {
-      "at": "2026-11-22T07:15:17.973Z",
+      "at": "2026-11-22T07:29:06.043Z",
       "added": "2026-11-22T07:14:10.090000",
-      "pos": 3,
+      "pos": 7,
       "title": "Forward Deployed Product Manager",
       "company": "Propel",
       "url": "https://jobs.ashbyhq.com/propel/8583576c-0768-414f-960d-b85408ff316a",
