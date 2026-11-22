@@ -439,6 +439,9 @@
   #compareView .co-btn .nm { overflow: hidden; text-overflow: ellipsis; text-decoration: underline dotted var(--faint); text-underline-offset: 4px; }
   #compareView .co-btn:hover .nm, #compareView .co-btn:focus-visible .nm { color: var(--accent); text-decoration-color: var(--accent); }
   #compareView .co-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+  #compareView th.grd, #compareView td.grd { text-align: center; width: 56px; padding-left: 4px; padding-right: 4px; }
+  #compareView .gr-btn { all: unset; cursor: pointer; display: inline-grid; border-radius: 7px; } #compareView .gr-btn:hover { opacity: .8; } #compareView .gr-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  #compareView td.grd .gr { min-width: 32px; height: 23px; font-size: 12.5px; } #compareView .nogr { color: var(--faint); }
   .gr { display: inline-grid; place-items: center; min-width: 26px; height: 20px; padding: 0 5px; border-radius: 6px; font: 700 11.5px/1 "Instrument Sans", sans-serif; color: var(--bg); background: var(--accent); flex: none; }
   .gr.g-C { background: var(--new); } .gr.g-D, .gr.g-F { background: var(--err); }
   #brief[hidden] { display: none; }
@@ -1482,7 +1485,7 @@
     const val = n => n == null ? '' : Math.round(n).toLocaleString('en-US');
     const body = $('#cmpBody');
     if (!list.length) { body.innerHTML = '<div class="empty">Nothing to compare yet. On the dashboard, use the balance-scale button at the right of a role, next to Applied / Archive. You can add up to 10.</div>'; return; }
-    body.innerHTML = `<table><thead><tr><th class="grip"></th><th>Company</th><th>Role</th><th>Remote</th><th class="num">Starting salary</th><th class="num">50% of range<br>(midpoint)</th><th class="num">High-end salary</th><th class="num">Bonus %<br>and amount</th><th class="num">Equity grant<br>and vesting years</th><th class="num" title="From the salary midpoint to the high end">Total comp, annual<br>(midpoint to high)</th><th></th></tr></thead><tbody>${
+    body.innerHTML = `<table><thead><tr><th class="grip"></th><th>Company</th><th class="grd" title="Claude's grade of how stable and successful the company is">Grade</th><th>Role</th><th>Remote</th><th class="num">Starting salary</th><th class="num">50% of range<br>(midpoint)</th><th class="num">High-end salary</th><th class="num">Bonus %<br>and amount</th><th class="num">Equity grant<br>and vesting years</th><th class="num" title="From the salary midpoint to the high end">Total comp, annual<br>(midpoint to high)</th><th></th></tr></thead><tbody>${
       list.map(([k, it]) => {
         const j = jobs.find(x => x.key === k), gone = !j || j.status === 'closed';
         // est: set by Claude's on-request Levels.fyi lookup for the fields it filled in; a flag clears once that field is edited by hand
@@ -1490,8 +1493,11 @@
         return `<tr data-key="${escapeHtml(k)}" class="${gone ? 'gone' : ''}">
           <td class="grip"><button class="grip-h" title="Drag to reorder (or press ↑ / ↓)" aria-label="Reorder ${escapeHtml(it.title)}: drag, or press up or down arrow"><svg viewBox="0 0 12 18" width="10" height="15" fill="currentColor" aria-hidden="true"><circle cx="3" cy="3" r="1.5"/><circle cx="9" cy="3" r="1.5"/><circle cx="3" cy="9" r="1.5"/><circle cx="9" cy="9" r="1.5"/><circle cx="3" cy="15" r="1.5"/><circle cx="9" cy="15" r="1.5"/></svg></button></td>
           <td class="co">${briefs[it.company]
-            ? `<button class="co-btn" data-brief="${escapeHtml(it.company)}" title="Open the company summary for ${escapeHtml(it.company)}"><span class="nm">${escapeHtml(it.company)}</span><span class="gr g-${escapeHtml(briefs[it.company].grade.letter[0])}" title="Claude's stability grade">${escapeHtml(briefs[it.company].grade.letter)}</span></button>`
+            ? `<button class="co-btn" data-brief="${escapeHtml(it.company)}" title="Open the company summary for ${escapeHtml(it.company)}"><span class="nm">${escapeHtml(it.company)}</span></button>`
             : `<span title="No company summary yet. Ask Claude to “fill briefs”.">${escapeHtml(it.company)}</span>`}</td>
+          <td class="grd">${briefs[it.company]
+            ? `<button class="gr-btn" data-brief="${escapeHtml(it.company)}" title="Claude's stability grade for ${escapeHtml(it.company)}. Click for the company summary" aria-label="Grade ${escapeHtml(briefs[it.company].grade.letter)}, open company summary"><span class="gr g-${escapeHtml(briefs[it.company].grade.letter[0])}">${escapeHtml(briefs[it.company].grade.letter)}</span></button>`
+            : '<span class="nogr" title="No grade yet. Ask Claude to “fill briefs”.">—</span>'}</td>
           <td class="title" title="${escapeHtml(it.title)}"><span class="t"><a href="${escapeHtml(it.url || '#')}" target="_blank" rel="noopener">${escapeHtml(it.title)}</a>${gone ? '<span class="badge b-closed" title="No longer on the board">closed</span>' : ''}</span><span class="sub">${escapeHtml(it.location || '')}</span></td>
           <td><select data-f="work" aria-label="Remote or not"><option value="">Not stated</option><option value="remote">Remote</option><option value="hybrid">Not remote · hybrid</option><option value="onsite">Not remote · on-site</option></select></td>
           <td class="num"><input data-f="min" inputmode="decimal" placeholder="$" value="${val(it.min)}" aria-label="Starting salary"></td>
@@ -1504,7 +1510,7 @@
         </tr>`; }).join('')}</tbody></table>`;
     for (const tr of body.querySelectorAll('tbody tr')) {
       const k = tr.dataset.key, it = compare[k];
-      const cb = tr.querySelector('.co-btn'); if (cb) cb.addEventListener('click', () => openBrief(cb.dataset.brief, cb));
+      tr.querySelectorAll('.co-btn, .gr-btn').forEach(cb => cb.addEventListener('click', () => openBrief(cb.dataset.brief, cb)));
       tr.querySelector('select').value = it.work || '';
       const touch = () => { it.at = new Date().toISOString(); saveCompare(); scheduleSync(); cmpPaint(); };
       tr.querySelector('select').addEventListener('change', e => { it.work = e.target.value; touch(); });
