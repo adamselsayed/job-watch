@@ -26,6 +26,7 @@ from datetime import datetime, timezone, timedelta
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 COMPANIES_FILE = os.path.join(ROOT, "companies.yml")
 DATA_FILE = os.path.join(ROOT, "data", "jobs.json")
+PINNED_FILE = os.path.join(ROOT, "data", "pinned.json")   # roles kept open by hand after they left the board
 CHANGES_FILE = os.path.join(ROOT, "data", "changes.log")
 
 # ---------------------------------------------------------------- criteria --
@@ -1449,9 +1450,28 @@ def main(only=None):
             j["closed_at"] = None
             prev_jobs[j["key"]] = j
 
+    # Pinned roles (data/pinned.json): kept open with a "pinned" badge even though they left the board.
+    try:
+        with open(PINNED_FILE) as fh:
+            pinned = (json.load(fh) or {}).get("pinned") or {}
+    except (OSError, ValueError):
+        pinned = {}
+    for key, pin in pinned.items():
+        j = prev_jobs.get(key)
+        if j is None and pin.get("job"):
+            j = prev_jobs[key] = dict(pin["job"], key=key)
+        if j is not None:
+            j.update({"status": "open", "closed_at": None, "pinned": True, "pin_note": pin.get("note") or ""})
+            if pin.get("url"):
+                j["url"] = pin["url"]
+            if not j.get("salary") and (pin.get("job") or {}).get("salary"):
+                j["salary"] = pin["job"]["salary"]
+
     # Mark jobs that vanished from a successfully fetched board as closed.
     for key, j in list(prev_jobs.items()):
         cname = j.get("company")
+        if key in pinned:
+            continue
         if cname in fetched_keys_by_company and key not in fetched_keys_by_company[cname]:
             if j.get("status") != "closed":
                 j["status"] = "closed"

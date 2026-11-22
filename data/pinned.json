@@ -1,0 +1,33 @@
+{
+ "note": "Roles kept open on the dashboard by hand after they left the company's board. Remove an entry to let it close normally.",
+ "pinned": {
+  "smartrecruiters:Experian:744000152972234": {
+   "note": "Pinned Nov 21: the hiring manager reached out, but the posting has expired on Experian's site (Experian job 6279).",
+   "url": "https://jobs.experian.com/job/director-product-management-remote-in-united-states-jid-6279",
+   "job": {
+    "job_id": "744000152972234",
+    "req_id": "REF32669Z",
+    "title": "Director, Product Management (Remote)",
+    "location": "Remote - United States",
+    "location_detail": "",
+    "department": "Product Management",
+    "published_at": "2026-10-01T15:18:14.373Z",
+    "updated_at": null,
+    "url": "https://jobs.smartrecruiters.com/Experian/744000152972234-director-product-management-remote-",
+    "salary": {
+     "min": 157667,
+     "max": 283801,
+     "currency": "USD",
+     "source": "posting"
+    },
+    "us": true,
+    "remote": "remote",
+    "remote_confidence": "high",
+    "company": "Experian",
+    "key": "smartrecruiters:Experian:744000152972234",
+    "first_seen": "2026-10-30T05:15:36+00:00",
+    "last_seen": "2026-11-09T14:08:43+00:00"
+   }
+  }
+ }
+}

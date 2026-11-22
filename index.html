@@ -221,6 +221,7 @@
   .b-onsite { background: var(--surface-2); color: var(--muted); border-color: var(--border); }
   .b-unknown, .b-verify { background: var(--warn-soft); color: var(--warn); }
   .b-closed { background: var(--surface-2); color: var(--closed); border-color: var(--border); }
+  .b-pinned { background: var(--accent-soft, var(--surface-2)); color: var(--accent); border-color: var(--accent); }
   .b-reopened { background: var(--new-soft); color: var(--new); }
   .b-src { font-weight: 500; color: var(--faint); background: transparent; border-color: var(--border); }
 
@@ -1024,7 +1025,7 @@
       // Live-confirm snapshot rows: anything missing from the live board gets marked closed (live).
       for (const j of data.jobs) if (j.company === c.name) {
         if (nowOpen.has(j.key)) { if (j.status === 'closed') { j.status = 'open'; j.live_reopened = true; } }
-        else if (j.status === 'open') { j.status = 'closed'; j.closed_at = new Date().toISOString(); j.live_closed = true; }
+        else if (j.status === 'open' && !j.pinned) { j.status = 'closed'; j.closed_at = new Date().toISOString(); j.live_closed = true; }
       }
       liveAt[c.name] = new Date().toISOString();
       const n = liveExtra[c.name].length;
@@ -1133,6 +1134,7 @@
     if (j.live) badges.push('<span class="badge b-live" title="Found by a live pull; not yet in the daily snapshot">live</span>');
     if (isNew(j) && j.status === 'open') badges.push('<span class="badge b-new">new</span>');
     if (j.live_reopened) badges.push('<span class="badge b-reopened">reopened</span>');
+    if (j.pinned) badges.push(`<span class="badge b-pinned" title="${escapeHtml(j.pin_note || 'Kept on your board by hand: no longer on the company\'s job board')}">pinned</span>`);
     if (j.status === 'closed') badges.push(`<span class="badge b-closed" title="No longer on the board${j.closed_at ? ' as of ' + fmtDate(j.closed_at) : ''}">closed</span>`);
     const k = n => n >= 1000 ? '$' + (Math.round(n / 500) / 2).toLocaleString('en-US', { maximumFractionDigits: 1 }).replace(/\.0$/, '') + 'K' : fmtMoney(n);
     const sal = j.salary
