@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T13:49:40+00:00",
+  "generated_at": "2026-11-22T05:20:47+00:00",
   "criteria": {
     "title_keywords": [
       "product"
@@ -596,6 +596,17 @@
       "error": null,
       "total_jobs": 941,
       "matched": 15
+    },
+    {
+      "name": "Propel",
+      "ats": "ashby",
+      "board": "propel",
+      "url": "https://jobs.ashbyhq.com/propel",
+      "fetched_at": "2026-11-22T05:20:47+00:00",
+      "status": "ok",
+      "error": null,
+      "total_jobs": 8,
+      "matched": 2
     }
   ],
   "jobs": [
@@ -2598,6 +2609,32 @@
       "closed_at": null
     },
     {
+      "job_id": "8583576c-0768-414f-960d-b85408ff316a",
+      "req_id": null,
+      "title": "Forward Deployed Product Manager",
+      "location": "USA",
+      "location_detail": "",
+      "department": "Product / Product",
+      "published_at": "2026-11-17T20:47:48.088+00:00",
+      "updated_at": null,
+      "url": "https://jobs.ashbyhq.com/propel/8583576c-0768-414f-960d-b85408ff316a",
+      "salary": {
+        "min": 175000,
+        "max": 210000,
+        "currency": "USD",
+        "source": "description"
+      },
+      "us": true,
+      "remote": "remote",
+      "remote_confidence": "medium",
+      "company": "Propel",
+      "key": "ashby:propel:8583576c-0768-414f-960d-b85408ff316a",
+      "first_seen": "2026-11-22T05:20:47+00:00",
+      "last_seen": "2026-11-22T05:20:47+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
       "job_id": "529748",
       "req_id": "529748",
       "title": "Technical Product Manager - Principal",
@@ -2948,6 +2985,32 @@
       "key": "smartrecruiters:ServiceNow:744000161885234",
       "first_seen": "2026-11-17T14:06:00+00:00",
       "last_seen": "2026-11-21T13:49:40+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "21faa4f1-6fff-4f93-8c6b-ced611e4e533",
+      "req_id": null,
+      "title": "Product Data Scientist",
+      "location": "USA",
+      "location_detail": "",
+      "department": "Data Science / Data Science",
+      "published_at": "2026-11-16T15:48:20.623+00:00",
+      "updated_at": null,
+      "url": "https://jobs.ashbyhq.com/propel/21faa4f1-6fff-4f93-8c6b-ced611e4e533",
+      "salary": {
+        "min": 140000,
+        "max": 180000,
+        "currency": "USD",
+        "source": "description"
+      },
+      "us": true,
+      "remote": "remote",
+      "remote_confidence": "medium",
+      "company": "Propel",
+      "key": "ashby:propel:21faa4f1-6fff-4f93-8c6b-ced611e4e533",
+      "first_seen": "2026-11-22T05:20:47+00:00",
+      "last_seen": "2026-11-22T05:20:47+00:00",
       "status": "open",
       "closed_at": null
     },
