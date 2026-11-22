@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-22T06:36:50.596Z",
+  "updated_at": "2026-11-22T07:14:09.158Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2490,6 +2490,12 @@
       "at": "2026-11-22T06:26:35.425Z",
       "title": "Product Counsel",
       "company": "Toast"
+    },
+    "ashby:propel:21faa4f1-6fff-4f93-8c6b-ced611e4e533": {
+      "status": "archived",
+      "at": "2026-11-22T07:14:07.648Z",
+      "title": "Product Data Scientist",
+      "company": "Propel"
     }
   },
   "groups": {
