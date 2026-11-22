@@ -384,14 +384,19 @@
   #cmpOpen.has b { background: var(--new); color: var(--bg); border-color: var(--bg); }
   #compareView[hidden] { display: none; }
   .wrap.comparing :is(.brief-wrap, .layout, .note) { display: none; }
+  .wrap.comparing { padding-bottom: 20px; }
   #compareView .top { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 16px; margin-bottom: 16px; }
   #compareView .top h2 { font: 500 30px/1.15 var(--serif); margin: 0; letter-spacing: -.01em; }
   #compareView .top .sub { font-size: 13.5px; color: var(--muted); }
   #compareView .card { background: var(--surface); border-radius: 16px; overflow-x: auto; }
   #compareView table { table-layout: auto; min-width: 1180px; }
-  #compareView th, #compareView td { padding: 10px 10px; }
+  #compareView th, #compareView td { padding: 8px 10px; }
   #compareView th:first-child, #compareView td:first-child { padding-left: 20px; }
   #compareView thead th { white-space: nowrap; vertical-align: bottom; line-height: 1.25; }
+  /* rows stretch so the list fills the screen down to the footnote (--cmp-row is set by cmpFit) */
+  #compareView tbody td { height: var(--cmp-row, auto); }
+  #compareView td.co, #compareView td.title .t { font-size: 15px; }
+  #compareView td.co { font-weight: 600; }
   #compareView th.num, #compareView td.num { text-align: right; font-variant-numeric: tabular-nums; }
   #compareView th.grip, #compareView td.grip { width: 34px; padding-left: 12px !important; padding-right: 0; }
   #compareView .grip-h { border: 0; background: none; color: var(--faint); padding: 8px 6px; border-radius: 6px; cursor: grab; touch-action: none; line-height: 0; }
@@ -400,15 +405,17 @@
   #compareView tr.moving .grip-h { cursor: grabbing; color: var(--accent); }
   #compareView tbody tr:hover td:first-child { box-shadow: none; }
   #compareView td.co { max-width: 150px; color: var(--text); }
-  #compareView td.title { max-width: 250px; width: 22%; }
+  #compareView td.title { max-width: 0; width: 34%; }   /* takes the slack; long titles ellipsize instead of widening the table */
   #compareView td.title .sub { display: block; overflow: hidden; text-overflow: ellipsis; }
-  #compareView input, #compareView select { font: inherit; font-size: 13.5px; padding: 5px 8px; border: 1px solid var(--border); border-radius: 8px; background: var(--surface-2); color: var(--text); font-variant-numeric: tabular-nums; }
+  #compareView input, #compareView select { font: inherit; font-size: 14.5px; padding: 7px 9px; border: 1px solid var(--border); border-radius: 8px; background: var(--surface-2); color: var(--text); font-variant-numeric: tabular-nums; }
   #compareView input { width: 96px; text-align: right; }
+  #compareView select { max-width: 168px; }
+  #compareView td:last-child { padding-right: 14px; }
   #compareView input.pct, #compareView input.yrs { width: 52px; }
   #compareView input:focus, #compareView select:focus { outline: 2px solid var(--accent); outline-offset: 0; border-color: var(--accent); }
   #compareView input::placeholder { color: var(--faint); }
   #compareView .calc { display: block; margin-top: 3px; font-size: 12px; color: var(--muted); }
-  #compareView td.total { font-weight: 600; font-size: 14.5px; }
+  #compareView td.total { font-weight: 600; font-size: 15.5px; }
   #compareView td.total .calc { font-weight: 400; }
   #compareView tr.best td.total { color: var(--accent); }
   #compareView tr.best td.total::after { content: "highest"; display: block; font: 500 11px/1.4 "Instrument Sans", sans-serif; color: var(--accent); }
@@ -1431,8 +1438,19 @@
       });
       tr.querySelector('.x').addEventListener('click', () => { compare[k] = { removed: true, at: new Date().toISOString() }; saveCompare(); scheduleSync(); renderCompare(); });
     }
-    cmpPaint();
+    cmpPaint(); cmpFit();
   }
+  // Share the free height between the rows so the table reaches the bottom of the window (never shorter than the
+  // rows' natural height, and capped so one or two roles don't become giant bands).
+  function cmpFit() {
+    const card = $('#cmpBody'), tb = card.querySelector('tbody'); if (!tb || $('#compareView').hidden) return;
+    card.style.removeProperty('--cmp-row');
+    const foot = $('#compareView .foot'), wrapPad = parseFloat(getComputedStyle(document.querySelector('.wrap')).paddingBottom) || 0;
+    const free = innerHeight - (card.getBoundingClientRect().top + scrollY) - card.querySelector('thead').offsetHeight - foot.offsetHeight - 12 - Math.min(wrapPad, 24);
+    const h = Math.min(120, Math.floor(free / tb.children.length));
+    if (h > tb.children[0].offsetHeight) card.style.setProperty('--cmp-row', h + 'px');
+  }
+  addEventListener('resize', cmpFit);
   function showCompare() {
     const on = location.hash === '#compare';
     $('#compareView').hidden = !on; document.querySelector('.wrap').classList.toggle('comparing', on);
