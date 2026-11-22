@@ -452,7 +452,7 @@
   #brief .bh .pill { font: 600 12px/1 "Instrument Sans", sans-serif; text-transform: uppercase; letter-spacing: .06em; padding: 6px 10px; border-radius: 999px; border: 1px solid var(--border); color: var(--text); }
   #brief .bh .sp { flex: 1; }
   #brief .bh .close { border-radius: 999px; padding: 8px 16px; font-size: 14px; }
-  #brief .bg { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr) minmax(0, 1fr); gap: 16px; align-items: start; }
+  #brief .bg { display: grid; grid-template-columns: minmax(0, .82fr) minmax(0, 1.3fr) minmax(0, 1.08fr); gap: 16px; align-items: start; }
   #brief .col { display: grid; gap: 16px; }
   #brief .bc { background: var(--surface); border-radius: 16px; padding: 18px 20px; }
   #brief h3 { font: 600 12px/1.2 "Instrument Sans", sans-serif; text-transform: uppercase; letter-spacing: .07em; color: var(--muted); margin: 0 0 12px; }
@@ -462,15 +462,22 @@
   #brief .mix { display: grid; gap: 9px; } #brief .mix .row { display: grid; grid-template-columns: 1fr 44px; gap: 4px 10px; font-size: 13.5px; align-items: baseline; }
   #brief .mix .row i { grid-column: 1 / -1; height: 7px; border-radius: 4px; background: var(--surface-2); overflow: hidden; }
   #brief .mix .row i u { display: block; height: 100%; background: var(--accent); border-radius: 4px; }
+  #brief .mix .row > span { font-weight: 600; } #brief .mix.slim .row > span { font-weight: 400; } #brief .mix { gap: 13px; } #brief .mix.slim { gap: 8px; }
+  #brief .mix .row small { grid-column: 1 / -1; font-size: 13px; line-height: 1.4; color: var(--muted); }
+  #brief h4.sub { margin: 16px 0 9px; font: 600 12px/1.2 "Instrument Sans", sans-serif; color: var(--muted); }
+  #brief .concern { display: grid; gap: 14px; } #brief .concern .ch { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 5px; } #brief .concern b { font-size: 14px; font-weight: 600; }
+  #brief .concern p { margin: 0; font-size: 13.5px; line-height: 1.45; }
+  #brief .lv { font: 600 11.5px/1 "Instrument Sans", sans-serif; padding: 5px 9px; border-radius: 999px; border: 1px solid var(--border); color: var(--muted); white-space: nowrap; }
+  #brief .lv-Low { background: var(--surface-2); color: var(--text); } #brief .lv-Moderate { background: var(--new); border-color: var(--new); color: var(--bg); } #brief .lv-High { background: var(--err); border-color: var(--err); color: var(--bg); }
   #brief .mix .row em { font-style: normal; font-weight: 600; text-align: right; font-variant-numeric: tabular-nums; }
   #brief .fine { font-size: 12.5px; color: var(--muted); margin: 10px 0 0; }
   #brief ul { margin: 0; padding-left: 18px; display: grid; gap: 6px; font-size: 14px; line-height: 1.4; }
   #brief .two { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; } #brief .two h4 { margin: 0 0 8px; font: 600 14px/1.2 "Instrument Sans", sans-serif; color: var(--accent); }
   #brief table { table-layout: auto; width: 100%; } #brief th, #brief td { padding: 7px 10px 7px 0; font-size: 13.5px; vertical-align: top; white-space: normal; text-align: left; }
   #brief th { font-weight: 500; color: var(--muted); font-size: 12px; border-bottom: 1px solid var(--border); } #brief td { border-top: 1px solid var(--border); } #brief tr:first-child td { border-top: 0; }
-  #brief td.d { font-weight: 600; width: 24%; } #brief td.n { font-variant-numeric: tabular-nums; font-weight: 600; width: 24%; }
+  #brief td.d { font-weight: 600; width: 27%; } #brief td.n { font-variant-numeric: tabular-nums; font-weight: 600; width: 27%; }
   #brief tbody tr:hover td { background: none; box-shadow: none; }
-  #brief ol { margin: 0; padding-left: 22px; columns: 2; column-gap: 20px; font-size: 14px; line-height: 1.75; }
+  #brief ol { margin: 0; padding-left: 22px; font-size: 14px; line-height: 1.75; }
   #brief .grade { display: flex; gap: 16px; align-items: flex-start; }
   #brief .grade .big { flex: none; width: 68px; height: 68px; border-radius: 16px; display: grid; place-items: center; font: 600 32px/1 var(--serif); color: var(--bg); background: var(--accent); }
   #brief .grade .big.g-C { background: var(--new); } #brief .grade .big.g-D, #brief .grade .big.g-F { background: var(--err); }
@@ -1415,6 +1422,7 @@
     const b = briefs[name]; if (!b) return;
     const e = escapeHtml, li = a => (a || []).map(x => `<li>${e(x)}</li>`).join(''), g = e(b.grade.letter[0]);
     briefFrom = from || null;
+    const mixRow = m => `<div class="row"><span>${e(m.label)}</span><em>${m.pct == null ? '' : e(m.pct) + '%'}</em>${m.pct == null ? '' : `<i><u style="width:${Math.max(0, Math.min(100, +m.pct || 0))}%"></u></i>`}${m.detail ? `<small>${e(m.detail)}</small>` : ''}</div>`;
     const el = $('#brief');
     el.innerHTML = `
       <div class="bh"><h2 id="briefTitle">${e(name)}</h2><span class="pill">${e(b.ownership.type)}</span><span class="own">${e(b.ownership.detail || '')}</span><span class="sp"></span>
@@ -1427,17 +1435,19 @@
             <dt>Annual revenue</dt><dd><b>${e(b.revenue.value)}</b><span>${e(b.revenue.period || '')}</span></dd>
             <dt>Annual profit</dt><dd><b>${e(b.profit.value)}</b><span>${e(b.profit.note || '')}</span></dd>
             <dt>Employees</dt><dd><b>${e(b.employees.value)}</b><span>${e(b.employees.note || '')}</span></dd></dl></section>
-          <section class="bc"><h3>Revenue sources</h3>${(b.revenueMix || []).length ? `<div class="mix">${b.revenueMix.map(m => `<div class="row"><span>${e(m.label)}</span><em>${e(m.pct)}%</em><i><u style="width:${Math.max(0, Math.min(100, +m.pct || 0))}%"></u></i></div>`).join('')}</div>` : ''}
-            ${b.mixNote ? `<p class="fine"${(b.revenueMix || []).length ? '' : ' style="margin-top:0;font-size:14px;color:var(--text)"'}>${e(b.mixNote)}</p>` : ''}</section>
+          <section class="bc"><h3>Top 10 competitors</h3><ol>${li(b.competitors)}</ol></section>
         </div>
         <div class="col">
+          <section class="bc"><h3>Revenue sources</h3><div class="mix">${(b.revenueMix || []).map(mixRow).join('')}</div>
+            ${b.revenueMix2 ? `<h4 class="sub">${e(b.revenueMix2.title)}</h4><div class="mix slim">${b.revenueMix2.items.map(mixRow).join('')}</div>` : ''}
+            ${b.mixNote ? `<p class="fine">${e(b.mixNote)}</p>` : ''}</section>
           <section class="bc"><h3>Roadmap focus</h3><div class="two"><div><h4>Now</h4><ul>${li(b.roadmap.current)}</ul></div><div><h4>Next</h4><ul>${li(b.roadmap.future)}</ul></div></div></section>
-          <section class="bc"><h3>Layoffs, most recent first</h3>${(b.layoffs || []).length ? `<table><thead><tr><th>When</th><th>What</th><th>How many</th></tr></thead><tbody>${b.layoffs.map(l => `<tr><td class="d">${e(l.date)}</td><td>${e(l.detail)}</td><td class="n">${e(l.size)}</td></tr>`).join('')}</tbody></table>` : ''}
-            ${b.layoffNote ? `<p class="fine"${(b.layoffs || []).length ? '' : ' style="margin-top:0;font-size:14px;color:var(--text)"'}>${e(b.layoffNote)}</p>` : ''}</section>
         </div>
         <div class="col">
           <section class="bc"><h3>Claude's stability grade</h3><div class="grade"><div class="big g-${g}">${e(b.grade.letter)}</div><ul>${li(b.grade.why)}</ul></div></section>
-          <section class="bc"><h3>Top 10 competitors</h3><ol>${li(b.competitors)}</ol></section>
+          ${b.concern ? `<section class="bc"><h3>Products of concern</h3><div class="concern">${[['Interest-based products', b.concern.interest], ['Defense and military', b.concern.defense]].map(([t, c]) => c ? `<div><div class="ch"><b>${t}</b><span class="lv lv-${e(String(c.level).split(' ')[0])}">${e(c.level)}</span></div><p>${e(c.text)}</p></div>` : '').join('')}</div></section>` : ''}
+          <section class="bc"><h3>Layoffs, most recent first</h3>${(b.layoffs || []).length ? `<table><thead><tr><th>When</th><th>What</th><th>How many</th></tr></thead><tbody>${b.layoffs.map(l => `<tr><td class="d">${e(l.date)}</td><td>${e(l.detail)}</td><td class="n">${e(l.size)}</td></tr>`).join('')}</tbody></table>` : ''}
+            ${b.layoffNote ? `<p class="fine"${(b.layoffs || []).length ? '' : ' style="margin-top:0;font-size:14px;color:var(--text)"'}>${e(b.layoffNote)}</p>` : ''}</section>
         </div>
       </div>
       <div class="bf"><span>Researched by Claude from public sources, as of ${e(b.asOf || '')}. The grade is Claude's opinion, not financial advice.</span>

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-22T00:00:00Z",
+  "updated_at": "2026-11-22T12:00:00Z",
   "note": "Compiled by Claude from public sources. Grades are Claude's opinion of stability, not financial advice.",
   "briefs": {
     "ServiceNow": {
@@ -25,15 +25,17 @@
       },
       "revenueMix": [
         {
-          "label": "Subscription",
-          "pct": 97
+          "label": "Subscriptions",
+          "pct": 97,
+          "detail": "$12.9B. Cloud software sold per user or per use: IT service and operations management (the largest and original business), security and risk, HR and employee workflows, customer service / CRM and industry products, and low-code app building. AI add-ons (Now Assist) passed $600M of annual contract value in 2025."
         },
         {
-          "label": "Professional services & other",
-          "pct": 3
+          "label": "Professional services and other",
+          "pct": 3,
+          "detail": "About $0.4B. Implementation help and training."
         }
       ],
-      "mixNote": "FY2025: $12.9B of $13.3B is subscription.",
+      "mixNote": "ServiceNow does not publish dollars by product line. CRM and industry workflows are its fastest-growing areas.",
       "roadmap": {
         "current": [
           "Agentic AI on the Now Platform: Now Assist, AI Agents and an AI control tower for governing agents",
@@ -109,9 +111,48 @@
         {
           "title": "Several hundred roles cut (People Matters)",
           "url": "https://www.peoplematters.in/news/strategic-hr/servicenow-cuts-several-hundred-roles-as-ceo-targets-flat-headcount-in-2026-51104"
+        },
+        {
+          "title": "Army enterprise agreement for ServiceNow",
+          "url": "https://www.army.mil/article/266784/acc_ri_it_team_establishes_army_enterprise_agreement_for_servicenow"
+        },
+        {
+          "title": "Defense Department IL5 authorization",
+          "url": "https://newsroom.servicenow.com/press-releases/details/2022/ServiceNow-Secures-U-S--Department-of-Defense-Impact-Level-5-Provisional-Authorization-03-30-2022-12-00-AM/default.aspx"
+        },
+        {
+          "title": "Revenue by geography (StockAnalysis)",
+          "url": "https://stockanalysis.com/quote/etr/4S0/financials/metrics"
         }
       ],
-      "asOf": "2026-11-21"
+      "asOf": "2026-11-22",
+      "revenueMix2": {
+        "title": "By region (FY2024)",
+        "items": [
+          {
+            "label": "North America",
+            "pct": 63
+          },
+          {
+            "label": "Europe, Middle East & Africa",
+            "pct": 26
+          },
+          {
+            "label": "Asia Pacific & other",
+            "pct": 11
+          }
+        ]
+      },
+      "concern": {
+        "interest": {
+          "level": "None found",
+          "text": "Sells software subscriptions, not loans or credit. Its only interest income is on its own cash and investments."
+        },
+        "defense": {
+          "level": "Moderate",
+          "text": "A software supplier to the US military, not a weapons maker. The Army has an enterprise agreement for ServiceNow licences with a five-year ceiling of about $432M (awarded Dec 2022), and its National Security Cloud is authorized for Defense Department and intelligence workloads. Global government was among its fastest-growing sectors in late 2025."
+        }
+      }
     },
     "Experian": {
       "ownership": {
@@ -136,23 +177,22 @@
       },
       "revenueMix": [
         {
-          "label": "North America",
-          "pct": 67
+          "label": "Business data",
+          "pct": 52,
+          "detail": "Credit reports, credit scores and newer data (income, rent, buy-now-pay-later) sold to banks, card issuers, mortgage and auto lenders, plus data for health, automotive and marketing clients."
         },
         {
-          "label": "Latin America",
-          "pct": 14
+          "label": "Consumer services",
+          "pct": 27,
+          "detail": "Paid credit-monitoring and identity-protection subscriptions, commissions for referring members to credit cards, loans and insurance through its marketplace, and white-label services for partners. North America alone is over $1.7B."
         },
         {
-          "label": "UK & Ireland",
-          "pct": 12
-        },
-        {
-          "label": "EMEA & Asia Pacific",
-          "pct": 7
+          "label": "Business decisioning software",
+          "pct": 21,
+          "detail": "Software and analytics that lenders use to approve, price and collect loans, plus fraud and identity checks."
         }
       ],
-      "mixNote": "By region. North America revenue was $5.6B.",
+      "mixNote": "Split is from Experian's FY2024 chart; in FY2026 business clients were 73% and consumers 27%. By client type (FY2024): financial services 39%, direct-to-consumer 16%, health 8%, retail 6%, software and professional services 6%, automotive 4%, insurance 4%.",
       "roadmap": {
         "current": [
           "Ascend platform for credit data, analytics and decisioning",
@@ -233,9 +273,48 @@
         {
           "title": "UK headcount (Nottingham Post)",
           "url": "https://www.magzter.com/nb/stories/newspaper/Nottingham-Post/EXPERIAN-SHEDS-271-JOBS-AS-PROFITS-LEAP-TO-90M"
+        },
+        {
+          "title": "Experian at a glance (revenue by activity and client)",
+          "url": "https://www.experianplc.com/about-us/experian-at-a-glance"
+        },
+        {
+          "title": "Experian business model",
+          "url": "https://www.experianplc.com/what-we-do/our-business-model"
         }
       ],
-      "asOf": "2026-11-21"
+      "asOf": "2026-11-22",
+      "revenueMix2": {
+        "title": "By region (FY2026)",
+        "items": [
+          {
+            "label": "North America",
+            "pct": 67
+          },
+          {
+            "label": "Latin America (mostly Brazil)",
+            "pct": 14
+          },
+          {
+            "label": "UK & Ireland",
+            "pct": 12
+          },
+          {
+            "label": "EMEA & Asia Pacific",
+            "pct": 7
+          }
+        ]
+      },
+      "concern": {
+        "interest": {
+          "level": "High",
+          "text": "Not a lender itself, but most of the business exists to support interest-based lending. Its data, scores and decision software are what lenders use to grant and price loans; financial-services clients were about 39% of revenue. On the consumer side it earns commissions for steering members to credit cards and personal loans."
+        },
+        "defense": {
+          "level": "None found",
+          "text": "No defense or weapons business found. It does sell identity and fraud checks to government and public-sector bodies."
+        }
+      }
     },
     "Toast": {
       "ownership": {
@@ -247,8 +326,8 @@
         "note": "2026 ranking, so Fortune 1000 rather than top 500"
       },
       "revenue": {
-        "value": "~$6.15B",
-        "period": "FY2025 (Dec)"
+        "value": "$6.15B",
+        "period": "FY2025 (Dec), up 24%"
       },
       "profit": {
         "value": "$342M",
@@ -260,19 +339,22 @@
       },
       "revenueMix": [
         {
-          "label": "Payments / fintech",
-          "pct": 82
+          "label": "Payments and financial services",
+          "pct": 82,
+          "detail": "$5.04B. A fee on every card payment its restaurants take ($195B of volume in 2025); most of that fee is passed on to card networks and banks. Also includes Toast Capital lending."
         },
         {
-          "label": "Subscription software",
-          "pct": 15
+          "label": "Software subscriptions",
+          "pct": 15,
+          "detail": "$936M, up 33%. Monthly fees for the point-of-sale system, online ordering, payroll, marketing and other add-ons."
         },
         {
-          "label": "Hardware & services",
-          "pct": 3
+          "label": "Hardware and services",
+          "pct": 3,
+          "detail": "$180M. Terminals, handhelds, kitchen screens and installation, sold at a loss to win customers."
         }
       ],
-      "mixNote": "Approximate, based on recent filings.",
+      "mixNote": "From the FY2025 annual report.",
       "roadmap": {
         "current": [
           "Core US restaurants: 164,000 locations after a record 30,000 added in 2025",
@@ -335,9 +417,27 @@
         {
           "title": "2024 layoffs (Restaurant Dive)",
           "url": "https://www.restaurantdive.com/news/toast-restaurant-pos-software-services-workforce-reduction/707809/"
+        },
+        {
+          "title": "Toast FY2025 annual report (10-K)",
+          "url": "https://www.sec.gov/Archives/edgar/data/1650164/000165016426000057/tost-20251231.htm"
+        },
+        {
+          "title": "Q4 2025 call highlights (Toast Capital)",
+          "url": "https://finance.yahoo.com/news/toast-q4-earnings-call-highlights-101233713.html"
         }
       ],
-      "asOf": "2026-11-21"
+      "asOf": "2026-11-22",
+      "concern": {
+        "interest": {
+          "level": "Moderate",
+          "text": "Toast Capital offers loans to restaurants through a partner bank, repaid from a share of daily card sales, and Toast earns fees on them. Non-payment financial products, led by Toast Capital, made $51M of gross profit in Q4 2025 alone. The much larger payment-processing fees are transaction fees, not interest."
+        },
+        "defense": {
+          "level": "None found",
+          "text": "No defense or military business found."
+        }
+      }
     },
     "BD": {
       "ownership": {
@@ -363,22 +463,26 @@
       "revenueMix": [
         {
           "label": "Medical Essentials",
-          "pct": 34
+          "pct": 34,
+          "detail": "About $6.7B. Everyday hospital consumables: syringes, needles, IV catheters, blood-collection tubes."
         },
         {
           "label": "Interventional",
-          "pct": 28
+          "pct": 29,
+          "detail": "About $5.6B. Surgical products, stents and other peripheral vascular devices, urology and incontinence care."
         },
         {
           "label": "Connected Care",
-          "pct": 25
+          "pct": 24,
+          "detail": "About $4.7B. Alaris infusion pumps, Pyxis medication-dispensing cabinets, pharmacy robots and patient monitoring."
         },
         {
           "label": "BioPharma Systems",
-          "pct": 13
+          "pct": 13,
+          "detail": "About $2.4B. Prefilled syringes, injection pens and autoinjectors sold to drug makers, including for GLP-1 weight-loss drugs."
         }
       ],
-      "mixNote": "Approximate, from the June 2026 quarter. About 61% of revenue is US.",
+      "mixNote": "My sums of the four FY2026 quarters, so approximate. Roughly 80% of revenue is recurring.",
       "roadmap": {
         "current": [
           "'New BD': a focused medtech company after spinning Biosciences and Diagnostics into Waters (Feb 2026)",
@@ -460,9 +564,36 @@
         {
           "title": "BD WARN notices",
           "url": "https://www.warntracker.com/layoff/becton-dickinson-and-company-dba-bd-2026-09-01"
+        },
+        {
+          "title": "BD Q4 FY2026 segment table",
+          "url": "https://last10k.com/sec-filings/bdx/0001628280-26-070511.htm"
         }
       ],
-      "asOf": "2026-11-21"
+      "asOf": "2026-11-22",
+      "revenueMix2": {
+        "title": "By region (latest quarter)",
+        "items": [
+          {
+            "label": "United States",
+            "pct": 61
+          },
+          {
+            "label": "International",
+            "pct": 39
+          }
+        ]
+      },
+      "concern": {
+        "interest": {
+          "level": "None found",
+          "text": "Sells medical products; no lending or credit business found."
+        },
+        "defense": {
+          "level": "Low",
+          "text": "No weapons or defense products. Like other medical suppliers, it sells to military and veterans' hospitals (general knowledge, not checked for size). Its 2026 partnership with the US government is about making medical consumables domestically."
+        }
+      }
     },
     "ChargePoint": {
       "ownership": {
@@ -487,19 +618,22 @@
       },
       "revenueMix": [
         {
-          "label": "Networked charging hardware",
-          "pct": 53
+          "label": "Charging hardware",
+          "pct": 53,
+          "detail": "$216.5M, down 8%. Networked AC (Level 2) and DC fast chargers sold to workplaces, fleets, retailers, apartment owners and cities."
         },
         {
           "label": "Subscriptions",
-          "pct": 39
+          "pct": 39,
+          "detail": "$162.4M, up 13%. Cloud software to run the chargers, extended warranties, and charging sold as a bundled service."
         },
         {
           "label": "Other",
-          "pct": 8
+          "pct": 8,
+          "detail": "About $32M. Driver session fees, installation and other services."
         }
       ],
-      "mixNote": "FY2026: $216.5M hardware, $162.4M subscriptions.",
+      "mixNote": "FY2026 (year to Jan 31, 2026).",
       "roadmap": {
         "current": [
           "Three-year strategic plan built on the Eaton partnership for hardware and power equipment",
@@ -579,7 +713,30 @@
           "url": "https://finance.yahoo.com/news/chargepoint-q4-earnings-call-highlights-014827016.html"
         }
       ],
-      "asOf": "2026-11-21"
+      "asOf": "2026-11-22",
+      "revenueMix2": {
+        "title": "By region (latest quarter)",
+        "items": [
+          {
+            "label": "North America",
+            "pct": 77
+          },
+          {
+            "label": "Europe",
+            "pct": 23
+          }
+        ]
+      },
+      "concern": {
+        "interest": {
+          "level": "None found",
+          "text": "Sells chargers and software; no lending business found."
+        },
+        "defense": {
+          "level": "None found",
+          "text": "Nothing defense-specific found. Chargers are sold to government fleets among other customers."
+        }
+      }
     },
     "AutoNation": {
       "ownership": {
@@ -605,26 +762,26 @@
       "revenueMix": [
         {
           "label": "New vehicles",
-          "pct": 49
+          "pct": 49,
+          "detail": "$13.5B. About 259,000 new cars sold from 323 franchises; premium luxury brands are roughly 37% of company revenue."
         },
         {
           "label": "Used vehicles",
-          "pct": 27
+          "pct": 28,
+          "detail": "$7.8B. Retail used cars from dealerships and 26 AutoNation USA stores, plus wholesale and auctions."
         },
         {
-          "label": "Parts & service (After-Sales)",
-          "pct": 18
+          "label": "Parts and service",
+          "pct": 18,
+          "detail": "$4.8B, up 5%. Repairs, maintenance, collision centers and wholesale parts. The profit engine: about half of gross profit."
         },
         {
-          "label": "Finance & insurance",
-          "pct": 5
-        },
-        {
-          "label": "Other",
-          "pct": 1
+          "label": "Finance and insurance",
+          "pct": 5,
+          "detail": "$1.46B, up 8%. Commissions for arranging car loans and leases with lenders, plus extended-warranty and protection products. Almost all of it is profit."
         }
       ],
-      "mixNote": "Approximate. After-Sales is 18% of revenue but about half of gross profit.",
+      "mixNote": "FY2025. AutoNation Finance, its own lender, is reported separately from these lines.",
       "roadmap": {
         "current": [
           "After-Sales (service and parts) at record gross profit, about 51% of the total",
@@ -695,9 +852,31 @@
         {
           "title": "2020 layoffs (Fox Business)",
           "url": "https://www.foxbusiness.com/markets/autonation-cuts-3500-workers-for-good"
+        },
+        {
+          "title": "Revenue breakdown (StockAnalysis)",
+          "url": "https://stockanalysis.com/stocks/an/financials/metrics/"
+        },
+        {
+          "title": "AutoNation FY2025 10-K",
+          "url": "https://www.boardroomalpha.com/sec/an-10-k-2026-02-12-0001628280-26-007800"
+        },
+        {
+          "title": "Q3 2026 recap (AutoNation Finance)",
+          "url": "https://www.allinvestview.com/earnings/AN/q3-2026/"
         }
       ],
-      "asOf": "2026-11-21"
+      "asOf": "2026-11-22",
+      "concern": {
+        "interest": {
+          "level": "High",
+          "text": "A direct and growing part of the business. Finance and insurance brought in $1.46B in 2025, much of it commissions for arranging interest-bearing car loans. On top of that, AutoNation Finance is its own lender, holding about $2.9B of customer auto loans and earning interest on them; management is expanding it."
+        },
+        "defense": {
+          "level": "None found",
+          "text": "No defense or military business found."
+        }
+      }
     },
     "Hertz": {
       "ownership": {
@@ -723,14 +902,16 @@
       "revenueMix": [
         {
           "label": "Americas car rental",
-          "pct": 82
+          "pct": 79,
+          "detail": "$6.76B. Hertz, Dollar and Thrifty rentals in the US, Canada, Latin America and the Caribbean from about 4,600 locations (2,000 airport, 2,600 neighborhood). Daily rental fees plus add-ons such as insurance, fuel and upgrades; also used-car sales and rideshare-driver rentals."
         },
         {
           "label": "International car rental",
-          "pct": 18
+          "pct": 21,
+          "detail": "$1.75B. Mainly Europe and Asia Pacific; some countries are being converted to franchises."
         }
       ],
-      "mixNote": "Approximate segment split.",
+      "mixNote": "FY2025 segment revenue from the annual report.",
       "roadmap": {
         "current": [
           "'Back to Basics' turnaround: pricing, fleet discipline and cost control",
@@ -812,9 +993,23 @@
         {
           "title": "2020 layoffs (Auto Rental News)",
           "url": "https://www.autorentalnews.com/news/hertz-commits-to-cutting-10k-employees"
+        },
+        {
+          "title": "Hertz FY2025 annual report (10-K)",
+          "url": "https://www.sec.gov/Archives/edgar/data/1657853/000165785326000008/htz-20251231.htm"
         }
       ],
-      "asOf": "2026-11-21"
+      "asOf": "2026-11-22",
+      "concern": {
+        "interest": {
+          "level": "Low",
+          "text": "Does not lend to customers as a business line. It is the opposite: a heavy borrower, with about $16B of debt funding its fleet, so it pays a lot of interest. Its used-car sales arm arranges financing through outside lenders (general knowledge, not checked)."
+        },
+        "defense": {
+          "level": "None found",
+          "text": "No defense business found. It rents vehicles to government travelers like any other corporate account (general knowledge, not checked for size)."
+        }
+      }
     },
     "FieldAI": {
       "ownership": {
@@ -837,8 +1032,19 @@
         "value": "~257",
         "note": "Oct 2026; about 30 at the end of 2024"
       },
-      "revenueMix": [],
-      "mixNote": "No breakdown published. Revenue comes from deploying its robot-autonomy software with customers in construction, energy and similar industries.",
+      "revenueMix": [
+        {
+          "label": "Commercial robot autonomy",
+          "pct": null,
+          "detail": "Deploying its Field Foundation Models on customers' robots in construction, energy and similar sites; management describes multi-million-dollar contracts with large energy and construction firms."
+        },
+        {
+          "label": "Government and defense",
+          "pct": null,
+          "detail": "FieldAI Federal, a subsidiary, builds autonomous navigation for government and defense customers. Share of revenue not disclosed."
+        }
+      ],
+      "mixNote": "No percentages published. One report puts total revenue and customer contracts to date above $135M.",
       "roadmap": {
         "current": [
           "'Field Foundation Models': AI that lets many kinds of robots work in unmapped, risky sites",
@@ -893,14 +1099,36 @@
         {
           "title": "Funding detail (Sacra)",
           "url": "https://sacra.com/c/fieldai/"
+        },
+        {
+          "title": "Detroit Defense and FieldAI Federal partnership",
+          "url": "https://www.newswire.com/view/content/detroit-defense-and-fieldai-federal-announce-strategic-partnership-to-22640822"
+        },
+        {
+          "title": "FieldAI Federal job posting",
+          "url": "https://jobs.lever.co/field-ai/cd7e8721-b105-49c2-b3a3-4308447f0fb0"
+        },
+        {
+          "title": "CEO interview (Automate)",
+          "url": "https://www.automate.org/ai/industry-insights/fieldais-ceo-on-the-startups-physics-first-embodied-ai/boa"
         }
       ],
-      "asOf": "2026-11-21"
+      "asOf": "2026-11-22",
+      "concern": {
+        "interest": {
+          "level": "None found",
+          "text": "No lending or financial products."
+        },
+        "defense": {
+          "level": "High",
+          "text": "The most direct defense exposure on your list. FieldAI Federal is a subsidiary that develops autonomous navigation for government and defense, and it has a partnership with Detroit Defense to put its autonomy software on military vehicles for the global defense market. Job postings for that team mention Army, Special Operations Command and DARPA programs and security clearances. The founders' technology came out of DARPA robotics challenges. The role you are comparing is on the commercial platform side; worth asking how separate the two are."
+        }
+      }
     },
     "Propel": {
       "ownership": {
         "type": "Private",
-        "detail": "Venture-backed · Brooklyn, NY · founded 2014 · maker of the Providers app"
+        "detail": "Venture-backed · Brooklyn, NY · founded 2014 · maker of the Propel app (formerly Providers, earlier Fresh EBT)"
       },
       "fortune": {
         "rank": "Not ranked",
@@ -918,11 +1146,27 @@
         "value": "~100-200",
         "note": "job-site estimates"
       },
-      "revenueMix": [],
-      "mixNote": "No breakdown published. Reported sources are partner offers and advertising inside the free app, plus newer benefit products.",
+      "revenueMix": [
+        {
+          "label": "Advertising and offers",
+          "pct": null,
+          "detail": "The main source. Grocers, utilities, insurers, employers and nonprofits pay to show offers and job listings to app users."
+        },
+        {
+          "label": "Debit account",
+          "pct": null,
+          "detail": "A free debit card issued by Sutton Bank for receiving benefits and pay; this kind of card typically earns a small fee on each purchase."
+        },
+        {
+          "label": "Agencies and enterprise partners",
+          "pct": null,
+          "detail": "Newer work with state agencies and health plans, such as Medicare plans for low-income users."
+        }
+      ],
+      "mixNote": "No percentages published. The company says advertising is its primary income.",
       "roadmap": {
         "current": [
-          "Providers app: about 5 million users checking SNAP/EBT balances",
+          "Propel app (renamed from Providers in 2024): about 5 million users checking SNAP/EBT balances",
           "EBT theft blocking and out-of-state transaction controls (Nov 2026 update)",
           "Medicare plans for low-income users (D-SNP)",
           "Direct work with state agencies and enterprise partners, which is what this role is for"
@@ -975,9 +1219,31 @@
         {
           "title": "Company overview (Simplify)",
           "url": "https://simplify.jobs/c/Propel-APP"
+        },
+        {
+          "title": "How Propel makes money (company blog)",
+          "url": "https://www.propel.app/blog/is-propel-a-scam"
+        },
+        {
+          "title": "Forbes profile via Flourish Ventures",
+          "url": "https://flourishventures.com/news/fintech-startup-helps-families-keep-track-of-food-stamps-and-other-government-benefits-forbes/"
+        },
+        {
+          "title": "Propel card terms",
+          "url": "https://www.propel.app/propel-card/terms"
         }
       ],
-      "asOf": "2026-11-21"
+      "asOf": "2026-11-22",
+      "concern": {
+        "interest": {
+          "level": "Low",
+          "text": "Its card is a debit card, not credit, so no interest is charged to users. The open question is which advertisers it carries: the app sells offers to low-income users, and I could not confirm whether lenders are among them. Worth asking."
+        },
+        "defense": {
+          "level": "None found",
+          "text": "No defense or military business found."
+        }
+      }
     }
   }
 }
