@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-22T05:34:19.775Z",
+  "updated_at": "2026-11-22T05:34:24.207Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2593,8 +2593,19 @@
       "pos": 5
     },
     "greenhouse:toast:8226770": {
-      "removed": true,
-      "at": "2026-11-22T05:34:18.263Z"
+      "at": "2026-11-22T05:34:22.692Z",
+      "added": "2026-11-22T05:34:22.692000",
+      "pos": 6,
+      "title": "Product Lead, New Ventures",
+      "company": "Toast",
+      "url": "https://careers.toasttab.com/jobs?gh_jid=8226770",
+      "location": "Remote, USA",
+      "work": "remote",
+      "min": 190000,
+      "max": 304000,
+      "bonusPct": null,
+      "equity": null,
+      "vestYears": 4
     }
   }
 }
