@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-22T06:26:36.811Z",
+  "updated_at": "2026-11-22T06:28:05.948Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2708,7 +2708,7 @@
       }
     },
     "lever:field-ai:8a953c26-d093-4fa2-88ea-9a5e810b2ef3": {
-      "at": "2026-11-22T06:06:54.081Z",
+      "at": "2026-11-22T06:28:04.446Z",
       "added": "2026-11-22T06:03:14.404000",
       "pos": 3,
       "title": "Senior Product Manager, Core Platform (Customer Portal & Data Delivery)",
@@ -2718,11 +2718,11 @@
       "work": "onsite",
       "min": 180000,
       "max": 250000,
-      "bonusPct": 0,
+      "bonusPct": 10,
       "equity": 200000,
       "vestYears": 4,
       "est": {
-        "bonus": true,
+        "bonus": false,
         "equity": true,
         "note": "guess: private startup, no Levels.fyi PM data (paper equity)",
         "at": "2026-11-22T06:06:54.081Z"
