@@ -467,6 +467,9 @@
   #brief h4.sub { margin: 16px 0 9px; font: 600 12px/1.2 "Instrument Sans", sans-serif; color: var(--muted); }
   #brief .concern { display: grid; gap: 14px; } #brief .concern .ch { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 5px; } #brief .concern b { font-size: 14px; font-weight: 600; }
   #brief .concern p { margin: 0; font-size: 13.5px; line-height: 1.45; }
+  #brief .shr { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 9px; } #brief .shr > div { background: var(--surface-2); border-radius: 10px; padding: 8px 12px; }
+  #brief .shr b { display: block; font: 500 19px/1.2 var(--serif); } #brief .shr span { font-size: 12px; color: var(--muted); } #brief .concern .fine { margin-top: 7px; font-size: 12.5px; line-height: 1.4; }
+  #brief .concern > div + div { border-top: 1px solid var(--border); padding-top: 14px; }
   #brief .lv { font: 600 11.5px/1 "Instrument Sans", sans-serif; padding: 5px 9px; border-radius: 999px; border: 1px solid var(--border); color: var(--muted); white-space: nowrap; }
   #brief .lv-Low { background: var(--surface-2); color: var(--text); } #brief .lv-Moderate { background: var(--new); border-color: var(--new); color: var(--bg); } #brief .lv-High { background: var(--err); border-color: var(--err); color: var(--bg); }
   #brief .mix .row em { font-style: normal; font-weight: 600; text-align: right; font-variant-numeric: tabular-nums; }
@@ -1445,7 +1448,7 @@
         </div>
         <div class="col">
           <section class="bc"><h3>Claude's stability grade</h3><div class="grade"><div class="big g-${g}">${e(b.grade.letter)}</div><ul>${li(b.grade.why)}</ul></div></section>
-          ${b.concern ? `<section class="bc"><h3>Products of concern</h3><div class="concern">${[['Interest-based products', b.concern.interest], ['Defense and military', b.concern.defense]].map(([t, c]) => c ? `<div><div class="ch"><b>${t}</b><span class="lv lv-${e(String(c.level).split(' ')[0])}">${e(c.level)}</span></div><p>${e(c.text)}</p></div>` : '').join('')}</div></section>` : ''}
+          ${b.concern ? `<section class="bc"><h3>Products of concern</h3><div class="concern">${[['Interest-based products', b.concern.interest], ['Defense and military', b.concern.defense]].map(([t, c]) => c ? `<div><div class="ch"><b>${t}</b><span class="lv lv-${e(String(c.level).split(' ')[0])}">${e(c.level)}</span></div><p>${e(c.text)}</p>${c.rev || c.profit ? `<div class="shr"><div><b>${e(c.rev || 'n/a')}</b><span>of revenue</span></div><div><b>${e(c.profit || 'n/a')}</b><span>of profit</span></div></div>${c.basis ? `<p class="fine">${e(c.basis)}</p>` : ''}` : ''}</div>` : '').join('')}</div></section>` : ''}
           <section class="bc"><h3>Layoffs, most recent first</h3>${(b.layoffs || []).length ? `<table><thead><tr><th>When</th><th>What</th><th>How many</th></tr></thead><tbody>${b.layoffs.map(l => `<tr><td class="d">${e(l.date)}</td><td>${e(l.detail)}</td><td class="n">${e(l.size)}</td></tr>`).join('')}</tbody></table>` : ''}
             ${b.layoffNote ? `<p class="fine"${(b.layoffs || []).length ? '' : ' style="margin-top:0;font-size:14px;color:var(--text)"'}>${e(b.layoffNote)}</p>` : ''}</section>
         </div>

@@ -146,11 +146,17 @@
       "concern": {
         "interest": {
           "level": "None found",
-          "text": "Sells software subscriptions, not loans or credit. Its only interest income is on its own cash and investments."
+          "text": "Sells software subscriptions, not loans or credit. Its only interest income is on its own cash and investments.",
+          "rev": "0%",
+          "profit": "0%",
+          "basis": ""
         },
         "defense": {
           "level": "Moderate",
-          "text": "A software supplier to the US military, not a weapons maker. The Army has an enterprise agreement for ServiceNow licences with a five-year ceiling of about $432M (awarded Dec 2022), and its National Security Cloud is authorized for Defense Department and intelligence workloads. Global government was among its fastest-growing sectors in late 2025."
+          "text": "A software supplier to the US military, not a weapons maker. The Army has an enterprise agreement for ServiceNow licences with a five-year ceiling of about $432M (awarded Dec 2022), and its National Security Cloud is authorized for Defense Department and intelligence workloads. Global government was among its fastest-growing sectors in late 2025.",
+          "rev": "~1-3%",
+          "profit": "~1-3%",
+          "basis": "My estimate; ServiceNow does not publish it. The Army agreement alone is capped at about $86M a year, roughly 0.7% of revenue. Adding other military and intelligence customers, 1-3% is a reasonable range. Software margins are similar across customers, so the profit share should be about the same."
         }
       }
     },
@@ -192,7 +198,7 @@
           "detail": "Software and analytics that lenders use to approve, price and collect loans, plus fraud and identity checks."
         }
       ],
-      "mixNote": "Split is from Experian's FY2024 chart; in FY2026 business clients were 73% and consumers 27%. By client type (FY2024): financial services 39%, direct-to-consumer 16%, health 8%, retail 6%, software and professional services 6%, automotive 4%, insurance 4%.",
+      "mixNote": "Activity split is from Experian's FY2024 chart. By business line in FY2026: Financial Services 53%, Verticals (health, automotive, marketing) 20%, Consumer Services 27%.",
       "roadmap": {
         "current": [
           "Ascend platform for credit data, analytics and decisioning",
@@ -281,6 +287,10 @@
         {
           "title": "Experian business model",
           "url": "https://www.experianplc.com/what-we-do/our-business-model"
+        },
+        {
+          "title": "Q1 FY27 trading update (revenue by business line)",
+          "url": "https://www.experianplc.com/newsroom/press-releases/2026/trading-update--first-quarter-fy27"
         }
       ],
       "asOf": "2026-11-22",
@@ -308,11 +318,17 @@
       "concern": {
         "interest": {
           "level": "High",
-          "text": "Not a lender itself, but most of the business exists to support interest-based lending. Its data, scores and decision software are what lenders use to grant and price loans; financial-services clients were about 39% of revenue. On the consumer side it earns commissions for steering members to credit cards and personal loans."
+          "text": "Not a lender itself, but most of the business exists to support interest-based lending. Its data, scores and decision software are what lenders use to grant and price loans; financial-services clients were about 39% of revenue. On the consumer side it earns commissions for steering members to credit cards and personal loans.",
+          "rev": "~53%",
+          "profit": "~50%",
+          "basis": "Financial Services, the line that sells to banks and lenders, was 53% of FY2026 revenue (company figure). Not all of that is lending (it includes fraud and identity checks), while some consumer income (card and loan referrals) adds to it. Profit by line is not published; I assume it tracks revenue."
         },
         "defense": {
           "level": "None found",
-          "text": "No defense or weapons business found. It does sell identity and fraud checks to government and public-sector bodies."
+          "text": "No defense or weapons business found. It does sell identity and fraud checks to government and public-sector bodies.",
+          "rev": "0%",
+          "profit": "0%",
+          "basis": ""
         }
       }
     },
@@ -425,17 +441,27 @@
         {
           "title": "Q4 2025 call highlights (Toast Capital)",
           "url": "https://finance.yahoo.com/news/toast-q4-earnings-call-highlights-101233713.html"
+        },
+        {
+          "title": "Toast Q4 2025 results tables (8-K)",
+          "url": "https://www.sec.gov/Archives/edgar/data/1650164/000165016426000050/tost-20251231xexhibit991.htm"
         }
       ],
       "asOf": "2026-11-22",
       "concern": {
         "interest": {
           "level": "Moderate",
-          "text": "Toast Capital offers loans to restaurants through a partner bank, repaid from a share of daily card sales, and Toast earns fees on them. Non-payment financial products, led by Toast Capital, made $51M of gross profit in Q4 2025 alone. The much larger payment-processing fees are transaction fees, not interest."
+          "text": "Toast Capital offers loans to restaurants through a partner bank, repaid from a share of daily card sales, and Toast earns fees on them. Non-payment financial products, led by Toast Capital, made $51M of gross profit in Q4 2025 alone. The much larger payment-processing fees are transaction fees, not interest.",
+          "rev": "~3%",
+          "profit": "~10%",
+          "basis": "My estimate. In Q4 2025, Toast Capital-led products made $51M of the $298M financial-services gross profit (17%). Applying that to the full year's $1,146M gives about $195M: roughly 3% of $6.15B revenue and 10% of the $1.9B recurring gross profit."
         },
         "defense": {
           "level": "None found",
-          "text": "No defense or military business found."
+          "text": "No defense or military business found.",
+          "rev": "0%",
+          "profit": "0%",
+          "basis": ""
         }
       }
     },
@@ -587,11 +613,17 @@
       "concern": {
         "interest": {
           "level": "None found",
-          "text": "Sells medical products; no lending or credit business found."
+          "text": "Sells medical products; no lending or credit business found.",
+          "rev": "0%",
+          "profit": "0%",
+          "basis": ""
         },
         "defense": {
           "level": "Low",
-          "text": "No weapons or defense products. Like other medical suppliers, it sells to military and veterans' hospitals (general knowledge, not checked for size). Its 2026 partnership with the US government is about making medical consumables domestically."
+          "text": "No weapons or defense products. Like other medical suppliers, it sells to military and veterans' hospitals (general knowledge, not checked for size). Its 2026 partnership with the US government is about making medical consumables domestically.",
+          "rev": "Under 2%",
+          "profit": "Under 2%",
+          "basis": "Not disclosed, so this is a rough guess: sales to military and veterans' hospitals are ordinary medical supplies and are not reported separately."
         }
       }
     },
@@ -730,11 +762,17 @@
       "concern": {
         "interest": {
           "level": "None found",
-          "text": "Sells chargers and software; no lending business found."
+          "text": "Sells chargers and software; no lending business found.",
+          "rev": "0%",
+          "profit": "0%",
+          "basis": ""
         },
         "defense": {
           "level": "None found",
-          "text": "Nothing defense-specific found. Chargers are sold to government fleets among other customers."
+          "text": "Nothing defense-specific found. Chargers are sold to government fleets among other customers.",
+          "rev": "~0%",
+          "profit": "~0%",
+          "basis": "Nothing reported; any sales to military sites would be ordinary chargers and too small to be disclosed."
         }
       }
     },
@@ -864,17 +902,31 @@
         {
           "title": "Q3 2026 recap (AutoNation Finance)",
           "url": "https://www.allinvestview.com/earnings/AN/q3-2026/"
+        },
+        {
+          "title": "Q3 2025 results (gross profit by line)",
+          "url": "https://www.sec.gov/Archives/edgar/data/350698/000162828025045973/anearningsrelease93025ex991.htm"
+        },
+        {
+          "title": "Q4 2025 call (AutoNation Finance profit)",
+          "url": "https://www.aol.com/articles/autonation-q4-2025-earnings-call-153142599.html"
         }
       ],
       "asOf": "2026-11-22",
       "concern": {
         "interest": {
           "level": "High",
-          "text": "A direct and growing part of the business. Finance and insurance brought in $1.46B in 2025, much of it commissions for arranging interest-bearing car loans. On top of that, AutoNation Finance is its own lender, holding about $2.9B of customer auto loans and earning interest on them; management is expanding it."
+          "text": "A direct and growing part of the business. Finance and insurance brought in $1.46B in 2025, much of it commissions for arranging interest-bearing car loans. On top of that, AutoNation Finance is its own lender, holding about $2.9B of customer auto loans and earning interest on them; management is expanding it.",
+          "rev": "~5%",
+          "profit": "~29%",
+          "basis": "Finance and insurance was $1.46B of $27.6B revenue. Because it is nearly all margin, it is about 29% of gross profit (30% in Q3 2025: $375M of $1,238M). That line also includes warranty and protection products, which AutoNation does not split out, so loan-arranging alone is lower. AutoNation Finance adds little so far: $10M of operating profit in 2025, under 1% of the total, but $36M in the first nine months of 2026."
         },
         "defense": {
           "level": "None found",
-          "text": "No defense or military business found."
+          "text": "No defense or military business found.",
+          "rev": "0%",
+          "profit": "0%",
+          "basis": ""
         }
       }
     },
@@ -1003,11 +1055,17 @@
       "concern": {
         "interest": {
           "level": "Low",
-          "text": "Does not lend to customers as a business line. It is the opposite: a heavy borrower, with about $16B of debt funding its fleet, so it pays a lot of interest. Its used-car sales arm arranges financing through outside lenders (general knowledge, not checked)."
+          "text": "Does not lend to customers as a business line. It is the opposite: a heavy borrower, with about $16B of debt funding its fleet, so it pays a lot of interest. Its used-car sales arm arranges financing through outside lenders (general knowledge, not checked).",
+          "rev": "0%",
+          "profit": "0%",
+          "basis": "No lending income. Hertz pays interest rather than earning it."
         },
         "defense": {
           "level": "None found",
-          "text": "No defense business found. It rents vehicles to government travelers like any other corporate account (general knowledge, not checked for size)."
+          "text": "No defense business found. It rents vehicles to government travelers like any other corporate account (general knowledge, not checked for size).",
+          "rev": "~0%",
+          "profit": "~0%",
+          "basis": "Not disclosed; government rentals are not reported separately and are not a defense product."
         }
       }
     },
@@ -1117,11 +1175,17 @@
       "concern": {
         "interest": {
           "level": "None found",
-          "text": "No lending or financial products."
+          "text": "No lending or financial products.",
+          "rev": "0%",
+          "profit": "0%",
+          "basis": ""
         },
         "defense": {
           "level": "High",
-          "text": "The most direct defense exposure on your list. FieldAI Federal is a subsidiary that develops autonomous navigation for government and defense, and it has a partnership with Detroit Defense to put its autonomy software on military vehicles for the global defense market. Job postings for that team mention Army, Special Operations Command and DARPA programs and security clearances. The founders' technology came out of DARPA robotics challenges. The role you are comparing is on the commercial platform side; worth asking how separate the two are."
+          "text": "The most direct defense exposure on your list. FieldAI Federal is a subsidiary that develops autonomous navigation for government and defense, and it has a partnership with Detroit Defense to put its autonomy software on military vehicles for the global defense market. Job postings for that team mention Army, Special Operations Command and DARPA programs and security clearances. The founders' technology came out of DARPA robotics challenges. The role you are comparing is on the commercial platform side; worth asking how separate the two are.",
+          "rev": "Not disclosed",
+          "profit": "Not disclosed",
+          "basis": "Private company, and it has not said how much of its business is federal. I can't responsibly estimate it; the customer examples management cites publicly are commercial (energy, construction)."
         }
       }
     },
@@ -1237,11 +1301,17 @@
       "concern": {
         "interest": {
           "level": "Low",
-          "text": "Its card is a debit card, not credit, so no interest is charged to users. The open question is which advertisers it carries: the app sells offers to low-income users, and I could not confirm whether lenders are among them. Worth asking."
+          "text": "Its card is a debit card, not credit, so no interest is charged to users. The open question is which advertisers it carries: the app sells offers to low-income users, and I could not confirm whether lenders are among them. Worth asking.",
+          "rev": "0% direct",
+          "profit": "0% direct",
+          "basis": "Propel does not lend. If lenders advertise in the app, some advertising income would be linked to interest-based products, but I found no figures."
         },
         "defense": {
           "level": "None found",
-          "text": "No defense or military business found."
+          "text": "No defense or military business found.",
+          "rev": "0%",
+          "profit": "0%",
+          "basis": ""
         }
       }
     }
