@@ -510,7 +510,7 @@
     </div>
     <div class="card" id="cmpBody"></div>
     <details class="foot"><summary>How these numbers work · dashed boxes are Levels.fyi estimates</summary>
-      <p>Salary and remote status are filled in from the posting when it states them; everything is editable. Dashed boxes are bonus and equity estimates from Levels.fyi, filled in automatically within about an hour of adding a role; type over them any time. Drag the dots at the left of a row to reorder. Bonus amount = bonus % × salary. Equity per year = grant ÷ vesting years. 50% of range = the midpoint between starting and high-end salary. Total = salary + bonus + equity per year, shown from starting salary to high end, with the midpoint figure underneath.</p></details>
+      <p>Salary and remote status are filled in from the posting when it states them; everything is editable. Dashed boxes are bonus and equity estimates from Levels.fyi, filled in by Claude when you ask it to “fill estimates”; type over them any time. Drag the dots at the left of a row to reorder. Bonus amount = bonus % × salary. Equity per year = grant ÷ vesting years. 50% of range = the midpoint between starting and high-end salary. Total = salary + bonus + equity per year, shown from starting salary to high end, with the midpoint figure underneath.</p></details>
   </section>
 
   <section class="brief-wrap">
@@ -1396,7 +1396,7 @@
     body.innerHTML = `<table><thead><tr><th class="grip"></th><th>Company</th><th>Role</th><th>Remote</th><th class="num">Starting salary</th><th class="num">50% of range<br>(midpoint)</th><th class="num">High-end salary</th><th class="num">Bonus %<br>and amount</th><th class="num">Equity grant<br>and vesting years</th><th class="num">Total comp,<br>annual</th><th></th></tr></thead><tbody>${
       list.map(([k, it]) => {
         const j = jobs.find(x => x.key === k), gone = !j || j.status === 'closed';
-        // est: set by the scheduled Levels.fyi lookup for the fields it filled in; a flag clears once that field is edited by hand
+        // est: set by Claude's on-request Levels.fyi lookup for the fields it filled in; a flag clears once that field is edited by hand
         const est = it.est || {}, estTip = ` title="Estimate: ${escapeHtml(est.note || 'based on Levels.fyi data')}. Type over it any time."`;
         return `<tr data-key="${escapeHtml(k)}" class="${gone ? 'gone' : ''}">
           <td class="grip"><button class="grip-h" title="Drag to reorder (or press ↑ / ↓)" aria-label="Reorder ${escapeHtml(it.title)}: drag, or press up or down arrow"><svg viewBox="0 0 12 18" width="10" height="15" fill="currentColor" aria-hidden="true"><circle cx="3" cy="3" r="1.5"/><circle cx="9" cy="3" r="1.5"/><circle cx="3" cy="9" r="1.5"/><circle cx="9" cy="9" r="1.5"/><circle cx="3" cy="15" r="1.5"/><circle cx="9" cy="15" r="1.5"/></svg></button></td>
