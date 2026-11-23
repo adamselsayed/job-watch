@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-23T20:30:19.057Z",
+  "updated_at": "2026-11-23T20:32:13.334Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2781,7 +2781,7 @@
       }
     },
     "workable:busright:1B13C5DAD8": {
-      "at": "2026-11-23T20:30:17.545Z",
+      "at": "2026-11-23T20:32:13.334Z",
       "added": "2026-11-23T20:30:17.545000",
       "pos": 8,
       "title": "Head of Product",
@@ -2791,9 +2791,15 @@
       "work": "remote",
       "min": null,
       "max": null,
-      "bonusPct": null,
-      "equity": null,
-      "vestYears": 4
+      "bonusPct": 0,
+      "equity": 400000,
+      "vestYears": 4,
+      "est": {
+        "bonus": true,
+        "equity": true,
+        "note": "guess: no Levels.fyi data; private Series B startup (paper equity)",
+        "at": "2026-11-23T20:32:13.334Z"
+      }
     }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-22T12:00:00Z",
+  "updated_at": "2026-11-23T20:32:13.334Z",
   "note": "Compiled by Claude from public sources. Grades are Claude's opinion of stability, not financial advice.",
   "briefs": {
     "ServiceNow": {
@@ -1314,6 +1314,118 @@
           "basis": ""
         }
       }
+    },
+    "BusRight": {
+      "ownership": {
+        "type": "Private",
+        "detail": "Growth-equity backed (Volition Capital) · New York, NY · remote-friendly · Northeastern University spin-out"
+      },
+      "fortune": {
+        "rank": "Not ranked",
+        "note": "Private startup"
+      },
+      "revenue": {
+        "value": "Not disclosed",
+        "period": "company says revenue grew 700%+ in 2022; nothing newer published"
+      },
+      "profit": {
+        "value": "Not disclosed",
+        "note": "assume it is spending its new funding on growth"
+      },
+      "employees": {
+        "value": "21-100",
+        "note": "job-site band; it planned about 40 after its 2023 round"
+      },
+      "revenueMix": [
+        {
+          "label": "Software subscriptions",
+          "pct": null,
+          "detail": "One platform sold to school districts and bus contractors: route building, live GPS tracking, turn-by-turn driver navigation, student ridership tracking and a parent app."
+        },
+        {
+          "label": "On-bus hardware",
+          "pct": null,
+          "detail": "Rugged tablets installed on each bus to run the driver app. Whether these are sold or bundled is not published."
+        }
+      ],
+      "mixNote": "No percentages or pricing published. Customers are public school districts and the private companies that run their buses.",
+      "roadmap": {
+        "current": [
+          "All-in-one school transportation platform, used by nearly 1 million parents, drivers and staff in 36 states",
+          "Raised $30M+ in March 2026, led by Volition Capital, to launch more products",
+          "Selling against the driver shortage: routes rebuilt in about a minute around who showed up"
+        ],
+        "future": [
+          "A 24/7 AI agent to answer parents' and staff questions",
+          "More precise local mapping",
+          "Tap-on (NFC) student check-in for child safety"
+        ]
+      },
+      "layoffs": [],
+      "layoffNote": "No layoffs found. Coverage of a company this size is thin.",
+      "competitors": [
+        "Transfinder",
+        "Tyler Technologies (Versatrans, Traversa)",
+        "Edulog",
+        "Zum",
+        "BusPlanner",
+        "TransAct (EZRouting)",
+        "Orbit Software (BusBoss)",
+        "Zonar",
+        "Samsara",
+        "HopSkipDrive"
+      ],
+      "grade": {
+        "letter": "B-",
+        "why": [
+          "Fresh $30M+ growth round in March 2026 and a footprint in 36 states",
+          "School-district customers are slow to win but tend to stay",
+          "Marked down because it is small and private with no current financials, and sells into tight public budgets against long-established vendors"
+        ]
+      },
+      "concern": {
+        "interest": {
+          "level": "None found",
+          "text": "Sells software and devices to schools; no lending or credit products.",
+          "rev": "0%",
+          "profit": "0%",
+          "basis": ""
+        },
+        "defense": {
+          "level": "None found",
+          "text": "No defense products. It has school-district customers located on military bases, which is ordinary school busing, and its 'military-grade' tablets just means rugged.",
+          "rev": "0%",
+          "profit": "0%",
+          "basis": ""
+        }
+      },
+      "sources": [
+        {
+          "title": "$30M round announcement (School Transportation News)",
+          "url": "https://stnonline.com/industry-releases/busright-raises-30m-to-power-the-largest-mass-transit-system"
+        },
+        {
+          "title": "$30M round (SiliconANGLE)",
+          "url": "https://siliconangle.com/?p=734939"
+        },
+        {
+          "title": "Series A and 2022 growth (School Bus Fleet)",
+          "url": "https://www.schoolbusfleet.com/news/busright-secures-another-7-million-in-funding"
+        },
+        {
+          "title": "Company profile (Welcome to the Jungle)",
+          "url": "https://app.welcometothejungle.com/companies/BusRight"
+        },
+        {
+          "title": "Funding history (CB Insights)",
+          "url": "https://www.cbinsights.com/company/busright/financials"
+        },
+        {
+          "title": "Competitors (CB Insights)",
+          "url": "https://www.cbinsights.com/company/transfinder/alternatives-competitors"
+        }
+      ],
+      "asOf": "2026-11-23"
     }
   }
 }
