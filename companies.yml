@@ -308,3 +308,8 @@
   ats: ashby
   board: propel
   url: https://jobs.ashbyhq.com/propel
+
+- name: BusRight
+  ats: workable
+  board: busright
+  url: https://apply.workable.com/busright/#jobs
