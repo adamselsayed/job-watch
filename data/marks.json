@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-23T20:25:24.102Z",
+  "updated_at": "2026-11-23T20:30:19.057Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2779,6 +2779,21 @@
         "note": "guess: small private company, no Levels.fyi pay data (paper equity)",
         "at": "2026-11-22T07:15:17.973Z"
       }
+    },
+    "workable:busright:1B13C5DAD8": {
+      "at": "2026-11-23T20:30:17.545Z",
+      "added": "2026-11-23T20:30:17.545000",
+      "pos": 8,
+      "title": "Head of Product",
+      "company": "BusRight",
+      "url": "https://apply.workable.com/busright/j/1B13C5DAD8/",
+      "location": "Remote - Boston, United States",
+      "work": "remote",
+      "min": null,
+      "max": null,
+      "bonusPct": null,
+      "equity": null,
+      "vestYears": 4
     }
   }
 }
