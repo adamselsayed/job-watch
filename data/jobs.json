@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T19:07:16+00:00",
+  "generated_at": "2026-11-23T20:24:41+00:00",
   "criteria": {
     "title_keywords": [
       "product"
@@ -607,6 +607,17 @@
       "error": null,
       "total_jobs": 8,
       "matched": 2
+    },
+    {
+      "name": "BusRight",
+      "ats": "workable",
+      "board": "busright",
+      "url": "https://apply.workable.com/busright/#jobs",
+      "fetched_at": "2026-11-23T20:24:41+00:00",
+      "status": "ok",
+      "error": null,
+      "total_jobs": 4,
+      "matched": 1
     }
   ],
   "jobs": [
@@ -3340,6 +3351,27 @@
       "key": "phenom:careers.cisco.com/global/en:CISCISGLOBAL2026324EXTERNALENGLOBAL",
       "first_seen": "2026-11-09T23:53:19+00:00",
       "last_seen": "2026-11-23T19:07:16+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "1B13C5DAD8",
+      "req_id": null,
+      "title": "Head of Product",
+      "location": "Remote - Boston, United States",
+      "location_detail": "New York, United States; San Francisco, United States",
+      "department": "",
+      "published_at": "2026-11-13T00:00:00.000Z",
+      "updated_at": null,
+      "url": "https://apply.workable.com/busright/j/1B13C5DAD8/",
+      "salary": null,
+      "us": true,
+      "remote": "remote",
+      "remote_confidence": "high",
+      "company": "BusRight",
+      "key": "workable:busright:1B13C5DAD8",
+      "first_seen": "2026-11-23T20:24:41+00:00",
+      "last_seen": "2026-11-23T20:24:41+00:00",
       "status": "open",
       "closed_at": null
     },
