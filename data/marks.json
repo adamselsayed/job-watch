@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-23T19:11:16.620Z",
+  "updated_at": "2026-11-23T20:25:24.102Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2693,25 +2693,8 @@
       "at": "2026-11-22T06:10:46.629Z"
     },
     "oracle:fa-evlf-saasfaprod1.fa.ocs.oraclecloud.com/CX_1:44608": {
-      "at": "2026-11-22T07:14:20.123Z",
-      "added": "2026-11-21T06:53:28.752000",
-      "title": "VP Product Management -Consumer Experience",
-      "company": "Hertz",
-      "url": "https://jobs.hertzcareers.com/#en/sites/CX_1/job/44608",
-      "location": "United States",
-      "work": "",
-      "min": 250000,
-      "max": 300000,
-      "bonusPct": 30,
-      "equity": 400000,
-      "vestYears": 4,
-      "pos": 8,
-      "est": {
-        "bonus": true,
-        "equity": true,
-        "note": "guess: extrapolated from Levels.fyi Senior PM data",
-        "at": "2026-11-22T06:05:05.877Z"
-      }
+      "removed": true,
+      "at": "2026-11-23T20:25:22.599Z"
     },
     "greenhouse:toast:8226770": {
       "at": "2026-11-22T08:52:56.578Z",
