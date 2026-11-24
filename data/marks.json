@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-24T19:16:10.244Z",
+  "updated_at": "2026-11-24T19:17:22.244Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2568,6 +2568,12 @@
       "at": "2026-11-24T19:16:08.717Z",
       "title": "Senior Group Product Manager, Connected Cameras",
       "company": "General Motors"
+    },
+    "workable:busright:1B13C5DAD8": {
+      "status": "applied",
+      "at": "2026-11-24T19:17:20.733Z",
+      "title": "Head of Product",
+      "company": "BusRight"
     }
   },
   "groups": {
