@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-24T19:15:48.159Z",
+  "updated_at": "2026-11-24T19:16:10.244Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2561,6 +2561,12 @@
       "status": "archived",
       "at": "2026-11-24T19:15:46.651Z",
       "title": "Staff Product Manager, OnStar Cross-Product Strategy & Integration",
+      "company": "General Motors"
+    },
+    "workday:generalmotors.wd5/Careers_GM:JR-202624191": {
+      "status": "archived",
+      "at": "2026-11-24T19:16:08.717Z",
+      "title": "Senior Group Product Manager, Connected Cameras",
       "company": "General Motors"
     }
   },
