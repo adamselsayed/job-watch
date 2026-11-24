@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-24T01:49:08.837Z",
+  "updated_at": "2026-11-24T01:49:11.856Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2647,7 +2647,7 @@
       }
     },
     "talentbrew:jobs.bd.com/en:103567025056": {
-      "at": "2026-11-22T07:29:06.043Z",
+      "at": "2026-11-24T01:49:10.354Z",
       "added": "2026-11-21T02:24:27.338000",
       "title": "Associate Director, Lead Product Manager",
       "company": "BD",
@@ -2659,7 +2659,7 @@
       "bonusPct": 15,
       "equity": 80000,
       "vestYears": 4,
-      "pos": 4,
+      "pos": 3,
       "est": {
         "bonus": true,
         "equity": true,
@@ -2718,9 +2718,9 @@
       }
     },
     "smartrecruiters:Experian:744000152972234": {
-      "at": "2026-11-24T01:49:07.335Z",
+      "at": "2026-11-24T01:49:10.354Z",
       "added": "2026-11-22T05:47:55.857000",
-      "pos": 3,
+      "pos": 4,
       "title": "Director, Product Management (Remote)",
       "company": "Experian",
       "url": "https://jobs.experian.com/job/director-product-management-remote-in-united-states-jid-6279",
