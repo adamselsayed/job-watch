@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-24T19:12:27.633Z",
+  "updated_at": "2026-11-24T19:12:29.803Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2543,6 +2543,12 @@
       "status": "archived",
       "at": "2026-11-24T19:12:26.102Z",
       "title": "Product Manager - Low Voltage Motor Controls",
+      "company": "Siemens"
+    },
+    "avature:jobs.siemens.com/en_US/externaljobs:529895": {
+      "status": "archived",
+      "at": "2026-11-24T19:12:28.273Z",
+      "title": "Junior Product Manager - Low Voltage Motor Controls",
       "company": "Siemens"
     }
   },
