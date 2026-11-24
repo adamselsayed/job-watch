@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-24T19:12:29.803Z",
+  "updated_at": "2026-11-24T19:15:14.546Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2549,6 +2549,12 @@
       "status": "archived",
       "at": "2026-11-24T19:12:28.273Z",
       "title": "Junior Product Manager - Low Voltage Motor Controls",
+      "company": "Siemens"
+    },
+    "avature:jobs.siemens.com/en_US/externaljobs:530504": {
+      "status": "archived",
+      "at": "2026-11-24T19:15:13.084Z",
+      "title": "Head of Product Management, Solido Custom IC Division",
       "company": "Siemens"
     }
   },
