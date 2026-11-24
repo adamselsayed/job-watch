@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-24T19:17:22.244Z",
+  "updated_at": "2026-11-24T19:17:39.327Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2574,6 +2574,12 @@
       "at": "2026-11-24T19:17:20.733Z",
       "title": "Head of Product",
       "company": "BusRight"
+    },
+    "greenhouse:smartsheet:8265320": {
+      "status": "archived",
+      "at": "2026-11-24T19:17:37.817Z",
+      "title": "Product Operations Manager (Remote Eligible)",
+      "company": "Smartsheet"
     }
   },
   "groups": {
