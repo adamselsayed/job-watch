@@ -251,6 +251,11 @@
 "first_seen": "2026-11-01",
 "posted": "2026-10-09"
 },
+"greenhouse:housecall:6270748004": {
+"company": "Housecall Pro",
+"first_seen": "2026-11-25",
+"posted": "2026-11-24"
+},
 "greenhouse:komodohealth:8599153002": {
 "company": "Komodo Health",
 "first_seen": "2026-10-30",
@@ -475,6 +480,11 @@
 "company": "Taskrabbit",
 "first_seen": "2026-11-01",
 "posted": "2026-10-23"
+},
+"greenhouse:taskrabbit:8393506": {
+"company": "Taskrabbit",
+"first_seen": "2026-11-25",
+"posted": "2026-11-24"
 },
 "greenhouse:toast:7673399": {
 "company": "Toast",
@@ -2301,6 +2311,11 @@
 "first_seen": "2026-11-21",
 "posted": "2026-11-20"
 },
+"talentbrew:www.careers.ford.com/en:103754193088": {
+"company": "Ford",
+"first_seen": "2026-11-25",
+"posted": "2026-11-24"
+},
 "talentbrew:www.careers.ford.com/en:98847422048": {
 "company": "Ford",
 "first_seen": "2026-11-05",
@@ -2505,6 +2520,11 @@
 "company": "Hitachi",
 "first_seen": "2026-10-30",
 "posted": "2026-09-03"
+},
+"workday:hitachi.wd1/hitachi:R0122007": {
+"company": "Hitachi",
+"first_seen": "2026-11-25",
+"posted": "2026-11-25"
 },
 "workday:hitachi.wd1/hitachi:R0138071": {
 "company": "Hitachi",
@@ -2935,7 +2955,12 @@
 "company": "NVIDIA",
 "first_seen": "2026-11-20",
 "posted": "2026-11-20"
+},
+"workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2030526": {
+"company": "NVIDIA",
+"first_seen": "2026-11-25",
+"posted": "2026-11-24"
 }
 },
-"updated_at": "2026-11-24T19:28:02+00:00"
+"updated_at": "2026-11-25T14:25:29+00:00"
 }
