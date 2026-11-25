@@ -2591,6 +2591,11 @@
 "first_seen": "2026-11-19",
 "posted": "2026-11-19"
 },
+"workday:lego.wd103/LEGO_External:0000038229": {
+"company": "LEGO",
+"first_seen": "2026-11-25",
+"posted": "2026-10-21"
+},
 "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR1996264": {
 "company": "NVIDIA",
 "first_seen": "2026-11-01",
@@ -2962,5 +2967,5 @@
 "posted": "2026-11-24"
 }
 },
-"updated_at": "2026-11-25T20:47:29+00:00"
+"updated_at": "2026-11-25T20:48:29+00:00"
 }

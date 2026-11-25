@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-25T20:47:29+00:00",
+  "generated_at": "2026-11-25T20:48:07+00:00",
   "criteria": {
     "title_keywords": [
       "product"
@@ -621,14 +621,14 @@
     },
     {
       "name": "LEGO",
-      "ats": "unknown",
-      "board": "lego",
+      "ats": "workday",
+      "board": "lego.wd103/LEGO_External",
       "url": "https://www.lego.com/en-us/careers/search",
-      "fetched_at": "2026-11-25T20:47:29+00:00",
+      "fetched_at": "2026-11-25T20:48:07+00:00",
       "status": "ok",
       "error": null,
-      "total_jobs": 0,
-      "matched": 0
+      "total_jobs": 9,
+      "matched": 1
     }
   ],
   "jobs": [
@@ -6560,6 +6560,27 @@
       "key": "phenom:careers.cisco.com/global/en:CISCISGLOBAL2027733EXTERNALENGLOBAL",
       "first_seen": "2026-11-09T23:53:19+00:00",
       "last_seen": "2026-11-25T14:12:01+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "0000038229",
+      "req_id": "0000038229",
+      "title": "Product Introduction Technician",
+      "location": "Richmond Manufacturing, United States of America",
+      "location_detail": "",
+      "department": "1025 LEGO Manufacturing Virginia Inc.",
+      "published_at": "2026-10-21",
+      "updated_at": null,
+      "url": "https://lego.wd103.myworkdayjobs.com/LEGO_External/job/Richmond-Manufacturing/Product-Introduction-Technician_0000038229-1",
+      "salary": null,
+      "us": true,
+      "remote": "hybrid",
+      "remote_confidence": "low",
+      "company": "LEGO",
+      "key": "workday:lego.wd103/LEGO_External:0000038229",
+      "first_seen": "2026-11-25T20:48:07+00:00",
+      "last_seen": "2026-11-25T20:48:07+00:00",
       "status": "open",
       "closed_at": null
     },
