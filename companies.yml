@@ -315,6 +315,6 @@
   url: https://apply.workable.com/busright/#jobs
 
 - name: LEGO
-  ats: unknown
-  board: lego
+  ats: workday
+  board: lego.wd103/LEGO_External
   url: https://www.lego.com/en-us/careers/search
