@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-25T23:24:33+00:00",
+  "generated_at": "2026-11-25T23:25:03+00:00",
   "criteria": {
     "title_keywords": [
       "product"
@@ -632,14 +632,14 @@
     },
     {
       "name": "onX",
-      "ats": "unknown",
+      "ats": "greenhouse",
       "board": "onxmaps",
       "url": "https://www.onxmaps.com/join-our-team",
-      "fetched_at": "2026-11-25T23:24:33+00:00",
+      "fetched_at": "2026-11-25T23:25:03+00:00",
       "status": "ok",
       "error": null,
-      "total_jobs": 0,
-      "matched": 0
+      "total_jobs": 33,
+      "matched": 3
     }
   ],
   "jobs": [
@@ -5383,6 +5383,27 @@
       "closed_at": null
     },
     {
+      "job_id": "4725528006",
+      "req_id": "880",
+      "title": "Head of Product, Angling",
+      "location": "Bozeman, Montana, United States; Missoula, Montana, United States; Open to Remote",
+      "location_detail": "Austin, Texas, United States | Bozeman, Montana, United States | Denver, Colorado, United States | Minneapolis, Minnesota, United States | Missoula, Montana, United States | Portland, Oregon, United States | Salt Lake City, Utah, United States | Seattle, Washington, United States",
+      "department": "Product Management",
+      "published_at": "2026-11-04T18:27:13-05:00",
+      "updated_at": "2026-11-19T12:51:29-05:00",
+      "url": "https://job-boards.greenhouse.io/onxmaps/jobs/4725528006",
+      "salary": null,
+      "us": true,
+      "remote": "remote",
+      "remote_confidence": "high",
+      "company": "onX",
+      "key": "greenhouse:onxmaps:4725528006",
+      "first_seen": "2026-11-25T23:25:03+00:00",
+      "last_seen": "2026-11-25T23:25:03+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
       "job_id": "744000159604947",
       "req_id": "JB0076456",
       "title": "Senior Manager, Partner Product Enablement & Advocacy ",
@@ -6285,6 +6306,27 @@
       "key": "talentbrew:www.careers.ford.com/en:102309708864",
       "first_seen": "2026-11-05T20:48:07+00:00",
       "last_seen": "2026-11-25T14:12:01+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "4722280006",
+      "req_id": "870",
+      "title": "Product Launch Manager",
+      "location": "Bozeman, Montana, United States; Missoula, Montana, United States; Open to Remote",
+      "location_detail": "Austin, Texas, United States | Bozeman, Montana, United States | Denver, Colorado, United States | Minneapolis, Minnesota, United States | Missoula, Montana, United States | Portland, Oregon, United States | Salt Lake City, Utah, United States | Seattle, Washington, United States",
+      "department": "Hunt",
+      "published_at": "2026-10-21T15:49:07-04:00",
+      "updated_at": "2026-11-19T12:51:28-05:00",
+      "url": "https://job-boards.greenhouse.io/onxmaps/jobs/4722280006",
+      "salary": null,
+      "us": true,
+      "remote": "remote",
+      "remote_confidence": "high",
+      "company": "onX",
+      "key": "greenhouse:onxmaps:4722280006",
+      "first_seen": "2026-11-25T23:25:03+00:00",
+      "last_seen": "2026-11-25T23:25:03+00:00",
       "status": "open",
       "closed_at": null
     },
@@ -9104,6 +9146,27 @@
       "key": "greenhouse:doordashusa:5523275",
       "first_seen": "2026-11-02T06:23:44+00:00",
       "last_seen": "2026-11-25T14:12:01+00:00",
+      "status": "open",
+      "closed_at": null
+    },
+    {
+      "job_id": "4231741006",
+      "req_id": null,
+      "title": "General Consideration - Product Management",
+      "location": "Missoula, Montana, United States",
+      "location_detail": "",
+      "department": "Product Management",
+      "published_at": "2023-05-02T17:58:22-04:00",
+      "updated_at": "2026-09-15T17:43:47-04:00",
+      "url": "https://job-boards.greenhouse.io/onxmaps/jobs/4231741006",
+      "salary": null,
+      "us": true,
+      "remote": "remote",
+      "remote_confidence": "low",
+      "company": "onX",
+      "key": "greenhouse:onxmaps:4231741006",
+      "first_seen": "2026-11-25T23:25:03+00:00",
+      "last_seen": "2026-11-25T23:25:03+00:00",
       "status": "open",
       "closed_at": null
     },
