@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-25T14:12:01+00:00",
+  "generated_at": "2026-11-25T20:47:29+00:00",
   "criteria": {
     "title_keywords": [
       "product"
@@ -618,6 +618,17 @@
       "error": null,
       "total_jobs": 4,
       "matched": 1
+    },
+    {
+      "name": "LEGO",
+      "ats": "unknown",
+      "board": "lego",
+      "url": "https://www.lego.com/en-us/careers/search",
+      "fetched_at": "2026-11-25T20:47:29+00:00",
+      "status": "ok",
+      "error": null,
+      "total_jobs": 0,
+      "matched": 0
     }
   ],
   "jobs": [

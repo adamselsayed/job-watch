@@ -1,0 +1,30 @@
+{
+ "scripts": [
+  "/careers/_next/static/chunks/polyfills-42372ed130431b0a.js",
+  "/careers/_next/static/chunks/webpack-a8bfb0335979c354.js",
+  "/careers/_next/static/chunks/framework-64ad27b21261a9ce.js",
+  "/careers/_next/static/chunks/main-8dc019fd6f4e68d7.js",
+  "/careers/_next/static/chunks/pages/_app-3182e5f4f7064b39.js",
+  "/careers/_next/static/chunks/248-90bc34babd6cd7b4.js",
+  "/careers/_next/static/chunks/989-d206c172efabfe06.js",
+  "/careers/_next/static/chunks/675-07e79788f0deb403.js",
+  "/careers/_next/static/chunks/531-e8ae43958b368260.js",
+  "/careers/_next/static/chunks/779-98ad032b469547fc.js",
+  "/careers/_next/static/chunks/258-29fa712720fa30dc.js",
+  "/careers/_next/static/chunks/413-ce68081c1537e055.js",
+  "/careers/_next/static/chunks/pages/%5Bsitename%5D/%5B%5B...id%5D%5D-d9196aacb76722df.js",
+  "/careers/_next/static/A8ToBuxbnSMSAC-eYwWxS/_buildManifest.js",
+  "/careers/_next/static/A8ToBuxbnSMSAC-eYwWxS/_ssgManifest.js",
+  "/_islands/assets/DesktopNav.astro_astro_type_script_index_0_lang.BEv5NffL.js",
+  "/_islands/assets/Header.astro_astro_type_script_index_0_lang.D8In-f5V.js",
+  "/_islands/assets/Header.astro_astro_type_script_index_1_lang.B2uzEqVu.js",
+  "/_islands/assets/Footer.astro_astro_type_script_index_0_lang.Fec9_Yjj.js"
+ ],
+ "iframes": [],
+ "ats_mentions": [
+  "https://lego.wd103.myworkdayjobs.com/LEGO_External/login"
+ ],
+ "data_attrs": [],
+ "fetch_calls": [],
+ "head": "<!DOCTYPE html><html lang=\"en-us\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\"/><meta name=\"msapplication-TileImage\" content=\"https://www.lego.com/lego-logo-144.png\"/><meta name=\"msapplication-TileColor\" content=\"#ffd500\"/><link rel=\"icon\" type=\"image/png\" sizes=\"512x512\" href=\"https://www.lego.com/lego-logo-512.png\"/><link rel=\"icon\" type=\"image/png\" sizes=\"384x384\" href=\"https://www.lego.com/lego-logo-384.png\"/><link rel=\"icon\" type=\"image/png\" sizes=\"256x256\" href=\"https://www.lego.com/lego-logo-256.png\"/><link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://www.lego.com/lego-logo-192.png\"/><link rel=\"icon\" type=\"image/png\" sizes=\"180x180\" href=\"https://www.lego.com/lego-logo-180.png\"/><link rel=\"icon\" typ"
+}
