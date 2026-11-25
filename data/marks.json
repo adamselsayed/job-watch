@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-25T16:49:01.996Z",
+  "updated_at": "2026-11-25T16:49:06.721Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2604,6 +2604,12 @@
       "at": "2026-11-25T16:49:00.468Z",
       "title": "Senior Product Manager",
       "company": "Taskrabbit"
+    },
+    "talentbrew:www.careers.ford.com/en:103754193088": {
+      "status": "archived",
+      "at": "2026-11-25T16:49:05.201Z",
+      "title": "Product Definition Deployment Specialist",
+      "company": "Ford"
     }
   },
   "groups": {
