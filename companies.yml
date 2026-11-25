@@ -313,3 +313,8 @@
   ats: workable
   board: busright
   url: https://apply.workable.com/busright/#jobs
+
+- name: LEGO
+  ats: unknown
+  board: lego
+  url: https://www.lego.com/en-us/careers/search
