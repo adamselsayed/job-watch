@@ -176,6 +176,11 @@
 "first_seen": "2026-11-07",
 "posted": "2026-09-17"
 },
+"greenhouse:fleetio:5309413007": {
+"company": "Fleetio",
+"first_seen": "2026-11-26",
+"posted": "2026-11-25"
+},
 "greenhouse:gomotive:8782064002": {
 "company": "Motive",
 "first_seen": "2026-10-29",
@@ -1201,6 +1206,11 @@
 "first_seen": "2026-11-17",
 "posted": "2026-11-17"
 },
+"phenom:careers.siemens-healthineers.com/global/en:SHDSHWUSR31873EXTERNALENGLOBAL": {
+"company": "Siemens Healthineers",
+"first_seen": "2026-11-26",
+"posted": "2026-11-25"
+},
 "phenom:careers.siemens-healthineers.com/global/en:SHDSHWUSR31944EXTERNALENGLOBAL": {
 "company": "Siemens Healthineers",
 "first_seen": "2026-11-19",
@@ -1235,6 +1245,11 @@
 "company": "UPS",
 "first_seen": "2026-11-20",
 "posted": "2026-11-19"
+},
+"phenom:www.jobs-ups.com/us/en:UPBUPSGLOBALR26043129EXTERNALENUS": {
+"company": "UPS",
+"first_seen": "2026-11-26",
+"posted": "2026-11-25"
 },
 "phenom:www.yelp.careers/us/en:YELPUS14002EXTERNALENUS": {
 "company": "Yelp",
@@ -2331,6 +2346,16 @@
 "first_seen": "2026-11-25",
 "posted": "2026-11-24"
 },
+"talentbrew:www.careers.ford.com/en:103782527296": {
+"company": "Ford",
+"first_seen": "2026-11-26",
+"posted": "2026-11-25"
+},
+"talentbrew:www.careers.ford.com/en:103787563840": {
+"company": "Ford",
+"first_seen": "2026-11-26",
+"posted": "2026-11-25"
+},
 "talentbrew:www.careers.ford.com/en:98847422048": {
 "company": "Ford",
 "first_seen": "2026-11-05",
@@ -2961,6 +2986,11 @@
 "first_seen": "2026-11-11",
 "posted": "2026-11-11"
 },
+"workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2029995": {
+"company": "NVIDIA",
+"first_seen": "2026-11-26",
+"posted": "2026-11-25"
+},
 "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2030133": {
 "company": "NVIDIA",
 "first_seen": "2026-11-18",
@@ -2976,11 +3006,16 @@
 "first_seen": "2026-11-20",
 "posted": "2026-11-20"
 },
+"workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2030510": {
+"company": "NVIDIA",
+"first_seen": "2026-11-26",
+"posted": "2026-11-25"
+},
 "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2030526": {
 "company": "NVIDIA",
 "first_seen": "2026-11-25",
 "posted": "2026-11-24"
 }
 },
-"updated_at": "2026-11-25T23:25:04+00:00"
+"updated_at": "2026-11-26T14:24:16+00:00"
 }
