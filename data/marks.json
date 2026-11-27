@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-27T05:15:30.035Z",
+  "updated_at": "2026-11-27T05:15:32.709Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2751,7 +2751,7 @@
       "stage": "discussion"
     },
     "phenom:careers.autonation.com/us/en:AUMAIHUSJR2026143821EXTERNALENUS": {
-      "at": "2026-11-27T05:05:51.513Z",
+      "at": "2026-11-27T05:15:31.208Z",
       "added": "2026-11-21T02:24:49.875000",
       "title": "Director, Product",
       "company": "AutoNation",
@@ -2769,8 +2769,7 @@
         "equity": true,
         "note": "guess from one Levels.fyi submission",
         "at": "2026-11-22T06:05:05.877Z"
-      },
-      "stage": "pursuing"
+      }
     },
     "phenom:www.jobs-ups.com/us/en:UPBUPSGLOBALR26034745EXTERNALENUS": {
       "removed": true,
