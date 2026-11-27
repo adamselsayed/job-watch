@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-27T05:37:12.261Z",
+  "updated_at": "2026-11-27T05:37:26.687Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -3034,6 +3034,21 @@
       "equity": null,
       "vestYears": 4,
       "stage": "pursuing"
+    },
+    "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2030510": {
+      "at": "2026-11-27T05:37:25.178Z",
+      "added": "2026-11-27T05:37:25.178000",
+      "pos": 11,
+      "title": "Senior Product Manager, Digital Twin Automation and Robotics",
+      "company": "NVIDIA",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Product-Manager--Digital-Twin-Automation-and-Robotics_JR2030510",
+      "location": "US, CA, Santa Clara, United States of America",
+      "work": "",
+      "min": 157500,
+      "max": 312000,
+      "bonusPct": null,
+      "equity": null,
+      "vestYears": 4
     }
   }
 }
