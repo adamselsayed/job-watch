@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-27T06:22:53.330Z",
+  "updated_at": "2026-11-27T06:23:33.220Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2819,6 +2819,7 @@
     ],
     "tertiary": [
       "LEGO",
+      "onX",
       "Virgin Galactic",
       "Cognition",
       "General Motors",
@@ -2867,7 +2868,7 @@
       "BusRight"
     ],
     "collapsed": [],
-    "at": "2026-11-25T20:57:48.825Z"
+    "at": "2026-11-27T06:23:31.710Z"
   },
   "compare": {
     "smartrecruiters:ServiceNow:744000161905202": {
