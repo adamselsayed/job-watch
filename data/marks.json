@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-27T05:02:46.101Z",
+  "updated_at": "2026-11-27T05:02:48.226Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2778,7 +2778,7 @@
       "at": "2026-11-23T20:25:22.599Z"
     },
     "greenhouse:toast:8226770": {
-      "at": "2026-11-22T08:52:56.578Z",
+      "at": "2026-11-27T05:02:46.725Z",
       "added": "2026-11-22T05:34:22.692000",
       "pos": 1,
       "title": "Product Lead, New Ventures",
@@ -2796,7 +2796,8 @@
         "equity": true,
         "note": "Levels.fyi average stock at L5 (highest level listed), US",
         "at": "2026-11-22T06:05:05.877Z"
-      }
+      },
+      "stage": "interview"
     },
     "smartrecruiters:Experian:744000152972234": {
       "at": "2026-11-24T01:49:10.354Z",
