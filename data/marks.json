@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-27T05:02:54.943Z",
+  "updated_at": "2026-11-27T05:02:58.569Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2728,7 +2728,7 @@
       }
     },
     "talentbrew:jobs.bd.com/en:103567025056": {
-      "at": "2026-11-27T05:02:50.729Z",
+      "at": "2026-11-27T05:02:57.067Z",
       "added": "2026-11-21T02:24:27.338000",
       "title": "Associate Director, Lead Product Manager",
       "company": "BD",
@@ -2740,7 +2740,7 @@
       "bonusPct": 15,
       "equity": 80000,
       "vestYears": 4,
-      "pos": 3,
+      "pos": 4,
       "est": {
         "bonus": true,
         "equity": true,
@@ -2801,9 +2801,9 @@
       "stage": "interview"
     },
     "smartrecruiters:Experian:744000152972234": {
-      "at": "2026-11-27T05:02:53.441Z",
+      "at": "2026-11-27T05:02:57.067Z",
       "added": "2026-11-22T05:47:55.857000",
-      "pos": 4,
+      "pos": 2,
       "title": "Director, Product Management (Remote)",
       "company": "Experian",
       "url": "https://jobs.experian.com/job/director-product-management-remote-in-united-states-jid-6279",
@@ -2823,9 +2823,9 @@
       "stage": "interview"
     },
     "lever:field-ai:8a953c26-d093-4fa2-88ea-9a5e810b2ef3": {
-      "at": "2026-11-27T05:02:49.083Z",
+      "at": "2026-11-27T05:02:57.067Z",
       "added": "2026-11-22T06:03:14.404000",
-      "pos": 2,
+      "pos": 3,
       "title": "Senior Product Manager, Core Platform (Customer Portal & Data Delivery)",
       "company": "FieldAI",
       "url": "https://jobs.lever.co/field-ai/8a953c26-d093-4fa2-88ea-9a5e810b2ef3",
