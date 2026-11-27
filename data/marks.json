@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-27T05:02:52.229Z",
+  "updated_at": "2026-11-27T05:02:54.943Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2801,7 +2801,7 @@
       "stage": "interview"
     },
     "smartrecruiters:Experian:744000152972234": {
-      "at": "2026-11-24T01:49:10.354Z",
+      "at": "2026-11-27T05:02:53.441Z",
       "added": "2026-11-22T05:47:55.857000",
       "pos": 4,
       "title": "Director, Product Management (Remote)",
@@ -2819,7 +2819,8 @@
         "equity": true,
         "note": "Levels.fyi averages at Director, US",
         "at": "2026-11-22T06:05:05.877Z"
-      }
+      },
+      "stage": "interview"
     },
     "lever:field-ai:8a953c26-d093-4fa2-88ea-9a5e810b2ef3": {
       "at": "2026-11-27T05:02:49.083Z",
