@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-27T05:02:48.226Z",
+  "updated_at": "2026-11-27T05:02:52.229Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2728,7 +2728,7 @@
       }
     },
     "talentbrew:jobs.bd.com/en:103567025056": {
-      "at": "2026-11-24T01:49:10.354Z",
+      "at": "2026-11-27T05:02:50.729Z",
       "added": "2026-11-21T02:24:27.338000",
       "title": "Associate Director, Lead Product Manager",
       "company": "BD",
@@ -2746,7 +2746,8 @@
         "equity": true,
         "note": "guess: no Levels.fyi level data for BD",
         "at": "2026-11-22T06:05:05.877Z"
-      }
+      },
+      "stage": "discussion"
     },
     "phenom:careers.autonation.com/us/en:AUMAIHUSJR2026143821EXTERNALENUS": {
       "at": "2026-11-22T07:29:06.043Z",
@@ -2821,7 +2822,7 @@
       }
     },
     "lever:field-ai:8a953c26-d093-4fa2-88ea-9a5e810b2ef3": {
-      "at": "2026-11-24T01:49:07.335Z",
+      "at": "2026-11-27T05:02:49.083Z",
       "added": "2026-11-22T06:03:14.404000",
       "pos": 2,
       "title": "Senior Product Manager, Core Platform (Customer Portal & Data Delivery)",
@@ -2839,7 +2840,8 @@
         "equity": true,
         "note": "guess: private startup, no Levels.fyi PM data (paper equity)",
         "at": "2026-11-22T06:06:54.081Z"
-      }
+      },
+      "stage": "discussion"
     },
     "ashby:propel:8583576c-0768-414f-960d-b85408ff316a": {
       "at": "2026-11-22T07:29:06.043Z",
