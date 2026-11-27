@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-27T05:03:05.467Z",
+  "updated_at": "2026-11-27T05:03:21.360Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2867,7 +2867,7 @@
       }
     },
     "workable:busright:1B13C5DAD8": {
-      "at": "2026-11-23T20:32:13.334Z",
+      "at": "2026-11-27T05:03:19.858Z",
       "added": "2026-11-23T20:30:17.545000",
       "pos": 8,
       "title": "Head of Product",
@@ -2885,7 +2885,8 @@
         "equity": true,
         "note": "guess: no Levels.fyi data; private Series B startup (paper equity)",
         "at": "2026-11-23T20:32:13.334Z"
-      }
+      },
+      "stage": "pursuing"
     }
   }
 }
