@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-27T05:03:21.360Z",
+  "updated_at": "2026-11-27T05:03:24.801Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2846,7 +2846,7 @@
       "stage": "discussion"
     },
     "ashby:propel:8583576c-0768-414f-960d-b85408ff316a": {
-      "at": "2026-11-22T07:29:06.043Z",
+      "at": "2026-11-27T05:03:23.300Z",
       "added": "2026-11-22T07:14:10.090000",
       "pos": 7,
       "title": "Forward Deployed Product Manager",
@@ -2864,7 +2864,8 @@
         "equity": true,
         "note": "guess: small private company, no Levels.fyi pay data (paper equity)",
         "at": "2026-11-22T07:15:17.973Z"
-      }
+      },
+      "stage": "pursuing"
     },
     "workable:busright:1B13C5DAD8": {
       "at": "2026-11-27T05:03:19.858Z",
