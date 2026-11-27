@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-27T05:05:53.015Z",
+  "updated_at": "2026-11-27T05:07:34.160Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2889,6 +2889,21 @@
         "at": "2026-11-23T20:32:13.334Z"
       },
       "stage": "pursuing"
+    },
+    "greenhouse:housecall:6270748004": {
+      "at": "2026-11-27T05:07:32.650Z",
+      "added": "2026-11-27T05:07:32.650000",
+      "pos": 9,
+      "title": "Senior Product Manager",
+      "company": "Housecall Pro",
+      "url": "https://www.housecallpro.com/careers/open-positions/?gh_jid=6270748004",
+      "location": "United States",
+      "work": "remote",
+      "min": 156000,
+      "max": 198500,
+      "bonusPct": null,
+      "equity": null,
+      "vestYears": 4
     }
   }
 }
