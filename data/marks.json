@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-27T06:26:00.867Z",
+  "updated_at": "2026-11-27T06:26:46.463Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -3159,6 +3159,10 @@
       "bonusPct": null,
       "equity": null,
       "vestYears": 4
+    },
+    "greenhouse:onxmaps:4722280006": {
+      "removed": true,
+      "at": "2026-11-27T06:26:44.958Z"
     }
   }
 }
