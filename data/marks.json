@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-27T05:37:26.687Z",
+  "updated_at": "2026-11-27T05:45:05.467Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -3046,6 +3046,21 @@
       "work": "",
       "min": 157500,
       "max": 312000,
+      "bonusPct": null,
+      "equity": null,
+      "vestYears": 4
+    },
+    "greenhouse:chargepoint:8890370002": {
+      "at": "2026-11-27T05:45:03.955Z",
+      "added": "2026-11-27T05:45:03.955000",
+      "pos": 12,
+      "title": "Staff Product Manager, Residential Charging & Home Energy Management",
+      "company": "ChargePoint",
+      "url": "https://www.chargepoint.com/about/opportunities/job/?gh_jid=8890370002",
+      "location": "US",
+      "work": "hybrid",
+      "min": 182608,
+      "max": 241500,
       "bonusPct": null,
       "equity": null,
       "vestYears": 4
