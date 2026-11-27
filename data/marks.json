@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-27T06:23:35.158Z",
+  "updated_at": "2026-11-27T06:25:14.077Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -3138,6 +3138,21 @@
       "equity": null,
       "vestYears": 4,
       "stage": "pursuing"
+    },
+    "greenhouse:onxmaps:4725528006": {
+      "at": "2026-11-27T06:25:12.572Z",
+      "added": "2026-11-27T06:25:12.572000",
+      "pos": 13,
+      "title": "Head of Product, Angling",
+      "company": "onX",
+      "url": "https://job-boards.greenhouse.io/onxmaps/jobs/4725528006",
+      "location": "Bozeman, Montana, United States; Missoula, Montana, United States; Open to Remote",
+      "work": "remote",
+      "min": null,
+      "max": null,
+      "bonusPct": null,
+      "equity": null,
+      "vestYears": 4
     }
   }
 }
