@@ -2421,6 +2421,11 @@
 "first_seen": "2026-11-17",
 "posted": "2026-11-16"
 },
+"workable:lawnstarter:CE8F58A671": {
+"company": "LawnStarter",
+"first_seen": "2026-11-27",
+"posted": "2026-11-26"
+},
 "workable:lawnstarter:E45D99B6D8": {
 "company": "LawnStarter",
 "first_seen": "2026-11-12",
@@ -3017,5 +3022,5 @@
 "posted": "2026-11-24"
 }
 },
-"updated_at": "2026-11-26T14:24:16+00:00"
+"updated_at": "2026-11-27T14:26:01+00:00"
 }
