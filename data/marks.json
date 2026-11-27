@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-27T05:45:05.467Z",
+  "updated_at": "2026-11-27T05:46:02.885Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2730,6 +2730,12 @@
       "at": "2026-11-27T05:37:10.752Z",
       "title": "Platform Software Product Manager",
       "company": "NVIDIA"
+    },
+    "greenhouse:fleetio:5309413007": {
+      "status": "archived",
+      "at": "2026-11-27T05:46:01.372Z",
+      "title": "Staff Product Manager, Parts",
+      "company": "Fleetio"
     }
   },
   "groups": {
