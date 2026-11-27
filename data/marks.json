@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-27T06:27:10.890Z",
+  "updated_at": "2026-11-27T06:27:33.227Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -3146,7 +3146,7 @@
       "stage": "pursuing"
     },
     "greenhouse:onxmaps:4725528006": {
-      "at": "2026-11-27T06:25:12.572Z",
+      "at": "2026-11-27T06:27:30.635Z",
       "added": "2026-11-27T06:25:12.572000",
       "pos": 13,
       "title": "Head of Product, Angling",
@@ -3158,10 +3158,11 @@
       "max": null,
       "bonusPct": null,
       "equity": null,
-      "vestYears": 4
+      "vestYears": 4,
+      "stage": "pursuing"
     },
     "greenhouse:onxmaps:4722280006": {
-      "at": "2026-11-27T06:27:09.380Z",
+      "at": "2026-11-27T06:27:31.725Z",
       "added": "2026-11-27T06:27:09.380000",
       "pos": 14,
       "title": "Product Launch Manager",
@@ -3173,7 +3174,8 @@
       "max": null,
       "bonusPct": null,
       "equity": null,
-      "vestYears": 4
+      "vestYears": 4,
+      "stage": "pursuing"
     }
   }
 }
