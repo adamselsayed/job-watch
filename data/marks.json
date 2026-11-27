@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-27T05:14:29.136Z",
+  "updated_at": "2026-11-27T05:15:30.035Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2891,7 +2891,7 @@
       "stage": "pursuing"
     },
     "greenhouse:housecall:6270748004": {
-      "at": "2026-11-27T05:07:32.650Z",
+      "at": "2026-11-27T05:15:24.191Z",
       "added": "2026-11-27T05:07:32.650000",
       "pos": 9,
       "title": "Senior Product Manager",
@@ -2903,10 +2903,11 @@
       "max": 198500,
       "bonusPct": null,
       "equity": null,
-      "vestYears": 4
+      "vestYears": 4,
+      "stage": "pursuing"
     },
     "greenhouse:housecall:6196648004": {
-      "at": "2026-11-27T05:14:27.625Z",
+      "at": "2026-11-27T05:15:28.533Z",
       "added": "2026-11-27T05:14:27.625000",
       "pos": 10,
       "title": "Director, Product Management (Platform)",
@@ -2918,7 +2919,8 @@
       "max": 210000,
       "bonusPct": null,
       "equity": null,
-      "vestYears": 4
+      "vestYears": 4,
+      "stage": "pursuing"
     }
   }
 }
