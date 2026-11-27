@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-27T05:03:02.959Z",
+  "updated_at": "2026-11-27T05:03:05.467Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2707,7 +2707,7 @@
       "stage": "interview"
     },
     "greenhouse:chargepoint:8807454002": {
-      "at": "2026-11-27T05:03:01.458Z",
+      "at": "2026-11-27T05:03:03.966Z",
       "added": "2026-11-21T02:24:16.938000",
       "title": "Staff Product Manager, Fleet Software",
       "company": "ChargePoint",
@@ -2719,7 +2719,7 @@
       "bonusPct": 0,
       "equity": 80000,
       "vestYears": 4,
-      "pos": 5,
+      "pos": 3,
       "est": {
         "bonus": false,
         "equity": true,
@@ -2729,7 +2729,7 @@
       "stage": "interview"
     },
     "talentbrew:jobs.bd.com/en:103567025056": {
-      "at": "2026-11-27T05:02:57.067Z",
+      "at": "2026-11-27T05:03:03.966Z",
       "added": "2026-11-21T02:24:27.338000",
       "title": "Associate Director, Lead Product Manager",
       "company": "BD",
@@ -2741,7 +2741,7 @@
       "bonusPct": 15,
       "equity": 80000,
       "vestYears": 4,
-      "pos": 4,
+      "pos": 5,
       "est": {
         "bonus": true,
         "equity": true,
@@ -2824,9 +2824,9 @@
       "stage": "interview"
     },
     "lever:field-ai:8a953c26-d093-4fa2-88ea-9a5e810b2ef3": {
-      "at": "2026-11-27T05:02:57.067Z",
+      "at": "2026-11-27T05:03:03.966Z",
       "added": "2026-11-22T06:03:14.404000",
-      "pos": 3,
+      "pos": 4,
       "title": "Senior Product Manager, Core Platform (Customer Portal & Data Delivery)",
       "company": "FieldAI",
       "url": "https://jobs.lever.co/field-ai/8a953c26-d093-4fa2-88ea-9a5e810b2ef3",
