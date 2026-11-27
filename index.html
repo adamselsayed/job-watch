@@ -441,6 +441,13 @@
   #compareView .co-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
   #compareView th.grd, #compareView td.grd { text-align: center; width: 56px; padding-left: 4px; padding-right: 4px; }
   #compareView .gr-btn { all: unset; cursor: pointer; display: inline-grid; border-radius: 7px; } #compareView .gr-btn:hover { opacity: .8; } #compareView .gr-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  /* stage chip: click to cycle none -> Pursuing (yellow) -> Discussion (orange) -> Interview (green) */
+  #compareView th.stg, #compareView td.stg { text-align: center; width: 50px; padding-left: 4px; padding-right: 4px; }
+  .stg-chip { display: inline-grid; place-items: center; width: 24px; height: 24px; border-radius: 999px; font: 700 12px/1 "Instrument Sans", sans-serif; color: #1d1a10; border: 1.5px dashed var(--faint); background: none; }
+  .stg-chip.s-pursuing { background: #f2cc3a; border: 1.5px solid #f2cc3a; } .stg-chip.s-discussion { background: #ee8a2c; border: 1.5px solid #ee8a2c; } .stg-chip.s-interview { background: #35a862; border: 1.5px solid #35a862; color: #fff; }
+  #compareView .stg-btn { all: unset; cursor: pointer; display: inline-grid; border-radius: 999px; } #compareView .stg-btn:hover { opacity: .8; } #compareView .stg-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  #compareView .stg-key { display: inline-flex; align-items: center; gap: 14px; font-size: 12.5px; color: var(--muted); } #compareView .stg-key span { display: inline-flex; align-items: center; gap: 5px; }
+  #compareView .stg-key .stg-chip { width: 12px; height: 12px; }
   #compareView td.grd .gr { min-width: 32px; height: 23px; font-size: 12.5px; } #compareView .nogr { color: var(--faint); }
   .gr { display: inline-grid; place-items: center; min-width: 26px; height: 20px; padding: 0 5px; border-radius: 6px; font: 700 11.5px/1 "Instrument Sans", sans-serif; color: var(--bg); background: var(--accent); flex: none; }
   .gr.g-C { background: var(--new); } .gr.g-D, .gr.g-F { background: var(--err); }
@@ -561,6 +568,7 @@
       <button id="cmpBack">← Dashboard</button>
       <h2>Compare roles</h2>
       <span class="sub" id="cmpCount"></span>
+      <span class="stg-key" title="Click a role's Stage dot to cycle through these"><span><i class="stg-chip s-interview"></i>Interview</span><span><i class="stg-chip s-discussion"></i>Discussion</span><span><i class="stg-chip s-pursuing"></i>Pursuing</span></span>
       <span class="spacer" style="flex:1"></span>
       <button id="cmpClear" class="danger">Clear all</button>
     </div>
@@ -638,7 +646,7 @@
     Edit <code>companies.yml</code> in the repo to add companies.
     <br><strong>Primary / Secondary / Tertiary / Out of Network</strong>: drag companies between the sidebar groups (or tap the ★ ☆ ◇ ○ symbol to cycle). New companies start in Secondary; Out of Network is for companies where you have no one to refer you. The grouping is saved with your Applied/Archive marks.
     <br><strong>Bulk moves</strong>: tick the checkboxes (or the header box for all shown), then use the bar that appears or drag the checked rows onto the Open / Applied / Archive tab.
-    <br><strong>Compare</strong>: use the balance-scale button at the right of any role (next to Applied / Archive) to add or remove it, up to 10, then open <strong>Compare</strong> (top right; the bubble shows how many roles are saved) to line up salary, bonus, equity and total pay. The list is saved with your Applied/Archive marks.
+    <br><strong>Compare</strong>: use the balance-scale button at the right of any role (next to Applied / Archive) to add or remove it, up to 25, then open <strong>Compare</strong> (top right; the bubble shows how many roles are saved) to line up salary, bonus, equity and total pay. The list is saved with your Applied/Archive marks.
     <br><strong>Applied / Archive</strong> are saved in this browser and, with <strong>Sync</strong> turned on (top right), to <code>data/marks.json</code> in the repo so they follow you across devices. A role you've filed stays filed; if the company reposts it under a new listing ID it shows up as new again.
     <button class="link" id="exportMarks">Export</button> · <button class="link" id="importMarks">Import</button> your Applied/Archive list to move it to another browser.<input type="file" id="importFile" accept="application/json" hidden>
   </p>
@@ -684,7 +692,7 @@
 
   // ---- compare list: up to CMP_MAX roles, each a snapshot of the posting plus the pay details typed in on the
   // compare view. Kept per role key with a timestamp (removals stay as tombstones) so it syncs like the marks.
-  const CMP_MAX = 10, CMP_KEY = 'jobwatch.compare';
+  const CMP_MAX = 25, CMP_KEY = 'jobwatch.compare';
   let compare = {};
   try { compare = JSON.parse(localStorage.getItem(CMP_KEY) || '{}') || {}; } catch (e) { compare = {}; }
   const saveCompare = () => { try { localStorage.setItem(CMP_KEY, JSON.stringify(compare)); } catch (e) {} };
@@ -1466,6 +1474,7 @@
   const num = v => { v = String(v ?? '').trim().replace(/[$,\s%]/g, ''); if (!v) return null; const k = /k$/i.test(v), m = /m$/i.test(v); const n = parseFloat(v); return isNaN(n) ? null : Math.round(n * (m ? 1e6 : k ? 1000 : 1) * 100) / 100; };
   const dollars = v => { const n = num(v); return n != null && n > 0 && n < 1000 ? n * 1000 : n; };        // "185" in a dollar box means $185K
   const rangeTxt = (a, b) => a == null && b == null ? '—' : a != null && b != null && Math.round(a) !== Math.round(b) ? `${fmtMoney(a)} – ${fmtMoney(b)}` : fmtMoney(a != null ? a : b);
+  const STAGES = [['pursuing', 'Pursuing'], ['discussion', 'Discussion'], ['interview', 'Interview']];   // click order on the Compare page's Stage dot
   function cmpCalc(it) {
     const lo = it.min != null ? it.min : it.max, hi = it.max != null ? it.max : it.min;
     const pct = it.bonusPct || 0, eq = it.equity ? it.equity / (it.vestYears > 0 ? it.vestYears : 4) : 0;
@@ -1497,14 +1506,15 @@
     $('#cmpClear').hidden = !list.length;
     const val = n => n == null ? '' : Math.round(n).toLocaleString('en-US');
     const body = $('#cmpBody');
-    if (!list.length) { body.innerHTML = '<div class="empty">Nothing to compare yet. On the dashboard, use the balance-scale button at the right of a role, next to Applied / Archive. You can add up to 10.</div>'; return; }
-    body.innerHTML = `<table><thead><tr><th class="grip"></th><th>Company</th><th class="grd" title="Claude's grade of how stable and successful the company is">Grade</th><th>Role</th><th>Remote</th><th class="num">Starting salary</th><th class="num">50% of range<br>(midpoint)</th><th class="num">High-end salary</th><th class="num">Bonus %<br>and amount</th><th class="num">Equity grant<br>and vesting years</th><th class="num" title="From the salary midpoint to the high end">Total comp, annual<br>(midpoint to high)</th><th></th></tr></thead><tbody>${
+    if (!list.length) { body.innerHTML = `<div class="empty">Nothing to compare yet. On the dashboard, use the balance-scale button at the right of a role, next to Applied / Archive. You can add up to ${CMP_MAX}.</div>`; return; }
+    body.innerHTML = `<table><thead><tr><th class="grip"></th><th class="stg" title="Click a dot to cycle: none, Pursuing, Discussion, Interview">Stage</th><th>Company</th><th class="grd" title="Claude's grade of how stable and successful the company is">Grade</th><th>Role</th><th>Remote</th><th class="num">Starting salary</th><th class="num">50% of range<br>(midpoint)</th><th class="num">High-end salary</th><th class="num">Bonus %<br>and amount</th><th class="num">Equity grant<br>and vesting years</th><th class="num" title="From the salary midpoint to the high end">Total comp, annual<br>(midpoint to high)</th><th></th></tr></thead><tbody>${
       list.map(([k, it]) => {
         const j = jobs.find(x => x.key === k), gone = !j || j.status === 'closed';
         // est: set by Claude's on-request Levels.fyi lookup for the fields it filled in; a flag clears once that field is edited by hand
         const est = it.est || {}, estTip = ` title="Estimate: ${escapeHtml(est.note || 'based on Levels.fyi data')}. Type over it any time."`;
         return `<tr data-key="${escapeHtml(k)}" class="${gone ? 'gone' : ''}">
           <td class="grip"><button class="grip-h" title="Drag to reorder (or press ↑ / ↓)" aria-label="Reorder ${escapeHtml(it.title)}: drag, or press up or down arrow"><svg viewBox="0 0 12 18" width="10" height="15" fill="currentColor" aria-hidden="true"><circle cx="3" cy="3" r="1.5"/><circle cx="9" cy="3" r="1.5"/><circle cx="3" cy="9" r="1.5"/><circle cx="9" cy="9" r="1.5"/><circle cx="3" cy="15" r="1.5"/><circle cx="9" cy="15" r="1.5"/></svg></button></td>
+          <td class="stg"><button class="stg-btn"><span class="stg-chip"></span></button></td>
           <td class="co">${briefs[it.company]
             ? `<button class="co-btn" data-brief="${escapeHtml(it.company)}" title="Open the company summary for ${escapeHtml(it.company)}"><span class="nm">${escapeHtml(it.company)}</span></button>`
             : `<span title="No company summary yet. Ask Claude to “fill briefs”.">${escapeHtml(it.company)}</span>`}</td>
@@ -1526,6 +1536,13 @@
       tr.querySelectorAll('.co-btn, .gr-btn').forEach(cb => cb.addEventListener('click', () => openBrief(cb.dataset.brief, cb)));
       tr.querySelector('select').value = it.work || '';
       const touch = () => { it.at = new Date().toISOString(); saveCompare(); scheduleSync(); cmpPaint(); };
+      const sb = tr.querySelector('.stg-btn'), paintStage = () => {
+        const st = STAGES.find(x => x[0] === it.stage), chip = sb.firstChild;
+        chip.className = 'stg-chip' + (st ? ' s-' + st[0] : ''); chip.textContent = st ? st[1][0] : '';
+        sb.title = (st ? st[1] : 'No stage') + '. Click to change'; sb.setAttribute('aria-label', `Stage: ${st ? st[1] : 'none'}. Click to change`);
+      };
+      paintStage();
+      sb.addEventListener('click', () => { const n = STAGES.findIndex(x => x[0] === it.stage) + 1; if (n < STAGES.length) it.stage = STAGES[n][0]; else delete it.stage; paintStage(); touch(); });
       tr.querySelector('select').addEventListener('change', e => { it.work = e.target.value; touch(); });
       tr.querySelectorAll('input').forEach(inp => {
         const f = inp.dataset.f, parse = v => f === 'bonusPct' || f === 'vestYears' ? num(v) : dollars(v);
