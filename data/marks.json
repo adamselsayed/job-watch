@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-27T05:59:23.254Z",
+  "updated_at": "2026-11-27T05:59:25.220Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -3111,7 +3111,7 @@
       "stage": "pursuing"
     },
     "greenhouse:chargepoint:8890370002": {
-      "at": "2026-11-27T05:59:21.753Z",
+      "at": "2026-11-27T05:59:23.719Z",
       "added": "2026-11-27T05:45:03.955000",
       "pos": 11,
       "title": "Staff Product Manager, Residential Charging & Home Energy Management",
@@ -3123,7 +3123,8 @@
       "max": 241500,
       "bonusPct": null,
       "equity": null,
-      "vestYears": 4
+      "vestYears": 4,
+      "stage": "pursuing"
     }
   }
 }
