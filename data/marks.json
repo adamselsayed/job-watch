@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-27T06:27:37.536Z",
+  "updated_at": "2026-11-27T06:27:39.869Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2944,7 +2944,7 @@
       "stage": "discussion"
     },
     "phenom:careers.autonation.com/us/en:AUMAIHUSJR2026143821EXTERNALENUS": {
-      "at": "2026-11-27T06:27:36.033Z",
+      "at": "2026-11-27T06:27:38.367Z",
       "added": "2026-11-21T02:24:49.875000",
       "title": "Director, Product",
       "company": "AutoNation",
@@ -2956,7 +2956,7 @@
       "bonusPct": 20,
       "equity": 100000,
       "vestYears": 4,
-      "pos": 13,
+      "pos": 14,
       "est": {
         "bonus": true,
         "equity": true,
@@ -3039,9 +3039,9 @@
       "stage": "discussion"
     },
     "ashby:propel:8583576c-0768-414f-960d-b85408ff316a": {
-      "at": "2026-11-27T06:27:36.033Z",
+      "at": "2026-11-27T06:27:38.367Z",
       "added": "2026-11-22T07:14:10.090000",
-      "pos": 12,
+      "pos": 13,
       "title": "Forward Deployed Product Manager",
       "company": "Propel",
       "url": "https://jobs.ashbyhq.com/propel/8583576c-0768-414f-960d-b85408ff316a",
@@ -3162,9 +3162,9 @@
       "stage": "pursuing"
     },
     "greenhouse:onxmaps:4722280006": {
-      "at": "2026-11-27T06:27:31.725Z",
+      "at": "2026-11-27T06:27:38.367Z",
       "added": "2026-11-27T06:27:09.380000",
-      "pos": 14,
+      "pos": 12,
       "title": "Product Launch Manager",
       "company": "onX",
       "url": "https://job-boards.greenhouse.io/onxmaps/jobs/4722280006",
