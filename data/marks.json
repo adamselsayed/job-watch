@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-27T06:02:19.556Z",
+  "updated_at": "2026-11-27T06:22:19.668Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2796,6 +2796,12 @@
       "at": "2026-11-27T06:02:18.045Z",
       "title": "Product Mgt. Senior Analyst",
       "company": "UPS"
+    },
+    "phenom:careers.siemens-healthineers.com/global/en:SHDSHWUSR31873EXTERNALENGLOBAL": {
+      "status": "archived",
+      "at": "2026-11-27T06:22:18.157Z",
+      "title": "MR Product Manager",
+      "company": "Siemens Healthineers"
     }
   },
   "groups": {
