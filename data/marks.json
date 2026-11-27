@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-27T05:57:01.143Z",
+  "updated_at": "2026-11-27T05:59:17.012Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -3096,7 +3096,7 @@
       "stage": "pursuing"
     },
     "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2030510": {
-      "at": "2026-11-27T05:37:25.178Z",
+      "at": "2026-11-27T05:59:15.511Z",
       "added": "2026-11-27T05:37:25.178000",
       "pos": 11,
       "title": "Senior Product Manager, Digital Twin Automation and Robotics",
@@ -3108,7 +3108,8 @@
       "max": 312000,
       "bonusPct": null,
       "equity": null,
-      "vestYears": 4
+      "vestYears": 4,
+      "stage": "pursuing"
     },
     "greenhouse:chargepoint:8890370002": {
       "at": "2026-11-27T05:45:03.955Z",
