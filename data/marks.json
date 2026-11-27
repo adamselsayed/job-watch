@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-25T20:57:58.590Z",
+  "updated_at": "2026-11-27T05:02:43.277Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2685,7 +2685,7 @@
   },
   "compare": {
     "smartrecruiters:ServiceNow:744000161905202": {
-      "at": "2026-11-22T06:05:05.877Z",
+      "at": "2026-11-27T05:02:41.775Z",
       "added": "2026-11-21T02:23:22.678000",
       "title": "Product Strategy Sr Manager ",
       "company": "ServiceNow",
@@ -2703,7 +2703,8 @@
         "equity": true,
         "note": "Levels.fyi average stock at IC4 Principal PM, US",
         "at": "2026-11-22T06:05:05.877Z"
-      }
+      },
+      "stage": "pursuing"
     },
     "greenhouse:chargepoint:8807454002": {
       "at": "2026-11-22T07:29:06.043Z",
