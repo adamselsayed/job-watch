@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-27T05:02:58.569Z",
+  "updated_at": "2026-11-27T05:03:02.959Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -2707,7 +2707,7 @@
       "stage": "interview"
     },
     "greenhouse:chargepoint:8807454002": {
-      "at": "2026-11-22T07:29:06.043Z",
+      "at": "2026-11-27T05:03:01.458Z",
       "added": "2026-11-21T02:24:16.938000",
       "title": "Staff Product Manager, Fleet Software",
       "company": "ChargePoint",
@@ -2725,7 +2725,8 @@
         "equity": true,
         "note": "guess from one Levels.fyi submission",
         "at": "2026-11-22T06:05:05.877Z"
-      }
+      },
+      "stage": "interview"
     },
     "talentbrew:jobs.bd.com/en:103567025056": {
       "at": "2026-11-27T05:02:57.067Z",
