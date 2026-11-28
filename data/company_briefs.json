@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-23T20:32:13.334Z",
+  "updated_at": "2026-11-28T00:30:00.000Z",
   "note": "Compiled by Claude from public sources. Grades are Claude's opinion of stability, not financial advice.",
   "briefs": {
     "ServiceNow": {
@@ -1426,6 +1426,446 @@
         }
       ],
       "asOf": "2026-11-23"
+    },
+    "NVIDIA": {
+      "ownership": {
+        "type": "Public",
+        "detail": "NASDAQ: NVDA · Santa Clara, CA"
+      },
+      "fortune": {
+        "rank": "#16",
+        "note": "2026 Fortune 500; the most valuable company on the list"
+      },
+      "revenue": {
+        "value": "$215.9B",
+        "period": "FY2026 (Jan 2026), up 65%"
+      },
+      "profit": {
+        "value": "$120.1B",
+        "note": "net income, FY2026"
+      },
+      "employees": {
+        "value": "~42,000",
+        "note": "end of FY2026, up from about 36,000 a year earlier; roughly three-quarters in R&D"
+      },
+      "revenueMix": [
+        {
+          "label": "Data Center",
+          "pct": 90,
+          "detail": "$193.7B, up 68%. AI chips and full server systems (Blackwell, now Vera Rubin) sold to cloud providers, AI labs and governments. Includes more than $31B of networking gear and over $30B of sales to national (\"sovereign\") AI projects."
+        },
+        {
+          "label": "Gaming",
+          "pct": 7,
+          "detail": "About $16B. GeForce graphics cards for PCs. Approximate: summed from the four quarterly figures."
+        },
+        {
+          "label": "Professional Visualization",
+          "pct": 1.5,
+          "detail": "$3.2B, up 70%. RTX workstation graphics and Omniverse, the digital-twin and simulation software the role you are comparing sits in."
+        },
+        {
+          "label": "Automotive and Robotics",
+          "pct": 1,
+          "detail": "About $2.3B. DRIVE in-car computers and software, plus robotics platforms. Approximate: summed from quarterly figures ($604M in the last quarter)."
+        },
+        {
+          "label": "OEM and other",
+          "pct": 0.5,
+          "detail": "Under $1B."
+        }
+      ],
+      "mixNote": "From fiscal 2027 NVIDIA reports only two lines, Data Center and Edge Computing (PCs, gaming, automotive, robotics). In the quarter to October 2026, Data Center was about 93% of $115.8B revenue. Digital twins and robotics are a strategic bet but a very small share of sales.",
+      "roadmap": {
+        "current": [
+          "Shipping Vera Rubin, the next server platform after Blackwell",
+          "Quarter to October 2026: revenue $115.8B, up 103% on a year earlier",
+          "Physical AI: Omniverse digital twins, Isaac robotics and DRIVE for vehicles",
+          "Agreement with the Pentagon (May 2026) to run its AI software on classified networks",
+          "Leadership turmoil in November 2026: Jensen Huang resigned on Nov 12 and the board reinstated him on Nov 23"
+        ],
+        "future": [
+          "Guidance of about $130B revenue for the quarter to January 2027",
+          "No data center chip sales to China assumed in its outlook",
+          "Share buyback authorization raised by $150B",
+          "Annual cadence of new AI platforms"
+        ]
+      },
+      "layoffs": [
+        {
+          "date": "2008",
+          "detail": "Last significant workforce reduction, during the financial crisis",
+          "size": "About 6.5% (roughly 360 people), as reported at the time"
+        }
+      ],
+      "layoffNote": "No layoffs or restructuring in its annual reports for fiscal 2023 to 2026; headcount rose from about 26,000 to 42,000 over that period.",
+      "competitors": [
+        "AMD",
+        "Broadcom",
+        "Intel",
+        "Google (TPU chips)",
+        "Amazon (Trainium chips)",
+        "Microsoft (Maia chips)",
+        "Huawei",
+        "Qualcomm",
+        "Marvell",
+        "Cerebras"
+      ],
+      "grade": {
+        "letter": "A",
+        "why": [
+          "Revenue doubling year on year with about $120B of annual profit and gross margins near 75%",
+          "No layoffs since 2008 while headcount grew by about 60% in three years",
+          "Marked down from A+ for the November 2026 CEO crisis (resignation and reinstatement within 11 days, with a federal inquiry reported), reliance on a handful of very large customers, and loss of the China data center market"
+        ]
+      },
+      "concern": {
+        "interest": {
+          "level": "None found",
+          "text": "Sells chips, systems and software, not loans or credit. It does hold large investments and has guaranteed some customers' obligations, but lending is not a product.",
+          "rev": "0%",
+          "profit": "0%",
+          "basis": ""
+        },
+        "defense": {
+          "level": "Low",
+          "text": "Not a weapons maker, but its chips and software are used by militaries. In May 2026 the Pentagon signed agreements with NVIDIA and six other AI firms to deploy AI on classified military networks, and its hardware reaches defense users through contractors and cloud providers. No financial terms were published.",
+          "rev": "Under 1%",
+          "profit": "Under 1%",
+          "basis": "My estimate; NVIDIA does not publish defense sales. Direct military revenue is small next to $216B of mostly commercial data center sales, though indirect use through cloud providers and contractors cannot be measured."
+        }
+      },
+      "sources": [
+        {
+          "title": "NVIDIA Q4 and fiscal 2026 results",
+          "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Fourth-Quarter-and-Fiscal-2026/default.aspx"
+        },
+        {
+          "title": "NVIDIA Q3 fiscal 2027 results",
+          "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2027/"
+        },
+        {
+          "title": "Fortune 500 2026 takeaways",
+          "url": "https://fortune.com/2026/06/03/fortune-500-2026-takeaways-nvidia-amazon-walmart/"
+        },
+        {
+          "title": "Fortune company profile",
+          "url": "https://fortune.com/company/nvidia/fortune500/"
+        },
+        {
+          "title": "CEO transition, Nov 12 2026 (SEC)",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000082/nvidiaannouncesceotransiti.htm"
+        },
+        {
+          "title": "Huang reinstated, Nov 23 2026 (SEC)",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000090/nov23pressrelease.htm"
+        },
+        {
+          "title": "Layoff record from annual reports (Stratrix)",
+          "url": "https://www.stratrix.com/companies/nvidia/layoffs"
+        },
+        {
+          "title": "Earnings call takeaways",
+          "url": "https://www.aol.com/finance/nvidia-nvda-q4-2026-earnings-235154299.html"
+        },
+        {
+          "title": "Pentagon AI agreements (The Next Web)",
+          "url": "https://thenextweb.com/news/pentagon-ai-deals-anthropic-safety-limits"
+        }
+      ],
+      "asOf": "2026-11-27"
+    },
+    "Housecall Pro": {
+      "ownership": {
+        "type": "Private",
+        "detail": "Growth-equity backed (Permira, General Catalyst) · Denver, CO · founded 2013"
+      },
+      "fortune": {
+        "rank": "Not ranked",
+        "note": "Private company; valued at $1.1B in its last round (June 2022)"
+      },
+      "revenue": {
+        "value": "Not disclosed",
+        "period": "Public estimates are old or wide: $37M in 2021 (Latka), $50M–$100M band (Levels.fyi). Likely higher today; my guess"
+      },
+      "profit": {
+        "value": "Not disclosed",
+        "note": "about $175M raised in total, plus $60M of debt in 2022"
+      },
+      "employees": {
+        "value": "~1,500",
+        "note": "May 2026 estimate (Tracxn), up from about 1,100 a year earlier; other trackers show far fewer"
+      },
+      "revenueMix": [
+        {
+          "label": "Software subscriptions",
+          "pct": null,
+          "detail": "Monthly plans for home-service businesses (HVAC, plumbing, electrical, cleaning): scheduling, dispatch, estimates, invoicing and customer messaging. Says more than 200,000 pros use it."
+        },
+        {
+          "label": "Payments and financial services",
+          "pct": null,
+          "detail": "Fees on card payments run through the app, plus consumer financing, insurance and payroll offered inside the product."
+        },
+        {
+          "label": "Add-ons",
+          "pct": null,
+          "detail": "AI call and chat answering, review and marketing tools, websites and online booking, sold on top of the base plan."
+        }
+      ],
+      "mixNote": "No percentages published. For software companies of this type, subscriptions and payment fees are usually the two largest lines.",
+      "roadmap": {
+        "current": [
+          "Positioning as an AI field-service platform: AI chat and call answering, voice-driven invoicing",
+          "2026 releases: rebuilt mobile app, redesigned platform and payroll",
+          "New CEO Stan Chia (ex Vivid Seats, Grubhub) since June 2026, and a new CFO",
+          "Bundling payments, financing, insurance and marketing in one product"
+        ],
+        "future": [
+          "Leadership describes a next phase of growth built on AI",
+          "Moving up to larger shops, where ServiceTitan is strongest",
+          "No public targets; an eventual sale or IPO is my guess for a 2022-vintage unicorn, not something announced"
+        ]
+      },
+      "layoffs": [
+        {
+          "date": "Mid 2026",
+          "detail": "Employee reviews in June 2026 describe unexpected layoffs, around the CEO change",
+          "size": "Not disclosed"
+        },
+        {
+          "date": "Late 2025",
+          "detail": "\"Quiet\" cuts in two departments, per an employee review",
+          "size": "Not disclosed"
+        },
+        {
+          "date": "June 2025",
+          "detail": "Websites and BuildBook teams cut",
+          "size": "Not disclosed"
+        },
+        {
+          "date": "2023–2024",
+          "detail": "Two rounds in two years in different parts of the company, per an employee review",
+          "size": "Not disclosed"
+        }
+      ],
+      "layoffNote": "None of these were announced or appear in WARN filings; they come from employee reviews and job-site summaries, so treat dates and scope as approximate.",
+      "competitors": [
+        "ServiceTitan",
+        "Jobber",
+        "Workiz",
+        "FieldPulse",
+        "Service Fusion",
+        "FieldEdge",
+        "ServiceM8",
+        "Kickserv",
+        "mHelpDesk",
+        "Thryv"
+      ],
+      "grade": {
+        "letter": "B-",
+        "why": [
+          "Established product with a large customer base, well-known investors and headcount that appears to be growing",
+          "Marked down for small, unannounced layoffs roughly every year since 2023 and a CEO change in mid 2026",
+          "Finances are not public; its valuation dates from the 2022 peak and ServiceTitan is pushing into its market"
+        ]
+      },
+      "concern": {
+        "interest": {
+          "level": "Low",
+          "text": "Offers consumer financing inside the app so homeowners can pay for jobs over time. The loans appear to be made by partner lenders, with Housecall Pro earning a fee or share rather than lending itself. It also processes card payments, which is not interest-based.",
+          "rev": "Not disclosed",
+          "profit": "Not disclosed",
+          "basis": "My estimate is low single digits of revenue at most; financing is an add-on next to subscriptions and payment fees."
+        },
+        "defense": {
+          "level": "None found",
+          "text": "Customers are residential home-service businesses. No military or defense work found.",
+          "rev": "0%",
+          "profit": "0%",
+          "basis": ""
+        }
+      },
+      "sources": [
+        {
+          "title": "Stan Chia named CEO and other releases",
+          "url": "https://www.financialcontent.com/article/publisher/Housecall%20Pro"
+        },
+        {
+          "title": "Spring Summit 2026 release",
+          "url": "https://lite.aol.com/sports/motorracing/story/0022/20260527/9726812.htm"
+        },
+        {
+          "title": "Valuation and funding (Multiples)",
+          "url": "https://multiples.vc/private-comps/housecall-pro"
+        },
+        {
+          "title": "Funding rounds (Clay)",
+          "url": "https://clay.com/dossier/housecall-pro-funding"
+        },
+        {
+          "title": "Revenue and headcount estimates (Latka)",
+          "url": "https://getlatka.com/companies/housecall-pro"
+        },
+        {
+          "title": "Stability outlook (Built In)",
+          "url": "https://builtin.com/company/housecall-pro/faq/stability-growth"
+        },
+        {
+          "title": "Company profile (Simplify)",
+          "url": "https://simplify.jobs/c/Housecall-Pro"
+        },
+        {
+          "title": "Layoff mentions in reviews (Glassdoor)",
+          "url": "https://www.glassdoor.com/Reviews/Housecall-Pro-layoff-Reviews-EI_IE1169396.0,13_KH14,20.htm"
+        },
+        {
+          "title": "Levels.fyi company page",
+          "url": "https://next.levels.fyi/companies/housecall-pro"
+        }
+      ],
+      "asOf": "2026-11-27"
+    },
+    "onX": {
+      "ownership": {
+        "type": "Private",
+        "detail": "Growth-equity backed (Summit Partners, TCV) · Missoula and Bozeman, MT · founded 2009"
+      },
+      "fortune": {
+        "rank": "Not ranked",
+        "note": "Private company; reported valuation near $1.4B"
+      },
+      "revenue": {
+        "value": "Not disclosed",
+        "period": "Says recurring revenue nearly tripled in the three years to Nov 2025. Third-party estimates range from $20M to $100M; the upper end looks more plausible to me"
+      },
+      "profit": {
+        "value": "Not disclosed",
+        "note": "investors describe its growth as profitable"
+      },
+      "employees": {
+        "value": "~400–475",
+        "note": "2026 estimates from TrueUp, Built In and RocketReach"
+      },
+      "revenueMix": [
+        {
+          "label": "onX Hunt",
+          "pct": null,
+          "detail": "The original and largest app: land-ownership maps, hunting units and trail-camera integration. Premium and Elite annual subscriptions (Elite about $100 a year)."
+        },
+        {
+          "label": "onX Offroad",
+          "pct": null,
+          "detail": "Trail maps for 4x4s, side-by-sides, dirt bikes and snowmobiles, covering 650,000+ miles of routes. Same subscription tiers; bundled free for a year with eligible Ford vehicles from March 2026."
+        },
+        {
+          "label": "onX Backcountry",
+          "pct": null,
+          "detail": "Hiking, skiing, climbing and mountain-bike maps, including avalanche-terrain tools. Lower-priced subscriptions."
+        },
+        {
+          "label": "onX Fish",
+          "pct": null,
+          "detail": "The newest app, built on the acquired TroutRoutes: lake and species data, depth contours and regulations. About $35 a year, Midwest states first, now on Android. This is the line the Head of Product, Angling role would own."
+        },
+        {
+          "label": "Add-ons and business",
+          "pct": null,
+          "detail": "onX SOS rescue subscription ($49.99 a year, launched July 2026), onX for Business, and brand partnerships (Ford, Toyota, T-Mobile)."
+        }
+      ],
+      "mixNote": "No percentages published. Nearly all revenue is consumer subscriptions, and Hunt is understood to be the largest app.",
+      "roadmap": {
+        "current": [
+          "Expanding onX Fish to more states and to Android",
+          "onX SOS in-app emergency rescue, rolling out across the apps",
+          "Satellite connectivity through T-Mobile and Starlink",
+          "Automaker partnerships: Ford owner bundle, Toyota trail restoration program",
+          "Putting the Nov 2025 TCV investment to work"
+        ],
+        "future": [
+          "Scaling the four activity apps and the user base with TCV, which backed Strava, Netflix and Spotify",
+          "More add-on revenue on top of the map subscription (SOS is the first)",
+          "No public financial targets"
+        ]
+      },
+      "layoffs": [],
+      "layoffNote": "No layoffs found in news, WARN filings or hiring trackers. Headcount looks flat to slightly up over the past two years.",
+      "competitors": [
+        "Gaia GPS (Outside)",
+        "AllTrails",
+        "HuntStand (Garmin)",
+        "GOHUNT",
+        "HuntWise",
+        "BaseMap",
+        "CalTopo",
+        "Garmin",
+        "Fishbrain",
+        "Strava"
+      ],
+      "grade": {
+        "letter": "B+",
+        "why": [
+          "Subscription revenue that nearly tripled in three years, described by its investors as profitable",
+          "Fresh growth capital from TCV in Nov 2025 and no layoffs found",
+          "Marked down for being small and private with no published finances, reliance on discretionary outdoor spending, and rivals bundling free maps (Garmin with HuntStand, automakers)"
+        ]
+      },
+      "concern": {
+        "interest": {
+          "level": "None found",
+          "text": "Sells app subscriptions. No lending or financial products.",
+          "rev": "0%",
+          "profit": "0%",
+          "basis": ""
+        },
+        "defense": {
+          "level": "None found",
+          "text": "Consumer outdoor-recreation maps. No military or defense customers found; one business directory files it under aerospace and defense only because it makes GPS software.",
+          "rev": "0%",
+          "profit": "0%",
+          "basis": ""
+        }
+      },
+      "sources": [
+        {
+          "title": "onX on the TCV investment",
+          "url": "https://www.onxmaps.com/blog/onx-announces-strategic-investment-from-tcv-to-drive-next-phase-of-growth-and-outdoor-innovation"
+        },
+        {
+          "title": "TCV investment coverage (Pulse 2.0)",
+          "url": "https://pulse2.com/onx-strategic-investment-secured-from-tcv-to-advance-growth"
+        },
+        {
+          "title": "Funding and valuation (CB Insights)",
+          "url": "https://www.cbinsights.com/company/onxmaps/financials"
+        },
+        {
+          "title": "Company profile (TrueUp)",
+          "url": "https://www.trueup.io/co/onx-nav"
+        },
+        {
+          "title": "onX SOS launch",
+          "url": "https://www.active.com/outdoors/articles/onx-sos-emergency-assistance-launch"
+        },
+        {
+          "title": "Company profile and news (Simplify)",
+          "url": "https://simplify.jobs/c/OnXmaps"
+        },
+        {
+          "title": "Hiring and layoff tracker (Workopia)",
+          "url": "https://workopia.io/hi/companies/onxmaps"
+        },
+        {
+          "title": "Revenue estimate (Growjo)",
+          "url": "https://growjo.com/company/onXmaps"
+        },
+        {
+          "title": "T-Mobile satellite partnership",
+          "url": "https://www.onxmaps.com/blog/onx-partners-with-t-mobile-to-enhance-outdoor-adventures-with-satellite-data"
+        }
+      ],
+      "asOf": "2026-11-27"
     }
   }
 }
