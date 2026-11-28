@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-27T23:58:05.482Z",
+  "updated_at": "2026-11-28T00:09:32.000Z",
   "marks": {
     "greenhouse:samsara:8148044": {
       "status": "archived",
@@ -3082,7 +3082,7 @@
       "stage": "pursuing"
     },
     "greenhouse:housecall:6270748004": {
-      "at": "2026-11-27T06:22:51.828Z",
+      "at": "2026-11-28T00:09:32.000Z",
       "added": "2026-11-27T05:07:32.650000",
       "pos": 7,
       "title": "Senior Product Manager",
@@ -3092,13 +3092,19 @@
       "work": "remote",
       "min": 156000,
       "max": 198500,
-      "bonusPct": null,
-      "equity": null,
+      "bonusPct": 0,
+      "equity": 60000,
       "vestYears": 4,
-      "stage": "pursuing"
+      "stage": "pursuing",
+      "est": {
+        "bonus": true,
+        "equity": true,
+        "note": "guess: Levels.fyi PM and Senior PM submissions show base pay only; private company (paper equity)",
+        "at": "2026-11-28T00:09:32.000Z"
+      }
     },
     "greenhouse:housecall:6196648004": {
-      "at": "2026-11-27T06:22:51.828Z",
+      "at": "2026-11-28T00:09:32.000Z",
       "added": "2026-11-27T05:14:27.625000",
       "pos": 8,
       "title": "Director, Product Management (Platform)",
@@ -3108,13 +3114,19 @@
       "work": "remote",
       "min": 175000,
       "max": 210000,
-      "bonusPct": null,
-      "equity": null,
+      "bonusPct": 10,
+      "equity": 240000,
       "vestYears": 4,
-      "stage": "pursuing"
+      "stage": "pursuing",
+      "est": {
+        "bonus": true,
+        "equity": true,
+        "note": "guess from one 2022 Levels.fyi Director submission ($170K base, $255K total); private company (paper equity)",
+        "at": "2026-11-28T00:09:32.000Z"
+      }
     },
     "workday:nvidia.wd5/NVIDIAExternalCareerSite:JR2030510": {
-      "at": "2026-11-27T06:22:51.828Z",
+      "at": "2026-11-28T00:09:32.000Z",
       "added": "2026-11-27T05:37:25.178000",
       "pos": 9,
       "title": "Senior Product Manager, Digital Twin Automation and Robotics",
@@ -3124,13 +3136,19 @@
       "work": "",
       "min": 157500,
       "max": 312000,
-      "bonusPct": null,
-      "equity": null,
+      "bonusPct": 0,
+      "equity": 257000,
       "vestYears": 4,
-      "stage": "pursuing"
+      "stage": "pursuing",
+      "est": {
+        "bonus": true,
+        "equity": true,
+        "note": "Levels.fyi average at IC4 Senior PM, US: about $64K stock a year, almost no bonus (IC5 averages about $163K a year)",
+        "at": "2026-11-28T00:09:32.000Z"
+      }
     },
     "greenhouse:chargepoint:8890370002": {
-      "at": "2026-11-27T06:22:51.828Z",
+      "at": "2026-11-28T00:09:32.000Z",
       "added": "2026-11-27T05:45:03.955000",
       "pos": 6,
       "title": "Staff Product Manager, Residential Charging & Home Energy Management",
@@ -3140,13 +3158,19 @@
       "work": "hybrid",
       "min": 182608,
       "max": 241500,
-      "bonusPct": null,
-      "equity": null,
+      "bonusPct": 0,
+      "equity": 80000,
       "vestYears": 4,
-      "stage": "pursuing"
+      "stage": "pursuing",
+      "est": {
+        "bonus": true,
+        "equity": true,
+        "note": "guess from one Levels.fyi submission",
+        "at": "2026-11-28T00:09:32.000Z"
+      }
     },
     "greenhouse:onxmaps:4725528006": {
-      "at": "2026-11-27T06:27:36.033Z",
+      "at": "2026-11-28T00:09:32.000Z",
       "added": "2026-11-27T06:25:12.572000",
       "pos": 11,
       "title": "Head of Product, Angling",
@@ -3156,13 +3180,19 @@
       "work": "remote",
       "min": null,
       "max": null,
-      "bonusPct": null,
-      "equity": null,
+      "bonusPct": 15,
+      "equity": 200000,
       "vestYears": 4,
-      "stage": "pursuing"
+      "stage": "pursuing",
+      "est": {
+        "bonus": true,
+        "equity": true,
+        "note": "guess: one Levels.fyi submission, base pay only; private company (paper equity)",
+        "at": "2026-11-28T00:09:32.000Z"
+      }
     },
     "greenhouse:onxmaps:4722280006": {
-      "at": "2026-11-27T06:27:38.367Z",
+      "at": "2026-11-28T00:09:32.000Z",
       "added": "2026-11-27T06:27:09.380000",
       "pos": 12,
       "title": "Product Launch Manager",
@@ -3172,10 +3202,16 @@
       "work": "remote",
       "min": null,
       "max": null,
-      "bonusPct": null,
-      "equity": null,
+      "bonusPct": 10,
+      "equity": 40000,
       "vestYears": 4,
-      "stage": "pursuing"
+      "stage": "pursuing",
+      "est": {
+        "bonus": true,
+        "equity": true,
+        "note": "guess: one Levels.fyi submission, base pay only; private company (paper equity)",
+        "at": "2026-11-28T00:09:32.000Z"
+      }
     }
   }
 }
